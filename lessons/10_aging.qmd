@@ -1,0 +1,30 @@
+---
+title: "Aging Society and Immigration"
+format: html
+---
+
+## Objectives
+- Examine the economic impact of Japan’s aging society.  
+- Discuss immigration policies and integration challenges.  
+- Explore regional labor mobility.  
+
+## Key Concepts
+- Demographics and labor shortages.  
+- Immigration debates in Japan.  
+- Productivity and aging.  
+
+## Readings (Suggested)
+- Ito and Hoshi (2020) Chapter 8, 10
+- Akashi, Junichi. 2014. “New Aspects of Japan’s Immigration Policies: Is Population Decline Opening the Doors?” Contemporary Japan 26 (2): 175–96.
+- Association of Southeast Asian Nations, ed. 2022. ASEAN Migration Outlook. First edition. Jakarta, Indonesia: ASEAN Secretariat.
+- Davison, Jeremy, and Ito Peng. 2021. “Views on Immigration in Japan: Identities, Interests, and Pragmatic Divergence.” Journal of Ethnic and Migration Studies 47 (11): 2578–95.
+- Longhi, Simonetta, Peter Nijkamp, and Jacques Poot. 2005. “A Meta-Analytic Assessment of the Effect of Immigration on Wages.” Journal of Economic Surveys 19 (3): 451–77.
+- Seah, Sharon, Joanne Lin, Melinda Martinus, Kristina Fong, Indira Aridati, Pham ThiPhuong Thao, and Damon Chee. 2024. “The State of Southeast Asia: 2024 Survey Report.” Singapore: ISEAS -Yusof Ishak Institute.
+
+## Discussion Questions
+1. Should Japan expand immigration to offset aging?  
+2. How can productivity gains mitigate demographic decline?  
+
+## Materials
+- **Slides:** [View Slides](../slides/10_aging.html)  
+- **Data:** Demographic data in `../data/demographics/`.

@@ -1,0 +1,29 @@
+project:
+  type: website
+  output-dir: docs   # GitHub Pages will serve from here
+
+website:
+  title: "Japan in the World Economy"
+  navbar:
+    left:
+      - text: "Lessons"
+        file: lessons/index.qmd
+      #- text: "Slides"
+      #  menu:
+      #    - text: "Lecture 1"
+      #      file: slides/01_intro.qmd
+          #- text: "Lecture 2"
+          #  file: slides/02_trade_theory.qmd
+          # add more slides here as you build them
+    right:
+      - icon: github
+        href: https://github.com/trang419/JWE-materials
+        aria-label: GitHub repo
+
+format:
+  html:
+    theme: cosmo   # Bootstrap theme, can change (cosmo, litera, simplex, etc.)
+    toc: true      # table of contents on each page
+
+#execute:
+#  cache: true

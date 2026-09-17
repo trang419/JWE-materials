@@ -1,0 +1,51 @@
+---
+title: "Japan in the World Economy"
+format: html
+toc: false
+date: today
+---
+  
+*Fall 2025 — Course Home Page*
+  
+Welcome to **Japan in the World Economy**.  
+This course examines the structure of international trade and finance, focusing on Japan’s role in the global economy.  
+Students will gain practical experience in analyzing data, reports and understanding policy impacts.
+
+---
+  
+## 📄 Course Information
+  
+- **Instructor**: Trang Tran  
+- **Affiliation**: University of Tokyo  
+- **Contact**: tran.trang at sys.u-tokyo.ac.jp 
+- **Office Hours**: By appointment  
+
+---
+  
+## 📚 Materials & Links
+  
+- [📑 Syllabus](lessons/syllabus.qmd)  
+- [📖 Lessons](lessons/index.qmd)  
+
+---
+  
+## 🗓️ Weekly Structure
+  
+Each week includes:  
+  
+1. **Lecture** (concepts, case studies)  
+2. **In-class discussion** (preparation required)  
+3. **Assignments** (weeks 5 and 8)  
+
+---
+  
+## 🌐 How to Use This Site
+  
+- Use the sidebar (or links above) to access lessons and assignments.  
+- All course data will be provided in ready-to-use formats.  
+- Slides and assignments will be downloadable as PDF for offline use.  
+
+---
+  
+*Last updated: {{< meta date >}}*
+  

@@ -1,0 +1,28 @@
+---
+title: "ODA, FDI, and Expansion of Global Value Chains"
+format: html
+---
+
+## Objectives
+- Explore Japan’s ODA as a diplomatic and economic tool.  
+- Assess outward FDI in ASEAN and beyond.  
+- Discuss inward FDI and domestic policy challenges.  
+
+## Key Concepts
+- ODA for infrastructure and development.  
+- Outward FDI in manufacturing and services.  
+- Inward FDI barriers in Japan.  
+
+## Readings (Suggested)
+- Burnside, C. & Dollar, D. 2000, 'Aid, policies, and growth', American economic review, 90 (4).
+- Easterly, W., 2003, “Can Foreign Aid Buy Growth?”, Journal of Economic Perspective, 17 (3).
+- Hansen, H. & Tarp, F., 2000, “Aid and Growth Regressions”, Centre for Research in Economic Development and International Trade, University of Nottingham Research Paper No.00/07.  
+
+
+## Discussion Questions
+1. How does ODA complement Japan’s trade strategy?  
+2. Why is inward FDI comparatively weak in Japan?  
+
+## Materials
+- **Slides:** [View Slides](../slides/06_oda_fdi.html)  
+- **Data:** OECD ODA and UNCTAD FDI datasets.

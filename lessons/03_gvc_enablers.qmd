@@ -1,0 +1,26 @@
+---
+title: "Enablers of Global Value Chains"
+format: html
+---
+
+## Objectives
+- Examine trade policy frameworks shaping Japan’s trade.  
+- Assess domestic policies supporting competitiveness and innovation.  
+- Discuss infrastructure as an enabler of GVC participation.  
+
+## Key Concepts
+- RCEP, CPTPP, WTO agreements.  
+- Industrial policy and innovation systems.  
+- Infrastructure logistics and connectivity.  
+
+## Readings (Suggested)
+- Kimura and Chen (2016), *Implications of Mega Free Trade Agreements for Asian Regional Integration and RCEP Negotiation*.  
+- WTO and JETRO-IDE (2011), *Trade patterns and global value chains in East Asia: from trade in goods to trade in tasks*. 
+
+## Discussion Questions
+1. How does Japan balance multilateral and regional trade frameworks? 
+2. Can domestic innovation policy substitute for trade openness?  
+
+## Materials
+- **Slides:** [View Slides](../slides/03_gvc_enablers.html)  
+

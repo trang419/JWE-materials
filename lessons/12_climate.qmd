@@ -1,0 +1,26 @@
+---
+title: "Climate Change and Global Economy"
+format: html
+---
+
+## Objectives
+- Analyze climate change as a global economic challenge.  
+- Assess Japan’s vulnerabilities as an energy importer.  
+- Identify opportunities in green growth strategies.  
+
+## Key Concepts
+- Climate economics and externalities.  
+- Energy security and imports.  
+- Green growth and innovation.  
+
+## Readings (Suggested)
+- IPCC (2015) Climate change 2014: Synthesis report
+- IPCC (2022) Climate Change 2022: Mitigation of Climate Change. 
+
+## Discussion Questions
+1. How does climate change reshape Japan’s economic strategy?  
+2. Can green growth reconcile competitiveness and sustainability?  
+
+## Materials
+- **Slides:** [View Slides](../slides/12_climate.html)  
+- **Data:** Energy and emissions data in `../data/climate/`.
