@@ -13,7 +13,7 @@ Students will gain practical experience in analyzing data, reports and understan
 
 ---
   
-## 📄 Course Information
+## Course Information
   
 - **Instructor**: Trang Tran  
 - **Affiliation**: University of Tokyo  
@@ -22,24 +22,24 @@ Students will gain practical experience in analyzing data, reports and understan
 
 ---
   
-## 📚 Materials & Links
+## Materials & Links
   
-- [📑 Syllabus](lessons/syllabus.qmd)  
-- [📖 Lessons](lessons/index.qmd)  
+- [Syllabus](lessons/syllabus.qmd)  
+- [Lessons](lessons/index.qmd)  
 
 ---
   
-## 🗓️ Weekly Structure
+## Weekly Structure
   
 Each week includes:  
   
 1. **Lecture** (concepts, case studies)  
 2. **In-class discussion** (preparation required)  
-3. **Assignments** (weeks 5 and 8)  
+3. **Assignments** (weeks 5)  
 
 ---
   
-## 🌐 How to Use This Site
+## How to Use This Site
   
 - Use the sidebar (or links above) to access lessons and assignments.  
 - All course data will be provided in ready-to-use formats.  
