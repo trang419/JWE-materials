@@ -5,10 +5,11 @@ format: html
 
 ## Objectives
 - Definition of Global Value Chains
-- How to measure GVC
+- How to measure GVC, including the use of input-output tables
 
 ## Key Concepts
 - Trade in value added
+- Backward and forward participation in GVCs
 
 ## Readings
 - Baldwin, R., & Ito, T. (2021). The smile curve: Evolving sources of value added in manufacturing. Canadian Journal of Economics/Revue Canadienne d’économique, 54(4), 1842–1880. 
