@@ -50,3 +50,7 @@ rsconnect/
 
 /.quarto/
 **/*.quarto_ipynb
+
+## raw data
+data/raw
+data/temp

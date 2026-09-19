@@ -1,0 +1,8 @@
+---
+title: "Data"
+format: html
+---
+
+- [Data-Madison](data-madison.html)
+- [Data-PWT](data-pwt.html)
+- [Data-WITS](data-wits.html)

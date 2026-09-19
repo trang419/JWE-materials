@@ -1,0 +1,1249 @@
+var,type,sector,countrycode,year,value
+csh,x,consumer goods,CHN,1952,0.0043399902
+csh,x,consumer goods,CHN,1953,0.0037644683
+csh,x,consumer goods,CHN,1954,0.0050496868
+csh,x,consumer goods,CHN,1955,0.0036456545
+csh,x,consumer goods,CHN,1956,0.0059373991
+csh,x,consumer goods,CHN,1957,0.0058326197
+csh,x,consumer goods,CHN,1958,0.0064046113
+csh,x,consumer goods,CHN,1959,0.008679556
+csh,x,consumer goods,CHN,1960,0.0102206059
+csh,x,consumer goods,CHN,1961,0.0085336939
+csh,x,consumer goods,CHN,1962,0.0073068577
+csh,x,consumer goods,CHN,1963,0.0069017533
+csh,x,consumer goods,CHN,1964,0.0065991839
+csh,x,consumer goods,CHN,1965,0.0065218394
+csh,x,consumer goods,CHN,1966,0.0058743695
+csh,x,consumer goods,CHN,1967,0.0050428351
+csh,x,consumer goods,CHN,1968,0.0051513473
+csh,x,consumer goods,CHN,1969,0.0045962035
+csh,x,consumer goods,CHN,1970,0.0037448112
+csh,x,consumer goods,CHN,1971,0.0040491991
+csh,x,consumer goods,CHN,1972,0.005025657
+csh,x,consumer goods,CHN,1973,0.0068159146
+csh,x,consumer goods,CHN,1974,0.0085695837
+csh,x,consumer goods,CHN,1975,0.0082681398
+csh,x,consumer goods,CHN,1976,0.0081225242
+csh,x,consumer goods,CHN,1977,0.0076922355
+csh,x,consumer goods,CHN,1978,0.0078001567
+csh,x,consumer goods,CHN,1979,0.0092598782
+csh,x,consumer goods,CHN,1980,0.011355341
+csh,x,consumer goods,CHN,1981,0.014603219
+csh,x,consumer goods,CHN,1982,0.0147510492
+csh,x,consumer goods,CHN,1983,0.01383994
+csh,x,consumer goods,CHN,1984,0.01491423
+csh,x,consumer goods,CHN,1985,0.0136492657
+csh,x,consumer goods,CHN,1986,0.0155778555
+csh,x,consumer goods,CHN,1987,0.0182265913
+csh,x,consumer goods,CHN,1988,0.0222352204
+csh,x,consumer goods,CHN,1989,0.02061973
+csh,x,consumer goods,CHN,1990,0.0262914207
+csh,x,consumer goods,CHN,1991,0.0282310057
+csh,x,consumer goods,CHN,1992,0.03366658
+csh,x,consumer goods,CHN,1993,0.0361916978
+csh,x,consumer goods,CHN,1994,0.0464855236
+csh,x,consumer goods,CHN,1995,0.0460043082
+csh,x,consumer goods,CHN,1996,0.0491219996
+csh,x,consumer goods,CHN,1997,0.0606945292
+csh,x,consumer goods,CHN,1998,0.0616280352
+csh,x,consumer goods,CHN,1999,0.0610326471
+csh,x,consumer goods,CHN,2000,0.063570296
+csh,x,consumer goods,CHN,2001,0.0624499782
+csh,x,consumer goods,CHN,2002,0.0653638414
+csh,x,consumer goods,CHN,2003,0.0683884241
+csh,x,consumer goods,CHN,2004,0.0648533716
+csh,x,consumer goods,CHN,2005,0.0716477303
+csh,x,consumer goods,CHN,2006,0.0761771472
+csh,x,consumer goods,CHN,2007,0.0732786067
+csh,x,consumer goods,CHN,2008,0.0689543832
+csh,x,consumer goods,CHN,2009,0.0517718016
+csh,x,consumer goods,CHN,2010,0.0556444542
+csh,x,consumer goods,CHN,2011,0.0613226914
+csh,x,consumer goods,CHN,2012,0.0636243536
+csh,x,consumer goods,CHN,2013,0.0648319302
+csh,x,consumer goods,CHN,2014,0.0651161591
+csh,x,consumer goods,CHN,2015,0.0556232492
+csh,x,consumer goods,CHN,2016,0.0539404055
+csh,x,consumer goods,CHN,2017,0.0439331636
+csh,x,consumer goods,CHN,2018,0.0451072342
+csh,x,consumer goods,CHN,2019,0.04477466
+csh,x,consumer goods,JPN,1950,0.00575573034
+csh,x,consumer goods,JPN,1951,0.00790329756
+csh,x,consumer goods,JPN,1952,0.00745900276
+csh,x,consumer goods,JPN,1953,0.00675281148
+csh,x,consumer goods,JPN,1954,0.00674133514
+csh,x,consumer goods,JPN,1955,0.00707664796
+csh,x,consumer goods,JPN,1956,0.00775944722
+csh,x,consumer goods,JPN,1957,0.00796463662
+csh,x,consumer goods,JPN,1958,0.0074192194
+csh,x,consumer goods,JPN,1959,0.00754988553
+csh,x,consumer goods,JPN,1960,0.00755305025
+csh,x,consumer goods,JPN,1961,0.00693757921
+csh,x,consumer goods,JPN,1962,0.00729959032
+csh,x,consumer goods,JPN,1963,0.00731536625
+csh,x,consumer goods,JPN,1964,0.00778531273
+csh,x,consumer goods,JPN,1965,0.00908079995
+csh,x,consumer goods,JPN,1966,0.00951967663
+csh,x,consumer goods,JPN,1967,0.00898249626
+csh,x,consumer goods,JPN,1968,0.00978528113
+csh,x,consumer goods,JPN,1969,0.01045513407
+csh,x,consumer goods,JPN,1970,0.01106691537
+csh,x,consumer goods,JPN,1971,0.01218858917
+csh,x,consumer goods,JPN,1972,0.01146055111
+csh,x,consumer goods,JPN,1973,0.01175587991
+csh,x,consumer goods,JPN,1974,0.0157420957
+csh,x,consumer goods,JPN,1975,0.0141637805
+csh,x,consumer goods,JPN,1976,0.0156785919
+csh,x,consumer goods,JPN,1977,0.0163356828
+csh,x,consumer goods,JPN,1978,0.0152867257
+csh,x,consumer goods,JPN,1979,0.0149832737
+csh,x,consumer goods,JPN,1980,0.0170457055
+csh,x,consumer goods,JPN,1981,0.0187656636
+csh,x,consumer goods,JPN,1982,0.0186449217
+csh,x,consumer goods,JPN,1983,0.0200308429
+csh,x,consumer goods,JPN,1984,0.0234169979
+csh,x,consumer goods,JPN,1985,0.0282948605
+csh,x,consumer goods,JPN,1986,0.023547911
+csh,x,consumer goods,JPN,1987,0.0211527317
+csh,x,consumer goods,JPN,1988,0.0217639736
+csh,x,consumer goods,JPN,1989,0.01805336262
+csh,x,consumer goods,JPN,1990,0.01789364259
+csh,x,consumer goods,JPN,1991,0.01834711157
+csh,x,consumer goods,JPN,1992,0.01765355994
+csh,x,consumer goods,JPN,1993,0.01633132711
+csh,x,consumer goods,JPN,1994,0.01656809276
+csh,x,consumer goods,JPN,1995,0.01547376589
+csh,x,consumer goods,JPN,1996,0.01350378582
+csh,x,consumer goods,JPN,1997,0.01431833694
+csh,x,consumer goods,JPN,1998,0.01317802391
+csh,x,consumer goods,JPN,1999,0.01414061765
+csh,x,consumer goods,JPN,2000,0.01587062418
+csh,x,consumer goods,JPN,2001,0.01505460731
+csh,x,consumer goods,JPN,2002,0.01466568046
+csh,x,consumer goods,JPN,2003,0.01341890561
+csh,x,consumer goods,JPN,2004,0.01440582075
+csh,x,consumer goods,JPN,2005,0.01475884141
+csh,x,consumer goods,JPN,2006,0.01418401047
+csh,x,consumer goods,JPN,2007,0.0100795047
+csh,x,consumer goods,JPN,2008,0.0100406261
+csh,x,consumer goods,JPN,2009,0.0081157894
+csh,x,consumer goods,JPN,2010,0.0090377405
+csh,x,consumer goods,JPN,2011,0.0094395873
+csh,x,consumer goods,JPN,2012,0.0085157981
+csh,x,consumer goods,JPN,2013,0.0076596667
+csh,x,consumer goods,JPN,2014,0.0078513301
+csh,x,consumer goods,JPN,2015,0.0091095266
+csh,x,consumer goods,JPN,2016,0.0100675303
+csh,x,consumer goods,JPN,2017,0.0103960851
+csh,x,consumer goods,JPN,2018,0.0116744887
+csh,x,consumer goods,JPN,2019,0.0111616425
+csh,x,consumer goods,USA,1950,0.0096112713
+csh,x,consumer goods,USA,1951,0.0115073766
+csh,x,consumer goods,USA,1952,0.0102259712
+csh,x,consumer goods,USA,1953,0.0087195963
+csh,x,consumer goods,USA,1954,0.0091532007
+csh,x,consumer goods,USA,1955,0.0094692826
+csh,x,consumer goods,USA,1956,0.0106713492
+csh,x,consumer goods,USA,1957,0.0112168211
+csh,x,consumer goods,USA,1958,0.0094543223
+csh,x,consumer goods,USA,1959,0.0096774939
+csh,x,consumer goods,USA,1960,0.0108897001
+csh,x,consumer goods,USA,1961,0.0103350449
+csh,x,consumer goods,USA,1962,0.0099849319
+csh,x,consumer goods,USA,1963,0.0105863844
+csh,x,consumer goods,USA,1964,0.0112854571
+csh,x,consumer goods,USA,1965,0.0103537799
+csh,x,consumer goods,USA,1966,0.01046356
+csh,x,consumer goods,USA,1967,0.0099800808
+csh,x,consumer goods,USA,1968,0.0100684702
+csh,x,consumer goods,USA,1969,0.0102797002
+csh,x,consumer goods,USA,1970,0.0112548528
+csh,x,consumer goods,USA,1971,0.0105643759
+csh,x,consumer goods,USA,1972,0.010849681
+csh,x,consumer goods,USA,1973,0.0135951433
+csh,x,consumer goods,USA,1974,0.0167381497
+csh,x,consumer goods,USA,1975,0.0161282815
+csh,x,consumer goods,USA,1976,0.0158823427
+csh,x,consumer goods,USA,1977,0.0151749555
+csh,x,consumer goods,USA,1978,0.015872177
+csh,x,consumer goods,USA,1979,0.0177414193
+csh,x,consumer goods,USA,1980,0.0199953015
+csh,x,consumer goods,USA,1981,0.0189305361
+csh,x,consumer goods,USA,1982,0.0168245433
+csh,x,consumer goods,USA,1983,0.0149791687
+csh,x,consumer goods,USA,1984,0.0151298177
+csh,x,consumer goods,USA,1985,0.011261012
+csh,x,consumer goods,USA,1986,0.0103007986
+csh,x,consumer goods,USA,1987,0.0110221919
+csh,x,consumer goods,USA,1988,0.0121941553
+csh,x,consumer goods,USA,1989,0.0135213226
+csh,x,consumer goods,USA,1990,0.0132869831
+csh,x,consumer goods,USA,1991,0.0135026923
+csh,x,consumer goods,USA,1992,0.0151276211
+csh,x,consumer goods,USA,1993,0.0156846991
+csh,x,consumer goods,USA,1994,0.0170489361
+csh,x,consumer goods,USA,1995,0.0168859307
+csh,x,consumer goods,USA,1996,0.0177648557
+csh,x,consumer goods,USA,1997,0.0188161218
+csh,x,consumer goods,USA,1998,0.0179586719
+csh,x,consumer goods,USA,1999,0.0170785741
+csh,x,consumer goods,USA,2000,0.0184216004
+csh,x,consumer goods,USA,2001,0.0182131432
+csh,x,consumer goods,USA,2002,0.0177915803
+csh,x,consumer goods,USA,2003,0.0170798127
+csh,x,consumer goods,USA,2004,0.0166515186
+csh,x,consumer goods,USA,2005,0.01766269
+csh,x,consumer goods,USA,2006,0.0184155229
+csh,x,consumer goods,USA,2007,0.0179117677
+csh,x,consumer goods,USA,2008,0.0213472955
+csh,x,consumer goods,USA,2009,0.0215502643
+csh,x,consumer goods,USA,2010,0.023031238
+csh,x,consumer goods,USA,2011,0.024339938
+csh,x,consumer goods,USA,2012,0.025578867
+csh,x,consumer goods,USA,2013,0.025615309
+csh,x,consumer goods,USA,2014,0.025407115
+csh,x,consumer goods,USA,2015,0.022598584
+csh,x,consumer goods,USA,2016,0.021873111
+csh,x,consumer goods,USA,2017,0.0190390395
+csh,x,consumer goods,USA,2018,0.0180309238
+csh,x,consumer goods,USA,2019,0.0172929754
+csh,m,consumer goods,CHN,1952,-0.00156098238
+csh,m,consumer goods,CHN,1953,-0.00141960295
+csh,m,consumer goods,CHN,1954,-0.00163517217
+csh,m,consumer goods,CHN,1955,-0.00158852409
+csh,m,consumer goods,CHN,1956,-0.00157206412
+csh,m,consumer goods,CHN,1957,-0.00157410436
+csh,m,consumer goods,CHN,1958,-0.00157023204
+csh,m,consumer goods,CHN,1959,-0.0020900868
+csh,m,consumer goods,CHN,1960,-0.0031833807
+csh,m,consumer goods,CHN,1961,-0.00233938995
+csh,m,consumer goods,CHN,1962,-0.00151263341
+csh,m,consumer goods,CHN,1963,-0.00138751574
+csh,m,consumer goods,CHN,1964,-0.00140955066
+csh,m,consumer goods,CHN,1965,-0.00161754584
+csh,m,consumer goods,CHN,1966,-0.00162748381
+csh,m,consumer goods,CHN,1967,-0.00134354603
+csh,m,consumer goods,CHN,1968,-0.00137037534
+csh,m,consumer goods,CHN,1969,-0.00112280855
+csh,m,consumer goods,CHN,1970,-0.00111191065
+csh,m,consumer goods,CHN,1971,-0.00099660057
+csh,m,consumer goods,CHN,1972,-0.00122494088
+csh,m,consumer goods,CHN,1973,-0.00182826553
+csh,m,consumer goods,CHN,1974,-0.0029352185
+csh,m,consumer goods,CHN,1975,-0.0027360063
+csh,m,consumer goods,CHN,1976,-0.0025208209
+csh,m,consumer goods,CHN,1977,-0.00239174735
+csh,m,consumer goods,CHN,1978,-0.0027283609
+csh,m,consumer goods,CHN,1979,-0.0033802571
+csh,m,consumer goods,CHN,1980,-0.0042686671
+csh,m,consumer goods,CHN,1981,-0.0051170979
+csh,m,consumer goods,CHN,1982,-0.0043444214
+csh,m,consumer goods,CHN,1983,-0.0042310691
+csh,m,consumer goods,CHN,1984,-0.0048244841
+csh,m,consumer goods,CHN,1985,-0.0053693485
+csh,m,consumer goods,CHN,1986,-0.0028301294
+csh,m,consumer goods,CHN,1987,-0.0036928713
+csh,m,consumer goods,CHN,1988,-0.0050643769
+csh,m,consumer goods,CHN,1989,-0.0054764283
+csh,m,consumer goods,CHN,1990,-0.0047854211
+csh,m,consumer goods,CHN,1991,-0.0035785159
+csh,m,consumer goods,CHN,1992,-0.0038399135
+csh,m,consumer goods,CHN,1993,-0.0035961452
+csh,m,consumer goods,CHN,1994,-0.0047572169
+csh,m,consumer goods,CHN,1995,-0.0060987699
+csh,m,consumer goods,CHN,1996,-0.0057450549
+csh,m,consumer goods,CHN,1997,-0.0058358897
+csh,m,consumer goods,CHN,1998,-0.0063261711
+csh,m,consumer goods,CHN,1999,-0.0062377504
+csh,m,consumer goods,CHN,2000,-0.006958496
+csh,m,consumer goods,CHN,2001,-0.0070698352
+csh,m,consumer goods,CHN,2002,-0.0066884619
+csh,m,consumer goods,CHN,2003,-0.0071202182
+csh,m,consumer goods,CHN,2004,-0.0068212522
+csh,m,consumer goods,CHN,2005,-0.0061905694
+csh,m,consumer goods,CHN,2006,-0.0063947541
+csh,m,consumer goods,CHN,2007,-0.0080291566
+csh,m,consumer goods,CHN,2008,-0.0085115875
+csh,m,consumer goods,CHN,2009,-0.0076303156
+csh,m,consumer goods,CHN,2010,-0.0083783632
+csh,m,consumer goods,CHN,2011,-0.0103179141
+csh,m,consumer goods,CHN,2012,-0.0114387565
+csh,m,consumer goods,CHN,2013,-0.0126891795
+csh,m,consumer goods,CHN,2014,-0.0134348911
+csh,m,consumer goods,CHN,2015,-0.0125414771
+csh,m,consumer goods,CHN,2016,-0.0136459907
+csh,m,consumer goods,CHN,2017,-0.0164681799
+csh,m,consumer goods,CHN,2018,-0.0179221954
+csh,m,consumer goods,CHN,2019,-0.016985976
+csh,m,consumer goods,JPN,1950,-0.0079965884
+csh,m,consumer goods,JPN,1951,-0.0120486256
+csh,m,consumer goods,JPN,1952,-0.0121681583
+csh,m,consumer goods,JPN,1953,-0.0143828393
+csh,m,consumer goods,JPN,1954,-0.0141138585
+csh,m,consumer goods,JPN,1955,-0.0131787197
+csh,m,consumer goods,JPN,1956,-0.015479831
+csh,m,consumer goods,JPN,1957,-0.0177234294
+csh,m,consumer goods,JPN,1958,-0.0132887978
+csh,m,consumer goods,JPN,1959,-0.0146244042
+csh,m,consumer goods,JPN,1960,-0.0186388021
+csh,m,consumer goods,JPN,1961,-0.0201987601
+csh,m,consumer goods,JPN,1962,-0.016043221
+csh,m,consumer goods,JPN,1963,-0.0172438612
+csh,m,consumer goods,JPN,1964,-0.0176927853
+csh,m,consumer goods,JPN,1965,-0.0167381884
+csh,m,consumer goods,JPN,1966,-0.0167811037
+csh,m,consumer goods,JPN,1967,-0.0180414277
+csh,m,consumer goods,JPN,1968,-0.017347682
+csh,m,consumer goods,JPN,1969,-0.0169978002
+csh,m,consumer goods,JPN,1970,-0.0187252871
+csh,m,consumer goods,JPN,1971,-0.0181091139
+csh,m,consumer goods,JPN,1972,-0.0175405754
+csh,m,consumer goods,JPN,1973,-0.0210734865
+csh,m,consumer goods,JPN,1974,-0.0267612523
+csh,m,consumer goods,JPN,1975,-0.0216473674
+csh,m,consumer goods,JPN,1976,-0.0213137642
+csh,m,consumer goods,JPN,1977,-0.0205392343
+csh,m,consumer goods,JPN,1978,-0.0195972579
+csh,m,consumer goods,JPN,1979,-0.0219568296
+csh,m,consumer goods,JPN,1980,-0.0214744897
+csh,m,consumer goods,JPN,1981,-0.0212641014
+csh,m,consumer goods,JPN,1982,-0.0206098986
+csh,m,consumer goods,JPN,1983,-0.0196862444
+csh,m,consumer goods,JPN,1984,-0.021570408
+csh,m,consumer goods,JPN,1985,-0.0209141766
+csh,m,consumer goods,JPN,1986,-0.0208064501
+csh,m,consumer goods,JPN,1987,-0.0227139872
+csh,m,consumer goods,JPN,1988,-0.0252124174
+csh,m,consumer goods,JPN,1989,-0.02605252
+csh,m,consumer goods,JPN,1990,-0.024778485
+csh,m,consumer goods,JPN,1991,-0.0209555854
+csh,m,consumer goods,JPN,1992,-0.027364249
+csh,m,consumer goods,JPN,1993,-0.027666847
+csh,m,consumer goods,JPN,1994,-0.030804619
+csh,m,consumer goods,JPN,1995,-0.032164823
+csh,m,consumer goods,JPN,1996,-0.031318184
+csh,m,consumer goods,JPN,1997,-0.029869329
+csh,m,consumer goods,JPN,1998,-0.028315991
+csh,m,consumer goods,JPN,1999,-0.030600884
+csh,m,consumer goods,JPN,2000,-0.031277496
+csh,m,consumer goods,JPN,2001,-0.031926971
+csh,m,consumer goods,JPN,2002,-0.030547407
+csh,m,consumer goods,JPN,2003,-0.029683281
+csh,m,consumer goods,JPN,2004,-0.031584016
+csh,m,consumer goods,JPN,2005,-0.031861671
+csh,m,consumer goods,JPN,2006,-0.032000094
+csh,m,consumer goods,JPN,2007,-0.029967574
+csh,m,consumer goods,JPN,2008,-0.038460704
+csh,m,consumer goods,JPN,2009,-0.03370728
+csh,m,consumer goods,JPN,2010,-0.036101177
+csh,m,consumer goods,JPN,2011,-0.042219317
+csh,m,consumer goods,JPN,2012,-0.044546163
+csh,m,consumer goods,JPN,2013,-0.04139784
+csh,m,consumer goods,JPN,2014,-0.041287932
+csh,m,consumer goods,JPN,2015,-0.038818492
+csh,m,consumer goods,JPN,2016,-0.039704784
+csh,m,consumer goods,JPN,2017,-0.039269335
+csh,m,consumer goods,JPN,2018,-0.040125456
+csh,m,consumer goods,JPN,2019,-0.038714107
+csh,m,consumer goods,USA,1950,-0.0087784195
+csh,m,consumer goods,USA,1951,-0.0095240238
+csh,m,consumer goods,USA,1952,-0.0094633941
+csh,m,consumer goods,USA,1953,-0.0091754873
+csh,m,consumer goods,USA,1954,-0.0086799329
+csh,m,consumer goods,USA,1955,-0.0090036322
+csh,m,consumer goods,USA,1956,-0.0094196685
+csh,m,consumer goods,USA,1957,-0.0096111202
+csh,m,consumer goods,USA,1958,-0.0094673981
+csh,m,consumer goods,USA,1959,-0.0095967336
+csh,m,consumer goods,USA,1960,-0.0106515186
+csh,m,consumer goods,USA,1961,-0.0098789427
+csh,m,consumer goods,USA,1962,-0.0094013309
+csh,m,consumer goods,USA,1963,-0.0092006297
+csh,m,consumer goods,USA,1964,-0.0091843726
+csh,m,consumer goods,USA,1965,-0.0094932536
+csh,m,consumer goods,USA,1966,-0.0101248799
+csh,m,consumer goods,USA,1967,-0.0100287549
+csh,m,consumer goods,USA,1968,-0.0114020649
+csh,m,consumer goods,USA,1969,-0.0115325083
+csh,m,consumer goods,USA,1970,-0.0119115282
+csh,m,consumer goods,USA,1971,-0.0121660256
+csh,m,consumer goods,USA,1972,-0.0128964698
+csh,m,consumer goods,USA,1973,-0.013591568
+csh,m,consumer goods,USA,1974,-0.0164194617
+csh,m,consumer goods,USA,1975,-0.0143288211
+csh,m,consumer goods,USA,1976,-0.0164436159
+csh,m,consumer goods,USA,1977,-0.0175565547
+csh,m,consumer goods,USA,1978,-0.0189498132
+csh,m,consumer goods,USA,1979,-0.0195612805
+csh,m,consumer goods,USA,1980,-0.0196077314
+csh,m,consumer goods,USA,1981,-0.0195233008
+csh,m,consumer goods,USA,1982,-0.0185238842
+csh,m,consumer goods,USA,1983,-0.0189471548
+csh,m,consumer goods,USA,1984,-0.022238772
+csh,m,consumer goods,USA,1985,-0.0239994337
+csh,m,consumer goods,USA,1986,-0.0220924799
+csh,m,consumer goods,USA,1987,-0.0214151822
+csh,m,consumer goods,USA,1988,-0.0196778665
+csh,m,consumer goods,USA,1989,-0.0208170039
+csh,m,consumer goods,USA,1990,-0.0205451595
+csh,m,consumer goods,USA,1991,-0.0175668151
+csh,m,consumer goods,USA,1992,-0.0225082477
+csh,m,consumer goods,USA,1993,-0.0233145529
+csh,m,consumer goods,USA,1994,-0.0236651328
+csh,m,consumer goods,USA,1995,-0.0239218909
+csh,m,consumer goods,USA,1996,-0.0236636986
+csh,m,consumer goods,USA,1997,-0.0260971893
+csh,m,consumer goods,USA,1998,-0.027577602
+csh,m,consumer goods,USA,1999,-0.0279025859
+csh,m,consumer goods,USA,2000,-0.0318922561
+csh,m,consumer goods,USA,2001,-0.033171882
+csh,m,consumer goods,USA,2002,-0.0351774218
+csh,m,consumer goods,USA,2003,-0.0343615449
+csh,m,consumer goods,USA,2004,-0.0344456597
+csh,m,consumer goods,USA,2005,-0.0385168871
+csh,m,consumer goods,USA,2006,-0.0385562407
+csh,m,consumer goods,USA,2007,-0.0372867195
+csh,m,consumer goods,USA,2008,-0.0406365223
+csh,m,consumer goods,USA,2009,-0.0344158557
+csh,m,consumer goods,USA,2010,-0.0366510859
+csh,m,consumer goods,USA,2011,-0.0374780062
+csh,m,consumer goods,USA,2012,-0.03741625
+csh,m,consumer goods,USA,2013,-0.0375522267
+csh,m,consumer goods,USA,2014,-0.038844855
+csh,m,consumer goods,USA,2015,-0.0430510149
+csh,m,consumer goods,USA,2016,-0.041669539
+csh,m,consumer goods,USA,2017,-0.035607699
+csh,m,consumer goods,USA,2018,-0.036116862
+csh,m,consumer goods,USA,2019,-0.0346272869
+csh,x,energy and materials,CHN,1952,0.016488255
+csh,x,energy and materials,CHN,1953,0.0142697249
+csh,x,energy and materials,CHN,1954,0.019139177
+csh,x,energy and materials,CHN,1955,0.0132396289
+csh,x,energy and materials,CHN,1956,0.0214705968
+csh,x,energy and materials,CHN,1957,0.0208683398
+csh,x,energy and materials,CHN,1958,0.0226534979
+csh,x,energy and materials,CHN,1959,0.0309139358
+csh,x,energy and materials,CHN,1960,0.0373074541
+csh,x,energy and materials,CHN,1961,0.030889676
+csh,x,energy and materials,CHN,1962,0.0248818612
+csh,x,energy and materials,CHN,1963,0.0239537403
+csh,x,energy and materials,CHN,1964,0.0229190701
+csh,x,energy and materials,CHN,1965,0.022160735
+csh,x,energy and materials,CHN,1966,0.0201723068
+csh,x,energy and materials,CHN,1967,0.0170819278
+csh,x,energy and materials,CHN,1968,0.0175700643
+csh,x,energy and materials,CHN,1969,0.0154312336
+csh,x,energy and materials,CHN,1970,0.0126108435
+csh,x,energy and materials,CHN,1971,0.0138365362
+csh,x,energy and materials,CHN,1972,0.0171031263
+csh,x,energy and materials,CHN,1973,0.0237903208
+csh,x,energy and materials,CHN,1974,0.0315395398
+csh,x,energy and materials,CHN,1975,0.0302738315
+csh,x,energy and materials,CHN,1976,0.0297692553
+csh,x,energy and materials,CHN,1977,0.0273754876
+csh,x,energy and materials,CHN,1978,0.0285696006
+csh,x,energy and materials,CHN,1979,0.0354097424
+csh,x,energy and materials,CHN,1980,0.0446785554
+csh,x,energy and materials,CHN,1981,0.057243369
+csh,x,energy and materials,CHN,1982,0.057467428
+csh,x,energy and materials,CHN,1983,0.0537806262
+csh,x,energy and materials,CHN,1984,0.057371537
+csh,x,energy and materials,CHN,1985,0.0535260522
+csh,x,energy and materials,CHN,1986,0.0438116804
+csh,x,energy and materials,CHN,1987,0.0491936169
+csh,x,energy and materials,CHN,1988,0.0563220956
+csh,x,energy and materials,CHN,1989,0.0485284057
+csh,x,energy and materials,CHN,1990,0.0569734189
+csh,x,energy and materials,CHN,1991,0.055056601
+csh,x,energy and materials,CHN,1992,0.0654019664
+csh,x,energy and materials,CHN,1993,0.0619936536
+csh,x,energy and materials,CHN,1994,0.0803048951
+csh,x,energy and materials,CHN,1995,0.0841778181
+csh,x,energy and materials,CHN,1996,0.089419968
+csh,x,energy and materials,CHN,1997,0.1138918496
+csh,x,energy and materials,CHN,1998,0.1165200868
+csh,x,energy and materials,CHN,1999,0.1171072861
+csh,x,energy and materials,CHN,2000,0.1357523869
+csh,x,energy and materials,CHN,2001,0.1349686449
+csh,x,energy and materials,CHN,2002,0.1460051737
+csh,x,energy and materials,CHN,2003,0.1641180947
+csh,x,energy and materials,CHN,2004,0.1721966096
+csh,x,energy and materials,CHN,2005,0.1958104743
+csh,x,energy and materials,CHN,2006,0.2225411312
+csh,x,energy and materials,CHN,2007,0.2389417552
+csh,x,energy and materials,CHN,2008,0.2443891627
+csh,x,energy and materials,CHN,2009,0.1969059502
+csh,x,energy and materials,CHN,2010,0.219960454
+csh,x,energy and materials,CHN,2011,0.2429465043
+csh,x,energy and materials,CHN,2012,0.24540372966
+csh,x,energy and materials,CHN,2013,0.25121753651
+csh,x,energy and materials,CHN,2014,0.24882172769
+csh,x,energy and materials,CHN,2015,0.24597518795
+csh,x,energy and materials,CHN,2016,0.22485631297
+csh,x,energy and materials,CHN,2017,0.22767416542
+csh,x,energy and materials,CHN,2018,0.2413195287
+csh,x,energy and materials,CHN,2019,0.23800763626
+csh,x,energy and materials,JPN,1950,0.054748774152
+csh,x,energy and materials,JPN,1951,0.07510236758
+csh,x,energy and materials,JPN,1952,0.07044589838
+csh,x,energy and materials,JPN,1953,0.064066995363
+csh,x,energy and materials,JPN,1954,0.063337223254
+csh,x,energy and materials,JPN,1955,0.06740697192
+csh,x,energy and materials,JPN,1956,0.074002275414
+csh,x,energy and materials,JPN,1957,0.076253087871
+csh,x,energy and materials,JPN,1958,0.07218459792
+csh,x,energy and materials,JPN,1959,0.073982414797
+csh,x,energy and materials,JPN,1960,0.07341619209
+csh,x,energy and materials,JPN,1961,0.067475582383
+csh,x,energy and materials,JPN,1962,0.07035772562
+csh,x,energy and materials,JPN,1963,0.070317571529
+csh,x,energy and materials,JPN,1964,0.074991751683
+csh,x,energy and materials,JPN,1965,0.08791740478
+csh,x,energy and materials,JPN,1966,0.091511311927
+csh,x,energy and materials,JPN,1967,0.086572755486
+csh,x,energy and materials,JPN,1968,0.093999484727
+csh,x,energy and materials,JPN,1969,0.100080560838
+csh,x,energy and materials,JPN,1970,0.10512860612
+csh,x,energy and materials,JPN,1971,0.11466242524
+csh,x,energy and materials,JPN,1972,0.10693096907
+csh,x,energy and materials,JPN,1973,0.10771195267
+csh,x,energy and materials,JPN,1974,0.14671965109
+csh,x,energy and materials,JPN,1975,0.13268344985
+csh,x,energy and materials,JPN,1976,0.14701306344
+csh,x,energy and materials,JPN,1977,0.15276461425
+csh,x,energy and materials,JPN,1978,0.14110378885
+csh,x,energy and materials,JPN,1979,0.13952542251
+csh,x,energy and materials,JPN,1980,0.16065761618
+csh,x,energy and materials,JPN,1981,0.17565052126
+csh,x,energy and materials,JPN,1982,0.17305202112
+csh,x,energy and materials,JPN,1983,0.18383134667
+csh,x,energy and materials,JPN,1984,0.21165869511
+csh,x,energy and materials,JPN,1985,0.21322368903
+csh,x,energy and materials,JPN,1986,0.18986313616
+csh,x,energy and materials,JPN,1987,0.17722114894
+csh,x,energy and materials,JPN,1988,0.17430596602
+csh,x,energy and materials,JPN,1989,0.16720720487
+csh,x,energy and materials,JPN,1990,0.15652092092
+csh,x,energy and materials,JPN,1991,0.15204049335
+csh,x,energy and materials,JPN,1992,0.16703334515
+csh,x,energy and materials,JPN,1993,0.16858425565
+csh,x,energy and materials,JPN,1994,0.17436229809
+csh,x,energy and materials,JPN,1995,0.17737616442
+csh,x,energy and materials,JPN,1996,0.1623579854
+csh,x,energy and materials,JPN,1997,0.17519117561
+csh,x,energy and materials,JPN,1998,0.17547899893
+csh,x,energy and materials,JPN,1999,0.19046791896
+csh,x,energy and materials,JPN,2000,0.21868211474
+csh,x,energy and materials,JPN,2001,0.19190497646
+csh,x,energy and materials,JPN,2002,0.19601607812
+csh,x,energy and materials,JPN,2003,0.20300839705
+csh,x,energy and materials,JPN,2004,0.22403965584
+csh,x,energy and materials,JPN,2005,0.24147788125
+csh,x,energy and materials,JPN,2006,0.25676523898
+csh,x,energy and materials,JPN,2007,0.26179724757
+csh,x,energy and materials,JPN,2008,0.27603309889
+csh,x,energy and materials,JPN,2009,0.23002664874
+csh,x,energy and materials,JPN,2010,0.28469085053
+csh,x,energy and materials,JPN,2011,0.29204260187
+csh,x,energy and materials,JPN,2012,0.28150321992
+csh,x,energy and materials,JPN,2013,0.24605576562
+csh,x,energy and materials,JPN,2014,0.23308117192
+csh,x,energy and materials,JPN,2015,0.22605347865
+csh,x,energy and materials,JPN,2016,0.23645475146
+csh,x,energy and materials,JPN,2017,0.25488307121
+csh,x,energy and materials,JPN,2018,0.25819554905
+csh,x,energy and materials,JPN,2019,0.24506374597
+csh,x,energy and materials,USA,1950,0.0615047917
+csh,x,energy and materials,USA,1951,0.0752521014
+csh,x,energy and materials,USA,1952,0.0673582427
+csh,x,energy and materials,USA,1953,0.0573835209
+csh,x,energy and materials,USA,1954,0.0596168649
+csh,x,energy and materials,USA,1955,0.0610730294
+csh,x,energy and materials,USA,1956,0.0693141765
+csh,x,energy and materials,USA,1957,0.0728887817
+csh,x,energy and materials,USA,1958,0.0614242721
+csh,x,energy and materials,USA,1959,0.0628864205
+csh,x,energy and materials,USA,1960,0.071224622
+csh,x,energy and materials,USA,1961,0.067533836
+csh,x,energy and materials,USA,1962,0.0646795347
+csh,x,energy and materials,USA,1963,0.0676830866
+csh,x,energy and materials,USA,1964,0.0722826865
+csh,x,energy and materials,USA,1965,0.0662317002
+csh,x,energy and materials,USA,1966,0.0668986904
+csh,x,energy and materials,USA,1967,0.0638206085
+csh,x,energy and materials,USA,1968,0.0644404398
+csh,x,energy and materials,USA,1969,0.0656531575
+csh,x,energy and materials,USA,1970,0.0712865798
+csh,x,energy and materials,USA,1971,0.0670188433
+csh,x,energy and materials,USA,1972,0.0680191184
+csh,x,energy and materials,USA,1973,0.0847495173
+csh,x,energy and materials,USA,1974,0.1056983373
+csh,x,energy and materials,USA,1975,0.102566857
+csh,x,energy and materials,USA,1976,0.100607213
+csh,x,energy and materials,USA,1977,0.0948346569
+csh,x,energy and materials,USA,1978,0.0998707738
+csh,x,energy and materials,USA,1979,0.1137606298
+csh,x,energy and materials,USA,1980,0.1295085615
+csh,x,energy and materials,USA,1981,0.1215589275
+csh,x,energy and materials,USA,1982,0.1080905543
+csh,x,energy and materials,USA,1983,0.0944172274
+csh,x,energy and materials,USA,1984,0.0939883335
+csh,x,energy and materials,USA,1985,0.082910551
+csh,x,energy and materials,USA,1986,0.0697059837
+csh,x,energy and materials,USA,1987,0.0728570711
+csh,x,energy and materials,USA,1988,0.0818018682
+csh,x,energy and materials,USA,1989,0.092249545
+csh,x,energy and materials,USA,1990,0.0938314949
+csh,x,energy and materials,USA,1991,0.0905958236
+csh,x,energy and materials,USA,1992,0.1032426385
+csh,x,energy and materials,USA,1993,0.1019367174
+csh,x,energy and materials,USA,1994,0.1041666933
+csh,x,energy and materials,USA,1995,0.1095471288
+csh,x,energy and materials,USA,1996,0.1122645175
+csh,x,energy and materials,USA,1997,0.1243939881
+csh,x,energy and materials,USA,1998,0.1226042731
+csh,x,energy and materials,USA,1999,0.1198576292
+csh,x,energy and materials,USA,2000,0.1361693465
+csh,x,energy and materials,USA,2001,0.1288038052
+csh,x,energy and materials,USA,2002,0.12051905182
+csh,x,energy and materials,USA,2003,0.1156441536
+csh,x,energy and materials,USA,2004,0.1204129843
+csh,x,energy and materials,USA,2005,0.1288299387
+csh,x,energy and materials,USA,2006,0.1383496461
+csh,x,energy and materials,USA,2007,0.1420429213
+csh,x,energy and materials,USA,2008,0.1528640435
+csh,x,energy and materials,USA,2009,0.1369060863
+csh,x,energy and materials,USA,2010,0.1589926017
+csh,x,energy and materials,USA,2011,0.1747834537
+csh,x,energy and materials,USA,2012,0.1755628268
+csh,x,energy and materials,USA,2013,0.1708164572
+csh,x,energy and materials,USA,2014,0.1679298122
+csh,x,energy and materials,USA,2015,0.1609539235
+csh,x,energy and materials,USA,2016,0.153176667
+csh,x,energy and materials,USA,2017,0.154093214
+csh,x,energy and materials,USA,2018,0.160849267
+csh,x,energy and materials,USA,2019,0.152730424
+csh,m,energy and materials,CHN,1952,-0.016279218153
+csh,m,energy and materials,CHN,1953,-0.014807895107
+csh,m,energy and materials,CHN,1954,-0.016945623073
+csh,m,energy and materials,CHN,1955,-0.016414328104
+csh,m,energy and materials,CHN,1956,-0.016245643305
+csh,m,energy and materials,CHN,1957,-0.016242908572
+csh,m,energy and materials,CHN,1958,-0.01625798459
+csh,m,energy and materials,CHN,1959,-0.02163681899
+csh,m,energy and materials,CHN,1960,-0.033129372137
+csh,m,energy and materials,CHN,1961,-0.02434125344
+csh,m,energy and materials,CHN,1962,-0.015696455496
+csh,m,energy and materials,CHN,1963,-0.014417689261
+csh,m,energy and materials,CHN,1964,-0.014592260985
+csh,m,energy and materials,CHN,1965,-0.016787116144
+csh,m,energy and materials,CHN,1966,-0.017054020595
+csh,m,energy and materials,CHN,1967,-0.014057048474
+csh,m,energy and materials,CHN,1968,-0.014328186994
+csh,m,energy and materials,CHN,1969,-0.011698890036
+csh,m,energy and materials,CHN,1970,-0.011607306953
+csh,m,energy and materials,CHN,1971,-0.010425551332
+csh,m,energy and materials,CHN,1972,-0.012847140016
+csh,m,energy and materials,CHN,1973,-0.0192031867
+csh,m,energy and materials,CHN,1974,-0.030929530164
+csh,m,energy and materials,CHN,1975,-0.028884289365
+csh,m,energy and materials,CHN,1976,-0.026528339326
+csh,m,energy and materials,CHN,1977,-0.025060468383
+csh,m,energy and materials,CHN,1978,-0.028720588949
+csh,m,energy and materials,CHN,1979,-0.03556804993
+csh,m,energy and materials,CHN,1980,-0.04497678096
+csh,m,energy and materials,CHN,1981,-0.05399546078
+csh,m,energy and materials,CHN,1982,-0.04580519819
+csh,m,energy and materials,CHN,1983,-0.04477193066
+csh,m,energy and materials,CHN,1984,-0.05136364764
+csh,m,energy and materials,CHN,1985,-0.06551838253
+csh,m,energy and materials,CHN,1986,-0.05120356796
+csh,m,energy and materials,CHN,1987,-0.04595368327
+csh,m,energy and materials,CHN,1988,-0.06061112938
+csh,m,energy and materials,CHN,1989,-0.05391404384
+csh,m,energy and materials,CHN,1990,-0.04657420771
+csh,m,energy and materials,CHN,1991,-0.0491768558
+csh,m,energy and materials,CHN,1992,-0.0665407903
+csh,m,energy and materials,CHN,1993,-0.0817589325
+csh,m,energy and materials,CHN,1994,-0.0854902769
+csh,m,energy and materials,CHN,1995,-0.0928389112
+csh,m,energy and materials,CHN,1996,-0.09975736
+csh,m,energy and materials,CHN,1997,-0.1134866166
+csh,m,energy and materials,CHN,1998,-0.1120275892
+csh,m,energy and materials,CHN,1999,-0.121815813
+csh,m,energy and materials,CHN,2000,-0.1441561796
+csh,m,energy and materials,CHN,2001,-0.1436697404
+csh,m,energy and materials,CHN,2002,-0.1500692326
+csh,m,energy and materials,CHN,2003,-0.1718641468
+csh,m,energy and materials,CHN,2004,-0.1800998854
+csh,m,energy and materials,CHN,2005,-0.1808433111
+csh,m,energy and materials,CHN,2006,-0.191235352
+csh,m,energy and materials,CHN,2007,-0.208726976
+csh,m,energy and materials,CHN,2008,-0.220381531
+csh,m,energy and materials,CHN,2009,-0.196784181
+csh,m,energy and materials,CHN,2010,-0.221963987
+csh,m,energy and materials,CHN,2011,-0.261375081
+csh,m,energy and materials,CHN,2012,-0.258010744
+csh,m,energy and materials,CHN,2013,-0.269087199
+csh,m,energy and materials,CHN,2014,-0.260728715
+csh,m,energy and materials,CHN,2015,-0.230778841
+csh,m,energy and materials,CHN,2016,-0.22165123
+csh,m,energy and materials,CHN,2017,-0.24569671
+csh,m,energy and materials,CHN,2018,-0.278562522
+csh,m,energy and materials,CHN,2019,-0.263168852
+csh,m,energy and materials,JPN,1950,-0.08976187
+csh,m,energy and materials,JPN,1951,-0.135319117
+csh,m,energy and materials,JPN,1952,-0.136636218
+csh,m,energy and materials,JPN,1953,-0.161298225
+csh,m,energy and materials,JPN,1954,-0.157535447
+csh,m,energy and materials,JPN,1955,-0.146660817
+csh,m,energy and materials,JPN,1956,-0.172521734
+csh,m,energy and materials,JPN,1957,-0.197517951
+csh,m,energy and materials,JPN,1958,-0.147325535
+csh,m,energy and materials,JPN,1959,-0.162366447
+csh,m,energy and materials,JPN,1960,-0.193605026
+csh,m,energy and materials,JPN,1961,-0.21278153
+csh,m,energy and materials,JPN,1962,-0.175549209
+csh,m,energy and materials,JPN,1963,-0.190499449
+csh,m,energy and materials,JPN,1964,-0.194795951
+csh,m,energy and materials,JPN,1965,-0.184189923
+csh,m,energy and materials,JPN,1966,-0.185745006
+csh,m,energy and materials,JPN,1967,-0.198619488
+csh,m,energy and materials,JPN,1968,-0.190483542
+csh,m,energy and materials,JPN,1969,-0.185687861
+csh,m,energy and materials,JPN,1970,-0.203211223
+csh,m,energy and materials,JPN,1971,-0.196754364
+csh,m,energy and materials,JPN,1972,-0.189889125
+csh,m,energy and materials,JPN,1973,-0.227940236
+csh,m,energy and materials,JPN,1974,-0.296311031
+csh,m,energy and materials,JPN,1975,-0.239233953
+csh,m,energy and materials,JPN,1976,-0.236612155
+csh,m,energy and materials,JPN,1977,-0.22535279
+csh,m,energy and materials,JPN,1978,-0.212717463
+csh,m,energy and materials,JPN,1979,-0.240419147
+csh,m,energy and materials,JPN,1980,-0.238526618
+csh,m,energy and materials,JPN,1981,-0.236662924
+csh,m,energy and materials,JPN,1982,-0.226471512
+csh,m,energy and materials,JPN,1983,-0.217398807
+csh,m,energy and materials,JPN,1984,-0.236538308
+csh,m,energy and materials,JPN,1985,-0.216425762
+csh,m,energy and materials,JPN,1986,-0.164333694
+csh,m,energy and materials,JPN,1987,-0.161793364
+csh,m,energy and materials,JPN,1988,-0.163845681
+csh,m,energy and materials,JPN,1989,-0.165178555
+csh,m,energy and materials,JPN,1990,-0.162223135
+csh,m,energy and materials,JPN,1991,-0.1437111
+csh,m,energy and materials,JPN,1992,-0.146857484
+csh,m,energy and materials,JPN,1993,-0.141883163
+csh,m,energy and materials,JPN,1994,-0.148770785
+csh,m,energy and materials,JPN,1995,-0.161438961
+csh,m,energy and materials,JPN,1996,-0.161833146
+csh,m,energy and materials,JPN,1997,-0.164660917
+csh,m,energy and materials,JPN,1998,-0.141667955
+csh,m,energy and materials,JPN,1999,-0.153361375
+csh,m,energy and materials,JPN,2000,-0.18370843
+csh,m,energy and materials,JPN,2001,-0.181559268
+csh,m,energy and materials,JPN,2002,-0.177670134
+csh,m,energy and materials,JPN,2003,-0.186887159
+csh,m,energy and materials,JPN,2004,-0.201877377
+csh,m,energy and materials,JPN,2005,-0.226577381
+csh,m,energy and materials,JPN,2006,-0.244449755
+csh,m,energy and materials,JPN,2007,-0.24588173
+csh,m,energy and materials,JPN,2008,-0.295497923
+csh,m,energy and materials,JPN,2009,-0.2369044
+csh,m,energy and materials,JPN,2010,-0.286595325
+csh,m,energy and materials,JPN,2011,-0.34158754
+csh,m,energy and materials,JPN,2012,-0.356339949
+csh,m,energy and materials,JPN,2013,-0.325021752
+csh,m,energy and materials,JPN,2014,-0.321980611
+csh,m,energy and materials,JPN,2015,-0.238609093
+csh,m,energy and materials,JPN,2016,-0.234680585
+csh,m,energy and materials,JPN,2017,-0.272537912
+csh,m,energy and materials,JPN,2018,-0.299629558
+csh,m,energy and materials,JPN,2019,-0.287946254
+csh,m,energy and materials,USA,1950,-0.0570851749
+csh,m,energy and materials,USA,1951,-0.061806223
+csh,m,energy and materials,USA,1952,-0.0619146208
+csh,m,energy and materials,USA,1953,-0.0600304869
+csh,m,energy and materials,USA,1954,-0.0565314903
+csh,m,energy and materials,USA,1955,-0.0586087656
+csh,m,energy and materials,USA,1956,-0.0613004822
+csh,m,energy and materials,USA,1957,-0.0624616844
+csh,m,energy and materials,USA,1958,-0.0615519386
+csh,m,energy and materials,USA,1959,-0.0624012682
+csh,m,energy and materials,USA,1960,-0.0685372545
+csh,m,energy and materials,USA,1961,-0.0639430401
+csh,m,energy and materials,USA,1962,-0.0609219391
+csh,m,energy and materials,USA,1963,-0.0600424114
+csh,m,energy and materials,USA,1964,-0.059643251
+csh,m,energy and materials,USA,1965,-0.0617188909
+csh,m,energy and materials,USA,1966,-0.0662285133
+csh,m,energy and materials,USA,1967,-0.065406096
+csh,m,energy and materials,USA,1968,-0.074225868
+csh,m,energy and materials,USA,1969,-0.074671475
+csh,m,energy and materials,USA,1970,-0.077211234
+csh,m,energy and materials,USA,1971,-0.079056119
+csh,m,energy and materials,USA,1972,-0.083839699
+csh,m,energy and materials,USA,1973,-0.088411859
+csh,m,energy and materials,USA,1974,-0.108355256
+csh,m,energy and materials,USA,1975,-0.094946952
+csh,m,energy and materials,USA,1976,-0.108519623
+csh,m,energy and materials,USA,1977,-0.114800562
+csh,m,energy and materials,USA,1978,-0.123269236
+csh,m,energy and materials,USA,1979,-0.127976786
+csh,m,energy and materials,USA,1980,-0.129564397
+csh,m,energy and materials,USA,1981,-0.129496531
+csh,m,energy and materials,USA,1982,-0.122083722
+csh,m,energy and materials,USA,1983,-0.125280093
+csh,m,energy and materials,USA,1984,-0.146523833
+csh,m,energy and materials,USA,1985,-0.140631178
+csh,m,energy and materials,USA,1986,-0.122695788
+csh,m,energy and materials,USA,1987,-0.1168906107
+csh,m,energy and materials,USA,1988,-0.1146602261
+csh,m,energy and materials,USA,1989,-0.1142487844
+csh,m,energy and materials,USA,1990,-0.117068151
+csh,m,energy and materials,USA,1991,-0.107094939
+csh,m,energy and materials,USA,1992,-0.1198359682
+csh,m,energy and materials,USA,1993,-0.1274389115
+csh,m,energy and materials,USA,1994,-0.1330831596
+csh,m,energy and materials,USA,1995,-0.1363351699
+csh,m,energy and materials,USA,1996,-0.1414838608
+csh,m,energy and materials,USA,1997,-0.154347036
+csh,m,energy and materials,USA,1998,-0.1565822756
+csh,m,energy and materials,USA,1999,-0.1670351271
+csh,m,energy and materials,USA,2000,-0.196823982
+csh,m,energy and materials,USA,2001,-0.191026841
+csh,m,energy and materials,USA,2002,-0.191343826
+csh,m,energy and materials,USA,2003,-0.1911158
+csh,m,energy and materials,USA,2004,-0.206620254
+csh,m,energy and materials,USA,2005,-0.243779594
+csh,m,energy and materials,USA,2006,-0.248069181
+csh,m,energy and materials,USA,2007,-0.241393053
+csh,m,energy and materials,USA,2008,-0.239252338
+csh,m,energy and materials,USA,2009,-0.191035356
+csh,m,energy and materials,USA,2010,-0.221918885
+csh,m,energy and materials,USA,2011,-0.249207932
+csh,m,energy and materials,USA,2012,-0.246900558
+csh,m,energy and materials,USA,2013,-0.232163618
+csh,m,energy and materials,USA,2014,-0.232041084
+csh,m,energy and materials,USA,2015,-0.22307361
+csh,m,energy and materials,USA,2016,-0.211142747
+csh,m,energy and materials,USA,2017,-0.220584424
+csh,m,energy and materials,USA,2018,-0.226623439
+csh,m,energy and materials,USA,2019,-0.216491419
+csh,x,capital goods,CHN,1952,0.000179805195
+csh,x,capital goods,CHN,1953,0.000156831275
+csh,x,capital goods,CHN,1954,0.000206874009
+csh,x,capital goods,CHN,1955,0.000149904548
+csh,x,capital goods,CHN,1956,0.000245186329
+csh,x,capital goods,CHN,1957,0.000242156272
+csh,x,capital goods,CHN,1958,0.000270820714
+csh,x,capital goods,CHN,1959,0.00036695927
+csh,x,capital goods,CHN,1960,0.0004312864
+csh,x,capital goods,CHN,1961,0.00036113694
+csh,x,capital goods,CHN,1962,0.000308646278
+csh,x,capital goods,CHN,1963,0.00028452463
+csh,x,capital goods,CHN,1964,0.000272192175
+csh,x,capital goods,CHN,1965,0.000272553536
+csh,x,capital goods,CHN,1966,0.000242277569
+csh,x,capital goods,CHN,1967,0.000209123754
+csh,x,capital goods,CHN,1968,0.000212794151
+csh,x,capital goods,CHN,1969,0.000189601287
+csh,x,capital goods,CHN,1970,0.000152699626
+csh,x,capital goods,CHN,1971,0.000164449245
+csh,x,capital goods,CHN,1972,0.000200512643
+csh,x,capital goods,CHN,1973,0.000263935994
+csh,x,capital goods,CHN,1974,0.000335209961
+csh,x,capital goods,CHN,1975,0.000327762552
+csh,x,capital goods,CHN,1976,0.000321775356
+csh,x,capital goods,CHN,1977,0.00030254396
+csh,x,capital goods,CHN,1978,0.000302730516
+csh,x,capital goods,CHN,1979,0.00036103658
+csh,x,capital goods,CHN,1980,0.00044353789
+csh,x,capital goods,CHN,1981,0.00056409917
+csh,x,capital goods,CHN,1982,0.0005680981
+csh,x,capital goods,CHN,1983,0.00051550777
+csh,x,capital goods,CHN,1984,0.00053977601
+csh,x,capital goods,CHN,1985,0.00044577775
+csh,x,capital goods,CHN,1986,0.000469780722
+csh,x,capital goods,CHN,1987,0.00068742015
+csh,x,capital goods,CHN,1988,0.00110789754
+csh,x,capital goods,CHN,1989,0.00123456545
+csh,x,capital goods,CHN,1990,0.00163557065
+csh,x,capital goods,CHN,1991,0.00184166889
+csh,x,capital goods,CHN,1992,0.00241312899
+csh,x,capital goods,CHN,1993,0.0026236798
+csh,x,capital goods,CHN,1994,0.00453537855
+csh,x,capital goods,CHN,1995,0.0064427012
+csh,x,capital goods,CHN,1996,0.00895288097
+csh,x,capital goods,CHN,1997,0.0129246791
+csh,x,capital goods,CHN,1998,0.016119765
+csh,x,capital goods,CHN,1999,0.0181655495
+csh,x,capital goods,CHN,2000,0.0272144585
+csh,x,capital goods,CHN,2001,0.0292347575
+csh,x,capital goods,CHN,2002,0.036866628
+csh,x,capital goods,CHN,2003,0.047532645
+csh,x,capital goods,CHN,2004,0.0551826198
+csh,x,capital goods,CHN,2005,0.0626101946
+csh,x,capital goods,CHN,2006,0.0735237549
+csh,x,capital goods,CHN,2007,0.081186566
+csh,x,capital goods,CHN,2008,0.0893800401
+csh,x,capital goods,CHN,2009,0.0767734745
+csh,x,capital goods,CHN,2010,0.085503578
+csh,x,capital goods,CHN,2011,0.089842968
+csh,x,capital goods,CHN,2012,0.092810497
+csh,x,capital goods,CHN,2013,0.094212168
+csh,x,capital goods,CHN,2014,0.088238257
+csh,x,capital goods,CHN,2015,0.1008623452
+csh,x,capital goods,CHN,2016,0.0874185474
+csh,x,capital goods,CHN,2017,0.099708741
+csh,x,capital goods,CHN,2018,0.103374649
+csh,x,capital goods,CHN,2019,0.102021622
+csh,x,capital goods,JPN,1950,0.029701447
+csh,x,capital goods,JPN,1951,0.041007245
+csh,x,capital goods,JPN,1952,0.038381235
+csh,x,capital goods,JPN,1953,0.034994487
+csh,x,capital goods,JPN,1954,0.034473591
+csh,x,capital goods,JPN,1955,0.036644533
+csh,x,capital goods,JPN,1956,0.040232327
+csh,x,capital goods,JPN,1957,0.04151674
+csh,x,capital goods,JPN,1958,0.03959195
+csh,x,capital goods,JPN,1959,0.040496975
+csh,x,capital goods,JPN,1960,0.040246848
+csh,x,capital goods,JPN,1961,0.03702813
+csh,x,capital goods,JPN,1962,0.038672942
+csh,x,capital goods,JPN,1963,0.038193721
+csh,x,capital goods,JPN,1964,0.040679949
+csh,x,capital goods,JPN,1965,0.048056895
+csh,x,capital goods,JPN,1966,0.049660789
+csh,x,capital goods,JPN,1967,0.047022354
+csh,x,capital goods,JPN,1968,0.050916329
+csh,x,capital goods,JPN,1969,0.054233496
+csh,x,capital goods,JPN,1970,0.05684503
+csh,x,capital goods,JPN,1971,0.062125513
+csh,x,capital goods,JPN,1972,0.057570409
+csh,x,capital goods,JPN,1973,0.057298696
+csh,x,capital goods,JPN,1974,0.078098967
+csh,x,capital goods,JPN,1975,0.071043629
+csh,x,capital goods,JPN,1976,0.078645546
+csh,x,capital goods,JPN,1977,0.081464942
+csh,x,capital goods,JPN,1978,0.074751441
+csh,x,capital goods,JPN,1979,0.073624477
+csh,x,capital goods,JPN,1980,0.084427714
+csh,x,capital goods,JPN,1981,0.092083465
+csh,x,capital goods,JPN,1982,0.090724759
+csh,x,capital goods,JPN,1983,0.094905846
+csh,x,capital goods,JPN,1984,0.107970711
+csh,x,capital goods,JPN,1985,0.107035793
+csh,x,capital goods,JPN,1986,0.10421903
+csh,x,capital goods,JPN,1987,0.098059546
+csh,x,capital goods,JPN,1988,0.096526313
+csh,x,capital goods,JPN,1989,0.095028218
+csh,x,capital goods,JPN,1990,0.089144271
+csh,x,capital goods,JPN,1991,0.088432092
+csh,x,capital goods,JPN,1992,0.092877474
+csh,x,capital goods,JPN,1993,0.097795002
+csh,x,capital goods,JPN,1994,0.101109367
+csh,x,capital goods,JPN,1995,0.102002058
+csh,x,capital goods,JPN,1996,0.094811264
+csh,x,capital goods,JPN,1997,0.104253527
+csh,x,capital goods,JPN,1998,0.106584393
+csh,x,capital goods,JPN,1999,0.114918847
+csh,x,capital goods,JPN,2000,0.137909893
+csh,x,capital goods,JPN,2001,0.117963523
+csh,x,capital goods,JPN,2002,0.122159842
+csh,x,capital goods,JPN,2003,0.127573125
+csh,x,capital goods,JPN,2004,0.141098667
+csh,x,capital goods,JPN,2005,0.136555351
+csh,x,capital goods,JPN,2006,0.143528268
+csh,x,capital goods,JPN,2007,0.143321443
+csh,x,capital goods,JPN,2008,0.145564552
+csh,x,capital goods,JPN,2009,0.11752471
+csh,x,capital goods,JPN,2010,0.149684735
+csh,x,capital goods,JPN,2011,0.149213478
+csh,x,capital goods,JPN,2012,0.147174641
+csh,x,capital goods,JPN,2013,0.125630304
+csh,x,capital goods,JPN,2014,0.12245135
+csh,x,capital goods,JPN,2015,0.118657436
+csh,x,capital goods,JPN,2016,0.127773777
+csh,x,capital goods,JPN,2017,0.132280253
+csh,x,capital goods,JPN,2018,0.132007033
+csh,x,capital goods,JPN,2019,0.125457447
+csh,x,capital goods,USA,1950,0.0155681483
+csh,x,capital goods,USA,1951,0.019374497
+csh,x,capital goods,USA,1952,0.0173291224
+csh,x,capital goods,USA,1953,0.0148231071
+csh,x,capital goods,USA,1954,0.0152702271
+csh,x,capital goods,USA,1955,0.0157078524
+csh,x,capital goods,USA,1956,0.0178728958
+csh,x,capital goods,USA,1957,0.0188833935
+csh,x,capital goods,USA,1958,0.0161159343
+csh,x,capital goods,USA,1959,0.0164052342
+csh,x,capital goods,USA,1960,0.0185564462
+csh,x,capital goods,USA,1961,0.0176615016
+csh,x,capital goods,USA,1962,0.0171675396
+csh,x,capital goods,USA,1963,0.0175060375
+csh,x,capital goods,USA,1964,0.0186617353
+csh,x,capital goods,USA,1965,0.0173734866
+csh,x,capital goods,USA,1966,0.0173250336
+csh,x,capital goods,USA,1967,0.0166127091
+csh,x,capital goods,USA,1968,0.016697811
+csh,x,capital goods,USA,1969,0.0170754755
+csh,x,capital goods,USA,1970,0.0184360921
+csh,x,capital goods,USA,1971,0.0173446858
+csh,x,capital goods,USA,1972,0.0174070217
+csh,x,capital goods,USA,1973,0.0211638527
+csh,x,capital goods,USA,1974,0.0261236676
+csh,x,capital goods,USA,1975,0.0256400857
+csh,x,capital goods,USA,1976,0.0251096853
+csh,x,capital goods,USA,1977,0.0236690602
+csh,x,capital goods,USA,1978,0.0245861712
+csh,x,capital goods,USA,1979,0.0276513216
+csh,x,capital goods,USA,1980,0.03108334
+csh,x,capital goods,USA,1981,0.029036489
+csh,x,capital goods,USA,1982,0.0258871105
+csh,x,capital goods,USA,1983,0.0220213997
+csh,x,capital goods,USA,1984,0.0215272277
+csh,x,capital goods,USA,1985,0.025901955
+csh,x,capital goods,USA,1986,0.0210865033
+csh,x,capital goods,USA,1987,0.0215328317
+csh,x,capital goods,USA,1988,0.026382159
+csh,x,capital goods,USA,1989,0.0298528996
+csh,x,capital goods,USA,1990,0.030058127
+csh,x,capital goods,USA,1991,0.032351599
+csh,x,capital goods,USA,1992,0.033940577
+csh,x,capital goods,USA,1993,0.034400379
+csh,x,capital goods,USA,1994,0.036499409
+csh,x,capital goods,USA,1995,0.037793103
+csh,x,capital goods,USA,1996,0.040870554
+csh,x,capital goods,USA,1997,0.048058259
+csh,x,capital goods,USA,1998,0.049643477
+csh,x,capital goods,USA,1999,0.048793662
+csh,x,capital goods,USA,2000,0.057538875
+csh,x,capital goods,USA,2001,0.05401183
+csh,x,capital goods,USA,2002,0.048592727
+csh,x,capital goods,USA,2003,0.044511785
+csh,x,capital goods,USA,2004,0.045953765
+csh,x,capital goods,USA,2005,0.049062176
+csh,x,capital goods,USA,2006,0.054167148
+csh,x,capital goods,USA,2007,0.052625147
+csh,x,capital goods,USA,2008,0.0521458
+csh,x,capital goods,USA,2009,0.042664309
+csh,x,capital goods,USA,2010,0.048697248
+csh,x,capital goods,USA,2011,0.050584384
+csh,x,capital goods,USA,2012,0.053236263
+csh,x,capital goods,USA,2013,0.051967753
+csh,x,capital goods,USA,2014,0.051197268
+csh,x,capital goods,USA,2015,0.054666398
+csh,x,capital goods,USA,2016,0.05264146
+csh,x,capital goods,USA,2017,0.058074327
+csh,x,capital goods,USA,2018,0.055377593
+csh,x,capital goods,USA,2019,0.052955938
+csh,m,capital goods,CHN,1952,-0.00218367934
+csh,m,capital goods,CHN,1953,-0.00198882893
+csh,m,capital goods,CHN,1954,-0.00228966055
+csh,m,capital goods,CHN,1955,-0.00222174972
+csh,m,capital goods,CHN,1956,-0.00219639651
+csh,m,capital goods,CHN,1957,-0.00219754143
+csh,m,capital goods,CHN,1958,-0.00221266316
+csh,m,capital goods,CHN,1959,-0.00294777615
+csh,m,capital goods,CHN,1960,-0.004568021
+csh,m,capital goods,CHN,1961,-0.00338191032
+csh,m,capital goods,CHN,1962,-0.00215196771
+csh,m,capital goods,CHN,1963,-0.00198931498
+csh,m,capital goods,CHN,1964,-0.00201321717
+csh,m,capital goods,CHN,1965,-0.00231356649
+csh,m,capital goods,CHN,1966,-0.00235288338
+csh,m,capital goods,CHN,1967,-0.00194676972
+csh,m,capital goods,CHN,1968,-0.00198901158
+csh,m,capital goods,CHN,1969,-0.00162352731
+csh,m,capital goods,CHN,1970,-0.00160812144
+csh,m,capital goods,CHN,1971,-0.00144986117
+csh,m,capital goods,CHN,1972,-0.00179250772
+csh,m,capital goods,CHN,1973,-0.00267396559
+csh,m,capital goods,CHN,1974,-0.0042747984
+csh,m,capital goods,CHN,1975,-0.003993644
+csh,m,capital goods,CHN,1976,-0.003673921
+csh,m,capital goods,CHN,1977,-0.0034820886
+csh,m,capital goods,CHN,1978,-0.0040050361
+csh,m,capital goods,CHN,1979,-0.0049417737
+csh,m,capital goods,CHN,1980,-0.0061948429
+csh,m,capital goods,CHN,1981,-0.007439357
+csh,m,capital goods,CHN,1982,-0.0063105407
+csh,m,capital goods,CHN,1983,-0.0061587854
+csh,m,capital goods,CHN,1984,-0.0070265729
+csh,m,capital goods,CHN,1985,-0.0150807476
+csh,m,capital goods,CHN,1986,-0.0125767436
+csh,m,capital goods,CHN,1987,-0.0090174481
+csh,m,capital goods,CHN,1988,-0.0106993139
+csh,m,capital goods,CHN,1989,-0.0088231417
+csh,m,capital goods,CHN,1990,-0.0073711178
+csh,m,capital goods,CHN,1991,-0.0075086947
+csh,m,capital goods,CHN,1992,-0.0132001987
+csh,m,capital goods,CHN,1993,-0.0195641107
+csh,m,capital goods,CHN,1994,-0.0217507882
+csh,m,capital goods,CHN,1995,-0.0202579291
+csh,m,capital goods,CHN,1996,-0.0205131714
+csh,m,capital goods,CHN,1997,-0.0221389423
+csh,m,capital goods,CHN,1998,-0.0248589924
+csh,m,capital goods,CHN,1999,-0.0294528287
+csh,m,capital goods,CHN,2000,-0.037045611
+csh,m,capital goods,CHN,2001,-0.0394207284
+csh,m,capital goods,CHN,2002,-0.049338359
+csh,m,capital goods,CHN,2003,-0.0607659169
+csh,m,capital goods,CHN,2004,-0.0622079065
+csh,m,capital goods,CHN,2005,-0.060052983
+csh,m,capital goods,CHN,2006,-0.0671849253
+csh,m,capital goods,CHN,2007,-0.0552852832
+csh,m,capital goods,CHN,2008,-0.0639044481
+csh,m,capital goods,CHN,2009,-0.0604612446
+csh,m,capital goods,CHN,2010,-0.0661455763
+csh,m,capital goods,CHN,2011,-0.071268461
+csh,m,capital goods,CHN,2012,-0.0684388816
+csh,m,capital goods,CHN,2013,-0.0782864545
+csh,m,capital goods,CHN,2014,-0.073495059
+csh,m,capital goods,CHN,2015,-0.0783188437
+csh,m,capital goods,CHN,2016,-0.0776825032
+csh,m,capital goods,CHN,2017,-0.055610987
+csh,m,capital goods,CHN,2018,-0.058332027
+csh,m,capital goods,CHN,2019,-0.055189093
+csh,m,capital goods,JPN,1950,-0.0036609018
+csh,m,capital goods,JPN,1951,-0.0054972788
+csh,m,capital goods,JPN,1952,-0.0055734098
+csh,m,capital goods,JPN,1953,-0.0066005974
+csh,m,capital goods,JPN,1954,-0.0064803548
+csh,m,capital goods,JPN,1955,-0.0060375357
+csh,m,capital goods,JPN,1956,-0.0070867617
+csh,m,capital goods,JPN,1957,-0.0081102168
+csh,m,capital goods,JPN,1958,-0.0061343384
+csh,m,capital goods,JPN,1959,-0.0067612261
+csh,m,capital goods,JPN,1960,-0.00864089
+csh,m,capital goods,JPN,1961,-0.0094586312
+csh,m,capital goods,JPN,1962,-0.0074726589
+csh,m,capital goods,JPN,1963,-0.0080980908
+csh,m,capital goods,JPN,1964,-0.0082900601
+csh,m,capital goods,JPN,1965,-0.0078516498
+csh,m,capital goods,JPN,1966,-0.0079544468
+csh,m,capital goods,JPN,1967,-0.0085736648
+csh,m,capital goods,JPN,1968,-0.0082581588
+csh,m,capital goods,JPN,1969,-0.0080662167
+csh,m,capital goods,JPN,1970,-0.0088698508
+csh,m,capital goods,JPN,1971,-0.0086301884
+csh,m,capital goods,JPN,1972,-0.0084055201
+csh,m,capital goods,JPN,1973,-0.0100913565
+csh,m,capital goods,JPN,1974,-0.0127518787
+csh,m,capital goods,JPN,1975,-0.0103146007
+csh,m,capital goods,JPN,1976,-0.0101713617
+csh,m,capital goods,JPN,1977,-0.0098082327
+csh,m,capital goods,JPN,1978,-0.0094437981
+csh,m,capital goods,JPN,1979,-0.0105283549
+csh,m,capital goods,JPN,1980,-0.0102108289
+csh,m,capital goods,JPN,1981,-0.0101135376
+csh,m,capital goods,JPN,1982,-0.0097828382
+csh,m,capital goods,JPN,1983,-0.0093557112
+csh,m,capital goods,JPN,1984,-0.0102541302
+csh,m,capital goods,JPN,1985,-0.0115464651
+csh,m,capital goods,JPN,1986,-0.0111877173
+csh,m,capital goods,JPN,1987,-0.0126653952
+csh,m,capital goods,JPN,1988,-0.0156195229
+csh,m,capital goods,JPN,1989,-0.0194082802
+csh,m,capital goods,JPN,1990,-0.0220682442
+csh,m,capital goods,JPN,1991,-0.0197631251
+csh,m,capital goods,JPN,1992,-0.0201077062
+csh,m,capital goods,JPN,1993,-0.0219191406
+csh,m,capital goods,JPN,1994,-0.0262423094
+csh,m,capital goods,JPN,1995,-0.0318591324
+csh,m,capital goods,JPN,1996,-0.0335535924
+csh,m,capital goods,JPN,1997,-0.0338551424
+csh,m,capital goods,JPN,1998,-0.0322821199
+csh,m,capital goods,JPN,1999,-0.0348956544
+csh,m,capital goods,JPN,2000,-0.0458909068
+csh,m,capital goods,JPN,2001,-0.0430858645
+csh,m,capital goods,JPN,2002,-0.0446191615
+csh,m,capital goods,JPN,2003,-0.0475205182
+csh,m,capital goods,JPN,2004,-0.0517000094
+csh,m,capital goods,JPN,2005,-0.0480826339
+csh,m,capital goods,JPN,2006,-0.0500927763
+csh,m,capital goods,JPN,2007,-0.044341011
+csh,m,capital goods,JPN,2008,-0.048446274
+csh,m,capital goods,JPN,2009,-0.037648464
+csh,m,capital goods,JPN,2010,-0.0440922143
+csh,m,capital goods,JPN,2011,-0.0463808842
+csh,m,capital goods,JPN,2012,-0.049520681
+csh,m,capital goods,JPN,2013,-0.047671405
+csh,m,capital goods,JPN,2014,-0.049639296
+csh,m,capital goods,JPN,2015,-0.052214286
+csh,m,capital goods,JPN,2016,-0.05281587
+csh,m,capital goods,JPN,2017,-0.056946725
+csh,m,capital goods,JPN,2018,-0.056881222
+csh,m,capital goods,JPN,2019,-0.054741263
+csh,m,capital goods,USA,1950,-0.0132541885
+csh,m,capital goods,USA,1951,-0.0142936371
+csh,m,capital goods,USA,1952,-0.0142482594
+csh,m,capital goods,USA,1953,-0.0138791013
+csh,m,capital goods,USA,1954,-0.0131426072
+csh,m,capital goods,USA,1955,-0.0136404284
+csh,m,capital goods,USA,1956,-0.0142335012
+csh,m,capital goods,USA,1957,-0.0144849946
+csh,m,capital goods,USA,1958,-0.0144219706
+csh,m,capital goods,USA,1959,-0.0146301664
+csh,m,capital goods,USA,1960,-0.0168132529
+csh,m,capital goods,USA,1961,-0.0156960493
+csh,m,capital goods,USA,1962,-0.0145203895
+csh,m,capital goods,USA,1963,-0.0143402526
+csh,m,capital goods,USA,1964,-0.0142683443
+csh,m,capital goods,USA,1965,-0.0147894603
+csh,m,capital goods,USA,1966,-0.0158904126
+csh,m,capital goods,USA,1967,-0.0157875564
+csh,m,capital goods,USA,1968,-0.0179486988
+csh,m,capital goods,USA,1969,-0.018059993
+csh,m,capital goods,USA,1970,-0.0187788104
+csh,m,capital goods,USA,1971,-0.0193256211
+csh,m,capital goods,USA,1972,-0.0206401218
+csh,m,capital goods,USA,1973,-0.0217912398
+csh,m,capital goods,USA,1974,-0.0262697557
+csh,m,capital goods,USA,1975,-0.0230959497
+csh,m,capital goods,USA,1976,-0.0262906251
+csh,m,capital goods,USA,1977,-0.0280708448
+csh,m,capital goods,USA,1978,-0.030504617
+csh,m,capital goods,USA,1979,-0.031420723
+csh,m,capital goods,USA,1980,-0.03144288
+csh,m,capital goods,USA,1981,-0.031389245
+csh,m,capital goods,USA,1982,-0.029737388
+csh,m,capital goods,USA,1983,-0.030332751
+csh,m,capital goods,USA,1984,-0.035522211
+csh,m,capital goods,USA,1985,-0.042398521
+csh,m,capital goods,USA,1986,-0.045999629
+csh,m,capital goods,USA,1987,-0.042222475
+csh,m,capital goods,USA,1988,-0.045167029
+csh,m,capital goods,USA,1989,-0.044635644
+csh,m,capital goods,USA,1990,-0.040162562
+csh,m,capital goods,USA,1991,-0.037971931
+csh,m,capital goods,USA,1992,-0.044302092
+csh,m,capital goods,USA,1993,-0.049807478
+csh,m,capital goods,USA,1994,-0.052533984
+csh,m,capital goods,USA,1995,-0.054234415
+csh,m,capital goods,USA,1996,-0.0556818
+csh,m,capital goods,USA,1997,-0.061205813
+csh,m,capital goods,USA,1998,-0.065356106
+csh,m,capital goods,USA,1999,-0.071258327
+csh,m,capital goods,USA,2000,-0.083040998
+csh,m,capital goods,USA,2001,-0.076373133
+csh,m,capital goods,USA,2002,-0.075937909
+csh,m,capital goods,USA,2003,-0.073052991
+csh,m,capital goods,USA,2004,-0.076077292
+csh,m,capital goods,USA,2005,-0.085388987
+csh,m,capital goods,USA,2006,-0.080413699
+csh,m,capital goods,USA,2007,-0.071610965
+csh,m,capital goods,USA,2008,-0.068620725
+csh,m,capital goods,USA,2009,-0.053546918
+csh,m,capital goods,USA,2010,-0.061517311
+csh,m,capital goods,USA,2011,-0.066678025
+csh,m,capital goods,USA,2012,-0.071518995
+csh,m,capital goods,USA,2013,-0.069269715
+csh,m,capital goods,USA,2014,-0.070190347
+csh,m,capital goods,USA,2015,-0.07769586
+csh,m,capital goods,USA,2016,-0.075406672
+csh,m,capital goods,USA,2017,-0.085259996
+csh,m,capital goods,USA,2018,-0.084265932
+csh,m,capital goods,USA,2019,-0.080545206

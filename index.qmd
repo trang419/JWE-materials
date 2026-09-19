@@ -5,7 +5,7 @@ toc: false
 date: today
 ---
   
-*Fall 2025 — Course Home Page*
+*Fall 2026 — Course Home Page*
   
 Welcome to **Japan in the World Economy**.  
 This course examines the structure of international trade and finance, focusing on Japan’s role in the global economy.  
@@ -17,7 +17,7 @@ Students will gain practical experience in analyzing data, reports and understan
   
 - **Instructor**: Trang Tran  
 - **Affiliation**: University of Tokyo  
-- **Contact**: tran.trang at sys.u-tokyo.ac.jp 
+- **Contact**: tran.trang at sys.t.u-tokyo.ac.jp 
 - **Office Hours**: By appointment  
 
 ---
@@ -26,6 +26,7 @@ Students will gain practical experience in analyzing data, reports and understan
   
 - [Syllabus](lessons/syllabus.qmd)  
 - [Lessons](lessons/index.qmd)  
+- [Data](scripts/index.qmd) 
 
 ---
   
@@ -35,17 +36,10 @@ Each week includes:
   
 1. **Lecture** (concepts, case studies)  
 2. **In-class discussion** (preparation required)  
-3. **Assignments** (weeks 5)  
+3. **Mid-term** and **Final** will be announced on Moodle  
 
 ---
   
-## How to Use This Site
-  
-- Use the sidebar (or links above) to access lessons and assignments.  
-- All course data will be provided in ready-to-use formats.  
-- Slides and assignments will be downloadable as PDF for offline use.  
 
----
-  
 *Last updated: {{< meta date >}}*
   

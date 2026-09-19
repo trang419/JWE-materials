@@ -1,0 +1,34 @@
+---
+title: "Enablers of Global Value Chains"
+format: html
+---
+
+## Objectives
+- Examine trade policy frameworks shaping Japan’s trade.  
+- Assess domestic policies supporting competitiveness and innovation.  
+- Discuss infrastructure as an enabler of GVC participation.  
+
+## Key Concepts
+- RCEP, CPTPP, WTO agreements.  
+- Industrial policy and innovation systems.  
+- Infrastructure logistics and connectivity.  
+
+## Suggested Reading
+- Baldwin, R. (2011). 21st Century Regionalism: Filling the gap between 21st century trade and 20th century trade rules.
+- Head, K., & Mayer, T. (2014). Gravity Equations: Workhorse,Toolkit, and Cookbook. In Handbook of International Economics (Vol. 4, pp. 131–195).
+- Hummels, D. (2007). Transportation Costs and International Trade in the Second Era of Globalization. Journal of Economic Perspectives, 21(3), 131–154. 
+- Kimura and Chen (2016), Implications of Mega Free Trade Agreements for Asian Regional Integration and RCEP Negotiation.  
+- WTO and JETRO-IDE (2011), Trade patterns and global value chains in East Asia: from trade in goods to trade in tasks. 
+
+## Data
+- [WTO Trade and Tariff Data Portal](https://ttd.wto.org/en)
+- [Market Access Map (MacMap – ITC)](https://www.macmap.org/)
+- [WTO Tariff Profiles](https://www.wto.org/english/res_e/statis_e/tariff_profiles_list_e.htm)
+- [WTO Regional Trade Agreements Information System (RTA-IS)](https://rtais.wto.org/)
+- [UNCTAD Non-Tariff Measures Data](https://unctad.org/topic/trade-analysis/non-tariff-measures/NTMs-data)
+- [WITS Non-Tariff Measures](https://wits.worldbank.org/tariff/non-tariff-measures)
+- [World Bank: Ad Valorem Equivalent of Non-Tariff Measures](https://datacatalog.worldbank.org/search/dataset/0040437/ad-valorem-equivalent-of-non-tariff-measures)
+
+## Materials
+- **Slides:** [View Slides](../slides/04_gvc_enablers.html)  
+

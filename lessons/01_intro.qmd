@@ -9,19 +9,18 @@ format: html
 - Situate Japan in the world economy.  
 
 ## Key Concepts
-- International trade and finance: definitions and scope.  
 - Japan’s economic profile (GDP, demographics, trade dependence).  
-- The role of case-based learning.  
+ 
 
-## Readings (Suggested)
+## Readings
 - Ito and Hoshi (2020), chapter 1-3 
+
+## Data
+- MPD version 2023: Bolt, Jutta and Jan Luiten van Zanden (2024). Maddison style estimates of the evolution of the world economy: A new 2023 update. Journal of Economic Surveys, 1–41. DOI: 10.1111/joes.12618
 - Feenstra, Robert C., Robert Inklaar and Marcel P. Timmer (2015), "The Next Generation of the Penn World Table" American Economic Review, 105(10), 3150-3182, available for download at www.ggdc.net/pwt
 
-## Discussion Questions
-1. What makes Japan’s development path analytically interesting?  
-2. Why analyze trade and finance together?  
 
 ## Materials
-- **Slides for this lesson:** [View Slides]  
+- **Slides for this lesson:** [View Slides](slides/01_intro.qmd)  
 
 

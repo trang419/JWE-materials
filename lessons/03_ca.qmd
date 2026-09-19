@@ -1,0 +1,23 @@
+---
+title: "Comparative Advantages"
+format: html
+---
+
+## Objectives
+- Definition of comparative advantages
+- How to measure comparative advantages
+- What sectors do Japan have comparative advantages in?
+
+## Key Concepts
+- Revealed Comparative Advantages
+
+## Readings
+- Kinoshita, T., Kishida, H., & Amemiya, A. (2004). Strategy of Japanese manufacturers in ASEAN and China in light of emerging FTA initiatives.
+- OECD. (2011). Globalisation, comparative advantage and the changing dynamics of trade (Online-Ausg). OECD.
+- Todo, Y., & Inoue, H. (2021). Geographic Diversification of the Supply Chains of Japanese Firms. Asian Economic Policy Review, 16(2), 304–322
+
+## Data
+- [World Bank WITS - RCA indicator](https://wits.worldbank.org/country-indicator.aspx?lang=en)
+
+## Materials
+- **Slides:** [View Slides](slides/03_ca.qmd)  

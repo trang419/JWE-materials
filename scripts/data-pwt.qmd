@@ -1,0 +1,116 @@
+---
+title:  "Cleaning Raw Data: A Worked Example"
+subtitle: "Penn World table: Growth Accounting"
+format: html
+---
+
+## Download the data
+
+The `PWT_GA.csv` file used below is the **Growth Accounting (GA)** query from
+Penn World Table 11.0. GGDC does not publish a single static CSV link for each
+query, so the file has to be exported once from their online tool and then
+read locally (or you can download the full dataset programmatically instead).
+
+**Option A — GA query via the online tool (recommended for this script)**
+
+1. Go to the [PWT online data access tool](https://pwt-data-tool.streamlit.app/?page=GA).
+2. Select the countries/years you want (or leave the defaults for all countries).
+3. Export/download the result as CSV.
+4. Save it as `data.raw/PWT_GA.csv` (the path the script below expects).
+
+**Option B — download the full PWT release programmatically**
+
+If you'd rather work from the full dataset and derive the GA variables
+yourself, you can pull the Excel file directly from Dataverse:
+
+```{r}
+#| eval: false
+dir.create("../data/raw", showWarnings = FALSE)
+
+download.file(
+  url = "https://dataverse.nl/api/access/datafile/554105",
+  destfile = "data/raw/pwt110.xlsx",
+  mode = "wb"
+)
+```
+
+Check the [PWT 11.0 page](https://www.rug.nl/ggdc/productivity/pwt/) for the
+current release and file IDs, since these links are updated with each new
+version.
+
+## Load data
+
+```{r}
+library(data.table)
+
+pwt = "../data/raw/PWT_GA.csv"
+
+pwtd = fread(pwt, header = T)
+setnames(pwtd, gsub(" ", "", colnames(pwtd)))
+str(pwtd)
+pwtd[, .N, by = .(Variablecode, Variablename)]
+```
+
+## Reshape to long format
+
+```{r}
+pwtdl = melt(pwtd,
+             id.vars = c("Variablecode", "Variablename",
+                         "ISOcode", "Country"),
+             variable.name = "date",
+             variable.factor = FALSE)
+
+setorder(pwtdl, ISOcode, Variablename, date)
+```
+
+## Compute year-over-year growth
+
+```{r}
+pwtdl[, Lvalue := shift(value, type = "lag"),
+      by = .(ISOcode, Variablename)]
+pwtdl[, gyoy := value / Lvalue - 1]
+pwtdl[, date := as.numeric(date)]
+
+pwtdl[, Variablename2 := trimws(gsub("(\\(|\\,|by\\b|at\\b).*$", "",
+                                      Variablename))]
+```
+
+## Plot growth rates (Japan vs US)
+
+```{r}
+ggpubr::ggline(pwtdl[ISOcode %in% c("JPN", "USA")
+                      & !grepl("Share|index", Variablename)],
+               x = "date", y = "gyoy", color = "ISOcode",
+               facet.by = "Variablename2",
+               numeric.x.axis = T)
+```
+
+## Plot index variables
+
+```{r}
+ggpubr::ggline(pwtdl[ISOcode %in% c("JPN", "USA")
+                      & grepl("index", Variablename)],
+               x = "date", y = "value", color = "ISOcode",
+               facet.by = "Variablename2",
+               numeric.x.axis = T)
+```
+
+## Plot share variables
+
+```{r}
+ggpubr::ggline(pwtdl[ISOcode %in% c("JPN", "USA")
+                      & grepl("Share", Variablename)],
+               x = "date", y = "value", color = "ISOcode",
+               facet.by = "Variablename2",
+               numeric.x.axis = T)
+```
+
+## Save processed data
+
+```{r}
+fwrite(pwtdl[, .(Variablecode,
+                  Variablename2,
+                  ISOcode, date,
+                  value, gyoy)],
+       "../data/temp/pwt.csv")
+```

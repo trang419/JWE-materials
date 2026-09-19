@@ -1,0 +1,31 @@
+---
+title: "Exchange Rates"
+format: html
+---
+
+## Objectives
+- Define exchange rates and explain how they are determined
+- Evaluate the impact of yen exchange rate fluctuations on international competitiveness  
+
+## Key Concepts
+- Exchange rate regimes (fixed, floating, managed)
+- Settlement currency and its role in international trade
+
+## Suggested Readings
+- Ito and Hoshi (2020) Chapter 12 
+- Ito, K., & Shimizu, J. (2015). Industry-Level Competitiveness, Productivity and Effective Exchange Rates in East Asia. Asian Economic Journal, 29(2), 181–214.
+- Linda S. Goldberg & Michael W. Klein, 1996. "Foreign direct investment, trade, and real exchange rate linkages in developing countries," Proceedings, Federal Reserve Bank of San Francisco, pages 73-100.
+- Song, C.-Y. (1997). The Real Exchange Rate and the Current Account Balance in Japan. Journal of the Japanese and International Economies, 11(2), 143–184.
+- Toru Iwami (2025) "The Internationalization of Yen and Key Currency Questions", IMF Working Papers 1994, 041 (1994)
+
+## Data
+- **Japan CPI (All Items)** — [FRED: CPALTT01JPA657N](https://fred.stlouisfed.org/series/CPALTT01JPA657N)
+- **US CPI (All Items)** — [FRED: CPALTT01USA657N](https://fred.stlouisfed.org/series/CPALTT01USA657N)
+- **Yen/USD Exchange Rate** — [FRED: AEXJPUS](https://fred.stlouisfed.org/series/AEXJPUS)
+- **Japan Real Effective Exchange Rate** — [FRED: CCEUSP01JPA651N](https://fred.stlouisfed.org/series/CCEUSP01JPA651N)
+- **Bank of Japan Statistics (FM09 series)** — [BOJ Time-Series Data Search](https://www.stat-search.boj.or.jp/ssi/cgi-bin/famecgi2?cgi=$nme_a000_en&lstSelection=FM09)
+- **Japan Trade Statistics (Customs)** — [Japan Customs](https://www.customs.go.jp/toukei/shinbun/tuuka.html)
+
+## Materials
+- **Slides:** [View Slides](../slides/10_exchange_rates.html)  
+

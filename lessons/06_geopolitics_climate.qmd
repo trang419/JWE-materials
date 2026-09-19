@@ -1,0 +1,33 @@
+---
+title: "Geopolitics and Climate Change"
+format: html
+---
+
+## Objectives
+- Discuss de-globalization and supply chain diversification.  
+- Evaluate WTO reform and multilateral-ism.  
+- Analyze climate change as a global economic challenge.  
+- Identify opportunities in green growth strategies. 
+
+## Key Concepts
+- Supply chain security.  
+- Multilateral vs bilateral trade strategies. 
+- Climate economics and externalities.
+
+## Suggested Readings
+- Ito and Hoshi (2020) Chapter 13
+- Autor, D. H., Dorn, D., & Hanson, G. H. (2013). The China Syndrome: Local Labor Market Effects of Import Competition in the United States. American Economic Review, 103(6), 2121–2168. 
+- Fajgelbaum, P. D., Goldberg, P. K., Kennedy, P. J., & Khandelwal, A. K. (2019). The Return to Protectionism (Working Paper No. 25638). National Bureau of Economic Research.
+- Fajgelbaum, P., Goldberg, P., Kennedy, P., Khandelwal, A., & Taglioni, D. (2024). The US-China Trade War and Global Reallocations. American Economic Review: Insights, 6(2), 295–312.
+- Amiti, M., Redding, S. J., & Weinstein, D. E. (2019). The Impact of the 2018 Tariffs on Prices and Welfare. Journal of Economic Perspectives, 33(4), 187–210. - Aiyar, S., Ilyina, A., Chen, J., Kangur, A., Trevino, J., Ebeke, C., Gudmundsson, T., Soderberg, G., Schulze, T., Kunaratskul, T., Ruta, M., Garcia-Saltos, R., & Rodriguez, S. (2023). Geo-Economic Fragmentation and the Future of Multilateralism. Staff Discussion Notes, 2023(001), 1. 
+- Pachauri, R. K., Mayer, L., & Intergovernmental Panel on Climate Change (Eds.). (2015). Climate change 2014: Synthesis report. Intergovernmental Panel on Climate Change.
+- O’Neill, B. C., Kriegler, E., Riahi, K., Ebi, K. L., Hallegatte, S., Carter, T. R., Mathur, R., & van Vuuren, D. P. (2014). A new scenario framework for climate change research: The concept of shared socioeconomic pathways. Climatic Change, 122(3), 387–400. https://doi.org/10.1007/s10584-013-0905-2
+- Riahi, K., van Vuuren, D. P., Kriegler, E., Edmonds, J., O’Neill, B. C., Fujimori, S., Bauer, N., Calvin, K., Dellink, R., Fricko, O., Lutz, W., Popp, A., Cuaresma, J. C., Kc, S., Leimbach, M., Jiang, L., Kram, T., Rao, S., Emmerling, J., … Tavoni, M. (2017). The Shared Socioeconomic Pathways and their energy, land use, and greenhouse gas emissions implications: An overview. Global Environmental Change, 42, 153–168. https://doi.org/10.1016/j.gloenvcha.2016.05.009
+- IPCC. (2022). Summary for Policymakers. In Climate Change 2022: Mitigation of Climate Change. Contribution of Working Group III to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change. Cambridge University Press. https://doi.org/10.1017/9781009157926.001
+- IPCC, 2021: Summary for Policymakers. In: Climate Change 2021: The Physical Science Basis. Contribution of Working Group I to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change [Masson-Delmotte, V., P. Zhai, A. 
+
+## Data
+
+
+## Materials
+- **Slides:** [View Slides](../slides/05_geopolitics_climate.qmd)  

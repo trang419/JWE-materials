@@ -1,0 +1,28 @@
+---
+title: "Balance of Payments"
+format: html
+---
+
+## Objectives
+- Understand the structure of balance of payments accounts.  
+- Analyze capital flows and their regulation.   
+
+## Key Concepts
+- Current vs capital account.  
+- Japan’s macroeconomic imbalances.  
+
+## Readings (Suggested)
+- IMF Balance of Payments Manual (selected sections).  
+- Ito and Hoshi (2020), Chapter 12  
+
+## Data
+- [Bank of Japan — Foreign Direct Investment (Note)](https://www.boj.or.jp/en/statistics/br/bop_06/fdinote.htm)
+- [IMF — Balance of Payments Manual, 6th Edition (BPM6)](https://www.imf.org/external/pubs/ft/bop/2007/bopman6.htm)
+- [IMF DataMapper — Current Account Balance (% of GDP)](https://www.imf.org/external/datamapper/BCA_NGDPD@WEO/OEMDC/ADVEC/WEOWORLD)
+- [Bank of Japan — Time-Series Data Search](https://www.stat-search.boj.or.jp/index_en.html#)
+- [Ministry of Finance Japan — Balance of Payments (e-Stat/EBP Net)](https://www.mof.go.jp/english/policy/international_policy/reference/balance_of_payments/ebpnet.htm)
+
+## Materials
+- **Slides:** [View Slides](../slides/09_bop.qmd)  
+
+

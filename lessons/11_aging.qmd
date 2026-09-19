@@ -1,0 +1,40 @@
+---
+title: "Demographic Challenges and Digitization"
+format: html
+---
+
+## Objectives
+- Assess how Japan's aging population, immigration policy, and labor mobility are reshaping its workforce. 
+- Explore how AI, platforms, and data are transforming production, jobs, and trade and Japan's exposure to these shifts.
+- Identify policy levers to address both challenges.
+
+## Key Concepts
+- Demographics and labor supply.  
+- Productivity and the changing nature of work.  
+- Digital trade and labor market adaptation.  
+
+## Suggested Readings
+- Ito and Hoshi (2020) Chapter 8, 10
+- Akashi, Junichi. 2014. “New Aspects of Japan’s Immigration Policies: Is Population Decline Opening the Doors?” Contemporary Japan 26 (2): 175–96.
+- Association of Southeast Asian Nations, ed. 2022. ASEAN Migration Outlook. First edition. Jakarta, Indonesia: ASEAN Secretariat.
+- Davison, Jeremy, and Ito Peng. 2021. “Views on Immigration in Japan: Identities, Interests, and Pragmatic Divergence.” Journal of Ethnic and Migration Studies 47 (11): 2578–95.
+- Longhi, Simonetta, Peter Nijkamp, and Jacques Poot. 2005. “A Meta-Analytic Assessment of the Effect of Immigration on Wages.” Journal of Economic Surveys 19 (3): 451–77.
+- Seah, Sharon, Joanne Lin, Melinda Martinus, Kristina Fong, Indira Aridati, Pham ThiPhuong Thao, and Damon Chee. 2024. “The State of Southeast Asia: 2024 Survey Report.” Singapore: ISEAS -Yusof Ishak Institute.
+- Fukao, K., Ikeuchi, K., Kim, Y., & Kwon, H. U. (2016). Why was Japan left behind in the ICT revolution? Telecommunications Policy, 40(5), 432–449.
+- Jorgenson, D. W., & Motohashi, K. (2005). Information technology and the Japanese economy. Journal of the Japanese and International Economies, 19(4), 460–481.
+- Niebel, T. (2018). ICT and economic growth – Comparing developing, emerging and developed countries. World Development, 104, 197–211.
+- Wang, Y., & Li, J. (2017). ICT’s effect on trade: Perspective of comparative advantage. Economics Letters, 155, 96–99.
+- Ing, L. Y., & Grossman, G. M. (2022). Robots and AI: A New Economic Era (1st ed.). Routledge. 
+- OECD (2025), Artificial Intelligence and the Labour Market in Japan, OECD Publishing, Paris, https://doi.org/10.1787/b825563e-en.
+- Brynjolfsson, E., Rock, D., & Syverson, C. (2017). Artificial Intelligence and the Modern Productivity Paradox: A Clash of Expectations and Statistics (No. w24001; p. w24001). National Bureau of Economic Research.
+- Lassébie, J. and G. Quintini (2022), “What skills and abilities can automation technologies replicate and what does it mean for workers?: New evidence”, OECD Social, Employment and Migration Working Papers, No. 282, OECD Publishing, Paris, https://doi.org/10.1787/646aad77-en.
+
+
+## Data
+- **Population Ages 65+ (% of working-age population), Old-Age Dependency Ratio** — [World Bank: SP.POP.DPND.OL](https://databank.worldbank.org/metadataglossary/health-nutrition-and-population-statistics/series/SP.POP.DPND.OL)
+- **Labour Force Survey (Japan)** — [e-Stat](https://www.e-stat.go.jp/)
+- **Japan National Accounts — Flow of Funds Summary (2023)** — [Cabinet Office (ESRI) PDF](https://www.esri.cao.go.jp/en/sna/data/kakuhou/files/2023/pdf/point_flow_en20241223.pdf)
+- **Fertility Rate and Female Labor Force Participation** — [Our World in Data](https://ourworldindata.org/grapher/fertility-and-female-labor-force-participation?time=1980)
+
+## Materials
+- **Slides:** [View Slides](../slides/10_aging.qmd)  

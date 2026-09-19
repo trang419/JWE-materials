@@ -1,25 +1,24 @@
 ---
-title: "Japan in Global Value Chains"
+title: "Measurement of Global Value Chains"
 format: html
 ---
 
 ## Objectives
-- Analyze the structure of Japan’s exports and imports.  
-- Understand Japan’s integration in GVCs (automobiles, electronics, advanced manufacturing).  
-- Identify Japan’s key trade partners and dependencies.  
+- Definition of Global Value Chains
+- How to measure GVC
 
 ## Key Concepts
-- Export structure and comparative advantage.  
-- Intra-industry vs inter-industry trade.  
-- Japan’s trade balance with U.S., EU, China, ASEAN.  
+- Trade in value added
 
-## Readings (Suggested)
-- WTO and JETRO-IDE (2011), Trade patterns and global value chains in East Asia: from trade in goods to trade in tasks.  
-- Todo, Y., & Inoue, H. (2021). Geographic Diversification of the Supply Chains of Japanese Firms. Asian Economic Policy Review, 16(2), 304–322.
+## Readings
+- Baldwin, R., & Ito, T. (2021). The smile curve: Evolving sources of value added in manufacturing. Canadian Journal of Economics/Revue Canadienne d’économique, 54(4), 1842–1880. 
+- Elms, D. K., & Low, P. (2013). Global value chains in a changing world. World trade organization.
+- Suvannaphakdy, S., & Pham, T. P. T. (2023). GVC Reconfiguration. ISEAS–Yusof Ishak Institute Singapore.
+- WTO and JETRO-IDE (2011), Trade patterns and global value chains in East Asia: from trade in goods to trade in tasks. 
+- Xing, Y., and N. Detert (2010). How the iPhone Widens the United States Trade Deficit with the People’s Republic of China. ADBI Working Paper 257. Tokyo: Asian Development Bank.
 
-## Discussion Questions
-1. How does Japan’s trade pattern reflect its industrial strengths?  
-2. Which partners are most critical to Japan’s supply chain resilience?  
+## Data
+- Mancini, M., & Taglioni, D. (2025). Economic consequences of trade and global value chain integration: A measurement perspective. The World Bank Economic Review, https://doi.org/10.1093/wber/lhaf017.
 
 ## Materials
-- **Slides:** [View Slides](../slides/02_gvc.html)  
+- **Slides:** [View Slides](slides/02_gvc.qmd)  

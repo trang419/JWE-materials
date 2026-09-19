@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Cleaning Raw Data: A Worked Example – Japan in the World Economy</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-172ba59bd5e0b52282274ba0c0cc16fc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Japan in the World Economy</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../lessons/index.html"> 
+<span class="menu-text">Lessons</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/trang419/JWE-materials"> <i class="bi bi-github" role="img" aria-label="GitHub repo">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-goal-of-this-lesson" id="toc-the-goal-of-this-lesson" class="nav-link active" data-scroll-target="#the-goal-of-this-lesson">The goal of this lesson</a></li>
+  <li><a href="#download-the-raw-data" id="toc-download-the-raw-data" class="nav-link" data-scroll-target="#download-the-raw-data">0. Download the raw data</a></li>
+  <li><a href="#load-the-raw-data" id="toc-load-the-raw-data" class="nav-link" data-scroll-target="#load-the-raw-data">1. Load the raw data</a></li>
+  <li><a href="#inspect-before-cleaning" id="toc-inspect-before-cleaning" class="nav-link" data-scroll-target="#inspect-before-cleaning">2. Inspect before cleaning</a></li>
+  <li><a href="#clean-rename-ambiguous-columns" id="toc-clean-rename-ambiguous-columns" class="nav-link" data-scroll-target="#clean-rename-ambiguous-columns">3. Clean: rename ambiguous columns</a></li>
+  <li><a href="#clean-reshape-from-wide-to-long" id="toc-clean-reshape-from-wide-to-long" class="nav-link" data-scroll-target="#clean-reshape-from-wide-to-long">4. Clean: reshape from wide to long</a></li>
+  <li><a href="#clean-recover-structure-from-column-names" id="toc-clean-recover-structure-from-column-names" class="nav-link" data-scroll-target="#clean-recover-structure-from-column-names">5. Clean: recover structure from column names</a></li>
+  <li><a href="#handle-the-exception-case" id="toc-handle-the-exception-case" class="nav-link" data-scroll-target="#handle-the-exception-case">6. Handle the exception case</a></li>
+  <li><a href="#load-and-clean-a-second-sheet-with-different-structure" id="toc-load-and-clean-a-second-sheet-with-different-structure" class="nav-link" data-scroll-target="#load-and-clean-a-second-sheet-with-different-structure">7. Load and clean a second sheet with different structure</a></li>
+  <li><a href="#combine-the-cleaned-pieces" id="toc-combine-the-cleaned-pieces" class="nav-link" data-scroll-target="#combine-the-cleaned-pieces">8. Combine the cleaned pieces</a></li>
+  <li><a href="#sanity-check-with-a-plot-before-saving" id="toc-sanity-check-with-a-plot-before-saving" class="nav-link" data-scroll-target="#sanity-check-with-a-plot-before-saving">9. Sanity-check with a plot before saving</a></li>
+  <li><a href="#save-the-cleaned-data" id="toc-save-the-cleaned-data" class="nav-link" data-scroll-target="#save-the-cleaned-data">10. Save the cleaned data</a></li>
+  <li><a href="#build-a-companion-lookup-table" id="toc-build-a-companion-lookup-table" class="nav-link" data-scroll-target="#build-a-companion-lookup-table">11. Build a companion lookup table</a></li>
+  <li><a href="#summary-the-general-pattern" id="toc-summary-the-general-pattern" class="nav-link" data-scroll-target="#summary-the-general-pattern">Summary: the general pattern</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Cleaning Raw Data: A Worked Example</h1>
+<p class="subtitle lead">Maddison Project Database (GDP per capita, 1-2022)</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="the-goal-of-this-lesson" class="level2">
+<h2 class="anchored" data-anchor-id="the-goal-of-this-lesson">The goal of this lesson</h2>
+<p>This is <strong>not</strong> an R syntax tutorial — it’s a walkthrough of a real cleaning job: turning a messy, human-formatted Excel file into a tidy dataset ready for analysis and plotting.</p>
+<p>The general workflow is always the same, whatever the raw data looks like:</p>
+<ol type="1">
+<li><strong>Load</strong> the raw file, one sheet/section at a time</li>
+<li><strong>Inspect</strong> it — look at the actual structure before assuming anything</li>
+<li><strong>Clean</strong> — rename, reshape, and fix inconsistencies</li>
+<li><strong>Handle exceptions</strong> — real data always has special cases</li>
+<li><strong>Combine</strong> the cleaned pieces</li>
+<li><strong>Sanity-check</strong> with a quick plot before trusting the result</li>
+<li><strong>Save</strong> the cleaned data so the raw file is never touched again</li>
+</ol>
+<p>We’ll follow that exact sequence using the Maddison Project Database (a long-run historical GDP dataset), which has two of the messiest but most common problems in real-world data: <strong>data spread across a wide, label-heavy format</strong>, and <strong>inconsistent structure between sheets</strong>.</p>
+</section>
+<section id="download-the-raw-data" class="level2">
+<h2 class="anchored" data-anchor-id="download-the-raw-data">0. Download the raw data</h2>
+<p>Before any cleaning can happen, the raw file has to exist locally. The Maddison Project Database is published on <strong>DataverseNL</strong> with a DOI: <code>10.34894/INZBF2</code>. Downloading it through R (rather than clicking a button in a browser) means the script documents exactly where the data came from, and can be re-run from scratch by anyone.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The dataverse package defaults to Harvard's Dataverse, so it has to be</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># pointed at the right server first.</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">Sys.setenv</span>(<span class="st">"DATAVERSE_SERVER"</span> <span class="ot">=</span> <span class="st">"dataverse.nl"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Look up the dataset by its DOI</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dataverse)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>ds <span class="ot">&lt;-</span> <span class="fu">get_dataset</span>(<span class="st">"10.34894/INZBF2"</span>)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>ds<span class="sc">$</span>files[, <span class="fu">c</span>(<span class="st">"filename"</span>, <span class="st">"contentType"</span>)]</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Download the specific file by name (confirmed from the listing above)</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>raw <span class="ot">&lt;-</span> <span class="fu">get_file</span>(<span class="st">"mpd2023_web.xlsx"</span>, <span class="at">dataset =</span> <span class="st">"10.34894/INZBF2"</span>)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fu">dir.create</span>(<span class="st">"../data/raw"</span>, <span class="at">showWarnings =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="fu">dir.create</span>(<span class="st">"../data/temp"</span>, <span class="at">showWarnings =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">writeBin</span>(raw, <span class="st">"../data/raw/mpd2023_web.xlsx"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>ds$files</code> is worth printing and looking at before downloading anything — never guess a filename. This is the same “inspect before you act” habit that shows up again in the cleaning steps below.</p>
+</div>
+</div>
+<p>This chunk is set to <code>eval: false</code> since the file only needs to be downloaded once. Run it manually the first time, then leave it off for every subsequent render.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(data.table)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>mdp <span class="ot">&lt;-</span> <span class="st">"../data/raw/mpd2023_web.xlsx"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Keep raw files in a <code>data/raw/</code> folder and cleaned output in <code>data/temp</code>. Never overwrite the raw file — if a cleaning step turns out to be wrong, you want to be able to start over from the original.</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="load-the-raw-data" class="level2">
+<h2 class="anchored" data-anchor-id="load-the-raw-data">1. Load the raw data</h2>
+<p>The Maddison file has multiple sheets. We start with the “Regional data” sheet, which reports GDP per capita and population by world region.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>mdp_region <span class="ot">&lt;-</span> <span class="fu">read_xlsx</span>(mdp,</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>                         <span class="at">sheet =</span> <span class="st">"Regional data"</span>,</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>                         <span class="at">skip =</span> <span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>New names:
+• `` -&gt; `...1`
+• `East Asia` -&gt; `East Asia...2`
+• `Eastern Europe` -&gt; `Eastern Europe...3`
+• `Latin America` -&gt; `Latin America...4`
+• `Middle East and North Africa` -&gt; `Middle East and North Africa...5`
+• `South and South East Asia` -&gt; `South and South East Asia...6`
+• `Western Europe` -&gt; `Western Europe...8`
+• `Western Offshoots` -&gt; `Western Offshoots...9`
+• `` -&gt; `...10`
+• `` -&gt; `...11`
+• `East Asia` -&gt; `East Asia...12`
+• `Eastern Europe` -&gt; `Eastern Europe...13`
+• `Latin America` -&gt; `Latin America...14`
+• `Middle East and North Africa` -&gt; `Middle East and North Africa...15`
+• `South and South East Asia` -&gt; `South and South East Asia...16`
+• `Western Europe` -&gt; `Western Europe...18`
+• `Western Offshoots` -&gt; `Western Offshoots...19`</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setDT</span>(mdp_region)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Note <code>skip = 1</code> — the first row of the sheet is a title/header banner, not column names. <strong>You only know this by opening the file and looking at it first.</strong> This is a general rule: never write cleaning code before you’ve visually inspected the raw file yourself.</p>
+<hr>
+</section>
+<section id="inspect-before-cleaning" class="level2">
+<h2 class="anchored" data-anchor-id="inspect-before-cleaning">2. Inspect before cleaning</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(mdp_region)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Classes 'data.table' and 'data.frame':  28 obs. of  20 variables:
+ $ ...1                             : num  1820 1830 1840 1850 1860 1870 1880 1890 1900 1910 ...
+ $ East Asia...2                    : num  911 846 849 900 NA ...
+ $ Eastern Europe...3               : num  1045 NA NA 1291 NA ...
+ $ Latin America...4                : num  957 925 1081 1068 1588 ...
+ $ Middle East and North Africa...5 : num  886 NA NA NA NA ...
+ $ South and South East Asia...6    : num  919 935 939 927 889 ...
+ $ Sub Saharan Africa               : num  1188 NA NA NA NA ...
+ $ Western Europe...8               : num  2171 2315 2528 2670 3029 ...
+ $ Western Offshoots...9            : num  2513 2887 3168 3474 4214 ...
+ $ ...10                            : num  1128 NA NA 1301 NA ...
+ $ ...11                            : logi  NA NA NA NA NA NA ...
+ $ East Asia...12                   : num  427757 NA NA 455774 NA ...
+ $ Eastern Europe...13              : num  91222 NA NA 118161 NA ...
+ $ Latin America...14               : num  20704 NA NA 30671 NA ...
+ $ Middle East and North Africa...15: num  35936 NA NA 42000 NA ...
+ $ South and South East Asia...16   : num  255695 NA NA 278706 NA ...
+ $ Sub Saharan SSA                  : num  60000 NA NA 65000 NA 70000 NA NA 86000 NA ...
+ $ Western Europe...18              : num  139472 NA NA 172226 NA ...
+ $ Western Offshoots...19           : num  11231 NA NA 26760 NA ...
+ $ World Population                 : num  1042017 NA NA 1189298 NA ...
+ - attr(*, ".internal.selfref")=&lt;externalptr&gt; </code></pre>
+</div>
+</div>
+<p>This one <code>str()</code> call tells us the two problems we need to fix:</p>
+<ul>
+<li>Column names are junk like <code>...1</code>, <code>...10</code>, <code>...11</code> — these come from Excel columns that had no header text, or a header that got interpreted as blank</li>
+<li>There are <strong>duplicate column names</strong> (“Sub Saharan Africa” appears twice — once for GDP per capita, once for population), which R silently renamed by appending numbers</li>
+</ul>
+<p>Neither of these is visible from the code alone — they only show up once you actually look at the structure of what got loaded.</p>
+<hr>
+</section>
+<section id="clean-rename-ambiguous-columns" class="level2">
+<h2 class="anchored" data-anchor-id="clean-rename-ambiguous-columns">3. Clean: rename ambiguous columns</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setnames</span>(mdp_region, <span class="st">"...1"</span>, <span class="st">"date"</span>)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">setnames</span>(mdp_region, <span class="st">"...10"</span>, <span class="st">"World GDPpc"</span>)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">setnames</span>(mdp_region, <span class="st">"Sub Saharan Africa"</span>, <span class="st">"Sub Saharan Africa___1"</span>)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="fu">setnames</span>(mdp_region, <span class="st">"Sub Saharan SSA"</span>, <span class="st">"Sub Saharan Africa___20"</span>)</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>mdp_region[, <span class="st">"...11"</span> <span class="sc">:</span><span class="er">=</span> <span class="cn">NULL</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Each rename here is fixing a specific, identified problem from step 2 — not a guess. The two “Sub Saharan Africa” columns get a <code>___1</code> / <code>___20</code> suffix as a deliberate marker: it lets us split them back apart programmatically later, rather than fixing each one by hand.</p>
+<p><code>mdp_region[, "...11" := NULL]</code> drops a column that inspection showed was empty/unused — always confirm a column is genuinely unneeded before deleting it, rather than dropping anything that looks odd.</p>
+<hr>
+</section>
+<section id="clean-reshape-from-wide-to-long" class="level2">
+<h2 class="anchored" data-anchor-id="clean-reshape-from-wide-to-long">4. Clean: reshape from wide to long</h2>
+<p>The raw sheet has one column per region — wide format, convenient for a human reading a spreadsheet, but awkward for analysis. <code>melt()</code> converts it to long format: one row per date/region/value combination.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>dt <span class="ot">&lt;-</span> <span class="fu">melt</span>(mdp_region, <span class="at">id.vars =</span> <span class="st">"date"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<hr>
+</section>
+<section id="clean-recover-structure-from-column-names" class="level2">
+<h2 class="anchored" data-anchor-id="clean-recover-structure-from-column-names">5. Clean: recover structure from column names</h2>
+<p>This is the key trick in this dataset. The suffix we added in step 3 (<code>___1</code>, <code>___20</code>) is now sitting inside the <code>variable</code> column, and we can split it back out into real, usable columns:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>dt[, variable <span class="sc">:</span><span class="er">=</span> <span class="fu">gsub</span>(<span class="st">"</span><span class="sc">\\</span><span class="st">."</span>, <span class="st">"_"</span>, variable)]</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>dt[, <span class="fu">c</span>(<span class="st">"region"</span>, <span class="st">"id"</span>) <span class="sc">:</span><span class="er">=</span> <span class="fu">tstrsplit</span>(variable, <span class="st">"___"</span>)]</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>dt[, .N, by <span class="ot">=</span> id]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>        id     N
+    &lt;char&gt; &lt;int&gt;
+ 1:      2    28
+ 2:      3    28
+ 3:      4    28
+ 4:      5    28
+ 5:      6    28
+ 6:      1    28
+ 7:      8    28
+ 8:      9    28
+ 9:   &lt;NA&gt;    56
+10:     12    28
+11:     13    28
+12:     14    28
+13:     15    28
+14:     16    28
+15:     20    28
+16:     18    28
+17:     19    28</code></pre>
+</div>
+</div>
+<p><code>dt[, .N, by = id]</code> here isn’t part of the cleaning — it’s a <strong>checkpoint</strong>. Printing a count by group after a split is a cheap way to confirm the split worked as expected before moving on.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>dt[, id <span class="sc">:</span><span class="er">=</span> <span class="fu">as.numeric</span>(id)]</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>dt[, var <span class="sc">:</span><span class="er">=</span> <span class="fu">ifelse</span>(id <span class="sc">&lt;</span> <span class="dv">10</span>, <span class="st">"GDPpc"</span>, <span class="st">"Population"</span>)]</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>dt[, .N, by <span class="ot">=</span> .(id, var)]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>       id        var     N
+    &lt;num&gt;     &lt;char&gt; &lt;int&gt;
+ 1:     2      GDPpc    28
+ 2:     3      GDPpc    28
+ 3:     4      GDPpc    28
+ 4:     5      GDPpc    28
+ 5:     6      GDPpc    28
+ 6:     1      GDPpc    28
+ 7:     8      GDPpc    28
+ 8:     9      GDPpc    28
+ 9:    NA       &lt;NA&gt;    56
+10:    12 Population    28
+11:    13 Population    28
+12:    14 Population    28
+13:    15 Population    28
+14:    16 Population    28
+15:    20 Population    28
+16:    18 Population    28
+17:    19 Population    28</code></pre>
+</div>
+</div>
+<p>The <code>id</code> numbers turned out to encode which variable a region’s column was (GDP per capita vs.&nbsp;population) — this is domain-specific knowledge you get from reading the file’s documentation or reverse-engineering the pattern, not something obvious from the code.</p>
+<hr>
+</section>
+<section id="handle-the-exception-case" class="level2">
+<h2 class="anchored" data-anchor-id="handle-the-exception-case">6. Handle the exception case</h2>
+<p>Real datasets almost always have one row/column that doesn’t follow the general pattern. Here, the “World” totals don’t have a numeric ID suffix at all — they were named directly (“World GDPpc”, “World Population”), so the general split rule from step 5 doesn’t apply to them:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>dt[variable <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"World GDPpc"</span>, <span class="st">"World Population"</span>),</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>   <span class="fu">c</span>(<span class="st">"region"</span>, <span class="st">"var"</span>) <span class="sc">:</span><span class="er">=</span> <span class="fu">tstrsplit</span>(variable, <span class="st">" "</span>)]</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>dt[, <span class="fu">c</span>(<span class="st">"variable"</span>, <span class="st">"id"</span>) <span class="sc">:</span><span class="er">=</span> <span class="cn">NULL</span>]</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="fu">setnames</span>(dt, <span class="st">"var"</span>, <span class="st">"variable"</span>)</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>dt[, .N, by <span class="ot">=</span> .(variable, region)]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>      variable                       region     N
+        &lt;char&gt;                       &lt;char&gt; &lt;int&gt;
+ 1:      GDPpc                    East Asia    28
+ 2:      GDPpc               Eastern Europe    28
+ 3:      GDPpc                Latin America    28
+ 4:      GDPpc Middle East and North Africa    28
+ 5:      GDPpc    South and South East Asia    28
+ 6:      GDPpc           Sub Saharan Africa    28
+ 7:      GDPpc               Western Europe    28
+ 8:      GDPpc            Western Offshoots    28
+ 9:      GDPpc                        World    28
+10: Population                    East Asia    28
+11: Population               Eastern Europe    28
+12: Population                Latin America    28
+13: Population Middle East and North Africa    28
+14: Population    South and South East Asia    28
+15: Population           Sub Saharan Africa    28
+16: Population               Western Europe    28
+17: Population            Western Offshoots    28
+18: Population                        World    28</code></pre>
+</div>
+</div>
+<p>Notice the pattern: <strong>apply the general rule, then explicitly patch the known exception</strong> — rather than writing one rule complex enough to cover every case at once. This keeps each step readable and debuggable.</p>
+<hr>
+</section>
+<section id="load-and-clean-a-second-sheet-with-different-structure" class="level2">
+<h2 class="anchored" data-anchor-id="load-and-clean-a-second-sheet-with-different-structure">7. Load and clean a second sheet with different structure</h2>
+<p>Japan isn’t broken out separately in the regional sheet, so we pull it from the “Full data” sheet (which has one row per country-year) instead:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>mdp_jpn <span class="ot">&lt;-</span> <span class="fu">read_xlsx</span>(mdp, <span class="at">sheet =</span> <span class="st">"Full data"</span>)</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">setDT</span>(mdp_jpn)</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(mdp_jpn)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Classes 'data.table' and 'data.frame':  131144 obs. of  6 variables:
+ $ countrycode: chr  "AFG" "AFG" "AFG" "AFG" ...
+ $ country    : chr  "Afghanistan" "Afghanistan" "Afghanistan" "Afghanistan" ...
+ $ region     : chr  "South and South East Asia" "South and South East Asia" "South and South East Asia" "South and South East Asia" ...
+ $ year       : num  1 730 1000 1090 1150 ...
+ $ gdppc      : num  NA NA NA NA NA NA NA NA NA NA ...
+ $ pop        : num  NA NA NA NA NA NA NA NA NA NA ...
+ - attr(*, ".internal.selfref")=&lt;externalptr&gt; </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setnames</span>(mdp_jpn,</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>         <span class="fu">c</span>(<span class="st">"year"</span>, <span class="st">"gdppc"</span>, <span class="st">"pop"</span>, <span class="st">"country"</span>),</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>         <span class="fu">c</span>(<span class="st">"date"</span>, <span class="st">"GDPpc"</span>, <span class="st">"Population"</span>, <span class="st">"region"</span>),</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>         <span class="at">skip_absent =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Renaming to match the column names already used in <code>dt</code> (<code>date</code>, <code>region</code>) is deliberate — it’s what makes the two cleaned pieces combinable in step 8. <code>skip_absent = TRUE</code> means the rename won’t error if a name doesn’t exist, which is a safe default when you’re not 100% sure of every column name in a sheet you didn’t design.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>dt2 <span class="ot">&lt;-</span> <span class="fu">melt</span>(mdp_jpn[countrycode <span class="sc">==</span> <span class="st">"JPN"</span>],</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>            <span class="at">id.vars =</span> <span class="fu">c</span>(<span class="st">"date"</span>, <span class="st">"region"</span>),</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>            <span class="at">measure.vars =</span> <span class="fu">c</span>(<span class="st">"GDPpc"</span>, <span class="st">"Population"</span>),</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">drop =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Same wide-to-long reshape as step 4, applied to this differently-shaped source, filtered down to just the one country we need.</p>
+<hr>
+</section>
+<section id="combine-the-cleaned-pieces" class="level2">
+<h2 class="anchored" data-anchor-id="combine-the-cleaned-pieces">8. Combine the cleaned pieces</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Real GDP per capita in 2011$</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>dt3 <span class="ot">&lt;-</span> <span class="fu">rbindlist</span>(<span class="fu">list</span>(dt, dt2), <span class="at">use.names =</span> <span class="cn">TRUE</span>, <span class="at">fill =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><code>use.names = TRUE</code> matches columns by name rather than position (safer whenever two tables were cleaned separately). <code>fill = TRUE</code> allows columns that exist in one piece but not the other — necessary here since <code>dt</code> and <code>dt2</code> don’t have identical column sets.</p>
+<p>The comment above this line matters as much as the code: <strong>always leave a note about units/definitions right next to the data</strong>, since it won’t be obvious from the column names alone months later.</p>
+<hr>
+</section>
+<section id="sanity-check-with-a-plot-before-saving" class="level2">
+<h2 class="anchored" data-anchor-id="sanity-check-with-a-plot-before-saving">9. Sanity-check with a plot before saving</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>ggpubr<span class="sc">::</span><span class="fu">ggline</span>(dt3[variable <span class="sc">==</span> <span class="st">"GDPpc"</span> <span class="sc">&amp;</span> date <span class="sc">&gt;</span> <span class="dv">1900</span>],</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>               <span class="at">x =</span> <span class="st">"date"</span>, <span class="at">y =</span> <span class="st">"value"</span>, <span class="at">color =</span> <span class="st">"region"</span>,</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>               <span class="at">numeric.x.axis =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 3 rows containing missing values or values outside the scale range
+(`geom_line()`).</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 7 rows containing missing values or values outside the scale range
+(`geom_point()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="data-madison_files/figure-html/sanity-check-plot-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>This plot isn’t the final deliverable — it’s a <strong>cleaning validation step</strong>. If a region’s line looks discontinuous, jumps to an implausible value, or is missing entirely, that’s a sign of a cleaning bug, and it’s far easier to catch here than after the data has already been saved and used elsewhere.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Keep a commented-out line like this for a second variable you’re not currently checking — it costs nothing and makes it trivial to re-check later:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ggpubr::ggline(dt3[variable=="Population"&amp;date&gt;1900],</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="co">#                x="date",y="value",color="region",</span></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="co">#                numeric.x.axis = T)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+<hr>
+</section>
+<section id="save-the-cleaned-data" class="level2">
+<h2 class="anchored" data-anchor-id="save-the-cleaned-data">10. Save the cleaned data</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">fwrite</span>(dt3[<span class="sc">!</span><span class="fu">is.na</span>(value)], <span class="st">"../data/temp/madison.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Two decisions worth calling out:</p>
+<ul>
+<li><code>dt3[!is.na(value)]</code> drops rows with no value <strong>at the save step</strong>, not earlier — keeping <code>NA</code> rows around during cleaning makes it easier to spot where gaps came from, but there’s no reason to ship them in the final file</li>
+<li>Saving to <code>.csv</code> in a <code>data/</code> (not <code>data.raw/</code>) folder means anything downstream (a graphing script, another student, future-you) never needs to re-open the original Excel file or re-run this cleaning again</li>
+</ul>
+<hr>
+</section>
+<section id="build-a-companion-lookup-table" class="level2">
+<h2 class="anchored" data-anchor-id="build-a-companion-lookup-table">11. Build a companion lookup table</h2>
+<p>Not every useful output has to be the main dataset. Here we also save a small reference table mapping country codes to regions, which other scripts can join against later:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>mdp <span class="ot">&lt;-</span> <span class="fu">read_xlsx</span>(mdp, <span class="at">sheet =</span> <span class="st">"Full data"</span>)</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="fu">setDT</span>(mdp)</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>regions <span class="ot">&lt;-</span> <span class="fu">unique</span>(mdp[, .(countrycode, country, region)])</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>regions[, .N, by <span class="ot">=</span> region]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                         region     N
+                         &lt;char&gt; &lt;int&gt;
+1:    South and South East Asia    16
+2:           Sub Saharan Africa    46
+3:               Eastern Europe    32
+4: Middle East and North Africa    20
+5:                Latin America    26
+6:            Western Offshoots     4
+7:               Western Europe    19
+8:                    East Asia     6</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>regions[<span class="fu">grepl</span>(<span class="st">"Western Offshoots"</span>, region), .N, by <span class="ot">=</span> country]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>         country     N
+          &lt;char&gt; &lt;int&gt;
+1:     Australia     1
+2:        Canada     1
+3:   New Zealand     1
+4: United States     1</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">fwrite</span>(regions, <span class="st">"../data/temp/madison_regions.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>The two <code>.N</code> checks here are, again, checkpoints — confirming the region grouping looks sensible (right number of regions, right countries inside a given region) before trusting the lookup table enough to save it.</p>
+<hr>
+</section>
+<section id="summary-the-general-pattern" class="level2">
+<h2 class="anchored" data-anchor-id="summary-the-general-pattern">Summary: the general pattern</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Step</th>
+<th>What</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Load</td>
+<td><code>read_xlsx()</code> one sheet at a time</td>
+<td>Different sheets often have different structure</td>
+</tr>
+<tr class="even">
+<td>Inspect</td>
+<td><code>str()</code></td>
+<td>Reveals problems (bad names, duplicates) invisible in code alone</td>
+</tr>
+<tr class="odd">
+<td>Rename</td>
+<td><code>setnames()</code></td>
+<td>Fix ambiguous/duplicate names <em>before</em> reshaping</td>
+</tr>
+<tr class="even">
+<td>Reshape</td>
+<td><code>melt()</code></td>
+<td>Wide (human-readable) → long (analysis-ready)</td>
+</tr>
+<tr class="odd">
+<td>Recover structure</td>
+<td><code>tstrsplit()</code> on encoded names</td>
+<td>Turn a naming trick back into real columns</td>
+</tr>
+<tr class="even">
+<td>Handle exceptions</td>
+<td>Targeted <code>dt[condition, ...]</code> fix</td>
+<td>Apply general rule, then patch known special cases</td>
+</tr>
+<tr class="odd">
+<td>Combine</td>
+<td><code>rbindlist(..., fill = TRUE)</code></td>
+<td>Merge cleaned pieces from different sources</td>
+</tr>
+<tr class="even">
+<td>Validate</td>
+<td>Quick plot or <code>.N</code> by group</td>
+<td>Catch cleaning bugs before they reach saved data</td>
+</tr>
+<tr class="odd">
+<td>Save</td>
+<td><code>fwrite()</code> to a separate <code>data/</code> folder</td>
+<td>Never re-touch the raw file; downstream work reads the clean version</td>
+</tr>
+</tbody>
+</table>
+<p>This same sequence applies to almost any messy raw dataset — the details of <em>what’s</em> messy change, but the order of operations doesn’t.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -1,0 +1,28 @@
+---
+title: "Japan and ASEAN"
+format: html
+---
+
+## Objectives
+- Analyze Japan–ASEAN trade and investment relations.  
+- Explore ASEAN’s role in regional production networks.  
+- Understand cooperation frameworks for resilience.  
+
+## Key Concepts
+- Production networks and regional hubs.  
+- ASEAN integration initiatives.  
+- Japan’s role as investor and market.  
+
+## Suggested Reading
+- Abiad, A., Baris, K., Barnabe, J. A., Bertulfo, and others (2018). The Impact of Trade Conflict on Developing Asia. Asian Development Bank.
+- Ishikawa, K. (2021). The ASEAN Economic Community and ASEAN economic integration. Journal of Contemporary East Asia Studies, 10(1), 24–41. 
+- Kinoshita, T., Kishida, H., & Amemiya, A. (2004). Strategy of Japanese manufacturers in ASEAN and China in light of emerging FTA initiatives.
+- Narine, S. (2008). Forty years of ASEAN: A historical review. The Pacific Review, 21(4), 411–429. 
+- Okabe, M., & Urata, S. (2014). The impact of AFTA on intra-AFTA trade. Journal of Asian Economics, 35, 12–31. 
+- Suvannaphakdy, S., & Pham, T. P. T. (2023). GVC Reconfiguration. ISEAS–Yusof Ishak Institute Singapore.
+- Todo, Y., & Inoue, H. (2021). Geographic Diversification of the Supply Chains of Japanese Firms. Asian Economic Policy Review, 16(2), 304–322. 
+
+ 
+
+## Materials
+- **Slides:** [View Slides](../slides/05_asean.qmd)  

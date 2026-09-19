@@ -1,0 +1,35 @@
+---
+title: "Official Development Assistance"
+format: html
+---
+
+## Objectives
+- Trace the history and evolution of Japan's Official Development Assistance (ODA) strategy
+- Examine how Japan uses ODA as both a diplomatic and economic tool
+- Assess debates over ODA's effectiveness
+
+## Key Concepts
+- Official Development Assistance (ODA)
+- Infrastructure financing
+- Economic growth and development
+ 
+
+## Suggested Readings
+- Burnside, C. & Dollar, D. 2000, 'Aid, policies, and growth', American economic review, 90 (4).
+- Easterly, W., 2003, “Can Foreign Aid Buy Growth?”, Journal of Economic Perspective, 17 (3).
+- Furuoka, F., Oishi, M., & Kato, I. (2010, July 12). From Aid Recipient to Aid Donor: Tracing the Historical Transformation of Japan’s Foreign Aid Policy [Text]. Electronic journal of contemporary Japanese studies.
+- Hansen, H. & Tarp, F., 2000, “Aid and Growth Regressions”, Centre for Research in Economic Development and International Trade, University of Nottingham Research Paper No.00/07.
+- Iwata, T. 2013. Japan’s Soft Power in Africa. Ritsumeikan Annual Review of International Studies. ISSN 1347-8214. Vol.12, pp. 103-114
+- Nishitateno, S., 2024. "Does official development assistance benefit the donor economy? New evidence from Japanese overseas infrastructure projects," International Tax and Public Finance, Springer;International Institute of Public Finance, vol. 31(4), pages 1037-1065.
+- Nguyen, H. P., Huynh, A. N. Q., Reisach, U., & Kim, X. L. T. 2022. How does Japanese ODA really contribute to economic growth for ASEAN countries? Journal of International Economics and Management, 22(2).
+- MOFA, 2023, White Paper on Development Cooperation 2023
+- OECD, 2008, The Marshall Plan: Lessons Learned for the 21st Century, OECD Publishing, Paris.
+- Ono, S., & Sekiyama, T. (2023). Differences in impact of official development assistance on foreign direct investment by aid types. Frontiers in Political Science, 5. 
+- Takagi, S., 1995). From recipient to donor: Japan’s official aid flows, 1945 to 1990 and beyond. Internat. Finance Sect., Dep. of Economics, Princeton Univ.
+- Tsuno, M., 2023, The Role of Japanese Official Development Assistance in Viet Nam’s Socio-economic Development. In Viet Nam 2045: Development Issues and Challenges, (Kimura, F. et al, pp. 53–97). ERIA.
+- Yanagihara, Toru, 2017, International Trends in Development Aid and Japan’s ODA: 日本国際問題研究所, 1–11.  
+
+
+## Materials
+- **Slides:** [View Slides](../slides/07_oda.html)  
+

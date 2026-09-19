@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Cleaning Raw Data: A Worked Example – Japan in the World Economy</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-172ba59bd5e0b52282274ba0c0cc16fc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Japan in the World Economy</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../lessons/index.html"> 
+<span class="menu-text">Lessons</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../scripts/index.html"> 
+<span class="menu-text">Data</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/trang419/JWE-materials"> <i class="bi bi-github" role="img" aria-label="GitHub repo">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#download-the-data" id="toc-download-the-data" class="nav-link active" data-scroll-target="#download-the-data">Download the data</a></li>
+  <li><a href="#load-data" id="toc-load-data" class="nav-link" data-scroll-target="#load-data">Load data</a></li>
+  <li><a href="#reshape-to-long-format" id="toc-reshape-to-long-format" class="nav-link" data-scroll-target="#reshape-to-long-format">Reshape to long format</a></li>
+  <li><a href="#compute-year-over-year-growth" id="toc-compute-year-over-year-growth" class="nav-link" data-scroll-target="#compute-year-over-year-growth">Compute year-over-year growth</a></li>
+  <li><a href="#plot-growth-rates-japan-vs-us" id="toc-plot-growth-rates-japan-vs-us" class="nav-link" data-scroll-target="#plot-growth-rates-japan-vs-us">Plot growth rates (Japan vs US)</a></li>
+  <li><a href="#plot-index-variables" id="toc-plot-index-variables" class="nav-link" data-scroll-target="#plot-index-variables">Plot index variables</a></li>
+  <li><a href="#plot-share-variables" id="toc-plot-share-variables" class="nav-link" data-scroll-target="#plot-share-variables">Plot share variables</a></li>
+  <li><a href="#save-processed-data" id="toc-save-processed-data" class="nav-link" data-scroll-target="#save-processed-data">Save processed data</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Cleaning Raw Data: A Worked Example</h1>
+<p class="subtitle lead">Penn World table: Growth Accounting</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="download-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="download-the-data">Download the data</h2>
+<p>The <code>PWT_GA.csv</code> file used below is the <strong>Growth Accounting (GA)</strong> query from Penn World Table 11.0. GGDC does not publish a single static CSV link for each query, so the file has to be exported once from their online tool and then read locally (or you can download the full dataset programmatically instead).</p>
+<p><strong>Option A — GA query via the online tool (recommended for this script)</strong></p>
+<ol type="1">
+<li>Go to the <a href="https://pwt-data-tool.streamlit.app/?page=GA">PWT online data access tool</a>.</li>
+<li>Select the countries/years you want (or leave the defaults for all countries).</li>
+<li>Export/download the result as CSV.</li>
+<li>Save it as <code>data.raw/PWT_GA.csv</code> (the path the script below expects).</li>
+</ol>
+<p><strong>Option B — download the full PWT release programmatically</strong></p>
+<p>If you’d rather work from the full dataset and derive the GA variables yourself, you can pull the Excel file directly from Dataverse:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dir.create</span>(<span class="st">"../data/raw"</span>, <span class="at">showWarnings =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">download.file</span>(</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">url =</span> <span class="st">"https://dataverse.nl/api/access/datafile/554105"</span>,</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">destfile =</span> <span class="st">"data/raw/pwt110.xlsx"</span>,</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">mode =</span> <span class="st">"wb"</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Check the <a href="https://www.rug.nl/ggdc/productivity/pwt/">PWT 11.0 page</a> for the current release and file IDs, since these links are updated with each new version.</p>
+</section>
+<section id="load-data" class="level2">
+<h2 class="anchored" data-anchor-id="load-data">Load data</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(data.table)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>pwt <span class="ot">=</span> <span class="st">"../data/raw/PWT_GA.csv"</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>pwtd <span class="ot">=</span> <span class="fu">fread</span>(pwt, <span class="at">header =</span> T)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">setnames</span>(pwtd, <span class="fu">gsub</span>(<span class="st">" "</span>, <span class="st">""</span>, <span class="fu">colnames</span>(pwtd)))</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(pwtd)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Classes 'data.table' and 'data.frame':  972 obs. of  74 variables:
+ $ ISOcode     : chr  "ABW" "ABW" "ABW" "ABW" ...
+ $ Country     : chr  "Aruba" "Aruba" "Aruba" "Aruba" ...
+ $ Variablecode: chr  "emp" "labsh" "rgdpna" "rkna" ...
+ $ Variablename: chr  "Number of persons engaged (in millions)" "Share of labour compensation in GDP at current national prices" "Real GDP at constant 2017 national prices (in mil. 2017US$)" "Capital services at constant 2017 national prices (2017=1)" ...
+ $ 1950        : num  NA NA NA NA NA NA NA NA NA NA ...
+ $ 1951        : num  NA NA NA NA NA NA NA NA NA NA ...
+ $ 1952        : num  NA NA NA NA NA NA NA NA NA NA ...
+ $ 1953        : num  NA NA NA NA NA NA NA NA NA NA ...
+ $ 1954        : num  NA NA NA NA NA NA NA NA NA NA ...
+ $ 1955        : num  NA NA NA NA NA NA NA NA NA NA ...
+ $ 1956        : num  NA NA NA NA NA NA NA NA NA NA ...
+ $ 1957        : num  NA NA NA NA NA NA NA NA NA NA ...
+ $ 1958        : num  NA NA NA NA NA NA NA NA NA NA ...
+ $ 1959        : num  NA NA NA NA NA NA NA NA NA NA ...
+ $ 1960        : num  NA NA NA NA NA NA NA NA NA NA ...
+ $ 1961        : num  NA NA NA NA NA NA NA NA NA NA ...
+ $ 1962        : num  NA NA NA NA NA NA NA NA NA NA ...
+ $ 1963        : num  NA NA NA NA NA NA NA NA NA NA ...
+ $ 1964        : num  NA NA NA NA NA NA NA NA NA NA ...
+ $ 1965        : num  NA NA NA NA NA NA NA NA NA NA ...
+ $ 1966        : num  NA NA NA NA NA NA NA NA NA NA ...
+ $ 1967        : num  NA NA NA NA NA NA NA NA NA NA ...
+ $ 1968        : num  NA NA NA NA NA NA NA NA NA NA ...
+ $ 1969        : num  NA NA NA NA NA NA NA NA NA NA ...
+ $ 1970        : num  NA NA 262.31 NA 3.67 ...
+ $ 1971        : num  NA NA 286.15 NA 3.74 ...
+ $ 1972        : num  NA NA 312.15 NA 3.85 ...
+ $ 1973        : num  NA NA 340.53 NA 3.99 ...
+ $ 1974        : num  NA NA 371.47 NA 4.13 ...
+ $ 1975        : num  NA NA 405.23 NA 4.27 ...
+ $ 1976        : num  NA NA 442.06 NA 4.41 ...
+ $ 1977        : num  NA NA 482.24 NA 4.54 ...
+ $ 1978        : num  NA NA 526.07 NA 4.67 ...
+ $ 1979        : num  NA NA 573.88 NA 4.81 ...
+ $ 1980        : num  NA NA 626.04 NA 4.95 ...
+ $ 1981        : num  NA NA 682.9 NA 5.1 ...
+ $ 1982        : num  NA NA 745 NA 5.26 ...
+ $ 1983        : num  NA NA 812.71 NA 5.42 ...
+ $ 1984        : num  NA NA 886.58 NA 5.59 ...
+ $ 1985        : num  NA NA 967.15 NA 5.76 ...
+ $ 1986        : num  NA NA 1055.05 NA 5.94 ...
+ $ 1987        : num  NA NA 1224.69 NA 6.11 ...
+ $ 1988        : num  NA NA 1453.1 NA 6.3 ...
+ $ 1989        : num  NA NA 1629.33 NA 6.48 ...
+ $ 1990        : num  NA NA 1693.88 NA 6.67 ...
+ $ 1991        : num  2.92e-02 6.48e-01 1.83e+03 2.52e-01 6.86 ...
+ $ 1992        : num  3.09e-02 6.48e-01 1.94e+03 2.75e-01 7.07 ...
+ $ 1993        : num  3.29e-02 6.48e-01 2.08e+03 2.99e-01 7.27 ...
+ $ 1994        : num  3.49e-02 6.48e-01 2.25e+03 3.23e-01 7.47 ...
+ $ 1995        : num  3.66e-02 6.48e-01 2.30e+03 3.55e-01 7.67 ...
+ $ 1996        : num  0.038 0.637 2333.354 0.381 7.891 ...
+ $ 1997        : num  3.91e-02 6.35e-01 2.52e+03 4.11e-01 8.15 ...
+ $ 1998        : num  4.01e-02 6.38e-01 2.68e+03 4.46e-01 8.43 ...
+ $ 1999        : num  0.041 0.655 2714.383 0.478 8.731 ...
+ $ 2000        : num  4.19e-02 6.45e-01 2.84e+03 5.02e-01 9.06 ...
+ $ 2001        : num  4.28e-02 6.45e-01 2.83e+03 5.27e-01 9.40 ...
+ $ 2002        : num  4.37e-02 6.45e-01 2.77e+03 5.58e-01 9.70 ...
+ $ 2003        : num  4.46e-02 6.45e-01 2.78e+03 5.92e-01 9.99 ...
+ $ 2004        : num  4.54e-02 6.45e-01 2.99e+03 6.30e-01 1.03e+01 ...
+ $ 2005        : num  4.59e-02 6.45e-01 3.02e+03 6.75e-01 1.06e+01 ...
+ $ 2006        : num  4.63e-02 6.45e-01 3.03e+03 7.23e-01 1.10e+01 ...
+ $ 2007        : num  4.64e-02 6.45e-01 3.12e+03 7.65e-01 1.14e+01 ...
+ $ 2008        : num  4.64e-02 6.45e-01 3.04e+03 8.10e-01 1.18e+01 ...
+ $ 2009        : num  4.64e-02 6.45e-01 2.78e+03 8.47e-01 1.23e+01 ...
+ $ 2010        : num  4.65e-02 6.45e-01 2.69e+03 8.74e-01 1.20e+01 ...
+ $ 2011        : num  4.57e-02 6.45e-01 2.70e+03 9.00e-01 1.27e+01 ...
+ $ 2012        : num  4.59e-02 6.45e-01 2.66e+03 9.21e-01 1.31e+01 ...
+ $ 2013        : num  4.62e-02 6.45e-01 2.78e+03 9.37e-01 1.36e+01 ...
+ $ 2014        : num  4.65e-02 6.45e-01 2.78e+03 9.52e-01 1.40e+01 ...
+ $ 2015        : num  4.67e-02 6.45e-01 2.94e+03 9.65e-01 1.45e+01 ...
+ $ 2016        : num  0.047 0.645 3003.414 0.982 15.028 ...
+ $ 2017        : num  4.72e-02 6.45e-01 3.06e+03 1.00 1.55e+01 ...
+ $ 2018        : num  4.74e-02 6.45e-01 3.09e+03 1.02 1.61e+01 ...
+ $ 2019        : num  4.76e-02 6.45e-01 3.07e+03 1.03 1.66e+01 ...
+ - attr(*, ".internal.selfref")=&lt;externalptr&gt; </code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>pwtd[, .N, by <span class="ot">=</span> .(Variablecode, Variablename)]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Variablecode
+         &lt;char&gt;
+1:          emp
+2:        labsh
+3:       rgdpna
+4:         rkna
+5:           hc
+6:       rtfpna
+7:          avh
+                                                                                            Variablename
+                                                                                                  &lt;char&gt;
+1:                                                               Number of persons engaged (in millions)
+2:                                        Share of labour compensation in GDP at current national prices
+3:                                           Real GDP at constant 2017 national prices (in mil. 2017US$)
+4:                                            Capital services at constant 2017 national prices (2017=1)
+5: Human capital index, based on years of schooling and returns to education; see Human capital in PWT9.
+6:                                                              TFP at constant national prices (2017=1)
+7:                                                        Average annual hours worked by persons engaged
+       N
+   &lt;int&gt;
+1:   182
+2:   138
+3:   183
+4:   137
+5:   145
+6:   118
+7:    69</code></pre>
+</div>
+</div>
+</section>
+<section id="reshape-to-long-format" class="level2">
+<h2 class="anchored" data-anchor-id="reshape-to-long-format">Reshape to long format</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>pwtdl <span class="ot">=</span> <span class="fu">melt</span>(pwtd,</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>             <span class="at">id.vars =</span> <span class="fu">c</span>(<span class="st">"Variablecode"</span>, <span class="st">"Variablename"</span>,</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>                         <span class="st">"ISOcode"</span>, <span class="st">"Country"</span>),</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>             <span class="at">variable.name =</span> <span class="st">"date"</span>,</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>             <span class="at">variable.factor =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="fu">setorder</span>(pwtdl, ISOcode, Variablename, date)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="compute-year-over-year-growth" class="level2">
+<h2 class="anchored" data-anchor-id="compute-year-over-year-growth">Compute year-over-year growth</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>pwtdl[, Lvalue <span class="sc">:</span><span class="er">=</span> <span class="fu">shift</span>(value, <span class="at">type =</span> <span class="st">"lag"</span>),</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>      by <span class="ot">=</span> .(ISOcode, Variablename)]</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>pwtdl[, gyoy <span class="sc">:</span><span class="er">=</span> value <span class="sc">/</span> Lvalue <span class="sc">-</span> <span class="dv">1</span>]</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>pwtdl[, date <span class="sc">:</span><span class="er">=</span> <span class="fu">as.numeric</span>(date)]</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>pwtdl[, Variablename2 <span class="sc">:</span><span class="er">=</span> <span class="fu">trimws</span>(<span class="fu">gsub</span>(<span class="st">"(</span><span class="sc">\\</span><span class="st">(|</span><span class="sc">\\</span><span class="st">,|by</span><span class="sc">\\</span><span class="st">b|at</span><span class="sc">\\</span><span class="st">b).*$"</span>, <span class="st">""</span>,</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>                                      Variablename))]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="plot-growth-rates-japan-vs-us" class="level2">
+<h2 class="anchored" data-anchor-id="plot-growth-rates-japan-vs-us">Plot growth rates (Japan vs US)</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>ggpubr<span class="sc">::</span><span class="fu">ggline</span>(pwtdl[ISOcode <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"JPN"</span>, <span class="st">"USA"</span>)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>                      <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">grepl</span>(<span class="st">"Share|index"</span>, Variablename)],</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>               <span class="at">x =</span> <span class="st">"date"</span>, <span class="at">y =</span> <span class="st">"gyoy"</span>, <span class="at">color =</span> <span class="st">"ISOcode"</span>,</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>               <span class="at">facet.by =</span> <span class="st">"Variablename2"</span>,</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>               <span class="at">numeric.x.axis =</span> T)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 26 rows containing missing values or values outside the scale range
+(`geom_line()`).</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 26 rows containing missing values or values outside the scale range
+(`geom_point()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="data-pwt_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="plot-index-variables" class="level2">
+<h2 class="anchored" data-anchor-id="plot-index-variables">Plot index variables</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>ggpubr<span class="sc">::</span><span class="fu">ggline</span>(pwtdl[ISOcode <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"JPN"</span>, <span class="st">"USA"</span>)</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>                      <span class="sc">&amp;</span> <span class="fu">grepl</span>(<span class="st">"index"</span>, Variablename)],</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>               <span class="at">x =</span> <span class="st">"date"</span>, <span class="at">y =</span> <span class="st">"value"</span>, <span class="at">color =</span> <span class="st">"ISOcode"</span>,</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>               <span class="at">facet.by =</span> <span class="st">"Variablename2"</span>,</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>               <span class="at">numeric.x.axis =</span> T)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="data-pwt_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="plot-share-variables" class="level2">
+<h2 class="anchored" data-anchor-id="plot-share-variables">Plot share variables</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>ggpubr<span class="sc">::</span><span class="fu">ggline</span>(pwtdl[ISOcode <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"JPN"</span>, <span class="st">"USA"</span>)</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>                      <span class="sc">&amp;</span> <span class="fu">grepl</span>(<span class="st">"Share"</span>, Variablename)],</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>               <span class="at">x =</span> <span class="st">"date"</span>, <span class="at">y =</span> <span class="st">"value"</span>, <span class="at">color =</span> <span class="st">"ISOcode"</span>,</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>               <span class="at">facet.by =</span> <span class="st">"Variablename2"</span>,</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>               <span class="at">numeric.x.axis =</span> T)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="data-pwt_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="save-processed-data" class="level2">
+<h2 class="anchored" data-anchor-id="save-processed-data">Save processed data</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">fwrite</span>(pwtdl[, .(Variablecode,</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>                  Variablename2,</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>                  ISOcode, date,</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>                  value, gyoy)],</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>       <span class="st">"../data/temp/pwt.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

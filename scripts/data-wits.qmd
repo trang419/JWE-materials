@@ -1,0 +1,218 @@
+---
+title: "Cleaning Raw Data: A Worked Example"
+subtitle: "WITS - GVC data"
+format: html
+---
+
+## Overview
+
+This document documents the data-cleaning pipeline for the WITS GVC trade dataset. It covers:
+
+1.  Loading the raw trade, sector, and country reference tables
+2.  Classifying countries into analytical regions
+3.  Merging trade data with sector and region metadata
+4.  Reshaping the merged data into long format for downstream analysis
+
+Analysis, plotting, and index-construction steps are intentionally left out of this document — the goal here is a clean, well-documented, reusable dataset.
+
+```{r setup}
+#| message: false
+#| warning: false
+
+library(data.table)
+library(countrycode)
+```
+
+## Download the raw data
+
+All source files live on the World Bank's WITS GVC data page: <https://wits.worldbank.org/gvc/gvc-data-download.html>. Four files are listed there; this pipeline uses three of them:
+
+| File | Link | Size |
+|------------------------|------------------------|------------------------|
+| GVC Trade data | <https://wits.worldbank.org/data/public/gvc_trade.zip> | \~2.54 GB (zipped) |
+| GVC Sector Group and Sectors | <https://wits.worldbank.org/data/public/gvc-sectors.csv> | 14 KB |
+| GVC Countries | <https://wits.worldbank.org/data/public/gvc-countries.csv> | 8 KB |
+
+(There is also a *GVC Output* zip on the same page — it is not needed for this trade-cleaning pipeline.)
+
+### Option A — download by hand
+
+1.  Open the page above in a browser.
+2.  Click **Download GVC Trade** and save `gvc_trade.zip` into `data.raw/gvc_trade/`.
+3.  Unzip it. WITS distributes the trade data as one CSV per source (e.g. `wiodlr`, `tiva`); after unzipping you should see one or more `.csv` files inside `data.raw/gvc_trade/`. Confirm the file name matches what `fread()` expects below (`gvc_trade_WITS_2023.csv`) — rename it if WITS has updated the filename since this pipeline was written.
+4.  Click **Download GVC Sector** and **GVC Countries** and save them as `data.raw/gvc-sectors.csv` and `data.raw/gvc-countries.csv` respectively.
+
+### Option B — download from R
+
+The trade zip is large (\~2.5 GB), so this step can take a while and is best run once, outside of routine document rendering.
+
+```{r download-data}
+#| eval: false
+#| 
+#dir.create("../data/raw", showWarnings = FALSE)
+gvc_trade = "../data/raw/gvc_trade_WITS_2023.csv"
+gvc_sec = "../data/raw/gvc-sectors.csv"
+gvc_cty = "../data/raw/gvc-countries.csv"
+
+# GVC trade data (large — ~2.5 GB zipped)
+download.file(
+  "https://wits.worldbank.org/data/public/gvc_trade.zip",
+  destfile = gvc_trade ,
+  mode = "wb"
+)
+
+# Sector and country reference tables
+download.file(
+  "https://wits.worldbank.org/data/public/gvc-sectors.csv",
+  destfile = gvc_sec , mode = "wb"
+)
+download.file(
+  "https://wits.worldbank.org/data/public/gvc-countries.csv",
+  destfile = gvc_cty, mode = "wb"
+)
+```
+
+After unzipping, list the contents to confirm the trade CSV's exact name before moving on — WITS may package it differently than expected:
+
+```{r list-unzipped}
+#| eval: false
+
+list.files("../data/raw")
+```
+
+## Load raw data
+
+Three source files are needed:
+
+- `dt` — the raw bilateral trade / GVC flows (millions of USD)
+- `sectors` — sector code-to-group crosswalk
+- `cty` — country code reference table
+
+```{r load-data}
+dt      = fread("../data/raw/gvc_trade_WITS_2023.csv")
+sectors = fread("../data/raw/gvc-sectors.csv")
+cty     = fread("../data/raw/gvc-countries.csv")
+```
+
+```{r inspect-raw}
+str(dt)
+head(dt)
+```
+
+## Classify countries into regions
+
+We build a `Region2` grouping on top of the country table:
+
+- **Europe** — all countries in the UN "Europe" region
+- **ASEAN** — countries in the UN "South-eastern Asia" sub-region
+- **N.America** — `USA`, `CAN`, `MEX` (NAFTA)
+- Individually tracked countries: `JPN`, `CHN`, `KOR`
+- Everything else falls into **ROW** (rest of world)
+
+```{r region-groups}
+eurs  = codelist$iso3c[codelist$un.region.name == "Europe" &
+                          !is.na(codelist$iso3c)]
+
+asean = codelist$iso3c[codelist$un.regionsub.name == "South-eastern Asia" &
+                          !is.na(codelist$iso3c)]
+
+nafta = c("USA", "CAN", "MEX")
+
+idvs  = c("JPN", "CHN", "KOR")
+
+cty[, Region2 := country]
+cty[country %in% eurs,  Region2 := "Europe"]
+cty[country %in% asean, Region2 := "ASEAN"]
+cty[country %in% nafta, Region2 := "N.America"]
+cty[!country %in% c(eurs, asean, nafta, idvs), Region2 := "ROW"]
+```
+
+### Sanity check: any countries without a region?
+
+```{r region-check}
+cty[is.na(Region2)]
+```
+
+If this returns rows, those countries were not matched by `countrycode`'s region lookup and should be assigned manually before proceeding.
+
+## Merge trade data with sector groupings
+
+Trade is merged onto the sector crosswalk using `sect` and `source` (the data source, e.g. `wiodlr` or `tiva`), since sector codes are not necessarily consistent across sources.
+
+```{r merge-sectors}
+dt2 = merge(dt, sectors, by = c("sect", "source"))
+```
+
+### Sanity check: sector coverage by source
+
+```{r sector-check}
+dt2[, .N, by = .(source, sect_group)][order(source, sect_group)]
+
+dt2[source == "wiodlr", .N, by = .(sect_group, sect_name)][order(sect_group)]
+```
+
+## Merge in exporter / importer regions
+
+The region classification built above is joined twice — once for the exporter (`exp`) and once for the importer (`imp`).
+
+```{r merge-regions}
+dt2 = merge(dt2, cty[, .(exp = country, exp_reg = Region2)], by = "exp")
+dt2 = merge(dt2, cty[, .(imp = country, imp_reg = Region2)], by = "imp")
+```
+
+```{r merged-check}
+dim(dt2)
+sum(is.na(dt2$exp_reg))
+sum(is.na(dt2$imp_reg))
+```
+
+Both `NA` counts should be zero after this step — any non-zero count means some exporter/importer codes in `dt` don't have a match in `cty` and were dropped by the merge (or need to be added to the country table).
+
+## Reshape to long format
+
+Two sources are combined:
+
+- `wiodlr` for all years
+- `tiva` restricted to years after 2000 (its methodology changes before that point)
+
+The GVC/trade-type columns (`traditional_trade_int`, `traditional_trade_fin`, `gvcbp`, `gvcfp`, `gvcmix`) are melted into a single `variable` / `value` pair, which is the tidy shape most of the downstream analysis expects.
+
+```{r reshape-long}
+dtl = melt(
+  dt2[source == "wiodlr" | (source == "tiva" & t > 2000),
+      .(imp, exp, imp_reg, exp_reg,
+        sect_name, sect_group,
+        t, traditional_trade_int, traditional_trade_fin,
+        gvcbp, gvcfp, gvcmix)],
+  id.vars = c("imp", "exp",
+              "imp_reg", "exp_reg",
+              "sect_name", "sect_group", "t")
+)
+```
+
+```{r reshape-check}
+dtl[, .N, by = variable]
+range(dtl$t)
+```
+
+## Save the cleaned dataset
+
+Persist the cleaned, merged, long-format table so downstream scripts don't need to repeat the loading/merging steps above.
+
+```{r save-clean}
+#| eval: false
+
+fwrite(dtl, "../data/temp/gvc_trade.csv")
+```
+
+## Summary
+
+| Step | Object | Description |
+|------------------------|------------------------|------------------------|
+| Load | `dt`, `sectors`, `cty` | Raw trade, sector, and country tables |
+| Classify | `cty$Region2` | Country → region mapping (Europe, ASEAN, N.America, JPN/CHN/KOR, ROW) |
+| Merge sectors | `dt2` | Trade + sector group, joined on `sect` + `source` |
+| Merge regions | `dt2` | Adds `exp_reg` and `imp_reg` |
+| Reshape | `dtl` | Long-format trade table (`wiodlr` all years + `tiva` post-2000) |
+
+`dtl` is the base table that all subsequent analysis (regional shares, GVC participation indices, revealed comparative advantage, network graphs, etc.) should build on.

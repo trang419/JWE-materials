@@ -8,82 +8,73 @@ format: html
 
 - Course objectives and expectations  
 - Japan’s position in the global economy  
-- Key themes: trade, finance, and current issues  
+- Key themes: trade, cross-border investment, exchange rates
 
 ---
 
-# International Trade and the Japanese Economy
-
-## Week 2: Japan in Global Value Chains  
-- Structure of exports and imports (manufacturing, agriculture, services) 
+## Week 2: Measurement of Global Value Chains  
+- What is global value chain?
+- How to measure it?
 - Japan’s role in GVCs (automobiles, electronics, advanced manufacturing) 
+
+## Week 3: Japan's Comparative Advantages
+- Structure of exports and imports (manufacturing, agriculture, services) 
 - Trade links with major partners (U.S., EU, China, ASEAN)  
 
-## Week 3: Enablers of Global Value Chains  
+## Week 4: Enablers of Global Value Chains  
 - Trade policy frameworks (RCEP, CPTPP, WTO)  
 - Domestic policies for competitiveness and innovation  
 - Infrastructure needs for integration into supply chains  
 
-## Week 4: ASEAN and Regional Integration  
+## Week 5: Japan and ASEAN  
 - Japan–ASEAN trade and investment ties  
 - ASEAN’s role in regional production networks  
 - Cooperation frameworks for supply chain resilience  
 
-## Week 5: Japan Maritime Trade   
-- Role of transport in global trade  
-- Maritime transport as Japan’s critical link  
-- Port infrastructure and logistics hubs  
+## Week 6: Trade Tensions and Climate Change  
+- U.S.–China rivalry and Japan’s position  
+- De-globalization and supply chain diversification  
+- Climate change as a global economic challenge  
 
 ---
 
-# International Finance and the Japanese Economy
+## Week 7: mid-term
 
-## Week 7: ODA, FDI, and Expansion of Global Value Chains  
+--- 
+
+## Week 8: Official Development Assistance
 - ODA for regional diplomacy and infrastructure finance  
+- How ODA reinforce Japan’s role  
+
+## Week 9: Cross-border investment
+- Foreign Direct Investment (FDI)
 - Outward FDI in ASEAN manufacturing and services  
 - Inward FDI and domestic challenges  
-- How ODA and FDI reinforce Japan’s GVC role 
 
-## Week 7: Balance of Payments  
+## Week 10: Balance of Payments  
 - Balance of payments
 - Capital flows and capital controls 
 
-## Week 8: Exchange Rates  
+## Week 11: Exchange Rates  
 - Yen exchange rate and competitiveness in GVCs 
 - Use of yen in trade settlement and finance  
 
----
-
-# Current Issues in the World Economy and Japan’s Response  
-
-## Week 9: Globalization and Trade Tensions  
-- U.S.–China rivalry and Japan’s position  
-- De-globalization and supply chain diversification  
-- WTO reform and multilateral trade strategies  
-
-## Week 10: Aging Society and Immigration  
+## Week 12: Demographic Challenges  
 - Labor shortages and productivity challenges  
-- Immigration policy debates and workforce integration  
-- Regional cooperation on labor mobility  
-
-## Week 11: Digital Economy  
-- Global adoption of digital platforms  
-- Role of technology in trade facilitation and financial flows  
+- Role of technology in trade facilitation 
 - Opportunities and barriers for Japan’s digital transformation  
 
-## Week 12: Climate Change and the Global Economy  
-- Climate change as a global economic challenge  
-- Japan’s vulnerabilities as an energy importer  
-- Policy responses and opportunities in green growth  
- 
+---
 
+## Week 13: Final exam  
+ 
 ---
 
 # Assessment and Assignments
 
-- **Participation & Discussion:** 30% 
-- **Assignments:** 20%  
-- **Final exam:** 50%
+- **Short Tests:** 30% 
+- **Mid-term:** 30%  
+- **Final exam:** 40%
 
 ---
 
@@ -94,13 +85,5 @@ format: html
 
 - Papers/Reports introduced in lessons  
 
----
 
-# Schedule
-
-- Week 1: Introduction
-- Weeks 2–5: International Trade and Japan
-- Weeks 6–8: International Finance and Japan
-- Weeks 9–12: Current Issues in the World Economy  
-- Week 13: Final exam  
 
