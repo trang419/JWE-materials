@@ -9,7 +9,9 @@ format: html
 - Situate Japan in the world economy.  
 
 ## Key Concepts
-- Japan’s economic profile (GDP, demographics, trade dependence).  
+- Japan's economic scale and structure: GDP size and growth trends relative to other major economies.
+- Demographic trend: an aging, shrinking population and its long-term economic implications.
+- Trade dependence: reliance on trade and integration into global supply chains.
  
 
 ## Readings
@@ -21,6 +23,6 @@ format: html
 
 
 ## Materials
-- **Slides for this lesson:** [View Slides](slides/01_intro.qmd)  
+- **Slides** [View Slides](slides/01_intro.qmd)  
 
 
