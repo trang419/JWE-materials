@@ -39,14 +39,14 @@
     "href": "lessons/syllabus.html",
     "title": "Course Syllabus: Japan in the World Economy",
     "section": "",
-    "text": "Course objectives and expectations\n\nJapan’s position in the global economy\n\nKey themes: trade, cross-border investment, exchange rates"
+    "text": "Course objectives and expectations\n\nJapan’s position in the global economy"
   },
   {
     "objectID": "lessons/syllabus.html#week-1-introduction",
     "href": "lessons/syllabus.html#week-1-introduction",
     "title": "Course Syllabus: Japan in the World Economy",
     "section": "",
-    "text": "Course objectives and expectations\n\nJapan’s position in the global economy\n\nKey themes: trade, cross-border investment, exchange rates"
+    "text": "Course objectives and expectations\n\nJapan’s position in the global economy"
   },
   {
     "objectID": "lessons/syllabus.html#week-2-japan-in-global-value-chains",
@@ -396,7 +396,7 @@
     "href": "lessons/01_intro.html#key-concepts",
     "title": "Introduction",
     "section": "Key Concepts",
-    "text": "Key Concepts\n\nJapan’s economic profile (GDP, demographics, trade dependence)."
+    "text": "Key Concepts\n\nJapan’s economic scale and structure: GDP size and growth trends relative to other major economies.\nDemographic trend: an aging, shrinking population and its long-term economic implications.\nTrade dependence: reliance on trade and integration into global supply chains."
   },
   {
     "objectID": "lessons/01_intro.html#readings-suggested",
@@ -417,7 +417,7 @@
     "href": "lessons/01_intro.html#materials",
     "title": "Introduction",
     "section": "Materials",
-    "text": "Materials\n\nSlides for this lesson: View Slides"
+    "text": "Materials\n\nSlides View Slides"
   },
   {
     "objectID": "lessons/03_gvc_enablers.html",
@@ -634,7 +634,7 @@
     "href": "lessons/index.html",
     "title": "Lessons",
     "section": "",
-    "text": "Syllabus\nIntroduction\nMeasurement of Global Value Chains\nJapan’s Comparative Advantages\nEnablers of Global Value Chains\nJapan and ASEAN\nGeopolitics and Climate Change\nOfficial Development Assistance\nCross-border investment\nBalance of Payments\nExchange Rates\nDemographic Challenges and Digitization"
+    "text": "Syllabus\nIntroduction\nJapan’s Comparative Advantages\nMeasurement of Global Value Chains\nEnablers of Global Value Chains\nJapan and ASEAN\nGeopolitics and Climate Change\nOfficial Development Assistance\nCross-border investment\nBalance of Payments\nExchange Rates\nDemographic Challenges and Digitization"
   },
   {
     "objectID": "lessons/01_intro.html#readings",
@@ -977,7 +977,7 @@
     "href": "scripts/index.html",
     "title": "Data",
     "section": "",
-    "text": "Data-Madison\nData-WITS\nData-PWT"
+    "text": "Data-Madison\nData-PWT\nData-WITS"
   },
   {
     "objectID": "scripts/data-madison.html",
@@ -1216,5 +1216,103 @@
     "title": "Cleaning Raw Data: A Worked Example",
     "section": "Save processed data",
     "text": "Save processed data\n\nfwrite(pwtdl[, .(Variablecode,\n                  Variablename2,\n                  ISOcode, date,\n                  value, gyoy)],\n       \"../data/temp/pwt.csv\")"
+  },
+  {
+    "objectID": "lessons/syllabus.html#week-2-japans-comparative-advantages",
+    "href": "lessons/syllabus.html#week-2-japans-comparative-advantages",
+    "title": "Course Syllabus: Japan in the World Economy",
+    "section": "Week 2: Japan’s Comparative Advantages",
+    "text": "Week 2: Japan’s Comparative Advantages\n\nStructure of exports and imports (manufacturing, agriculture, services)\nTrade links with major partners (U.S., EU, China, ASEAN)"
+  },
+  {
+    "objectID": "lessons/syllabus.html#week-3-measurement-of-global-value-chains",
+    "href": "lessons/syllabus.html#week-3-measurement-of-global-value-chains",
+    "title": "Course Syllabus: Japan in the World Economy",
+    "section": "Week 3: Measurement of Global Value Chains",
+    "text": "Week 3: Measurement of Global Value Chains\n\nWhat is global value chain?\nHow to measure it?\nJapan’s role in GVCs (automobiles, electronics, advanced manufacturing)"
+  },
+  {
+    "objectID": "lessons/03_gvc.html",
+    "href": "lessons/03_gvc.html",
+    "title": "Measurement of Global Value Chains",
+    "section": "",
+    "text": "Definition of Global Value Chains\nHow to measure GVC, including the use of input-output tables"
+  },
+  {
+    "objectID": "lessons/03_gvc.html#objectives",
+    "href": "lessons/03_gvc.html#objectives",
+    "title": "Measurement of Global Value Chains",
+    "section": "",
+    "text": "Definition of Global Value Chains\nHow to measure GVC, including the use of input-output tables"
+  },
+  {
+    "objectID": "lessons/03_gvc.html#key-concepts",
+    "href": "lessons/03_gvc.html#key-concepts",
+    "title": "Measurement of Global Value Chains",
+    "section": "Key Concepts",
+    "text": "Key Concepts\n\nTrade in value added\nBackward and forward participation in GVCs"
+  },
+  {
+    "objectID": "lessons/03_gvc.html#readings",
+    "href": "lessons/03_gvc.html#readings",
+    "title": "Measurement of Global Value Chains",
+    "section": "Readings",
+    "text": "Readings\n\nBaldwin, R., & Ito, T. (2021). The smile curve: Evolving sources of value added in manufacturing. Canadian Journal of Economics/Revue Canadienne d’économique, 54(4), 1842–1880.\nElms, D. K., & Low, P. (2013). Global value chains in a changing world. World trade organization.\nSuvannaphakdy, S., & Pham, T. P. T. (2023). GVC Reconfiguration. ISEAS–Yusof Ishak Institute Singapore.\nWTO and JETRO-IDE (2011), Trade patterns and global value chains in East Asia: from trade in goods to trade in tasks.\nXing, Y., and N. Detert (2010). How the iPhone Widens the United States Trade Deficit with the People’s Republic of China. ADBI Working Paper 257. Tokyo: Asian Development Bank."
+  },
+  {
+    "objectID": "lessons/03_gvc.html#data",
+    "href": "lessons/03_gvc.html#data",
+    "title": "Measurement of Global Value Chains",
+    "section": "Data",
+    "text": "Data\n\nMancini, M., & Taglioni, D. (2025). Economic consequences of trade and global value chain integration: A measurement perspective. The World Bank Economic Review, https://doi.org/10.1093/wber/lhaf017."
+  },
+  {
+    "objectID": "lessons/03_gvc.html#materials",
+    "href": "lessons/03_gvc.html#materials",
+    "title": "Measurement of Global Value Chains",
+    "section": "Materials",
+    "text": "Materials\n\nSlides: View Slides"
+  },
+  {
+    "objectID": "lessons/02_ca.html",
+    "href": "lessons/02_ca.html",
+    "title": "Comparative Advantages",
+    "section": "",
+    "text": "Definition of comparative advantages\nHow to measure comparative advantages\nWhat sectors do Japan have comparative advantages in?"
+  },
+  {
+    "objectID": "lessons/02_ca.html#objectives",
+    "href": "lessons/02_ca.html#objectives",
+    "title": "Comparative Advantages",
+    "section": "",
+    "text": "Definition of comparative advantages\nHow to measure comparative advantages\nWhat sectors do Japan have comparative advantages in?"
+  },
+  {
+    "objectID": "lessons/02_ca.html#key-concepts",
+    "href": "lessons/02_ca.html#key-concepts",
+    "title": "Comparative Advantages",
+    "section": "Key Concepts",
+    "text": "Key Concepts\n\nComparative Advantage\nAbsolute Advantage\nRevealed Comparative Advantage (RCA)\nTerms of Trade\nExport Similarity Index"
+  },
+  {
+    "objectID": "lessons/02_ca.html#readings",
+    "href": "lessons/02_ca.html#readings",
+    "title": "Comparative Advantages",
+    "section": "Readings",
+    "text": "Readings\n\nKinoshita, T., Kishida, H., & Amemiya, A. (2004). Strategy of Japanese manufacturers in ASEAN and China in light of emerging FTA initiatives.\nOECD. (2011). Globalisation, comparative advantage and the changing dynamics of trade (Online-Ausg). OECD.\nTodo, Y., & Inoue, H. (2021). Geographic Diversification of the Supply Chains of Japanese Firms. Asian Economic Policy Review, 16(2), 304–322"
+  },
+  {
+    "objectID": "lessons/02_ca.html#data",
+    "href": "lessons/02_ca.html#data",
+    "title": "Comparative Advantages",
+    "section": "Data",
+    "text": "Data\n\nWorld Bank WITS - RCA indicator"
+  },
+  {
+    "objectID": "lessons/02_ca.html#materials",
+    "href": "lessons/02_ca.html#materials",
+    "title": "Comparative Advantages",
+    "section": "Materials",
+    "text": "Materials\n\nSlides: View Slides"
   }
 ]
