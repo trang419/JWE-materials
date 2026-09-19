@@ -9,7 +9,11 @@ format: html
 - What sectors do Japan have comparative advantages in?
 
 ## Key Concepts
-- Revealed Comparative Advantages
+- Comparative Advantage
+- Absolute Advantage 
+- Revealed Comparative Advantage (RCA) 
+- Terms of Trade 
+- Export Similarity Index 
 
 ## Readings
 - Kinoshita, T., Kishida, H., & Amemiya, A. (2004). Strategy of Japanese manufacturers in ASEAN and China in light of emerging FTA initiatives.

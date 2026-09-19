@@ -8,18 +8,16 @@ format: html
 
 - Course objectives and expectations  
 - Japan’s position in the global economy  
-- Key themes: trade, cross-border investment, exchange rates
 
----
 
-## Week 2: Measurement of Global Value Chains  
+## Week 2: Japan's Comparative Advantages
+- Structure of exports and imports (manufacturing, agriculture, services) 
+- Trade links with major partners (U.S., EU, China, ASEAN)  
+
+## Week 3: Measurement of Global Value Chains  
 - What is global value chain?
 - How to measure it?
 - Japan’s role in GVCs (automobiles, electronics, advanced manufacturing) 
-
-## Week 3: Japan's Comparative Advantages
-- Structure of exports and imports (manufacturing, agriculture, services) 
-- Trade links with major partners (U.S., EU, China, ASEAN)  
 
 ## Week 4: Enablers of Global Value Chains  
 - Trade policy frameworks (RCEP, CPTPP, WTO)  
@@ -40,7 +38,6 @@ format: html
 
 ## Week 7: mid-term
 
---- 
 
 ## Week 8: Official Development Assistance
 - ODA for regional diplomacy and infrastructure finance  
