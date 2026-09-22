@@ -191,6 +191,7 @@ Use this as a conversation starter: ask for students’ priors on Japan’s role
 library(data.table)
 library(ggpubr)
 library(scales)
+library(ggplot2)
 path = function(x){paste0("../data/01 intro/",x)}
 gdppc = fread(path("gdppc.csv"))
 pwt = fread(path("growth.csv"))
@@ -225,6 +226,7 @@ ggline(gdppc,
 ## Economic growth model (input side)
 
 ```{r}
+#| echo: false
 ctys = c("JPN","USA","CHN")
 ctys_col = c("black",get_palette(palette = "npg",2))
 pwt[,ISOcode:=factor(ISOcode,levels = ctys)]
@@ -260,6 +262,7 @@ ggarrange(
 ## Economic growth model (export)
 
 ```{r}
+#| echo: false
 pwt_trade[,countrycode:=factor(countrycode,levels = ctys)]
 
 ggline(pwt_trade[type=="x"],
@@ -278,6 +281,7 @@ ggline(pwt_trade[type=="x"],
 ## Economic growth (sectoral shift)
 
 ```{r}
+#| echo: false
 regs = unique(va[,Region])
 regs = c("JPN",regs[regs!="JPN"])
 regs_col = c("black",get_palette(palette = "npg",length(regs)-1))
@@ -301,6 +305,7 @@ ggline(va[grepl("value added",indicator)&date>=1990],
 ## Safe-haven currency
 
 ```{r}
+#| echo: false
 curr = unique(imfd[,.(V1=sum(value)),
                    by=Currency][order(-V1),Currency])
 curr = c("Japanese yen",curr[curr!="Japanese yen"])
@@ -326,6 +331,7 @@ ggbarplot(imfd[!is.na(value)],
 ## Aging economy (population)
 
 ```{r}
+#| echo: false
 unpop[,Region:=factor(Region,levels = regs)]
 ggarrange(
   ggline(unpop,
@@ -359,6 +365,7 @@ ggarrange(
 ## Aging economy (immigration)
 
 ```{r}
+#| echo: false
 # CNMR  Net Migration Rate (per 1,000 population)
 # Net Number of Migrants (thousands)
 ggarrange(

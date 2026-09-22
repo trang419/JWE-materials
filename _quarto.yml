@@ -8,10 +8,10 @@ website:
     left:
       - text: "Lessons"
         file: lessons/index.qmd
-      #- text: "Slides"
-        #menu:
-          #- text: "Lecture 1"
-          #  file: slides/01_intro.qmd
+      - text: "Slides"
+        menu:
+          - text: "Lecture 1"
+            file: slides/01_intro.qmd
           #- text: "Lecture 2"
           #  file: slides/02_trade_theory.qmd
           # add more slides here as you build them
