@@ -56,7 +56,7 @@ https://www.jsps.go.jp/file/storage/kaken_12_g1990/r_6_en_24h00014.pdf)
 
 - Week 1: Introduction (9/22)
 - Weeks 2–6: Global value chain
-- **Week 7: Peer-review workshop (10/)**
+- **Week 7: Group presentation workshop (11/10)**
 - Weeks 8-12: ODA, FDI, Exchange Rates 
 - **Week 13: Final exam (12/22)**
 - **Make-up exam (1/19)**
@@ -66,9 +66,9 @@ https://www.jsps.go.jp/file/storage/kaken_12_g1990/r_6_en_24h00014.pdf)
 
 ## International Trade
 
-- Measurement of Global Value Chains
-
 - Japan's Comparative Advantages
+
+- Measurement of Global Value Chains
 
 - Enablers of Global Value Chains  
 
@@ -78,7 +78,7 @@ https://www.jsps.go.jp/file/storage/kaken_12_g1990/r_6_en_24h00014.pdf)
 
 ---
 
-## Selected topics on international finance
+## Selected topics on Japanese economy
 
 - Official Development Assistance
 
@@ -103,26 +103,46 @@ https://www.jsps.go.jp/file/storage/kaken_12_g1990/r_6_en_24h00014.pdf)
 
 ## How We Work
 
-- Class Structure: 50 min lecture & discussions + 5 min break + 50 min lecture & discussions
+- Class Structure: 20 min short tests + 50 min lecture  + 5 min break + 30 min group discussions
 
 - Assessment
-  - **Short tests:** 30%
-  - **Mid term:** 30%  
+  - **Participant**: 10%
+  - **Short tests:** 20%
+  - **Group presentation workshop:** 30%  
   - **Final exam:** 40%
 
 ---
 
-- Voluntary and beneficial remark: one or two pts (maximum 20 pts)
-- Discussants may be chosen randomly through Respon
-- Points deduction: 5 pts (absence), 3 pts (late)
+- Voluntary and beneficial remark: one or two pts (maximum 10 pts)
+- Points deduction: 5 pts (absent), 3 pts (late)
   - Exceptions include illness or delays in public transportation but with proof is needed
+  - If you cheat, you will be kicked out
+
+---
+
+
+## Group discussion (first half of the course)
+
+- 7 groups of 5~6 students: register your members by the end of today
+- Choose one research question related to the topic of global value chain in two weeks
+- Discuss in class
+- Presentation (11/10: 10 minutes ~ 5 slides): title, research question + background, evidence, policy implication, conclusion
+- Submit of individual report (11/24: 1 A4 page): similar to presentation + what you learn from other groups
+
+---
+
+### Group discussion (second half of the course)
+
+- Randomly chosen group
+- Assigned topics
+- Discuss in class
 
 ---
 
 ## Classroom management:
 - “respon” application: https://univ-gakushuin.respon.jp
 
-- Homework: reading assignments is given every week
+- Homework: 
   - Prepare for short tests and discussions.
 
 - Office hour: by appointment
@@ -155,8 +175,8 @@ Questionnaire
 
 - High-income
 - Economic growth model
-- Aging economy 
 - Safe-haven currency
+- Aging economy 
 
 ::: notes
 Use this as a conversation starter: ask for students’ priors on Japan’s role.
@@ -202,7 +222,7 @@ ggline(gdppc,
 
 ---
 
-## Economic growth model
+## Economic growth model (input side)
 
 ```{r}
 ctys = c("JPN","USA","CHN")
@@ -210,7 +230,7 @@ ctys_col = c("black",get_palette(palette = "npg",2))
 pwt[,ISOcode:=factor(ISOcode,levels = ctys)]
 
 ggarrange(
-  ggline(pwt[grepl("TFP|service",Variablename2)],
+  ggline(pwt[grepl("service|persons|hours",Variablename2)],
        x="date",y="gyoy",color="ISOcode",palette = ctys_col,
        xlab = "",ylab = "",
        facet.by = "Variablename2",
@@ -218,7 +238,7 @@ ggarrange(
        title = "Annual Growth (%)") +
   guides(color = guide_legend(title = "Country")) +
   theme_pubclean(),
-  ggline(pwt[grepl("hours|capital",Variablename2)],
+  ggline(pwt[grepl("Human|TFP",Variablename2)],
        x="date",y="gyoy",color="ISOcode",palette = ctys_col,
        xlab = "",ylab = "",
        facet.by = "Variablename2",
@@ -237,6 +257,8 @@ ggarrange(
 
 ---
 
+## Economic growth model (export)
+
 ```{r}
 pwt_trade[,countrycode:=factor(countrycode,levels = ctys)]
 
@@ -245,13 +267,15 @@ ggline(pwt_trade[type=="x"],
        xlab = "",ylab = "",
        facet.by = "sector",
        numeric.x.axis = T,
-       title = "Share in GDP at current PPP",
+       title = "Export Share in GDP at current PPP",
        caption = "Source: PWT 10.01") +
   guides(color = guide_legend(title = "Country")) +
   theme_pubclean()
 ```
 
 ---
+
+## Economic growth (sectoral shift)
 
 ```{r}
 regs = unique(va[,Region])
@@ -261,6 +285,7 @@ va[,Region:=factor(Region,levels = regs)]
 
 ggline(va[grepl("value added",indicator)&date>=1990],
        x = "date",y="value",ylab="",xlab="",
+       title = "Value Added as share of GDP",
        palette = regs_col,add = "none",
        color = "Region",facet.by = "indicator",
        caption = "Source: World Bank") +
@@ -273,7 +298,32 @@ ggline(va[grepl("value added",indicator)&date>=1990],
 :::
 ---
 
-## Aging economy
+## Safe-haven currency
+
+```{r}
+curr = unique(imfd[,.(V1=sum(value)),
+                   by=Currency][order(-V1),Currency])
+curr = c("Japanese yen",curr[curr!="Japanese yen"])
+curr_col = c("black",get_palette(palette = "default",length(curr)-1))
+imfd[,Currency:=factor(Currency,levels = curr)]
+
+ggbarplot(imfd[!is.na(value)],
+          title = "The world total of official foreign exchange reserves by currency",
+          x="year",xlab = "",
+          y="value",ylab = "",
+          fill = "Currency",
+          palette = curr_col,
+          caption = "IMF COFER") +
+  scale_y_continuous(labels = label_number(suffix = "%")) +
+  guides(fill = guide_legend(nrow = 3))+
+  theme_pubclean()+
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1)) 
+```
+
+
+---
+
+## Aging economy (population)
 
 ```{r}
 unpop[,Region:=factor(Region,levels = regs)]
@@ -306,6 +356,8 @@ ggarrange(
 
 ---
 
+## Aging economy (immigration)
+
 ```{r}
 # CNMR  Net Migration Rate (per 1,000 population)
 # Net Number of Migrants (thousands)
@@ -334,26 +386,6 @@ ggarrange(
 )
 ```
 
----
-
-## Safe-haven currency
-
-```{r}
-curr = unique(imfd[,.(V1=sum(value)),
-                   by=Currency][order(-V1),Currency])
-curr = c("Japanese yen",curr[curr!="Japanese yen"])
-curr_col = c("black",get_palette(palette = "default",length(curr)-1))
-imfd[,Currency:=factor(Currency,levels = curr)]
-ggbarplot(imfd[!is.na(value)],
-          x="year",xlab = "",
-          y="value",ylab = "",
-          fill = "Currency",
-          palette = curr_col) +
-  scale_y_continuous(labels = label_number(suffix = "%")) +
-  guides(fill = guide_legend(nrow = 3))+
-  theme_pubclean()+
-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1)) 
-```
 
 ---
 ## Suggested Readings
