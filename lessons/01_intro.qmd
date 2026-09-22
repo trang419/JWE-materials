@@ -23,6 +23,6 @@ format: html
 
 
 ## Materials
-- **Slides** [View Slides](slides/01_intro.qmd)  
+- **Slides** [View Slides](../slides/01_intro.qmd)  
 
 
