@@ -1,20 +1,20 @@
 library(data.table)
 library(ggpubr)
 
-### gppdc
+### gppdc madison
 gdppc = fread("./data/temp/madison.csv")
 gdppc2 = gdppc[variable=="GDPpc"&date>1900&region!="World"]
 
 fwrite(gdppc2,"../data/01 intro/gdppc.csv")
 
-### growth
+### growth pwt
 pwt = fread("./data/temp/pwt.csv")
 pwt2 = pwt[!is.na(gyoy) &ISOcode%in%c("JPN","USA","CHN")
            &grepl("TFP|service|share|index|persons|hours",Variablename2)]
 
 fwrite(pwt2,"./data/01 intro/growth.csv")
 
-### trade
+### trade pwt
 # 1: beverage
 # 2: industrial supplies
 # 3: fuels and lubricants
@@ -24,13 +24,13 @@ fwrite(pwt2,"./data/01 intro/growth.csv")
 # price: USA GPDo in 2017 = 1
 # share in GDP at current PPP
 
-pwt_trade = fread("../data.large/pwt_trade.csv")
+pwt_trade = fread("../data/temp/pwt_trade.csv")
 pwt_trade2 = pwt_trade[countrycode%in%c("JPN","USA","CHN")]
 
-fwrite(pwt_trade2,"../data/trade.csv")
+fwrite(pwt_trade2,"../data/01 intro/trade.csv")
 
 ### share of value added in GDP
-wbdt = fread("../data.large/wbgdppc.csv")
+wbdt = fread("../data/temp/wbgdppc.csv")
 wbdt2 = rbind(wbdt[iso3c!="JPN",.(value=median(value)),
                       by =.(Region,indicator,date)],
               wbdt[iso3c=="JPN",
@@ -45,10 +45,10 @@ wbdt2[,Region:=factor(Region,levels = regs)]
 wbdt3 = wbdt2[grepl("value added",indicator)]
 setorder(wbdt3,Region)
 
-fwrite(wbdt3,"../data/va.csv")
+fwrite(wbdt3,"../data/01 intro/va.csv")
 
 ### population 
-unpopd = fread("../data.large/unpop.csv")
+unpopd = fread("../data/temp/unpop.csv")
 unpop = rbind(unpopd[iso3c!="JPN",
                      .(MedianAgePop=median(MedianAgePop),
                        NatChangeRT=median(NatChangeRT),
@@ -63,5 +63,5 @@ unpop = rbind(unpopd[iso3c!="JPN",
 unpop[,Region:=factor(Region,levels = regs)]
 setorder(unpop,Region)
 
-fwrite(unpop,"../data/pop.csv")
+fwrite(unpop,"../data/01 intro/pop.csv")
 
