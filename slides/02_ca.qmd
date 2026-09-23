@@ -1,0 +1,355 @@
+---
+title: "Comparative Advantage: The case of Japan"
+subtitle: ""
+author: "Trang Tran"
+date: "2026-09-29"
+format:
+  revealjs:
+    self-contained: true
+    theme: simple
+    slide-number: true
+    toc: false
+    code-line-numbers: false
+    #footer: "© Trang Tran: Japan in the World Economy"
+    chalkboard: false
+    pdf-export: true
+    incremental: true
+    controls: true
+    hash: true
+draft: true
+output-dir: ../docs/slides
+---
+
+## Introduction
+
+- Japan has capital, labor, and skilled labor 
+
+- In principle, it could grow more of its food
+
+- Instead it imports food and exports machinery
+
+- Why?
+
+## Why countries trade?
+
+- Comparative advantage: ***difference in resources or productivity***
+
+- Economic of scales: similar countries trade if production get cheaper at larger scale
+
+## Absolute vs. Comparative advantage
+
+- Being better at producing everything is absolute advantage: does not determine what gets traded.
+
+- Comparative advantage is about relative opportunity cost: what you give up to produce more unit of something.
+
+- Even a country with no absolute advantage in anything still has a comparative advantage in something.
+
+
+## Explaining Japan's trade patterns
+
+- Productivity/technology differences
+
+- Short-run immobility
+
+- Capital vs. labor abundance
+
+## Productivity differences
+
+- Core idea: countries export the good where their opportunity cost is lowest.
+
+- Japan's technology edge in precision manufacturing lowers the opportunity cost of producing autos and electronics relative to its trading partners.
+
+- In agriculture, Japan has higher opportunity costs, which driving the import patterns
+
+## Short-run immobility 
+
+- Core idea: some factors (land, sector-specific capital) can't quickly move between industries.
+
+- Japan's farmland and farmers can't retrain into auto manufacturing overnight.
+
+- Despite comparative disadvantage in agriculture, Japan has long-standing  protection policy.
+
+## Factor abundance
+
+- Core idea: countries export goods that intensively use their abundance factor.
+
+- Japan is capital- and technology-abundant relative to land and labor.
+
+- Japan export capital-intensive goods (car, electronics) and imports land/labor-intensive goods (food, raw materials)
+
+
+## Which lens fits Japan best?
+
+- Exports where relative productivity is highest
+
+- Protection of agriculture despite comparative disadvantage
+
+- Exports capital-intensive goods, imports land/labor-intensive goods
+
+---
+
+## What drives comparative advantage?
+
+::: {.smaller}
+Kowalski (2011, OECD): 55 OECD and emerging economies.
+
+:::: {.columns}
+
+::: {.column width="54%"}
+**Convergence across countries**
+
+- Physical capital
+- Education (tertiary, avg. schooling)
+- Primary energy supply
+- Financial development (credit)
+:::
+
+::: {.column width="44%"}
+**Divergence across countries**
+
+- Secondary education
+- Regulatory quality, rule of law, corruption
+- Import tariffs
+:::
+::: 
+:::
+
+---
+
+## Convergence differs by trade relationship
+
+- North-North (within OECD):	became more homogeneous on most sources
+
+- South-South (within non-OECD): gap remains for capital-to-labor ratio and regulatory indicators but narrowed for education, energy supply, financial development.
+ 
+- North-South (OECD vs. non-OECD): 	Gap widened for physical capital, credit availability, regulatory quality but narrowed for human capital
+
+---
+
+## Revealed comparative advantages
+
+The Balassa index (Balassa, 1965): how much more (or less) a country exports of a good, relative to its share of world trade.
+
+$$
+RCA = \frac{\text{country's export share of good X}}
+{\text{world's export share of good X}}
+$$
+
+- RCA > 1: the country exports proportionally more of that good than the world average
+
+::: notes  
+- effective only within same country among products or same product among countries: higher value indicates a stronger export performance, higher degree of export specialization, and a higher degree of revealed comparative advantage
+:::  
+
+---
+
+## Questions
+
+1. In what sectors does Japan have high RCA?
+
+2. In what sectors does Japan have low RCA?
+
+## Japan RCA in 2019
+
+```{r}
+#| echo: false
+library(data.table)
+library(ggpubr)
+library(ggrepel)
+
+dtcaw_tiva = fread("../data/02 ca/rca_jpn_tiva.csv")
+
+ggscatter(
+  dtcaw_tiva,
+  x = "export_share",
+  y = "traditional",
+  size = "export_share",
+  color = "traditional",
+  xlab = "Japan's Export Share",
+  ylab = "RCA",
+  title = "Japan: RCA vs. Export Share, 2019",
+  subtitle = "Bubble size reflects share of total exports",
+  caption = "Source: TIVA from WITS",
+  alpha = 0.75
+) +
+  scale_size_continuous(range = c(2, 12)) +
+  scale_color_gradient2(
+    midpoint = 1, low = "firebrick", mid = "grey70", high = "steelblue"
+  ) +
+  geom_hline(yintercept = 1, linetype = "dashed", color = "grey40", linewidth = 0.4) +
+  geom_text_repel(
+    aes(label = label_sect),
+    size = 3.3,
+    fontface = "bold",
+    max.overlaps = 20,
+    box.padding = 0.5,
+    segment.color = "grey60",
+    segment.size = 0.3
+  ) +
+  theme(
+    legend.position = "none",
+    plot.title = element_text(face = "bold", size = 15),
+    plot.subtitle = element_text(color = "grey30", size = 11),
+    plot.caption = element_text(color = "grey50", size = 8),
+    panel.grid.major = element_line(color = "grey92", linewidth = 0.3),
+    axis.title = element_text(size = 11)
+  )
+
+```
+
+## RCA of Japan across period
+
+```{r}
+#| echo: false
+library(data.table)
+library(ggpubr)
+library(ggrepel)
+
+dtcaw_jpn = fread("../data/02 ca/rca_jpn.csv")
+
+order_levels = unique(dtcaw_jpn[order(-traditional_med),sect_name])
+dtcaw_jpn[,sect_name:=factor(sect_name,levels = order_levels)]
+
+ggboxplot(
+  dtcaw_jpn,
+  x = "sect_name",
+  xlab = "Sector",
+  y = "traditional",
+  ylab = "RCA",
+  rotate = TRUE,
+  facet.by = "period",
+  nrow = 1,
+  title = "RCA by Sector",
+  subtitle = "Shift toward capital- and technology-intensive exports",
+  caption = "Source: WIOD from WITS",
+  fill = "period",
+  palette = "Blues",
+  outlier.shape = 21,
+  outlier.size = 1.5
+) +
+  geom_hline(yintercept = 1, linetype = "dashed", color = "grey40", linewidth = 0.4) +
+  theme(
+    strip.text = element_text(size = 10, face = "bold"),
+    strip.background = element_rect(fill = "grey92", color = NA),
+    legend.position = "none",
+    plot.title = element_text(face = "bold", size = 15),
+    plot.subtitle = element_text(color = "grey30", size = 11),
+    plot.caption = element_text(color = "grey50", size = 8),
+    axis.text.y = element_text(size = 9),
+    panel.grid.major.x = element_line(color = "grey90", linewidth = 0.3),
+    panel.spacing = unit(1, "lines")
+  )
+
+```
+
+::: notes
+- 1965–1974: RCA concentrated in labor-intensive, lower-technology sectors
+-- Highest: Textiles, Textile, Leather and Footwear
+-- Also elevated: Basic Metals and Fabricated Metal; Machinery, nec.
+
+- 1975–1984: Transition period
+-- Textiles RCA begins declining
+-- Transport Equipment, Machinery, and Electrical/Optical Equipment start rising
+
+- 1985–2000: RCA concentrated in capital- and technology-intensive sectors
+-- Highest: Transport Equipment; Electrical and Optical Equipment; Machinery, nec.
+-- Textiles falls to the bottom of the distribution
+:::
+
+## RCA: Japan and Others
+
+```{r}
+#| echo: false
+dtcaw_reg = fread("../data/02 ca/rca_reg.csv")
+
+jpn_vals <- dtcaw_reg[region == "JPN",
+                        .(traditional_jpn = traditional), 
+                        by = .(sect_name, t)]
+usa_vals <- dtcaw_reg[region == "USA",
+                        .(traditional_usa = traditional), 
+                        by = .(sect_name, t)]
+chn_vals <- dtcaw_reg[region == "CHN",
+                     .(traditional_chn= traditional), 
+                     by = .(sect_name, t)]
+
+ggdensity(
+  dtcaw_reg,
+  x = "traditional",
+  facet.by = c("t", "sect_name"),
+  ncol = 3,
+  fill = "grey85",
+  color = "grey50",
+  alpha = 0.6
+) +
+  geom_vline(
+    data = jpn_vals,
+    aes(xintercept = traditional_jpn, color = "Japan"),
+    linetype = "dashed", linewidth = 0.9
+  ) +
+  geom_vline(
+    data = usa_vals,
+    aes(xintercept = traditional_usa, color = "United States"),
+    linetype = "dashed", linewidth = 0.9
+  ) +
+  geom_vline(
+    data = chn_vals,
+    aes(xintercept = traditional_chn, color = "China"),
+    linetype = "dashed", linewidth = 0.9
+  ) +
+  scale_color_manual(
+    name = "Country",
+    values = c("Japan" = "#D7263D", "United States" = "#1B6CA8", "China" = "#2E8B57")
+  ) +
+  guides(color = guide_legend(override.aes = list(linetype = "dashed", linewidth = 1.1))) +
+  xlab("RCA") +
+  ylab("Density") +
+  labs(
+    title = "RCA Distribution Across Countries",
+    subtitle = "Japan vs. United States vs. China, by sector and period",
+    caption = "Source: WIOD from WITS"
+  ) +
+  theme(
+    strip.text = element_text(size = 7, face = "bold"),
+    strip.background = element_rect(fill = "grey92", color = NA),
+    legend.position = "top",
+    legend.title = element_text(face = "bold"),
+    plot.title = element_text(face = "bold", size = 15),
+    plot.subtitle = element_text(color = "grey30", size = 11),
+    plot.caption = element_text(color = "grey50", size = 8),
+    panel.grid.major = element_line(color = "grey93", linewidth = 0.3),
+    panel.spacing = unit(0.8, "lines"),
+    axis.text.y = element_blank(),
+    axis.ticks.y = element_blank()
+  )
+
+```
+  
+---
+
+## Limits of RCA as a measure
+
+- RCA reflects actual trade flows, which are already shaped by tariffs, subsidies, and protection, not a "pure" underlying advantage.
+
+- Global value chains: a "Japanese" car may contain parts made in many countries, blurring what RCA is really measuring.
+
+- Categorization-sensitive: results can shift depending on how narrowly or broadly a "sector" is defined.
+
+---
+
+## Key takeaways
+
+- Japan's trade pattern can be explained by theories on comparative advantages.
+
+- RCA gives us an empirical way to confirm the pattern the theories predict.
+
+- RCA has its limits
+
+---
+## Suggested Readings
+<div style="font-size:50%">
+- Balassa, B. (1965). Trade Liberalisation and “Revealed” Comparative Advantage. The Manchester School, 33(2), 99–123. https://doi.org/10.1111/j.1467-9957.1965.tb00050.x
+- OECD (2011), Globalisation, Comparative Advantage and the Changing Dynamics of Trade, OECD Publishing, Paris, https://doi.org/10.1787/9789264113084-en.
+
+
+
+</div>

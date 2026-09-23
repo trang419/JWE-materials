@@ -186,7 +186,7 @@ dtl = melt(
         gvcbp, gvcfp, gvcmix)],
   id.vars = c("imp", "exp",
               "imp_reg", "exp_reg",
-              "sect_name", "sect_group", "t")
+              "sect_name", "sect_group", "t","source")
 )
 ```
 
