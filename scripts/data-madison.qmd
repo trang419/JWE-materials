@@ -1,6 +1,6 @@
 ---
 title: "Cleaning Raw Data: A Worked Example"
-subtitle: "Maddison Project Database (GDP per capita, 1-2022)"
+subtitle: "Maddison Project Database (GDP per capita, 1900-2022)"
 format: html
 ---
 

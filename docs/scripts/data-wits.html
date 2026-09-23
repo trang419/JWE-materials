@@ -133,6 +133,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="../lessons/index.html"> 
 <span class="menu-text">Lessons</span></a>
   </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-slides" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Slides</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-slides">    
+        <li>
+    <a class="dropdown-item" href="../slides/01_intro.html">
+ <span class="dropdown-text">Lecture 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../slides/02_ca.html">
+ <span class="dropdown-text">Lecture 2</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="../scripts/index.html"> 
 <span class="menu-text">Data</span></a>
@@ -540,7 +555,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>dtl <span class="ot">=</span> <span class="fu">melt</span>(</span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>  dt2[source <span class="sc">==</span> <span class="st">"wiodlr"</span> <span class="sc">|</span> (source <span class="sc">==</span> <span class="st">"tiva"</span> <span class="sc">&amp;</span> t <span class="sc">&gt;</span> <span class="dv">2000</span>),</span>
-<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>      .(imp, exp, imp_reg, exp_reg,</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>      .(source,imp, exp, imp_reg, exp_reg,</span>
 <span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>        sect_name, sect_group,</span>
 <span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>        t, traditional_trade_int, traditional_trade_fin,</span>
 <span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>        gvcbp, gvcfp, gvcmix)],</span>
@@ -548,29 +563,49 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>              <span class="st">"imp_reg"</span>, <span class="st">"exp_reg"</span>,</span>
 <span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>              <span class="st">"sect_name"</span>, <span class="st">"sect_group"</span>, <span class="st">"t"</span>)</span>
 <span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in melt.data.table(dt2[source == "wiodlr" | (source == "tiva" &amp; :
+'measure.vars' [source, traditional_trade_int, traditional_trade_fin, gvcbp,
+...] are not all of the same type. By order of hierarchy, the molten data value
+column will be of type 'character'. All measure variables not of type
+'character' will be coerced too. Check DETAILS in ?melt.data.table for more on
+coercion.</code></pre>
+</div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>dtl[, .N, by <span class="ot">=</span> variable]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>dtl[, .N, by <span class="ot">=</span> variable]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>                variable       N
                   &lt;fctr&gt;   &lt;int&gt;
-1: traditional_trade_int 5715900
-2: traditional_trade_fin 5715900
-3:                 gvcbp 5715900
-4:                 gvcfp 5715900
-5:                gvcmix 5715900</code></pre>
+1:                source 5715900
+2: traditional_trade_int 5715900
+3: traditional_trade_fin 5715900
+4:                 gvcbp 5715900
+5:                 gvcfp 5715900
+6:                gvcmix 5715900</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">range</span>(dtl<span class="sc">$</span>t)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">range</span>(dtl<span class="sc">$</span>t)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 1965 2020</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>dt[,.N,by<span class="ot">=</span>source]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   source        N
+   &lt;char&gt;    &lt;int&gt;
+1:   eora 24147396
+2: wiodlr   559728
+3:  wiodo  1000195
+4:  wiodn  1626240
+5:    adb  2361555
+6:   tiva  6936930</code></pre>
 </div>
 </div>
 </section>
 <section id="save-the-cleaned-dataset" class="level2">
 <h2 class="anchored" data-anchor-id="save-the-cleaned-dataset">Save the cleaned dataset</h2>
-<p>Persist the cleaned, merged, long-format table so downstream scripts don’t need to repeat the loading/merging steps above.</p>
+<p>Persist the cleaned, merged, long-format table so downstream scripts don’t need to repeat the loading/merging steps above. Use parquet file to reduce on file size.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">fwrite</span>(dtl, <span class="st">"../data/temp/gvc_trade.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>arrow<span class="sc">::</span><span class="fu">write_parquet</span>(dtl, <span class="st">"../data/temp/gvc_trade.parquet"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="summary" class="level2">

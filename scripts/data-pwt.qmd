@@ -79,7 +79,8 @@ pwtdl[, Variablename2 := trimws(gsub("(\\(|\\,|by\\b|at\\b).*$", "",
 
 ```{r}
 ggpubr::ggline(pwtdl[ISOcode %in% c("JPN", "USA")
-                      & !grepl("Share|index", Variablename)],
+                      & !grepl("Share", Variablename)
+                     &!is.na(gyoy)],
                x = "date", y = "gyoy", color = "ISOcode",
                facet.by = "Variablename2",
                numeric.x.axis = T)
