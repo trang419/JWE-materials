@@ -9,10 +9,14 @@ fwrite(gdppc2,"../data/01 intro/gdppc.csv")
 
 ### growth pwt
 pwt = fread("./data/temp/pwt.csv")
-pwt2 = pwt[!is.na(gyoy) &ISOcode%in%c("JPN","USA","CHN")
-           &grepl("TFP|service|share|index|persons|hours",Variablename2)]
+pwt2 = merge(pwt[Variablecode=="labsh",.(ISOcode,date,labsh=value)],
+             pwt[Variablecode!="labsh",.(ISOcode,date,gyoy,Variablename2)],
+             by=c("ISOcode","date"))
 
-fwrite(pwt2,"./data/01 intro/growth.csv")
+pwt3 = pwt2[!is.na(gyoy) &ISOcode%in%c("JPN","USA","CHN")
+           &grepl("TFP|service|share|index|persons|hours|GDP",Variablename2)]
+
+fwrite(pwt3,"./data/01 intro/growth.csv")
 
 ### trade pwt
 # 1: beverage

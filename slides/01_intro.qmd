@@ -184,7 +184,6 @@ Use this as a conversation starter: ask for students’ priors on Japan’s role
 
 ---
 
-## High-income
 
 ```{r}
 #| echo: false
@@ -194,7 +193,6 @@ library(scales)
 library(ggplot2)
 path = function(x){paste0("../data/01 intro/",x)}
 gdppc = fread(path("gdppc.csv"))
-pwt = fread(path("growth.csv"))
 pwt_trade = fread(path("trade.csv"))
 va = fread(path("va.csv"))
 unpop = fread(path("pop.csv"))
@@ -210,6 +208,7 @@ ggline(gdppc,
        palette = regs_col,
        color = "region",
        title = "GDP per capita (constant 2011 USD)",
+subtitle = "Japan converged with advanced economies by the 1980s, then growth stalled",
        caption = "Source: Madison Project (2023).\n Western Offshoots include Australia, Canada, New Zealand, United States.") +
   guides(color = guide_legend(nrow = 2)) +
   scale_y_continuous(labels = label_number(
@@ -223,34 +222,54 @@ ggline(gdppc,
 
 ---
 
-## Economic growth model (input side)
+## Growth accounting: the framework
+
+Economic growth comes from two different sources:
+
+- **More inputs**: working more hours, employing more people, building more capital, or having a more educated workforce
+- **Using inputs better**: technology, efficiency, and innovation that let the same inputs produce more output (this is called **Total Factor Productivity**, or **TFP**)
+
+
+::: notes
+- Frame the upcoming charts: each panel shows the annual growth rate (%) of one input, or of TFP
+- Preview: Japan's inputs kept growing, but TFP growth stalled — that's the story the next few slides build toward
+- Optional if asked: TFP is measured as a residual — growth left over after accounting for capital, labor, and human capital growth
+:::
+
+---
+
+## Growth accounting: Japan
 
 ```{r}
 #| echo: false
-ctys = c("JPN","USA","CHN")
-ctys_col = c("black",get_palette(palette = "npg",2))
-pwt[,ISOcode:=factor(ISOcode,levels = ctys)]
+pwt = fread(path("growth.csv"))
+ctys_col_jpn = "black"
+var_order = c("Real GDP",
+              "Capital services",
+              "Number of persons engaged", 
+              "Average annual hours worked",
+              "Human capital index", 
+              "TFP")
+pwt[,Variablename2 := factor(Variablename2, levels = var_order)]
+pwt[,growth_contr:=gyoy]
+pwt[grepl("persons|hours|human",Variablename2),growth_contr := gyoy*labsh]
+pwt[grepl("capital service",Variablename2),growth_contr := gyoy*(1-labsh)]
 
-ggarrange(
-  ggline(pwt[grepl("service|persons|hours",Variablename2)],
-       x="date",y="gyoy",color="ISOcode",palette = ctys_col,
-       xlab = "",ylab = "",
-       facet.by = "Variablename2",
-       numeric.x.axis = T,
-       title = "Annual Growth (%)") +
-  guides(color = guide_legend(title = "Country")) +
-  theme_pubclean(),
-  ggline(pwt[grepl("Human|TFP",Variablename2)],
-       x="date",y="gyoy",color="ISOcode",palette = ctys_col,
-       xlab = "",ylab = "",
-       facet.by = "Variablename2",
-       numeric.x.axis = T,
+inputs_jp = pwt[grepl("service|persons|hours|Human|TFP",Variablename2) & ISOcode=="JPN"]
+gdp_jp = pwt[grepl("Real GDP",Variablename2) & ISOcode=="JPN"] 
+
+ggplot(inputs_jp, aes(x = date, y = growth_contr, fill = Variablename2)) +
+  geom_col(position = "stack") +
+  geom_line(data = gdp_jp, aes(x = date, y = gyoy, fill = NULL),
+            color = "black", linewidth = 0.9, inherit.aes = FALSE) +
+  geom_hline(yintercept = 0, color = "gray30", linewidth = 0.3) +
+  scale_fill_manual(values = get_palette(palette = "npg", length(unique(inputs_jp$Variablename2)))) +
+  labs(x = "", y = "Annual growth (%)", fill = "Input",
+       title = "Growth accounting: Japan",
+       subtitle = "Contribution of each input to GDP growth (bars) vs. real GDP growth (line)",
        caption = "Source: Penn World Table 10.1") +
-  guides(color = guide_legend(title = "Country")) +
-  theme_pubclean(),
-  common.legend = T,
-  nrow = 2
-)
+  theme_pubclean() +
+  theme(legend.position = "bottom")
 ```
 
 ::: notes
@@ -259,7 +278,29 @@ ggarrange(
 
 ---
 
-## Economic growth model (export)
+## Growth drivers across countries
+  
+```{r}
+#| echo: false
+ctys = c("JPN","USA","CHN")
+ctys_col = c("black",get_palette(palette = "npg",2))
+pwt[,ISOcode:=factor(ISOcode,levels = ctys)]
+
+ggline(pwt[!grepl("Share",Variablename2)],
+       x = "date", y = "gyoy", color = "ISOcode", palette = ctys_col,
+       xlab = "", ylab = "Annual growth (%)",
+       facet.by = "Variablename2",
+       numeric.x.axis = T,
+       title = "Growth accounting: Japan vs. US and China",
+       subtitle = "Japan's TFP growth lags both peers",
+       caption = "Source: Penn World Table 10.1") +
+  guides(color = guide_legend(title = "Country")) +
+  theme_pubclean()
+```
+
+---
+
+## Export-led growth
 
 ```{r}
 #| echo: false
@@ -271,6 +312,7 @@ ggline(pwt_trade[type=="x"],
        facet.by = "sector",
        numeric.x.axis = T,
        title = "Export Share in GDP at current PPP",
+       subtitle = "Manufacturing export-led catch-up",
        caption = "Source: PWT 10.01") +
   guides(color = guide_legend(title = "Country")) +
   theme_pubclean()
@@ -278,8 +320,8 @@ ggline(pwt_trade[type=="x"],
 
 ---
 
-## Economic growth (sectoral shift)
-
+## Structural shift
+  
 ```{r}
 #| echo: false
 regs = unique(va[,Region])
@@ -290,19 +332,23 @@ va[,Region:=factor(Region,levels = regs)]
 ggline(va[grepl("value added",indicator)&date>=1990],
        x = "date",y="value",ylab="",xlab="",
        title = "Value Added as share of GDP",
+       subtitle = "Shift of labor from agriculture to manufacturing/services",
        palette = regs_col,add = "none",
        color = "Region",facet.by = "indicator",
        caption = "Source: World Bank") +
   guides(color = guide_legend(nrow = 2)) +
   theme_pubclean() 
-```
+``` 
 
-::: notes
-- Shift of labor from agricultural sectors to manufacturing and services
-:::
 ---
 
-## Safe-haven currency
+## Role of currency
+  
+- **Store of value**: held as reserves by central banks and investors
+- **Medium of exchange**: used to invoice and settle cross-border trade, even between two other countries
+- **Unit of account**: used to price global assets like oil, or benchmark other currencies against
+
+## Yen as store of value
 
 ```{r}
 #| echo: false
@@ -314,6 +360,7 @@ imfd[,Currency:=factor(Currency,levels = curr)]
 
 ggbarplot(imfd[!is.na(value)],
           title = "The world total of official foreign exchange reserves by currency",
+          subtitle = "Japan as safe-haven currency",
           x="year",xlab = "",
           y="value",ylab = "",
           fill = "Currency",
@@ -325,6 +372,26 @@ ggbarplot(imfd[!is.na(value)],
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1)) 
 ```
 
+::: notes
+- Frame the upcoming chart: it shows only one dimension (store of value / reserve holdings), not trade invoicing or pricing, worth noting the yen may play a bigger or smaller role in other functions
+- Preview: the yen has held a stable, mid-sized share of global reserves for decades — this reflects Japan's role as a safe-haven currency despite its shrinking share of world GDP
+- Optional if asked: contrast with the US dollar, which dominates in all three functions simultaneously, that's part of what "reserve currency" usually implies beyond just what this chart shows
+:::
+
+## Why demographics matter
+
+- **Growth drivers**: labor supply directly feeds into the growth accounting framework 
+- **Market size**: a country's population sets the scale of domestic demand
+
+- **Consumption**: a population's age structure drives spending patterns 
+
+- **Saving**: national saving rates (working-age people save for retirement; retirees draw savings down)
+
+::: notes
+- Callback: ties directly to the growth-accounting slide — labor was one of the four inputs; this section asks "what happens when that input starts shrinking?"
+- Preview: Japan's median age is now the highest among peers, with population decline already underway — the next two slides show this directly, plus whether migration is offsetting it
+- Optional if asked: aging affects saving in offsetting ways — life-cycle theory predicts lower aggregate saving as retirees dissave, but this is debated empirically for Japan specifically (household saving rates have been unusually resilient)
+:::
 
 ---
 
@@ -393,12 +460,18 @@ ggarrange(
 )
 ```
 
+## Japan at a glance: takeaways
+
+- **High-income**: Japan converged with advanced economies decades ago, but stalled since the 1990s
+- **Growth model**:  Initially investment- and export-led, with rising TFP but since the 1990s, all drivers slowed
+- **Safe-haven currency**: the yen has held a stable share of global reserves for decades
+- **Aging economy**: a shrinking, aging population is now squeezing the labor input directly
+
+
+::: notes
+- Japan's trajectory as a cautionary tale or a preview of what other aging economies (Korea, China, parts of Europe) will face
+:::
 
 ---
 ## Suggested Readings
 - Ito and Hoshi (2020), chapter 1-3, 12
-
-
-
-
- 
