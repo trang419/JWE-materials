@@ -1,0 +1,476 @@
+---
+title: "Measurement of Global Value Chains"
+subtitle: ""
+author: "Trang Tran"
+date: "2025-09-29"
+format:
+  revealjs:
+    self-contained: true
+    theme: simple
+    slide-number: true
+    toc: false
+    code-line-numbers: false
+    #footer: "© Trang Tran: Japan in the World Economy"
+    chalkboard: false
+    pdf-export: true
+    incremental: true
+    controls: true
+    hash: true
+draft: true
+output-dir: ../docs/slides
+---
+
+## Introduction
+
+- Trade in tasks
+- Trade in value added
+- Japanese comparative advantage: revisited
+- Case study: Motor Vehicles, Electronics, Chemicals
+
+  
+## Trade in Tasks
+
+- Traditional trade theory: countries exchange **complete, finished goods**
+
+- Grossman & Rossi-Hansberg (2008): production is unbundled into discrete **tasks** — design, component sourcing, fabrication, assembly, testing, marketing
+
+- Comparative advantage now applies **task-by-task**, not product-by-product
+
+- A task is offshored when it can be performed abroad more cheaply, net of coordination and trade costs
+
+::: notes
+- WTO and JETRO-IDE (2011) reframe East Asian trade as evolving "from trade in goods to trade in tasks"
+- Explains the rise of intra-industry, intra-firm trade in intermediate goods
+- A country's export mix reflects which tasks it specializes in, not which whole product it exports
+:::
+
+## An example
+
+```{r}
+library(data.table)
+library(ggpubr)
+library(ggrepel)
+iphone = fread("../data/03 gvc/gvc_iphone.csv")
+iphone[,rid:=1:.N]
+iphone[,label:=ifelse(rid<9|rid>15,Manufaturer_Component,"")]
+ggpie(iphone,
+      x = "Cost USD",                 
+      label = "label", 
+      fill = "Country",
+      lab.adjust = 0.3,
+      label_percent = TRUE,
+      title = "Manufacturing Cost of iphone 3G",
+      caption = "Source: Xing and Detert (2010) ") +
+  theme(legend.position = "right")
+```
+
+
+## The Smile Curve
+
+![Global Value Chain  
+_Source: Baldwin and Ito (2021)_](image/gvc_smilecurve.jpg)
+
+::: notes
+- Introduced by Acer founder and CEO Stan Shih in the early 1990s: - the early and late stages of the supply chains generate higher value added
+- The share of value added in manufactured products is shifting from the fabrication stages to pre- and post-fabrication services. 
+  - reclassification: from in-house to outsourced -> factory-less manufacturer
+  - task-composition shifts: more logistics, transportation, communication to move intermediates or more software/design etc final goods
+  - task–relative price shifts: off-shoring to reduce the relative price of the off-shored tasks.
+
+::: 
+
+
+## Trade in Value Added
+
+- Gross trade statistics **double-count** intermediate inputs that cross borders multiple times before reaching the final consumer
+
+- The Trade in Value Added (TiVA) approach reallocates exports to the country that actually created the value:
+  - **Domestic Value Added (DVA)**: value added by the exporting country itself
+  - **Foreign Value Added (FVA)**: value added by other countries, embodied in imported inputs
+
+::: notes
+- Gross exports overstate bilateral imbalances (e.g., the US–China trade deficit narrows substantially once measured in value-added terms)
+- Value-added trade better reflects which country actually benefits from a given trade flow
+:::
+
+
+## Japan comparative advantage: revisited
+
+```{r}
+dtcaw_jpn = fread("../data/02 ca/rca_jpn.csv")
+dtcaw_jpn_s = dtcaw_jpn[t%in%c(1965,2000)]
+ggscatter(dtcaw_jpn_s,
+          title = "Revealed Comparative Advantage for Japan",
+          caption = "Data Source: WITS, WIOD, TIVA",
+              color = "sect_group",
+          legend="none",
+          x="traditional",y="gvc",
+          facet.by = "t",
+          xlab="Gross Trade",
+          ylab="Trade in value added") +
+  geom_abline(intercept = 0, slope = 1, color = "red",
+              linetype = "dotdash") +
+  geom_hline(yintercept = 1, linetype = "dotdash") +
+  geom_vline(xintercept = 1, linetype = "dotdash") +
+    geom_text_repel(aes(x = traditional, y = gvc, label = sect_name, 
+                      color = sect_group),
+                    data = dtcaw_jpn_s, size = 2,
+                   show.legend = FALSE)
+
+```
+  
+::: notes  
+- RCA_Ai = share of export of industry i in country A export/ share of global export of industry in global export (Balassa, 1965)
+- effective only within same country among products or same product among countries: higher value indicates a stronger export performance, higher degree of export specialization, and a higher degree of revealed comparative advantage
+- CA emphasize relative differences in productivity between countries as the reason for international trade
+:::  
+
+---
+```{r}
+#| fig-height: 9
+#| fig-width: 12
+dtcaw_reg = fread("../data/02 ca/rca_reg.csv")
+regss = unique(dtcaw_reg[,region])
+dtcaw_reg[,region:=factor(region,levels = regss)]
+dtcaw_reg_s = dtcaw_reg[grepl("Electrical",sect_name)&t%in%c(1970,2000)]
+ggscatter(dtcaw_reg_s,
+    title = "Revealed Comparative Advantage for Electrical Equipment",
+          caption = "Data Source: WITS, TIVA",
+          x="traditional",y="gvc",
+          #color = "sect_group",
+    xlab="Gross Trade",ylab =" Trade in value added",
+          legend="none",
+facet.by = "t",nrow=1) +
+  geom_abline(intercept = 0, slope = 1, 
+              linetype = "dotdash") +
+  geom_hline(yintercept = 1, linetype = "dotdash") +
+  geom_vline(xintercept = 1, linetype = "dotdash") +
+    geom_text_repel(aes(x = traditional, y = gvc, label = region, 
+                      #color = sect_group
+                      ),
+                    data = dtcaw_reg_s, size = 3,max.overlaps = 20,
+                   show.legend = FALSE)
+```
+
+::: notes  
+- the highest degree of RCA variation: primary and unskilled labour-intensive product
+- less variation in technology and human capital-intensive product categories
+:::  
+
+## Key Features of Global Value Chains 
+
+- Fragmentation of Production: across multiple countries for cost structures, labor markets, and expertise
+
+- Specialization: specific segments of the chain (R&D, design, manufacturing, logistics )
+   
+- Interconnection: trade, investment, and technology
+
+- Value creation: value added chain from materials to final goods
+
+- Global distribution: multiple markets
+
+## Measuring Global Value Chains (1)
+
+- GVC participation decomposes a country's **gross exports** by the source and destination of value added.
+
+**Backward linkage (backward participation)**
+
+$$ \text{Backward} = \frac{FVA}{\text{Gross Exports}} \times 100 $$
+
+- $FVA$ = foreign value added embodied in a country's own exports
+- Captures how much a country **relies on imported inputs** to produce what it exports
+
+## Measuring Global Value Chains (2)
+
+**Forward linkage (forward participation)**
+
+$$ \text{Forward} = \frac{DVX}{\text{Gross Exports}} \times 100 $$
+
+- $DVX$ = domestic value added exported *indirectly*, i.e. used as an input in a third country's exports
+- Captures how much of a country's own value added is **used by others** further downstream
+
+- Total GVC participation = Backward + Forward
+
+::: notes
+- Based on the gross export decomposition in Koopman, Wang & Wei (2014), built from international input–output tables
+- Small, open economies (e.g., ASEAN members) tend to show higher backward participation — they import more of what they need to export
+- Countries positioned at the start of chains (raw materials, core components, R&D) tend to show higher forward participation
+- Rule of thumb: Backward ↑ when a country imports a lot of intermediates; Forward ↑ when a country's intermediates are re-exported by others
+:::
+
+## Finer measurement
+
+- GVC-related trade: cross border at least twice
+  - **Pure backward participation**: the use of foreign inputs in exports to the final destination (chain end)
+  - **Pure forward participation**: the use of domestically produced intermediates in third-country exports (chain start)
+  - **Mixed participation**: the use of foreign intermediates in third-country exports
+
+::: notes
+- Upstream (high value): design, R&D, core components, precise machinery
+- Midstream: capital goods exports, management of production networks
+- Downstream: limited (assembly shifted to China/ASEAN), but could be different for chemicals (pharmaceutical synthesis)
+::: 
+
+
+## Why GVCs are Important
+
+```{r}
+dtw = fread("../data/03 gvc/gvc_share.csv")
+ggarrange(
+  ggpie(dtw[t==2020],
+        x="share",
+        color="variable",
+        fill="variable",
+        legend="none",
+        label="variable",
+        title = "2020") +
+    theme(plot.margin = unit(c(1,1,1,1), "cm")),
+  ggpie(dtw[t==1970],
+        x="share",
+        color="variable",
+        fill="variable",
+        legend="none",
+        label="variable",
+        title = "1970",
+        caption = "Source: WITS, WIOD, TIVA")+
+    theme(plot.margin = unit(c(1,2,1,1), "cm")),
+  align = "h"
+) %>% 
+  annotate_figure(
+    top  = text_grob("World Trade", face = "bold", size = 14))
+```
+
+::: notes
+- Only one fourth trade are GVC-related in 1970
+- Over 50% of world trade occurs within GVCs in 2020 
+- Enables technology transfer and knowledge spillovers.  
+- Entry point for developing countries into global trade.  
+- Also increases vulnerability to shocks (pandemic, natural disasters).  
+:::
+
+
+## Why GVCs Matter for Japan
+
+```{r}
+dt_gvc = fread("../data/03 gvc/gvc_JPN.csv")
+ggbarplot(dt_gvc,
+          x="t",xlab = "",y="share",
+          fill="variable",
+          color = "variable",
+          facet.by = "type",
+          caption = "Data Source: WITS, WIOD, TIVA",
+          title="Japan trade") +
+  #theme(plot.margin = unit(c(1,1,1,1), "cm")) +
+  guides(fill=guide_legend(nrow=2),color=guide_legend(nrow=2))
+```
+::: notes
+- GVC-related trade increase from about 20% in 1970 to 40% in 2020
+- Further separation of production chain with assembly move to China in 1990s, and then new ASEAN3
+:::
+
+## Japan's in GVC Participation
+
+```{r}
+dt_index = fread("../data/03 gvc/gvc_index.csv")
+ggarrange(
+  ggbarplot(dt_index[t==1970],
+            x="RegionRank",y="share",
+            facet.by = "t",
+            color = "variable",
+            fill = "variable") +
+    theme(axis.text.x = element_text(angle = 90)),
+  ggbarplot(dt_index[t==2020],
+            x="RegionRank",y="share",
+            facet.by = "t",
+            color = "variable",
+            fill = "variable") +
+    theme(axis.text.x = element_text(angle = 90)),
+  common.legend = T
+) %>% annotate_figure(
+  bottom = "Data Source: WITS"
+)
+```
+
+::: notes
+- Small open economies source more inputs from abroad in GVCs than large countries: more backward participation
+:::
+
+## Japanese import and export structure
+
+```{r}
+dt_gvc_reg = fread("../data/03 gvc/gvc_reg.csv")
+ggbarplot(dt_gvc_reg,
+          caption = "Data Source: WITS, TIVA",
+          x="region",
+          xlab="",
+          ylab = "billion USD",
+          y="value2",
+          fill="variable",
+          color = "variable",
+          facet.by = c("sect_group"),
+          #title="Japan trade",
+          rotate =T) +
+  #theme(plot.margin = unit(c(1,1,1,1), "cm")) +
+  geom_hline(yintercept = 0,color = "black", linetype = "dotdash")
+```
+
+::: notes
+- Import energy, food, raw materials mostly traditional trade
+- Japan trade with the N.America/EU
+  - import services
+  - export manufacturing goods, surplus with US
+- Japan trade with China/ASEAN
+  - Imports consumer electronics, textiles
+  - Exports high-tech machinery, components
+  - "Task sharing" production networks
+  
+- services (WTO GATS): production happens with consumption
+  - cross-border supply 
+  - consumption abroad (tourism, education)
+  - commercial presence (branch of bank)
+  - movement of natural persons (Filipino nurse contract in Japan: not migration)
+
+:::
+
+
+## Regional Hubs
+
+![Global value chain and regional hubs
+_Source: Suvannaphakdy and Pham (2023) based on Abiad et al. (2018)_](image/gvc_network.png)
+
+## Case: Vehicles
+
+```{r}
+#| fig-height: 6
+#| fig-width: 12
+dtback = fread("../data/03 gvc/gvc_backward.csv")
+cregss = c("JPN","CHN","KOR","ASEAN","Europe","N.America","ROW")
+dtback[,exporter:=factor(exporter,levels = cregss)]
+cregss2 = c("JCK+ASEAN","Europe","N.America","ROW")
+dtback[,importer:=factor(importer,levels = cregss2)]
+
+ggbarplot(dtback[grepl("Motor vehicles",sect_name)],
+          x="exporter",y="value",
+          ylab = "GVC Trade (mil USD)",
+          facet.by = c("importer","t"),
+          color="variable",
+          fill = "variable") +
+  theme(axis.text.x = element_text(angle = 90)) 
+```
+
+::: notes
+- regional factory: N.America, Europe, Asia
+- transportation cost:  costly to move cars
+- regional specialization
+::: 
+
+---
+
+![Japanese Autos by 1990s 
+_Source: Kinoshita (2004) based on Yamaguchi (2003),  Honda Motor Co., Ltd (2003)_ ](image/gvc_veh.png)
+
+::: notes
+- Japan adopt a strategy of concentrating production of similar products in a single country to attain economies of scale
+- Shift of assembly type operations from ASEAN to China to utilize low-cost labor 
+- Shift from China to CLMV for labor-intensive production
+- ASEAN assembles vehicles
+- "Factory Asia"
+::: 
+
+
+## Case: Electronics
+
+```{r}
+#| fig-height: 6
+#| fig-width: 12
+ggbarplot(dtback[grepl("electronic",sect_name)],
+          x="exporter",y="value",
+          ylab = "GVC related trade (mil USD)",
+          facet.by = c("importer","t"),
+          color="variable",
+          fill = "variable") +
+  theme(axis.text.x = element_text(angle = 90))
+```
+
+::: notes
+- more global value chain
+  - Chips & components designed in Japan
+  - Manufactured/assembled in ASEAN or China
+  - Finished products shipped worldwide
+  
+:::
+
+## Case: Chemicals
+
+```{r}
+#| fig-height: 6
+#| fig-width: 12
+ggbarplot(dtback[grepl("Chemical",sect_name)],
+          x="exporter",y="share",
+          ylab = "GVC related trade (mil USD)",
+          facet.by = c("importer","t"),
+          color="variable",
+          fill = "variable") +
+  theme(axis.text.x = element_text(angle = 90))
+```
+
+::: notes
+- less outsources than electronics or vehicles
+- regional clusters are larger
+- some degree of gvc participation with some high import content
+:::
+
+## Case: Agricultural products
+
+```{r}
+#| fig-height: 6
+#| fig-width: 12
+ggbarplot(dtback[grepl("Agriculture",sect_name)],
+          x="exporter",y="share",
+          ylab = "GVC related trade (mil USD)",
+          facet.by = c("importer","t"),
+          color="variable",
+          fill = "variable") +
+  theme(axis.text.x = element_text(angle = 90))
+```
+
+::: notes
+- high internally input
+- sourced mostly domestically, but some increasing trend in import content as well
+:::
+
+## Challenges
+
+- Demographics  
+- Geopolitics  
+- Sustainability  
+
+## Conclusion
+
+- Japan remains a **vital player and architect** of GVCs.  
+- Future depends on **innovation, resilience, and green supply chains**.  
+
+---
+## Suggested Readings
+<div style="font-size:50%">
+- Baldwin, R., & Ito, T. (2021). The smile curve: Evolving sources of value added in manufacturing. Canadian Journal of Economics/Revue Canadienne d’économique, 54(4), 1842–1880. 
+- Elms, D. K., & Low, P. (2013). Global value chains in a changing world. World trade organization.
+- Kinoshita, T., Kishida, H., & Amemiya, A. (2004). Strategy of Japanese manufacturers in ASEAN and China in light of emerging FTA initiatives.
+- OECD. (2011). Globalisation, comparative advantage and the changing dynamics of trade (Online-Ausg). OECD.
+- Suvannaphakdy, S., & Pham, T. P. T. (2023). GVC Reconfiguration. ISEAS–Yusof Ishak Institute Singapore.
+- Todo, Y., & Inoue, H. (2021). Geographic Diversification of the Supply Chains of Japanese Firms. Asian Economic Policy Review, 16(2), 304–322
+- WTO and JETRO-IDE (2011), Trade patterns and global value chains in East Asia: from trade in goods to trade in tasks. 
+- Xing, Y., and N. Detert (2010). How the iPhone Widens the United States Trade Deficit with the People’s Republic of China. ADBI Working Paper 257. Tokyo: Asian Development Bank.
+
+## Data
+Mancini, M., & Taglioni, D. (2025). Economic consequences of trade and global value chain integration: A measurement perspective. The World Bank Economic Review, https://doi.org/10.1093/wber/lhaf017.
+
+</div>
+
+
+
+
+
+
+
+ 

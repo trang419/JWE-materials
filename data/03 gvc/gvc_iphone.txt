@@ -1,0 +1,20 @@
+Manufacturer,Component,Cost (USD)
+Toshiba (Japan),Flash Memory,24.00
+Toshiba (Japan),Display Module,19.25
+Toshiba (Japan),Touch Screen,16.00
+Samsung (Korea),Application Processor,14.46
+Samsung (Korea),SDRAM-Mobile DDR,8.50
+Infineon (Germany),Baseband,13.00
+Infineon (Germany),Camera Module,9.55
+Infineon (Germany),RF Transceiver,2.80
+Infineon (Germany),GPS Receiver,2.25
+Infineon (Germany),Power IC RF Function,1.25
+Broadcom (US),Bluetooth/FM/WLAN,5.95
+Numonyx (US),Memory MCP,3.65
+Murata (Japan),FEM,1.35
+Dialog Semiconductor (Germany),Power IC Application Processor Function,1.30
+Cirrus Logic (US),Audio Codec,1.15
+Other,Rest of Bill of Materials,48.00
+Other,Total Bill of Materials,172.46
+Other,Manufacturing costs,6.50
+Other,Grand Total,178.96
