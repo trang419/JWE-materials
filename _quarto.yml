@@ -14,7 +14,8 @@ website:
             file: slides/01_intro.qmd
           - text: "Lecture 2"
             file: slides/02_ca.qmd
-          # add more slides here as you build them
+          - text: "Lecture 3"
+            file: slides/03_gvc.qmd
       - text: "Data"
         file: scripts/index.qmd
 
