@@ -1138,14 +1138,14 @@
     "href": "scripts/data-wits.html#reshape-to-long-format",
     "title": "Cleaning Raw Data: A Worked Example",
     "section": "Reshape to long format",
-    "text": "Reshape to long format\nTwo sources are combined:\n\nwiodlr for all years\ntiva restricted to years after 2000 (its methodology changes before that point)\n\nThe GVC/trade-type columns (traditional_trade_int, traditional_trade_fin, gvcbp, gvcfp, gvcmix) are melted into a single variable / value pair, which is the tidy shape most of the downstream analysis expects.\n\ndtl = melt(\n  dt2[source == \"wiodlr\" | (source == \"tiva\" & t &gt; 2000),\n      .(imp, exp, imp_reg, exp_reg,\n        sect_name, sect_group,\n        t, traditional_trade_int, traditional_trade_fin,\n        gvcbp, gvcfp, gvcmix)],\n  id.vars = c(\"imp\", \"exp\",\n              \"imp_reg\", \"exp_reg\",\n              \"sect_name\", \"sect_group\", \"t\")\n)\n\n\ndtl[, .N, by = variable]\n\n                variable       N\n                  &lt;fctr&gt;   &lt;int&gt;\n1: traditional_trade_int 5715900\n2: traditional_trade_fin 5715900\n3:                 gvcbp 5715900\n4:                 gvcfp 5715900\n5:                gvcmix 5715900\n\nrange(dtl$t)\n\n[1] 1965 2020"
+    "text": "Reshape to long format\nTwo sources are combined:\n\nwiodlr for all years\ntiva restricted to years after 2000 (its methodology changes before that point)\n\nThe GVC/trade-type columns (traditional_trade_int, traditional_trade_fin, gvcbp, gvcfp, gvcmix) are melted into a single variable / value pair, which is the tidy shape most of the downstream analysis expects.\n\ndtl = melt(\n  dt2[source == \"wiodlr\" | (source == \"tiva\" & t &gt; 2000),\n      .(source,imp, exp, imp_reg, exp_reg,\n        sect_name, sect_group,\n        t, traditional_trade_int, traditional_trade_fin,\n        gvcbp, gvcfp, gvcmix)],\n  id.vars = c(\"imp\", \"exp\",\n              \"imp_reg\", \"exp_reg\",\n              \"sect_name\", \"sect_group\", \"t\",\"source\")\n)\n\n\ndtl[, .N, by = variable]\n\n                variable       N\n                  &lt;fctr&gt;   &lt;int&gt;\n1: traditional_trade_int 5715900\n2: traditional_trade_fin 5715900\n3:                 gvcbp 5715900\n4:                 gvcfp 5715900\n5:                gvcmix 5715900\n\nrange(dtl$t)\n\n[1] 1965 2020\n\ndt[,.N,by=source]\n\n   source        N\n   &lt;char&gt;    &lt;int&gt;\n1:   eora 24147396\n2: wiodlr   559728\n3:  wiodo  1000195\n4:  wiodn  1626240\n5:    adb  2361555\n6:   tiva  6936930"
   },
   {
     "objectID": "scripts/data-wits.html#save-the-cleaned-dataset",
     "href": "scripts/data-wits.html#save-the-cleaned-dataset",
     "title": "Cleaning Raw Data: A Worked Example",
     "section": "Save the cleaned dataset",
-    "text": "Save the cleaned dataset\nPersist the cleaned, merged, long-format table so downstream scripts don’t need to repeat the loading/merging steps above.\n\nfwrite(dtl, \"../data/temp/gvc_trade.csv\")"
+    "text": "Save the cleaned dataset\nPersist the cleaned, merged, long-format table so downstream scripts don’t need to repeat the loading/merging steps above. Use parquet file to reduce on file size.\n\narrow::write_parquet(dtl, \"../data/temp/gvc_trade.parquet\")"
   },
   {
     "objectID": "scripts/data-wits.html#summary",

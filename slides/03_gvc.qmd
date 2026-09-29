@@ -47,6 +47,7 @@ output-dir: ../docs/slides
 ## An example
 
 ```{r}
+#| echo: false
 library(data.table)
 library(ggpubr)
 library(ggrepel)
@@ -97,6 +98,7 @@ _Source: Baldwin and Ito (2021)_](image/gvc_smilecurve.jpg)
 ## Japan comparative advantage: revisited
 
 ```{r}
+#| echo: false
 dtcaw_jpn = fread("../data/02 ca/rca_jpn.csv")
 dtcaw_jpn_s = dtcaw_jpn[t%in%c(1965,2000)]
 ggscatter(dtcaw_jpn_s,
@@ -127,6 +129,7 @@ ggscatter(dtcaw_jpn_s,
 
 ---
 ```{r}
+#| echo: false
 #| fig-height: 9
 #| fig-width: 12
 dtcaw_reg = fread("../data/02 ca/rca_reg.csv")
@@ -215,6 +218,7 @@ $$ \text{Forward} = \frac{DVX}{\text{Gross Exports}} \times 100 $$
 ## Why GVCs are Important
 
 ```{r}
+#| echo: false
 dtw = fread("../data/03 gvc/gvc_share.csv")
 ggarrange(
   ggpie(dtw[t==2020],
@@ -252,6 +256,7 @@ ggarrange(
 ## Why GVCs Matter for Japan
 
 ```{r}
+#| echo: false
 dt_gvc = fread("../data/03 gvc/gvc_JPN.csv")
 ggbarplot(dt_gvc,
           x="t",xlab = "",y="share",
@@ -271,6 +276,7 @@ ggbarplot(dt_gvc,
 ## Japan's in GVC Participation
 
 ```{r}
+#| echo: false
 dt_index = fread("../data/03 gvc/gvc_index.csv")
 ggarrange(
   ggbarplot(dt_index[t==1970],
@@ -298,6 +304,7 @@ ggarrange(
 ## Japanese import and export structure
 
 ```{r}
+#| echo: false
 dt_gvc_reg = fread("../data/03 gvc/gvc_reg.csv")
 ggbarplot(dt_gvc_reg,
           caption = "Data Source: WITS, TIVA",
@@ -341,6 +348,7 @@ _Source: Suvannaphakdy and Pham (2023) based on Abiad et al. (2018)_](image/gvc_
 ## Case: Vehicles
 
 ```{r}
+#| echo: false
 #| fig-height: 6
 #| fig-width: 12
 dtback = fread("../data/03 gvc/gvc_backward.csv")
@@ -381,6 +389,7 @@ _Source: Kinoshita (2004) based on Yamaguchi (2003),  Honda Motor Co., Ltd (2003
 ## Case: Electronics
 
 ```{r}
+#| echo: false
 #| fig-height: 6
 #| fig-width: 12
 ggbarplot(dtback[grepl("electronic",sect_name)],
@@ -403,6 +412,7 @@ ggbarplot(dtback[grepl("electronic",sect_name)],
 ## Case: Chemicals
 
 ```{r}
+#| echo: false
 #| fig-height: 6
 #| fig-width: 12
 ggbarplot(dtback[grepl("Chemical",sect_name)],
@@ -423,6 +433,7 @@ ggbarplot(dtback[grepl("Chemical",sect_name)],
 ## Case: Agricultural products
 
 ```{r}
+#| echo: false
 #| fig-height: 6
 #| fig-width: 12
 ggbarplot(dtback[grepl("Agriculture",sect_name)],
