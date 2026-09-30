@@ -200,6 +200,7 @@ library(ggpubr)
 library(ggrepel)
 
 dtcaw_tiva = fread("../data/02 ca/rca_jpn_tiva.csv")
+dtcaw_tiva[export_share>2|traditional<0.4,label_sect:=sect_name]
 
 ggscatter(
   dtcaw_tiva,
@@ -278,6 +279,7 @@ ggboxplot(
     plot.subtitle = element_text(color = "grey30", size = 11),
     plot.caption = element_text(color = "grey50", size = 8),
     axis.text.y = element_text(size = 9),
+    axis.text.x = element_text(size = 9),
     panel.grid.major.x = element_line(color = "grey90", linewidth = 0.3),
     panel.spacing = unit(1, "lines")
   )
