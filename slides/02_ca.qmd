@@ -30,6 +30,48 @@ output-dir: ../docs/slides
 
 - Why?
 
+## Japan's trade by partner and sectors
+
+```{r}
+#| echo: false
+library(data.table)
+library(ggpubr)
+library(ggplot2)
+dt_gvc_reg = fread("../data/03 gvc/gvc_jpn_bilateral.csv")
+dt_gvc_reg[grepl("gvc",type),type:="gvc-related trade"]
+dt_all = dt_gvc_reg[,.(value2=sum(value2)),by=.(type,region,sect_group)]
+ggbarplot(dt_all,
+          caption = "Data Source: WITS, TIVA",
+          x="region",
+          xlab="",
+          ylab = "billion USD",
+          y="value2",
+          fill="type",
+          color = "type",
+          facet.by = c("sect_group"),
+          #title="Japan trade",
+          rotate =T) +
+  geom_hline(yintercept = 0,color = "black", linetype = "dotdash")
+```
+
+::: notes
+- Import energy, food, raw materials mostly traditional trade
+- Japan trade with the N.America/EU
+  - import services
+  - export manufacturing goods, surplus with US
+- Japan trade with China/ASEAN
+  - Imports consumer electronics, textiles
+  - Exports high-tech machinery, components
+  - "Task sharing" production networks
+  
+- services (WTO GATS): production happens with consumption
+  - cross-border supply 
+  - consumption abroad (tourism, education)
+  - commercial presence (branch of bank)
+  - movement of natural persons (Filipino nurse contract in Japan: not migration)
+
+:::
+
 ## Why countries trade?
 
 - Comparative advantage: ***difference in resources or productivity***
@@ -349,7 +391,6 @@ ggdensity(
 <div style="font-size:50%">
 - Balassa, B. (1965). Trade Liberalisation and “Revealed” Comparative Advantage. The Manchester School, 33(2), 99–123. https://doi.org/10.1111/j.1467-9957.1965.tb00050.x
 - OECD (2011), Globalisation, Comparative Advantage and the Changing Dynamics of Trade, OECD Publishing, Paris, https://doi.org/10.1787/9789264113084-en.
-
 
 
 </div>
