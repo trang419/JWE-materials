@@ -17,11 +17,11 @@ format: html
 
 ## Readings
 - Kinoshita, T., Kishida, H., & Amemiya, A. (2004). Strategy of Japanese manufacturers in ASEAN and China in light of emerging FTA initiatives.
-- OECD. (2011). Globalisation, comparative advantage and the changing dynamics of trade (Online-Ausg). OECD.
+- OECD (2011), Globalisation, Comparative Advantage and the Changing Dynamics of Trade, OECD Publishing, Paris, https://doi.org/10.1787/9789264113084-en.
 - Todo, Y., & Inoue, H. (2021). Geographic Diversification of the Supply Chains of Japanese Firms. Asian Economic Policy Review, 16(2), 304–322
 
 ## Data
-- [World Bank WITS - RCA indicator](https://wits.worldbank.org/country-indicator.aspx?lang=en)
+- [World Bank WITS - RCA indicator](https://wits.worldbank.org)
 
 ## Materials
-- **Slides:** [View Slides](slides/03_ca.qmd)  
+- **Slides:** [View Slides](slides/02_ca.qmd)  
