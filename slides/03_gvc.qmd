@@ -2,7 +2,7 @@
 title: "Measurement of Global Value Chains"
 subtitle: ""
 author: "Trang Tran"
-date: "2025-09-29"
+date: "2025-10-06"
 format:
   revealjs:
     self-contained: true
@@ -51,6 +51,7 @@ output-dir: ../docs/slides
 library(data.table)
 library(ggpubr)
 library(ggrepel)
+library(patchwork)
 iphone = fread("../data/03 gvc/gvc_iphone.csv")
 iphone[,rid:=1:.N]
 iphone[,label:=ifelse(rid<9|rid>15,Manufaturer_Component,"")]
@@ -68,8 +69,280 @@ ggpie(iphone,
 
 ## The Smile Curve
 
-![Global Value Chain  
-_Source: Baldwin and Ito (2021)_](image/gvc_smilecurve.jpg)
+```{r}
+#|echo: FALSE
+
+# ============================================================
+# 1. Function to create a smooth curve from control points
+# ============================================================
+
+make_curve <- function(x, y, n = 200) {
+  
+  s <- spline(x, y, n = n)
+  
+  data.frame(
+    x = s$x,
+    y = s$y
+  )
+}
+
+
+# ============================================================
+# 2. Function to draw one smile-curve panel
+# ============================================================
+
+smile_plot <- function(curve_new, curve_old,
+                       points_new, points_old,
+                       x_labels,
+                       title,
+                       y_title,
+                       x_title,
+                       new_label_pos,
+                       old_label_pos) {
+  
+  ggplot() +
+    
+    # Axes
+    geom_segment(
+      aes(x = 0, y = 0, xend = 1.02, yend = 0),
+      arrow = arrow(length = unit(0.18, "cm")),
+      linewidth = 0.8
+    ) +
+    
+    geom_segment(
+      aes(x = 0, y = 0, xend = 0, yend = 0.82),
+      arrow = arrow(length = unit(0.18, "cm")),
+      linewidth = 0.8
+    ) +
+    
+    # 21st-century curve
+    geom_line(
+      data = curve_new,
+      aes(x, y),
+      linewidth = 0.9
+    ) +
+    
+    # 1970s curve
+    geom_line(
+      data = curve_old,
+      aes(x, y),
+      linewidth = 0.8,
+      linetype = "dashed"
+    ) +
+    
+    # Points
+    geom_point(
+      data = points_new,
+      aes(x, y),
+      shape = 21,
+      size = 9,
+      stroke = 0.8,
+      fill = "white"
+    ) +
+    
+    geom_point(
+      data = points_old,
+      aes(x, y),
+      shape = 21,
+      size = 9,
+      stroke = 0.8,
+      fill = "white"
+    ) +
+    
+    # X-axis category labels
+    geom_text(
+      data = x_labels,
+      aes(x, y, label = label),
+      fontface = "italic",
+      size = 4.5,
+      vjust = 1
+    ) +
+    
+    # Curve labels
+    annotate(
+      "text",
+      x = new_label_pos[1],
+      y = new_label_pos[2],
+      label = "21st century\nvalue chain",
+      hjust = 0,
+      size = 4.5
+    ) +
+    
+    annotate(
+      "text",
+      x = old_label_pos[1],
+      y = old_label_pos[2],
+      label = "1970s\nvalue chain",
+      hjust = 0,
+      size = 4.5
+    ) +
+    
+    # Axis titles
+    annotate(
+      "text",
+      x = 0,
+      y = 0.87,
+      label = y_title,
+      size = 4.5
+    ) +
+    
+    annotate(
+      "text",
+      x = 1.04,
+      y = 0,
+      label = x_title,
+      hjust = 0,
+      size = 4.5
+    ) +
+    
+    # Panel title
+    annotate(
+      "label",
+      x = 0.52,
+      y = 0.97,
+      label = title,
+      size = 5.5,
+      fill = "white"
+    ) +
+    
+    coord_cartesian(
+      xlim = c(-0.08, 1.20),
+      ylim = c(-0.15, 1.03),
+      clip = "off"
+    ) +
+    
+    theme_void() +
+    
+    theme(
+      plot.margin = margin(10, 25, 30, 25)
+    )
+}
+
+
+# ============================================================
+# 3. FIRM-LEVEL SMILE CURVE
+# ============================================================
+
+# Control points
+firm_new_pts <- data.frame(
+  x = c(.17, .50, .83),
+  y = c(.64, .22, .64)
+)
+
+firm_old_pts <- data.frame(
+  x = c(.17, .50, .83),
+  y = c(.48, .38, .48)
+)
+
+# Smooth curves
+firm_new <- make_curve(
+  firm_new_pts$x,
+  firm_new_pts$y
+)
+
+firm_old <- make_curve(
+  firm_old_pts$x,
+  firm_old_pts$y
+)
+
+# Stage labels
+firm_labels <- data.frame(
+  x = c(.17, .50, .83),
+  y = c(-.035, -.065, -.035),
+  label = c(
+    "Pre-fab\nservices",
+    "Fabrication",
+    "Post-fab\nservices"
+  )
+)
+
+# Plot
+p1 <- smile_plot(
+  curve_new = firm_new,
+  curve_old = firm_old,
+  points_new = firm_new_pts,
+  points_old = firm_old_pts,
+  x_labels = firm_labels,
+  
+  title = "Firm-level smile curve",
+  y_title = "Stage's share of\nproduct value added",
+  x_title = "Stage",
+  
+  new_label_pos = c(.55, .72),
+  old_label_pos = c(.82, .42)
+)
+
+
+# ============================================================
+# 4. ECONOMY-WIDE SMILE CURVE
+# ============================================================
+
+# Control points
+economy_old_pts <- data.frame(
+  x = c(.15, .50, .88),
+  y = c(.18, .73, .20)
+)
+
+economy_new_pts <- data.frame(
+  x = c(.15, .50, .88),
+  y = c(.20, .50, .42)
+)
+
+# Smooth curves
+economy_old <- make_curve(
+  economy_old_pts$x,
+  economy_old_pts$y
+)
+
+economy_new <- make_curve(
+  economy_new_pts$x,
+  economy_new_pts$y
+)
+
+# Sector labels
+economy_labels <- data.frame(
+  x = c(.15, .50, .88),
+  y = -.06,
+  label = c(
+    "Primary",
+    "Manufacturing",
+    "Services"
+  )
+)
+
+# Plot
+p2 <- smile_plot(
+  curve_new = economy_new,
+  curve_old = economy_old,
+  points_new = economy_new_pts,
+  points_old = economy_old_pts,
+  x_labels = economy_labels,
+  
+  title = "Economy-wide smile curve",
+  y_title = "Input-sector's share of\nexport value added",
+  x_title = "Origin\nsector",
+  
+  new_label_pos = c(.90, .38),
+  old_label_pos = c(.67, .69)
+)
+
+
+# ============================================================
+# 5. Combine
+# ============================================================
+
+(p1 + p2) +
+  plot_annotation(
+    caption = "Source: Adapted from Baldwin and Ito (2021)."
+  ) &
+  theme(
+    plot.caption = element_text(
+      size = 10,
+      hjust = 0
+    )
+  )
+
+```
 
 ::: notes
 - Introduced by Acer founder and CEO Stan Shih in the early 1990s: - the early and late stages of the supply chains generate higher value added
@@ -93,6 +366,66 @@ _Source: Baldwin and Ito (2021)_](image/gvc_smilecurve.jpg)
 - Gross exports overstate bilateral imbalances (e.g., the US–China trade deficit narrows substantially once measured in value-added terms)
 - Value-added trade better reflects which country actually benefits from a given trade flow
 :::
+
+## Simple example
+
+```{mermaid}
+flowchart LR
+    A["Country A<br/>Component<br/><b>$20 VA</b>"] -->
+    B["Country B<br/>Adds $30 VA<br/><b>Export = $50</b>"] -->
+    C["Country C<br/>Adds $50 VA<br/><b>Final product = $100</b>"] -->
+    D["Final consumer"]
+```
+
+Gross exports recorded
+
+
+$$
+\text{Gross exports} = 20 + 50 + 100 = \$170
+$$
+
+Total value added is
+
+$$
+20 + 30 + 50 = \$100
+$$
+
+
+But how do we know that all $20 imported by B is actually used to produce B's exports?
+
+## Input–Output Tables 
+
+$$
+\boxed{\text{Who supplies inputs to whom?}}
+$$
+
+
+```{mermaid}
+flowchart LR
+    A["Domestic<br/>Industry A"] <--> M["Domestic<br/>Manufacturing"]
+
+    I["Imported<br/>inputs"] --> A
+    I --> M
+
+    A --> E["Exports"]
+    M --> E
+
+    A --> D["Domestic<br/>final demand"]
+    M --> D
+```
+
+## MRIO Data Used in WITS GVC Indicators
+
+**WITS GVC** combines GVC indicators calculated from several
+global input–output databases:
+
+| Database | Countries | Sector | Period
+|---|---|---|---|
+| Eora26 | 189 | 26| 1990-2015
+| WIOD 2016 | 43 + RoW | 56 | 2000-2014
+| Long-run WIOD | 25 | 23 | 1965-2000
+| OECD TiVA/ICIO |76 | 45 | 1995-2020
+| ADB MRIO | 62 | 35 | 2007-2022
 
 
 ## Japan comparative advantage: revisited
@@ -160,6 +493,49 @@ facet.by = "t",nrow=1) +
 - less variation in technology and human capital-intensive product categories
 :::  
 
+
+## Global Value Chains
+
+GVCs refer to the fragmentation of production across countries, where different stages of producing a good or service are carried out in different countries.
+
+::: columns
+
+::: {.column width="50%"}
+
+**Snake: Sequential production**
+
+```{mermaid}
+flowchart LR
+    A["Raw<br/>materials"] -->
+    B["Parts"] -->
+    C["Processing"] -->
+    D["Assembly"] -->
+    E["Final<br/>product"]
+```
+
+:::
+
+::: {.column width="50%"}
+
+**Spider: Assembly of components**
+
+```{mermaid}
+flowchart TB
+    A["Part A"] --> E["Assembly"]
+    B["Part B"] --> E
+    C["Part C"] --> E
+    D["Part D"] --> E
+    E --> F["Final<br/>product"]
+```
+
+:::
+
+:::
+
+::: {.footer}
+Source: Adapted from Baldwin and Venables (2013)
+:::
+
 ## Key Features of Global Value Chains 
 
 - Fragmentation of Production: across multiple countries for cost structures, labor markets, and expertise
@@ -172,50 +548,135 @@ facet.by = "t",nrow=1) +
 
 - Global distribution: multiple markets
 
-## Measuring Global Value Chains (1)
+## Backward and Forward GVC Linkages
 
-- GVC participation decomposes a country's **gross exports** by the source and destination of value added.
+::: columns
+
+::: {.column width="50%"}
+
+### Backward linkage
+
+```{mermaid}
+flowchart LR
+    F["Foreign<br/>value added"] --> H["FOCAL<br/>COUNTRY"] --> D["Exports"]
+```
+
+The country **uses foreign inputs** in its exports.
+
+:::
+
+::: {.column width="50%"}
+
+### Forward linkage
+
+```{mermaid}
+flowchart LR
+    H["FOCAL<br/>COUNTRY"] --> F["Foreign<br/>production"] --> D["Exports"]
+```
+
+The country's value added is **used in other countries' exports**.
+
+:::
+
+:::
+
+## Measuring GVC Participation
 
 **Backward linkage (backward participation)**
 
 $$ \text{Backward} = \frac{FVA}{\text{Gross Exports}} \times 100 $$
-
-- $FVA$ = foreign value added embodied in a country's own exports
-- Captures how much a country **relies on imported inputs** to produce what it exports
-
-## Measuring Global Value Chains (2)
-
 **Forward linkage (forward participation)**
 
 $$ \text{Forward} = \frac{DVX}{\text{Gross Exports}} \times 100 $$
-
-- $DVX$ = domestic value added exported *indirectly*, i.e. used as an input in a third country's exports
-- Captures how much of a country's own value added is **used by others** further downstream
-
-- Total GVC participation = Backward + Forward
+**Total GVC participation = Backward + Forward**
 
 ::: notes
 - Based on the gross export decomposition in Koopman, Wang & Wei (2014), built from international input–output tables
-- Small, open economies (e.g., ASEAN members) tend to show higher backward participation — they import more of what they need to export
+- Small, open economies (e.g., ASEAN members) tend to show higher backward participation. They import more of what they need to export
 - Countries positioned at the start of chains (raw materials, core components, R&D) tend to show higher forward participation
 - Rule of thumb: Backward ↑ when a country imports a lot of intermediates; Forward ↑ when a country's intermediates are re-exported by others
 :::
 
-## Finer measurement
+## But, Where Does This Country Stand?
 
+```{mermaid}
+flowchart LR
+    A["Country A"] --> B["COUNTRY B"] --> C["Country C"] --> D["Final market"]
+```
+
+Country B:
+
+- imports intermediate inputs from Country A
+- adds domestic value
+- exports intermediates to Country C
+- Country C uses them to produce exports
+
+**Question: Is Country B participating through a backward or a forward linkage?**
+
+## Pure and Mixed GVC Participation
+
+Pure backward: Imports FVA → produces exports
+
+```{mermaid}
+flowchart LR
+    A["Foreign inputs"] --> B["FOCAL COUNTRY"] --> C["Final exports"]
+```
+
+Pure forward: Exports DVA → used in foreign exports
+
+```{mermaid}
+flowchart LR
+    A["FOCAL COUNTRY"] --> B["Foreign production"] --> C["Final exports"]
+```
+
+Mixed: Imports FVA and contributes value added to downstream foreign exports
+
+```{mermaid}
+flowchart LR
+    A["Foreign inputs"] --> B["FOCAL COUNTRY"] --> C["Foreign production"] --> D["Final exports"]
+```
+
+## GVC Participation measurement (cont)
+
+- Traditional trade: cross border once
 - GVC-related trade: cross border at least twice
   - **Pure backward participation**: the use of foreign inputs in exports to the final destination (chain end)
   - **Pure forward participation**: the use of domestically produced intermediates in third-country exports (chain start)
   - **Mixed participation**: the use of foreign intermediates in third-country exports
 
+
+## GVC intensity and GVC position
+
+- How strongly is a country or industry involved in GVC production?
+
+$$
+\text{GVC Participation}
+=
+\text{Pure Backward}
++
+\text{Pure Forward}
++
+\text{Mixed}
+$$
+
+- Where does the country or industry tend to operate in the value chain?
+
+$$
+Forwardness = \frac{\text{Pure Forward} - \text{Pure Backward}}{\text{Total GVC Participation}}
+$$
+
 ::: notes
+Alternative measures of GVC position include **upstreamness** 
+(distance of output from final demand) and **downstreamness** 
+(distance from primary inputs/value added). These measures are conceptually 
+related to, but distinct from, WITS forwardness.
+
 - Upstream (high value): design, R&D, core components, precise machinery
 - Midstream: capital goods exports, management of production networks
 - Downstream: limited (assembly shifted to China/ASEAN), but could be different for chemicals (pharmaceutical synthesis)
-::: 
+:::
 
-
-## Why GVCs are Important
+## Global GVC-related trade
 
 ```{r}
 #| echo: false
@@ -252,44 +713,26 @@ ggarrange(
 - Also increases vulnerability to shocks (pandemic, natural disasters).  
 :::
 
-
-## Why GVCs Matter for Japan
-
-```{r}
-#| echo: false
-dt_gvc = fread("../data/03 gvc/gvc_JPN.csv")
-ggbarplot(dt_gvc,
-          x="t",xlab = "",y="share",
-          fill="variable",
-          color = "variable",
-          facet.by = "type",
-          caption = "Data Source: WITS, WIOD, TIVA",
-          title="Japan trade") +
-  #theme(plot.margin = unit(c(1,1,1,1), "cm")) +
-  guides(fill=guide_legend(nrow=2),color=guide_legend(nrow=2))
-```
-::: notes
-- GVC-related trade increase from about 20% in 1970 to 40% in 2020
-- Further separation of production chain with assembly move to China in 1990s, and then new ASEAN3
-:::
-
-## Japan's in GVC Participation
+## Regions with high GVC participation
 
 ```{r}
 #| echo: false
-dt_index = fread("../data/03 gvc/gvc_index.csv")
+dt_index = fread("../data/03 gvc/gvc_region.csv")
+cols = get_palette("default",5)[1:3]
 ggarrange(
   ggbarplot(dt_index[t==1970],
             x="RegionRank",y="share",
             facet.by = "t",
-            color = "variable",
-            fill = "variable") +
+            palette = cols,
+            color = "type",
+            fill = "type") +
     theme(axis.text.x = element_text(angle = 90)),
   ggbarplot(dt_index[t==2020],
             x="RegionRank",y="share",
             facet.by = "t",
-            color = "variable",
-            fill = "variable") +
+            palette = cols,
+            color = "type",
+            fill = "type") +
     theme(axis.text.x = element_text(angle = 90)),
   common.legend = T
 ) %>% annotate_figure(
@@ -301,171 +744,189 @@ ggarrange(
 - Small open economies source more inputs from abroad in GVCs than large countries: more backward participation
 :::
 
-## Japanese import and export structure
+## Japan's GVC position
 
 ```{r}
 #| echo: false
-dt_gvc_reg = fread("../data/03 gvc/gvc_reg.csv")
-ggbarplot(dt_gvc_reg,
-          caption = "Data Source: WITS, TIVA",
-          x="region",
-          xlab="",
-          ylab = "billion USD",
-          y="value2",
-          fill="variable",
-          color = "variable",
-          facet.by = c("sect_group"),
-          #title="Japan trade",
-          rotate =T) +
-  #theme(plot.margin = unit(c(1,1,1,1), "cm")) +
-  geom_hline(yintercept = 0,color = "black", linetype = "dotdash")
+dt_index_w = fread("../data/03 gvc/gvc_region_forward.csv")
+
+jpn_vals <- dt_index_w[region == "JPN",.(t,forwardness)]
+usa_vals <- dt_index_w[region == "USA",.(t,forwardness)]
+chn_vals <- dt_index_w[region == "CHN",.(t,forwardness)]
+
+ggdensity(dt_index_w,
+          x="forwardness",
+          facet.by="t") +
+  geom_vline(
+    data = jpn_vals,
+    aes(xintercept = forwardness, color = "Japan"),
+    linetype = "dashed", linewidth = 0.9
+  ) +
+  geom_vline(
+    data = usa_vals,
+    aes(xintercept = forwardness, color = "United States"),
+    linetype = "dashed", linewidth = 0.9
+  ) +
+  geom_vline(
+    data = chn_vals,
+    aes(xintercept = forwardness, color = "China"),
+    linetype = "dashed", linewidth = 0.9
+  ) +
+  scale_color_manual(
+    name = "Country",
+    values = c("Japan" = "#D7263D", "United States" = "#1B6CA8", "China" = "#2E8B57")
+  ) +
+  guides(color = guide_legend(override.aes = list(linetype = "dashed", linewidth = 1.1))) +
+  xlab("Forwardness") +
+  ylab("Density") 
 ```
 
-::: notes
-- Import energy, food, raw materials mostly traditional trade
-- Japan trade with the N.America/EU
-  - import services
-  - export manufacturing goods, surplus with US
-- Japan trade with China/ASEAN
-  - Imports consumer electronics, textiles
-  - Exports high-tech machinery, components
-  - "Task sharing" production networks
-  
-- services (WTO GATS): production happens with consumption
-  - cross-border supply 
-  - consumption abroad (tourism, education)
-  - commercial presence (branch of bank)
-  - movement of natural persons (Filipino nurse contract in Japan: not migration)
 
+## Japan's GVC-related trade share
+
+```{r}
+#| echo: false
+dt_gvc = fread("../data/03 gvc/gvc_JPN.csv")
+ggbarplot(dt_gvc,
+          x="t",xlab = "",y="share",
+          fill="type",
+          color = "type",
+          facet.by = "flow",
+          caption = "Data Source: WITS, WIOD, TIVA") +  guides(fill=guide_legend(nrow=1),color=guide_legend(nrow=1))
+```
+::: notes
+- GVC-related trade increase from about 20% in 1970 to 40% in 2020
+- Further separation of production chain with assembly move to China in 1990s, and then new ASEAN3
 :::
 
+## Japan's GVC-related trade share by sector
 
-## Regional Hubs
+```{r}
+#| echo: false
+gvc_jpn_sect = fread("../data/03 gvc/gvc_jpn_sect.csv")
+gvc_jpn_sect_s = gvc_jpn_sect[grepl("gvc",type)&!is.na(gvc1970)]
+gvc_jpn_sect_s[,label:=fifelse(gvc2000>0.2,sect_name,"")]
 
-![Global value chain and regional hubs
-_Source: Suvannaphakdy and Pham (2023) based on Abiad et al. (2018)_](image/gvc_network.png)
+ggscatter(gvc_jpn_sect_s,
+          caption = "Data Source: WITS, WIOD",
+          x="gvc1970",y="gvc2000",
+    xlab="GVC share in 1970",
+    ylab ="GVC share in 2000",
+          legend="none",
+facet.by = "type",nrow=1) +
+  geom_abline(intercept = 0, slope = 1, 
+              linetype = "dotdash") +
+  geom_hline(yintercept = 0.6, linetype = "dotdash") +
+  geom_vline(xintercept = 0.6, linetype = "dotdash") +
+  geom_text_repel(aes(x = gvc1970, 
+                      y = gvc2000, 
+                      label = label, 
+                      ),
+                    data = gvc_jpn_sect_s, size = 2,max.overlaps = 20,
+                   show.legend = FALSE)
+```
 
-## Case: Vehicles
+## Japan's sector position
+
+```{r}
+#| echo: false
+gvc_jpn_sect_ww = fread("../data/03 gvc/gvc_jpn_sect_forward.csv")
+
+ggscatter(gvc_jpn_sect_ww,
+          caption = "Data Source: WITS, WIOD",
+          x="forward1970",y="forward2000",
+          xlab="Forwardness in 1970",
+          ylab ="Forwardness in 2000",
+          legend="none") +
+  geom_abline(intercept = 0, slope = 1, 
+              linetype = "dotdash") +
+  geom_hline(yintercept = 0, linetype = "dotdash") +
+  geom_vline(xintercept = 0, linetype = "dotdash") +
+  geom_text_repel(aes(x = forward1970, 
+                      y = forward2000, 
+                      label = sect_name, 
+  ),
+  data = gvc_jpn_sect_ww, size = 2,max.overlaps = 20,
+  show.legend = FALSE)
+```
+
+
+## Four sectors
 
 ```{r}
 #| echo: false
 #| fig-height: 6
 #| fig-width: 12
-dtback = fread("../data/03 gvc/gvc_backward.csv")
-cregss = c("JPN","CHN","KOR","ASEAN","Europe","N.America","ROW")
-dtback[,exporter:=factor(exporter,levels = cregss)]
-cregss2 = c("JCK+ASEAN","Europe","N.America","ROW")
-dtback[,importer:=factor(importer,levels = cregss2)]
 
-ggbarplot(dtback[grepl("Motor vehicles",sect_name)],
-          x="exporter",y="value",
-          ylab = "GVC Trade (mil USD)",
-          facet.by = c("importer","t"),
-          color="variable",
-          fill = "variable") +
-  theme(axis.text.x = element_text(angle = 90)) 
+dt_sec = fread("../data/03 gvc/gvc_case_index.csv")
+
+ggplot(
+  dt_sec[t%in%c(2001,2020)],
+  aes(
+    x = forwardness,
+    y = intensity,
+    color = sect_name
+  )
+) +
+  geom_vline(xintercept = 0, linetype = "dashed") +
+  geom_point(alpha = 0.6, size = 2) +
+  facet_wrap(~t) +
+  scale_x_continuous(
+    limits = c(-1, 1),
+    breaks = seq(-1, 1, .5)
+  ) +
+  labs(
+    x = "GVC Position (Forwardness)",
+    y = "GVC Intensity",
+    color = "Sector"
+  ) +
+  theme_minimal()
 ```
 
 ::: notes
-- regional factory: N.America, Europe, Asia
-- transportation cost:  costly to move cars
-- regional specialization
-::: 
+Vehicles: Regional GVCs — transport costs, scale economies, regional specialization
+Electronics: Global GVCs — highly fragmented production across countries
+Agriculture: Less fragmented — stronger local/regional sourcing
+Chemicals: Intermediate-input intensive — mainly domestic sourcing, with growing imported contented mostly domestically, but some increasing trend in import content as well
+:::
 
----
-
-![Japanese Autos by 1990s 
-_Source: Kinoshita (2004) based on Yamaguchi (2003),  Honda Motor Co., Ltd (2003)_ ](image/gvc_veh.png)
-
-::: notes
-- Japan adopt a strategy of concentrating production of similar products in a single country to attain economies of scale
-- Shift of assembly type operations from ASEAN to China to utilize low-cost labor 
-- Shift from China to CLMV for labor-intensive production
-- ASEAN assembles vehicles
-- "Factory Asia"
-::: 
-
-
-## Case: Electronics
+## Four sectors in Japan
 
 ```{r}
 #| echo: false
 #| fig-height: 6
 #| fig-width: 12
-ggbarplot(dtback[grepl("electronic",sect_name)],
-          x="exporter",y="value",
-          ylab = "GVC related trade (mil USD)",
-          facet.by = c("importer","t"),
-          color="variable",
-          fill = "variable") +
-  theme(axis.text.x = element_text(angle = 90))
+
+dt_sec_jpn = fread("../data/03 gvc/gvc_case_jpn_share.csv")
+
+ggbarplot(
+  dt_sec_jpn,
+  x="sect_name",
+  xlab="",
+  y="value_sh",
+  ylab="percent",
+  rotate=T,
+  facet.by = "t",
+  color="type",
+  fill = "type"
+) +
+  theme_pubclean()
 ```
 
-::: notes
-- more global value chain
-  - Chips & components designed in Japan
-  - Manufactured/assembled in ASEAN or China
-  - Finished products shipped worldwide
-  
-:::
+## Key takeaways
 
-## Case: Chemicals
-
-```{r}
-#| echo: false
-#| fig-height: 6
-#| fig-width: 12
-ggbarplot(dtback[grepl("Chemical",sect_name)],
-          x="exporter",y="share",
-          ylab = "GVC related trade (mil USD)",
-          facet.by = c("importer","t"),
-          color="variable",
-          fill = "variable") +
-  theme(axis.text.x = element_text(angle = 90))
-```
-
-::: notes
-- less outsources than electronics or vehicles
-- regional clusters are larger
-- some degree of gvc participation with some high import content
-:::
-
-## Case: Agricultural products
-
-```{r}
-#| echo: false
-#| fig-height: 6
-#| fig-width: 12
-ggbarplot(dtback[grepl("Agriculture",sect_name)],
-          x="exporter",y="share",
-          ylab = "GVC related trade (mil USD)",
-          facet.by = c("importer","t"),
-          color="variable",
-          fill = "variable") +
-  theme(axis.text.x = element_text(angle = 90))
-```
-
-::: notes
-- high internally input
-- sourced mostly domestically, but some increasing trend in import content as well
-:::
-
-## Challenges
-
-- Demographics  
-- Geopolitics  
-- Sustainability  
-
-## Conclusion
-
-- Japan remains a **vital player and architect** of GVCs.  
-- Future depends on **innovation, resilience, and green supply chains**.  
+- GVCs fragment production across countries
+- GVC participation can take different forms: pure backward, pure forward, and two-sided (mixed) participation.
+- Input–output tables make GVC measurement possible by tracing value added through industries and countries across multiple production stages.
 
 ---
 ## Suggested Readings
 <div style="font-size:50%">
 - Baldwin, R., & Ito, T. (2021). The smile curve: Evolving sources of value added in manufacturing. Canadian Journal of Economics/Revue Canadienne d’économique, 54(4), 1842–1880. 
+- Baldwin, R., & Venables, A. J. (2013). Spiders and snakes: Offshoring and agglomeration in the global economy. Journal of International Economics, 90(2), 245–254. https://doi.org/10.1016/j.jinteco.2013.02.005
 - Elms, D. K., & Low, P. (2013). Global value chains in a changing world. World trade organization.
+- Grossman, G. M., & Rossi-Hansberg, E. (2008). Trading Tasks: A Simple Theory of Offshoring. American Economic Review, 98(5), 1978–1997. https://doi.org/10.1257/aer.98.5.1978
+- Koopman, R., Wang, Z., & Wei, S.-J. (2014). Tracing Value-Added and Double Counting in Gross Exports. American Economic Review, 104(2), 459–494. https://doi.org/10.1257/aer.104.2.459
 - Kinoshita, T., Kishida, H., & Amemiya, A. (2004). Strategy of Japanese manufacturers in ASEAN and China in light of emerging FTA initiatives.
 - OECD. (2011). Globalisation, comparative advantage and the changing dynamics of trade (Online-Ausg). OECD.
 - Suvannaphakdy, S., & Pham, T. P. T. (2023). GVC Reconfiguration. ISEAS–Yusof Ishak Institute Singapore.

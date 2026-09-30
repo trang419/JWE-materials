@@ -1,0 +1,116 @@
+sect_name,type,gvc1970,gvc2000
+"1-Agriculture, Hunting, Forestry and Fishing",gvc: backward,0.144246605879166,0.14909986572116
+"1-Agriculture, Hunting, Forestry and Fishing",gvc: forward,0.144246605879166,0.14909986572116
+"1-Agriculture, Hunting, Forestry and Fishing",gvc: mixed,0.144246605879166,0.14909986572116
+"1-Agriculture, Hunting, Forestry and Fishing",traditional: final goods,0.144246605879166,0.14909986572116
+"1-Agriculture, Hunting, Forestry and Fishing",traditional: intermediate goods,0.144246605879166,0.14909986572116
+10-Basic Metals and Fabricated Metal,gvc: backward,0.215950312549764,0.407398581949441
+10-Basic Metals and Fabricated Metal,gvc: forward,0.215950312549764,0.407398581949441
+10-Basic Metals and Fabricated Metal,gvc: mixed,0.215950312549764,0.407398581949441
+10-Basic Metals and Fabricated Metal,traditional: final goods,0.215950312549764,0.407398581949441
+10-Basic Metals and Fabricated Metal,traditional: intermediate goods,0.215950312549764,0.407398581949441
+"11-Machinery, nec.",gvc: backward,0.114266650685321,0.168003935941769
+"11-Machinery, nec.",gvc: forward,0.114266650685321,0.168003935941769
+"11-Machinery, nec.",gvc: mixed,0.114266650685321,0.168003935941769
+"11-Machinery, nec.",traditional: final goods,0.114266650685321,0.168003935941769
+"11-Machinery, nec.",traditional: intermediate goods,0.114266650685321,0.168003935941769
+12-Electrical and Optical Equipment,gvc: backward,0.0867206242071604,0.298225274949425
+12-Electrical and Optical Equipment,gvc: forward,0.0867206242071604,0.298225274949425
+12-Electrical and Optical Equipment,gvc: mixed,0.0867206242071604,0.298225274949425
+12-Electrical and Optical Equipment,traditional: final goods,0.0867206242071604,0.298225274949425
+12-Electrical and Optical Equipment,traditional: intermediate goods,0.0867206242071604,0.298225274949425
+13-Transport Equipment,gvc: backward,0.0831177078868505,0.151570813797506
+13-Transport Equipment,gvc: forward,0.0831177078868505,0.151570813797506
+13-Transport Equipment,gvc: mixed,0.0831177078868505,0.151570813797506
+13-Transport Equipment,traditional: final goods,0.0831177078868505,0.151570813797506
+13-Transport Equipment,traditional: intermediate goods,0.0831177078868505,0.151570813797506
+"14-Manufacturing, nec.; Recycling",gvc: backward,0.140664943176659,0.108390261702124
+"14-Manufacturing, nec.; Recycling",gvc: forward,0.140664943176659,0.108390261702124
+"14-Manufacturing, nec.; Recycling",gvc: mixed,0.140664943176659,0.108390261702124
+"14-Manufacturing, nec.; Recycling",traditional: final goods,0.140664943176659,0.108390261702124
+"14-Manufacturing, nec.; Recycling",traditional: intermediate goods,0.140664943176659,0.108390261702124
+"15-Electricity, Gas and Water Supply",gvc: backward,0.176716754248176,0.304163392507185
+"15-Electricity, Gas and Water Supply",gvc: forward,0.176716754248176,0.304163392507185
+"15-Electricity, Gas and Water Supply",gvc: mixed,0.176716754248176,0.304163392507185
+"15-Electricity, Gas and Water Supply",traditional: final goods,0.176716754248176,0.304163392507185
+"15-Electricity, Gas and Water Supply",traditional: intermediate goods,0.176716754248176,0.304163392507185
+16-Construction,gvc: backward,,
+16-Construction,gvc: forward,,
+16-Construction,gvc: mixed,,
+16-Construction,traditional: final goods,,
+16-Construction,traditional: intermediate goods,,
+17-Wholesale and Retail Trade,gvc: backward,0.459671435538033,0.392923000929655
+17-Wholesale and Retail Trade,gvc: forward,0.459671435538033,0.392923000929655
+17-Wholesale and Retail Trade,gvc: mixed,0.459671435538033,0.392923000929655
+17-Wholesale and Retail Trade,traditional: final goods,0.459671435538033,0.392923000929655
+17-Wholesale and Retail Trade,traditional: intermediate goods,0.459671435538033,0.392923000929655
+18-Hotels and Restaurants,gvc: backward,0.103005458479619,0.0892405756832075
+18-Hotels and Restaurants,gvc: forward,0.103005458479619,0.0892405756832075
+18-Hotels and Restaurants,gvc: mixed,0.103005458479619,0.0892405756832075
+18-Hotels and Restaurants,traditional: final goods,0.103005458479619,0.0892405756832075
+18-Hotels and Restaurants,traditional: intermediate goods,0.103005458479619,0.0892405756832075
+19-Transport and Storage,gvc: backward,0.145546133059925,0.256024324078261
+19-Transport and Storage,gvc: forward,0.145546133059925,0.256024324078261
+19-Transport and Storage,gvc: mixed,0.145546133059925,0.256024324078261
+19-Transport and Storage,traditional: final goods,0.145546133059925,0.256024324078261
+19-Transport and Storage,traditional: intermediate goods,0.145546133059925,0.256024324078261
+2-Mining and Quarrying,gvc: backward,0.233283083918839,0.398930231468246
+2-Mining and Quarrying,gvc: forward,0.233283083918839,0.398930231468246
+2-Mining and Quarrying,gvc: mixed,0.233283083918839,0.398930231468246
+2-Mining and Quarrying,traditional: final goods,0.233283083918839,0.398930231468246
+2-Mining and Quarrying,traditional: intermediate goods,0.233283083918839,0.398930231468246
+20-Post and Telecommunications,gvc: backward,0.21730192104973,0.257712031281438
+20-Post and Telecommunications,gvc: forward,0.21730192104973,0.257712031281438
+20-Post and Telecommunications,gvc: mixed,0.21730192104973,0.257712031281438
+20-Post and Telecommunications,traditional: final goods,0.21730192104973,0.257712031281438
+20-Post and Telecommunications,traditional: intermediate goods,0.21730192104973,0.257712031281438
+21-Financial Intermediation,gvc: backward,0.123623182942925,0.22530980381548
+21-Financial Intermediation,gvc: forward,0.123623182942925,0.22530980381548
+21-Financial Intermediation,gvc: mixed,0.123623182942925,0.22530980381548
+21-Financial Intermediation,traditional: final goods,0.123623182942925,0.22530980381548
+21-Financial Intermediation,traditional: intermediate goods,0.123623182942925,0.22530980381548
+"22-Real Estate, Renting and Business Activities",gvc: backward,0.116930273667026,0.227764561947704
+"22-Real Estate, Renting and Business Activities",gvc: forward,0.116930273667026,0.227764561947704
+"22-Real Estate, Renting and Business Activities",gvc: mixed,0.116930273667026,0.227764561947704
+"22-Real Estate, Renting and Business Activities",traditional: final goods,0.116930273667026,0.227764561947704
+"22-Real Estate, Renting and Business Activities",traditional: intermediate goods,0.116930273667026,0.227764561947704
+23-Community Social and Personal Services,gvc: backward,0.0217520310991117,0.0492137704711607
+23-Community Social and Personal Services,gvc: forward,0.0217520310991117,0.0492137704711607
+23-Community Social and Personal Services,gvc: mixed,0.0217520310991117,0.0492137704711607
+23-Community Social and Personal Services,traditional: final goods,0.0217520310991117,0.0492137704711607
+23-Community Social and Personal Services,traditional: intermediate goods,0.0217520310991117,0.0492137704711607
+"3-Food, Beverages and Tobacco",gvc: backward,0.151810369039273,0.112135030441866
+"3-Food, Beverages and Tobacco",gvc: forward,0.151810369039273,0.112135030441866
+"3-Food, Beverages and Tobacco",gvc: mixed,0.151810369039273,0.112135030441866
+"3-Food, Beverages and Tobacco",traditional: final goods,0.151810369039273,0.112135030441866
+"3-Food, Beverages and Tobacco",traditional: intermediate goods,0.151810369039273,0.112135030441866
+"4-Textiles, Textile, Leather and Footwear",gvc: backward,0.134995257768964,0.400472040562703
+"4-Textiles, Textile, Leather and Footwear",gvc: forward,0.134995257768964,0.400472040562703
+"4-Textiles, Textile, Leather and Footwear",gvc: mixed,0.134995257768964,0.400472040562703
+"4-Textiles, Textile, Leather and Footwear",traditional: final goods,0.134995257768964,0.400472040562703
+"4-Textiles, Textile, Leather and Footwear",traditional: intermediate goods,0.134995257768964,0.400472040562703
+"5-Pulp, Paper, Paper, Printing and Publishing",gvc: backward,0.268203985344868,0.289828187304663
+"5-Pulp, Paper, Paper, Printing and Publishing",gvc: forward,0.268203985344868,0.289828187304663
+"5-Pulp, Paper, Paper, Printing and Publishing",gvc: mixed,0.268203985344868,0.289828187304663
+"5-Pulp, Paper, Paper, Printing and Publishing",traditional: final goods,0.268203985344868,0.289828187304663
+"5-Pulp, Paper, Paper, Printing and Publishing",traditional: intermediate goods,0.268203985344868,0.289828187304663
+"6-Coke, Refined Petroleum and Nuclear Fuel",gvc: backward,0.408624467964486,0.499051616980415
+"6-Coke, Refined Petroleum and Nuclear Fuel",gvc: forward,0.408624467964486,0.499051616980415
+"6-Coke, Refined Petroleum and Nuclear Fuel",gvc: mixed,0.408624467964486,0.499051616980415
+"6-Coke, Refined Petroleum and Nuclear Fuel",traditional: final goods,0.408624467964486,0.499051616980415
+"6-Coke, Refined Petroleum and Nuclear Fuel",traditional: intermediate goods,0.408624467964486,0.499051616980415
+7-Chemicals and Chemical Products,gvc: backward,0.240619701990141,0.379463659677915
+7-Chemicals and Chemical Products,gvc: forward,0.240619701990141,0.379463659677915
+7-Chemicals and Chemical Products,gvc: mixed,0.240619701990141,0.379463659677915
+7-Chemicals and Chemical Products,traditional: final goods,0.240619701990141,0.379463659677915
+7-Chemicals and Chemical Products,traditional: intermediate goods,0.240619701990141,0.379463659677915
+8-Rubber and Plastics,gvc: backward,0.188469575407413,0.311754354904826
+8-Rubber and Plastics,gvc: forward,0.188469575407413,0.311754354904826
+8-Rubber and Plastics,gvc: mixed,0.188469575407413,0.311754354904826
+8-Rubber and Plastics,traditional: final goods,0.188469575407413,0.311754354904826
+8-Rubber and Plastics,traditional: intermediate goods,0.188469575407413,0.311754354904826
+9-Other Non-Metallic Mineral,gvc: backward,0.149340598109466,0.242284476187242
+9-Other Non-Metallic Mineral,gvc: forward,0.149340598109466,0.242284476187242
+9-Other Non-Metallic Mineral,gvc: mixed,0.149340598109466,0.242284476187242
+9-Other Non-Metallic Mineral,traditional: final goods,0.149340598109466,0.242284476187242
+9-Other Non-Metallic Mineral,traditional: intermediate goods,0.149340598109466,0.242284476187242
