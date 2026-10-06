@@ -16,6 +16,8 @@ website:
             file: slides/02_ca.qmd
           - text: "Lecture 3"
             file: slides/03_gvc.qmd
+          - text: "Lecture 4"
+            file: slides/04_gvc_enablers.qmd
       - text: "Data"
         file: scripts/index.qmd
 

@@ -1,0 +1,13 @@
+
+3:53 PM 10/6/2026
+RTA in force: 
+https://rtais.wto.org/UI/charts.aspx#
+https://rtais.wto.org/UI/charts.aspx#regional
+
+ - https://ttd.wto.org/en
+  - https://www.macmap.org/
+  - https://www.wto.org/english/res_e/statis_e/tariff_profiles_list_e.htm
+  - https://rtais.wto.org/
+  - https://unctad.org/topic/trade-analysis/non-tariff-measures/NTMs-data
+  - https://wits.worldbank.org/tariff/non-tariff-measures
+  - https://datacatalog.worldbank.org/search/dataset/0040437/ad-valorem-equivalent-of-non-tariff-measures
