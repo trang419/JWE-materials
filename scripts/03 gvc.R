@@ -245,7 +245,7 @@ fwrite(dt_sec[t%in%c(2001,2020)&!is.na(forwardness)&!is.na(intensity),
        "data/03 gvc/gvc_case_index.csv")
 
 dt_sec_l = dtl[grepl("Motor vehicle|Electrical|Chemical|Agricul",sect_name)
-      &t>=2001&grepl("gvc",type),
+      &t>=2001,#&grepl("gvc",type),
       .(type,value,t,sect_name,exp,exp_reg)]
 
 dt_sec_l[,value_tot:=sum(value),by=.(t,exp,exp_reg,sect_name)]
