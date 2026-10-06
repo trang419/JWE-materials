@@ -440,7 +440,7 @@ ggplot(dt, aes(region, n)) +
 
 
 ## MFN tariff rates
-![_Source: Baldwin (2011)_](image/wto_tariff.jpg)
+![_Source: Baldwin (2011)_](image/costs_tariff.jpg)
 
 
 ## Applied tariff rates (cont.)
@@ -457,6 +457,9 @@ ggline(wto_tariff,
        color = "indicator") +
   guides(color=guide_legend(nrow=3))
 ```
+## Japan tariff
+
+![_Source: WTO Tariff Profile (2025)_](image/costs_JP_tariff.png)
 
 ## Non-tariff measures
 
@@ -743,7 +746,7 @@ ggplot(
 
 ## International transportation costs: Ocean
 
-![_Source: Hummels (2007)_](image/freight_ocean.jpg)
+![_Source: Hummels (2007)_](image/costs_freight_ocean.jpg)
 
 ::: notes
 - Transport Infrastructure: ports, airports, rail/road connectivity.
@@ -756,11 +759,11 @@ ggplot(
 
 ## International transportation costs: Air
 
-![_Source: Hummels (2007)_](image/freight_air.jpg)
+![_Source: Hummels (2007)_](image/costs_freight_air.jpg)
 
 ## Investment treaties
 
-![_Source: Baldwin (2011)_](image/bit_trend.jpg)
+![_Source: Baldwin (2011)_](image/costs_bit_trend.jpg)
 
 ::: notes
 - Investment policy
@@ -789,7 +792,7 @@ ggplot(
 
 ## Internet access
 
-![_Source: Baldwin (2011)_](image/ict.jpg)
+![_Source: Baldwin (2011)_](image/costs_ict.jpg)
 
 ## Key takeaways
 
