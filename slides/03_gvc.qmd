@@ -603,6 +603,13 @@ Forwardness = \frac{\text{Pure Forward} - \text{Pure Backward}}{\text{Total GVC 
 $$
 
 ::: notes
+Summed over all countries, sectors and partners, pure forward activity equals pure backward activity.
+
+At the country-sector level, 
+0 means pure forward and pure backward are balanced, so the sector is neither mainly at the start nor mainly at the end of chains, relative to the world average. 
+Positive values mean more upstream (supplying inputs), 
+negative values mean more downstream (assembling from imported inputs).
+
 Alternative measures of GVC position include **upstreamness** 
 (distance of output from final demand) and **downstreamness** 
 (distance from primary inputs/value added). These measures are conceptually 
@@ -797,38 +804,64 @@ ggscatter(gvc_jpn_sect_ww,
 
 dt_sec = fread("../data/03 gvc/gvc_case_index.csv")
 
-p_scatter = ggplot(
-  dt_sec[t%in%c(2020)],
-  aes(
-    x = forwardness,
-    y = intensity,
-    color = sect_name
-  )
+d20 <- copy(dt_sec[t %in% c(2020)])
+
+# World average intensity (simple mean across all country-sectors)
+world_avg <- d20[, mean(intensity, na.rm = TRUE)]
+# If you have a weight (e.g., value added or output), use:
+# world_avg <- d20[, weighted.mean(intensity, w = va, na.rm = TRUE)]
+
+# Outliers: beyond 1.5 * IQR on either axis
+iqr_flag <- function(x) {
+  q <- quantile(x, c(.25, .75), na.rm = TRUE)
+  i <- diff(q)
+  x < q[1] - 1.5 * i | x > q[2] + 1.5 * i
+}
+d20[, outlier := iqr_flag(intensity) | iqr_flag(forwardness)]
+d20[, is_japan := exp == "JPN"]
+d20[, lab := fifelse(outlier | is_japan, paste0(exp, " - ", sect_name), NA_character_)]
+
+p_scatter <- ggplot(
+  d20,
+  aes(x = forwardness, y = intensity, color = sect_name)
 ) +
   geom_vline(xintercept = 0, linetype = "dashed") +
-  geom_point(alpha = 0.6, size = 2) +
-  facet_wrap(~t) +
-  scale_x_continuous(
-    limits = c(-1, 1),
-    breaks = seq(-1, 1, .5)
+  geom_hline(yintercept = world_avg, linetype = "dotted", color = "grey30") +
+  annotate(
+    "text", x = -1, y = world_avg,
+    label = sprintf("World avg: %.2f", world_avg),
+    hjust = 0, vjust = -0.6, size = 3, color = "grey30"
   ) +
+  geom_point(alpha = 0.6, size = 2) +
+  # Highlight Japan with a black ring
+  geom_point(
+    data = d20[is_japan == TRUE],
+    shape = 21, fill = NA, color = "black", stroke = 1, size = 3
+  ) +
+  # Labels for outliers and Japan
+  ggrepel::geom_text_repel(
+    data = d20[!is.na(lab)],
+    aes(label = lab),
+    size = 2.8,
+    max.overlaps = Inf,
+    box.padding = 0.4,
+    segment.color = "grey50",
+    show.legend = FALSE
+  ) +
+  facet_wrap(~t) +
+  scale_x_continuous(limits = c(-1, 1), breaks = seq(-1, 1, .5)) +
   labs(
     x = "GVC Position (Forwardness)",
-    y = "GVC Intensity",
-    color = "Sector"
+    y = "GVC Intensity"
   ) +
-  stat_density2d(
-    aes(x = forwardness, y = intensity, color =  sect_name),
-    contour = TRUE,
-    linewidth = 0.3
-  ) +
+  theme(legend.position = "none") +
   theme_minimal()
 
 p_x <- ggplot(dt_sec[t %in% c(2020)],
               aes(forwardness, color = sect_name, fill = sect_name)) +
   geom_density(alpha = 0.4) +
   theme_void() +
-  theme(legend.position = "none")
+  labs(color="Sector",fill="Sector")
 
 p_y <- ggplot(dt_sec[t %in% c(2020)],
               aes(intensity, color = sect_name, fill = sect_name)) +
@@ -857,6 +890,25 @@ Agriculture: Less fragmented — stronger local/regional sourcing
 Chemicals: Intermediate-input intensive — mainly domestic sourcing, with growing imported contented mostly domestically, but some increasing trend in import content as well
 :::
 
+## Four quadrants
+
+::: {style="font-size: 0.8em;"}
+
+| Intensity \\ Forwardness | **Low forwardness** | **High forwardness** |
+|:--|:----------------|:----------------|
+| **High intensity** | **Integrated assemblers.** Heavy use of imported inputs and output tied to chains: Motor vehicles and Electrical | **Integrated suppliers.** Domestic value added is a major input into other countries' exports: Chemicals|
+| **Low intensity** | **Marginal downstream.** Little GVC activity, mostly imported inputs in final goods | **Marginal upstream.** Little GVC activity, mostly supplying primary inputs that others process: Agriculture|
+
+:::
+
+::: notes
+**Caveats**
+
+- Forwardness excludes two-sided participation, so a value near 0 can mean balanced roles or mostly two-sided activity.
+- The world average is zero across all sectors combined, so individual sectors need not average zero.
+- Many points lie near the cut-offs, especially intensity around 0.5. Treat the quadrants as a description of each sector's cloud, not strict classes.
+:::
+
 ## Four sectors in Japan
 
 ```{r}
@@ -879,6 +931,7 @@ ggbarplot(
 ) +
   theme_pubclean()
 ```
+
 
 ## Japan comparative advantage: revisited
 
