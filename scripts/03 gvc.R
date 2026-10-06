@@ -112,7 +112,7 @@ dt_index_sect = dtl[exp=="JPN",.(value=sum(value)),
 dt_index_sect[,gtrade:=sum(value),by=.(region,t,sect_name)]
 dt_index_sect[,share:=value/gtrade]
 dt_index_sect[,share_temp:=ifelse(grepl("gvc",variable),share,0)]
-dt_index_sect[,gvc_share:=sum(share_temp),by=.(region,t,sect_name)]
+dt_index_sect[,gvc_share:=sum(share_temp),by=.(region,t,sect_name,variable)]
 
 dt_index_sect_w = dcast(dt_index_sect[t%in%c(1970,2000)],
                         sect_name + type ~ paste0("gvc",t),
@@ -253,3 +253,28 @@ dt_sec_l[,value_sh:=value/value_tot]
 
 fwrite(dt_sec_l[t%in%c(2001,2020)&exp=="JPN"],
        "data/03 gvc/gvc_case_jpn_share.csv")
+
+
+### contour:
+set.seed(1)
+df <- data.frame(
+  x = c(rnorm(200, 0, 1), rnorm(200, 4, 1)),
+  y = c(rnorm(200, 0, 1), rnorm(200, 4, 1))
+)
+
+p <- ggscatter(df, x = "x", y = "y",
+               alpha = 0.6, size = 1)
+p +
+  stat_density2d(
+    aes(x = x, y = y, color = ..level..),
+    contour = TRUE,
+    linewidth = 0.5
+  ) +
+  scale_color_viridis_c() 
+
+p +
+  geom_density_2d_filled(
+    aes(x = x, y = y),
+    alpha = 0.4
+  )
+

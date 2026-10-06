@@ -48,6 +48,7 @@ output-dir: ../docs/slides
 
 ```{r}
 #| echo: false
+#| warning: false
 library(data.table)
 library(ggpubr)
 library(ggrepel)
@@ -70,7 +71,9 @@ ggpie(iphone,
 ## The Smile Curve
 
 ```{r}
-#|echo: FALSE
+#| echo: false
+#| message: false
+#| warning: false
 
 # ============================================================
 # 1. Function to create a smooth curve from control points
@@ -428,72 +431,6 @@ global input–output databases:
 | ADB MRIO | 62 | 35 | 2007-2022
 
 
-## Japan comparative advantage: revisited
-
-```{r}
-#| echo: false
-dtcaw_jpn = fread("../data/02 ca/rca_jpn.csv")
-dtcaw_jpn_s = dtcaw_jpn[t%in%c(1965,2000)]
-ggscatter(dtcaw_jpn_s,
-          title = "Revealed Comparative Advantage for Japan",
-          caption = "Data Source: WITS, WIOD, TIVA",
-              color = "sect_group",
-          legend="none",
-          x="traditional",y="gvc",
-          facet.by = "t",
-          xlab="Gross Trade",
-          ylab="Trade in value added") +
-  geom_abline(intercept = 0, slope = 1, color = "red",
-              linetype = "dotdash") +
-  geom_hline(yintercept = 1, linetype = "dotdash") +
-  geom_vline(xintercept = 1, linetype = "dotdash") +
-    geom_text_repel(aes(x = traditional, y = gvc, label = sect_name, 
-                      color = sect_group),
-                    data = dtcaw_jpn_s, size = 2,
-                   show.legend = FALSE)
-
-```
-  
-::: notes  
-- RCA_Ai = share of export of industry i in country A export/ share of global export of industry in global export (Balassa, 1965)
-- effective only within same country among products or same product among countries: higher value indicates a stronger export performance, higher degree of export specialization, and a higher degree of revealed comparative advantage
-- CA emphasize relative differences in productivity between countries as the reason for international trade
-:::  
-
----
-```{r}
-#| echo: false
-#| fig-height: 9
-#| fig-width: 12
-dtcaw_reg = fread("../data/02 ca/rca_reg.csv")
-regss = unique(dtcaw_reg[,region])
-dtcaw_reg[,region:=factor(region,levels = regss)]
-dtcaw_reg_s = dtcaw_reg[grepl("Electrical",sect_name)&t%in%c(1970,2000)]
-ggscatter(dtcaw_reg_s,
-    title = "Revealed Comparative Advantage for Electrical Equipment",
-          caption = "Data Source: WITS, TIVA",
-          x="traditional",y="gvc",
-          #color = "sect_group",
-    xlab="Gross Trade",ylab =" Trade in value added",
-          legend="none",
-facet.by = "t",nrow=1) +
-  geom_abline(intercept = 0, slope = 1, 
-              linetype = "dotdash") +
-  geom_hline(yintercept = 1, linetype = "dotdash") +
-  geom_vline(xintercept = 1, linetype = "dotdash") +
-    geom_text_repel(aes(x = traditional, y = gvc, label = region, 
-                      #color = sect_group
-                      ),
-                    data = dtcaw_reg_s, size = 3,max.overlaps = 20,
-                   show.legend = FALSE)
-```
-
-::: notes  
-- the highest degree of RCA variation: primary and unskilled labour-intensive product
-- less variation in technology and human capital-intensive product categories
-:::  
-
-
 ## Global Value Chains
 
 GVCs refer to the fragmentation of production across countries, where different stages of producing a good or service are carried out in different countries.
@@ -636,7 +573,7 @@ flowchart LR
     A["Foreign inputs"] --> B["FOCAL COUNTRY"] --> C["Foreign production"] --> D["Final exports"]
 ```
 
-## GVC Participation measurement (cont)
+## Decompose Gross Trade
 
 - Traditional trade: cross border once
 - GVC-related trade: cross border at least twice
@@ -744,7 +681,7 @@ ggarrange(
 - Small open economies source more inputs from abroad in GVCs than large countries: more backward participation
 :::
 
-## Japan's GVC position
+## Forwardness Distribution
 
 ```{r}
 #| echo: false
@@ -851,7 +788,7 @@ ggscatter(gvc_jpn_sect_ww,
 ```
 
 
-## Four sectors
+## Four sectors globally
 
 ```{r}
 #| echo: false
@@ -860,8 +797,8 @@ ggscatter(gvc_jpn_sect_ww,
 
 dt_sec = fread("../data/03 gvc/gvc_case_index.csv")
 
-ggplot(
-  dt_sec[t%in%c(2001,2020)],
+p_scatter = ggplot(
+  dt_sec[t%in%c(2020)],
   aes(
     x = forwardness,
     y = intensity,
@@ -880,7 +817,37 @@ ggplot(
     y = "GVC Intensity",
     color = "Sector"
   ) +
+  stat_density2d(
+    aes(x = forwardness, y = intensity, color =  sect_name),
+    contour = TRUE,
+    linewidth = 0.3
+  ) +
   theme_minimal()
+
+p_x <- ggplot(dt_sec[t %in% c(2020)],
+              aes(forwardness, color = sect_name, fill = sect_name)) +
+  geom_density(alpha = 0.4) +
+  theme_void() +
+  theme(legend.position = "none")
+
+p_y <- ggplot(dt_sec[t %in% c(2020)],
+              aes(intensity, color = sect_name, fill = sect_name)) +
+  geom_density(alpha = 0.4) +
+  coord_flip() +
+  theme_void() +
+  theme(legend.position = "none")
+
+
+ggarrange(
+  p_x, NULL,
+  p_scatter, p_y,
+  ncol = 2, nrow = 2,
+  widths = c(4, 1),
+  heights = c(1, 4),
+  common.legend = T,
+  legend = "bottom"
+)
+
 ```
 
 ::: notes
@@ -912,6 +879,72 @@ ggbarplot(
 ) +
   theme_pubclean()
 ```
+
+## Japan comparative advantage: revisited
+
+```{r}
+#| echo: false
+dtcaw_jpn = fread("../data/02 ca/rca_jpn.csv")
+dtcaw_jpn_s = dtcaw_jpn[t%in%c(1965,2000)]
+ggscatter(dtcaw_jpn_s,
+          title = "Revealed Comparative Advantage for Japan",
+          caption = "Data Source: WITS, WIOD, TIVA",
+              color = "sect_group",
+          legend="none",
+          x="traditional",y="gvc",
+          facet.by = "t",
+          xlab="Traditional Trade",
+          ylab="GVC Trade") +
+  geom_abline(intercept = 0, slope = 1, color = "red",
+              linetype = "dotdash") +
+  geom_hline(yintercept = 1, linetype = "dotdash") +
+  geom_vline(xintercept = 1, linetype = "dotdash") +
+    geom_text_repel(aes(x = traditional, y = gvc, label = sect_name, 
+                      color = sect_group),
+                    data = dtcaw_jpn_s, size = 2,
+                   show.legend = FALSE)
+
+```
+  
+::: notes  
+- RCA_Ai = share of export of industry i in country A export/ share of global export of industry in global export (Balassa, 1965)
+- effective only within same country among products or same product among countries: higher value indicates a stronger export performance, higher degree of export specialization, and a higher degree of revealed comparative advantage
+- CA emphasize relative differences in productivity between countries as the reason for international trade
+:::  
+
+---
+```{r}
+#| echo: false
+#| fig-height: 9
+#| fig-width: 12
+dtcaw_reg = fread("../data/02 ca/rca_reg.csv")
+regss = unique(dtcaw_reg[,region])
+dtcaw_reg[,region:=factor(region,levels = regss)]
+dtcaw_reg_s = dtcaw_reg[grepl("Electrical",sect_name)&t%in%c(1970,2000)]
+ggscatter(dtcaw_reg_s,
+    title = "Revealed Comparative Advantage for Electrical Equipment",
+          caption = "Data Source: WITS, TIVA",
+          x="traditional",y="gvc",
+          #color = "sect_group",
+    xlab="Traditional Trade",ylab =" GVC Trade",
+          legend="none",
+facet.by = "t",nrow=1) +
+  geom_abline(intercept = 0, slope = 1, 
+              linetype = "dotdash") +
+  geom_hline(yintercept = 1, linetype = "dotdash") +
+  geom_vline(xintercept = 1, linetype = "dotdash") +
+    geom_text_repel(aes(x = traditional, y = gvc, label = region, 
+                      #color = sect_group
+                      ),
+                    data = dtcaw_reg_s, size = 3,max.overlaps = 20,
+                   show.legend = FALSE)
+```
+
+::: notes  
+- the highest degree of RCA variation: primary and unskilled labour-intensive product
+- less variation in technology and human capital-intensive product categories
+:::  
+
 
 ## Key takeaways
 
