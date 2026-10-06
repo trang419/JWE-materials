@@ -18,6 +18,8 @@ website:
             file: slides/03_gvc.qmd
           - text: "Lecture 4"
             file: slides/04_gvc_enablers.qmd
+          - text: "Lecture 5"
+            file: slides/05_asean_integration.qmd
       - text: "Data"
         file: scripts/index.qmd
 
