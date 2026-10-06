@@ -254,6 +254,18 @@ dt_sec_l[,value_sh:=value/value_tot]
 fwrite(dt_sec_l[t%in%c(2001,2020)&exp=="JPN"],
        "data/03 gvc/gvc_case_jpn_share.csv")
 
+ggbarplot(
+  dt_sec_l[t%in%c(2001,2020)&exp=="NGA"],
+  x="sect_name",
+  xlab="",
+  y="value_sh",
+  ylab="percent",
+  rotate=T,
+  facet.by = "t",
+  color="type",
+  fill = "type"
+) +
+  theme_pubclean()
 
 ### contour:
 set.seed(1)
