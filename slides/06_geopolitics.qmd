@@ -153,6 +153,29 @@ ggplot() +
 
 ## US-China Trade Conflicts (1)
 
+**2018–2019: sectoral tariffs and Chinese retaliation**
+
+- Safeguards on washing machines and solar panels (Jan 2018)
+- Steel and aluminum, Section 232: 25% / 10% (Mar 2018)
+- Section 301 (IP, forced technology transfer):
+  - List 1–2: $50B (Jul–Aug 2018)
+  - List 3: $200B, 10% → 25% (Sep 2018 / May 2019)
+  - List 4A: ~$120B at 15% (Sep 2019)
+- China's retaliation: ~$110B of US goods, targeting soybeans, pork, autos
+
+## US-China trade conflicts (2)
+
+**Structural and tech issues**
+
+- Structural demands: state subsidies, SOEs, forced tech transfer
+- Phase One deal (Jan 2020): purchase commitments
+- Tech controls (cf. Semiconductor Agreement):
+  - ZTE (2018), Huawei Entity List (2019)
+  - Advanced-chip export controls (Oct 2022), CHIPS Act (2022)
+- China's counter-tools: gallium/germanium (2023), rare earths
+
+
+## US-China Tariff (1)
 ::: columns
 ::: column
 ![](image/geo_us-china-trade-war-tariffs-an-up-to-date-chart.png)
@@ -168,7 +191,7 @@ ggplot() +
 - Expansion into tech & national security  
 :::
 
-## US-China Trade Conflicts
+## US-China Tariff (2)
 
 ::: columns
 ::: column
@@ -199,22 +222,30 @@ ggplot() +
 - Countries that operate along downward-sloping supplies whose exports substitute (complement) the United States and China are among the larger (smaller) beneficiaries of the trade war
 :::
 
+## Channels of resolution
 
-## Comparing the Two Episodes
+| | US–Japan | US–China |
+|---|---|---|
+| Multilateral | WTO dispute settlement, regional FTAs | WTO sidelined |
+| Bilateral | SII talks, Semiconductor Agreement | Phase One, truces, Board of Trade |
+| Outcome | Conflict faded as Japan stagnated | No off-ramp yet; truce renewed repeatedly |
 
-<div style="font-size:90%">
+## Comparing the two episodes
+<div style="font-size:70%">
+
 | Issue | US–Japan (1970s–90s) | US–China (2018– ) |
-|------|-----------------------|--------------------|
-| Rivalry | Market share | Tech + geopolitical |
-| Tools | VERs, quotas, yen revaluation | Tariffs + tech bans |
+|---|---|---|
+| Rivalry | Market share | Tech + geopolitics |
+| Triggering sectors | Textiles, steel, TVs, autos, chips | Steel, solar, Section 301 lists, chips |
+| Tools | VERs, quotas, yen revaluation | Tariffs, export controls, Entity List |
+| Structural demands | Keiretsu, distribution (SII) | Subsidies, SOEs, tech transfer |
 | Firm responses | Japan FDI → US/Asia | China FDI → SE Asia |
 | Effects | Asian supply chains | Diversification |
 </div>
 
-
 ## Takeaways
 - Trade restrictions: production relocation  
-- Deficits rarely fall with protection  
+- Trade policy alone would be distortionary: it shifts trade flows rather than fixing the underlying imbalance  
 - GVCs become sticky once established   
 
 ---
