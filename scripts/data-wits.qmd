@@ -55,21 +55,21 @@ gvc_sec = "../data/raw/gvc-sectors.csv"
 gvc_cty = "../data/raw/gvc-countries.csv"
 
 # GVC trade data (large — ~2.5 GB zipped)
-download.file(
-  "https://wits.worldbank.org/data/public/gvc_trade.zip",
-  destfile = gvc_trade ,
-  mode = "wb"
-)
+# download.file(
+#   "https://wits.worldbank.org/data/public/gvc_trade.zip",
+#   destfile = gvc_trade ,
+#   mode = "wb"
+# )
 
 # Sector and country reference tables
-download.file(
-  "https://wits.worldbank.org/data/public/gvc-sectors.csv",
-  destfile = gvc_sec , mode = "wb"
-)
-download.file(
-  "https://wits.worldbank.org/data/public/gvc-countries.csv",
-  destfile = gvc_cty, mode = "wb"
-)
+# download.file(
+#   "https://wits.worldbank.org/data/public/gvc-sectors.csv",
+#   destfile = gvc_sec , mode = "wb"
+# )
+# download.file(
+#   "https://wits.worldbank.org/data/public/gvc-countries.csv",
+#   destfile = gvc_cty, mode = "wb"
+# )
 ```
 
 After unzipping, list the contents to confirm the trade CSV's exact name before moving on — WITS may package it differently than expected:

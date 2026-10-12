@@ -150,6 +150,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="dropdown-item" href="../slides/03_gvc.html">
  <span class="dropdown-text">Lecture 3</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../slides/04_gvc_enablers.html">
+ <span class="dropdown-text">Lecture 4</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../slides/05_asean_integration.html">
+ <span class="dropdown-text">Lecture 5</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item">
@@ -288,21 +296,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>gvc_cty <span class="ot">=</span> <span class="st">"../data/raw/gvc-countries.csv"</span></span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co"># GVC trade data (large — ~2.5 GB zipped)</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">download.file</span>(</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="st">"https://wits.worldbank.org/data/public/gvc_trade.zip"</span>,</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">destfile =</span> gvc_trade ,</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">mode =</span> <span class="st">"wb"</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># download.file(</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co">#   "https://wits.worldbank.org/data/public/gvc_trade.zip",</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co">#   destfile = gvc_trade ,</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co">#   mode = "wb"</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co"># )</span></span>
 <span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Sector and country reference tables</span></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="fu">download.file</span>(</span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>  <span class="st">"https://wits.worldbank.org/data/public/gvc-sectors.csv"</span>,</span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>  <span class="at">destfile =</span> gvc_sec , <span class="at">mode =</span> <span class="st">"wb"</span></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="fu">download.file</span>(</span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>  <span class="st">"https://wits.worldbank.org/data/public/gvc-countries.csv"</span>,</span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>  <span class="at">destfile =</span> gvc_cty, <span class="at">mode =</span> <span class="st">"wb"</span></span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="co"># download.file(</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="co">#   "https://wits.worldbank.org/data/public/gvc-sectors.csv",</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="co">#   destfile = gvc_sec , mode = "wb"</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="co"># )</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="co"># download.file(</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="co">#   "https://wits.worldbank.org/data/public/gvc-countries.csv",</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="co">#   destfile = gvc_cty, mode = "wb"</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="co"># )</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>After unzipping, list the contents to confirm the trade CSV’s exact name before moving on — WITS may package it differently than expected:</p>
 <div class="cell">
@@ -462,8 +470,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 36:  wiodo                     Manufacturing  400078
 37:  wiodo              Mining and Quarrying   28577
 38:  wiodo                          Services  485809
-    source                        sect_group       N
-    &lt;char&gt;                            &lt;char&gt;   &lt;int&gt;</code></pre>
+    source                        sect_group       N</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>dt2[source <span class="sc">==</span> <span class="st">"wiodlr"</span>, .N, by <span class="ot">=</span> .(sect_group, sect_name)][<span class="fu">order</span>(sect_group)]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
@@ -493,7 +500,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 22:                          Services
 23:                          Services
                            sect_group
-                               &lt;char&gt;
                                           sect_name     N
                                              &lt;char&gt; &lt;int&gt;
  1:    1-Agriculture, Hunting, Forestry and Fishing 24336
@@ -519,8 +525,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 21:                     21-Financial Intermediation 24336
 22: 22-Real Estate, Renting and Business Activities 24336
 23:       23-Community Social and Personal Services 24336
-                                          sect_name     N
-                                             &lt;char&gt; &lt;int&gt;</code></pre>
+                                          sect_name     N</code></pre>
 </div>
 </div>
 </section>

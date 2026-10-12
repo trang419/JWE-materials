@@ -38,15 +38,15 @@ came from, and can be re-run from scratch by anyone.
 #| eval: false
 # The dataverse package defaults to Harvard's Dataverse, so it has to be
 # pointed at the right server first.
-Sys.setenv("DATAVERSE_SERVER" = "dataverse.nl")
+#Sys.setenv("DATAVERSE_SERVER" = "dataverse.nl")
 
 # Look up the dataset by its DOI
-library(dataverse)
-ds <- get_dataset("10.34894/INZBF2")
-ds$files[, c("filename", "contentType")]
+#library(dataverse)
+#ds <- get_dataset("10.34894/INZBF2")
+#ds$files[, c("filename", "contentType")]
 
 # Download the specific file by name (confirmed from the listing above)
-raw <- get_file("mpd2023_web.xlsx", dataset = "10.34894/INZBF2")
+#raw <- get_file("mpd2023_web.xlsx", dataset = "10.34894/INZBF2")
 
 dir.create("../data/raw", showWarnings = FALSE)
 dir.create("../data/temp", showWarnings = FALSE)

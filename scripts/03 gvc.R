@@ -290,3 +290,87 @@ p +
     alpha = 0.4
   )
 
+## exam
+dt_sec = fread("./data/03 gvc/gvc_case_index.csv")
+
+d20 <- copy(dt_sec[grepl("Electric",sect_name)&t %in% c(2020)])
+
+# World average intensity (simple mean across all country-sectors)
+world_avg <- d20[, mean(intensity, na.rm = TRUE)]
+# If you have a weight (e.g., value added or output), use:
+# world_avg <- d20[, weighted.mean(intensity, w = va, na.rm = TRUE)]
+
+# Outliers: beyond 1.5 * IQR on either axis
+iqr_flag <- function(x) {
+  q <- quantile(x, c(.25, .75), na.rm = TRUE)
+  i <- diff(q)
+  x < q[1] - 1.5 * i | x > q[2] + 1.5 * i
+}
+d20[, outlier := iqr_flag(intensity) | iqr_flag(forwardness)]
+d20[, is_japan := exp == "JPN"]
+d20[, is_label := exp %in% c("VNM","MYS","THA","CHN","KOR")]
+#d20[, lab := fifelse(outlier | is_japan, paste0(exp, " - ", sect_name), NA_character_)]d20[, lab := fifelse(outlier | is_japan, paste0(exp, " - ", sect_name), NA_character_)]
+d20[, lab := fifelse(outlier | is_japan | is_label, exp, NA_character_)]
+
+p_scatter <- ggplot(
+  d20,
+  aes(x = forwardness, y = intensity)
+) +
+  geom_vline(xintercept = 0, linetype = "dashed") +
+  geom_hline(yintercept = world_avg, linetype = "dotted", color = "grey30") +
+  annotate(
+    "text", x = -1, y = world_avg,
+    label = sprintf("World avg: %.2f", world_avg),
+    hjust = 0, vjust = -0.6, size = 3, color = "grey30"
+  ) +
+  geom_point(alpha = 0.6, size = 2) +
+  # Highlight Japan with a black ring
+  geom_point(
+    data = d20[is_japan == TRUE],
+    shape = 21, fill = NA, color = "black", stroke = 1, size = 3
+  ) +
+  # Labels for outliers and Japan
+  ggrepel::geom_text_repel(
+    data = d20[!is.na(lab)],
+    aes(label = lab),
+    size = 2.8,
+    max.overlaps = Inf,
+    box.padding = 0.4,
+    segment.color = "grey50",
+    show.legend = FALSE
+  ) +
+  facet_wrap(~t) +
+  scale_x_continuous(limits = c(-1, 1), breaks = seq(-1, 1, .5)) +
+  labs(
+    title = "Electrical Equipment",
+    x = "GVC Position (Forwardness)",
+    y = "GVC Intensity"
+  ) +
+  theme(legend.position = "none") +
+  theme_minimal()
+
+p_x <- ggplot(d20,
+              aes(forwardness)) +
+  geom_density(alpha = 0.4) +
+  theme_void() +
+  labs(color="Sector",fill="Sector")
+
+p_y <- ggplot(d20,
+              aes(intensity)) +
+  geom_density(alpha = 0.4) +
+  coord_flip() +
+  theme_void() +
+  theme(legend.position = "none")
+
+
+ggarrange(
+  p_x, NULL,
+  p_scatter, p_y,
+  ncol = 2, nrow = 2,
+  widths = c(4, 1),
+  heights = c(1, 4),
+  common.legend = T,
+  legend = "bottom"
+)
+
+p_scatter
