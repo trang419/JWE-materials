@@ -5,7 +5,7 @@ author: "Trang Tran"
 date: "2026-10-20"
 execute:
   echo: false      # hide code
-  output: false    # hide all output
+  output: true    # show all output
   warning: false   # hide warnings
   message: false   # hide messages
 format:
