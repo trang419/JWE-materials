@@ -26,6 +26,7 @@ draft: true
 #| include: false
 library(ggplot2)
 library(patchwork)
+library(scales)
 
 # ---- palette (sampled from the original figure) ----------------------------
 col_bg      <- "#C4BCC8"   # panel background
@@ -284,8 +285,72 @@ ggplot(gravity_long, aes(x = median, y = variable, colour = sample)) +
   )
 ```
 
-## WTO and multilaterism
+## WTO and multilateralism
 
+```{r}
+periods <- c("1948–49", "1950s", "1960s", "1970s", "1980s",
+             "1990–94", "1995", "1996–2000", "2001–05", "2006–12")
+
+periods <- c("1948–49", "1950s", "1960s", "1970s", "1980s",
+             "1990–94", "1995", "1996–2000", "2001–05", "2006–12")
+
+dt <- data.table(
+  period = c("1948–49", "1948–49", "1950s", "1950s", "1950s",
+             "1960s", "1960s", "1970s", "1970s", "1980s", "1980s",
+             "1990–94", "1990–94", "1996–2000", "2001–05", "2006–12"),
+  type   = c("Founding members", "Accessions", "Accessions", "Successions", "Withdrawals",
+             "Accessions", "Successions", "Accessions", "Successions", "Accessions", "Successions",
+             "Accessions", "Successions", "Accessions", "Accessions", "Accessions"),
+  n      = c(23, 11, 15, 2, 4,
+             12, 21, 9, 4, 6, 5,
+             9, 20, 11, 7, 10)
+)
+
+dt[, period := factor(period, levels = periods)]
+dt[, type   := factor(type, levels = c("Founding members", "Accessions",
+                                       "Successions", "Withdrawals"))]
+cols <- c("Founding members" = "black",
+          "Accessions"       = "#2C7FB8",
+          "Successions"      = "#F28E2B",
+          "Withdrawals"      = "#D62728")
+
+dodge <- position_dodge2(preserve = "single")
+
+p <- ggplot(dt, aes(period, n, fill = type)) +
+  geom_col(position = dodge, width = 0.8) +
+  geom_text(aes(label = n), position = dodge, vjust = -0.4, size = 3.5) +
+
+  # GATT bracket (1948–1994)
+  annotate("segment", x = 0.6, xend = 6.4, y = 29, yend = 29, linewidth = 0.8) +
+  annotate("text", x = 3.5, y = 30.5, fontface = "bold", size = 4,
+           label = "GATT: General Agreement on Tariffs and Trade (1948–1994)") +
+
+  # WTO bracket (1995 onward)
+  annotate("segment", x = 6.6, xend = 10.4, y = 29, yend = 29, linewidth = 0.8) +
+  annotate("text", x = 8.5, y = 30.5, fontface = "bold", size = 4,
+           label = "WTO: World Trade Organization (1995–)") +
+
+  # 1995 marker
+  geom_vline(xintercept = 7, linetype = "dashed") +
+  annotate("text", x = 7, y = 25, size = 3.5, lineheight = 0.9,
+           label = "1995:\nWTO\nestablished") +
+
+  scale_fill_manual(values = cols, name = NULL) +
+  scale_x_discrete(drop = FALSE) +
+  scale_y_continuous(limits = c(0, 32), expand = c(0, 0)) +
+  labs(title = "GATT/WTO membership changes by period",
+       x = NULL, y = "Number of countries",
+       caption = paste0("GATT = General Agreement on Tariffs and Trade; ",
+                        "WTO = World Trade Organization.\n",
+                        "Black bar = 23 founding GATT members (1948). ",
+                        "Successions and withdrawals not reported for 1996 onward.")) +
+  theme_minimal(base_size = 12) +
+  theme(legend.position = "bottom",
+        panel.grid.major.x = element_blank(),
+        plot.caption = element_text(hjust = 0))
+```
+
+:::notes
 <div style="font-size:70%">
 - **1948–49**: GATT launched with 23 members; +11 accessions  
 - **1950s**: +15 accessions, 2 successions, 4 withdrawals  
@@ -298,6 +363,10 @@ ggplot(gravity_long, aes(x = median, y = variable, colour = sample)) +
 - **2001–05**: 7 major accessions (China, Lithuania, Moldova, Chinese Taipei, Saudi)  
 - **2006–12**: 10 accessions (Viet Nam, Ukraine, Russia, Samoa, Vanuatu)  
 </div>
+:::
+
+## MFN tariff rates
+![_Source: Baldwin (2011)_](image/costs_tariff.jpg)
 
 ## WTO challenge
 
@@ -398,7 +467,7 @@ ggplot() +
         legend.box = "horizontal")
 ```
 
-## Regional and bilateral agreements (cont.)
+## Regional and bilateral agreements by regions
 
 ```{r}
 #| echo: false
@@ -439,52 +508,99 @@ ggplot(dt, aes(region, n)) +
 ```
 
 
-## MFN tariff rates
-![_Source: Baldwin (2011)_](image/costs_tariff.jpg)
-
-
-## Applied tariff rates (cont.)
+## Average tariff rates
 
 ```{r}
 #| echo: false
 #| message: false
 #| warning: false
-wto_tariff = fread("../data/04_gvc_enablers/wto_tariff.csv")
-ggline(wto_tariff,
-       x="year",xlab="",
-       y="value",
-       ylab = "Tariff (%)",
-       color = "indicator") +
-  guides(color=guide_legend(nrow=3))
+tariff = unique(fread("../data/04_gvc_enablers/wto_tariff.csv"),
+                by = c("indicator", "year"))
+# ---- 1. Load and tidy -------------------------------------------------------
+# The file repeats each (indicator, year) row 217 times with identical values,
+# so keep one row per indicator-year.
+tariff[, series := fcase(
+  indicator %like% "most favored nation" & indicator %like% "manufactured", "MFN, manufactured products",
+  indicator %like% "applied"             & indicator %like% "manufactured", "Applied, manufactured products",
+  indicator %like% "applied"             & indicator %like% "primary",      "Applied, primary products"
+)]
+setorder(tariff, series, year)
+
+# Wide format for the shaded MFN - applied gap
+gap <- dcast(tariff[series %in% c("MFN, manufactured products",
+                                  "Applied, manufactured products")],
+             year ~ series, value.var = "value")
+setnames(gap, c("MFN, manufactured products", "Applied, manufactured products"),
+              c("mfn", "applied"))
+gap[, `:=`(lo = pmin(mfn, applied), hi = pmax(mfn, applied))]
+
+# ---- 2. Plot ----------------------------------------------------------------
+cols <- c("MFN, manufactured products"     = "#1f3b73",
+          "Applied, manufactured products" = "#d1495b",
+          "Applied, primary products"      = "#2a9d5b")
+ltys <- c("MFN, manufactured products"     = "solid",
+          "Applied, manufactured products" = "solid",
+          "Applied, primary products"      = "dashed")
+
+ggplot() +
+  geom_ribbon(data = gap, aes(x = year, ymin = lo, ymax = hi),
+              fill = "#9aa5b1", alpha = 0.35) +
+  geom_line(data = tariff,
+            aes(x = year, y = value, colour = series, linetype = series),
+            linewidth = 1.1) +
+  scale_colour_manual(values = cols, breaks = names(cols)) +
+  scale_linetype_manual(values = ltys, breaks = names(ltys)) +
+  scale_x_continuous(breaks = seq(1990, 2020, 5), expand = c(0, 0)) +
+  scale_y_continuous(limits = c(0, 32), expand = c(0, 0)) +
+  labs(title    = "Simple mean tariff rates: MFN vs. applied, with primary products",
+       subtitle = "Shaded area = gap between MFN and applied rates (manufactured products)",
+       x = "Year", y = "Tariff rate (%)", colour = NULL, linetype = NULL,
+       caption = "Source: WTO tariff data") +
+  theme_minimal(base_size = 12) +
+  theme(legend.position      = c(0.98, 0.98),
+        legend.justification = c("right", "top"),
+        panel.grid.minor     = element_blank(),
+        plot.title           = element_text(face = "bold"),
+        plot.caption         = element_text(size = 8, colour = "grey40", hjust = 0))
+
 ```
+
 ## Japan tariff
 
 ![_Source: WTO Tariff Profile (2025)_](image/costs_JP_tariff.png)
 
+::: notes
+Tariff line: the most detailed product category in a country’s tariff schedule, identified by a national code (usually 8 to 10 digits, built on the 6-digit HS code). Each tariff line has its own duty rate. “AVG”, “Duty-free in %”, “Max” and “Binding in %” are all calculated over tariff lines, not over trade value.
+
+- Final bound duties: the maximum tariff rates Japan has committed to the WTO for each product line. Japan cannot legally raise tariffs above these ceilings.
+- MFN applied duties: the rates Japan actually charges other WTO members under the Most-Favoured-Nation principle, i.e. the non-discriminatory “normal” tariff, excluding preferential rates under FTAs. Applied rates are at or below bound rates.
+- AVG: simple average of the ad valorem tariff rates (%) across all lines in the group.
+- Duty-free in %: share of tariff lines with a zero rate.
+- Max: the highest single tariff rate in the group (italics mark non-ad valorem rates converted to ad valorem equivalents).
+- Binding in %: share of tariff lines that are bound at the WTO (100 means every line is bound).
+- Imports (Share in %): the group’s share of Japan’s total imports.
+- Imports (Duty-free in %): share of the group’s import value that enters duty-free.
+:::
+
 ## Non-tariff measures
 
 <div style="font-size:50%">
-**Technical measures**  
-A. Sanitary & phytosanitary (SPS)  
-B. Technical barriers to trade (TBT)  
-C. Pre-shipment inspection & formalities  
+| Technical measures | Non-technical measures | Export measures |
+|---|---|---|
+| **A. SPS** (pesticide limits) | **D. Trade-protective** (anti-dumping) | **P. Export measures** (export taxes) |
+| **B. TBT** (labeling) | E. Licensing, quotas (import bans) | |
+| C. Pre-shipment inspection (customs checks) | F. Price controls (surcharges) | |
+| | G. Finance (FX controls) | |
+| | H. Competition (state monopolies) | |
+| | I. Investment, TRIMs (local content) | |
+| | J. Distribution (licensed retailers) | |
+| | K. Post-sales service (local service) | |
+| | L. Subsidies (farm subsidies) | |
+| | M. Procurement (buy national) | |
+| | N. Intellectual property (patents) | |
+| | O. Rules of origin (origin certificates) | |
 
-**Non-technical measures**  
-D. Contingent trade-protective (anti-dumping, safeguards)  
-E. Non-automatic licensing, quotas, prohibitions  
-F. Price-control measures (taxes, charges)  
-G. Finance measures  
-H. Competition-related restrictions  
-I. Trade-related investment measures  
-J. Distribution restrictions  
-K. Post-sales service restrictions  
-L. Subsidies & other support  
-M. Government procurement restrictions  
-N. Intellectual property rules  
-O. Rules of origin  
-
-**Export measures**  
-P. Export-related measures
+Source: UNCTAD MAST classification
 </div>
 
 ## Non-tariff measures by sector
@@ -705,42 +821,62 @@ ggplot(
 
 dt_plot <- fread("../data/04_gvc_enablers/ntm_japan_world_by_sector.csv")
 
-dt_long <- melt(
+# Clean sector labels: "PDR - Paddy rice" -> "Paddy rice"
+dt_plot[, sector := sub("^[A-Z_]+ - ", "", gtap_desc)]
+
+# Order sectors by Japan's value (highest at top of the plot)
+sector_order <- dt_plot[order(Japan), sector]
+dt_plot[, sector := factor(sector, levels = sector_order)]
+
+# Long format for plotting
+long <- melt(
   dt_plot,
-  id.vars = c("gtap_code", "gtap_desc"),
-  measure.vars = c("Japan", "USA","World"),
-  variable.name = "region",
-  value.name = "value"
-)
+  id.vars       = c("gtap_code", "sector"),
+  measure.vars  = c("USA", "World", "Japan"),
+  variable.name = "economy",
+  value.name    = "ntm"
+)[!is.na(ntm)]
+long[, economy := factor(economy, levels = c("USA", "World", "Japan"))]  # Japan drawn last (on top)
 
-dt_long[, sector := factor(
-  gtap_desc,
-  levels = rev(dt_plot$gtap_desc)
-)]
+# Japan-to-World gap segments
+gap <- dt_plot[!is.na(Japan) & !is.na(World), .(sector, Japan, World)]
 
-ggplot(
-  dt_long,
-  aes(x = sector, y = value, fill = region)
-) +
-  geom_col(
-    position = "dodge",
-    width = 0.7
+cols   <- c(Japan = "#D7263D", World = "grey35", USA = "#9ECAE1")
+sizes  <- c(Japan = 4,         World = 2.8,      USA = 2)
+shapes <- c(Japan = 16,        World = 18,       USA = 16)
+
+ggplot() +
+  geom_segment(
+    data = gap,
+    aes(x = World, xend = Japan, y = sector, yend = sector),
+    colour = "grey80", linewidth = 0.6
   ) +
-  #coord_flip() +
+  geom_point(
+    data = long,
+    aes(x = ntm, y = sector, colour = economy, size = economy, shape = economy)
+  ) +
+  scale_colour_manual(values = cols,   breaks = c("Japan", "World", "USA")) +
+  scale_size_manual(values = sizes,    breaks = c("Japan", "World", "USA")) +
+  scale_shape_manual(values = shapes,  breaks = c("Japan", "World", "USA")) +
+  scale_x_continuous(
+    trans  = pseudo_log_trans(base = 10),
+    breaks = c(0, 1, 2, 5, 10, 20, 50, 100)
+  ) +
   labs(
-    x = NULL,
-    y = "Average NTM",
-    fill = NULL,
-    #title = "NTMs by Sector: Japan vs. World Average",
-    caption = "Source: World Bank - GTAP"
+    title    = "Non-tariff measures by sector: Japan vs. the World and the USA",
+    subtitle = "Sectors sorted by Japan's value; x-axis on a pseudo-log scale",
+    x = "NTM level (pseudo-log scale)",
+    y = NULL, colour = NULL, size = NULL, shape = NULL
   ) +
-  theme_minimal(base_size = 11) +
+  theme_minimal(base_size = 12) +
   theme(
-    legend.position = "top",
-    panel.grid.major.y = element_blank(),
-    axis.text.x = element_text(size = 8,angle = 90),
-    plot.title = element_text(face = "bold", size = 14)
+    panel.grid.minor   = element_blank(),
+    panel.grid.major.y = element_line(colour = "grey93"),
+    legend.position    = "top",
+    plot.title         = element_text(face = "bold"),
+    caption = "Souce: WB - GTAP"
   )
+
 ```
 
 
