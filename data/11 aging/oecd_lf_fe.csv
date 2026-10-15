@@ -1,0 +1,1101 @@
+country,date,Age,value
+Japan,2008,From 50 to 54 years,71.574
+Japan,2008,From 45 to 49 years,75.194
+Japan,2008,65 years or over,13.043
+Japan,2008,From 35 to 39 years,64.905
+Japan,2008,From 60 to 64 years,43.612
+Japan,2008,From 25 to 29 years,76.064
+Japan,2008,From 55 to 59 years,61.63
+Japan,2008,From 40 to 44 years,71.084
+Japan,2008,From 15 to 19 years,16.225
+Japan,2008,From 30 to 34 years,65.101
+Japan,2008,From 20 to 24 years,69.452
+United States,2008,From 60 to 64 years,48.726
+United States,2008,From 50 to 54 years,74.844
+United States,2008,From 15 to 19 years,40.238
+United States,2008,From 40 to 44 years,77.07
+United States,2008,From 30 to 34 years,74.426
+United States,2008,From 55 to 59 years,67.735
+United States,2008,From 25 to 29 years,75.876
+United States,2008,From 20 to 24 years,69.97
+United States,2008,From 35 to 39 years,75.171
+United States,2008,65 years or over,13.27
+United States,2008,From 45 to 49 years,77.219
+Japan,2007,From 20 to 24 years,69.492
+Japan,2007,From 30 to 34 years,64.009
+Japan,2007,From 15 to 19 years,16.234
+Japan,2007,From 40 to 44 years,72.277
+Japan,2007,From 55 to 59 years,60.788
+Japan,2007,From 25 to 29 years,75.584
+Japan,2007,From 60 to 64 years,42.191
+Japan,2007,From 35 to 39 years,64.301
+Japan,2007,65 years or over,13.019
+Japan,2007,From 50 to 54 years,70.762
+Japan,2007,From 45 to 49 years,75.844
+United States,2007,From 45 to 49 years,77.219
+United States,2007,65 years or over,12.631
+United States,2007,From 35 to 39 years,73.968
+United States,2007,From 20 to 24 years,70.139
+United States,2007,From 25 to 29 years,74.861
+United States,2007,From 55 to 59 years,66.638
+United States,2007,From 30 to 34 years,74.122
+United States,2007,From 40 to 44 years,76.973
+United States,2007,From 50 to 54 years,74.698
+United States,2007,From 15 to 19 years,41.511
+United States,2007,From 60 to 64 years,47.93
+Japan,2005,From 20 to 24 years,69.811
+Japan,2005,From 30 to 34 years,62.68
+Japan,2005,From 15 to 19 years,16.46
+Japan,2005,From 55 to 59 years,59.961
+Japan,2005,From 25 to 29 years,74.88
+Japan,2005,From 60 to 64 years,40.091
+Japan,2005,From 35 to 39 years,62.989
+Japan,2005,65 years or over,12.662
+Japan,2005,From 50 to 54 years,69.058
+Japan,2005,From 45 to 49 years,73.902
+United States,2005,From 45 to 49 years,77.691
+United States,2005,65 years or over,11.518
+United States,2005,From 35 to 39 years,74.612
+United States,2005,From 20 to 24 years,70.064
+United States,2005,From 25 to 29 years,73.984
+United States,2005,From 55 to 59 years,65.62
+United States,2005,From 30 to 34 years,73.871
+United States,2005,From 40 to 44 years,76.777
+United States,2005,From 50 to 54 years,74.04
+United States,2005,From 15 to 19 years,44.227
+United States,2005,From 60 to 64 years,45.787
+Japan,2006,From 50 to 54 years,70.519
+Japan,2006,From 45 to 49 years,73.958
+Japan,2006,65 years or over,12.888
+Japan,2006,From 35 to 39 years,63.576
+Japan,2006,From 60 to 64 years,40.191
+Japan,2006,From 25 to 29 years,75.495
+Japan,2006,From 55 to 59 years,60.259
+Japan,2006,From 40 to 44 years,71.429
+Japan,2006,From 15 to 19 years,16.561
+Japan,2006,From 30 to 34 years,62.839
+Japan,2006,From 20 to 24 years,70.055
+United States,2006,From 60 to 64 years,46.956
+United States,2006,From 50 to 54 years,74.722
+United States,2006,From 15 to 19 years,43.648
+United States,2006,From 40 to 44 years,77.097
+United States,2006,From 30 to 34 years,73.557
+United States,2006,From 55 to 59 years,66.71
+United States,2006,From 25 to 29 years,75.207
+United States,2006,From 20 to 24 years,69.456
+United States,2006,From 35 to 39 years,74.555
+United States,2006,65 years or over,11.709
+United States,2006,From 45 to 49 years,77.199
+Japan,2002,From 50 to 54 years,67.844
+Japan,2002,From 45 to 49 years,72.439
+Japan,2002,65 years or over,13.235
+Japan,2002,From 35 to 39 years,61.823
+Japan,2002,From 60 to 64 years,39.183
+Japan,2002,From 25 to 29 years,71.795
+Japan,2002,From 55 to 59 years,58.065
+Japan,2002,From 40 to 44 years,70.466
+Japan,2002,From 15 to 19 years,16.431
+Japan,2002,From 30 to 34 years,60.256
+Japan,2002,From 20 to 24 years,70.305
+United States,2002,From 60 to 64 years,44.078
+United States,2002,From 50 to 54 years,73.995
+United States,2002,From 15 to 19 years,47.337
+United States,2002,From 40 to 44 years,77.51
+United States,2002,From 30 to 34 years,74.628
+United States,2002,From 55 to 59 years,63.805
+United States,2002,From 25 to 29 years,75.677
+United States,2002,From 20 to 24 years,72.132
+United States,2002,From 35 to 39 years,75.292
+United States,2002,65 years or over,9.844
+United States,2002,From 45 to 49 years,77.791
+Japan,2003,From 20 to 24 years,69.091
+Japan,2003,From 30 to 34 years,60.251
+Japan,2003,From 15 to 19 years,16.618
+Japan,2003,From 40 to 44 years,70.256
+Japan,2003,From 55 to 59 years,58.696
+Japan,2003,From 25 to 29 years,73.171
+Japan,2003,From 60 to 64 years,39.151
+Japan,2003,From 35 to 39 years,62.83
+Japan,2003,From 50 to 54 years,68.11
+Japan,2003,From 45 to 49 years,72.544
+United States,2003,From 45 to 49 years,78.555
+United States,2003,65 years or over,10.624
+United States,2003,From 35 to 39 years,74.463
+United States,2003,From 20 to 24 years,70.748
+United States,2003,From 25 to 29 years,74.357
+United States,2003,From 55 to 59 years,65.456
+United States,2003,From 30 to 34 years,73.836
+United States,2003,From 40 to 44 years,77.411
+United States,2003,From 50 to 54 years,74.712
+United States,2003,From 15 to 19 years,44.82
+United States,2003,From 60 to 64 years,45.337
+Japan,2004,From 50 to 54 years,68.354
+Japan,2004,From 45 to 49 years,72.959
+Japan,2004,65 years or over,12.989
+Japan,2004,From 35 to 39 years,62.617
+Japan,2004,From 60 to 64 years,39.729
+Japan,2004,From 25 to 29 years,73.963
+Japan,2004,From 55 to 59 years,59.627
+Japan,2004,From 40 to 44 years,70.153
+Japan,2004,From 15 to 19 years,16.265
+Japan,2004,From 30 to 34 years,61.649
+Japan,2004,From 20 to 24 years,68.865
+United States,2004,From 60 to 64 years,45.389
+United States,2004,From 50 to 54 years,74.484
+United States,2004,From 15 to 19 years,43.785
+United States,2004,From 40 to 44 years,76.717
+United States,2004,From 30 to 34 years,74.015
+United States,2004,From 55 to 59 years,64.951
+United States,2004,From 25 to 29 years,73.133
+United States,2004,From 20 to 24 years,70.453
+United States,2004,From 35 to 39 years,74.459
+United States,2004,65 years or over,11.092
+United States,2004,From 45 to 49 years,78.222
+Japan,2001,From 20 to 24 years,71.99
+Japan,2001,From 30 to 34 years,58.811
+Japan,2001,From 40 to 44 years,70.13
+Japan,2001,From 55 to 59 years,58.353
+Japan,2001,From 25 to 29 years,71.134
+Japan,2001,From 60 to 64 years,39.454
+Japan,2001,From 35 to 39 years,62.312
+Japan,2001,65 years or over,13.754
+Japan,2001,From 50 to 54 years,68.182
+Japan,2001,From 45 to 49 years,72.727
+United States,2001,From 45 to 49 years,78.454
+United States,2001,65 years or over,9.587
+United States,2001,From 35 to 39 years,76.091
+United States,2001,From 20 to 24 years,72.742
+United States,2001,From 25 to 29 years,75.745
+United States,2001,From 55 to 59 years,61.697
+United States,2001,From 30 to 34 years,75.338
+United States,2001,From 40 to 44 years,78.075
+United States,2001,From 50 to 54 years,74.132
+United States,2001,From 15 to 19 years,48.952
+United States,2001,From 60 to 64 years,42.477
+Japan,2000,From 50 to 54 years,68.208
+Japan,2000,From 45 to 49 years,71.84
+Japan,2000,65 years or over,14.398
+Japan,2000,From 35 to 39 years,61.404
+Japan,2000,From 60 to 64 years,39.547
+Japan,2000,From 25 to 29 years,69.939
+Japan,2000,From 55 to 59 years,58.744
+Japan,2000,From 40 to 44 years,69.33
+Japan,2000,From 15 to 19 years,16.621
+Japan,2000,From 30 to 34 years,57.143
+Japan,2000,From 20 to 24 years,72.749
+United States,2000,From 60 to 64 years,40.222
+United States,2000,From 50 to 54 years,74.153
+United States,2000,From 15 to 19 years,51.157
+United States,2000,From 40 to 44 years,78.712
+United States,2000,From 30 to 34 years,75.479
+United States,2000,From 55 to 59 years,61.369
+United States,2000,From 25 to 29 years,76.731
+United States,2000,From 20 to 24 years,73.065
+United States,2000,From 35 to 39 years,75.714
+United States,2000,65 years or over,9.383
+United States,2000,From 45 to 49 years,79.124
+Japan,1996,From 50 to 54 years,66.9
+Japan,1996,From 45 to 49 years,71.609
+Japan,1996,65 years or over,15.357
+Japan,1996,From 35 to 39 years,60.836
+Japan,1996,From 60 to 64 years,39.031
+Japan,1996,From 25 to 29 years,67.92
+Japan,1996,From 55 to 59 years,58.088
+Japan,1996,From 40 to 44 years,69.464
+Japan,1996,From 15 to 19 years,16.337
+Japan,1996,From 30 to 34 years,54.798
+Japan,1996,From 20 to 24 years,73.805
+United States,1996,From 60 to 64 years,38.156
+United States,1996,From 50 to 54 years,71.852
+United States,1996,From 15 to 19 years,51.302
+United States,1996,From 40 to 44 years,78.621
+United States,1996,From 30 to 34 years,74.675
+United States,1996,From 55 to 59 years,59.793
+United States,1996,From 25 to 29 years,75.819
+United States,1996,From 20 to 24 years,71.3
+United States,1996,From 35 to 39 years,76.546
+United States,1996,65 years or over,8.581
+United States,1996,From 45 to 49 years,78.031
+Japan,1999,From 20 to 24 years,72.374
+Japan,1999,From 30 to 34 years,56.674
+Japan,1999,From 40 to 44 years,69.543
+Japan,1999,From 55 to 59 years,58.667
+Japan,1999,From 25 to 29 years,69.691
+Japan,1999,From 60 to 64 years,39.747
+Japan,1999,From 35 to 39 years,61.538
+Japan,1999,65 years or over,14.866
+Japan,1999,From 50 to 54 years,67.894
+Japan,1999,From 45 to 49 years,71.816
+United States,1999,From 45 to 49 years,78.927
+United States,1999,65 years or over,8.949
+United States,1999,From 35 to 39 years,76.198
+United States,1999,From 20 to 24 years,73.25
+United States,1999,From 25 to 29 years,76.903
+United States,1999,From 55 to 59 years,61.836
+United States,1999,From 30 to 34 years,75.887
+United States,1999,From 40 to 44 years,78.222
+United States,1999,From 50 to 54 years,74.017
+United States,1999,From 15 to 19 years,50.997
+United States,1999,From 60 to 64 years,38.825
+Japan,1998,From 50 to 54 years,67.811
+Japan,1998,From 45 to 49 years,72.374
+Japan,1998,65 years or over,15.185
+Japan,1998,From 35 to 39 years,62.211
+Japan,1998,From 60 to 64 years,40.1
+Japan,1998,From 25 to 29 years,69.182
+Japan,1998,From 55 to 59 years,59.07
+Japan,1998,From 40 to 44 years,70.175
+Japan,1998,From 15 to 19 years,17.277
+Japan,1998,From 30 to 34 years,55.769
+Japan,1998,From 20 to 24 years,73.407
+United States,1998,From 60 to 64 years,39.144
+United States,1998,From 50 to 54 years,73.002
+United States,1998,From 15 to 19 years,52.267
+United States,1998,From 40 to 44 years,78.577
+United States,1998,From 30 to 34 years,75.363
+United States,1998,From 55 to 59 years,61.278
+United States,1998,From 25 to 29 years,77.296
+United States,1998,From 20 to 24 years,73.015
+United States,1998,From 35 to 39 years,75.567
+United States,1998,65 years or over,8.628
+United States,1998,From 45 to 49 years,78.805
+Japan,1997,From 20 to 24 years,73.404
+Japan,1997,From 30 to 34 years,56.188
+Japan,1997,From 15 to 19 years,16.837
+Japan,1997,From 40 to 44 years,70.874
+Japan,1997,From 55 to 59 years,58.67
+Japan,1997,From 25 to 29 years,68.24
+Japan,1997,From 60 to 64 years,39.798
+Japan,1997,From 35 to 39 years,62.338
+Japan,1997,65 years or over,15.391
+Japan,1997,From 50 to 54 years,67.882
+Japan,1997,From 45 to 49 years,72.243
+United States,1997,From 45 to 49 years,78.08
+United States,1997,65 years or over,8.575
+United States,1997,From 35 to 39 years,76.628
+United States,1997,From 20 to 24 years,72.665
+United States,1997,From 25 to 29 years,77.32
+United States,1997,From 55 to 59 years,60.724
+United States,1997,From 30 to 34 years,74.881
+United States,1997,From 40 to 44 years,78.893
+United States,1997,From 50 to 54 years,73.495
+United States,1997,From 15 to 19 years,50.97
+Japan,1995,From 20 to 24 years,74.127
+Japan,1995,From 30 to 34 years,53.652
+Japan,1995,From 15 to 19 years,15.99
+Japan,1995,From 40 to 44 years,69.469
+Japan,1995,From 55 to 59 years,56.965
+Japan,1995,From 25 to 29 years,66.435
+Japan,1995,From 60 to 64 years,39.74
+Japan,1995,From 35 to 39 years,60.465
+Japan,1995,65 years or over,15.637
+Japan,1995,From 50 to 54 years,67.111
+Japan,1995,From 45 to 49 years,71.319
+United States,1995,From 45 to 49 years,77.235
+United States,1995,65 years or over,8.833
+United States,1995,From 35 to 39 years,76.351
+United States,1995,From 20 to 24 years,70.318
+United States,1995,From 25 to 29 years,74.85
+United States,1995,From 55 to 59 years,59.486
+United States,1995,From 30 to 34 years,75.029
+United States,1995,From 40 to 44 years,78.131
+United States,1995,From 50 to 54 years,70.737
+United States,1995,From 15 to 19 years,52.198
+United States,1995,From 60 to 64 years,38.015
+Japan,1994,From 50 to 54 years,67.4008810572687
+Japan,1994,From 45 to 49 years,71.1967545638945
+Japan,1994,65 years or over,15.891472868217
+Japan,1994,From 35 to 39 years,61.5776081424936
+Japan,1994,From 60 to 64 years,39.4179894179894
+Japan,1994,From 25 to 29 years,65.2582159624413
+Japan,1994,From 55 to 59 years,56.359102244389
+Japan,1994,From 40 to 44 years,69.7916666666666
+Japan,1994,From 15 to 19 years,16.9724770642201
+Japan,1994,From 30 to 34 years,53.4704370179948
+Japan,1994,From 20 to 24 years,74.2268041237113
+United States,1994,From 60 to 64 years,37.7990430622009
+United States,1994,From 50 to 54 years,70.655737704918
+United States,1994,From 15 to 19 years,51.2655512655512
+United States,1994,From 40 to 44 years,78.3169901941164
+United States,1994,From 30 to 34 years,73.7045006275775
+United States,1994,From 55 to 59 years,59.1785714285714
+United States,1994,From 25 to 29 years,74.3437851087733
+United States,1994,From 20 to 24 years,71.0421381614398
+United States,1994,From 35 to 39 years,75.9935117599351
+United States,1994,65 years or over,9.16275214147554
+United States,1994,From 45 to 49 years,77.61614265603
+Japan,1993,From 20 to 24 years,74.4769874476987
+Japan,1993,From 30 to 34 years,52.7131782945736
+Japan,1993,From 15 to 19 years,17.4008810572687
+Japan,1993,From 40 to 44 years,70.2912621359223
+Japan,1993,From 55 to 59 years,56.4039408866995
+Japan,1993,From 25 to 29 years,64.3373493975903
+Japan,1993,From 60 to 64 years,40.1069518716577
+Japan,1993,From 35 to 39 years,61.6541353383458
+Japan,1993,65 years or over,15.9959758551307
+Japan,1993,From 50 to 54 years,66.8965517241379
+Japan,1993,From 45 to 49 years,71.9148936170212
+United States,1993,From 45 to 49 years,76.4250614250614
+United States,1993,65 years or over,8.143558830096
+United States,1993,From 35 to 39 years,75.345474512675
+United States,1993,From 20 to 24 years,70.8996392955654
+United States,1993,From 25 to 29 years,73.5605757696921
+United States,1993,From 55 to 59 years,57.0854638422205
+United States,1993,From 30 to 34 years,73.2833288686489
+United States,1993,From 40 to 44 years,77.9608967140956
+United States,1993,From 50 to 54 years,69.8066511987625
+United States,1993,From 15 to 19 years,49.6865432278757
+United States,1993,From 60 to 64 years,37.0140845070422
+Japan,1992,From 50 to 54 years,67.6056338028168
+Japan,1992,From 45 to 49 years,72.0090293453724
+Japan,1992,65 years or over,16.6840458811261
+Japan,1992,From 35 to 39 years,62.378640776699
+Japan,1992,From 60 to 64 years,40.6593406593406
+Japan,1992,From 25 to 29 years,64.0198511166253
+Japan,1992,From 55 to 59 years,55.5555555555555
+Japan,1992,From 40 to 44 years,70.5128205128205
+Japan,1992,From 15 to 19 years,17.6220806794055
+Japan,1992,From 30 to 34 years,52.7272727272727
+Japan,1992,From 20 to 24 years,75.5888650963597
+United States,1992,From 60 to 64 years,36.4169261769554
+United States,1992,From 50 to 54 years,68.6593907802573
+United States,1992,From 15 to 19 years,49.0613083015547
+United States,1992,From 40 to 44 years,78.0741975823259
+United States,1992,From 30 to 34 years,73.6556267806267
+United States,1992,From 55 to 59 years,56.7622950819672
+United States,1992,From 25 to 29 years,74.1271698849229
+United States,1992,From 20 to 24 years,70.9033613445378
+United States,1992,From 35 to 39 years,75.5388940955951
+United States,1992,65 years or over,8.27913815529039
+United States,1992,From 45 to 49 years,75.7439712673165
+Japan,1991,From 20 to 24 years,75.5506607929515
+Japan,1991,From 30 to 34 years,52.8645833333333
+Japan,1991,From 15 to 19 years,17.8053830227743
+Japan,1991,From 40 to 44 years,70.3770197486534
+Japan,1991,From 55 to 59 years,55.5
+Japan,1991,From 25 to 29 years,63.1578947368421
+Japan,1991,From 60 to 64 years,40.7303370786516
+Japan,1991,From 35 to 39 years,62.0930232558139
+Japan,1991,65 years or over,16.6123778501628
+Japan,1991,From 50 to 54 years,66.5060240963855
+Japan,1991,From 45 to 49 years,72.1198156682027
+United States,1991,From 45 to 49 years,75.3477482440435
+United States,1991,65 years or over,8.52917574229049
+United States,1991,From 35 to 39 years,75.5551283283668
+United States,1991,From 20 to 24 years,70.1052412212149
+United States,1991,From 25 to 29 years,73.208012911801
+United States,1991,From 55 to 59 years,55.6737588652482
+United States,1991,From 30 to 34 years,72.9647521918053
+United States,1991,From 40 to 44 years,77.6234080623092
+United States,1991,From 50 to 54 years,67.7638276213098
+United States,1991,From 15 to 19 years,50.0072056492289
+United States,1991,From 60 to 64 years,35.0550839804948
+Japan,1990,From 50 to 54 years,65.5256723716381
+Japan,1990,From 45 to 49 years,71.7105263157894
+Japan,1990,65 years or over,16.1581920903954
+Japan,1990,From 35 to 39 years,62.6106194690265
+Japan,1990,From 60 to 64 years,39.5415472779369
+Japan,1990,From 25 to 29 years,61.4035087719298
+Japan,1990,From 55 to 59 years,53.944020356234
+Japan,1990,From 40 to 44 years,69.5817490494296
+Japan,1990,From 15 to 19 years,17.827868852459
+Japan,1990,From 30 to 34 years,51.6795865633074
+Japan,1990,From 20 to 24 years,75.1152073732718
+United States,1990,From 60 to 64 years,35.4960460100647
+United States,1990,From 50 to 54 years,66.8806384455239
+United States,1990,From 15 to 19 years,51.5544402620939
+United States,1990,From 40 to 44 years,77.4663429706466
+United States,1990,From 30 to 34 years,73.3369486623282
+United States,1990,From 55 to 59 years,55.2807735217553
+United States,1990,From 25 to 29 years,73.5828084475731
+United States,1990,From 20 to 24 years,71.3212273011897
+United States,1990,From 35 to 39 years,75.4640600315955
+United States,1990,65 years or over,8.6294121067628
+United States,1990,From 45 to 49 years,74.7175141242937
+Japan,1988,From 50 to 54 years,63.3495145631068
+Japan,1988,From 45 to 49 years,69.3181818181818
+Japan,1988,65 years or over,15.7125456760048
+Japan,1988,From 35 to 39 years,61.3152804642166
+Japan,1988,From 60 to 64 years,38.5542168674698
+Japan,1988,From 25 to 29 years,58.2474226804123
+Japan,1988,From 55 to 59 years,50.9186351706036
+Japan,1988,From 40 to 44 years,68.076109936575
+Japan,1988,From 15 to 19 years,16.4926931106471
+Japan,1988,From 30 to 34 years,50.8771929824561
+Japan,1988,From 20 to 24 years,73.6842105263157
+United States,1988,From 60 to 64 years,33.8410939934221
+United States,1988,From 50 to 54 years,64.8228930378642
+United States,1988,From 15 to 19 years,53.5991140642303
+United States,1988,From 40 to 44 years,75.8848744641763
+United States,1988,From 30 to 34 years,71.8703840472673
+United States,1988,From 55 to 59 years,53.2792665726375
+United States,1988,From 25 to 29 years,73.5565393838775
+United States,1988,From 20 to 24 years,72.7138798274229
+United States,1988,From 35 to 39 years,74.5499947976277
+United States,1988,65 years or over,7.90353390639923
+United States,1988,From 45 to 49 years,72.5440048142018
+Japan,1989,From 20 to 24 years,74.2990654205607
+Japan,1989,From 30 to 34 years,51.1450381679389
+Japan,1989,From 15 to 19 years,17.2839506172839
+Japan,1989,From 40 to 44 years,68.75
+Japan,1989,From 55 to 59 years,52.2077922077922
+Japan,1989,From 25 to 29 years,59.6401028277634
+Japan,1989,From 60 to 64 years,39.1812865497076
+Japan,1989,From 35 to 39 years,62.3700623700623
+Japan,1989,65 years or over,15.8450704225352
+Japan,1989,From 50 to 54 years,64.2156862745098
+Japan,1989,From 45 to 49 years,70.6521739130434
+United States,1989,From 45 to 49 years,74.3419149551634
+United States,1989,65 years or over,8.39251129761136
+United States,1989,From 35 to 39 years,75.0431866680215
+United States,1989,From 20 to 24 years,72.4089635854341
+United States,1989,From 25 to 29 years,73.8851727982162
+United States,1989,From 55 to 59 years,54.7785547785547
+United States,1989,From 30 to 34 years,73.0660849013726
+United States,1989,From 40 to 44 years,77.1706061315235
+United States,1989,From 50 to 54 years,65.9428962215763
+United States,1989,From 15 to 19 years,53.9265536723163
+United States,1989,From 60 to 64 years,35.5412236360467
+Japan,1987,From 20 to 24 years,73.6453201970443
+Japan,1987,From 30 to 34 years,50.4854368932038
+Japan,1987,From 15 to 19 years,16.595744680851
+Japan,1987,From 40 to 44 years,68.3856502242152
+Japan,1987,From 55 to 59 years,50.8064516129032
+Japan,1987,From 25 to 29 years,56.8831168831168
+Japan,1987,From 60 to 64 years,38.5093167701863
+Japan,1987,From 35 to 39 years,61.3138686131386
+Japan,1987,65 years or over,15.4430379746835
+Japan,1987,From 50 to 54 years,61.8004866180048
+Japan,1987,From 45 to 49 years,68.445475638051
+United States,1987,From 45 to 49 years,70.6672991777356
+United States,1987,65 years or over,7.40470988103908
+United States,1987,From 35 to 39 years,73.9724576271186
+United States,1987,From 20 to 24 years,73.0360065466448
+United States,1987,From 25 to 29 years,73.2557073439075
+United States,1987,From 55 to 59 years,52.1686538793848
+United States,1987,From 30 to 34 years,71.5147516259779
+United States,1987,From 40 to 44 years,75.1371348386273
+United States,1987,From 50 to 54 years,63.1821403260099
+United States,1987,From 15 to 19 years,53.2939073029844
+United States,1987,From 60 to 64 years,33.1776509254454
+Japan,1986,From 50 to 54 years,61.6707616707616
+Japan,1986,From 45 to 49 years,68.0952380952381
+Japan,1986,65 years or over,15.2317880794701
+Japan,1986,From 35 to 39 years,61.0017889087656
+Japan,1986,From 60 to 64 years,38.5852090032154
+Japan,1986,From 25 to 29 years,54.5454545454545
+Japan,1986,From 55 to 59 years,49.8630136986301
+Japan,1986,From 40 to 44 years,68.7927107061503
+Japan,1986,From 15 to 19 years,17.1806167400881
+Japan,1986,From 30 to 34 years,50
+Japan,1986,From 20 to 24 years,73.75
+United States,1986,From 60 to 64 years,33.2187070151306
+United States,1986,From 50 to 54 years,62.0291400142146
+United States,1986,From 15 to 19 years,52.9566542030189
+United States,1986,From 40 to 44 years,73.211359912616
+United States,1986,From 30 to 34 years,70.9062772028242
+United States,1986,From 55 to 59 years,51.3398190817545
+United States,1986,From 25 to 29 years,72.3058564347347
+United States,1986,From 20 to 24 years,72.4086576648133
+United States,1986,From 35 to 39 years,73.0251921434671
+United States,1986,65 years or over,7.42460833488141
+United States,1986,From 45 to 49 years,69.5325269695979
+Japan,1983,From 20 to 24 years,72.051282051282
+Japan,1983,From 30 to 34 years,50.3861003861003
+Japan,1983,From 15 to 19 years,18.6602870813397
+Japan,1983,From 40 to 44 years,67.5675675675675
+Japan,1983,From 55 to 59 years,51.4705882352941
+Japan,1983,From 25 to 29 years,52.7638190954773
+Japan,1983,From 60 to 64 years,39.568345323741
+Japan,1983,From 35 to 39 years,60.2941176470588
+Japan,1983,65 years or over,16.0766961651917
+Japan,1983,From 50 to 54 years,60.5670103092783
+Japan,1983,From 45 to 49 years,66.9064748201438
+Japan,1984,From 50 to 54 years,60.969387755102
+Japan,1984,From 45 to 49 years,67.0702179176755
+Japan,1984,65 years or over,15.8798283261802
+Japan,1984,From 35 to 39 years,59.6385542168674
+Japan,1984,From 60 to 64 years,38.0136986301369
+Japan,1984,From 25 to 29 years,53.944020356234
+Japan,1984,From 55 to 59 years,50.8571428571428
+Japan,1984,From 40 to 44 years,68.103448275862
+Japan,1984,From 15 to 19 years,18.4579439252336
+Japan,1984,From 30 to 34 years,50.6224066390041
+Japan,1984,From 20 to 24 years,72.4489795918367
+Japan,1985,From 20 to 24 years,71.8905472636815
+Japan,1985,From 30 to 34 years,50.5518763796909
+Japan,1985,From 15 to 19 years,16.589861751152
+Japan,1985,From 40 to 44 years,67.8958785249457
+Japan,1985,From 55 to 59 years,50.9803921568627
+Japan,1985,From 25 to 29 years,54.1237113402061
+Japan,1985,From 60 to 64 years,38.5382059800664
+Japan,1985,From 35 to 39 years,60.0378787878787
+Japan,1985,65 years or over,15.5433287482806
+Japan,1985,From 50 to 54 years,61
+Japan,1985,From 45 to 49 years,68.1159420289855
+Japan,1975,From 20 to 24 years,66.1538461538461
+Japan,1975,From 30 to 34 years,43.8709677419354
+Japan,1975,From 15 to 19 years,21.7391304347826
+Japan,1975,From 40 to 44 years,59.9022004889975
+Japan,1975,From 55 to 59 years,48.8372093023255
+Japan,1975,From 25 to 29 years,42.5612052730696
+Japan,1975,From 60 to 64 years,38.034188034188
+Japan,1975,From 35 to 39 years,54.047619047619
+Japan,1975,65 years or over,15.2610441767068
+Japan,1975,From 50 to 54 years,57.7777777777777
+Japan,1975,From 45 to 49 years,61.5176151761517
+Japan,1976,From 50 to 54 years,58.1039755351681
+Japan,1976,From 45 to 49 years,61.4361702127659
+Japan,1976,65 years or over,15.1923076923076
+Japan,1976,From 35 to 39 years,54.3325526932084
+Japan,1976,From 60 to 64 years,37.3949579831932
+Japan,1976,From 25 to 29 years,44.306049822064
+Japan,1976,From 55 to 59 years,49.6240601503759
+Japan,1976,From 40 to 44 years,60.3365384615384
+Japan,1976,From 15 to 19 years,19.0721649484536
+Japan,1976,From 30 to 34 years,44.4444444444444
+Japan,1976,From 20 to 24 years,66.4351851851851
+Japan,1977,From 20 to 24 years,67.5544794188861
+Japan,1977,From 30 to 34 years,46.2222222222222
+Japan,1977,From 15 to 19 years,19.7943444730077
+Japan,1977,From 40 to 44 years,62.1428571428571
+Japan,1977,From 55 to 59 years,49.8181818181818
+Japan,1977,From 25 to 29 years,46
+Japan,1977,From 60 to 64 years,38.1742738589211
+Japan,1977,From 35 to 39 years,55.4794520547945
+Japan,1977,65 years or over,15.3136531365313
+Japan,1977,From 50 to 54 years,58.4569732937685
+Japan,1977,From 45 to 49 years,62.2395833333333
+Japan,1978,From 50 to 54 years,58.9595375722543
+Japan,1978,From 45 to 49 years,63.8676844783715
+Japan,1978,65 years or over,15.7801418439716
+Japan,1978,From 35 to 39 years,57.1748878923766
+Japan,1978,From 60 to 64 years,38.4297520661157
+Japan,1978,From 25 to 29 years,46.6281310211946
+Japan,1978,From 55 to 59 years,51.048951048951
+Japan,1978,From 40 to 44 years,62.9453681710213
+Japan,1978,From 15 to 19 years,20.2046035805626
+Japan,1978,From 30 to 34 years,47.5890985324947
+Japan,1978,From 20 to 24 years,68.25
+Japan,1979,From 20 to 24 years,69.8734177215189
+Japan,1979,From 30 to 34 years,47.4949899799599
+Japan,1979,From 15 to 19 years,18.5750636132315
+Japan,1979,From 40 to 44 years,63.78896882494
+Japan,1979,From 55 to 59 years,50.6666666666666
+Japan,1979,From 25 to 29 years,48.2401656314699
+Japan,1979,From 60 to 64 years,38.8429752066115
+Japan,1979,From 35 to 39 years,58.1545064377682
+Japan,1979,65 years or over,15.6462585034013
+Japan,1979,From 50 to 54 years,59.1036414565826
+Japan,1979,From 45 to 49 years,64.0703517587939
+Japan,1980,From 50 to 54 years,59.3406593406593
+Japan,1980,From 45 to 49 years,64.4444444444444
+Japan,1980,65 years or over,15.5482815057283
+Japan,1980,From 35 to 39 years,58.008658008658
+Japan,1980,From 60 to 64 years,38.8
+Japan,1980,From 25 to 29 years,49.2273730684326
+Japan,1980,From 55 to 59 years,50.4854368932038
+Japan,1980,From 40 to 44 years,64.1148325358851
+Japan,1980,From 15 to 19 years,18.4538653366583
+Japan,1980,From 30 to 34 years,48.2041587901701
+Japan,1980,From 20 to 24 years,70
+Japan,1981,From 20 to 24 years,70.2842377260981
+Japan,1981,From 30 to 34 years,48.9285714285714
+Japan,1981,From 15 to 19 years,18
+Japan,1981,From 40 to 44 years,64.6226415094339
+Japan,1981,From 55 to 59 years,50
+Japan,1981,From 25 to 29 years,50
+Japan,1981,From 60 to 64 years,38.5214007782101
+Japan,1981,From 35 to 39 years,58.7699316628701
+Japan,1981,65 years or over,15.6398104265402
+Japan,1981,From 50 to 54 years,58.7601078167115
+Japan,1981,From 45 to 49 years,64.8058252427184
+Japan,1982,From 50 to 54 years,59.3667546174142
+Japan,1982,From 45 to 49 years,65.8653846153846
+Japan,1982,65 years or over,16.0060975609756
+Japan,1982,From 35 to 39 years,59.6881959910913
+Japan,1982,From 60 to 64 years,38.5767790262172
+Japan,1982,From 25 to 29 years,50.9708737864077
+Japan,1982,From 55 to 59 years,50.3030303030303
+Japan,1982,From 40 to 44 years,65.7471264367816
+Japan,1982,From 15 to 19 years,17.1990171990171
+Japan,1982,From 30 to 34 years,49.5446265938069
+Japan,1982,From 20 to 24 years,71.0594315245478
+Japan,1999,From 15 to 19 years,16.8
+Japan,2001,From 15 to 19 years,17.5
+Japan,2003,65 years or over,13
+Japan,2005,From 40 to 44 years,70.75
+Japan,2011,From 15 to 19 years,15
+Japan,2016,From 35 to 39 years,72
+Japan,2020,From 50 to 54 years,80
+Japan,2022,From 60 to 64 years,64
+Japan,2022,From 55 to 59 years,75.75
+United States,1975,From 45 to 49 years,55.9310801855533
+United States,1975,65 years or over,8.23798627002288
+United States,1975,From 35 to 39 years,54.9622166246851
+United States,1975,From 20 to 24 years,64.1264904095386
+United States,1975,From 25 to 29 years,57.2862582208376
+United States,1975,From 55 to 59 years,47.8683216405828
+United States,1975,From 30 to 34 years,51.9109617807643
+United States,1975,From 40 to 44 years,56.7316131297173
+United States,1975,From 50 to 54 years,53.3215091905836
+United States,1975,From 15 to 19 years,49.0645745322872
+United States,1975,From 60 to 64 years,33.2466493298659
+United States,1976,From 60 to 64 years,33.029702970297
+United States,1976,From 50 to 54 years,53.0378726833199
+United States,1976,From 15 to 19 years,49.8207885304659
+United States,1976,From 40 to 44 years,58.4360690383938
+United States,1976,From 30 to 34 years,54.811487682047
+United States,1976,From 55 to 59 years,48.0583377262344
+United States,1976,From 25 to 29 years,59.3963428067856
+United States,1976,From 20 to 24 years,65.0121555915721
+United States,1976,From 35 to 39 years,57.2855271774721
+United States,1976,65 years or over,8.20414428242517
+United States,1976,From 45 to 49 years,57.0038584130179
+United States,1977,From 45 to 49 years,57.9099405267629
+United States,1977,65 years or over,8.09774436090225
+United States,1977,From 35 to 39 years,59.5166640341178
+United States,1977,From 20 to 24 years,66.4852024151242
+United States,1977,From 25 to 29 years,61.9052815364469
+United States,1977,From 55 to 59 years,47.9979466119096
+United States,1977,From 30 to 34 years,57.0427023581899
+United States,1977,From 40 to 44 years,59.6598877980364
+United States,1977,From 50 to 54 years,53.6877938077484
+United States,1977,From 15 to 19 years,51.2261904761904
+United States,1977,From 60 to 64 years,32.7971753628874
+United States,1978,From 60 to 64 years,32.9840900271633
+United States,1978,From 50 to 54 years,54.4890630101207
+United States,1978,From 15 to 19 years,53.6966372525637
+United States,1978,From 40 to 44 years,62.4349635796045
+United States,1978,From 30 to 34 years,59.8971092601665
+United States,1978,From 55 to 59 years,48.4995808885163
+United States,1978,From 25 to 29 years,64.2941365634044
+United States,1978,From 20 to 24 years,68.2792050412021
+United States,1978,From 35 to 39 years,60.9086819613135
+United States,1978,65 years or over,8.30282618245716
+United States,1978,From 45 to 49 years,59.7588285960378
+United States,1979,From 45 to 49 years,60.342119043463
+United States,1979,65 years or over,8.28102710413694
+United States,1979,From 35 to 39 years,63.4023583549036
+United States,1979,From 20 to 24 years,69.0267175572518
+United States,1979,From 25 to 29 years,65.7181713568364
+United States,1979,From 55 to 59 years,48.6772486772486
+United States,1979,From 30 to 34 years,61.9081189049465
+United States,1979,From 40 to 44 years,63.8798839788431
+United States,1979,From 50 to 54 years,56.4566540549432
+United States,1979,From 15 to 19 years,54.2350545106026
+United States,1979,From 60 to 64 years,33.7709284627092
+United States,1980,From 60 to 64 years,33.2096474953617
+United States,1980,From 50 to 54 years,57.7884456215858
+United States,1980,From 15 to 19 years,52.8914644452493
+United States,1980,From 40 to 44 years,66.0980097006188
+United States,1980,From 30 to 34 years,64.1155315801303
+United States,1980,From 55 to 59 years,48.5052562417871
+United States,1980,From 25 to 29 years,66.670059027071
+United States,1980,From 20 to 24 years,68.9313984168865
+United States,1980,From 35 to 39 years,64.9485968324534
+United States,1980,65 years or over,8.06754221388367
+United States,1980,From 45 to 49 years,62.0671378091872
+United States,1981,From 45 to 49 years,64.2123893805309
+United States,1981,65 years or over,8.0108991825613
+United States,1981,From 35 to 39 years,66.3647424631607
+United States,1981,From 20 to 24 years,69.6029892573563
+United States,1981,From 25 to 29 years,67.5557324840764
+United States,1981,From 55 to 59 years,49.2779783393501
+United States,1981,From 30 to 34 years,65.8531340716051
+United States,1981,From 40 to 44 years,67.4164629176854
+United States,1981,From 50 to 54 years,58.1422594142259
+United States,1981,From 15 to 19 years,51.8532200467922
+United States,1981,From 60 to 64 years,32.5893667211032
+United States,1982,From 60 to 64 years,33.3806566104702
+United States,1982,From 50 to 54 years,58.0194307141639
+United States,1982,From 15 to 19 years,51.4459665144596
+United States,1982,From 40 to 44 years,68.6073957513768
+United States,1982,From 30 to 34 years,66.850770047796
+United States,1982,From 55 to 59 years,49.628651592672
+United States,1982,From 25 to 29 years,68.9893100097181
+United States,1982,From 20 to 24 years,69.8197777570267
+United States,1982,From 35 to 39 years,67.4356359928626
+United States,1982,65 years or over,7.89105680229073
+United States,1982,From 45 to 49 years,65.2618585787339
+United States,1983,From 45 to 49 years,65.3314675529123
+United States,1983,65 years or over,7.82637075718015
+United States,1983,From 35 to 39 years,68.2433256125807
+United States,1983,From 20 to 24 years,69.8968105065666
+United States,1983,From 25 to 29 years,69.8136645962732
+United States,1983,From 55 to 59 years,48.779677901378
+United States,1983,From 30 to 34 years,68.0259985323409
+United States,1983,From 40 to 44 years,69.2734914440108
+United States,1983,From 50 to 54 years,58.4967887519527
+United States,1983,From 15 to 19 years,50.7878151260504
+United States,1983,From 60 to 64 years,33.8286713286713
+United States,1984,From 60 to 64 years,33.3908244222145
+United States,1984,From 50 to 54 years,59.3937257666549
+United States,1984,From 15 to 19 years,51.8437882705129
+United States,1984,From 40 to 44 years,70.0821444012105
+United States,1984,From 30 to 34 years,69.0825217837006
+United States,1984,From 55 to 59 years,49.8408443625397
+United States,1984,From 25 to 29 years,70.3888054094665
+United States,1984,From 20 to 24 years,70.4253308128544
+United States,1984,From 35 to 39 years,70.2001396323016
+United States,1984,65 years or over,7.52317034196228
+United States,1984,From 45 to 49 years,66.2433499227732
+United States,1985,From 45 to 49 years,67.7652597948545
+United States,1985,65 years or over,7.27078489285489
+United States,1985,From 35 to 39 years,71.7136414881623
+United States,1985,From 20 to 24 years,71.8191479084146
+United States,1985,From 25 to 29 years,71.3685978169605
+United States,1985,From 55 to 59 years,50.3197576573544
+United States,1985,From 30 to 34 years,70.3152885187388
+United States,1985,From 40 to 44 years,71.8663721700717
+United States,1985,From 50 to 54 years,60.8139328238848
+United States,1985,From 15 to 19 years,52.0951458995989
+United States,1985,From 60 to 64 years,33.4423971069399
+United States,1997,From 60 to 64 years,39.5
+Japan,2010,From 50 to 54 years,72.846
+Japan,2010,From 45 to 49 years,75.758
+Japan,2010,65 years or over,13.266
+Japan,2010,From 35 to 39 years,66.18
+Japan,2010,From 60 to 64 years,45.743
+Japan,2010,From 25 to 29 years,77.072
+Japan,2010,From 55 to 59 years,63.265
+Japan,2010,From 40 to 44 years,71.562
+Japan,2010,From 15 to 19 years,15.593
+Japan,2010,From 30 to 34 years,67.805
+Japan,2010,From 20 to 24 years,69.394
+United States,2010,From 60 to 64 years,50.724
+United States,2010,From 50 to 54 years,74.614
+United States,2010,From 15 to 19 years,35.011
+United States,2010,From 40 to 44 years,76.156
+United States,2010,From 30 to 34 years,73.748
+United States,2010,From 55 to 59 years,68.424
+United States,2010,From 25 to 29 years,75.553
+United States,2010,From 20 to 24 years,68.248
+United States,2010,From 35 to 39 years,74.139
+United States,2010,65 years or over,13.753
+United States,2010,From 45 to 49 years,76.849
+Japan,2009,From 20 to 24 years,69.912
+Japan,2009,From 30 to 34 years,66.979
+Japan,2009,From 15 to 19 years,16.162
+Japan,2009,From 40 to 44 years,71.462
+Japan,2009,From 55 to 59 years,62.473
+Japan,2009,From 25 to 29 years,76.965
+Japan,2009,From 60 to 64 years,44.632
+Japan,2009,From 35 to 39 years,65.481
+Japan,2009,65 years or over,13.128
+Japan,2009,From 50 to 54 years,72.494
+Japan,2009,From 45 to 49 years,75.258
+United States,2009,From 45 to 49 years,77.275
+United States,2009,65 years or over,13.607
+United States,2009,From 35 to 39 years,74.956
+United States,2009,From 20 to 24 years,69.648
+United States,2009,From 25 to 29 years,75.234
+United States,2009,From 55 to 59 years,68.45
+United States,2009,From 30 to 34 years,74.766
+United States,2009,From 40 to 44 years,76.765
+United States,2009,From 50 to 54 years,74.691
+United States,2009,From 15 to 19 years,37.65
+United States,2009,From 60 to 64 years,49.872
+Japan,2011,From 20 to 24 years,69.055
+Japan,2011,From 30 to 34 years,67.639
+Japan,2011,From 40 to 44 years,71.23
+Japan,2011,From 55 to 59 years,63.819
+Japan,2011,From 25 to 29 years,77.193
+Japan,2011,From 60 to 64 years,45.793
+Japan,2011,From 35 to 39 years,66.96
+Japan,2011,65 years or over,13.189
+Japan,2011,From 50 to 54 years,72.576
+Japan,2011,From 45 to 49 years,75.661
+United States,2011,From 45 to 49 years,76.454
+United States,2011,65 years or over,14.028
+United States,2011,From 35 to 39 years,73.676
+United States,2011,From 20 to 24 years,67.766
+United States,2011,From 25 to 29 years,74.361
+United States,2011,From 55 to 59 years,67.751
+United States,2011,From 30 to 34 years,73.353
+United States,2011,From 40 to 44 years,75.586
+United States,2011,From 50 to 54 years,74.309
+United States,2011,From 15 to 19 years,34.566
+United States,2011,From 60 to 64 years,50.271
+Japan,2012,From 50 to 54 years,73.368
+Japan,2012,From 45 to 49 years,75.743
+Japan,2012,65 years or over,13.379
+Japan,2012,From 35 to 39 years,67.666
+Japan,2012,From 60 to 64 years,46.023
+Japan,2012,From 25 to 29 years,77.586
+Japan,2012,From 55 to 59 years,64.356
+Japan,2012,From 40 to 44 years,71.949
+Japan,2012,From 15 to 19 years,14.576
+Japan,2012,From 30 to 34 years,68.638
+Japan,2012,From 20 to 24 years,68.404
+United States,2012,From 60 to 64 years,50.384
+United States,2012,From 50 to 54 years,73.718
+United States,2012,From 15 to 19 years,34.622
+United States,2012,From 40 to 44 years,75.833
+United States,2012,From 30 to 34 years,73.715
+United States,2012,From 55 to 59 years,67.314
+United States,2012,From 25 to 29 years,74.399
+United States,2012,From 20 to 24 years,67.388
+United States,2012,From 35 to 39 years,73.652
+United States,2012,65 years or over,14.424
+United States,2012,From 45 to 49 years,75.635
+Japan,2013,From 20 to 24 years,70.297
+Japan,2013,From 30 to 34 years,70.106
+Japan,2013,From 15 to 19 years,15.932
+Japan,2013,From 40 to 44 years,73.109
+Japan,2013,From 55 to 59 years,66.496
+Japan,2013,From 25 to 29 years,78.994
+Japan,2013,From 60 to 64 years,47.39
+Japan,2013,From 35 to 39 years,69.556
+Japan,2013,65 years or over,13.827
+Japan,2013,From 50 to 54 years,75.13
+Japan,2013,From 45 to 49 years,76.145
+United States,2013,From 45 to 49 years,75.298
+United States,2013,65 years or over,14.899
+United States,2013,From 35 to 39 years,73.776
+United States,2013,From 20 to 24 years,67.55
+United States,2013,From 25 to 29 years,73.65
+United States,2013,From 55 to 59 years,67.204
+United States,2013,From 30 to 34 years,73.31
+United States,2013,From 40 to 44 years,74.232
+United States,2013,From 50 to 54 years,73.022
+United States,2013,From 15 to 19 years,34.695
+United States,2013,From 60 to 64 years,49.979
+Japan,2015,From 20 to 24 years,68.543
+Japan,2015,From 30 to 34 years,71.191
+Japan,2015,From 15 to 19 years,16.781
+Japan,2015,From 40 to 44 years,74.793
+Japan,2015,From 55 to 59 years,69.029
+Japan,2015,From 25 to 29 years,80.251
+Japan,2015,From 60 to 64 years,50.572
+Japan,2015,From 35 to 39 years,71.807
+Japan,2015,65 years or over,15.256
+Japan,2015,From 50 to 54 years,76.263
+Japan,2015,From 45 to 49 years,77.315
+United States,2015,From 45 to 49 years,74.508
+United States,2015,65 years or over,15.346
+United States,2015,From 35 to 39 years,73.591
+United States,2015,From 20 to 24 years,68.3
+United States,2015,From 25 to 29 years,73.834
+United States,2015,From 55 to 59 years,66.306
+United States,2015,From 30 to 34 years,72.902
+United States,2015,From 40 to 44 years,74.97
+United States,2015,From 50 to 54 years,72.449
+United States,2015,From 15 to 19 years,34.375
+United States,2015,From 60 to 64 years,49.774
+Japan,2014,From 50 to 54 years,75.452
+Japan,2014,From 45 to 49 years,76.995
+Japan,2014,65 years or over,14.531
+Japan,2014,From 35 to 39 years,70.833
+Japan,2014,From 60 to 64 years,48.707
+Japan,2014,From 25 to 29 years,79.331
+Japan,2014,From 55 to 59 years,68.135
+Japan,2014,From 40 to 44 years,74.274
+Japan,2014,From 15 to 19 years,16.327
+Japan,2014,From 30 to 34 years,70.732
+Japan,2014,From 20 to 24 years,69.767
+United States,2014,From 60 to 64 years,50.181
+United States,2014,From 50 to 54 years,72.84
+United States,2014,From 15 to 19 years,34.543
+United States,2014,From 40 to 44 years,74.64
+United States,2014,From 30 to 34 years,73.545
+United States,2014,From 55 to 59 years,66.39
+United States,2014,From 25 to 29 years,74.146
+United States,2014,From 20 to 24 years,67.726
+United States,2014,From 35 to 39 years,73.599
+United States,2014,65 years or over,15.085
+United States,2014,From 45 to 49 years,74.897
+Japan,2017,From 20 to 24 years,72.093
+Japan,2017,From 30 to 34 years,75.214
+Japan,2017,From 15 to 19 years,17.065
+Japan,2017,From 40 to 44 years,76.972
+Japan,2017,From 55 to 59 years,72.105
+Japan,2017,From 25 to 29 years,82.143
+Japan,2017,From 60 to 64 years,54.887
+Japan,2017,From 35 to 39 years,73.402
+Japan,2017,65 years or over,16.549
+Japan,2017,From 50 to 54 years,78.109
+Japan,2017,From 45 to 49 years,79.443
+United States,2017,From 45 to 49 years,75.803
+United States,2017,65 years or over,15.655
+United States,2017,From 35 to 39 years,74.3
+United States,2017,From 20 to 24 years,68.526
+United States,2017,From 25 to 29 years,76.424
+United States,2017,From 55 to 59 years,66.215
+United States,2017,From 30 to 34 years,74.508
+United States,2017,From 40 to 44 years,75.667
+United States,2017,From 50 to 54 years,73.186
+United States,2017,From 15 to 19 years,35.855
+United States,2017,From 60 to 64 years,51.031
+Japan,2018,From 50 to 54 years,78.935
+Japan,2018,From 45 to 49 years,79.622
+Japan,2018,65 years or over,17.588
+Japan,2018,From 35 to 39 years,74.803
+Japan,2018,From 60 to 64 years,58.14
+Japan,2018,From 25 to 29 years,83.882
+Japan,2018,From 55 to 59 years,73.298
+Japan,2018,From 40 to 44 years,79.646
+Japan,2018,From 15 to 19 years,20.761
+Japan,2018,From 30 to 34 years,76.901
+Japan,2018,From 20 to 24 years,75.082
+United States,2018,From 60 to 64 years,51.796
+United States,2018,From 50 to 54 years,73.548
+United States,2018,From 15 to 19 years,35.989
+United States,2018,From 40 to 44 years,75.583
+United States,2018,From 30 to 34 years,74.862
+United States,2018,From 55 to 59 years,66.141
+United States,2018,From 25 to 29 years,76.9
+United States,2018,From 20 to 24 years,68.991
+United States,2018,From 35 to 39 years,74.641
+United States,2018,65 years or over,15.933
+United States,2018,From 45 to 49 years,76.198
+Japan,2016,From 50 to 54 years,77.215
+Japan,2016,From 45 to 49 years,78.492
+Japan,2016,65 years or over,15.967
+Japan,2016,From 60 to 64 years,52.048
+Japan,2016,From 25 to 29 years,81.731
+Japan,2016,From 55 to 59 years,70.899
+Japan,2016,From 40 to 44 years,75.732
+Japan,2016,From 15 to 19 years,17.182
+Japan,2016,From 30 to 34 years,73.164
+Japan,2016,From 20 to 24 years,71.617
+United States,2016,From 60 to 64 years,50.137
+United States,2016,From 50 to 54 years,72.518
+United States,2016,From 15 to 19 years,35.126
+United States,2016,From 40 to 44 years,74.982
+United States,2016,From 30 to 34 years,73.569
+United States,2016,From 55 to 59 years,65.938
+United States,2016,From 25 to 29 years,75.371
+United States,2016,From 20 to 24 years,68.003
+United States,2016,From 35 to 39 years,74.118
+United States,2016,65 years or over,15.534
+United States,2016,From 45 to 49 years,75.4
+Japan,2019,From 20 to 24 years,76.299
+Japan,2019,From 30 to 34 years,77.477
+Japan,2019,From 15 to 19 years,21.754
+Japan,2019,From 40 to 44 years,80.184
+Japan,2019,From 55 to 59 years,74.479
+Japan,2019,From 25 to 29 years,85.099
+Japan,2019,From 60 to 64 years,59.686
+Japan,2019,From 35 to 39 years,76.676
+Japan,2019,65 years or over,17.975
+Japan,2019,From 50 to 54 years,79.953
+Japan,2019,From 45 to 49 years,81.159
+United States,2019,From 45 to 49 years,77.286
+United States,2019,65 years or over,16.437
+United States,2019,From 35 to 39 years,75.319
+United States,2019,From 20 to 24 years,70.366
+United States,2019,From 25 to 29 years,77.8
+United States,2019,From 55 to 59 years,67.113
+United States,2019,From 30 to 34 years,75.496
+United States,2019,From 40 to 44 years,76.145
+United States,2019,From 50 to 54 years,74.097
+United States,2019,From 15 to 19 years,35.722
+United States,2019,From 60 to 64 years,51.834
+Japan,2020,From 45 to 49 years,81.031
+Japan,2020,65 years or over,18.128
+Japan,2020,From 35 to 39 years,75.956
+Japan,2020,From 60 to 64 years,61.008
+Japan,2020,From 25 to 29 years,86.184
+Japan,2020,From 55 to 59 years,74.3
+Japan,2020,From 40 to 44 years,79.665
+Japan,2020,From 15 to 19 years,20.357
+Japan,2020,From 30 to 34 years,77.778
+Japan,2020,From 20 to 24 years,75.405
+United States,2020,From 60 to 64 years,51.462
+United States,2020,From 50 to 54 years,73.377
+United States,2020,From 15 to 19 years,34.916
+United States,2020,From 40 to 44 years,75.701
+United States,2020,From 30 to 34 years,74.609
+United States,2020,From 55 to 59 years,66.557
+United States,2020,From 25 to 29 years,76.748
+United States,2020,From 20 to 24 years,67.526
+United States,2020,From 35 to 39 years,74.312
+United States,2020,65 years or over,15.783
+United States,2020,From 45 to 49 years,76.014
+Japan,2021,From 20 to 24 years,75.974
+Japan,2021,From 30 to 34 years,79.43
+Japan,2021,From 15 to 19 years,20.147
+Japan,2021,From 40 to 44 years,79.901
+Japan,2021,From 55 to 59 years,74.745
+Japan,2021,From 25 to 29 years,86.885
+Japan,2021,From 60 to 64 years,62.198
+Japan,2021,From 35 to 39 years,77.716
+Japan,2021,65 years or over,18.403
+Japan,2021,From 50 to 54 years,79.955
+Japan,2021,From 45 to 49 years,81.42
+United States,2021,From 45 to 49 years,76.219
+United States,2021,65 years or over,15.189
+United States,2021,From 35 to 39 years,73.971
+United States,2021,From 20 to 24 years,68.556
+United States,2021,From 25 to 29 years,76.839
+United States,2021,From 55 to 59 years,66.766
+United States,2021,From 30 to 34 years,75.559
+United States,2021,From 40 to 44 years,75.314
+United States,2021,From 50 to 54 years,73.937
+United States,2021,From 15 to 19 years,36.552
+United States,2021,From 60 to 64 years,51.67
+Japan,2022,From 50 to 54 years,80.901
+Japan,2022,From 45 to 49 years,81.915
+Japan,2022,65 years or over,18.479
+Japan,2022,From 35 to 39 years,78.933
+Japan,2022,From 25 to 29 years,87.742
+Japan,2022,From 40 to 44 years,81.472
+Japan,2022,From 15 to 19 years,20.818
+Japan,2022,From 30 to 34 years,80.952
+Japan,2022,From 20 to 24 years,75.248
+United States,2022,From 60 to 64 years,51.748
+United States,2022,From 50 to 54 years,74.344
+United States,2022,From 15 to 19 years,37.178
+United States,2022,From 40 to 44 years,76.492
+United States,2022,From 30 to 34 years,77.076
+United States,2022,From 55 to 59 years,67.635
+United States,2022,From 25 to 29 years,78.229
+United States,2022,From 20 to 24 years,68.678
+United States,2022,From 35 to 39 years,76.02
+United States,2022,65 years or over,15.457
+United States,2022,From 45 to 49 years,76.193
+Japan,2023,From 20 to 24 years,76.568
+Japan,2023,From 30 to 34 years,82.315
+Japan,2023,From 15 to 19 years,22.388
+Japan,2023,From 40 to 44 years,82.078
+Japan,2023,From 55 to 59 years,76.399
+Japan,2023,From 25 to 29 years,88.179
+Japan,2023,From 60 to 64 years,65.079
+Japan,2023,From 35 to 39 years,80.115
+Japan,2023,65 years or over,18.732
+Japan,2023,From 50 to 54 years,80.672
+Japan,2023,From 45 to 49 years,83.223
+United States,2023,From 45 to 49 years,77.899
+United States,2023,65 years or over,15.955
+United States,2023,From 35 to 39 years,77.593
+United States,2023,From 20 to 24 years,70.103
+United States,2023,From 25 to 29 years,77.92
+United States,2023,From 55 to 59 years,68.417
+United States,2023,From 30 to 34 years,78.43
+United States,2023,From 40 to 44 years,77.302
+United States,2023,From 50 to 54 years,75.175
+United States,2023,From 15 to 19 years,37.419
+United States,2023,From 60 to 64 years,52.453
+Japan,2024,From 50 to 54 years,81.573
+Japan,2024,From 45 to 49 years,83.908
+Japan,2024,65 years or over,19.338
+Japan,2024,From 35 to 39 years,81.361
+Japan,2024,From 60 to 64 years,66.579
+Japan,2024,From 25 to 29 years,88.889
+Japan,2024,From 55 to 59 years,77.014
+Japan,2024,From 40 to 44 years,83.024
+Japan,2024,From 15 to 19 years,23.97
+Japan,2024,From 30 to 34 years,83.871
+Japan,2024,From 20 to 24 years,77.152
+United States,2024,From 60 to 64 years,52.534
+United States,2024,From 50 to 54 years,75.593
+United States,2024,From 15 to 19 years,37.403
+United States,2024,From 40 to 44 years,78.74
+United States,2024,From 30 to 34 years,78.18
+United States,2024,From 55 to 59 years,68.876
+United States,2024,From 25 to 29 years,78.066
+United States,2024,From 20 to 24 years,69.934
+United States,2024,From 35 to 39 years,78.649
+United States,2024,65 years or over,16.239
+United States,2024,From 45 to 49 years,78

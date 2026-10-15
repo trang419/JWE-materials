@@ -1,0 +1,325 @@
+---
+title: "Official Development Assistance"
+author: "Trang Tran"
+date: "2025-11-17"
+execute:
+  echo: false      # hide code
+  output: true    # show all output
+  warning: false   # hide warnings
+  message: false   # hide messages
+format:
+  revealjs:
+    self-contained: true
+    theme: simple
+    slide-number: true
+    toc: false
+    code-line-numbers: false
+    #footer: "© Trang Tran: Japan in the World Economy"
+    chalkboard: false
+    pdf-export: true
+    incremental: true
+    controls: true
+    hash: true
+draft: true
+output-dir: ../docs/slides
+---
+```{r}
+#| include: false
+library(readxl)
+library(ggpubr)
+library(scales)
+library(data.table)
+```
+
+
+## Objectives
+
+- Trace the history and evolution of Japan's Official Development Assistance (ODA) strategy
+- Examine how Japan uses ODA as both a diplomatic and economic tool
+- Assess debates over ODA's effectiveness
+
+## Key Concepts
+
+- Official Development Assistance (ODA)
+- Infrastructure financing
+- Economic growth and development
+
+## Roadmap
+
+- History: from Marshall Plan and OECD-DAC to Japan as recipient and donor
+- Strategy: Japan's approach vs. the DAC model, commitments, recent trend
+- Tool: ODA as infrastructure financing, diplomacy and economic policy
+- Debate: does aid work?
+
+## Overview
+```{r}
+world = fread("../data/07 oda/world_fdi_oda.csv")
+ggarrange(
+  ggline(world[!grepl("outflows",indicator)],
+         x="date",xlab="",
+         numeric.x.axis = T,
+         y="value",ylab="value (current US$)",
+         color = "indicator",
+         caption = "Source: World Bank") +
+    scale_y_continuous(labels = label_number(scale = 1e-12, suffix = "tr")),
+  ggline(world[!grepl("outflows",indicator)],
+         x="date",xlab="",
+         numeric.x.axis = T,
+         y="gdp_share",ylab="GDP share (%)",
+         color = "indicator",
+         caption = "Source: World Bank") +
+  scale_y_continuous(labels = label_number(scale = 100, suffix = "%")),
+  common.legend =T
+) %>% annotate_figure(top = "Global Flow")
+```
+
+## US Marshall Plan
+<div style="font-size:50%">
+- European Recovery Program: ERP
+- 16 European countries: 13.6 billion USD (88 billion in 1997 USD)
+- By 1950, the participating countries had returned to, or exceeded, their prewar production levels
+- US exerts their influence in Europe, including market access
+- Organisation for European Economic Co-operation in 1948
+</div>
+
+```{r}
+marshall = fread("../data/07 oda/american_aid_to_europe.csv")
+ggbarplot(marshall[!grepl("Total",Period)],
+          x="Period",xlab="",
+          y="Amount_USD_billion",
+          ylab="Amount (billion USD)",
+          label = T,
+          lab.pos = "in",
+          color = "Category",
+          fill = "Category",
+          title = "American Aid to Europe",
+          caption = "Source: Reproduced Figure 1.2 in OECD (2008) \nbased on Bossuat, Gérard (1992a), L’Europe occidentale à l’heure américaine, \n1945-1952, le plan Marshall et l’unité européenne, Brussels, Complexe.")
+```
+
+::: notes
+- (https://www.imf.org/external/np/exr/center/mm/eng/mm_dr_03.htm)
+- Develop multilateral payment and trade within Europe
+- Move toward currency convertibility
+- Move toward eliminating discrimination against U.S. imports
+- Encourage reductions in public spending
+- Relax government controls such as rationing
+- Increase exports to the United States
+:::
+
+## OECD-DAC
+
+<div style="font-size:80%">
+- OEEC and DAG: decolonization during 50s
+- Organisation for Economic Co-operation in 1960 for wider scope
+- OECD-DAC (1961) sets standards and collects statistics on ODA, including ODA definition:
+  - provided by official agencies or their executive agencies
+  - to promote the economic development and welfare of developing countries
+  - concessional in character (more favorable terms than the market rate, minimum "grant element")
+- 33 members as of 2025
+</div>  
+
+## Japan as aid recipients
+
+<div style="font-size:80%">
+- 1946 ~ 1951, Japan received a total of USD5 billion in US aid (financed 40% Japanese imports)
+  - Part of the repayment for the US was used to finance US-Japan cultural exchange (including the Fullbright program)
+- 1953 ~ 1966, the World Bank provided USD860 million for 34 development projects in the country: Tanagawa Dam, Tokaido Bullet Train (from Tokyo to Osaka), the Tōmei Highway (from Tokyo to Nagoya), and the Kurobe hydroelectric dam 
+- During 1960s, Japan was the second largest recipient of aid from the World Bank, payment fulfilled in 1990
+</div>
+
+## Japan as aid donors
+
+<div style="font-size:70%">
+- Japan joined DAG in 1960, became founding member of OECD-DAC in 1961
+
+- Japan joined Colombo Plan in 1954,
+  - Started paying reparations to other Asian countries until 1976 (central aspects of Japan's economic foreign policy toward Asian countries until mid 1960s)
+  - Began providing technical experts, training, and equipment to Asian countries
+
+- Since 1970s: 
+  - Gradually aligned with DAC norms (grant element, untying, evaluation)
+  - Adopted global themes (environment, gender, participation)
+  
+- Japan ODA charter (1992) list philosophies of Japan's ODA
+  - humanitarian considerations
+  - recognition of interdependence among nations of the international community
+  - environmental consideration 
+  - support for self-help efforts of recipient countries
+</div>
+
+::: notes
+- The plan was established in 1950 by Commonwealth nations to promote technical cooperation among the member countries of the British Commonwealth of Nations, with the focus on economic development in South and Southeast Asia.
+:::
+
+## Japan’s Approach vs. DAC Model
+
+<div style="font-size:60%">
+| **Aspect** | **Japan’s ODA Approach** | **Typical DAC / Western Approach** |
+|-------------|---------------------------|------------------------------------|
+| **Development Philosophy** | “Ingredients approach” – emphasizes tangible inputs (infrastructure, technology, industry) | “Framework approach” – focuses on institutions, policy reform, governance |
+| **Economic Role of the State** | Active state-led industrialization and strategic planning | Market-driven liberalization, minimal state intervention |
+| **Aid Objectives** | Promote productive capacity, trade, and growth in Asia | Prioritize poverty reduction, welfare, and governance reforms |
+| **Aid Modality** | Loans and technical cooperation, often tied to Japanese firms | Predominantly grants, focused on social sectors |
+| **Underlying Logic** | Development as self-help and partnership — supporting recipient ownership through economic buildup | Development as policy reform and conditionality — supporting institutional change |
+</div>
+
+## Japan's ODA commitments: Total
+
+```{r}
+#| include: false
+oda = fread("../data/07 oda/ODA_modality_Japan_DAC.csv")
+types = unique(oda[grepl("types",Category),Indicator])
+sectors = unique(oda[grepl("sectors",Category),Indicator])
+oda = melt(oda,id.vars = c("Category","Indicator"),
+           variable.name = "Region")
+oda_all = oda[grepl("billion",Category)]
+oda_type = oda[grepl("types",Category)&Indicator!="Grant"]
+oda_type[,Indicator:=factor(Indicator,levels=types)]
+oda_sector = oda[grepl("sectors",Category)]
+oda_sector[,Indicator:=factor(Indicator,levels=sectors)]
+```
+
+```{r}
+ggbarplot(oda_all,
+          x="Region",xlab="",
+          y="value",
+          ylab="Amount (billion USD)",
+          label = T,
+          label.pos = "in",
+          label.vjust = 0.5,
+          title = "Total",
+          rotate = T,
+          caption = "Source: Reproduced Table 2 in Nishitateno (2024) \nbased on OCED.stat") %>%
+  annotate_figure(top = "Aggregates during 1970–2020 based on 2020 prices")
+```
+
+## Japan's ODA commitments: by Type
+
+```{r}
+ggbarplot(oda_type,
+          x="Region",xlab="",
+          y="value",
+          ylab="Share (%)",
+          label = T,
+          label.pos = "in",
+          label.vjust = 0.5,
+          color = "Indicator",
+          fill = "Indicator",
+          title = "by Type",
+          rotate = T,
+          legend = "right",
+          caption = "Source: Reproduced Table 2 in Nishitateno (2024) \nbased on OCED.stat") %>%
+  annotate_figure(top = "Aggregates during 1970–2020 based on 2020 prices")
+```
+
+## Japan's ODA commitments: by Sector
+
+```{r}
+ggbarplot(oda_sector,
+          x="Region",xlab="",
+          y="value",
+          ylab="Share (%)",
+          label = T,
+          label.pos = "in",
+          label.vjust = 0.5,
+          color = "Indicator",
+          fill = "Indicator",
+          title = "by Sector",
+          rotate = T,
+          legend = "right",
+          palette = "npg",
+          caption = "Source: Reproduced Table 2 in Nishitateno (2024) \nbased on OCED.stat") %>%
+  annotate_figure(top = "Aggregates during 1970–2020 based on 2020 prices")
+```
+
+## Japan's recent ODA trend: 2023 Charter
+**New Development Cooperation Charter**
+
+<div style="font-size:80%">
+- Promotes equal partnerships with developing countries to tackle shared global challenges.
+- Aims to build a peaceful, stable, and prosperous international community under a free and open order based on the rule of law.
+- Seeks to foster trust and a favorable international environment for Japan and the world.
+- Supports Japan’s national interests—peace, security, and prosperity through economic growth.
+</div>
+
+## Japan's recent ODA trend: ASEAN
+
+<div style="font-size:80%">
+- a move from aid objective to cooperation development
+    - Strengthen hard and soft infrastructure support (particularly in the Mekong region) to ‘enhance connectivity’, 
+    - Develop human resource to promote productivity growth and technological innovation to avoid the ‘middle-income country trap’, 
+    - Enhance disaster management and disaster response capacity building,
+    - Promote of the rule of law.
+- Declining trend: interest rate from 1% to 1.7% with exception for environment (1.5%) and consulting services for design and construction supervision (0.01%)
+</div>
+
+## ODA as infrastructure financing
+
+<div style="font-size:80%">
+- Japan's ODA historically supported infrastructure and industrial development in Asia
+- Loans and technical cooperation, often tied to Japanese firms ("ingredients approach")
+- Japan itself was financed this way: World Bank loans built the Tokaido Bullet Train, the Tōmei Highway and the Kurobe dam
+- Infrastructure aid is the type most consistently linked to growth (Easterly, 2003)
+</div>
+
+## ODA as a diplomatic and economic tool
+
+- Economic benefits:
+  - Increases in the case of Japan: Nishitateno (2024)
+  - Increases in the case of infrastructure: Ono (2025)
+
+- Diplomatic benefits (soft power):
+   - "the ability to get what you want through attraction rather than coercion or payments"
+   - harmonization of regulatory, standards, etc
+   - Reparations and Colombo Plan ties in Asia; 2023 Charter links ODA to national interests
+
+## Debates on ODA effectiveness
+
+<div style="font-size:60%">
+- In theory, ODA effect can be
+  - Positive: use ODA to invest and grow
+  - Non-positive: use ODA to consume luxury goods 
+
+- Empirical studies:
+  - Aid has no effect on growth (early 1970 studies)
+  - Aid has a positive relationship with growth on average with diminishing returns (1990s studies)
+  - Aid has a conditional relationship with growth:
+     - Good policies (Burnside and Dollar, 2000)
+     - Climate, institutional quality, political conflict, and geography (Hansen and Tarp, 2001)
+
+- Each type of aid has different impact on growth:
+   - Humanitarian aid: no direct impact
+   - Infrastructure aid: positive impact (Easterly, 2003)
+
+</div> 
+
+## Japan's ODA and growth
+
+<div style="font-size:80%">
+- Japan’s ODA historically supported infrastructure and industrial development in Asia.
+- Institution quality is important for ripping the benefits of ODA (Burnside and Dollar, 2000)
+- Japanese ODA has positive effects on ASEAN economic growth (Nguyen et. al, 2022)
+</div> 
+
+## Looking ahead: ODA and private capital
+
+- Aid is one channel of development finance; FDI is another
+- Next lecture: can ODA catalyze FDI?
+
+## References
+<div style="font-size:30%">
+- Burnside, C. & Dollar, D. 2000, 'Aid, policies, and growth', American economic review, 90 (4).
+- Easterly, W., 2003, “Can Foreign Aid Buy Growth?”, Journal of Economic Perspective, 17 (3).
+- Furuoka, F., Oishi, M., & Kato, I. (2010, July 12). From Aid Recipient to Aid Donor: Tracing the Historical Transformation of Japan’s Foreign Aid Policy [Text]. Electronic journal of contemporary Japanese studies.
+- Hansen, H. & Tarp, F., 2000, “Aid and Growth Regressions”, Centre for Research in Economic Development and International Trade, University of Nottingham Research Paper No.00/07.
+- Iwata, T. 2013. Japan’s Soft Power in Africa. Ritsumeikan Annual Review of International Studies. ISSN 1347-8214. Vol.12, pp. 103-114
+- Nishitateno, S., 2024. "Does official development assistance benefit the donor economy? New evidence from Japanese overseas infrastructure projects," International Tax and Public Finance, Springer;International Institute of Public Finance, vol. 31(4), pages 1037-1065.
+- Nguyen, H. P., Huynh, A. N. Q., Reisach, U., & Kim, X. L. T. 2022. How does Japanese ODA really contribute to economic growth for ASEAN countries? Journal of International Economics and Management, 22(2).
+- MOFA, 2023, White Paper on Development Cooperation 2023
+- OECD, 2008, The Marshall Plan: Lessons Learned for the 21st Century, OECD Publishing, Paris.
+- Takagi, S., 1995). From recipient to donor: Japan’s official aid flows, 1945 to 1990 and beyond. Internat. Finance Sect., Dep. of Economics, Princeton Univ.
+- Yanagihara, Toru, 2017, International Trends in Development Aid and Japan’s ODA: 日本国際問題研究所, 1–11.
+- Data link
+  - https://data.worldbank.org/indicator/NY.GDP.MKTP.CD
+  - https://data.worldbank.org/indicator/DT.ODA.ALLD.CD
+</div>

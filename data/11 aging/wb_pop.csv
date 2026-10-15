@@ -1,0 +1,897 @@
+indicator,country,date,value
+"Population, total",Canada,2023,40083484
+"Population, total",Canada,2022,38935934
+"Population, total",Canada,2021,38239864
+"Population, total",Canada,2020,38028638
+"Population, total",Canada,2019,37618495
+"Population, total",Canada,2018,37072620
+"Population, total",Canada,2017,36545075
+"Population, total",Canada,2016,36110803
+"Population, total",Canada,2015,35704498
+"Population, total",Canada,2014,35434066
+"Population, total",Canada,2013,35080992
+"Population, total",Canada,2012,34713395
+"Population, total",Canada,2011,34339221
+"Population, total",Canada,2010,34005902
+"Population, total",Canada,2009,33630069
+"Population, total",Canada,2008,33247298
+"Population, total",Canada,2007,32888886
+"Population, total",Canada,2006,32571193
+"Population, total",Canada,2005,32242732
+"Population, total",Canada,2004,31938807
+"Population, total",Canada,2003,31642461
+"Population, total",Canada,2002,31359199
+"Population, total",Canada,2001,31020855
+"Population, total",Canada,2000,30685730
+"Population, total",Canada,1999,30401286
+"Population, total",Canada,1998,30155173
+"Population, total",Canada,1997,29905948
+"Population, total",Canada,1996,29610218
+"Population, total",Canada,1995,29302311
+"Population, total",Canada,1994,29000663
+"Population, total",Canada,1993,28684764
+"Population, total",Canada,1992,28371264
+"Population, total",Canada,1991,28037420
+"Population, total",Canada,1990,27691138
+"Population, total",Canada,1989,27276781
+"Population, total",Canada,1988,26791747
+"Population, total",Canada,1987,26446601
+"Population, total",Canada,1986,26100278
+"Population, total",Canada,1985,25842116
+"Population, total",Canada,1984,25607053
+"Population, total",Canada,1983,25366451
+"Population, total",Canada,1982,25116942
+"Population, total",Canada,1981,24819915
+"Population, total",Canada,1980,24515667
+"Population, total",Canada,1979,24201544
+"Population, total",Canada,1978,23963203
+"Population, total",Canada,1977,23725843
+"Population, total",Canada,1976,23449808
+"Population, total",Canada,1975,23143275
+"Population, total",Canada,1974,22807969
+"Population, total",Canada,1973,22491777
+"Population, total",Canada,1972,22218463
+"Population, total",Canada,1971,21962032
+"Population, total",Canada,1970,21324000
+"Population, total",Canada,1969,21028000
+"Population, total",Canada,1968,20744000
+"Population, total",Canada,1967,20412000
+"Population, total",Canada,1966,20048000
+"Population, total",Canada,1965,19678000
+"Population, total",Canada,1964,19325000
+"Population, total",Canada,1963,18964000
+"Population, total",Canada,1962,18614000
+"Population, total",Canada,1961,18271000
+"Population, total",Canada,1960,17909356
+"Population, total",France,2023,68287487
+"Population, total",France,2022,68065015
+"Population, total",France,2021,67842811
+"Population, total",France,2020,67601110
+"Population, total",France,2019,67382061
+"Population, total",France,2018,67158348
+"Population, total",France,2017,66918020
+"Population, total",France,2016,66724104
+"Population, total",France,2015,66548272
+"Population, total",France,2014,66312067
+"Population, total",France,2013,65997932
+"Population, total",France,2012,65657659
+"Population, total",France,2011,65340830
+"Population, total",France,2010,65026211
+"Population, total",France,2009,64706436
+"Population, total",France,2008,64375116
+"Population, total",France,2007,64016890
+"Population, total",France,2006,63622342
+"Population, total",France,2005,63180854
+"Population, total",France,2004,62707588
+"Population, total",France,2003,62249855
+"Population, total",France,2002,61812142
+"Population, total",France,2001,61364377
+"Population, total",France,2000,60918661
+"Population, total",France,1999,60501986
+"Population, total",France,1998,60190684
+"Population, total",France,1997,59968066
+"Population, total",France,1996,59754504
+"Population, total",France,1995,59541294
+"Population, total",France,1994,59324863
+"Population, total",France,1993,59103094
+"Population, total",France,1992,58846584
+"Population, total",France,1991,58554242
+"Population, total",France,1990,58261012
+"Population, total",France,1989,57943062
+"Population, total",France,1988,57598186
+"Population, total",France,1987,57266167
+"Population, total",France,1986,56956002
+"Population, total",France,1985,56665619
+"Population, total",France,1984,56383085
+"Population, total",France,1983,56108330
+"Population, total",France,1982,55806789
+"Population, total",France,1981,55603353
+"Population, total",France,1980,55274184
+"Population, total",France,1979,54979851
+"Population, total",France,1978,54734030
+"Population, total",France,1977,54486467
+"Population, total",France,1976,54232383
+"Population, total",France,1975,54002853
+"Population, total",France,1974,53746571
+"Population, total",France,1973,53392161
+"Population, total",France,1972,52962356
+"Population, total",France,1971,52499553
+"Population, total",France,1970,52007169
+"Population, total",France,1969,51536014
+"Population, total",France,1968,51112980
+"Population, total",France,1967,50722791
+"Population, total",France,1966,50311637
+"Population, total",France,1965,49877725
+"Population, total",France,1964,49401492
+"Population, total",France,1963,48877567
+"Population, total",France,1962,48389516
+"Population, total",France,1961,47905982
+"Population, total",France,1960,47412964
+"Population, total",Germany,2023,83901923
+"Population, total",Germany,2022,83797985
+"Population, total",Germany,2021,83196078
+"Population, total",Germany,2020,83160871
+"Population, total",Germany,2019,83092962
+"Population, total",Germany,2018,82905782
+"Population, total",Germany,2017,82657002
+"Population, total",Germany,2016,82348669
+"Population, total",Germany,2015,81686611
+"Population, total",Germany,2014,80982500
+"Population, total",Germany,2013,80645605
+"Population, total",Germany,2012,80425823
+"Population, total",Germany,2011,80274983
+"Population, total",Germany,2010,81776930
+"Population, total",Germany,2009,81902307
+"Population, total",Germany,2008,82110097
+"Population, total",Germany,2007,82266372
+"Population, total",Germany,2006,82376451
+"Population, total",Germany,2005,82469422
+"Population, total",Germany,2004,82516260
+"Population, total",Germany,2003,82534176
+"Population, total",Germany,2002,82488495
+"Population, total",Germany,2001,82349925
+"Population, total",Germany,2000,82211508
+"Population, total",Germany,1999,82100243
+"Population, total",Germany,1998,82047195
+"Population, total",Germany,1997,82034771
+"Population, total",Germany,1996,81914831
+"Population, total",Germany,1995,81678051
+"Population, total",Germany,1994,81438348
+"Population, total",Germany,1993,81156363
+"Population, total",Germany,1992,80624598
+"Population, total",Germany,1991,80013896
+"Population, total",Germany,1990,79433029
+"Population, total",Germany,1989,78751283
+"Population, total",Germany,1988,78144619
+"Population, total",Germany,1987,77839920
+"Population, total",Germany,1986,77720436
+"Population, total",Germany,1985,77684873
+"Population, total",Germany,1984,77858685
+"Population, total",Germany,1983,78128282
+"Population, total",Germany,1982,78333366
+"Population, total",Germany,1981,78407907
+"Population, total",Germany,1980,78288576
+"Population, total",Germany,1979,78126350
+"Population, total",Germany,1978,78091820
+"Population, total",Germany,1977,78159814
+"Population, total",Germany,1976,78336950
+"Population, total",Germany,1975,78673554
+"Population, total",Germany,1974,78967433
+"Population, total",Germany,1973,78936666
+"Population, total",Germany,1972,78688452
+"Population, total",Germany,1971,78312842
+"Population, total",Germany,1970,78169289
+"Population, total",Germany,1969,77909682
+"Population, total",Germany,1968,77294314
+"Population, total",Germany,1967,76951336
+"Population, total",Germany,1966,76600311
+"Population, total",Germany,1965,75963695
+"Population, total",Germany,1964,75318337
+"Population, total",Germany,1963,74714353
+"Population, total",Germany,1962,74025784
+"Population, total",Germany,1961,73377632
+"Population, total",Germany,1960,72814900
+"Population, total",Italy,2023,58993475
+"Population, total",Italy,2022,59013667
+"Population, total",Italy,2021,59133173
+"Population, total",Italy,2020,59438851
+"Population, total",Italy,2019,59729081
+"Population, total",Italy,2018,60148658
+"Population, total",Italy,2017,60002252
+"Population, total",Italy,2016,60115223
+"Population, total",Italy,2015,60229605
+"Population, total",Italy,2014,60320707
+"Population, total",Italy,2013,60311613
+"Population, total",Italy,2012,60191247
+"Population, total",Italy,2011,60026841
+"Population, total",Italy,2010,59819407
+"Population, total",Italy,2009,59555454
+"Population, total",Italy,2008,59211181
+"Population, total",Italy,2007,58756247
+"Population, total",Italy,2006,58399861
+"Population, total",Italy,2005,58166682
+"Population, total",Italy,2004,57828179
+"Population, total",Italy,2003,57399184
+"Population, total",Italy,2002,57089824
+"Population, total",Italy,2001,56976981
+"Population, total",Italy,2000,56942108
+"Population, total",Italy,1999,56916317
+"Population, total",Italy,1998,56906744
+"Population, total",Italy,1997,56890372
+"Population, total",Italy,1996,56860281
+"Population, total",Italy,1995,56844303
+"Population, total",Italy,1994,56843400
+"Population, total",Italy,1993,56831821
+"Population, total",Italy,1992,56797087
+"Population, total",Italy,1991,56758521
+"Population, total",Italy,1990,56719240
+"Population, total",Italy,1989,56671781
+"Population, total",Italy,1988,56629288
+"Population, total",Italy,1987,56601931
+"Population, total",Italy,1986,56596155
+"Population, total",Italy,1985,56593071
+"Population, total",Italy,1984,56576718
+"Population, total",Italy,1983,56564074
+"Population, total",Italy,1982,56543548
+"Population, total",Italy,1981,56501675
+"Population, total",Italy,1980,56433883
+"Population, total",Italy,1979,56317749
+"Population, total",Italy,1978,56155143
+"Population, total",Italy,1977,55955411
+"Population, total",Italy,1976,55718260
+"Population, total",Italy,1975,55441001
+"Population, total",Italy,1974,55110868
+"Population, total",Italy,1973,54751406
+"Population, total",Italy,1972,54381345
+"Population, total",Italy,1971,54073490
+"Population, total",Italy,1970,53821850
+"Population, total",Italy,1969,53537950
+"Population, total",Italy,1968,53235750
+"Population, total",Italy,1967,52900500
+"Population, total",Italy,1966,52519000
+"Population, total",Italy,1965,52112350
+"Population, total",Italy,1964,51675350
+"Population, total",Italy,1963,51252000
+"Population, total",Italy,1962,50879450
+"Population, total",Italy,1961,50536350
+"Population, total",Italy,1960,50199700
+"Population, total",Japan,2023,124516650
+"Population, total",Japan,2022,125124989
+"Population, total",Japan,2021,125681593
+"Population, total",Japan,2020,126261000
+"Population, total",Japan,2019,126633000
+"Population, total",Japan,2018,126811000
+"Population, total",Japan,2017,126972000
+"Population, total",Japan,2016,127076000
+"Population, total",Japan,2015,127141000
+"Population, total",Japan,2014,127276000
+"Population, total",Japan,2013,127445000
+"Population, total",Japan,2012,127629000
+"Population, total",Japan,2011,127833000
+"Population, total",Japan,2010,128070000
+"Population, total",Japan,2009,128047000
+"Population, total",Japan,2008,128063000
+"Population, total",Japan,2007,128001000
+"Population, total",Japan,2006,127854000
+"Population, total",Japan,2005,127773000
+"Population, total",Japan,2004,127761000
+"Population, total",Japan,2003,127718000
+"Population, total",Japan,2002,127445000
+"Population, total",Japan,2001,127149000
+"Population, total",Japan,2000,126843000
+"Population, total",Japan,1999,126631000
+"Population, total",Japan,1998,126400000
+"Population, total",Japan,1997,126057000
+"Population, total",Japan,1996,125757000
+"Population, total",Japan,1995,125472000
+"Population, total",Japan,1994,125178000
+"Population, total",Japan,1993,124829000
+"Population, total",Japan,1992,124425000
+"Population, total",Japan,1991,123964000
+"Population, total",Japan,1990,123478000
+"Population, total",Japan,1989,123069000
+"Population, total",Japan,1988,122578000
+"Population, total",Japan,1987,122069000
+"Population, total",Japan,1986,121482000
+"Population, total",Japan,1985,120837000
+"Population, total",Japan,1984,120083000
+"Population, total",Japan,1983,119307000
+"Population, total",Japan,1982,118480000
+"Population, total",Japan,1981,117661000
+"Population, total",Japan,1980,116807000
+"Population, total",Japan,1979,115890000
+"Population, total",Japan,1978,114913000
+"Population, total",Japan,1977,113872000
+"Population, total",Japan,1976,112775000
+"Population, total",Japan,1975,111573000
+"Population, total",Japan,1974,110162000
+"Population, total",Japan,1973,108707000
+"Population, total",Japan,1972,107188000
+"Population, total",Japan,1971,105697000
+"Population, total",Japan,1970,103403000
+"Population, total",Japan,1969,102219000
+"Population, total",Japan,1968,101011000
+"Population, total",Japan,1967,99879000
+"Population, total",Japan,1966,98851000
+"Population, total",Japan,1965,97952000
+"Population, total",Japan,1964,96903000
+"Population, total",Japan,1963,95900000
+"Population, total",Japan,1962,94933000
+"Population, total",Japan,1961,94055000
+"Population, total",Japan,1960,93216000
+"Population, total",United Kingdom,2023,68492000
+"Population, total",United Kingdom,2022,67604000
+"Population, total",United Kingdom,2021,66984000
+"Population, total",United Kingdom,2020,66744000
+"Population, total",United Kingdom,2019,66631000
+"Population, total",United Kingdom,2018,66289000
+"Population, total",United Kingdom,2017,65966000
+"Population, total",United Kingdom,2016,65607000
+"Population, total",United Kingdom,2015,65088000
+"Population, total",United Kingdom,2014,64620000
+"Population, total",United Kingdom,2013,64139000
+"Population, total",United Kingdom,2012,63711000
+"Population, total",United Kingdom,2011,63258810
+"Population, total",United Kingdom,2010,62766365
+"Population, total",United Kingdom,2009,62276270
+"Population, total",United Kingdom,2008,61806995
+"Population, total",United Kingdom,2007,61322463
+"Population, total",United Kingdom,2006,60846820
+"Population, total",United Kingdom,2005,60401206
+"Population, total",United Kingdom,2004,59987905
+"Population, total",United Kingdom,2003,59647577
+"Population, total",United Kingdom,2002,59370479
+"Population, total",United Kingdom,2001,59119673
+"Population, total",United Kingdom,2000,58892514
+"Population, total",United Kingdom,1999,58682466
+"Population, total",United Kingdom,1998,58487141
+"Population, total",United Kingdom,1997,58316954
+"Population, total",United Kingdom,1996,58166950
+"Population, total",United Kingdom,1995,58019030
+"Population, total",United Kingdom,1994,57865745
+"Population, total",United Kingdom,1993,57718614
+"Population, total",United Kingdom,1992,57580402
+"Population, total",United Kingdom,1991,57424897
+"Population, total",United Kingdom,1990,57247586
+"Population, total",United Kingdom,1989,57076711
+"Population, total",United Kingdom,1988,56928327
+"Population, total",United Kingdom,1987,56802050
+"Population, total",United Kingdom,1986,56681396
+"Population, total",United Kingdom,1985,56550268
+"Population, total",United Kingdom,1984,56422072
+"Population, total",United Kingdom,1983,56332848
+"Population, total",United Kingdom,1982,56313641
+"Population, total",United Kingdom,1981,56333829
+"Population, total",United Kingdom,1980,56314216
+"Population, total",United Kingdom,1979,56246951
+"Population, total",United Kingdom,1978,56196504
+"Population, total",United Kingdom,1977,56193492
+"Population, total",United Kingdom,1976,56211968
+"Population, total",United Kingdom,1975,56225800
+"Population, total",United Kingdom,1974,56229974
+"Population, total",United Kingdom,1973,56194527
+"Population, total",United Kingdom,1972,56086065
+"Population, total",United Kingdom,1971,55896223
+"Population, total",United Kingdom,1970,55663250
+"Population, total",United Kingdom,1969,55441750
+"Population, total",United Kingdom,1968,55211700
+"Population, total",United Kingdom,1967,54943600
+"Population, total",United Kingdom,1966,54648500
+"Population, total",United Kingdom,1965,54348050
+"Population, total",United Kingdom,1964,5.4e+07
+"Population, total",United Kingdom,1963,53650000
+"Population, total",United Kingdom,1962,53250000
+"Population, total",United Kingdom,1961,52800000
+"Population, total",United Kingdom,1960,52400000
+"Population, total",United States,2023,336806231
+"Population, total",United States,2022,334017321
+"Population, total",United States,2021,332099760
+"Population, total",United States,2020,331577720
+"Population, total",United States,2019,330226227
+"Population, total",United States,2018,328529577
+"Population, total",United States,2017,326608609
+"Population, total",United States,2016,324353340
+"Population, total",United States,2015,321815121
+"Population, total",United States,2014,319257560
+"Population, total",United States,2013,316726282
+"Population, total",United States,2012,314339099
+"Population, total",United States,2011,311839461
+"Population, total",United States,2010,309378227
+"Population, total",United States,2009,306771529
+"Population, total",United States,2008,304093966
+"Population, total",United States,2007,301231207
+"Population, total",United States,2006,298379912
+"Population, total",United States,2005,295516599
+"Population, total",United States,2004,292805298
+"Population, total",United States,2003,290107933
+"Population, total",United States,2002,287625193
+"Population, total",United States,2001,284968955
+"Population, total",United States,2000,282162411
+"Population, total",United States,1999,279040000
+"Population, total",United States,1998,275854000
+"Population, total",United States,1997,272657000
+"Population, total",United States,1996,269394000
+"Population, total",United States,1995,266278000
+"Population, total",United States,1994,263126000
+"Population, total",United States,1993,259919000
+"Population, total",United States,1992,256514000
+"Population, total",United States,1991,252981000
+"Population, total",United States,1990,249623000
+"Population, total",United States,1989,246819000
+"Population, total",United States,1988,244499000
+"Population, total",United States,1987,242289000
+"Population, total",United States,1986,240133000
+"Population, total",United States,1985,237924000
+"Population, total",United States,1984,235825000
+"Population, total",United States,1983,233792000
+"Population, total",United States,1982,231664000
+"Population, total",United States,1981,229466000
+"Population, total",United States,1980,227225000
+"Population, total",United States,1979,225055000
+"Population, total",United States,1978,222585000
+"Population, total",United States,1977,220239000
+"Population, total",United States,1976,218035000
+"Population, total",United States,1975,215973000
+"Population, total",United States,1974,213854000
+"Population, total",United States,1973,211909000
+"Population, total",United States,1972,209896000
+"Population, total",United States,1971,207661000
+"Population, total",United States,1970,205052000
+"Population, total",United States,1969,202677000
+"Population, total",United States,1968,200706000
+"Population, total",United States,1967,198712000
+"Population, total",United States,1966,196560000
+"Population, total",United States,1965,194303000
+"Population, total",United States,1964,191889000
+"Population, total",United States,1963,189242000
+"Population, total",United States,1962,186538000
+"Population, total",United States,1961,183691000
+"Population, total",United States,1960,180671000
+"Population ages 15-64, total",Canada,2023,26189481
+"Population ages 15-64, total",Canada,2022,25507454
+"Population ages 15-64, total",Canada,2021,25152138
+"Population ages 15-64, total",Canada,2020,25151490
+"Population ages 15-64, total",Canada,2019,25010539
+"Population ages 15-64, total",Canada,2018,24759072
+"Population ages 15-64, total",Canada,2017,24510756
+"Population ages 15-64, total",Canada,2016,24335145
+"Population ages 15-64, total",Canada,2015,24192340
+"Population ages 15-64, total",Canada,2014,24143294
+"Population ages 15-64, total",Canada,2013,24030435
+"Population ages 15-64, total",Canada,2012,23900795
+"Population ages 15-64, total",Canada,2011,23745000
+"Population ages 15-64, total",Canada,2010,23575491
+"Population ages 15-64, total",Canada,2009,23343138
+"Population ages 15-64, total",Canada,2008,23091639
+"Population ages 15-64, total",Canada,2007,22843813
+"Population ages 15-64, total",Canada,2006,22602298
+"Population ages 15-64, total",Canada,2005,22326837
+"Population ages 15-64, total",Canada,2004,22053537
+"Population ages 15-64, total",Canada,2003,21788580
+"Population ages 15-64, total",Canada,2002,21535514
+"Population ages 15-64, total",Canada,2001,21240018
+"Population ages 15-64, total",Canada,2000,20945109
+"Population ages 15-64, total",Canada,1999,20688980
+"Population ages 15-64, total",Canada,1998,20470263
+"Population ages 15-64, total",Canada,1997,20265610
+"Population ages 15-64, total",Canada,1996,20041214
+"Population ages 15-64, total",Canada,1995,19816807
+"Population ages 15-64, total",Canada,1994,19605262
+"Population ages 15-64, total",Canada,1993,19398191
+"Population ages 15-64, total",Canada,1992,19214668
+"Population ages 15-64, total",Canada,1991,19032708
+"Population ages 15-64, total",Canada,1990,18842577
+"Population ages 15-64, total",Canada,1989,18597598
+"Population ages 15-64, total",Canada,1988,18295461
+"Population ages 15-64, total",Canada,1987,18088104
+"Population ages 15-64, total",Canada,1986,17871016
+"Population ages 15-64, total",Canada,1985,17694065
+"Population ages 15-64, total",Canada,1984,17523696
+"Population ages 15-64, total",Canada,1983,17344744
+"Population ages 15-64, total",Canada,1982,17149677
+"Population ages 15-64, total",Canada,1981,16906146
+"Population ages 15-64, total",Canada,1980,16632230
+"Population ages 15-64, total",Canada,1979,16326051
+"Population ages 15-64, total",Canada,1978,16054086
+"Population ages 15-64, total",Canada,1977,15774846
+"Population ages 15-64, total",Canada,1976,15465136
+"Population ages 15-64, total",Canada,1975,15127188
+"Population ages 15-64, total",Canada,1974,14761312
+"Population ages 15-64, total",Canada,1973,14403863
+"Population ages 15-64, total",Canada,1972,14078785
+"Population ages 15-64, total",Canada,1971,13764507
+"Population ages 15-64, total",Canada,1970,13199949
+"Population ages 15-64, total",Canada,1969,12865646
+"Population ages 15-64, total",Canada,1968,12567366
+"Population ages 15-64, total",Canada,1967,12245902
+"Population ages 15-64, total",Canada,1966,11917870
+"Population ages 15-64, total",Canada,1965,11612010
+"Population ages 15-64, total",Canada,1964,11343971
+"Population ages 15-64, total",Canada,1963,11094519
+"Population ages 15-64, total",Canada,1962,10874824
+"Population ages 15-64, total",Canada,1961,10682072
+"Population ages 15-64, total",Canada,1960,10500309
+"Population ages 15-64, total",France,2023,41973641
+"Population ages 15-64, total",France,2022,41922083
+"Population ages 15-64, total",France,2021,41861755
+"Population ages 15-64, total",France,2020,41786545
+"Population ages 15-64, total",France,2019,41764187
+"Population ages 15-64, total",France,2018,41758655
+"Population ages 15-64, total",France,2017,41755557
+"Population ages 15-64, total",France,2016,41790756
+"Population ages 15-64, total",France,2015,41861133
+"Population ages 15-64, total",France,2014,41953031
+"Population ages 15-64, total",France,2013,41991986
+"Population ages 15-64, total",France,2012,42009216
+"Population ages 15-64, total",France,2011,42080334
+"Population ages 15-64, total",France,2010,42063238
+"Population ages 15-64, total",France,2009,41950509
+"Population ages 15-64, total",France,2008,41838852
+"Population ages 15-64, total",France,2007,41672765
+"Population ages 15-64, total",France,2006,41418236
+"Population ages 15-64, total",France,2005,41105162
+"Population ages 15-64, total",France,2004,40790586
+"Population ages 15-64, total",France,2003,40480266
+"Population ages 15-64, total",France,2002,40175561
+"Population ages 15-64, total",France,2001,39891979
+"Population ages 15-64, total",France,2000,39636853
+"Population ages 15-64, total",France,1999,39425511
+"Population ages 15-64, total",France,1998,39284010
+"Population ages 15-64, total",France,1997,39174737
+"Population ages 15-64, total",France,1996,39049382
+"Population ages 15-64, total",France,1995,38925506
+"Population ages 15-64, total",France,1994,38812730
+"Population ages 15-64, total",France,1993,38708514
+"Population ages 15-64, total",France,1992,38590906
+"Population ages 15-64, total",France,1991,38479049
+"Population ages 15-64, total",France,1990,38381939
+"Population ages 15-64, total",France,1989,38225189
+"Population ages 15-64, total",France,1988,37997989
+"Population ages 15-64, total",France,1987,37748789
+"Population ages 15-64, total",France,1986,37509980
+"Population ages 15-64, total",France,1985,37306338
+"Population ages 15-64, total",France,1984,37014173
+"Population ages 15-64, total",France,1983,36594358
+"Population ages 15-64, total",France,1982,36134689
+"Population ages 15-64, total",France,1981,35708106
+"Population ages 15-64, total",France,1980,35207425
+"Population ages 15-64, total",France,1979,34833338
+"Population ages 15-64, total",France,1978,34558832
+"Population ages 15-64, total",France,1977,34308737
+"Population ages 15-64, total",France,1976,34045606
+"Population ages 15-64, total",France,1975,33804771
+"Population ages 15-64, total",France,1974,33575437
+"Population ages 15-64, total",France,1973,33299561
+"Population ages 15-64, total",France,1972,33010830
+"Population ages 15-64, total",France,1971,32717839
+"Population ages 15-64, total",France,1970,32405229
+"Population ages 15-64, total",France,1969,32089832
+"Population ages 15-64, total",France,1968,31813325
+"Population ages 15-64, total",France,1967,31575440
+"Population ages 15-64, total",France,1966,31338834
+"Population ages 15-64, total",France,1965,31072421
+"Population ages 15-64, total",France,1964,30759391
+"Population ages 15-64, total",France,1963,30405270
+"Population ages 15-64, total",France,1962,30028477
+"Population ages 15-64, total",France,1961,29659022
+"Population ages 15-64, total",France,1960,29388216
+"Population ages 15-64, total",Germany,2023,53105207
+"Population ages 15-64, total",Germany,2022,53319453
+"Population ages 15-64, total",Germany,2021,53251922
+"Population ages 15-64, total",Germany,2020,53550233
+"Population ages 15-64, total",Germany,2019,53768633
+"Population ages 15-64, total",Germany,2018,53878496
+"Population ages 15-64, total",Germany,2017,53933149
+"Population ages 15-64, total",Germany,2016,53970091
+"Population ages 15-64, total",Germany,2015,53697948
+"Population ages 15-64, total",Germany,2014,53336851
+"Population ages 15-64, total",Germany,2013,53189381
+"Population ages 15-64, total",Germany,2012,53058157
+"Population ages 15-64, total",Germany,2011,52900807
+"Population ages 15-64, total",Germany,2010,53759044
+"Population ages 15-64, total",Germany,2009,53827193
+"Population ages 15-64, total",Germany,2008,54085629
+"Population ages 15-64, total",Germany,2007,54315128
+"Population ages 15-64, total",Germany,2006,54610222
+"Population ages 15-64, total",Germany,2005,54964326
+"Population ages 15-64, total",Germany,2004,55269541
+"Population ages 15-64, total",Germany,2003,55519404
+"Population ages 15-64, total",Germany,2002,55656966
+"Population ages 15-64, total",Germany,2001,55721421
+"Population ages 15-64, total",Germany,2000,55809834
+"Population ages 15-64, total",Germany,1999,55921441
+"Population ages 15-64, total",Germany,1998,55985323
+"Population ages 15-64, total",Germany,1997,56006824
+"Population ages 15-64, total",Germany,1996,55953020
+"Population ages 15-64, total",Germany,1995,55828044
+"Population ages 15-64, total",Germany,1994,55747142
+"Population ages 15-64, total",Germany,1993,55680261
+"Population ages 15-64, total",Germany,1992,55414133
+"Population ages 15-64, total",Germany,1991,55081480
+"Population ages 15-64, total",Germany,1990,54845248
+"Population ages 15-64, total",Germany,1989,54541753
+"Population ages 15-64, total",Germany,1988,54247174
+"Population ages 15-64, total",Germany,1987,54113351
+"Population ages 15-64, total",Germany,1986,54034199
+"Population ages 15-64, total",Germany,1985,53958016
+"Population ages 15-64, total",Germany,1984,53853384
+"Population ages 15-64, total",Germany,1983,53524579
+"Population ages 15-64, total",Germany,1982,52986317
+"Population ages 15-64, total",Germany,1981,52340071
+"Population ages 15-64, total",Germany,1980,51626675
+"Population ages 15-64, total",Germany,1979,51027666
+"Population ages 15-64, total",Germany,1978,50613515
+"Population ages 15-64, total",Germany,1977,50331802
+"Population ages 15-64, total",Germany,1976,50150085
+"Population ages 15-64, total",Germany,1975,50101533
+"Population ages 15-64, total",Germany,1974,50120326
+"Population ages 15-64, total",Germany,1973,49954582
+"Population ages 15-64, total",Germany,1972,49673022
+"Population ages 15-64, total",Germany,1971,49403042
+"Population ages 15-64, total",Germany,1970,49385918
+"Population ages 15-64, total",Germany,1969,49315873
+"Population ages 15-64, total",Germany,1968,49037363
+"Population ages 15-64, total",Germany,1967,49105706
+"Population ages 15-64, total",Germany,1966,49253859
+"Population ages 15-64, total",Germany,1965,49145172
+"Population ages 15-64, total",Germany,1964,49027873
+"Population ages 15-64, total",Germany,1963,48996025
+"Population ages 15-64, total",Germany,1962,48904067
+"Population ages 15-64, total",Germany,1961,48875567
+"Population ages 15-64, total",Germany,1960,48961004
+"Population ages 15-64, total",Italy,2023,37541549
+"Population ages 15-64, total",Italy,2022,37580511
+"Population ages 15-64, total",Italy,2021,37681637
+"Population ages 15-64, total",Italy,2020,37918891
+"Population ages 15-64, total",Italy,2019,38150120
+"Population ages 15-64, total",Italy,2018,38480881
+"Population ages 15-64, total",Italy,2017,38430960
+"Population ages 15-64, total",Italy,2016,38555229
+"Population ages 15-64, total",Italy,2015,38706320
+"Population ages 15-64, total",Italy,2014,38891519
+"Population ages 15-64, total",Italy,2013,39052725
+"Population ages 15-64, total",Italy,2012,39143485
+"Population ages 15-64, total",Italy,2011,39200655
+"Population ages 15-64, total",Italy,2010,39184696
+"Population ages 15-64, total",Italy,2009,39096968
+"Population ages 15-64, total",Italy,2008,38942666
+"Population ages 15-64, total",Italy,2007,38680128
+"Population ages 15-64, total",Italy,2006,38532117
+"Population ages 15-64, total",Italy,2005,38533763
+"Population ages 15-64, total",Italy,2004,38465647
+"Population ages 15-64, total",Italy,2003,38301126
+"Population ages 15-64, total",Italy,2002,38226197
+"Population ages 15-64, total",Italy,2001,38314796
+"Population ages 15-64, total",Italy,2000,38440776
+"Population ages 15-64, total",Italy,1999,38575872
+"Population ages 15-64, total",Italy,1998,38706814
+"Population ages 15-64, total",Italy,1997,38818547
+"Population ages 15-64, total",Italy,1996,38924103
+"Population ages 15-64, total",Italy,1995,38860972
+"Population ages 15-64, total",Italy,1994,38955158
+"Population ages 15-64, total",Italy,1993,39190392
+"Population ages 15-64, total",Italy,1992,39238936
+"Population ages 15-64, total",Italy,1991,39110675
+"Population ages 15-64, total",Italy,1990,38893367
+"Population ages 15-64, total",Italy,1989,38762536
+"Population ages 15-64, total",Italy,1988,38624349
+"Population ages 15-64, total",Italy,1987,38500346
+"Population ages 15-64, total",Italy,1986,38361222
+"Population ages 15-64, total",Italy,1985,38214317
+"Population ages 15-64, total",Italy,1984,37979168
+"Population ages 15-64, total",Italy,1983,37587113
+"Population ages 15-64, total",Italy,1982,37170354
+"Population ages 15-64, total",Italy,1981,36786473
+"Population ages 15-64, total",Italy,1980,36413149
+"Population ages 15-64, total",Italy,1979,36084480
+"Population ages 15-64, total",Italy,1978,35836359
+"Population ages 15-64, total",Italy,1977,35626403
+"Population ages 15-64, total",Italy,1976,35426150
+"Population ages 15-64, total",Italy,1975,35228214
+"Population ages 15-64, total",Italy,1974,35045845
+"Population ages 15-64, total",Italy,1973,34888473
+"Population ages 15-64, total",Italy,1972,34738286
+"Population ages 15-64, total",Italy,1971,34638947
+"Population ages 15-64, total",Italy,1970,34585809
+"Population ages 15-64, total",Italy,1969,34526334
+"Population ages 15-64, total",Italy,1968,34455033
+"Population ages 15-64, total",Italy,1967,34363029
+"Population ages 15-64, total",Italy,1966,34243073
+"Population ages 15-64, total",Italy,1965,34079588
+"Population ages 15-64, total",Italy,1964,33867546
+"Population ages 15-64, total",Italy,1963,33603644
+"Population ages 15-64, total",Italy,1962,33309921
+"Population ages 15-64, total",Italy,1961,33046566
+"Population ages 15-64, total",Italy,1960,32872281
+"Population ages 15-64, total",Japan,2023,73201968
+"Population ages 15-64, total",Japan,2022,73496437
+"Population ages 15-64, total",Japan,2021,73818755
+"Population ages 15-64, total",Japan,2020,74318579
+"Population ages 15-64, total",Japan,2019,74719384
+"Population ages 15-64, total",Japan,2018,75025904
+"Population ages 15-64, total",Japan,2017,75439583
+"Population ages 15-64, total",Japan,2016,75946619
+"Population ages 15-64, total",Japan,2015,76580356
+"Population ages 15-64, total",Japan,2014,77387735
+"Population ages 15-64, total",Japan,2013,78375939
+"Population ages 15-64, total",Japan,2012,79501672
+"Population ages 15-64, total",Japan,2011,80608631
+"Population ages 15-64, total",Japan,2010,81364210
+"Population ages 15-64, total",Japan,2009,81669561
+"Population ages 15-64, total",Japan,2008,82234517
+"Population ages 15-64, total",Japan,2007,82918195
+"Population ages 15-64, total",Japan,2006,83556704
+"Population ages 15-64, total",Japan,2005,84286399
+"Population ages 15-64, total",Japan,2004,85007810
+"Population ages 15-64, total",Japan,2003,85516887
+"Population ages 15-64, total",Japan,2002,85801645
+"Population ages 15-64, total",Japan,2001,86140893
+"Population ages 15-64, total",Japan,2000,86478606
+"Population ages 15-64, total",Japan,1999,86805399
+"Population ages 15-64, total",Japan,1998,87046199
+"Population ages 15-64, total",Japan,1997,87195854
+"Population ages 15-64, total",Japan,1996,87360338
+"Population ages 15-64, total",Japan,1995,87457274
+"Population ages 15-64, total",Japan,1994,87454486
+"Population ages 15-64, total",Japan,1993,87325791
+"Population ages 15-64, total",Japan,1992,87078505
+"Population ages 15-64, total",Japan,1991,86726853
+"Population ages 15-64, total",Japan,1990,86212055
+"Population ages 15-64, total",Japan,1989,85579289
+"Population ages 15-64, total",Japan,1988,84760122
+"Population ages 15-64, total",Japan,1987,83889691
+"Population ages 15-64, total",Japan,1986,83000864
+"Population ages 15-64, total",Japan,1985,82140767
+"Population ages 15-64, total",Japan,1984,81373643
+"Population ages 15-64, total",Japan,1983,80648759
+"Population ages 15-64, total",Japan,1982,79854053
+"Population ages 15-64, total",Japan,1981,79319130
+"Population ages 15-64, total",Japan,1980,78842378
+"Population ages 15-64, total",Japan,1979,78225554
+"Population ages 15-64, total",Japan,1978,77688063
+"Population ages 15-64, total",Japan,1977,77181774
+"Population ages 15-64, total",Japan,1976,76678450
+"Population ages 15-64, total",Japan,1975,76130123
+"Population ages 15-64, total",Japan,1974,75467094
+"Population ages 15-64, total",Japan,1973,74824671
+"Population ages 15-64, total",Japan,1972,74180126
+"Population ages 15-64, total",Japan,1971,73504812
+"Population ages 15-64, total",Japan,1970,72050500
+"Population ages 15-64, total",Japan,1969,71225977
+"Population ages 15-64, total",Japan,1968,70341723
+"Population ages 15-64, total",Japan,1967,69436531
+"Population ages 15-64, total",Japan,1966,68351308
+"Population ages 15-64, total",Japan,1965,67179113
+"Population ages 15-64, total",Japan,1964,65876369
+"Population ages 15-64, total",Japan,1963,64361205
+"Population ages 15-64, total",Japan,1962,62704611
+"Population ages 15-64, total",Japan,1961,61148030
+"Population ages 15-64, total",Japan,1960,60053275
+"Population ages 15-64, total",United Kingdom,2023,43391551
+"Population ages 15-64, total",United Kingdom,2022,42888267
+"Population ages 15-64, total",United Kingdom,2021,42499043
+"Population ages 15-64, total",United Kingdom,2020,42334303
+"Population ages 15-64, total",United Kingdom,2019,42323933
+"Population ages 15-64, total",United Kingdom,2018,42221097
+"Population ages 15-64, total",United Kingdom,2017,42156197
+"Population ages 15-64, total",United Kingdom,2016,42076108
+"Population ages 15-64, total",United Kingdom,2015,41883749
+"Population ages 15-64, total",United Kingdom,2014,41732362
+"Population ages 15-64, total",United Kingdom,2013,41606875
+"Population ages 15-64, total",United Kingdom,2012,41578729
+"Population ages 15-64, total",United Kingdom,2011,41540721
+"Population ages 15-64, total",United Kingdom,2010,41364955
+"Population ages 15-64, total",United Kingdom,2009,41122549
+"Population ages 15-64, total",United Kingdom,2008,40879069
+"Population ages 15-64, total",United Kingdom,2007,40568941
+"Population ages 15-64, total",United Kingdom,2006,40189220
+"Population ages 15-64, total",United Kingdom,2005,39782765
+"Population ages 15-64, total",United Kingdom,2004,39409779
+"Population ages 15-64, total",United Kingdom,2003,39149801
+"Population ages 15-64, total",United Kingdom,2002,38932373
+"Population ages 15-64, total",United Kingdom,2001,38670049
+"Population ages 15-64, total",United Kingdom,2000,38383591
+"Population ages 15-64, total",United Kingdom,1999,38111259
+"Population ages 15-64, total",United Kingdom,1998,37892939
+"Population ages 15-64, total",United Kingdom,1997,37717697
+"Population ages 15-64, total",United Kingdom,1996,37570785
+"Population ages 15-64, total",United Kingdom,1995,37429998
+"Population ages 15-64, total",United Kingdom,1994,37303345
+"Population ages 15-64, total",United Kingdom,1993,37225516
+"Population ages 15-64, total",United Kingdom,1992,37202123
+"Population ages 15-64, total",United Kingdom,1991,37207327
+"Population ages 15-64, total",United Kingdom,1990,37200072
+"Population ages 15-64, total",United Kingdom,1989,37173510
+"Population ages 15-64, total",United Kingdom,1988,37237881
+"Population ages 15-64, total",United Kingdom,1987,37279073
+"Population ages 15-64, total",United Kingdom,1986,37196936
+"Population ages 15-64, total",United Kingdom,1985,37111982
+"Population ages 15-64, total",United Kingdom,1984,36975343
+"Population ages 15-64, total",United Kingdom,1983,36735220
+"Population ages 15-64, total",United Kingdom,1982,36472869
+"Population ages 15-64, total",United Kingdom,1981,36258828
+"Population ages 15-64, total",United Kingdom,1980,36057895
+"Population ages 15-64, total",United Kingdom,1979,35843857
+"Population ages 15-64, total",United Kingdom,1978,35643604
+"Population ages 15-64, total",United Kingdom,1977,35474578
+"Population ages 15-64, total",United Kingdom,1976,35320241
+"Population ages 15-64, total",United Kingdom,1975,35196254
+"Population ages 15-64, total",United Kingdom,1974,35126591
+"Population ages 15-64, total",United Kingdom,1973,35088175
+"Population ages 15-64, total",United Kingdom,1972,35052772
+"Population ages 15-64, total",United Kingdom,1971,35011301
+"Population ages 15-64, total",United Kingdom,1970,34979813
+"Population ages 15-64, total",United Kingdom,1969,34986717
+"Population ages 15-64, total",United Kingdom,1968,35012307
+"Population ages 15-64, total",United Kingdom,1967,35030417
+"Population ages 15-64, total",United Kingdom,1966,35024556
+"Population ages 15-64, total",United Kingdom,1965,34998030
+"Population ages 15-64, total",United Kingdom,1964,34931099
+"Population ages 15-64, total",United Kingdom,1963,34824530
+"Population ages 15-64, total",United Kingdom,1962,34595847
+"Population ages 15-64, total",United Kingdom,1961,34274978
+"Population ages 15-64, total",United Kingdom,1960,34036912
+"Population ages 15-64, total",United States,2023,218834941
+"Population ages 15-64, total",United States,2022,217774465
+"Population ages 15-64, total",United States,2021,217127198
+"Population ages 15-64, total",United States,2020,217300224
+"Population ages 15-64, total",United States,2019,217020298
+"Population ages 15-64, total",United States,2018,216573411
+"Population ages 15-64, total",United States,2017,215959913
+"Population ages 15-64, total",United States,2016,215104779
+"Population ages 15-64, total",United States,2015,214000880
+"Population ages 15-64, total",United States,2014,212896035
+"Population ages 15-64, total",United States,2013,211856915
+"Population ages 15-64, total",United States,2012,210974992
+"Population ages 15-64, total",United States,2011,209976998
+"Population ages 15-64, total",United States,2010,208692297
+"Population ages 15-64, total",United States,2009,207140939
+"Population ages 15-64, total",United States,2008,205581768
+"Population ages 15-64, total",United States,2007,203846454
+"Population ages 15-64, total",United States,2006,201876379
+"Population ages 15-64, total",United States,2005,199544371
+"Population ages 15-64, total",United States,2004,197178046
+"Population ages 15-64, total",United States,2003,194866947
+"Population ages 15-64, total",United States,2002,192710641
+"Population ages 15-64, total",United States,2001,190438256
+"Population ages 15-64, total",United States,2000,188063348
+"Population ages 15-64, total",United States,1999,185476251
+"Population ages 15-64, total",United States,1998,182847826
+"Population ages 15-64, total",United States,1997,180217571
+"Population ages 15-64, total",United States,1996,177612188
+"Population ages 15-64, total",United States,1995,175218503
+"Population ages 15-64, total",United States,1994,172944736
+"Population ages 15-64, total",United States,1993,170819238
+"Population ages 15-64, total",United States,1992,168761734
+"Population ages 15-64, total",United States,1991,166814440
+"Population ages 15-64, total",United States,1990,165052569
+"Population ages 15-64, total",United States,1989,163700596
+"Population ages 15-64, total",United States,1988,162692051
+"Population ages 15-64, total",United States,1987,161641643
+"Population ages 15-64, total",United States,1986,160403667
+"Population ages 15-64, total",United States,1985,158864452
+"Population ages 15-64, total",United States,1984,157339391
+"Population ages 15-64, total",United States,1983,155941145
+"Population ages 15-64, total",United States,1982,154500424
+"Population ages 15-64, total",United States,1981,152924265
+"Population ages 15-64, total",United States,1980,151160285
+"Population ages 15-64, total",United States,1979,149251437
+"Population ages 15-64, total",United States,1978,146920130
+"Population ages 15-64, total",United States,1977,144510086
+"Population ages 15-64, total",United States,1976,142001575
+"Population ages 15-64, total",United States,1975,139443756
+"Population ages 15-64, total",United States,1974,136823427
+"Population ages 15-64, total",United States,1973,134261536
+"Population ages 15-64, total",United States,1972,131673364
+"Population ages 15-64, total",United States,1971,129101350
+"Population ages 15-64, total",United States,1970,126579480
+"Population ages 15-64, total",United States,1969,124343551
+"Population ages 15-64, total",United States,1968,122322210
+"Population ages 15-64, total",United States,1967,120345901
+"Population ages 15-64, total",United States,1966,118410688
+"Population ages 15-64, total",United States,1965,116655730
+"Population ages 15-64, total",United States,1964,114987801
+"Population ages 15-64, total",United States,1963,113195366
+"Population ages 15-64, total",United States,1962,111360155
+"Population ages 15-64, total",United States,1961,109595359
+"Population ages 15-64, total",United States,1960,108228090

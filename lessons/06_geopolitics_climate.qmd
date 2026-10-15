@@ -6,6 +6,7 @@ format: html
 ## Objectives
 - Discuss de-globalization and supply chain diversification.  
 - Evaluate WTO reform and multilateral-ism.  
+(The below will be skipped)
 - Analyze climate change as a global economic challenge.  
 - Identify opportunities in green growth strategies. 
 

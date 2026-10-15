@@ -1,0 +1,733 @@
+country,date,gender,value
+Canada,1995,Male,72.454
+France,1995,Male,63.462
+Germany,1995,Male,68.462
+Italy,1995,Male,62.753
+Japan,1995,Male,77.628
+United Kingdom,1995,Male,71.88
+United States,1995,Male,74.973
+Canada,1998,Male,72.111
+France,1998,Male,63.014
+Germany,1998,Male,68.21
+Italy,1998,Male,62.306
+Japan,1998,Male,77.315
+United Kingdom,1998,Male,70.971
+United States,1998,Male,74.889
+Canada,1999,Male,72.382
+France,1999,Male,63.051
+Germany,1999,Male,67.282
+Italy,1999,Male,62.225
+Japan,1999,Male,76.911
+United Kingdom,1999,Male,71.24
+United States,1999,Male,74.721
+Canada,1997,Male,72.223
+France,1997,Male,63.34
+Germany,1997,Male,67.992
+Italy,1997,Male,62.258
+Japan,1997,Male,77.737
+United Kingdom,1997,Male,71.548
+United States,1997,Male,74.974
+Canada,1996,Male,72.158
+France,1996,Male,63.807
+Germany,1996,Male,68.171
+Italy,1996,Male,62.421
+Japan,1996,Male,77.722
+United Kingdom,1996,Male,71.577
+United States,1996,Male,74.929
+Canada,2000,Male,72.34
+France,2000,Male,63.134
+Germany,2000,Male,66.64
+Italy,2000,Male,62.189
+Japan,2000,Male,76.399
+United Kingdom,2000,Male,71.094
+United States,2000,Male,74.811
+Canada,2001,Male,72.258
+France,2001,Male,62.903
+Germany,2001,Male,66.288
+Italy,2001,Male,61.955
+Japan,2001,Male,75.692
+United Kingdom,2001,Male,70.608
+United States,2001,Male,74.441
+Canada,2004,Male,73.156
+France,2004,Male,62.803
+Germany,2004,Male,64.838
+Italy,2004,Male,61.306
+Japan,2004,Male,73.378
+United Kingdom,2004,Male,70.461
+United States,2004,Male,73.325
+Canada,2003,Male,73.402
+France,2003,Male,63.017
+Germany,2003,Male,64.813
+Italy,2003,Male,62.308
+Japan,2003,Male,74.105
+United Kingdom,2003,Male,70.899
+United States,2003,Male,73.508
+Canada,2002,Male,73.004
+France,2002,Male,63.024
+Germany,2002,Male,65.545
+Italy,2002,Male,62.036
+Japan,2002,Male,74.764
+United Kingdom,2002,Male,70.547
+United States,2002,Male,74.1
+Canada,2005,Male,72.797
+France,2005,Male,62.494
+Germany,2005,Male,66.256
+Italy,2005,Male,60.931
+Japan,2005,Male,73.267
+United Kingdom,2005,Male,70.355
+United States,2005,Male,73.321
+Canada,2007,Male,72.726
+France,2007,Male,62.063
+Germany,2007,Male,66.34
+Italy,2007,Male,60.441
+Japan,2007,Male,73.142
+United Kingdom,2007,Male,70.441
+United States,2007,Male,73.222
+Canada,2006,Male,72.666
+France,2006,Male,62.244
+Germany,2006,Male,66.427
+Italy,2006,Male,60.842
+Japan,2006,Male,73.179
+United Kingdom,2006,Male,70.635
+United States,2006,Male,73.464
+Canada,2008,Male,72.894
+France,2008,Male,62.024
+Germany,2008,Male,66.412
+Italy,2008,Male,60.391
+Japan,2008,Male,72.792
+United Kingdom,2008,Male,70.378
+United States,2008,Male,72.951
+Canada,2008,Female,62.451
+France,2008,Female,50.955
+Germany,2008,Female,52.528
+Italy,2008,Female,38.667
+Japan,2008,Female,48.353
+United Kingdom,2008,Female,56.455
+United States,2008,Female,59.472
+Canada,2007,Female,62.355
+France,2007,Female,50.722
+Germany,2007,Female,52.41
+Italy,2007,Female,37.942
+Japan,2007,Female,48.483
+United Kingdom,2007,Female,56.273
+United States,2007,Female,59.307
+Canada,2005,Female,61.652
+France,2005,Female,50.318
+Germany,2005,Female,51.096
+Italy,2005,Female,38.067
+Japan,2005,Female,48.364
+United Kingdom,2005,Female,55.811
+United States,2005,Female,59.252
+Canada,2006,Female,61.873
+France,2006,Female,50.405
+Germany,2006,Female,51.987
+Italy,2006,Female,38.193
+Japan,2006,Female,48.445
+United Kingdom,2006,Female,56.232
+United States,2006,Female,59.364
+Canada,2002,Female,60.899
+France,2002,Female,49.496
+Germany,2002,Female,49.392
+Italy,2002,Female,36.786
+Japan,2002,Female,48.518
+United Kingdom,2002,Female,55.431
+United States,2002,Female,59.623
+Canada,2003,Female,61.888
+France,2003,Female,50.059
+Germany,2003,Female,49.49
+Italy,2003,Female,37.1
+Japan,2003,Female,48.275
+United Kingdom,2003,Female,55.269
+United States,2003,Female,59.504
+Canada,2004,Female,61.982
+France,2004,Female,50.205
+Germany,2004,Female,49.846
+Italy,2004,Female,38.536
+Japan,2004,Female,48.255
+United Kingdom,2004,Female,55.333
+United States,2004,Female,59.162
+Canada,2001,Female,59.751
+France,2001,Female,49.309
+Germany,2001,Female,49.331
+Italy,2001,Female,36.382
+Japan,2001,Female,49.198
+United Kingdom,2001,Female,55.046
+United States,2001,Female,59.788
+Canada,2000,Female,59.394
+France,2000,Female,49.259
+Germany,2000,Female,49.05
+Italy,2000,Female,35.781
+Japan,2000,Female,49.292
+United Kingdom,2000,Female,54.988
+United States,2000,Female,59.942
+Canada,1996,Female,57.458
+France,1996,Female,48.679
+Germany,1996,Female,47.393
+Italy,1996,Female,33.86
+Japan,1996,Female,50.037
+United Kingdom,1996,Female,53.508
+United States,1996,Female,59.257
+Canada,1999,Female,58.9
+France,1999,Female,48.871
+Germany,1999,Female,49.02
+Italy,1999,Female,35.314
+Japan,1999,Female,49.595
+United Kingdom,1999,Female,54.568
+United States,1999,Female,60.036
+Canada,1998,Female,58.376
+France,1998,Female,48.644
+Germany,1998,Female,48.201
+Italy,1998,Female,34.771
+Japan,1998,Female,50.136
+United Kingdom,1998,Female,54.012
+United States,1998,Female,59.846
+Canada,1997,Female,57.785
+France,1997,Female,48.283
+Germany,1997,Female,47.787
+Italy,1997,Female,34.116
+Japan,1997,Female,50.383
+United Kingdom,1997,Female,54.203
+United States,1997,Female,59.794
+Canada,1995,Female,57.478
+France,1995,Female,48.35
+Germany,1995,Female,47.102
+Italy,1995,Female,33.492
+Japan,1995,Female,49.981
+United Kingdom,1995,Female,53.128
+United States,1995,Female,58.936
+Canada,1994,Female,57.5129132757227
+France,1994,Female,48.0943286556505
+Germany,1994,Female,47.0654342145927
+Italy,1994,Female,33.3199097938144
+Japan,1994,Female,50.177007639277
+United Kingdom,1994,Female,53.15677061085
+United States,1994,Female,58.7935039331654
+Canada,1993,Female,57.6595456696258
+France,1993,Female,47.966936628538
+Germany,1993,Female,47.2291126395309
+Italy,1993,Female,33.5237863684253
+Japan,1993,Female,50.3285151116951
+United Kingdom,1993,Female,53.0938635877699
+United States,1993,Female,57.9236695367761
+Canada,1992,Female,57.8355127415793
+France,1992,Female,47.5436015969741
+Germany,1992,Female,47.3664804152366
+Italy,1992,Female,44.2802786974353
+Japan,1992,Female,50.7290285930694
+United Kingdom,1992,Female,53.0531901236681
+United States,1992,Female,57.8306062565275
+Canada,1991,Female,58.4281833604902
+France,1991,Female,47.1323591519553
+Germany,1991,Female,47.6850663243474
+Italy,1991,Female,43.9013563501849
+Japan,1991,Female,50.6783871584177
+United Kingdom,1991,Female,53.2126619198764
+United States,1991,Female,57.3795498108322
+Canada,1990,Female,58.4906005059032
+France,1990,Female,47.0456086809087
+Germany,1990,Female,43.3407166588903
+Italy,1990,Female,44.0183057255136
+Japan,1990,Female,50.1158748551564
+United Kingdom,1990,Female,53.2441624118598
+United States,1990,Female,57.5272300279386
+Canada,1988,Female,57.4067198004682
+France,1988,Female,46.8027386642552
+Germany,1988,Female,42.1261545734106
+Italy,1988,Female,43.076693524321
+Japan,1988,Female,48.8537549407114
+United Kingdom,1988,Female,51.6511399130384
+United States,1988,Female,56.576336351234
+Canada,1989,Female,58.0975821247225
+France,1989,Female,47.0728895341389
+Germany,1989,Female,42.5267884741694
+Italy,1989,Female,43.4374219335498
+Japan,1989,Female,49.47265625
+United Kingdom,1989,Female,52.9403626931411
+United States,1989,Female,57.3911707466967
+Canada,1987,Female,56.4582489380712
+France,1987,Female,46.9800990701312
+Germany,1987,Female,41.5719026952368
+Italy,1987,Female,42.5142799879747
+Japan,1987,Female,48.6481073502904
+United Kingdom,1987,Female,50.9243898079164
+United States,1987,Female,55.9778413003108
+Canada,1986,Female,55.7113775727923
+France,1986,Female,47.0975674014226
+Germany,1986,Female,41.3902474633914
+Italy,1986,Female,41.4127285443101
+Japan,1986,Female,48.6294416243654
+United Kingdom,1986,Female,50.4143605369328
+United States,1986,Female,55.2939190614845
+Canada,1983,Female,52.9597832678111
+France,1983,Female,46.1212721866834
+Germany,1983,Female,41.0707063279038
+Italy,1983,Female,39.2928109237275
+Japan,1983,Female,48.9989462592202
+Canada,1984,Female,53.7660540169331
+France,1984,Female,46.4778666190199
+Germany,1984,Female,40.5749275839034
+Italy,1984,Female,39.861692998839
+Japan,1984,Female,48.8861128461378
+United Kingdom,1984,Female,49.2329048065701
+Canada,1985,Female,54.9231675137359
+France,1985,Female,46.5503498361526
+Germany,1985,Female,41.1050936770199
+Italy,1985,Female,40.1962747846985
+Japan,1985,Female,48.6536485097636
+United Kingdom,1985,Female,49.5748160279501
+Canada,1976,Female,45.689675688473
+Canada,1977,Female,46.5268096484721
+Canada,1978,Female,47.9286053232517
+Canada,1979,Female,49.366702475712
+Canada,1980,Female,50.5947494710838
+Canada,1981,Female,52.0119818008343
+Canada,1982,Female,52.1161769131943
+France,1975,Female,43.3461370156075
+France,1976,Female,43.9630715968649
+France,1977,Female,44.7128901596378
+France,1978,Female,44.580304031725
+France,1979,Female,45.4626168224299
+France,1980,Female,45.6353795623814
+France,1981,Female,45.872863100967
+France,1982,Female,46.1895656924337
+Italy,1970,Female,28.6003121649919
+Italy,1971,Female,28.5793531924335
+Italy,1972,Female,27.9607727784838
+Italy,1973,Female,28.6068281938326
+Italy,1974,Female,29.1433826130013
+Italy,1975,Female,29.4682653600837
+Italy,1976,Female,30.237511640104
+Italy,1977,Female,36.2883845126835
+Italy,1978,Female,36.3385805904489
+Italy,1979,Female,37.4388897650212
+Italy,1980,Female,38.4317014362092
+Italy,1981,Female,38.8299262822188
+Italy,1982,Female,40.1346729371526
+Germany,1970,Female,38.5834035214374
+Germany,1971,Female,38.779159877598
+Germany,1972,Female,39.2461459606513
+Germany,1973,Female,39.7958784655691
+Germany,1974,Female,39.8842583601973
+Germany,1975,Female,39.8514564233491
+Germany,1976,Female,39.8110661268556
+Germany,1977,Female,39.7868016411672
+Germany,1978,Female,39.9512418101477
+Germany,1979,Female,40.2464376157538
+Germany,1980,Female,40.7110478402577
+Germany,1981,Female,41.1117717003567
+Germany,1982,Female,41.1931923062723
+Japan,1968,Female,50.6831983805667
+Japan,1969,Female,50.0998003992015
+Japan,1970,Female,49.8398620349839
+Japan,1971,Female,48.7834549878345
+Japan,1972,Female,47.8082851637764
+Japan,1973,Female,48.2693666117259
+Japan,1974,Female,46.5208284849895
+Japan,1975,Female,45.7537399309551
+Japan,1976,Female,45.7546096061916
+Japan,1977,Female,46.6095967560261
+Japan,1978,Female,47.3578595317725
+Japan,1979,Female,47.5980608197443
+Japan,1980,Female,47.6045296167247
+Japan,1981,Female,47.658104899633
+Japan,1982,Female,48.0904629827181
+United States,1966,Female,39.8614554469884
+United States,1967,Female,41.0550126149116
+United States,1968,Female,41.6147740712769
+United States,1969,Female,42.7117600123185
+United States,1970,Female,43.3391954275664
+United States,1971,Female,43.3578391770345
+United States,1972,Female,43.8845997561966
+United States,1973,Female,44.7304835102691
+United States,1974,Female,45.6563949969739
+United States,1975,Female,46.3486724131534
+United States,1976,Female,47.3176356353926
+United States,1977,Female,48.4393449661868
+United States,1978,Female,49.9548847510458
+United States,1979,Female,50.9350099028142
+United States,1980,Female,51.4756806916687
+United States,1981,Female,52.1073010701094
+United States,1982,Female,52.6237492837307
+United States,1983,Female,52.9022969700935
+United States,1984,Female,53.5784345426717
+United States,1985,Female,54.4619520573519
+United States,1966,Male,80.0810735253005
+United States,1967,Male,80.4396722980183
+United States,1968,Male,80.0911927821883
+United States,1969,Male,79.8460951411854
+United States,1970,Male,79.6681336796105
+United States,1971,Male,79.1295116772823
+United States,1972,Male,78.9489201739514
+United States,1973,Male,78.8356352195811
+United States,1974,Male,78.7182058271074
+United States,1975,Male,77.8747596586114
+United States,1976,Male,77.5149132321041
+United States,1977,Male,77.6628143577194
+United States,1978,Male,77.8638215628917
+United States,1979,Male,77.8394452491123
+United States,1980,Male,77.4034283411211
+United States,1981,Male,76.974860890302
+United States,1982,Male,76.5998160073597
+United States,1983,Male,76.3940385314431
+United States,1984,Male,76.3530889300879
+United States,1985,Male,76.2531076121699
+Japan,1968,Male,82.1160042964554
+Japan,1969,Male,81.9072847682119
+Japan,1970,Male,81.7825405122843
+Japan,1971,Male,82.2739018087855
+Japan,1972,Male,82.1082184788157
+Japan,1973,Male,82.2350288148333
+Japan,1974,Male,81.8878181368915
+Japan,1975,Male,81.4055636896046
+Japan,1976,Male,81.2153363877501
+Japan,1977,Male,80.7013358778625
+Japan,1978,Male,80.3112473473237
+Japan,1979,Male,80.1772388059701
+Japan,1980,Male,79.7789037309995
+Japan,1981,Male,79.8083504449007
+Japan,1982,Male,79.6342289455859
+Germany,1970,Male,79.4007663542772
+Germany,1971,Male,78.1011623683254
+Germany,1972,Male,77.0961512552207
+Germany,1973,Male,76.5820537853909
+Germany,1974,Male,75.562020629463
+Germany,1975,Male,74.4050766790058
+Germany,1976,Male,73.5345889808132
+Germany,1977,Male,72.8576425323539
+Germany,1978,Male,72.5156087408949
+Germany,1979,Male,72.3543782949723
+Germany,1980,Male,72.1082404593042
+Germany,1981,Male,71.9447573747235
+Germany,1982,Male,72.0115894039735
+Italy,1970,Male,80.1760060611358
+Italy,1971,Male,79.8778818087009
+Italy,1972,Male,79.1133370432201
+Italy,1973,Male,78.3950581779907
+Italy,1974,Male,78.1306838850491
+Italy,1975,Male,78.0161054585879
+Italy,1976,Male,77.9186431903483
+Italy,1977,Male,79.5714524859103
+Italy,1978,Male,79.1282758620689
+Italy,1979,Male,78.9876880984952
+Italy,1980,Male,78.9952596305781
+Italy,1981,Male,78.9183043690108
+Italy,1982,Male,76.2917774649356
+France,1975,Male,73.8096488004619
+France,1976,Male,73.2862117353567
+France,1977,Male,72.9479053949605
+France,1978,Male,72.3547744341695
+France,1979,Male,72.257640153815
+France,1980,Male,72.0993092401641
+France,1981,Male,71.3874124484625
+France,1982,Male,70.8251182965299
+Canada,1976,Male,77.6611642168158
+Canada,1977,Male,77.5487679615963
+Canada,1978,Male,77.9230094371198
+Canada,1979,Male,78.3502838227897
+Canada,1980,Male,78.3284468458673
+Canada,1981,Male,78.4406189683406
+Canada,1982,Male,77.0402908949694
+Canada,1984,Male,76.6897325611533
+France,1984,Male,68.9941972920696
+Germany,1984,Male,71.1200492510568
+Italy,1984,Male,76.5113612674588
+Japan,1984,Male,78.8465771516619
+United Kingdom,1984,Male,75.8976975824056
+Canada,1985,Male,76.7228755532783
+France,1985,Male,68.6957772132483
+Germany,1985,Male,71.2459632914523
+Italy,1985,Male,76.3487625556591
+Japan,1985,Male,78.1446882467955
+United Kingdom,1985,Male,75.7659169969876
+Canada,1983,Male,76.8562760283156
+France,1983,Male,69.8741708934842
+Germany,1983,Male,71.8417799752781
+Italy,1983,Male,77.3744929673918
+Japan,1983,Male,79.4471689701292
+Canada,1986,Male,76.8410490254948
+France,1986,Male,68.2708769260034
+Germany,1986,Male,71.1606634688307
+Italy,1986,Male,76.1890023728463
+Japan,1986,Male,77.7610980055758
+United Kingdom,1986,Male,75.1528279955259
+United States,1986,Male,76.2494172494172
+Canada,1987,Male,76.8403356891681
+France,1987,Male,67.5137913150077
+Germany,1987,Male,70.903692332831
+Italy,1987,Male,76.0983640292211
+Japan,1987,Male,77.3544973544973
+United Kingdom,1987,Male,75.0204648011251
+United States,1987,Male,76.1855444701441
+Canada,1989,Male,76.7571583629684
+France,1989,Male,66.2473406715382
+Germany,1989,Male,70.0365950674065
+Italy,1989,Male,75.4490712390283
+Japan,1989,Male,76.9309989701338
+United Kingdom,1989,Male,75.6559630660384
+United States,1989,Male,76.4302291521146
+Canada,1988,Male,76.6233524373389
+France,1988,Male,66.6448811913542
+Germany,1988,Male,70.5824969890004
+Italy,1988,Male,75.7823198255312
+Japan,1988,Male,77.1512113617376
+United Kingdom,1988,Male,75.4100334886642
+United States,1988,Male,76.1800694325877
+Canada,1990,Male,76.1118896856719
+France,1990,Male,65.4894046417759
+Germany,1990,Male,69.4166276709639
+Italy,1990,Male,75.1081597746252
+Japan,1990,Male,77.3930753564154
+United Kingdom,1990,Male,75.5504177503625
+United States,1990,Male,76.3590293990727
+Canada,1991,Male,75.0359853922554
+France,1991,Male,64.8510092918936
+Germany,1991,Male,71.5882758188764
+Italy,1991,Male,74.5790574872969
+Japan,1991,Male,77.6122407892087
+United Kingdom,1991,Male,74.7949395245377
+United States,1991,Male,75.7772957339117
+Canada,1992,Male,73.8458663004994
+France,1992,Male,64.684200946487
+Germany,1992,Male,70.533254928662
+Italy,1992,Male,74.4254596322941
+Japan,1992,Male,77.9888044782087
+United Kingdom,1992,Male,73.6035910963024
+United States,1992,Male,75.8252953289259
+Canada,1993,Male,73.3049671658738
+France,1993,Male,64.1838997239694
+Germany,1993,Male,69.7564855604503
+Italy,1993,Male,64.4466809609241
+Japan,1993,Male,78.0487804878048
+United Kingdom,1993,Male,72.5867653863951
+United States,1993,Male,75.4358144667902
+Canada,1994,Male,73.0853061223153
+France,1994,Male,63.7753496110436
+Germany,1994,Male,69.2300666727555
+Italy,1994,Male,63.5043478260869
+Japan,1994,Male,77.8062229224103
+United Kingdom,1994,Male,72.2371343946686
+United States,1994,Male,75.053521843271
+Canada,2010,Female,62.38
+France,2010,Female,51.325
+Germany,2010,Female,53.161
+Italy,2010,Female,38.168
+Japan,2010,Female,48.468
+United Kingdom,2010,Female,56.175
+United States,2010,Female,58.622
+Canada,2009,Female,62.421
+France,2009,Female,51.301
+Germany,2009,Female,52.93
+Italy,2009,Female,38.229
+Japan,2009,Female,48.476
+United Kingdom,2009,Female,56.564
+United States,2009,Female,59.195
+France,2011,Female,51.204
+Germany,2011,Female,54.006
+Italy,2011,Female,38.398
+Japan,2011,Female,48.276
+United Kingdom,2011,Female,56.296
+United States,2011,Female,58.103
+France,2012,Female,51.449
+Germany,2012,Female,54.023
+Italy,2012,Female,39.712
+Japan,2012,Female,48.18
+United Kingdom,2012,Female,56.601
+United States,2012,Female,57.684
+France,2013,Female,51.65
+Germany,2013,Female,54.581
+Italy,2013,Female,39.678
+Japan,2013,Female,48.885
+United Kingdom,2013,Female,56.987
+United States,2013,Female,57.206
+France,2015,Female,51.624
+Germany,2015,Female,54.706
+Italy,2015,Female,39.773
+Japan,2015,Female,49.555
+United Kingdom,2015,Female,57.5
+United States,2015,Female,56.676
+France,2014,Female,51.632
+Germany,2014,Female,54.762
+Italy,2014,Female,40.117
+Japan,2014,Female,49.241
+United Kingdom,2014,Female,57.204
+United States,2014,Female,56.973
+France,2017,Female,51.385
+Germany,2017,Female,55.884
+Italy,2017,Female,40.935
+Japan,2017,Female,51.158
+United Kingdom,2017,Female,58.034
+United States,2017,Female,57.038
+France,2018,Female,51.624
+Germany,2018,Female,55.944
+Italy,2018,Female,41.054
+Japan,2018,Female,52.544
+United Kingdom,2018,Female,58.145
+United States,2018,Female,57.081
+France,2016,Female,51.611
+Germany,2016,Female,55.633
+Italy,2016,Female,40.45
+Japan,2016,Female,50.358
+United Kingdom,2016,Female,57.54
+United States,2016,Female,56.803
+France,2019,Female,51.334
+Germany,2019,Female,56.576
+Italy,2019,Female,41.206
+Japan,2019,Female,53.288
+United Kingdom,2019,Female,58.736
+United States,2019,Female,57.428
+France,2020,Female,50.628
+Germany,2020,Female,55.574
+Italy,2020,Female,39.751
+Japan,2020,Female,53.152
+United Kingdom,2020,Female,59.09
+United States,2020,Female,56.201
+France,2021,Female,52.198
+Germany,2021,Female,55.327
+Italy,2021,Female,40.109
+Japan,2021,Female,53.546
+United Kingdom,2021,Female,58.602
+United States,2021,Female,56.09
+France,2022,Female,52.52
+Italy,2022,Female,40.691
+Japan,2022,Female,54.248
+United Kingdom,2022,Female,58.833
+United States,2022,Female,56.788
+France,2022,Male,60.176
+Italy,2022,Male,58.083
+Japan,2022,Male,71.434
+United Kingdom,2022,Male,67.108
+United States,2022,Male,67.968
+France,2021,Male,59.845
+Germany,2021,Male,65.774
+Italy,2021,Male,57.636
+Japan,2021,Male,71.292
+United Kingdom,2021,Male,66.97
+United States,2021,Male,67.598
+France,2020,Male,58.815
+Germany,2020,Male,65.943
+Italy,2020,Male,57.645
+Japan,2020,Male,71.418
+United Kingdom,2020,Male,67.878
+United States,2020,Male,67.663
+France,2019,Male,59.703
+Germany,2019,Male,67.437
+Italy,2019,Male,59.055
+Japan,2019,Male,71.399
+United Kingdom,2019,Male,68.536
+United States,2019,Male,69.154
+France,2017,Male,60.508
+Germany,2017,Male,66.681
+Italy,2017,Male,59.361
+Japan,2017,Male,70.481
+United Kingdom,2017,Male,68.864
+United States,2017,Male,69.068
+France,2018,Male,60.35
+Germany,2018,Male,66.783
+Italy,2018,Male,59.241
+Japan,2018,Male,71.154
+United Kingdom,2018,Male,68.671
+United States,2018,Male,69.054
+France,2016,Male,60.638
+Germany,2016,Male,66.556
+Italy,2016,Male,59.249
+Japan,2016,Male,70.402
+United Kingdom,2016,Male,68.913
+United States,2016,Male,69.191
+France,2015,Male,60.9
+Germany,2015,Male,65.868
+Italy,2015,Male,58.88
+Japan,2015,Male,70.309
+United Kingdom,2015,Male,69.109
+United States,2015,Male,69.051
+France,2014,Male,60.988
+Germany,2014,Male,66.327
+Italy,2014,Male,58.703
+Japan,2014,Male,70.432
+United Kingdom,2014,Male,68.9
+United States,2014,Male,69.215
+France,2013,Male,61.518
+Germany,2013,Male,66.408
+Italy,2013,Male,58.648
+Japan,2013,Male,70.561
+United Kingdom,2013,Male,69.324
+United States,2013,Male,69.728
+France,2012,Male,61.779
+Germany,2012,Male,66.42
+Italy,2012,Male,59.239
+Japan,2012,Male,70.738
+United Kingdom,2012,Male,69.242
+United States,2012,Male,70.157
+France,2011,Male,61.623
+Germany,2011,Male,66.586
+Italy,2011,Male,58.714
+Japan,2011,Male,71.126
+United Kingdom,2011,Male,69.279
+United States,2011,Male,70.473
+Canada,2009,Male,72.277
+France,2009,Male,62.071
+Germany,2009,Male,66.305
+Italy,2009,Male,59.572
+Japan,2009,Male,72.014
+United Kingdom,2009,Male,70.046
+United States,2009,Male,71.953
+Canada,2010,Male,71.865
+France,2010,Male,62.001
+Germany,2010,Male,66.184
+Italy,2010,Male,59.082
+Japan,2010,Male,71.608
+United Kingdom,2010,Male,69.51
+United States,2010,Male,71.181
+Canada,2011,Male,71.788
+Canada,2011,Female,62.01
+Canada,2015,Male,70.957
+Canada,2015,Female,61.271
+Canada,2014,Female,61.496
+Canada,2014,Male,71.002
+Canada,2012,Female,62.006
+Canada,2012,Male,71.546
+Canada,2013,Male,71.428
+Canada,2013,Female,62.07
+Canada,2016,Male,70.559
+Canada,2016,Female,61.154
+Canada,2017,Female,61.391
+Canada,2017,Male,70.69
+Canada,2018,Male,70.327
+Canada,2018,Female,61.319
+Canada,2019,Male,70.542
+Canada,2019,Female,61.574
+Canada,2020,Female,59.767
+Canada,2020,Male,69.048
+Canada,2021,Male,69.95
+Canada,2021,Female,61.037
+Canada,2022,Female,61.443
+Germany,2022,Female,56.052
+Canada,2022,Male,69.606
+Germany,2022,Male,66.512
+France,2023,Male,60.136
+Italy,2023,Male,58.77
+Japan,2023,Male,71.517
+United Kingdom,2023,Male,67.829
+United States,2023,Male,68.119
+France,2023,Female,52.82
+Italy,2023,Female,41.503
+Japan,2023,Female,54.838
+United Kingdom,2023,Female,58.882
+United States,2023,Female,57.333
+Canada,2023,Male,69.965
+Germany,2023,Male,66.716
+Canada,2023,Female,61.68
+Germany,2023,Female,56.413
+Canada,2024,Male,69.704
+France,2024,Male,60.572
+Germany,2024,Male,66.899
+Italy,2024,Male,58.715
+Japan,2024,Male,71.445
+United Kingdom,2024,Male,67.463
+United States,2024,Male,67.95
+Canada,2024,Female,61.249
+France,2024,Female,52.958
+Germany,2024,Female,56.822
+Italy,2024,Female,41.481
+Japan,2024,Female,55.597
+United Kingdom,2024,Female,59.085
+United States,2024,Female,57.496

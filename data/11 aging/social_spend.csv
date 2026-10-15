@@ -1,0 +1,29 @@
+Country,year,value
+Canada,1990,4.5
+France,1990,10.5
+Germany,1990,9.5
+Italy,1990,11.3
+Japan,1990,4.6
+United Kingdom,1990,6.8
+United States,1990,5.8
+Canada,2000,5
+France,2000,11.5
+Germany,2000,10.9
+Italy,2000,13.5
+Japan,2000,6.9
+United Kingdom,2000,7.3
+United States,2000,5.7
+Canada,2010,5.1
+France,2010,13.2
+Germany,2010,10.7
+Italy,2010,15.3
+Japan,2010,9.5
+United Kingdom,2010,8.3
+United States,2010,6.6
+Canada,2020,6.4
+France,2020,14.4
+Germany,2020,11.2
+Italy,2020,17.4
+Japan,2020,9.6
+United Kingdom,2020,7.8
+United States,2020,7.4

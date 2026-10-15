@@ -1,0 +1,50 @@
+Country,variable,value
+Canada,"Employee, public",5.95
+France,"Employee, public",11.3
+Germany,"Employee, public",9.3
+Italy,"Employee, public",9.19
+Japan,"Employee, public",9.15
+United Kingdom,"Employee, public",8
+United States,"Employee, public",5.3
+Canada,"Employer, public",5.95
+France,"Employer, public",16.5
+Germany,"Employer, public",9.3
+Italy,"Employer, public",23.81
+Japan,"Employer, public",9.15
+United Kingdom,"Employer, public",13.8
+United States,"Employer, public",5.3
+Canada,"Employee, private",
+France,"Employee, private",
+Germany,"Employee, private",
+Italy,"Employee, private",
+Japan,"Employee, private",
+United Kingdom,"Employee, private",5
+United States,"Employee, private",
+Canada,"Employer, private",
+France,"Employer, private",
+Germany,"Employer, private",
+Italy,"Employer, private",
+Japan,"Employer, private",
+United Kingdom,"Employer, private",3
+United States,"Employer, private",
+Canada,Total,11.9
+France,Total,27.8
+Germany,Total,18.6
+Italy,Total,33
+Japan,Total,18.3
+United Kingdom,Total,29.8
+United States,Total,10.6
+Canada,"Ceiling (multiple of gross average earnings), public / private",0.78
+France,"Ceiling (multiple of gross average earnings), public / private",
+Germany,"Ceiling (multiple of gross average earnings), public / private",1.43
+Italy,"Ceiling (multiple of gross average earnings), public / private",3.36
+Japan,"Ceiling (multiple of gross average earnings), public / private",2.27
+United Kingdom,"Ceiling (multiple of gross average earnings), public / private",0.98
+United States,"Ceiling (multiple of gross average earnings), public / private",2.39
+Canada,Effective rate on average earnings,9.2
+France,Effective rate on average earnings,27.8
+Germany,Effective rate on average earnings,18.6
+Italy,Effective rate on average earnings,33
+Japan,Effective rate on average earnings,18.3
+United Kingdom,Effective rate on average earnings,26.6
+United States,Effective rate on average earnings,10.6

@@ -1,0 +1,365 @@
+---
+title: "Balance of Payments: Accounts and Japan’s External Position"
+subtitle: ""
+author: "Trang Tran"
+date: "2025-12-1"
+format:
+  revealjs:
+    self-contained: true
+    theme: simple
+    slide-number: true
+    toc: false
+    code-line-numbers: false
+    #footer: "© Trang Tran: Japan in the World Economy"
+    chalkboard: false
+    pdf-export: true
+    incremental: true
+    controls: true
+    hash: true
+draft: true
+output-dir: ../docs/slides
+---
+```{r}
+#| include: false
+library(data.table)
+library(ggplot2)
+library(ggrepel)
+```
+
+## Introduction 
+
+- Understand the structure of Balance of Payments (BoP)
+- Examine Japan’s external accounts and capital flows
+- Explain the relationship between the current, capital, and financial accounts
+- Interpret Japan’s current account, financial account, and international investment position
+
+## What is BOP ?
+
+- record all cross-border transactions of a country
+- three components (IMF BPM, 6th ed)
+  - current account: trade flow, income flow, transfers
+  - capital account: non-market transactions flow of assets
+  - financial account: capital flow
+
+## Example 
+<div style="font-size:25%">
+| **Balance of payments** | **Credits** | **Debits** | **Balance** |
+|--------------------------|-------------|-------------|--------------|
+| **Current account** |  |  |  |
+| &emsp;Goods and services | 540 | 499 | 41 |
+| &emsp;&emsp;Goods | 462 | 392 | 70 |
+| &emsp;&emsp;Services | 78 | 107 | -29 |
+| &emsp;Primary income | 50 | 40 | 10 |
+| &emsp;&emsp;Compensation of employees | 6 | 2 |  |
+| &emsp;&emsp;Interest | 13 | 21 |  |
+| &emsp;&emsp;Distributed income of corporations | 17 | 17 |  |
+| &emsp;&emsp;Reinvested earnings | 14 | 0 |  |
+| &emsp;&emsp;Rent | 0 | 0 |  |
+| &emsp;Secondary income | 17 | 55 | -38 |
+| &emsp;&emsp;Current taxes on income, wealth, etc. | 1 | 0 |  |
+| &emsp;&emsp;Net nonlife insurance premiums | 2 | 11 |  |
+| &emsp;&emsp;Nonlife insurance claims | 12 | 3 |  |
+| &emsp;&emsp;Current international cooperation | 1 | 31 |  |
+| &emsp;&emsp;Miscellaneous current transfers | 1 | 10 |  |
+| &emsp;&emsp;Adjustment for change in pension entitlements |  |  |  |
+| **Current account balance** |  |  | **13** |
+| **Capital account** |  |  |  |
+| &emsp;Acquisitions/disposals of nonproduced nonfinancial assets | 0 | 0 |  |
+| &emsp;Capital transfers | 1 | 4 |  |
+| **Capital account balance** |  |  | **-3** |
+| **Net lending (+)/net borrowing (–)** (from current and capital accounts) |  |  | **10** |
+| **Financial account (by functional category)** |  |  |  |
+| &emsp;Direct investment | 8 | 11 |  |
+| &emsp;Portfolio investment | 18 | 14 |  |
+| &emsp;Financial derivatives (other than reserves) and ESOs | 3 | 0 |  |
+| &emsp;Other investment | 20 | 22 |  |
+| &emsp;Reserve assets | 8 |  |  |
+| **Total changes in assets/liabilities** | **57** | **47** |  |
+| **Net lending (+)/net borrowing (–)** (from financial account) |  |  | **10** |
+| **Net errors and omissions** |  |  | **0** |
+Source: Table 2.1 IMF BPM 6th ed.
+</div>
+::: notes
+- in the definition that existed prior to 2014, what is known today as the financial account was called the capital account
+- Current account:
+  - export and import of goods and services, 
+  - investment income and unilateral transfers such as foreign aid
+- Capital account:
+  - transactions in nonproduced, nonfinancial assets, such as land
+  - unilateral capital transfers, such as government debt forgiveness
+- Financial account: cross-border transactions of assets (other than nonproduced, nonfinancial assets): capital inflow and outflows
+  - acquisition of a business (direct investment)
+  - acquisition of financial products for asset management (portfolio investment)
+:::
+
+## Remittances
+<div style="font-size:50%">
+Components Required for Compiling Remittance Items and Their Source
+
+| Item | Source and description |
+|----------------------------------|--------------------------------|
+| **1. Compensation of employees** | Primary income account, standard component |
+| **2. Personal transfers** | Secondary income account, standard component |
+| **3. Travel and transport related to employment of border, seasonal, and other short-term workers** | Goods and services account, supplementary item |
+| **4. Taxes and social contributions related to employment of border, seasonal, and other short-term workers** | Secondary income account, supplementary item |
+| **5. Compensation of employees less expenses related to employment of border, seasonal, and other short-term workers** | Primary income account (for compensation of employees), standard component; Goods and services account (for travel and transport expenses) and secondary income account (for taxes and social contributions), supplementary items |
+| **6. Capital transfers between households** | Capital account, supplementary item |
+| **7. Social benefits** | Secondary income account, supplementary item |
+| **8. Current transfers to NPISHs** | Secondary income account, supplementary item |
+| **9. Capital transfers to NPISHs** | Capital account, supplementary item |
+
+Source: Table A5.1 IMF BPM 6th ed.
+</div>
+
+::: notes
+- “Net” compensation of employees (#5): **#1 minus the sum of #3 and #4** 
+- **Personal remittances:** #2 plus #5 plus #6  
+- **Total remittances:** #2 plus #5 plus #6 plus #7  
+- **Total remittances plus transfers to NPISHs:** #2 plus #5 plus #6 plus #7 plus #8 plus #9
+:::
+
+## Double entry record
+
+<div style="font-size:50%">
+A Japanese firm exports machinery worth **1 million** to the United States. Payment is received by bank transfer.
+
+| BoP Account | Credit (+ inflow) | Debit (− outflow) |
+|----------------------------------------|------------|-------------|
+| **Current Account** (Exports of Goods) | +1,000,000 ||
+| **Financial Account** (Bank deposits oversea account) || −1,000,000 | 
+
+A Japanese resident buys clothes worth **100,000 ** from Korea using trade credits
+
+| BoP Account | Credit (+ inflow) | Debit (− outflow) |
+|----------------------------------------|------------|-------------|
+| **Current Account** (Imports of Goods) |  |-100,000|
+| **Financial Account** (Trade credit liabilities) |100,000| | 
+
+Foreigners visit Japanese and pay for their holiday by using money deposited in their country's bank accounts.
+
+| BoP Account | Credit (+ inflow) | Debit (− outflow) |
+|----------------------------------------|------------|-------------|
+| **Current Account** (Export of Services) |100,000  ||
+| **Financial Account** (Bank deposits oversea account) ||-100,000| 
+
+</div>
+
+
+::: notes
+- when the purchases of foreign assets exceed the sales of domestic assets to foreigners (with net receipt of foreign assets), the financial account shows a positive number
+:::
+
+## Relationships between the accounts
+
+- Current Account + Capital Account: net receive from the rest of the world in return for the exports of goods and other resources
+- Financial Account: net increase foreign assets
+
+- Current Account + Capital Account = Financial Account - Errors and Omissions 
+- BOP is a description of the international budget constraint for the country
+
+::: notes
+  - a country has to have a surplus in current and capital accounts to invest abroad
+  - it has to borrow from abroad when it runs deficits in the sum of current and capital accounts
+:::
+
+## Net International Investment Position
+
+<div style="font-size:40%">
+|                                      | Opening position | Transactions (fin. acc.) | Other changes in volume | Revaluation | Closing position |
+|--------------------------------------|------------------|--------------------------|--------------------------|--------------|------------------|
+| **Assets (by functional category)**  |                  |                          |                          |              |                  |
+| Direct investment                    | 78               | 8                        | 0                        | 1            | 87               |
+| Portfolio investment                 | 190              | 18                       | 0                        | 2            | 210              |
+| Financial derivatives (other than reserves) and ESOs | 7 | 3 | 0 | 0 | 10 |
+| Other investment                     | 166              | 20                       | 0                        | 0            | 186              |
+| Reserve assets                       | 833              | 8                        | 0                        | 12           | 853              |
+| **Total assets**                     | **1,274**        | **57**                   | **0**                    | **15**       | **1,346**        |
+| **Liabilities (by functional category)** |              |                          |                          |              |                  |
+| Direct investment                    | 210              | 11                       | 0                        | 2            | 223              |
+| Portfolio investment                 | 300              | 14                       | 0                        | 5            | 319              |
+| Financial derivatives (other than reserves) and ESOs | 0 | 0 | 0 | 0 | 0 |
+| Other investment                     | 295              | 22                       | 0                        | 0            | 317              |
+| **Total liabilities**                | **805**          | **47**                   | **0**                    | **7**        | **859**          |
+| **Net IIP**                          | **469**          | **10**                   | **0**                    | **8**        | **487**          |
+</div>
+
+::: notes
+- The financial account records a country's flow of international transactions in assets and liabilities over a period, while the net international investment position (NIIP) is a stock measure of its total external assets and liabilities at a specific point in time
+- The financial account's transactions, such as buying or selling stocks and bonds, directly contribute to changes in the NIIP from one period to the next, along with changes in asset values due to exchange rates and market price movements
+:::
+
+## Japan’s Current Account
+
+```{r}
+#| message: false
+df = fread("../data/09 bop/imf_ca.csv",header = T)
+df = melt(df,id.vars="region",variable.factor = F)
+df[,value:=as.numeric(value)]
+df[,variable:=as.integer(variable)]
+df[,future:=as.character(variable>=2025)]
+
+keep = c("Japan","Euro area","United States",
+         "Emerging and Developing Asia")
+plot_df = df[region%in%keep&!is.na(value)]
+
+ggplot(plot_df, 
+       aes(variable, value,
+           group = region, 
+           colour = region, 
+           size = region == "Japan")) +
+  geom_hline(yintercept = 0, linetype = "dashed") +
+  geom_line() +
+  scale_size_manual(values = c(`TRUE` = 1.2, `FALSE` = 0.6), guide = "none") +
+  scale_y_continuous(labels = function(x) paste0(x, "%")) +
+  labs(title = "Current Account Balance (% of GDP): Japan vs others",
+       x = NULL, y = "% of GDP", colour = NULL,
+       caption = "Source: IMF WEO") +
+  theme_minimal(base_size = 12) +
+  theme(legend.position = "bottom") 
+```
+
+::: notes
+- Balanced (0 percent) during the Bretton Woods regime
+  - yen was fixed to the US dollar at 360 yen/dollar (1949-1971)
+  - negative during the boom years and positive when domestic growth slowed
+- Surpluses often in the 1970s and consistently since 1981: income surplus
+:::
+ 
+## Japan's current account components 
+```{r}
+dt = fread("../data/09 bop/mof_ca.csv", skip=2)
+setnames(dt,colnames(dt)[[1]],"year")
+dt = melt(dt,id.vars = "year",variable.name = "item")
+dt[,item:=trimws(gsub("/.*$","",item))]
+dt[,year:=as.integer(year)]
+dt[,type:=ifelse(grepl("Current",item),"Total","Component")]
+dt[,value:=value/10^4]
+
+ggplot() +
+  geom_col(data = dt[type=="Component"],
+           aes(x = year, y = value, fill = item),
+           position="stack") +
+  geom_line(data = dt[type=="Total"] ,
+            aes(x = year, y = value), color="black", size=1) +
+  geom_hline(yintercept=0, color="gray40") +
+  labs(title="Japan: Current Account Components and Total",
+       x=NULL, y="Net balance (tril yen)", 
+       fill="Component", caption = "Source: MOF") +
+  theme_minimal() +
+  theme(legend.position="bottom")
+```
+ 
+::: notes
+- Service trade always deficit: important driver is international tourism balance, run large deficits but turned positive in 2015.
+- Net exports of goods replaced by primary income (i.e., interest and dividends from external assets) after 2007 
+- Large trade deficit in 2011: natural gas to generate electricity aftermath of earthquake and nuclear plants shutdown
+- Large trade deficit in 2022: high energy import costs due to the war in Ukraine and the depreciation of the yen making imports more expensive
+:::
+
+## International Tourism and Travel Balance
+
+```{r}
+du = fread("../data/09 bop/boj_travel.csv", skip=2)
+setnames(du,colnames(du)[[1]],"year")
+du = melt(du,id.vars = "year",variable.name = "item")
+du = du[grepl("Travel",item)&!grepl("Education|Other",item)]
+du[,item:=trimws(gsub("Services/Travel/?","",
+                      gsub("/?Net balance","",item)))]
+du[,year:=as.integer(year)]
+du[,type:=ifelse(item=="","Total","Component")]
+du[,value:=value/10^4]
+
+ggplot() +
+  geom_col(data = du[type=="Component"],
+           aes(x = year, y = value, fill = item),
+           position="stack") +
+  geom_line(data = du[type=="Total"] ,
+            aes(x = year, y = value), color="black", size=1) +
+  geom_hline(yintercept=0, color="gray40") +
+  labs(title="Japan: Travel Balance Components and Total",
+       x=NULL, y="Net balance (tril yen)", 
+       fill="Component", caption = "Source: BOJ") +
+  theme_minimal() +
+  theme(legend.position="bottom")
+```
+
+## Japan's financial account components 
+```{r}
+dv = fread("../data/09 bop/mof_fa.csv", header = T)
+dv = melt(dv,id.vars = "year",variable.name = "item")
+dv = dv[!grepl(":",item)]
+dv[,year:=as.integer(year)]
+dv[,type:=ifelse(item=="Financial account","Total","Component")]
+dv[,value:=value/10^4]
+
+ggplot() +
+  geom_col(data = dv[type=="Component"],
+           aes(x = year, y = value, fill = item),
+           position="stack") +
+  geom_line(data = dv[type=="Total"] ,
+            aes(x = year, y = value), color="black", size=1) +
+  geom_hline(yintercept=0, color="gray40") +
+  labs(title="Japan: Financial Account Components and Total",
+       x=NULL, y="Net balance (tril yen)", 
+       fill="Component", caption = "Source: MOF") +
+  theme_minimal() +
+  theme(legend.position="bottom")+
+  guides(fill=guide_legend(nrow = 2))
+```
+
+::: notes
+- A current account surplus implies an increase in external assets (i.e., surpluses of the financial accounts)
+- Composition	Dominated by direct investment and portfolio assets.	Shift from lending (1980s) → equity ownership (post-2000).
+- Net direct investment has increased steadily
+- Net portfolio investment abroad has been very volatile
+  - in 2011: partly due to Japanese insurance companies’ repatriation of assets to pay for insurance reimbursements
+- Official reserve: MOF (BOJ being its agent) occasionally intervened in the foreign exchange market to buy the US dollar (and sell the yen)
+  - net external assets increase in 2003–2004 and 2011
+:::
+
+## Japan's NIIP
+```{r}
+dc = fread("../data/09 bop/oecd_niip.csv")
+setnames(dc, tolower(names(dc)))
+setnames(dc,"niip","value")
+latest = dc[, .SD[which.max(time)], by = country]
+outliers <- c(
+  latest[order(-value)][1:3, country],
+  latest[order(value)][1:3, country],
+  "Japan"
+)
+ggplot(dc, aes(x = time, y = value/10^6, group = country,
+               color = country == "Japan", size = country == "Japan")) +
+  geom_line(alpha = 0.6) +
+  geom_text_repel(
+    data = latest[country %in% outliers],
+    aes(label = country),
+    nudge_x = 0.3, size = 3, color = "black"
+  ) +
+  scale_color_manual(values = c("gray70", "red")) +
+  scale_size_manual(values = c(0.5, 1.3)) +
+  labs(
+    title = "Net International Investment Position (NIIP)",
+    subtitle = "Trillion USD — Japan highlighted in red",
+    x = NULL, y = "Trillion USD"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(legend.position = "none")
+```
+:::notes
+- Level	Japan has one of the world’s largest positive NIIPs (~US$3–4 trillion, >80% of GDP 2024).	Reflects decades of current account surpluses and outward FDI. (US: -90% of its nominal GDP 2024)
+- Resilience	Stable external position despite aging and yen fluctuations.	Suggests strong net creditor status and global financial reach.
+:::
+
+
+## References
+<div style="font-size:50%">
+- Ito and Hoshi (2020), Chapter 11-12
+- Data link:
+  - https://www.boj.or.jp/en/statistics/br/bop_06/fdinote.htm
+  - https://www.imf.org/external/pubs/ft/bop/2007/bopman6.htm
+  - https://www.imf.org/external/datamapper/BCA_NGDPD@WEO/OEMDC/ADVEC/WEOWORLD
+  - https://www.stat-search.boj.or.jp/index_en.html#
+  - https://www.mof.go.jp/english/policy/international_policy/reference/balance_of_payments/ebpnet.htm
+</div>
+

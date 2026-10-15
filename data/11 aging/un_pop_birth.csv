@@ -1,0 +1,3625 @@
+Country,date,variable,value
+Japan,1950,Population Growth,1.728
+Japan,1951,Population Growth,1.502
+Japan,1952,Population Growth,1.403
+Japan,1953,Population Growth,1.248
+Japan,1954,Population Growth,1.137
+Japan,1955,Population Growth,1.078
+Japan,1956,Population Growth,0.897
+Japan,1957,Population Growth,0.741
+Japan,1958,Population Growth,0.821
+Japan,1959,Population Growth,0.809
+Japan,1960,Population Growth,0.81
+Japan,1961,Population Growth,0.88
+Japan,1962,Population Growth,0.879
+Japan,1963,Population Growth,0.911
+Japan,1964,Population Growth,0.964
+Japan,1965,Population Growth,1.079
+Japan,1966,Population Growth,0.839
+Japan,1967,Population Growth,1.263
+Japan,1968,Population Growth,1.193
+Japan,1969,Population Growth,1.168
+Japan,1970,Population Growth,1.164
+Japan,1971,Population Growth,1.146
+Japan,1972,Population Growth,1.224
+Japan,1973,Population Growth,1.279
+Japan,1974,Population Growth,1.228
+Japan,1975,Population Growth,1.101
+Japan,1976,Population Growth,0.974
+Japan,1977,Population Growth,0.889
+Japan,1978,Population Growth,0.839
+Japan,1979,Population Growth,0.776
+Japan,1980,Population Growth,0.644
+Japan,1981,Population Growth,0.427
+Japan,1982,Population Growth,0.398
+Japan,1983,Population Growth,0.376
+Japan,1984,Population Growth,0.349
+Japan,1985,Population Growth,0.393
+Japan,1986,Population Growth,0.489
+Japan,1987,Population Growth,0.459
+Japan,1988,Population Growth,0.414
+Japan,1989,Population Growth,0.353
+Japan,1990,Population Growth,0.381
+Japan,1991,Population Growth,0.411
+Japan,1992,Population Growth,0.384
+Japan,1993,Population Growth,0.348
+Japan,1994,Population Growth,0.367
+Japan,1995,Population Growth,0.249
+Japan,1996,Population Growth,0.233
+Japan,1997,Population Growth,0.228
+Japan,1998,Population Growth,0.22
+Japan,1999,Population Growth,0.179
+Japan,2000,Population Growth,0.178
+Japan,2001,Population Growth,0.188
+Japan,2002,Population Growth,0.165
+Japan,2003,Population Growth,0.128
+Japan,2004,Population Growth,0.098
+Japan,2005,Population Growth,0.054
+Japan,2006,Population Growth,0.077
+Japan,2007,Population Growth,0.064
+Japan,2008,Population Growth,0.042
+Japan,2009,Population Growth,0.015
+Japan,2010,Population Growth,-0.026
+Japan,2011,Population Growth,-0.113
+Japan,2012,Population Growth,-0.15
+Japan,2013,Population Growth,-0.17
+Japan,2014,Population Growth,-0.201
+Japan,2015,Population Growth,-0.13
+Japan,2016,Population Growth,-0.053
+Japan,2017,Population Growth,-0.097
+Japan,2018,Population Growth,-0.141
+Japan,2019,Population Growth,-0.197
+Japan,2020,Population Growth,-0.428
+Japan,2021,Population Growth,-0.565
+Japan,2022,Population Growth,-0.523
+Japan,2023,Population Growth,-0.482
+Japan,2024,Population Growth,-0.514
+Japan,2025,Population Growth,-0.538
+Japan,2026,Population Growth,-0.562
+Japan,2027,Population Growth,-0.577
+Japan,2028,Population Growth,-0.59
+Japan,2029,Population Growth,-0.597
+Japan,2030,Population Growth,-0.61
+Japan,2031,Population Growth,-0.618
+Japan,2032,Population Growth,-0.627
+Japan,2033,Population Growth,-0.632
+Japan,2034,Population Growth,-0.642
+Japan,2035,Population Growth,-0.649
+Japan,2036,Population Growth,-0.651
+Japan,2037,Population Growth,-0.653
+Japan,2038,Population Growth,-0.652
+Japan,2039,Population Growth,-0.653
+Japan,2040,Population Growth,-0.655
+Japan,2041,Population Growth,-0.661
+Japan,2042,Population Growth,-0.653
+Japan,2043,Population Growth,-0.652
+Japan,2044,Population Growth,-0.649
+Japan,2045,Population Growth,-0.651
+Japan,2046,Population Growth,-0.646
+Japan,2047,Population Growth,-0.643
+Japan,2048,Population Growth,-0.637
+Japan,2049,Population Growth,-0.639
+Japan,2050,Population Growth,-0.638
+Japan,2051,Population Growth,-0.642
+Japan,2052,Population Growth,-0.654
+Japan,2053,Population Growth,-0.656
+Japan,2054,Population Growth,-0.678
+Japan,2055,Population Growth,-0.683
+Japan,2056,Population Growth,-0.704
+Japan,2057,Population Growth,-0.715
+Japan,2058,Population Growth,-0.728
+Japan,2059,Population Growth,-0.753
+Japan,2060,Population Growth,-0.762
+Japan,2061,Population Growth,-0.772
+Japan,2062,Population Growth,-0.782
+Japan,2063,Population Growth,-0.79
+Japan,2064,Population Growth,-0.798
+Japan,2065,Population Growth,-0.811
+Japan,2066,Population Growth,-0.808
+Japan,2067,Population Growth,-0.804
+Japan,2068,Population Growth,-0.807
+Japan,2069,Population Growth,-0.796
+Japan,2070,Population Growth,-0.789
+Japan,2071,Population Growth,-0.763
+Japan,2072,Population Growth,-0.745
+Japan,2073,Population Growth,-0.728
+Japan,2074,Population Growth,-0.697
+Japan,2075,Population Growth,-0.67
+Japan,2076,Population Growth,-0.644
+Japan,2077,Population Growth,-0.622
+Japan,2078,Population Growth,-0.596
+Japan,2079,Population Growth,-0.573
+Japan,2080,Population Growth,-0.556
+Japan,2081,Population Growth,-0.533
+Japan,2082,Population Growth,-0.521
+Japan,2083,Population Growth,-0.505
+Japan,2084,Population Growth,-0.499
+Japan,2085,Population Growth,-0.491
+Japan,2086,Population Growth,-0.482
+Japan,2087,Population Growth,-0.473
+Japan,2088,Population Growth,-0.469
+Japan,2089,Population Growth,-0.469
+Japan,2090,Population Growth,-0.468
+Japan,2091,Population Growth,-0.468
+Japan,2092,Population Growth,-0.476
+Japan,2093,Population Growth,-0.475
+Japan,2094,Population Growth,-0.474
+Japan,2095,Population Growth,-0.479
+Japan,2096,Population Growth,-0.486
+Japan,2097,Population Growth,-0.482
+Japan,2098,Population Growth,-0.489
+Japan,2099,Population Growth,-0.498
+Japan,2100,Population Growth,-0.501
+Italy,1950,Population Growth,0.934
+Italy,1951,Population Growth,0.615
+Italy,1952,Population Growth,0.521
+Italy,1953,Population Growth,1.139
+Italy,1954,Population Growth,0.632
+Italy,1955,Population Growth,0.612
+Italy,1956,Population Growth,0.512
+Italy,1957,Population Growth,0.54
+Italy,1958,Population Growth,0.567
+Italy,1959,Population Growth,0.624
+Italy,1960,Population Growth,0.572
+Italy,1961,Population Growth,0.639
+Italy,1962,Population Growth,0.782
+Italy,1963,Population Growth,0.808
+Italy,1964,Population Growth,0.958
+Italy,1965,Population Growth,0.842
+Italy,1966,Population Growth,0.854
+Italy,1967,Population Growth,0.755
+Italy,1968,Population Growth,0.668
+Italy,1969,Population Growth,0.648
+Italy,1970,Population Growth,0.593
+Italy,1971,Population Growth,0.593
+Italy,1972,Population Growth,0.742
+Italy,1973,Population Growth,0.67
+Italy,1974,Population Growth,0.686
+Italy,1975,Population Growth,0.569
+Italy,1976,Population Growth,0.492
+Italy,1977,Population Growth,0.426
+Italy,1978,Population Growth,0.378
+Italy,1979,Population Growth,0.312
+Italy,1980,Population Growth,0.681
+Italy,1981,Population Growth,0.151
+Italy,1982,Population Growth,0.105
+Italy,1983,Population Growth,0.06
+Italy,1984,Population Growth,0.095
+Italy,1985,Population Growth,0.064
+Italy,1986,Population Growth,0.009
+Italy,1987,Population Growth,0.048
+Italy,1988,Population Growth,0.082
+Italy,1989,Population Growth,0.087
+Italy,1990,Population Growth,0.105
+Italy,1991,Population Growth,0.049
+Italy,1992,Population Growth,0.125
+Italy,1993,Population Growth,0.035
+Italy,1994,Population Growth,0.833
+Italy,1995,Population Growth,-0.892
+Italy,1996,Population Growth,0.052
+Italy,1997,Population Growth,0.043
+Italy,1998,Population Growth,0.047
+Italy,1999,Population Growth,0.042
+Italy,2000,Population Growth,0.067
+Italy,2001,Population Growth,0.05
+Italy,2002,Population Growth,0.351
+Italy,2003,Population Growth,0.757
+Italy,2004,Population Growth,0.752
+Italy,2005,Population Growth,0.425
+Italy,2006,Population Growth,0.376
+Italy,2007,Population Growth,0.825
+Italy,2008,Population Growth,0.702
+Italy,2009,Population Growth,0.445
+Italy,2010,Population Growth,0.422
+Italy,2011,Population Growth,0.254
+Italy,2012,Population Growth,0.287
+Italy,2013,Population Growth,0.117
+Italy,2014,Population Growth,-0.083
+Italy,2015,Population Growth,-0.21
+Italy,2016,Population Growth,-0.111
+Italy,2017,Population Growth,-0.18
+Italy,2018,Population Growth,-0.194
+Italy,2019,Population Growth,-0.295
+Italy,2020,Population Growth,-0.429
+Italy,2021,Population Growth,-0.184
+Italy,2022,Population Growth,-0.186
+Italy,2023,Population Growth,-0.216
+Italy,2024,Population Growth,-0.311
+Italy,2025,Population Growth,-0.353
+Italy,2026,Population Growth,-0.393
+Italy,2027,Population Growth,-0.414
+Italy,2028,Population Growth,-0.415
+Italy,2029,Population Growth,-0.424
+Italy,2030,Population Growth,-0.454
+Italy,2031,Population Growth,-0.466
+Italy,2032,Population Growth,-0.45
+Italy,2033,Population Growth,-0.458
+Italy,2034,Population Growth,-0.473
+Italy,2035,Population Growth,-0.481
+Italy,2036,Population Growth,-0.479
+Italy,2037,Population Growth,-0.496
+Italy,2038,Population Growth,-0.5
+Italy,2039,Population Growth,-0.524
+Italy,2040,Population Growth,-0.524
+Italy,2041,Population Growth,-0.526
+Italy,2042,Population Growth,-0.554
+Italy,2043,Population Growth,-0.592
+Italy,2044,Population Growth,-0.587
+Italy,2045,Population Growth,-0.616
+Italy,2046,Population Growth,-0.634
+Italy,2047,Population Growth,-0.672
+Italy,2048,Population Growth,-0.684
+Italy,2049,Population Growth,-0.717
+Italy,2050,Population Growth,-0.751
+Italy,2051,Population Growth,-0.764
+Italy,2052,Population Growth,-0.786
+Italy,2053,Population Growth,-0.825
+Italy,2054,Population Growth,-0.843
+Italy,2055,Population Growth,-0.871
+Italy,2056,Population Growth,-0.907
+Italy,2057,Population Growth,-0.917
+Italy,2058,Population Growth,-0.942
+Italy,2059,Population Growth,-0.955
+Italy,2060,Population Growth,-0.96
+Italy,2061,Population Growth,-0.971
+Italy,2062,Population Growth,-0.975
+Italy,2063,Population Growth,-0.954
+Italy,2064,Population Growth,-0.95
+Italy,2065,Population Growth,-0.945
+Italy,2066,Population Growth,-0.921
+Italy,2067,Population Growth,-0.898
+Italy,2068,Population Growth,-0.898
+Italy,2069,Population Growth,-0.884
+Italy,2070,Population Growth,-0.868
+Italy,2071,Population Growth,-0.834
+Italy,2072,Population Growth,-0.822
+Italy,2073,Population Growth,-0.792
+Italy,2074,Population Growth,-0.778
+Italy,2075,Population Growth,-0.736
+Italy,2076,Population Growth,-0.709
+Italy,2077,Population Growth,-0.691
+Italy,2078,Population Growth,-0.684
+Italy,2079,Population Growth,-0.677
+Italy,2080,Population Growth,-0.66
+Italy,2081,Population Growth,-0.65
+Italy,2082,Population Growth,-0.647
+Italy,2083,Population Growth,-0.63
+Italy,2084,Population Growth,-0.637
+Italy,2085,Population Growth,-0.631
+Italy,2086,Population Growth,-0.617
+Italy,2087,Population Growth,-0.63
+Italy,2088,Population Growth,-0.627
+Italy,2089,Population Growth,-0.64
+Italy,2090,Population Growth,-0.635
+Italy,2091,Population Growth,-0.628
+Italy,2092,Population Growth,-0.648
+Italy,2093,Population Growth,-0.628
+Italy,2094,Population Growth,-0.637
+Italy,2095,Population Growth,-0.651
+Italy,2096,Population Growth,-0.655
+Italy,2097,Population Growth,-0.665
+Italy,2098,Population Growth,-0.651
+Italy,2099,Population Growth,-0.67
+Italy,2100,Population Growth,-0.676
+France,1950,Population Growth,1.106
+France,1951,Population Growth,1.035
+France,1952,Population Growth,1.064
+France,1953,Population Growth,1.018
+France,1954,Population Growth,1.049
+France,1955,Population Growth,1.043
+France,1956,Population Growth,0.997
+France,1957,Population Growth,1.002
+France,1958,Population Growth,1.018
+France,1959,Population Growth,1.039
+France,1960,Population Growth,0.972
+France,1961,Population Growth,1.024
+France,1962,Population Growth,0.924
+France,1963,Population Growth,1.031
+France,1964,Population Growth,1.054
+France,1965,Population Growth,0.816
+France,1966,Population Growth,0.865
+France,1967,Population Growth,0.716
+France,1968,Population Growth,0.781
+France,1969,Population Growth,0.846
+France,1970,Population Growth,0.963
+France,1971,Population Growth,0.918
+France,1972,Population Growth,0.833
+France,1973,Population Growth,0.778
+France,1974,Population Growth,0.532
+France,1975,Population Growth,0.386
+France,1976,Population Growth,0.419
+France,1977,Population Growth,0.478
+France,1978,Population Growth,0.395
+France,1979,Population Growth,0.469
+France,1980,Population Growth,0.572
+France,1981,Population Growth,0.588
+France,1982,Population Growth,0.615
+France,1983,Population Growth,0.507
+France,1984,Population Growth,0.536
+France,1985,Population Growth,0.514
+France,1986,Population Growth,0.513
+France,1987,Population Growth,0.544
+France,1988,Population Growth,0.572
+France,1989,Population Growth,0.572
+France,1990,Population Growth,0.502
+France,1991,Population Growth,0.483
+France,1992,Population Growth,0.504
+France,1993,Population Growth,0.351
+France,1994,Population Growth,0.335
+France,1995,Population Growth,0.327
+France,1996,Population Growth,0.32
+France,1997,Population Growth,0.323
+France,1998,Population Growth,0.393
+France,1999,Population Growth,0.643
+France,2000,Population Growth,0.705
+France,2001,Population Growth,0.707
+France,2002,Population Growth,0.697
+France,2003,Population Growth,0.67
+France,2004,Population Growth,0.754
+France,2005,Population Growth,0.712
+France,2006,Population Growth,0.662
+France,2007,Population Growth,0.567
+France,2008,Population Growth,0.544
+France,2009,Population Growth,0.493
+France,2010,Population Growth,0.49
+France,2011,Population Growth,0.506
+France,2012,Population Growth,0.511
+France,2013,Population Growth,0.515
+France,2014,Population Growth,0.43
+France,2015,Population Growth,0.261
+France,2016,Population Growth,0.263
+France,2017,Population Growth,0.344
+France,2018,Population Growth,0.374
+France,2019,Population Growth,0.266
+France,2020,Population Growth,0.269
+France,2021,Population Growth,0.272
+France,2022,Population Growth,0.314
+France,2023,Population Growth,0.173
+France,2024,Population Growth,0.157
+France,2025,Population Growth,0.15
+France,2026,Population Growth,0.137
+France,2027,Population Growth,0.138
+France,2028,Population Growth,0.132
+France,2029,Population Growth,0.136
+France,2030,Population Growth,0.131
+France,2031,Population Growth,0.129
+France,2032,Population Growth,0.13
+France,2033,Population Growth,0.129
+France,2034,Population Growth,0.134
+France,2035,Population Growth,0.132
+France,2036,Population Growth,0.127
+France,2037,Population Growth,0.127
+France,2038,Population Growth,0.112
+France,2039,Population Growth,0.099
+France,2040,Population Growth,0.094
+France,2041,Population Growth,0.093
+France,2042,Population Growth,0.087
+France,2043,Population Growth,0.066
+France,2044,Population Growth,0.056
+France,2045,Population Growth,0.044
+France,2046,Population Growth,0.026
+France,2047,Population Growth,0.017
+France,2048,Population Growth,0.002
+France,2049,Population Growth,-0.013
+France,2050,Population Growth,-0.021
+France,2051,Population Growth,-0.036
+France,2052,Population Growth,-0.036
+France,2053,Population Growth,-0.049
+France,2054,Population Growth,-0.057
+France,2055,Population Growth,-0.071
+France,2056,Population Growth,-0.063
+France,2057,Population Growth,-0.065
+France,2058,Population Growth,-0.061
+France,2059,Population Growth,-0.065
+France,2060,Population Growth,-0.061
+France,2061,Population Growth,-0.057
+France,2062,Population Growth,-0.055
+France,2063,Population Growth,-0.042
+France,2064,Population Growth,-0.035
+France,2065,Population Growth,-0.03
+France,2066,Population Growth,-0.013
+France,2067,Population Growth,-0.011
+France,2068,Population Growth,-0.003
+France,2069,Population Growth,0.014
+France,2070,Population Growth,0.018
+France,2071,Population Growth,0.04
+France,2072,Population Growth,0.037
+France,2073,Population Growth,0.045
+France,2074,Population Growth,0.05
+France,2075,Population Growth,0.061
+France,2076,Population Growth,0.062
+France,2077,Population Growth,0.06
+France,2078,Population Growth,0.057
+France,2079,Population Growth,0.059
+France,2080,Population Growth,0.059
+France,2081,Population Growth,0.064
+France,2082,Population Growth,0.058
+France,2083,Population Growth,0.074
+France,2084,Population Growth,0.06
+France,2085,Population Growth,0.053
+France,2086,Population Growth,0.06
+France,2087,Population Growth,0.056
+France,2088,Population Growth,0.055
+France,2089,Population Growth,0.048
+France,2090,Population Growth,0.046
+France,2091,Population Growth,0.039
+France,2092,Population Growth,0.032
+France,2093,Population Growth,0.036
+France,2094,Population Growth,0.022
+France,2095,Population Growth,0.009
+France,2096,Population Growth,-0.009
+France,2097,Population Growth,-0.007
+France,2098,Population Growth,-0.014
+France,2099,Population Growth,-0.023
+France,2100,Population Growth,-0.033
+Germany,1950,Population Growth,-0.2
+Germany,1951,Population Growth,0.012
+Germany,1952,Population Growth,0.117
+Germany,1953,Population Growth,0.192
+Germany,1954,Population Growth,0.292
+Germany,1955,Population Growth,0.362
+Germany,1956,Population Growth,0.432
+Germany,1957,Population Growth,0.905
+Germany,1958,Population Growth,0.794
+Germany,1959,Population Growth,0.726
+Germany,1960,Population Growth,0.845
+Germany,1961,Population Growth,0.7
+Germany,1962,Population Growth,0.984
+Germany,1963,Population Growth,0.902
+Germany,1964,Population Growth,0.74
+Germany,1965,Population Growth,0.987
+Germany,1966,Population Growth,0.702
+Germany,1967,Population Growth,0.236
+Germany,1968,Population Growth,0.672
+Germany,1969,Population Growth,0.931
+Germany,1970,Population Growth,-0.26
+Germany,1971,Population Growth,0.619
+Germany,1972,Population Growth,0.334
+Germany,1973,Population Growth,0.293
+Germany,1974,Population Growth,-0.218
+Germany,1975,Population Growth,-0.531
+Germany,1976,Population Growth,-0.328
+Germany,1977,Population Growth,-0.129
+Germany,1978,Population Growth,-0.05
+Germany,1979,Population Growth,0.134
+Germany,1980,Population Growth,0.294
+Germany,1981,Population Growth,0.044
+Germany,1982,Population Growth,-0.183
+Germany,1983,Population Growth,-0.25
+Germany,1984,Population Growth,-0.329
+Germany,1985,Population Growth,-0.017
+Germany,1986,Population Growth,0.172
+Germany,1987,Population Growth,0.183
+Germany,1988,Population Growth,0.643
+Germany,1989,Population Growth,0.934
+Germany,1990,Population Growth,0.833
+Germany,1991,Population Growth,0.656
+Germany,1992,Population Growth,0.91
+Germany,1993,Population Growth,0.45
+Germany,1994,Population Growth,0.253
+Germany,1995,Population Growth,0.348
+Germany,1996,Population Growth,0.244
+Germany,1997,Population Growth,0.063
+Germany,1998,Population Growth,-0.985
+Germany,1999,Population Growth,0.172
+Germany,2000,Population Growth,0.12
+Germany,2001,Population Growth,0.214
+Germany,2002,Population Growth,0.114
+Germany,2003,Population Growth,-0.008
+Germany,2004,Population Growth,-0.038
+Germany,2005,Population Growth,-0.074
+Germany,2006,Population Growth,-0.769
+Germany,2007,Population Growth,-0.219
+Germany,2008,Population Growth,-0.243
+Germany,2009,Population Growth,-0.19
+Germany,2010,Population Growth,-0.068
+Germany,2011,Population Growth,0.135
+Germany,2012,Population Growth,0.01
+Germany,2013,Population Growth,0.299
+Germany,2014,Population Growth,0.524
+Germany,2015,Population Growth,1.189
+Germany,2016,Population Growth,0.47
+Germany,2017,Population Growth,0.36
+Germany,2018,Population Growth,0.276
+Germany,2019,Population Growth,0.181
+Germany,2020,Population Growth,-0.015
+Germany,2021,Population Growth,0.178
+Germany,2022,Population Growth,0.748
+Germany,2023,Population Growth,0.349
+Germany,2024,Population Growth,-0.339
+Germany,2025,Population Growth,-0.794
+Germany,2026,Population Growth,-0.232
+Germany,2027,Population Growth,-0.251
+Germany,2028,Population Growth,-0.262
+Germany,2029,Population Growth,-0.276
+Germany,2030,Population Growth,-0.266
+Germany,2031,Population Growth,-0.287
+Germany,2032,Population Growth,-0.268
+Germany,2033,Population Growth,-0.277
+Germany,2034,Population Growth,-0.252
+Germany,2035,Population Growth,-0.268
+Germany,2036,Population Growth,-0.288
+Germany,2037,Population Growth,-0.269
+Germany,2038,Population Growth,-0.28
+Germany,2039,Population Growth,-0.274
+Germany,2040,Population Growth,-0.268
+Germany,2041,Population Growth,-0.245
+Germany,2042,Population Growth,-0.245
+Germany,2043,Population Growth,-0.272
+Germany,2044,Population Growth,-0.286
+Germany,2045,Population Growth,-0.287
+Germany,2046,Population Growth,-0.286
+Germany,2047,Population Growth,-0.296
+Germany,2048,Population Growth,-0.321
+Germany,2049,Population Growth,-0.315
+Germany,2050,Population Growth,-0.313
+Germany,2051,Population Growth,-0.317
+Germany,2052,Population Growth,-0.318
+Germany,2053,Population Growth,-0.354
+Germany,2054,Population Growth,-0.372
+Germany,2055,Population Growth,-0.376
+Germany,2056,Population Growth,-0.362
+Germany,2057,Population Growth,-0.367
+Germany,2058,Population Growth,-0.365
+Germany,2059,Population Growth,-0.34
+Germany,2060,Population Growth,-0.338
+Germany,2061,Population Growth,-0.306
+Germany,2062,Population Growth,-0.307
+Germany,2063,Population Growth,-0.284
+Germany,2064,Population Growth,-0.272
+Germany,2065,Population Growth,-0.261
+Germany,2066,Population Growth,-0.262
+Germany,2067,Population Growth,-0.253
+Germany,2068,Population Growth,-0.227
+Germany,2069,Population Growth,-0.225
+Germany,2070,Population Growth,-0.202
+Germany,2071,Population Growth,-0.223
+Germany,2072,Population Growth,-0.208
+Germany,2073,Population Growth,-0.221
+Germany,2074,Population Growth,-0.216
+Germany,2075,Population Growth,-0.187
+Germany,2076,Population Growth,-0.218
+Germany,2077,Population Growth,-0.218
+Germany,2078,Population Growth,-0.196
+Germany,2079,Population Growth,-0.188
+Germany,2080,Population Growth,-0.177
+Germany,2081,Population Growth,-0.16
+Germany,2082,Population Growth,-0.145
+Germany,2083,Population Growth,-0.15
+Germany,2084,Population Growth,-0.135
+Germany,2085,Population Growth,-0.135
+Germany,2086,Population Growth,-0.138
+Germany,2087,Population Growth,-0.117
+Germany,2088,Population Growth,-0.083
+Germany,2089,Population Growth,-0.077
+Germany,2090,Population Growth,-0.088
+Germany,2091,Population Growth,-0.066
+Germany,2092,Population Growth,-0.036
+Germany,2093,Population Growth,-0.03
+Germany,2094,Population Growth,-0.027
+Germany,2095,Population Growth,-0.029
+Germany,2096,Population Growth,-0.044
+Germany,2097,Population Growth,-0.06
+Germany,2098,Population Growth,-0.024
+Germany,2099,Population Growth,-0.038
+Germany,2100,Population Growth,-0.049
+Canada,1950,Population Growth,2.156
+Canada,1951,Population Growth,2.747
+Canada,1952,Population Growth,2.846
+Canada,1953,Population Growth,2.806
+Canada,1954,Population Growth,2.77
+Canada,1955,Population Growth,2.507
+Canada,1956,Population Growth,2.899
+Canada,1957,Population Growth,2.975
+Canada,1958,Population Growth,2.517
+Canada,1959,Population Growth,2.24
+Canada,1960,Population Growth,2.091
+Canada,1961,Population Growth,1.941
+Canada,1962,Population Growth,1.862
+Canada,1963,Population Growth,1.87
+Canada,1964,Population Growth,1.864
+Canada,1965,Population Growth,1.867
+Canada,1966,Population Growth,1.839
+Canada,1967,Population Growth,1.673
+Canada,1968,Population Growth,1.492
+Canada,1969,Population Growth,1.415
+Canada,1970,Population Growth,2.366
+Canada,1971,Population Growth,1.846
+Canada,1972,Population Growth,1.198
+Canada,1973,Population Growth,1.317
+Canada,1974,Population Growth,1.434
+Canada,1975,Population Growth,1.393
+Canada,1976,Population Growth,1.241
+Canada,1977,Population Growth,1.087
+Canada,1978,Population Growth,0.996
+Canada,1979,Population Growth,1.148
+Canada,1980,Population Growth,1.284
+Canada,1981,Population Growth,1.237
+Canada,1982,Population Growth,1.126
+Canada,1983,Population Growth,1.03
+Canada,1984,Population Growth,0.988
+Canada,1985,Population Growth,1.005
+Canada,1986,Population Growth,1.17
+Canada,1987,Population Growth,1.33
+Canada,1988,Population Growth,1.563
+Canada,1989,Population Growth,1.664
+Canada,1990,Population Growth,1.409
+Canada,1991,Population Growth,1.221
+Canada,1992,Population Growth,1.2
+Canada,1993,Population Growth,1.107
+Canada,1994,Population Growth,1.078
+Canada,1995,Population Growth,1.05
+Canada,1996,Population Growth,1.031
+Canada,1997,Population Growth,0.921
+Canada,1998,Population Growth,0.873
+Canada,1999,Population Growth,0.896
+Canada,2000,Population Growth,1.005
+Canada,2001,Population Growth,1.067
+Canada,2002,Population Growth,0.986
+Canada,2003,Population Growth,0.913
+Canada,2004,Population Growth,0.939
+Canada,2005,Population Growth,0.966
+Canada,2006,Population Growth,0.991
+Canada,2007,Population Growth,1.032
+Canada,2008,Population Growth,1.113
+Canada,2009,Population Growth,1.13
+Canada,2010,Population Growth,1.05
+Canada,2011,Population Growth,1.037
+Canada,2012,Population Growth,1.077
+Canada,2013,Population Growth,1.037
+Canada,2014,Population Growth,0.886
+Canada,2015,Population Growth,0.946
+Canada,2016,Population Growth,1.216
+Canada,2017,Population Growth,1.272
+Canada,2018,Population Growth,1.353
+Canada,2019,Population Growth,1.247
+Canada,2020,Population Growth,0.804
+Canada,2021,Population Growth,0.67
+Canada,2022,Population Growth,1.229
+Canada,2023,Population Growth,1.218
+Canada,2024,Population Growth,1.026
+Canada,2025,Population Growth,0.899
+Canada,2026,Population Growth,0.794
+Canada,2027,Population Growth,0.754
+Canada,2028,Population Growth,0.727
+Canada,2029,Population Growth,0.683
+Canada,2030,Population Growth,0.662
+Canada,2031,Population Growth,0.644
+Canada,2032,Population Growth,0.607
+Canada,2033,Population Growth,0.557
+Canada,2034,Population Growth,0.563
+Canada,2035,Population Growth,0.506
+Canada,2036,Population Growth,0.513
+Canada,2037,Population Growth,0.498
+Canada,2038,Population Growth,0.482
+Canada,2039,Population Growth,0.45
+Canada,2040,Population Growth,0.426
+Canada,2041,Population Growth,0.421
+Canada,2042,Population Growth,0.412
+Canada,2043,Population Growth,0.395
+Canada,2044,Population Growth,0.388
+Canada,2045,Population Growth,0.391
+Canada,2046,Population Growth,0.351
+Canada,2047,Population Growth,0.344
+Canada,2048,Population Growth,0.344
+Canada,2049,Population Growth,0.306
+Canada,2050,Population Growth,0.33
+Canada,2051,Population Growth,0.325
+Canada,2052,Population Growth,0.336
+Canada,2053,Population Growth,0.308
+Canada,2054,Population Growth,0.309
+Canada,2055,Population Growth,0.313
+Canada,2056,Population Growth,0.321
+Canada,2057,Population Growth,0.331
+Canada,2058,Population Growth,0.356
+Canada,2059,Population Growth,0.352
+Canada,2060,Population Growth,0.342
+Canada,2061,Population Growth,0.356
+Canada,2062,Population Growth,0.37
+Canada,2063,Population Growth,0.365
+Canada,2064,Population Growth,0.36
+Canada,2065,Population Growth,0.358
+Canada,2066,Population Growth,0.358
+Canada,2067,Population Growth,0.375
+Canada,2068,Population Growth,0.345
+Canada,2069,Population Growth,0.342
+Canada,2070,Population Growth,0.336
+Canada,2071,Population Growth,0.338
+Canada,2072,Population Growth,0.331
+Canada,2073,Population Growth,0.314
+Canada,2074,Population Growth,0.316
+Canada,2075,Population Growth,0.329
+Canada,2076,Population Growth,0.333
+Canada,2077,Population Growth,0.301
+Canada,2078,Population Growth,0.322
+Canada,2079,Population Growth,0.303
+Canada,2080,Population Growth,0.301
+Canada,2081,Population Growth,0.32
+Canada,2082,Population Growth,0.285
+Canada,2083,Population Growth,0.31
+Canada,2084,Population Growth,0.294
+Canada,2085,Population Growth,0.281
+Canada,2086,Population Growth,0.288
+Canada,2087,Population Growth,0.275
+Canada,2088,Population Growth,0.331
+Canada,2089,Population Growth,0.276
+Canada,2090,Population Growth,0.267
+Canada,2091,Population Growth,0.303
+Canada,2092,Population Growth,0.289
+Canada,2093,Population Growth,0.304
+Canada,2094,Population Growth,0.301
+Canada,2095,Population Growth,0.308
+Canada,2096,Population Growth,0.314
+Canada,2097,Population Growth,0.351
+Canada,2098,Population Growth,0.341
+Canada,2099,Population Growth,0.328
+Canada,2100,Population Growth,0.327
+United States of America,1950,Population Growth,1.473
+United States of America,1951,Population Growth,1.461
+United States of America,1952,Population Growth,1.473
+United States of America,1953,Population Growth,1.495
+United States of America,1954,Population Growth,1.544
+United States of America,1955,Population Growth,1.565
+United States of America,1956,Population Growth,1.569
+United States of America,1957,Population Growth,1.574
+United States of America,1958,Population Growth,1.569
+United States of America,1959,Population Growth,1.766
+United States of America,1960,Population Growth,1.736
+United States of America,1961,Population Growth,1.799
+United States of America,1962,Population Growth,1.697
+United States of America,1963,Population Growth,1.598
+United States of America,1964,Population Growth,1.533
+United States of America,1965,Population Growth,1.387
+United States of America,1966,Population Growth,1.266
+United States of America,1967,Population Growth,1.175
+United States of America,1968,Population Growth,1.115
+United States of America,1969,Population Growth,1.127
+United States of America,1970,Population Growth,1.289
+United States of America,1971,Population Growth,1.227
+United States of America,1972,Population Growth,1.057
+United States of America,1973,Population Growth,0.966
+United States of America,1974,Population Growth,0.95
+United States of America,1975,Population Growth,0.932
+United States of America,1976,Population Growth,0.92
+United States of America,1977,Population Growth,0.961
+United States of America,1978,Population Growth,0.944
+United States of America,1979,Population Growth,0.98
+United States of America,1980,Population Growth,1.017
+United States of America,1981,Population Growth,1.012
+United States of America,1982,Population Growth,1.029
+United States of America,1983,Population Growth,1.01
+United States of America,1984,Population Growth,0.979
+United States of America,1985,Population Growth,0.964
+United States of America,1986,Population Growth,0.9
+United States of America,1987,Population Growth,0.901
+United States of America,1988,Population Growth,0.904
+United States of America,1989,Population Growth,0.925
+United States of America,1990,Population Growth,1.215
+United States of America,1991,Population Growth,1.216
+United States of America,1992,Population Growth,1.214
+United States of America,1993,Population Growth,1.105
+United States of America,1994,Population Growth,1.047
+United States of America,1995,Population Growth,1
+United States of America,1996,Population Growth,0.97
+United States of America,1997,Population Growth,0.946
+United States of America,1998,Population Growth,0.984
+United States of America,1999,Population Growth,0.938
+United States of America,2000,Population Growth,0.988
+United States of America,2001,Population Growth,0.988
+United States of America,2002,Population Growth,0.975
+United States of America,2003,Population Growth,0.982
+United States of America,2004,Population Growth,0.993
+United States of America,2005,Population Growth,0.998
+United States of America,2006,Population Growth,1.029
+United States of America,2007,Population Growth,1.045
+United States of America,2008,Population Growth,1.016
+United States of America,2009,Population Growth,0.976
+United States of America,2010,Population Growth,0.987
+United States of America,2011,Population Growth,0.959
+United States of America,2012,Population Growth,0.948
+United States of America,2013,Population Growth,0.932
+United States of America,2014,Population Growth,0.936
+United States of America,2015,Population Growth,0.919
+United States of America,2016,Population Growth,0.945
+United States of America,2017,Population Growth,0.885
+United States of America,2018,Population Growth,0.824
+United States of America,2019,Population Growth,0.801
+United States of America,2020,Population Growth,0.173
+United States of America,2021,Population Growth,0.254
+United States of America,2022,Population Growth,0.551
+United States of America,2023,Population Growth,0.584
+United States of America,2024,Population Growth,0.548
+United States of America,2025,Population Growth,0.52
+United States of America,2026,Population Growth,0.491
+United States of America,2027,Population Growth,0.476
+United States of America,2028,Population Growth,0.477
+United States of America,2029,Population Growth,0.455
+United States of America,2030,Population Growth,0.446
+United States of America,2031,Population Growth,0.436
+United States of America,2032,Population Growth,0.428
+United States of America,2033,Population Growth,0.42
+United States of America,2034,Population Growth,0.416
+United States of America,2035,Population Growth,0.402
+United States of America,2036,Population Growth,0.393
+United States of America,2037,Population Growth,0.385
+United States of America,2038,Population Growth,0.378
+United States of America,2039,Population Growth,0.358
+United States of America,2040,Population Growth,0.347
+United States of America,2041,Population Growth,0.333
+United States of America,2042,Population Growth,0.331
+United States of America,2043,Population Growth,0.31
+United States of America,2044,Population Growth,0.293
+United States of America,2045,Population Growth,0.281
+United States of America,2046,Population Growth,0.264
+United States of America,2047,Population Growth,0.259
+United States of America,2048,Population Growth,0.241
+United States of America,2049,Population Growth,0.235
+United States of America,2050,Population Growth,0.228
+United States of America,2051,Population Growth,0.224
+United States of America,2052,Population Growth,0.213
+United States of America,2053,Population Growth,0.213
+United States of America,2054,Population Growth,0.197
+United States of America,2055,Population Growth,0.192
+United States of America,2056,Population Growth,0.196
+United States of America,2057,Population Growth,0.209
+United States of America,2058,Population Growth,0.219
+United States of America,2059,Population Growth,0.214
+United States of America,2060,Population Growth,0.211
+United States of America,2061,Population Growth,0.224
+United States of America,2062,Population Growth,0.228
+United States of America,2063,Population Growth,0.231
+United States of America,2064,Population Growth,0.227
+United States of America,2065,Population Growth,0.235
+United States of America,2066,Population Growth,0.243
+United States of America,2067,Population Growth,0.25
+United States of America,2068,Population Growth,0.246
+United States of America,2069,Population Growth,0.253
+United States of America,2070,Population Growth,0.241
+United States of America,2071,Population Growth,0.248
+United States of America,2072,Population Growth,0.232
+United States of America,2073,Population Growth,0.232
+United States of America,2074,Population Growth,0.223
+United States of America,2075,Population Growth,0.233
+United States of America,2076,Population Growth,0.219
+United States of America,2077,Population Growth,0.208
+United States of America,2078,Population Growth,0.204
+United States of America,2079,Population Growth,0.191
+United States of America,2080,Population Growth,0.183
+United States of America,2081,Population Growth,0.203
+United States of America,2082,Population Growth,0.184
+United States of America,2083,Population Growth,0.181
+United States of America,2084,Population Growth,0.177
+United States of America,2085,Population Growth,0.162
+United States of America,2086,Population Growth,0.174
+United States of America,2087,Population Growth,0.174
+United States of America,2088,Population Growth,0.185
+United States of America,2089,Population Growth,0.178
+United States of America,2090,Population Growth,0.173
+United States of America,2091,Population Growth,0.179
+United States of America,2092,Population Growth,0.179
+United States of America,2093,Population Growth,0.173
+United States of America,2094,Population Growth,0.176
+United States of America,2095,Population Growth,0.17
+United States of America,2096,Population Growth,0.157
+United States of America,2097,Population Growth,0.158
+United States of America,2098,Population Growth,0.144
+United States of America,2099,Population Growth,0.145
+United States of America,2100,Population Growth,0.129
+Japan,1950,Total Fertility Rate,3.6154
+Japan,1951,Total Fertility Rate,3.225
+Japan,1952,Total Fertility Rate,2.947
+Japan,1953,Total Fertility Rate,2.6732
+Japan,1954,Total Fertility Rate,2.468
+Japan,1955,Total Fertility Rate,2.3488
+Japan,1956,Total Fertility Rate,2.2062
+Japan,1957,Total Fertility Rate,2.0357
+Japan,1958,Total Fertility Rate,2.0967
+Japan,1959,Total Fertility Rate,2.0348
+Japan,1960,Total Fertility Rate,1.9808
+Japan,1961,Total Fertility Rate,1.9281
+Japan,1962,Total Fertility Rate,1.9278
+Japan,1963,Total Fertility Rate,1.9513
+Japan,1964,Total Fertility Rate,1.9979
+Japan,1965,Total Fertility Rate,2.089
+Japan,1966,Total Fertility Rate,1.6321
+Japan,1967,Total Fertility Rate,2.1577
+Japan,1968,Total Fertility Rate,2.065
+Japan,1969,Total Fertility Rate,2.0258
+Japan,1970,Total Fertility Rate,2.035
+Japan,1971,Total Fertility Rate,2.089
+Japan,1972,Total Fertility Rate,2.1138
+Japan,1973,Total Fertility Rate,2.1454
+Japan,1974,Total Fertility Rate,2.0651
+Japan,1975,Total Fertility Rate,1.9206
+Japan,1976,Total Fertility Rate,1.8412
+Japan,1977,Total Fertility Rate,1.7894
+Japan,1978,Total Fertility Rate,1.7857
+Japan,1979,Total Fertility Rate,1.7691
+Japan,1980,Total Fertility Rate,1.7392
+Japan,1981,Total Fertility Rate,1.7176
+Japan,1982,Total Fertility Rate,1.7384
+Japan,1983,Total Fertility Rate,1.7701
+Japan,1984,Total Fertility Rate,1.7802
+Japan,1985,Total Fertility Rate,1.7365
+Japan,1986,Total Fertility Rate,1.6979
+Japan,1987,Total Fertility Rate,1.6658
+Japan,1988,Total Fertility Rate,1.6251
+Japan,1989,Total Fertility Rate,1.5467
+Japan,1990,Total Fertility Rate,1.5087
+Japan,1991,Total Fertility Rate,1.5042
+Japan,1992,Total Fertility Rate,1.4777
+Japan,1993,Total Fertility Rate,1.4401
+Japan,1994,Total Fertility Rate,1.4676
+Japan,1995,Total Fertility Rate,1.4067
+Japan,1996,Total Fertility Rate,1.403
+Japan,1997,Total Fertility Rate,1.3761
+Japan,1998,Total Fertility Rate,1.3707
+Japan,1999,Total Fertility Rate,1.3397
+Japan,2000,Total Fertility Rate,1.346
+Japan,2001,Total Fertility Rate,1.3247
+Japan,2002,Total Fertility Rate,1.3076
+Japan,2003,Total Fertility Rate,1.2851
+Japan,2004,Total Fertility Rate,1.2773
+Japan,2005,Total Fertility Rate,1.2455
+Japan,2006,Total Fertility Rate,1.2849
+Japan,2007,Total Fertility Rate,1.305
+Japan,2008,Total Fertility Rate,1.3302
+Japan,2009,Total Fertility Rate,1.333
+Japan,2010,Total Fertility Rate,1.3573
+Japan,2011,Total Fertility Rate,1.3627
+Japan,2012,Total Fertility Rate,1.3755
+Japan,2013,Total Fertility Rate,1.3894
+Japan,2014,Total Fertility Rate,1.3876
+Japan,2015,Total Fertility Rate,1.4153
+Japan,2016,Total Fertility Rate,1.4078
+Japan,2017,Total Fertility Rate,1.3899
+Japan,2018,Total Fertility Rate,1.3734
+Japan,2019,Total Fertility Rate,1.3234
+Japan,2020,Total Fertility Rate,1.3036
+Japan,2021,Total Fertility Rate,1.2745
+Japan,2022,Total Fertility Rate,1.2558
+Japan,2023,Total Fertility Rate,1.2079
+Japan,2024,Total Fertility Rate,1.2168
+Japan,2025,Total Fertility Rate,1.225
+Japan,2026,Total Fertility Rate,1.2315
+Japan,2027,Total Fertility Rate,1.2396
+Japan,2028,Total Fertility Rate,1.2461
+Japan,2029,Total Fertility Rate,1.2538
+Japan,2030,Total Fertility Rate,1.2606
+Japan,2031,Total Fertility Rate,1.2661
+Japan,2032,Total Fertility Rate,1.2726
+Japan,2033,Total Fertility Rate,1.2771
+Japan,2034,Total Fertility Rate,1.2837
+Japan,2035,Total Fertility Rate,1.2897
+Japan,2036,Total Fertility Rate,1.2945
+Japan,2037,Total Fertility Rate,1.2992
+Japan,2038,Total Fertility Rate,1.3052
+Japan,2039,Total Fertility Rate,1.3097
+Japan,2040,Total Fertility Rate,1.3126
+Japan,2041,Total Fertility Rate,1.3146
+Japan,2042,Total Fertility Rate,1.317
+Japan,2043,Total Fertility Rate,1.3215
+Japan,2044,Total Fertility Rate,1.3244
+Japan,2045,Total Fertility Rate,1.3309
+Japan,2046,Total Fertility Rate,1.3343
+Japan,2047,Total Fertility Rate,1.3372
+Japan,2048,Total Fertility Rate,1.3416
+Japan,2049,Total Fertility Rate,1.3452
+Japan,2050,Total Fertility Rate,1.3491
+Japan,2051,Total Fertility Rate,1.3527
+Japan,2052,Total Fertility Rate,1.3576
+Japan,2053,Total Fertility Rate,1.3605
+Japan,2054,Total Fertility Rate,1.3648
+Japan,2055,Total Fertility Rate,1.3685
+Japan,2056,Total Fertility Rate,1.3693
+Japan,2057,Total Fertility Rate,1.3732
+Japan,2058,Total Fertility Rate,1.3765
+Japan,2059,Total Fertility Rate,1.3803
+Japan,2060,Total Fertility Rate,1.3847
+Japan,2061,Total Fertility Rate,1.3892
+Japan,2062,Total Fertility Rate,1.3915
+Japan,2063,Total Fertility Rate,1.3941
+Japan,2064,Total Fertility Rate,1.3971
+Japan,2065,Total Fertility Rate,1.4017
+Japan,2066,Total Fertility Rate,1.4047
+Japan,2067,Total Fertility Rate,1.4073
+Japan,2068,Total Fertility Rate,1.4122
+Japan,2069,Total Fertility Rate,1.4153
+Japan,2070,Total Fertility Rate,1.4199
+Japan,2071,Total Fertility Rate,1.4229
+Japan,2072,Total Fertility Rate,1.4243
+Japan,2073,Total Fertility Rate,1.4278
+Japan,2074,Total Fertility Rate,1.431
+Japan,2075,Total Fertility Rate,1.434
+Japan,2076,Total Fertility Rate,1.4364
+Japan,2077,Total Fertility Rate,1.4375
+Japan,2078,Total Fertility Rate,1.441
+Japan,2079,Total Fertility Rate,1.4426
+Japan,2080,Total Fertility Rate,1.4438
+Japan,2081,Total Fertility Rate,1.4452
+Japan,2082,Total Fertility Rate,1.4493
+Japan,2083,Total Fertility Rate,1.4517
+Japan,2084,Total Fertility Rate,1.4519
+Japan,2085,Total Fertility Rate,1.4553
+Japan,2086,Total Fertility Rate,1.4575
+Japan,2087,Total Fertility Rate,1.4578
+Japan,2088,Total Fertility Rate,1.4595
+Japan,2089,Total Fertility Rate,1.4608
+Japan,2090,Total Fertility Rate,1.463
+Japan,2091,Total Fertility Rate,1.4653
+Japan,2092,Total Fertility Rate,1.4665
+Japan,2093,Total Fertility Rate,1.4664
+Japan,2094,Total Fertility Rate,1.4667
+Japan,2095,Total Fertility Rate,1.4665
+Japan,2096,Total Fertility Rate,1.4685
+Japan,2097,Total Fertility Rate,1.4703
+Japan,2098,Total Fertility Rate,1.4735
+Japan,2099,Total Fertility Rate,1.4708
+Japan,2100,Total Fertility Rate,1.472
+Italy,1950,Total Fertility Rate,2.5233
+Italy,1951,Total Fertility Rate,2.3762
+Italy,1952,Total Fertility Rate,2.3231
+Italy,1953,Total Fertility Rate,2.285
+Italy,1954,Total Fertility Rate,2.3488
+Italy,1955,Total Fertility Rate,2.3429
+Italy,1956,Total Fertility Rate,2.3507
+Italy,1957,Total Fertility Rate,2.3484
+Italy,1958,Total Fertility Rate,2.326
+Italy,1959,Total Fertility Rate,2.3872
+Italy,1960,Total Fertility Rate,2.3843
+Italy,1961,Total Fertility Rate,2.4203
+Italy,1962,Total Fertility Rate,2.4513
+Italy,1963,Total Fertility Rate,2.5195
+Italy,1964,Total Fertility Rate,2.6625
+Italy,1965,Total Fertility Rate,2.6171
+Italy,1966,Total Fertility Rate,2.588
+Italy,1967,Total Fertility Rate,2.5086
+Italy,1968,Total Fertility Rate,2.4898
+Italy,1969,Total Fertility Rate,2.4698
+Italy,1970,Total Fertility Rate,2.3959
+Italy,1971,Total Fertility Rate,2.3983
+Italy,1972,Total Fertility Rate,2.3509
+Italy,1973,Total Fertility Rate,2.3151
+Italy,1974,Total Fertility Rate,2.2922
+Italy,1975,Total Fertility Rate,2.1774
+Italy,1976,Total Fertility Rate,2.0563
+Italy,1977,Total Fertility Rate,1.9389
+Italy,1978,Total Fertility Rate,1.8415
+Italy,1979,Total Fertility Rate,1.7333
+Italy,1980,Total Fertility Rate,1.6466
+Italy,1981,Total Fertility Rate,1.5822
+Italy,1982,Total Fertility Rate,1.5606
+Italy,1983,Total Fertility Rate,1.5062
+Italy,1984,Total Fertility Rate,1.4578
+Italy,1985,Total Fertility Rate,1.4155
+Italy,1986,Total Fertility Rate,1.3511
+Italy,1987,Total Fertility Rate,1.3297
+Italy,1988,Total Fertility Rate,1.3552
+Italy,1989,Total Fertility Rate,1.3282
+Italy,1990,Total Fertility Rate,1.3314
+Italy,1991,Total Fertility Rate,1.3032
+Italy,1992,Total Fertility Rate,1.2955
+Italy,1993,Total Fertility Rate,1.2489
+Italy,1994,Total Fertility Rate,1.2082
+Italy,1995,Total Fertility Rate,1.1885
+Italy,1996,Total Fertility Rate,1.1972
+Italy,1997,Total Fertility Rate,1.2098
+Italy,1998,Total Fertility Rate,1.2099
+Italy,1999,Total Fertility Rate,1.2279
+Italy,2000,Total Fertility Rate,1.2491
+Italy,2001,Total Fertility Rate,1.247
+Italy,2002,Total Fertility Rate,1.2643
+Italy,2003,Total Fertility Rate,1.2853
+Italy,2004,Total Fertility Rate,1.3368
+Italy,2005,Total Fertility Rate,1.3325
+Italy,2006,Total Fertility Rate,1.3643
+Italy,2007,Total Fertility Rate,1.3926
+Italy,2008,Total Fertility Rate,1.4351
+Italy,2009,Total Fertility Rate,1.4386
+Italy,2010,Total Fertility Rate,1.443
+Italy,2011,Total Fertility Rate,1.4266
+Italy,2012,Total Fertility Rate,1.416
+Italy,2013,Total Fertility Rate,1.3797
+Italy,2014,Total Fertility Rate,1.3636
+Italy,2015,Total Fertility Rate,1.3445
+Italy,2016,Total Fertility Rate,1.3359
+Italy,2017,Total Fertility Rate,1.317
+Italy,2018,Total Fertility Rate,1.2856
+Italy,2019,Total Fertility Rate,1.2591
+Italy,2020,Total Fertility Rate,1.2418
+Italy,2021,Total Fertility Rate,1.2522
+Italy,2022,Total Fertility Rate,1.24
+Italy,2023,Total Fertility Rate,1.1977
+Italy,2024,Total Fertility Rate,1.2058
+Italy,2025,Total Fertility Rate,1.214
+Italy,2026,Total Fertility Rate,1.2193
+Italy,2027,Total Fertility Rate,1.2287
+Italy,2028,Total Fertility Rate,1.2368
+Italy,2029,Total Fertility Rate,1.2424
+Italy,2030,Total Fertility Rate,1.2493
+Italy,2031,Total Fertility Rate,1.2556
+Italy,2032,Total Fertility Rate,1.2619
+Italy,2033,Total Fertility Rate,1.2672
+Italy,2034,Total Fertility Rate,1.274
+Italy,2035,Total Fertility Rate,1.2786
+Italy,2036,Total Fertility Rate,1.2857
+Italy,2037,Total Fertility Rate,1.2912
+Italy,2038,Total Fertility Rate,1.2964
+Italy,2039,Total Fertility Rate,1.3001
+Italy,2040,Total Fertility Rate,1.3034
+Italy,2041,Total Fertility Rate,1.3073
+Italy,2042,Total Fertility Rate,1.312
+Italy,2043,Total Fertility Rate,1.3182
+Italy,2044,Total Fertility Rate,1.3223
+Italy,2045,Total Fertility Rate,1.3273
+Italy,2046,Total Fertility Rate,1.33
+Italy,2047,Total Fertility Rate,1.3346
+Italy,2048,Total Fertility Rate,1.3408
+Italy,2049,Total Fertility Rate,1.3447
+Italy,2050,Total Fertility Rate,1.3487
+Italy,2051,Total Fertility Rate,1.3537
+Italy,2052,Total Fertility Rate,1.3578
+Italy,2053,Total Fertility Rate,1.3589
+Italy,2054,Total Fertility Rate,1.363
+Italy,2055,Total Fertility Rate,1.3672
+Italy,2056,Total Fertility Rate,1.3722
+Italy,2057,Total Fertility Rate,1.3763
+Italy,2058,Total Fertility Rate,1.3787
+Italy,2059,Total Fertility Rate,1.3817
+Italy,2060,Total Fertility Rate,1.3861
+Italy,2061,Total Fertility Rate,1.388
+Italy,2062,Total Fertility Rate,1.3892
+Italy,2063,Total Fertility Rate,1.3904
+Italy,2064,Total Fertility Rate,1.3941
+Italy,2065,Total Fertility Rate,1.3983
+Italy,2066,Total Fertility Rate,1.4004
+Italy,2067,Total Fertility Rate,1.4048
+Italy,2068,Total Fertility Rate,1.4083
+Italy,2069,Total Fertility Rate,1.4112
+Italy,2070,Total Fertility Rate,1.4158
+Italy,2071,Total Fertility Rate,1.4159
+Italy,2072,Total Fertility Rate,1.4182
+Italy,2073,Total Fertility Rate,1.4201
+Italy,2074,Total Fertility Rate,1.4223
+Italy,2075,Total Fertility Rate,1.4254
+Italy,2076,Total Fertility Rate,1.4277
+Italy,2077,Total Fertility Rate,1.4273
+Italy,2078,Total Fertility Rate,1.4282
+Italy,2079,Total Fertility Rate,1.4319
+Italy,2080,Total Fertility Rate,1.4339
+Italy,2081,Total Fertility Rate,1.4373
+Italy,2082,Total Fertility Rate,1.4413
+Italy,2083,Total Fertility Rate,1.4448
+Italy,2084,Total Fertility Rate,1.4477
+Italy,2085,Total Fertility Rate,1.4517
+Italy,2086,Total Fertility Rate,1.4536
+Italy,2087,Total Fertility Rate,1.4559
+Italy,2088,Total Fertility Rate,1.4563
+Italy,2089,Total Fertility Rate,1.4576
+Italy,2090,Total Fertility Rate,1.4581
+Italy,2091,Total Fertility Rate,1.4621
+Italy,2092,Total Fertility Rate,1.465
+Italy,2093,Total Fertility Rate,1.4662
+Italy,2094,Total Fertility Rate,1.4678
+Italy,2095,Total Fertility Rate,1.4691
+Italy,2096,Total Fertility Rate,1.4716
+Italy,2097,Total Fertility Rate,1.4737
+Italy,2098,Total Fertility Rate,1.4742
+Italy,2099,Total Fertility Rate,1.4762
+Italy,2100,Total Fertility Rate,1.4776
+France,1950,Total Fertility Rate,2.9648
+France,1951,Total Fertility Rate,2.8176
+France,1952,Total Fertility Rate,2.779
+France,1953,Total Fertility Rate,2.7019
+France,1954,Total Fertility Rate,2.7128
+France,1955,Total Fertility Rate,2.699
+France,1956,Total Fertility Rate,2.6929
+France,1957,Total Fertility Rate,2.7098
+France,1958,Total Fertility Rate,2.6889
+France,1959,Total Fertility Rate,2.7462
+France,1960,Total Fertility Rate,2.7352
+France,1961,Total Fertility Rate,2.8286
+France,1962,Total Fertility Rate,2.788
+France,1963,Total Fertility Rate,2.8727
+France,1964,Total Fertility Rate,2.8804
+France,1965,Total Fertility Rate,2.8263
+France,1966,Total Fertility Rate,2.7814
+France,1967,Total Fertility Rate,2.6491
+France,1968,Total Fertility Rate,2.5712
+France,1969,Total Fertility Rate,2.5259
+France,1970,Total Fertility Rate,2.4805
+France,1971,Total Fertility Rate,2.499
+France,1972,Total Fertility Rate,2.4268
+France,1973,Total Fertility Rate,2.3199
+France,1974,Total Fertility Rate,2.1247
+France,1975,Total Fertility Rate,1.9346
+France,1976,Total Fertility Rate,1.8324
+France,1977,Total Fertility Rate,1.8681
+France,1978,Total Fertility Rate,1.8302
+France,1979,Total Fertility Rate,1.8634
+France,1980,Total Fertility Rate,1.9509
+France,1981,Total Fertility Rate,1.947
+France,1982,Total Fertility Rate,1.9167
+France,1983,Total Fertility Rate,1.7895
+France,1984,Total Fertility Rate,1.8059
+France,1985,Total Fertility Rate,1.8165
+France,1986,Total Fertility Rate,1.8319
+France,1987,Total Fertility Rate,1.8035
+France,1988,Total Fertility Rate,1.8084
+France,1989,Total Fertility Rate,1.7914
+France,1990,Total Fertility Rate,1.7822
+France,1991,Total Fertility Rate,1.7726
+France,1992,Total Fertility Rate,1.7353
+France,1993,Total Fertility Rate,1.661
+France,1994,Total Fertility Rate,1.6653
+France,1995,Total Fertility Rate,1.718
+France,1996,Total Fertility Rate,1.7395
+France,1997,Total Fertility Rate,1.7299
+France,1998,Total Fertility Rate,1.7644
+France,1999,Total Fertility Rate,1.7927
+France,2000,Total Fertility Rate,1.8757
+France,2001,Total Fertility Rate,1.8792
+France,2002,Total Fertility Rate,1.8653
+France,2003,Total Fertility Rate,1.8734
+France,2004,Total Fertility Rate,1.8979
+France,2005,Total Fertility Rate,1.9159
+France,2006,Total Fertility Rate,1.9736
+France,2007,Total Fertility Rate,1.9517
+France,2008,Total Fertility Rate,1.9869
+France,2009,Total Fertility Rate,1.9898
+France,2010,Total Fertility Rate,2.0173
+France,2011,Total Fertility Rate,1.9946
+France,2012,Total Fertility Rate,1.9898
+France,2013,Total Fertility Rate,1.9727
+France,2014,Total Fertility Rate,1.9742
+France,2015,Total Fertility Rate,1.9266
+France,2016,Total Fertility Rate,1.8917
+France,2017,Total Fertility Rate,1.8587
+France,2018,Total Fertility Rate,1.8366
+France,2019,Total Fertility Rate,1.8262
+France,2020,Total Fertility Rate,1.7852
+France,2021,Total Fertility Rate,1.7994
+France,2022,Total Fertility Rate,1.76
+France,2023,Total Fertility Rate,1.6389
+France,2024,Total Fertility Rate,1.636
+France,2025,Total Fertility Rate,1.6369
+France,2026,Total Fertility Rate,1.6374
+France,2027,Total Fertility Rate,1.6378
+France,2028,Total Fertility Rate,1.638
+France,2029,Total Fertility Rate,1.6389
+France,2030,Total Fertility Rate,1.6372
+France,2031,Total Fertility Rate,1.6387
+France,2032,Total Fertility Rate,1.6387
+France,2033,Total Fertility Rate,1.6396
+France,2034,Total Fertility Rate,1.6406
+France,2035,Total Fertility Rate,1.6411
+France,2036,Total Fertility Rate,1.6426
+France,2037,Total Fertility Rate,1.6441
+France,2038,Total Fertility Rate,1.6434
+France,2039,Total Fertility Rate,1.6422
+France,2040,Total Fertility Rate,1.643
+France,2041,Total Fertility Rate,1.6443
+France,2042,Total Fertility Rate,1.6454
+France,2043,Total Fertility Rate,1.6472
+France,2044,Total Fertility Rate,1.6469
+France,2045,Total Fertility Rate,1.649
+France,2046,Total Fertility Rate,1.6467
+France,2047,Total Fertility Rate,1.6471
+France,2048,Total Fertility Rate,1.6481
+France,2049,Total Fertility Rate,1.6465
+France,2050,Total Fertility Rate,1.647
+France,2051,Total Fertility Rate,1.6465
+France,2052,Total Fertility Rate,1.6475
+France,2053,Total Fertility Rate,1.6504
+France,2054,Total Fertility Rate,1.6498
+France,2055,Total Fertility Rate,1.649
+France,2056,Total Fertility Rate,1.6491
+France,2057,Total Fertility Rate,1.6511
+France,2058,Total Fertility Rate,1.6521
+France,2059,Total Fertility Rate,1.6511
+France,2060,Total Fertility Rate,1.6508
+France,2061,Total Fertility Rate,1.6524
+France,2062,Total Fertility Rate,1.6518
+France,2063,Total Fertility Rate,1.6508
+France,2064,Total Fertility Rate,1.6494
+France,2065,Total Fertility Rate,1.6502
+France,2066,Total Fertility Rate,1.6488
+France,2067,Total Fertility Rate,1.6476
+France,2068,Total Fertility Rate,1.6481
+France,2069,Total Fertility Rate,1.6493
+France,2070,Total Fertility Rate,1.6509
+France,2071,Total Fertility Rate,1.6507
+France,2072,Total Fertility Rate,1.6498
+France,2073,Total Fertility Rate,1.6507
+France,2074,Total Fertility Rate,1.6514
+France,2075,Total Fertility Rate,1.6524
+France,2076,Total Fertility Rate,1.6516
+France,2077,Total Fertility Rate,1.6522
+France,2078,Total Fertility Rate,1.65
+France,2079,Total Fertility Rate,1.6499
+France,2080,Total Fertility Rate,1.6489
+France,2081,Total Fertility Rate,1.6473
+France,2082,Total Fertility Rate,1.6472
+France,2083,Total Fertility Rate,1.6457
+France,2084,Total Fertility Rate,1.6456
+France,2085,Total Fertility Rate,1.6468
+France,2086,Total Fertility Rate,1.6472
+France,2087,Total Fertility Rate,1.6463
+France,2088,Total Fertility Rate,1.6476
+France,2089,Total Fertility Rate,1.647
+France,2090,Total Fertility Rate,1.6485
+France,2091,Total Fertility Rate,1.6488
+France,2092,Total Fertility Rate,1.6492
+France,2093,Total Fertility Rate,1.6499
+France,2094,Total Fertility Rate,1.6501
+France,2095,Total Fertility Rate,1.6492
+France,2096,Total Fertility Rate,1.6476
+France,2097,Total Fertility Rate,1.6474
+France,2098,Total Fertility Rate,1.6476
+France,2099,Total Fertility Rate,1.6473
+France,2100,Total Fertility Rate,1.6463
+Germany,1950,Total Fertility Rate,2.1938
+Germany,1951,Total Fertility Rate,2.1665
+Germany,1952,Total Fertility Rate,2.1361
+Germany,1953,Total Fertility Rate,2.129
+Germany,1954,Total Fertility Rate,2.1497
+Germany,1955,Total Fertility Rate,2.1584
+Germany,1956,Total Fertility Rate,2.2063
+Germany,1957,Total Fertility Rate,2.256
+Germany,1958,Total Fertility Rate,2.2618
+Germany,1959,Total Fertility Rate,2.3595
+Germany,1960,Total Fertility Rate,2.3807
+Germany,1961,Total Fertility Rate,2.4654
+Germany,1962,Total Fertility Rate,2.462
+Germany,1963,Total Fertility Rate,2.5229
+Germany,1964,Total Fertility Rate,2.5251
+Germany,1965,Total Fertility Rate,2.4875
+Germany,1966,Total Fertility Rate,2.5031
+Germany,1967,Total Fertility Rate,2.4386
+Germany,1968,Total Fertility Rate,2.3412
+Germany,1969,Total Fertility Rate,2.1997
+Germany,1970,Total Fertility Rate,2.0242
+Germany,1971,Total Fertility Rate,1.9511
+Germany,1972,Total Fertility Rate,1.7261
+Germany,1973,Total Fertility Rate,1.5506
+Germany,1974,Total Fertility Rate,1.5209
+Germany,1975,Total Fertility Rate,1.4772
+Germany,1976,Total Fertility Rate,1.4943
+Germany,1977,Total Fertility Rate,1.4979
+Germany,1978,Total Fertility Rate,1.4894
+Germany,1979,Total Fertility Rate,1.494
+Germany,1980,Total Fertility Rate,1.5564
+Germany,1981,Total Fertility Rate,1.5292
+Germany,1982,Total Fertility Rate,1.5037
+Germany,1983,Total Fertility Rate,1.4302
+Germany,1984,Total Fertility Rate,1.3889
+Germany,1985,Total Fertility Rate,1.378
+Germany,1986,Total Fertility Rate,1.4168
+Germany,1987,Total Fertility Rate,1.4375
+Germany,1988,Total Fertility Rate,1.4636
+Germany,1989,Total Fertility Rate,1.4327
+Germany,1990,Total Fertility Rate,1.4605
+Germany,1991,Total Fertility Rate,1.3442
+Germany,1992,Total Fertility Rate,1.305
+Germany,1993,Total Fertility Rate,1.2885
+Germany,1994,Total Fertility Rate,1.2539
+Germany,1995,Total Fertility Rate,1.2618
+Germany,1996,Total Fertility Rate,1.33
+Germany,1997,Total Fertility Rate,1.3772
+Germany,1998,Total Fertility Rate,1.3644
+Germany,1999,Total Fertility Rate,1.3704
+Germany,2000,Total Fertility Rate,1.3862
+Germany,2001,Total Fertility Rate,1.3536
+Germany,2002,Total Fertility Rate,1.3445
+Germany,2003,Total Fertility Rate,1.3432
+Germany,2004,Total Fertility Rate,1.3613
+Germany,2005,Total Fertility Rate,1.3445
+Germany,2006,Total Fertility Rate,1.3387
+Germany,2007,Total Fertility Rate,1.3775
+Germany,2008,Total Fertility Rate,1.3873
+Germany,2009,Total Fertility Rate,1.3675
+Germany,2010,Total Fertility Rate,1.3997
+Germany,2011,Total Fertility Rate,1.3849
+Germany,2012,Total Fertility Rate,1.4049
+Germany,2013,Total Fertility Rate,1.4149
+Germany,2014,Total Fertility Rate,1.4692
+Germany,2015,Total Fertility Rate,1.5007
+Germany,2016,Total Fertility Rate,1.5911
+Germany,2017,Total Fertility Rate,1.5696
+Germany,2018,Total Fertility Rate,1.5656
+Germany,2019,Total Fertility Rate,1.5409
+Germany,2020,Total Fertility Rate,1.5315
+Germany,2021,Total Fertility Rate,1.5767
+Germany,2022,Total Fertility Rate,1.46
+Germany,2023,Total Fertility Rate,1.4414
+Germany,2024,Total Fertility Rate,1.4481
+Germany,2025,Total Fertility Rate,1.4553
+Germany,2026,Total Fertility Rate,1.4595
+Germany,2027,Total Fertility Rate,1.4627
+Germany,2028,Total Fertility Rate,1.4695
+Germany,2029,Total Fertility Rate,1.4737
+Germany,2030,Total Fertility Rate,1.4772
+Germany,2031,Total Fertility Rate,1.482
+Germany,2032,Total Fertility Rate,1.4856
+Germany,2033,Total Fertility Rate,1.4887
+Germany,2034,Total Fertility Rate,1.4942
+Germany,2035,Total Fertility Rate,1.4979
+Germany,2036,Total Fertility Rate,1.5039
+Germany,2037,Total Fertility Rate,1.5056
+Germany,2038,Total Fertility Rate,1.5084
+Germany,2039,Total Fertility Rate,1.5122
+Germany,2040,Total Fertility Rate,1.5139
+Germany,2041,Total Fertility Rate,1.5162
+Germany,2042,Total Fertility Rate,1.5204
+Germany,2043,Total Fertility Rate,1.5224
+Germany,2044,Total Fertility Rate,1.5255
+Germany,2045,Total Fertility Rate,1.5285
+Germany,2046,Total Fertility Rate,1.5317
+Germany,2047,Total Fertility Rate,1.5334
+Germany,2048,Total Fertility Rate,1.537
+Germany,2049,Total Fertility Rate,1.5371
+Germany,2050,Total Fertility Rate,1.5378
+Germany,2051,Total Fertility Rate,1.5394
+Germany,2052,Total Fertility Rate,1.5419
+Germany,2053,Total Fertility Rate,1.5435
+Germany,2054,Total Fertility Rate,1.5446
+Germany,2055,Total Fertility Rate,1.546
+Germany,2056,Total Fertility Rate,1.5498
+Germany,2057,Total Fertility Rate,1.5517
+Germany,2058,Total Fertility Rate,1.5524
+Germany,2059,Total Fertility Rate,1.5552
+Germany,2060,Total Fertility Rate,1.5578
+Germany,2061,Total Fertility Rate,1.5596
+Germany,2062,Total Fertility Rate,1.5601
+Germany,2063,Total Fertility Rate,1.5598
+Germany,2064,Total Fertility Rate,1.5615
+Germany,2065,Total Fertility Rate,1.5624
+Germany,2066,Total Fertility Rate,1.5633
+Germany,2067,Total Fertility Rate,1.5621
+Germany,2068,Total Fertility Rate,1.563
+Germany,2069,Total Fertility Rate,1.5644
+Germany,2070,Total Fertility Rate,1.5643
+Germany,2071,Total Fertility Rate,1.5642
+Germany,2072,Total Fertility Rate,1.5665
+Germany,2073,Total Fertility Rate,1.5688
+Germany,2074,Total Fertility Rate,1.5698
+Germany,2075,Total Fertility Rate,1.5716
+Germany,2076,Total Fertility Rate,1.574
+Germany,2077,Total Fertility Rate,1.5735
+Germany,2078,Total Fertility Rate,1.5735
+Germany,2079,Total Fertility Rate,1.5743
+Germany,2080,Total Fertility Rate,1.577
+Germany,2081,Total Fertility Rate,1.5767
+Germany,2082,Total Fertility Rate,1.575
+Germany,2083,Total Fertility Rate,1.5771
+Germany,2084,Total Fertility Rate,1.5789
+Germany,2085,Total Fertility Rate,1.5784
+Germany,2086,Total Fertility Rate,1.5793
+Germany,2087,Total Fertility Rate,1.5828
+Germany,2088,Total Fertility Rate,1.5838
+Germany,2089,Total Fertility Rate,1.5859
+Germany,2090,Total Fertility Rate,1.587
+Germany,2091,Total Fertility Rate,1.5912
+Germany,2092,Total Fertility Rate,1.5919
+Germany,2093,Total Fertility Rate,1.5928
+Germany,2094,Total Fertility Rate,1.592
+Germany,2095,Total Fertility Rate,1.5907
+Germany,2096,Total Fertility Rate,1.592
+Germany,2097,Total Fertility Rate,1.5919
+Germany,2098,Total Fertility Rate,1.5955
+Germany,2099,Total Fertility Rate,1.5962
+Germany,2100,Total Fertility Rate,1.597
+Canada,1950,Total Fertility Rate,3.3736
+Canada,1951,Total Fertility Rate,3.4213
+Canada,1952,Total Fertility Rate,3.5594
+Canada,1953,Total Fertility Rate,3.6369
+Canada,1954,Total Fertility Rate,3.743
+Canada,1955,Total Fertility Rate,3.7463
+Canada,1956,Total Fertility Rate,3.7708
+Canada,1957,Total Fertility Rate,3.8482
+Canada,1958,Total Fertility Rate,3.814
+Canada,1959,Total Fertility Rate,3.8553
+Canada,1960,Total Fertility Rate,3.8203
+Canada,1961,Total Fertility Rate,3.7611
+Canada,1962,Total Fertility Rate,3.6781
+Canada,1963,Total Fertility Rate,3.5884
+Canada,1964,Total Fertility Rate,3.4235
+Canada,1965,Total Fertility Rate,3.0747
+Canada,1966,Total Fertility Rate,2.7517
+Canada,1967,Total Fertility Rate,2.5412
+Canada,1968,Total Fertility Rate,2.4077
+Canada,1969,Total Fertility Rate,2.3561
+Canada,1970,Total Fertility Rate,2.2665
+Canada,1971,Total Fertility Rate,2.1012
+Canada,1972,Total Fertility Rate,1.9375
+Canada,1973,Total Fertility Rate,1.849
+Canada,1974,Total Fertility Rate,1.806
+Canada,1975,Total Fertility Rate,1.7993
+Canada,1976,Total Fertility Rate,1.7544
+Canada,1977,Total Fertility Rate,1.7251
+Canada,1978,Total Fertility Rate,1.68
+Canada,1979,Total Fertility Rate,1.6734
+Canada,1980,Total Fertility Rate,1.6576
+Canada,1981,Total Fertility Rate,1.6316
+Canada,1982,Total Fertility Rate,1.6188
+Canada,1983,Total Fertility Rate,1.6073
+Canada,1984,Total Fertility Rate,1.6093
+Canada,1985,Total Fertility Rate,1.5945
+Canada,1986,Total Fertility Rate,1.5765
+Canada,1987,Total Fertility Rate,1.5628
+Canada,1988,Total Fertility Rate,1.5868
+Canada,1989,Total Fertility Rate,1.6432
+Canada,1990,Total Fertility Rate,1.6963
+Canada,1991,Total Fertility Rate,1.7226
+Canada,1992,Total Fertility Rate,1.7186
+Canada,1993,Total Fertility Rate,1.6929
+Canada,1994,Total Fertility Rate,1.693
+Canada,1995,Total Fertility Rate,1.674
+Canada,1996,Total Fertility Rate,1.6305
+Canada,1997,Total Fertility Rate,1.5686
+Canada,1998,Total Fertility Rate,1.5525
+Canada,1999,Total Fertility Rate,1.5406
+Canada,2000,Total Fertility Rate,1.5105
+Canada,2001,Total Fertility Rate,1.5307
+Canada,2002,Total Fertility Rate,1.5134
+Canada,2003,Total Fertility Rate,1.5355
+Canada,2004,Total Fertility Rate,1.5446
+Canada,2005,Total Fertility Rate,1.5656
+Canada,2006,Total Fertility Rate,1.6116
+Canada,2007,Total Fertility Rate,1.6565
+Canada,2008,Total Fertility Rate,1.684
+Canada,2009,Total Fertility Rate,1.6752
+Canada,2010,Total Fertility Rate,1.6417
+Canada,2011,Total Fertility Rate,1.6267
+Canada,2012,Total Fertility Rate,1.6274
+Canada,2013,Total Fertility Rate,1.6116
+Canada,2014,Total Fertility Rate,1.6137
+Canada,2015,Total Fertility Rate,1.601
+Canada,2016,Total Fertility Rate,1.5896
+Canada,2017,Total Fertility Rate,1.5482
+Canada,2018,Total Fertility Rate,1.5096
+Canada,2019,Total Fertility Rate,1.4755
+Canada,2020,Total Fertility Rate,1.4133
+Canada,2021,Total Fertility Rate,1.4304
+Canada,2022,Total Fertility Rate,1.3658
+Canada,2023,Total Fertility Rate,1.3494
+Canada,2024,Total Fertility Rate,1.3431
+Canada,2025,Total Fertility Rate,1.3324
+Canada,2026,Total Fertility Rate,1.3259
+Canada,2027,Total Fertility Rate,1.321
+Canada,2028,Total Fertility Rate,1.323
+Canada,2029,Total Fertility Rate,1.3224
+Canada,2030,Total Fertility Rate,1.325
+Canada,2031,Total Fertility Rate,1.3272
+Canada,2032,Total Fertility Rate,1.3313
+Canada,2033,Total Fertility Rate,1.3339
+Canada,2034,Total Fertility Rate,1.3362
+Canada,2035,Total Fertility Rate,1.3417
+Canada,2036,Total Fertility Rate,1.3462
+Canada,2037,Total Fertility Rate,1.3491
+Canada,2038,Total Fertility Rate,1.3519
+Canada,2039,Total Fertility Rate,1.3548
+Canada,2040,Total Fertility Rate,1.3581
+Canada,2041,Total Fertility Rate,1.3624
+Canada,2042,Total Fertility Rate,1.3658
+Canada,2043,Total Fertility Rate,1.3687
+Canada,2044,Total Fertility Rate,1.3725
+Canada,2045,Total Fertility Rate,1.376
+Canada,2046,Total Fertility Rate,1.3793
+Canada,2047,Total Fertility Rate,1.3843
+Canada,2048,Total Fertility Rate,1.3857
+Canada,2049,Total Fertility Rate,1.3876
+Canada,2050,Total Fertility Rate,1.389
+Canada,2051,Total Fertility Rate,1.3922
+Canada,2052,Total Fertility Rate,1.3976
+Canada,2053,Total Fertility Rate,1.3993
+Canada,2054,Total Fertility Rate,1.4034
+Canada,2055,Total Fertility Rate,1.4076
+Canada,2056,Total Fertility Rate,1.4117
+Canada,2057,Total Fertility Rate,1.4145
+Canada,2058,Total Fertility Rate,1.4172
+Canada,2059,Total Fertility Rate,1.4199
+Canada,2060,Total Fertility Rate,1.4231
+Canada,2061,Total Fertility Rate,1.425
+Canada,2062,Total Fertility Rate,1.4294
+Canada,2063,Total Fertility Rate,1.4326
+Canada,2064,Total Fertility Rate,1.434
+Canada,2065,Total Fertility Rate,1.4361
+Canada,2066,Total Fertility Rate,1.4379
+Canada,2067,Total Fertility Rate,1.4403
+Canada,2068,Total Fertility Rate,1.4415
+Canada,2069,Total Fertility Rate,1.4435
+Canada,2070,Total Fertility Rate,1.4466
+Canada,2071,Total Fertility Rate,1.4499
+Canada,2072,Total Fertility Rate,1.4528
+Canada,2073,Total Fertility Rate,1.4558
+Canada,2074,Total Fertility Rate,1.4594
+Canada,2075,Total Fertility Rate,1.4603
+Canada,2076,Total Fertility Rate,1.4603
+Canada,2077,Total Fertility Rate,1.462
+Canada,2078,Total Fertility Rate,1.4649
+Canada,2079,Total Fertility Rate,1.4665
+Canada,2080,Total Fertility Rate,1.4687
+Canada,2081,Total Fertility Rate,1.4705
+Canada,2082,Total Fertility Rate,1.4717
+Canada,2083,Total Fertility Rate,1.4726
+Canada,2084,Total Fertility Rate,1.4731
+Canada,2085,Total Fertility Rate,1.4746
+Canada,2086,Total Fertility Rate,1.4765
+Canada,2087,Total Fertility Rate,1.4758
+Canada,2088,Total Fertility Rate,1.4768
+Canada,2089,Total Fertility Rate,1.4773
+Canada,2090,Total Fertility Rate,1.48
+Canada,2091,Total Fertility Rate,1.4803
+Canada,2092,Total Fertility Rate,1.4837
+Canada,2093,Total Fertility Rate,1.4866
+Canada,2094,Total Fertility Rate,1.4867
+Canada,2095,Total Fertility Rate,1.4881
+Canada,2096,Total Fertility Rate,1.4911
+Canada,2097,Total Fertility Rate,1.4946
+Canada,2098,Total Fertility Rate,1.4958
+Canada,2099,Total Fertility Rate,1.4973
+Canada,2100,Total Fertility Rate,1.4942
+United States of America,1950,Total Fertility Rate,3.0857
+United States of America,1951,Total Fertility Rate,3.1971
+United States of America,1952,Total Fertility Rate,3.2903
+United States of America,1953,Total Fertility Rate,3.3579
+United States of America,1954,Total Fertility Rate,3.4752
+United States of America,1955,Total Fertility Rate,3.515
+United States of America,1956,Total Fertility Rate,3.6245
+United States of America,1957,Total Fertility Rate,3.7033
+United States of America,1958,Total Fertility Rate,3.7544
+United States of America,1959,Total Fertility Rate,3.7469
+United States of America,1960,Total Fertility Rate,3.7324
+United States of America,1961,Total Fertility Rate,3.6907
+United States of America,1962,Total Fertility Rate,3.5331
+United States of America,1963,Total Fertility Rate,3.3903
+United States of America,1964,Total Fertility Rate,3.2582
+United States of America,1965,Total Fertility Rate,2.983
+United States of America,1966,Total Fertility Rate,2.7688
+United States of America,1967,Total Fertility Rate,2.6047
+United States of America,1968,Total Fertility Rate,2.5078
+United States of America,1969,Total Fertility Rate,2.504
+United States of America,1970,Total Fertility Rate,2.5148
+United States of America,1971,Total Fertility Rate,2.3176
+United States of America,1972,Total Fertility Rate,2.0565
+United States of America,1973,Total Fertility Rate,1.9208
+United States of America,1974,Total Fertility Rate,1.8723
+United States of America,1975,Total Fertility Rate,1.8146
+United States of America,1976,Total Fertility Rate,1.7852
+United States of America,1977,Total Fertility Rate,1.8265
+United States of America,1978,Total Fertility Rate,1.8043
+United States of America,1979,Total Fertility Rate,1.8429
+United States of America,1980,Total Fertility Rate,1.8611
+United States of America,1981,Total Fertility Rate,1.8471
+United States of America,1982,Total Fertility Rate,1.855
+United States of America,1983,Total Fertility Rate,1.8271
+United States of America,1984,Total Fertility Rate,1.8267
+United States of America,1985,Total Fertility Rate,1.8545
+United States of America,1986,Total Fertility Rate,1.8525
+United States of America,1987,Total Fertility Rate,1.8852
+United States of America,1988,Total Fertility Rate,1.942
+United States of America,1989,Total Fertility Rate,2.0139
+United States of America,1990,Total Fertility Rate,2.0719
+United States of America,1991,Total Fertility Rate,2.0588
+United States of America,1992,Total Fertility Rate,2.0394
+United States of America,1993,Total Fertility Rate,2.0101
+United States of America,1994,Total Fertility Rate,1.988
+United States of America,1995,Total Fertility Rate,1.965
+United States of America,1996,Total Fertility Rate,1.9603
+United States of America,1997,Total Fertility Rate,1.9558
+United States of America,1998,Total Fertility Rate,1.9799
+United States of America,1999,Total Fertility Rate,1.9904
+United States of America,2000,Total Fertility Rate,2.0301
+United States of America,2001,Total Fertility Rate,2.0108
+United States of America,2002,Total Fertility Rate,2.0028
+United States of America,2003,Total Fertility Rate,2.025
+United States of America,2004,Total Fertility Rate,2.0314
+United States of America,2005,Total Fertility Rate,2.0402
+United States of America,2006,Total Fertility Rate,2.087
+United States of America,2007,Total Fertility Rate,2.0962
+United States of America,2008,Total Fertility Rate,2.0528
+United States of America,2009,Total Fertility Rate,1.9867
+United States of America,2010,Total Fertility Rate,1.9156
+United States of America,2011,Total Fertility Rate,1.8794
+United States of America,2012,Total Fertility Rate,1.8618
+United States of America,2013,Total Fertility Rate,1.8396
+United States of America,2014,Total Fertility Rate,1.8483
+United States of America,2015,Total Fertility Rate,1.8322
+United States of America,2016,Total Fertility Rate,1.8041
+United States of America,2017,Total Fertility Rate,1.7532
+United States of America,2018,Total Fertility Rate,1.7146
+United States of America,2019,Total Fertility Rate,1.6839
+United States of America,2020,Total Fertility Rate,1.6156
+United States of America,2021,Total Fertility Rate,1.6339
+United States of America,2022,Total Fertility Rate,1.665
+United States of America,2023,Total Fertility Rate,1.6236
+United States of America,2024,Total Fertility Rate,1.6221
+United States of America,2025,Total Fertility Rate,1.6234
+United States of America,2026,Total Fertility Rate,1.6247
+United States of America,2027,Total Fertility Rate,1.6235
+United States of America,2028,Total Fertility Rate,1.6254
+United States of America,2029,Total Fertility Rate,1.6272
+United States of America,2030,Total Fertility Rate,1.6293
+United States of America,2031,Total Fertility Rate,1.6298
+United States of America,2032,Total Fertility Rate,1.631
+United States of America,2033,Total Fertility Rate,1.6331
+United States of America,2034,Total Fertility Rate,1.6314
+United States of America,2035,Total Fertility Rate,1.6328
+United States of America,2036,Total Fertility Rate,1.635
+United States of America,2037,Total Fertility Rate,1.6345
+United States of America,2038,Total Fertility Rate,1.6359
+United States of America,2039,Total Fertility Rate,1.6385
+United States of America,2040,Total Fertility Rate,1.6389
+United States of America,2041,Total Fertility Rate,1.6398
+United States of America,2042,Total Fertility Rate,1.6389
+United States of America,2043,Total Fertility Rate,1.6398
+United States of America,2044,Total Fertility Rate,1.6402
+United States of America,2045,Total Fertility Rate,1.6445
+United States of America,2046,Total Fertility Rate,1.6428
+United States of America,2047,Total Fertility Rate,1.6418
+United States of America,2048,Total Fertility Rate,1.6422
+United States of America,2049,Total Fertility Rate,1.6414
+United States of America,2050,Total Fertility Rate,1.6428
+United States of America,2051,Total Fertility Rate,1.6431
+United States of America,2052,Total Fertility Rate,1.642
+United States of America,2053,Total Fertility Rate,1.6425
+United States of America,2054,Total Fertility Rate,1.6416
+United States of America,2055,Total Fertility Rate,1.6415
+United States of America,2056,Total Fertility Rate,1.6421
+United States of America,2057,Total Fertility Rate,1.6411
+United States of America,2058,Total Fertility Rate,1.6395
+United States of America,2059,Total Fertility Rate,1.6394
+United States of America,2060,Total Fertility Rate,1.6398
+United States of America,2061,Total Fertility Rate,1.6393
+United States of America,2062,Total Fertility Rate,1.638
+United States of America,2063,Total Fertility Rate,1.638
+United States of America,2064,Total Fertility Rate,1.6382
+United States of America,2065,Total Fertility Rate,1.6387
+United States of America,2066,Total Fertility Rate,1.6394
+United States of America,2067,Total Fertility Rate,1.6405
+United States of America,2068,Total Fertility Rate,1.6411
+United States of America,2069,Total Fertility Rate,1.6416
+United States of America,2070,Total Fertility Rate,1.6434
+United States of America,2071,Total Fertility Rate,1.6415
+United States of America,2072,Total Fertility Rate,1.642
+United States of America,2073,Total Fertility Rate,1.6399
+United States of America,2074,Total Fertility Rate,1.641
+United States of America,2075,Total Fertility Rate,1.642
+United States of America,2076,Total Fertility Rate,1.6427
+United States of America,2077,Total Fertility Rate,1.6444
+United States of America,2078,Total Fertility Rate,1.646
+United States of America,2079,Total Fertility Rate,1.6456
+United States of America,2080,Total Fertility Rate,1.6452
+United States of America,2081,Total Fertility Rate,1.6447
+United States of America,2082,Total Fertility Rate,1.6446
+United States of America,2083,Total Fertility Rate,1.6448
+United States of America,2084,Total Fertility Rate,1.6449
+United States of America,2085,Total Fertility Rate,1.6459
+United States of America,2086,Total Fertility Rate,1.647
+United States of America,2087,Total Fertility Rate,1.6469
+United States of America,2088,Total Fertility Rate,1.6472
+United States of America,2089,Total Fertility Rate,1.6491
+United States of America,2090,Total Fertility Rate,1.6503
+United States of America,2091,Total Fertility Rate,1.6486
+United States of America,2092,Total Fertility Rate,1.6499
+United States of America,2093,Total Fertility Rate,1.6492
+United States of America,2094,Total Fertility Rate,1.6488
+United States of America,2095,Total Fertility Rate,1.6499
+United States of America,2096,Total Fertility Rate,1.6492
+United States of America,2097,Total Fertility Rate,1.651
+United States of America,2098,Total Fertility Rate,1.6487
+United States of America,2099,Total Fertility Rate,1.6494
+United States of America,2100,Total Fertility Rate,1.6469
+Japan,1950,Life Expectancy at Age 65,12.0849
+Japan,1951,Life Expectancy at Age 65,12.3528
+Japan,1952,Life Expectancy at Age 65,12.6102
+Japan,1953,Life Expectancy at Age 65,12.2088
+Japan,1954,Life Expectancy at Age 65,12.9251
+Japan,1955,Life Expectancy at Age 65,13.0581
+Japan,1956,Life Expectancy at Age 65,12.6455
+Japan,1957,Life Expectancy at Age 65,12.3008
+Japan,1958,Life Expectancy at Age 65,13.1727
+Japan,1959,Life Expectancy at Age 65,13.1722
+Japan,1960,Life Expectancy at Age 65,12.9037
+Japan,1961,Life Expectancy at Age 65,13.0757
+Japan,1962,Life Expectancy at Age 65,12.8893
+Japan,1963,Life Expectancy at Age 65,13.4662
+Japan,1964,Life Expectancy at Age 65,13.536
+Japan,1965,Life Expectancy at Age 65,13.2806
+Japan,1966,Life Expectancy at Age 65,13.7899
+Japan,1967,Life Expectancy at Age 65,13.916
+Japan,1968,Life Expectancy at Age 65,13.9512
+Japan,1969,Life Expectancy at Age 65,14.073
+Japan,1970,Life Expectancy at Age 65,14.0129
+Japan,1971,Life Expectancy at Age 65,14.5514
+Japan,1972,Life Expectancy at Age 65,14.8162
+Japan,1973,Life Expectancy at Age 65,14.779
+Japan,1974,Life Expectancy at Age 65,14.9311
+Japan,1975,Life Expectancy at Age 65,15.2235
+Japan,1976,Life Expectancy at Age 65,15.4118
+Japan,1977,Life Expectancy at Age 65,15.8215
+Japan,1978,Life Expectancy at Age 65,16.0065
+Japan,1979,Life Expectancy at Age 65,16.3811
+Japan,1980,Life Expectancy at Age 65,16.2507
+Japan,1981,Life Expectancy at Age 65,16.5611
+Japan,1982,Life Expectancy at Age 65,16.9811
+Japan,1983,Life Expectancy at Age 65,17.0119
+Japan,1984,Life Expectancy at Age 65,17.3147
+Japan,1985,Life Expectancy at Age 65,17.4814
+Japan,1986,Life Expectancy at Age 65,17.813
+Japan,1987,Life Expectancy at Age 65,18.1383
+Japan,1988,Life Expectancy at Age 65,17.9943
+Japan,1989,Life Expectancy at Age 65,18.3515
+Japan,1990,Life Expectancy at Age 65,18.3297
+Japan,1991,Life Expectancy at Age 65,18.5536
+Japan,1992,Life Expectancy at Age 65,18.6139
+Japan,1993,Life Expectancy at Age 65,18.7
+Japan,1994,Life Expectancy at Age 65,19.0182
+Japan,1995,Life Expectancy at Age 65,18.9137
+Japan,1996,Life Expectancy at Age 65,19.446
+Japan,1997,Life Expectancy at Age 65,19.5988
+Japan,1998,Life Expectancy at Age 65,19.7553
+Japan,1999,Life Expectancy at Age 65,19.661
+Japan,2000,Life Expectancy at Age 65,20.1392
+Japan,2001,Life Expectancy at Age 65,20.3895
+Japan,2002,Life Expectancy at Age 65,20.6148
+Japan,2003,Life Expectancy at Age 65,20.6777
+Japan,2004,Life Expectancy at Age 65,20.8936
+Japan,2005,Life Expectancy at Age 65,20.7679
+Japan,2006,Life Expectancy at Age 65,21.037
+Japan,2007,Life Expectancy at Age 65,21.1494
+Japan,2008,Life Expectancy at Age 65,21.1897
+Japan,2009,Life Expectancy at Age 65,21.4799
+Japan,2010,Life Expectancy at Age 65,21.3804
+Japan,2011,Life Expectancy at Age 65,21.2875
+Japan,2012,Life Expectancy at Age 65,21.4557
+Japan,2013,Life Expectancy at Age 65,21.6201
+Japan,2014,Life Expectancy at Age 65,21.8081
+Japan,2015,Life Expectancy at Age 65,21.9438
+Japan,2016,Life Expectancy at Age 65,22.0701
+Japan,2017,Life Expectancy at Age 65,22.1067
+Japan,2018,Life Expectancy at Age 65,22.1926
+Japan,2019,Life Expectancy at Age 65,22.3003
+Japan,2020,Life Expectancy at Age 65,22.5463
+Japan,2021,Life Expectancy at Age 65,22.4071
+Japan,2022,Life Expectancy at Age 65,21.9387
+Japan,2023,Life Expectancy at Age 65,22.4927
+Japan,2024,Life Expectancy at Age 65,22.6032
+Japan,2025,Life Expectancy at Age 65,22.7109
+Japan,2026,Life Expectancy at Age 65,22.8168
+Japan,2027,Life Expectancy at Age 65,22.9185
+Japan,2028,Life Expectancy at Age 65,23.031
+Japan,2029,Life Expectancy at Age 65,23.1392
+Japan,2030,Life Expectancy at Age 65,23.2474
+Japan,2031,Life Expectancy at Age 65,23.3555
+Japan,2032,Life Expectancy at Age 65,23.4509
+Japan,2033,Life Expectancy at Age 65,23.559
+Japan,2034,Life Expectancy at Age 65,23.6504
+Japan,2035,Life Expectancy at Age 65,23.7586
+Japan,2036,Life Expectancy at Age 65,23.8604
+Japan,2037,Life Expectancy at Age 65,23.9663
+Japan,2038,Life Expectancy at Age 65,24.0678
+Japan,2039,Life Expectancy at Age 65,24.1693
+Japan,2040,Life Expectancy at Age 65,24.2768
+Japan,2041,Life Expectancy at Age 65,24.3718
+Japan,2042,Life Expectancy at Age 65,24.4728
+Japan,2043,Life Expectancy at Age 65,24.5735
+Japan,2044,Life Expectancy at Age 65,24.6739
+Japan,2045,Life Expectancy at Age 65,24.774
+Japan,2046,Life Expectancy at Age 65,24.8681
+Japan,2047,Life Expectancy at Age 65,24.9817
+Japan,2048,Life Expectancy at Age 65,25.0813
+Japan,2049,Life Expectancy at Age 65,25.1805
+Japan,2050,Life Expectancy at Age 65,25.2733
+Japan,2051,Life Expectancy at Age 65,25.3779
+Japan,2052,Life Expectancy at Age 65,25.4772
+Japan,2053,Life Expectancy at Age 65,25.5689
+Japan,2054,Life Expectancy at Age 65,25.6725
+Japan,2055,Life Expectancy at Age 65,25.7768
+Japan,2056,Life Expectancy at Age 65,25.8736
+Japan,2057,Life Expectancy at Age 65,25.9709
+Japan,2058,Life Expectancy at Age 65,26.0728
+Japan,2059,Life Expectancy at Age 65,26.1751
+Japan,2060,Life Expectancy at Age 65,26.2767
+Japan,2061,Life Expectancy at Age 65,26.3652
+Japan,2062,Life Expectancy at Age 65,26.4602
+Japan,2063,Life Expectancy at Age 65,26.5662
+Japan,2064,Life Expectancy at Age 65,26.6531
+Japan,2065,Life Expectancy at Age 65,26.7578
+Japan,2066,Life Expectancy at Age 65,26.8503
+Japan,2067,Life Expectancy at Age 65,26.9476
+Japan,2068,Life Expectancy at Age 65,27.0445
+Japan,2069,Life Expectancy at Age 65,27.1467
+Japan,2070,Life Expectancy at Age 65,27.2424
+Japan,2071,Life Expectancy at Age 65,27.3497
+Japan,2072,Life Expectancy at Age 65,27.444
+Japan,2073,Life Expectancy at Age 65,27.5434
+Japan,2074,Life Expectancy at Age 65,27.6427
+Japan,2075,Life Expectancy at Age 65,27.7467
+Japan,2076,Life Expectancy at Age 65,27.8444
+Japan,2077,Life Expectancy at Age 65,27.9357
+Japan,2078,Life Expectancy at Age 65,28.0378
+Japan,2079,Life Expectancy at Age 65,28.1226
+Japan,2080,Life Expectancy at Age 65,28.2237
+Japan,2081,Life Expectancy at Age 65,28.3183
+Japan,2082,Life Expectancy at Age 65,28.4127
+Japan,2083,Life Expectancy at Age 65,28.5065
+Japan,2084,Life Expectancy at Age 65,28.6053
+Japan,2085,Life Expectancy at Age 65,28.6927
+Japan,2086,Life Expectancy at Age 65,28.7904
+Japan,2087,Life Expectancy at Age 65,28.8875
+Japan,2088,Life Expectancy at Age 65,28.9892
+Japan,2089,Life Expectancy at Age 65,29.0904
+Japan,2090,Life Expectancy at Age 65,29.1855
+Japan,2091,Life Expectancy at Age 65,29.2903
+Japan,2092,Life Expectancy at Age 65,29.3838
+Japan,2093,Life Expectancy at Age 65,29.4819
+Japan,2094,Life Expectancy at Age 65,29.5793
+Japan,2095,Life Expectancy at Age 65,29.6809
+Japan,2096,Life Expectancy at Age 65,29.7864
+Japan,2097,Life Expectancy at Age 65,29.891
+Japan,2098,Life Expectancy at Age 65,29.9899
+Japan,2099,Life Expectancy at Age 65,30.088
+Japan,2100,Life Expectancy at Age 65,30.1943
+Italy,1950,Life Expectancy at Age 65,13.834
+Italy,1951,Life Expectancy at Age 65,13.2898
+Italy,1952,Life Expectancy at Age 65,13.3658
+Italy,1953,Life Expectancy at Age 65,13.3359
+Italy,1954,Life Expectancy at Age 65,14.0752
+Italy,1955,Life Expectancy at Age 65,14.1167
+Italy,1956,Life Expectancy at Age 65,13.2615
+Italy,1957,Life Expectancy at Age 65,13.7107
+Italy,1958,Life Expectancy at Age 65,14.2771
+Italy,1959,Life Expectancy at Age 65,14.545
+Italy,1960,Life Expectancy at Age 65,14.184
+Italy,1961,Life Expectancy at Age 65,14.5787
+Italy,1962,Life Expectancy at Age 65,14.0397
+Italy,1963,Life Expectancy at Age 65,14.0472
+Italy,1964,Life Expectancy at Age 65,14.5889
+Italy,1965,Life Expectancy at Age 65,14.2105
+Italy,1966,Life Expectancy at Age 65,14.6852
+Italy,1967,Life Expectancy at Age 65,14.5643
+Italy,1968,Life Expectancy at Age 65,14.3225
+Italy,1969,Life Expectancy at Age 65,14.3495
+Italy,1970,Life Expectancy at Age 65,14.7692
+Italy,1971,Life Expectancy at Age 65,14.9062
+Italy,1972,Life Expectancy at Age 65,15.0306
+Italy,1973,Life Expectancy at Age 65,14.7652
+Italy,1974,Life Expectancy at Age 65,15.0752
+Italy,1975,Life Expectancy at Age 65,14.8303
+Italy,1976,Life Expectancy at Age 65,14.9944
+Italy,1977,Life Expectancy at Age 65,15.1626
+Italy,1978,Life Expectancy at Age 65,15.3673
+Italy,1979,Life Expectancy at Age 65,15.5436
+Italy,1980,Life Expectancy at Age 65,15.4553
+Italy,1981,Life Expectancy at Age 65,15.6277
+Italy,1982,Life Expectancy at Age 65,15.9231
+Italy,1983,Life Expectancy at Age 65,15.6549
+Italy,1984,Life Expectancy at Age 65,16.2079
+Italy,1985,Life Expectancy at Age 65,16.1706
+Italy,1986,Life Expectancy at Age 65,16.3683
+Italy,1987,Life Expectancy at Age 65,16.7536
+Italy,1988,Life Expectancy at Age 65,16.845
+Italy,1989,Life Expectancy at Age 65,17.1389
+Italy,1990,Life Expectancy at Age 65,17.16
+Italy,1991,Life Expectancy at Age 65,17.2421
+Italy,1992,Life Expectancy at Age 65,17.5127
+Italy,1993,Life Expectancy at Age 65,17.5929
+Italy,1994,Life Expectancy at Age 65,17.7216
+Italy,1995,Life Expectancy at Age 65,17.9188
+Italy,1996,Life Expectancy at Age 65,18.1179
+Italy,1997,Life Expectancy at Age 65,18.1929
+Italy,1998,Life Expectancy at Age 65,18.1588
+Italy,1999,Life Expectancy at Age 65,18.3987
+Italy,2000,Life Expectancy at Age 65,18.6961
+Italy,2001,Life Expectancy at Age 65,18.925
+Italy,2002,Life Expectancy at Age 65,19.0565
+Italy,2003,Life Expectancy at Age 65,18.9188
+Italy,2004,Life Expectancy at Age 65,19.643
+Italy,2005,Life Expectancy at Age 65,19.5404
+Italy,2006,Life Expectancy at Age 65,19.8793
+Italy,2007,Life Expectancy at Age 65,19.8955
+Italy,2008,Life Expectancy at Age 65,19.9696
+Italy,2009,Life Expectancy at Age 65,20.0533
+Italy,2010,Life Expectancy at Age 65,20.2771
+Italy,2011,Life Expectancy at Age 65,20.3457
+Italy,2012,Life Expectancy at Age 65,20.3009
+Italy,2013,Life Expectancy at Age 65,20.6281
+Italy,2014,Life Expectancy at Age 65,20.8093
+Italy,2015,Life Expectancy at Age 65,20.4681
+Italy,2016,Life Expectancy at Age 65,20.9081
+Italy,2017,Life Expectancy at Age 65,20.6747
+Italy,2018,Life Expectancy at Age 65,21.0331
+Italy,2019,Life Expectancy at Age 65,21.0862
+Italy,2020,Life Expectancy at Age 65,20.026
+Italy,2021,Life Expectancy at Age 65,20.7551
+Italy,2022,Life Expectancy at Age 65,20.34
+Italy,2023,Life Expectancy at Age 65,21.3106
+Italy,2024,Life Expectancy at Age 65,21.448
+Italy,2025,Life Expectancy at Age 65,21.5591
+Italy,2026,Life Expectancy at Age 65,21.6621
+Italy,2027,Life Expectancy at Age 65,21.7591
+Italy,2028,Life Expectancy at Age 65,21.8612
+Italy,2029,Life Expectancy at Age 65,21.9494
+Italy,2030,Life Expectancy at Age 65,22.0555
+Italy,2031,Life Expectancy at Age 65,22.1435
+Italy,2032,Life Expectancy at Age 65,22.2399
+Italy,2033,Life Expectancy at Age 65,22.3412
+Italy,2034,Life Expectancy at Age 65,22.4343
+Italy,2035,Life Expectancy at Age 65,22.5305
+Italy,2036,Life Expectancy at Age 65,22.6186
+Italy,2037,Life Expectancy at Age 65,22.7145
+Italy,2038,Life Expectancy at Age 65,22.8101
+Italy,2039,Life Expectancy at Age 65,22.9026
+Italy,2040,Life Expectancy at Age 65,23.0027
+Italy,2041,Life Expectancy at Age 65,23.0975
+Italy,2042,Life Expectancy at Age 65,23.1918
+Italy,2043,Life Expectancy at Age 65,23.2686
+Italy,2044,Life Expectancy at Age 65,23.3724
+Italy,2045,Life Expectancy at Age 65,23.466
+Italy,2046,Life Expectancy at Age 65,23.5494
+Italy,2047,Life Expectancy at Age 65,23.6424
+Italy,2048,Life Expectancy at Age 65,23.735
+Italy,2049,Life Expectancy at Age 65,23.8272
+Italy,2050,Life Expectancy at Age 65,23.919
+Italy,2051,Life Expectancy at Age 65,24.0108
+Italy,2052,Life Expectancy at Age 65,24.1019
+Italy,2053,Life Expectancy at Age 65,24.1925
+Italy,2054,Life Expectancy at Age 65,24.2901
+Italy,2055,Life Expectancy at Age 65,24.3799
+Italy,2056,Life Expectancy at Age 65,24.4689
+Italy,2057,Life Expectancy at Age 65,24.5527
+Italy,2058,Life Expectancy at Age 65,24.6429
+Italy,2059,Life Expectancy at Age 65,24.7304
+Italy,2060,Life Expectancy at Age 65,24.8125
+Italy,2061,Life Expectancy at Age 65,24.8941
+Italy,2062,Life Expectancy at Age 65,24.9796
+Italy,2063,Life Expectancy at Age 65,25.0712
+Italy,2064,Life Expectancy at Age 65,25.1624
+Italy,2065,Life Expectancy at Age 65,25.2377
+Italy,2066,Life Expectancy at Age 65,25.3282
+Italy,2067,Life Expectancy at Age 65,25.4184
+Italy,2068,Life Expectancy at Age 65,25.5017
+Italy,2069,Life Expectancy at Age 65,25.5909
+Italy,2070,Life Expectancy at Age 65,25.6798
+Italy,2071,Life Expectancy at Age 65,25.7832
+Italy,2072,Life Expectancy at Age 65,25.8708
+Italy,2073,Life Expectancy at Age 65,25.9578
+Italy,2074,Life Expectancy at Age 65,26.0499
+Italy,2075,Life Expectancy at Age 65,26.1417
+Italy,2076,Life Expectancy at Age 65,26.2264
+Italy,2077,Life Expectancy at Age 65,26.3253
+Italy,2078,Life Expectancy at Age 65,26.4093
+Italy,2079,Life Expectancy at Age 65,26.4978
+Italy,2080,Life Expectancy at Age 65,26.5856
+Italy,2081,Life Expectancy at Age 65,26.6815
+Italy,2082,Life Expectancy at Age 65,26.768
+Italy,2083,Life Expectancy at Age 65,26.8626
+Italy,2084,Life Expectancy at Age 65,26.9667
+Italy,2085,Life Expectancy at Age 65,27.0513
+Italy,2086,Life Expectancy at Age 65,27.1351
+Italy,2087,Life Expectancy at Age 65,27.2001
+Italy,2088,Life Expectancy at Age 65,27.2934
+Italy,2089,Life Expectancy at Age 65,27.3849
+Italy,2090,Life Expectancy at Age 65,27.4756
+Italy,2091,Life Expectancy at Age 65,27.5754
+Italy,2092,Life Expectancy at Age 65,27.6614
+Italy,2093,Life Expectancy at Age 65,27.7548
+Italy,2094,Life Expectancy at Age 65,27.8442
+Italy,2095,Life Expectancy at Age 65,27.9406
+Italy,2096,Life Expectancy at Age 65,28.0188
+Italy,2097,Life Expectancy at Age 65,28.1209
+Italy,2098,Life Expectancy at Age 65,28.2142
+Italy,2099,Life Expectancy at Age 65,28.3146
+Italy,2100,Life Expectancy at Age 65,28.3971
+France,1950,Life Expectancy at Age 65,13.5714
+France,1951,Life Expectancy at Age 65,13.1486
+France,1952,Life Expectancy at Age 65,13.739
+France,1953,Life Expectancy at Age 65,13.2455
+France,1954,Life Expectancy at Age 65,13.9369
+France,1955,Life Expectancy at Age 65,13.8904
+France,1956,Life Expectancy at Age 65,13.6581
+France,1957,Life Expectancy at Age 65,13.943
+France,1958,Life Expectancy at Age 65,14.4461
+France,1959,Life Expectancy at Age 65,14.4744
+France,1960,Life Expectancy at Age 65,14.3634
+France,1961,Life Expectancy at Age 65,14.8502
+France,1962,Life Expectancy at Age 65,14.3659
+France,1963,Life Expectancy at Age 65,14.2444
+France,1964,Life Expectancy at Age 65,14.9081
+France,1965,Life Expectancy at Age 65,14.6523
+France,1966,Life Expectancy at Age 65,14.9931
+France,1967,Life Expectancy at Age 65,14.8769
+France,1968,Life Expectancy at Age 65,14.8159
+France,1969,Life Expectancy at Age 65,14.6051
+France,1970,Life Expectancy at Age 65,15.1537
+France,1971,Life Expectancy at Age 65,15.1235
+France,1972,Life Expectancy at Age 65,15.3009
+France,1973,Life Expectancy at Age 65,15.2533
+France,1974,Life Expectancy at Age 65,15.4538
+France,1975,Life Expectancy at Age 65,15.4203
+France,1976,Life Expectancy at Age 65,15.5953
+France,1977,Life Expectancy at Age 65,16.0352
+France,1978,Life Expectancy at Age 65,15.9941
+France,1979,Life Expectancy at Age 65,16.2327
+France,1980,Life Expectancy at Age 65,16.3154
+France,1981,Life Expectancy at Age 65,16.3045
+France,1982,Life Expectancy at Age 65,16.6192
+France,1983,Life Expectancy at Age 65,16.4939
+France,1984,Life Expectancy at Age 65,16.8623
+France,1985,Life Expectancy at Age 65,16.8326
+France,1986,Life Expectancy at Age 65,17.0323
+France,1987,Life Expectancy at Age 65,17.4421
+France,1988,Life Expectancy at Age 65,17.6686
+France,1989,Life Expectancy at Age 65,17.7821
+France,1990,Life Expectancy at Age 65,17.9626
+France,1991,Life Expectancy at Age 65,18.1539
+France,1992,Life Expectancy at Age 65,18.3277
+France,1993,Life Expectancy at Age 65,18.3335
+France,1994,Life Expectancy at Age 65,18.6456
+France,1995,Life Expectancy at Age 65,18.5776
+France,1996,Life Expectancy at Age 65,18.6108
+France,1997,Life Expectancy at Age 65,18.7833
+France,1998,Life Expectancy at Age 65,18.8491
+France,1999,Life Expectancy at Age 65,18.921
+France,2000,Life Expectancy at Age 65,19.1518
+France,2001,Life Expectancy at Age 65,19.3319
+France,2002,Life Expectancy at Age 65,19.4116
+France,2003,Life Expectancy at Age 65,19.332
+France,2004,Life Expectancy at Age 65,20.0986
+France,2005,Life Expectancy at Age 65,20.0142
+France,2006,Life Expectancy at Age 65,20.3817
+France,2007,Life Expectancy at Age 65,20.5094
+France,2008,Life Expectancy at Age 65,20.5447
+France,2009,Life Expectancy at Age 65,20.6782
+France,2010,Life Expectancy at Age 65,20.8236
+France,2011,Life Expectancy at Age 65,21.1215
+France,2012,Life Expectancy at Age 65,20.978
+France,2013,Life Expectancy at Age 65,21.153
+France,2014,Life Expectancy at Age 65,21.5101
+France,2015,Life Expectancy at Age 65,21.2423
+France,2016,Life Expectancy at Age 65,21.4246
+France,2017,Life Expectancy at Age 65,21.4172
+France,2018,Life Expectancy at Age 65,21.5357
+France,2019,Life Expectancy at Age 65,21.629
+France,2020,Life Expectancy at Age 65,21.0344
+France,2021,Life Expectancy at Age 65,21.1993
+France,2022,Life Expectancy at Age 65,21.3164
+France,2023,Life Expectancy at Age 65,22.0259
+France,2024,Life Expectancy at Age 65,22.145
+France,2025,Life Expectancy at Age 65,22.2308
+France,2026,Life Expectancy at Age 65,22.3171
+France,2027,Life Expectancy at Age 65,22.4092
+France,2028,Life Expectancy at Age 65,22.4966
+France,2029,Life Expectancy at Age 65,22.5896
+France,2030,Life Expectancy at Age 65,22.6777
+France,2031,Life Expectancy at Age 65,22.76
+France,2032,Life Expectancy at Age 65,22.849
+France,2033,Life Expectancy at Age 65,22.932
+France,2034,Life Expectancy at Age 65,23.0154
+France,2035,Life Expectancy at Age 65,23.1037
+France,2036,Life Expectancy at Age 65,23.1984
+France,2037,Life Expectancy at Age 65,23.2931
+France,2038,Life Expectancy at Age 65,23.3875
+France,2039,Life Expectancy at Age 65,23.4703
+France,2040,Life Expectancy at Age 65,23.558
+France,2041,Life Expectancy at Age 65,23.6521
+France,2042,Life Expectancy at Age 65,23.7347
+France,2043,Life Expectancy at Age 65,23.8172
+France,2044,Life Expectancy at Age 65,23.905
+France,2045,Life Expectancy at Age 65,23.993
+France,2046,Life Expectancy at Age 65,24.0767
+France,2047,Life Expectancy at Age 65,24.1699
+France,2048,Life Expectancy at Age 65,24.2597
+France,2049,Life Expectancy at Age 65,24.3526
+France,2050,Life Expectancy at Age 65,24.4364
+France,2051,Life Expectancy at Age 65,24.5288
+France,2052,Life Expectancy at Age 65,24.6213
+France,2053,Life Expectancy at Age 65,24.7088
+France,2054,Life Expectancy at Age 65,24.7958
+France,2055,Life Expectancy at Age 65,24.893
+France,2056,Life Expectancy at Age 65,24.9747
+France,2057,Life Expectancy at Age 65,25.0649
+France,2058,Life Expectancy at Age 65,25.1438
+France,2059,Life Expectancy at Age 65,25.2354
+France,2060,Life Expectancy at Age 65,25.3251
+France,2061,Life Expectancy at Age 65,25.4138
+France,2062,Life Expectancy at Age 65,25.5022
+France,2063,Life Expectancy at Age 65,25.5816
+France,2064,Life Expectancy at Age 65,25.6753
+France,2065,Life Expectancy at Age 65,25.7568
+France,2066,Life Expectancy at Age 65,25.8495
+France,2067,Life Expectancy at Age 65,25.9305
+France,2068,Life Expectancy at Age 65,26.0233
+France,2069,Life Expectancy at Age 65,26.1159
+France,2070,Life Expectancy at Age 65,26.1961
+France,2071,Life Expectancy at Age 65,26.2963
+France,2072,Life Expectancy at Age 65,26.3814
+France,2073,Life Expectancy at Age 65,26.4662
+France,2074,Life Expectancy at Age 65,26.5505
+France,2075,Life Expectancy at Age 65,26.6345
+France,2076,Life Expectancy at Age 65,26.717
+France,2077,Life Expectancy at Age 65,26.7996
+France,2078,Life Expectancy at Age 65,26.8814
+France,2079,Life Expectancy at Age 65,26.9627
+France,2080,Life Expectancy at Age 65,27.0376
+France,2081,Life Expectancy at Age 65,27.1319
+France,2082,Life Expectancy at Age 65,27.2118
+France,2083,Life Expectancy at Age 65,27.2988
+France,2084,Life Expectancy at Age 65,27.3911
+France,2085,Life Expectancy at Age 65,27.4701
+France,2086,Life Expectancy at Age 65,27.5558
+France,2087,Life Expectancy at Age 65,27.6393
+France,2088,Life Expectancy at Age 65,27.7185
+France,2089,Life Expectancy at Age 65,27.809
+France,2090,Life Expectancy at Age 65,27.8986
+France,2091,Life Expectancy at Age 65,27.9823
+France,2092,Life Expectancy at Age 65,28.0657
+France,2093,Life Expectancy at Age 65,28.154
+France,2094,Life Expectancy at Age 65,28.2486
+France,2095,Life Expectancy at Age 65,28.3308
+France,2096,Life Expectancy at Age 65,28.4126
+France,2097,Life Expectancy at Age 65,28.4991
+France,2098,Life Expectancy at Age 65,28.5913
+France,2099,Life Expectancy at Age 65,28.6829
+France,2100,Life Expectancy at Age 65,28.7677
+Germany,1950,Life Expectancy at Age 65,13.1044
+Germany,1951,Life Expectancy at Age 65,13.1459
+Germany,1952,Life Expectancy at Age 65,13.1879
+Germany,1953,Life Expectancy at Age 65,13.2304
+Germany,1954,Life Expectancy at Age 65,13.2736
+Germany,1955,Life Expectancy at Age 65,13.3171
+Germany,1956,Life Expectancy at Age 65,13.3214
+Germany,1957,Life Expectancy at Age 65,13.2335
+Germany,1958,Life Expectancy at Age 65,13.6079
+Germany,1959,Life Expectancy at Age 65,13.6294
+Germany,1960,Life Expectancy at Age 65,13.3802
+Germany,1961,Life Expectancy at Age 65,13.7964
+Germany,1962,Life Expectancy at Age 65,13.6459
+Germany,1963,Life Expectancy at Age 65,13.6164
+Germany,1964,Life Expectancy at Age 65,13.9769
+Germany,1965,Life Expectancy at Age 65,13.7183
+Germany,1966,Life Expectancy at Age 65,13.8087
+Germany,1967,Life Expectancy at Age 65,13.8806
+Germany,1968,Life Expectancy at Age 65,13.4445
+Germany,1969,Life Expectancy at Age 65,13.4304
+Germany,1970,Life Expectancy at Age 65,13.5923
+Germany,1971,Life Expectancy at Age 65,13.7771
+Germany,1972,Life Expectancy at Age 65,13.8517
+Germany,1973,Life Expectancy at Age 65,13.9564
+Germany,1974,Life Expectancy at Age 65,14.088
+Germany,1975,Life Expectancy at Age 65,13.9395
+Germany,1976,Life Expectancy at Age 65,14.2054
+Germany,1977,Life Expectancy at Age 65,14.6082
+Germany,1978,Life Expectancy at Age 65,14.5487
+Germany,1979,Life Expectancy at Age 65,14.75
+Germany,1980,Life Expectancy at Age 65,14.7996
+Germany,1981,Life Expectancy at Age 65,14.9083
+Germany,1982,Life Expectancy at Age 65,15.0864
+Germany,1983,Life Expectancy at Age 65,15.2076
+Germany,1984,Life Expectancy at Age 65,15.5089
+Germany,1985,Life Expectancy at Age 65,15.4837
+Germany,1986,Life Expectancy at Age 65,15.6077
+Germany,1987,Life Expectancy at Age 65,15.931
+Germany,1988,Life Expectancy at Age 65,16.0611
+Germany,1989,Life Expectancy at Age 65,16.1681
+Germany,1990,Life Expectancy at Age 65,16.1622
+Germany,1991,Life Expectancy at Age 65,16.3637
+Germany,1992,Life Expectancy at Age 65,16.6636
+Germany,1993,Life Expectancy at Age 65,16.6445
+Germany,1994,Life Expectancy at Age 65,16.8472
+Germany,1995,Life Expectancy at Age 65,16.906
+Germany,1996,Life Expectancy at Age 65,16.9982
+Germany,1997,Life Expectancy at Age 65,17.2758
+Germany,1998,Life Expectancy at Age 65,17.4297
+Germany,1999,Life Expectancy at Age 65,17.589
+Germany,2000,Life Expectancy at Age 65,17.7773
+Germany,2001,Life Expectancy at Age 65,18.0115
+Germany,2002,Life Expectancy at Age 65,18.0194
+Germany,2003,Life Expectancy at Age 65,18.0222
+Germany,2004,Life Expectancy at Age 65,18.4749
+Germany,2005,Life Expectancy at Age 65,18.5324
+Germany,2006,Life Expectancy at Age 65,18.7572
+Germany,2007,Life Expectancy at Age 65,18.8728
+Germany,2008,Life Expectancy at Age 65,18.8869
+Germany,2009,Life Expectancy at Age 65,18.9473
+Germany,2010,Life Expectancy at Age 65,19.0678
+Germany,2011,Life Expectancy at Age 65,19.3017
+Germany,2012,Life Expectancy at Age 65,19.3158
+Germany,2013,Life Expectancy at Age 65,19.263
+Germany,2014,Life Expectancy at Age 65,19.6303
+Germany,2015,Life Expectancy at Age 65,19.332
+Germany,2016,Life Expectancy at Age 65,19.5862
+Germany,2017,Life Expectancy at Age 65,19.5552
+Germany,2018,Life Expectancy at Age 65,19.5217
+Germany,2019,Life Expectancy at Age 65,19.7444
+Germany,2020,Life Expectancy at Age 65,19.5381
+Germany,2021,Life Expectancy at Age 65,19.8077
+Germany,2022,Life Expectancy at Age 65,19.2982
+Germany,2023,Life Expectancy at Age 65,19.8195
+Germany,2024,Life Expectancy at Age 65,19.9961
+Germany,2025,Life Expectancy at Age 65,20.113
+Germany,2026,Life Expectancy at Age 65,20.2212
+Germany,2027,Life Expectancy at Age 65,20.3241
+Germany,2028,Life Expectancy at Age 65,20.4421
+Germany,2029,Life Expectancy at Age 65,20.5548
+Germany,2030,Life Expectancy at Age 65,20.6586
+Germany,2031,Life Expectancy at Age 65,20.7723
+Germany,2032,Life Expectancy at Age 65,20.8863
+Germany,2033,Life Expectancy at Age 65,20.9911
+Germany,2034,Life Expectancy at Age 65,21.0906
+Germany,2035,Life Expectancy at Age 65,21.1995
+Germany,2036,Life Expectancy at Age 65,21.2998
+Germany,2037,Life Expectancy at Age 65,21.4093
+Germany,2038,Life Expectancy at Age 65,21.5047
+Germany,2039,Life Expectancy at Age 65,21.6041
+Germany,2040,Life Expectancy at Age 65,21.7045
+Germany,2041,Life Expectancy at Age 65,21.8043
+Germany,2042,Life Expectancy at Age 65,21.9047
+Germany,2043,Life Expectancy at Age 65,22.0095
+Germany,2044,Life Expectancy at Age 65,22.0996
+Germany,2045,Life Expectancy at Age 65,22.1991
+Germany,2046,Life Expectancy at Age 65,22.289
+Germany,2047,Life Expectancy at Age 65,22.384
+Germany,2048,Life Expectancy at Age 65,22.4844
+Germany,2049,Life Expectancy at Age 65,22.5833
+Germany,2050,Life Expectancy at Age 65,22.6827
+Germany,2051,Life Expectancy at Age 65,22.778
+Germany,2052,Life Expectancy at Age 65,22.8661
+Germany,2053,Life Expectancy at Age 65,22.9546
+Germany,2054,Life Expectancy at Age 65,23.0476
+Germany,2055,Life Expectancy at Age 65,23.1513
+Germany,2056,Life Expectancy at Age 65,23.2457
+Germany,2057,Life Expectancy at Age 65,23.3393
+Germany,2058,Life Expectancy at Age 65,23.4311
+Germany,2059,Life Expectancy at Age 65,23.5148
+Germany,2060,Life Expectancy at Age 65,23.606
+Germany,2061,Life Expectancy at Age 65,23.6973
+Germany,2062,Life Expectancy at Age 65,23.7798
+Germany,2063,Life Expectancy at Age 65,23.8705
+Germany,2064,Life Expectancy at Age 65,23.9613
+Germany,2065,Life Expectancy at Age 65,24.0573
+Germany,2066,Life Expectancy at Age 65,24.1481
+Germany,2067,Life Expectancy at Age 65,24.2327
+Germany,2068,Life Expectancy at Age 65,24.3149
+Germany,2069,Life Expectancy at Age 65,24.405
+Germany,2070,Life Expectancy at Age 65,24.4949
+Germany,2071,Life Expectancy at Age 65,24.5845
+Germany,2072,Life Expectancy at Age 65,24.6735
+Germany,2073,Life Expectancy at Age 65,24.7622
+Germany,2074,Life Expectancy at Age 65,24.8565
+Germany,2075,Life Expectancy at Age 65,24.9472
+Germany,2076,Life Expectancy at Age 65,25.0352
+Germany,2077,Life Expectancy at Age 65,25.122
+Germany,2078,Life Expectancy at Age 65,25.2095
+Germany,2079,Life Expectancy at Age 65,25.3037
+Germany,2080,Life Expectancy at Age 65,25.385
+Germany,2081,Life Expectancy at Age 65,25.4715
+Germany,2082,Life Expectancy at Age 65,25.552
+Germany,2083,Life Expectancy at Age 65,25.6448
+Germany,2084,Life Expectancy at Age 65,25.7292
+Germany,2085,Life Expectancy at Age 65,25.8137
+Germany,2086,Life Expectancy at Age 65,25.9056
+Germany,2087,Life Expectancy at Age 65,25.9846
+Germany,2088,Life Expectancy at Age 65,26.0752
+Germany,2089,Life Expectancy at Age 65,26.1709
+Germany,2090,Life Expectancy at Age 65,26.2433
+Germany,2091,Life Expectancy at Age 65,26.3329
+Germany,2092,Life Expectancy at Age 65,26.4314
+Germany,2093,Life Expectancy at Age 65,26.5095
+Germany,2094,Life Expectancy at Age 65,26.5971
+Germany,2095,Life Expectancy at Age 65,26.6769
+Germany,2096,Life Expectancy at Age 65,26.7624
+Germany,2097,Life Expectancy at Age 65,26.8478
+Germany,2098,Life Expectancy at Age 65,26.9392
+Germany,2099,Life Expectancy at Age 65,27.0165
+Germany,2100,Life Expectancy at Age 65,27.106
+Canada,1950,Life Expectancy at Age 65,14.0912
+Canada,1951,Life Expectancy at Age 65,14.1261
+Canada,1952,Life Expectancy at Age 65,14.4328
+Canada,1953,Life Expectancy at Age 65,14.4063
+Canada,1954,Life Expectancy at Age 65,14.6947
+Canada,1955,Life Expectancy at Age 65,14.5517
+Canada,1956,Life Expectancy at Age 65,14.5652
+Canada,1957,Life Expectancy at Age 65,14.5479
+Canada,1958,Life Expectancy at Age 65,14.7697
+Canada,1959,Life Expectancy at Age 65,14.5921
+Canada,1960,Life Expectancy at Age 65,14.8129
+Canada,1961,Life Expectancy at Age 65,14.8819
+Canada,1962,Life Expectancy at Age 65,14.9623
+Canada,1963,Life Expectancy at Age 65,14.8805
+Canada,1964,Life Expectancy at Age 65,15.1483
+Canada,1965,Life Expectancy at Age 65,15.0806
+Canada,1966,Life Expectancy at Age 65,15.2242
+Canada,1967,Life Expectancy at Age 65,15.4022
+Canada,1968,Life Expectancy at Age 65,15.3436
+Canada,1969,Life Expectancy at Age 65,15.4824
+Canada,1970,Life Expectancy at Age 65,15.6163
+Canada,1971,Life Expectancy at Age 65,15.7561
+Canada,1972,Life Expectancy at Age 65,15.6801
+Canada,1973,Life Expectancy at Age 65,15.8134
+Canada,1974,Life Expectancy at Age 65,15.7927
+Canada,1975,Life Expectancy at Age 65,15.9879
+Canada,1976,Life Expectancy at Age 65,16.0814
+Canada,1977,Life Expectancy at Age 65,16.3502
+Canada,1978,Life Expectancy at Age 65,16.5155
+Canada,1979,Life Expectancy at Age 65,16.7316
+Canada,1980,Life Expectancy at Age 65,16.6838
+Canada,1981,Life Expectancy at Age 65,16.9179
+Canada,1982,Life Expectancy at Age 65,16.848
+Canada,1983,Life Expectancy at Age 65,17.0278
+Canada,1984,Life Expectancy at Age 65,17.1782
+Canada,1985,Life Expectancy at Age 65,17.1163
+Canada,1986,Life Expectancy at Age 65,17.1763
+Canada,1987,Life Expectancy at Age 65,17.382
+Canada,1988,Life Expectancy at Age 65,17.3423
+Canada,1989,Life Expectancy at Age 65,17.5613
+Canada,1990,Life Expectancy at Age 65,17.7486
+Canada,1991,Life Expectancy at Age 65,17.7888
+Canada,1992,Life Expectancy at Age 65,18.0019
+Canada,1993,Life Expectancy at Age 65,17.8245
+Canada,1994,Life Expectancy at Age 65,17.9391
+Canada,1995,Life Expectancy at Age 65,17.9782
+Canada,1996,Life Expectancy at Age 65,18.052
+Canada,1997,Life Expectancy at Age 65,18.1096
+Canada,1998,Life Expectancy at Age 65,18.1837
+Canada,1999,Life Expectancy at Age 65,18.3562
+Canada,2000,Life Expectancy at Age 65,18.6233
+Canada,2001,Life Expectancy at Age 65,18.7928
+Canada,2002,Life Expectancy at Age 65,18.8714
+Canada,2003,Life Expectancy at Age 65,19.024
+Canada,2004,Life Expectancy at Age 65,19.2383
+Canada,2005,Life Expectancy at Age 65,19.3599
+Canada,2006,Life Expectancy at Age 65,19.6696
+Canada,2007,Life Expectancy at Age 65,19.6531
+Canada,2008,Life Expectancy at Age 65,19.8003
+Canada,2009,Life Expectancy at Age 65,20.0557
+Canada,2010,Life Expectancy at Age 65,20.2526
+Canada,2011,Life Expectancy at Age 65,20.3697
+Canada,2012,Life Expectancy at Age 65,20.5484
+Canada,2013,Life Expectancy at Age 65,20.6032
+Canada,2014,Life Expectancy at Age 65,20.6572
+Canada,2015,Life Expectancy at Age 65,20.726
+Canada,2016,Life Expectancy at Age 65,20.9195
+Canada,2017,Life Expectancy at Age 65,20.8687
+Canada,2018,Life Expectancy at Age 65,20.8986
+Canada,2019,Life Expectancy at Age 65,21.1191
+Canada,2020,Life Expectancy at Age 65,20.841
+Canada,2021,Life Expectancy at Age 65,21.0992
+Canada,2022,Life Expectancy at Age 65,20.8461
+Canada,2023,Life Expectancy at Age 65,21.477
+Canada,2024,Life Expectancy at Age 65,21.369
+Canada,2025,Life Expectancy at Age 65,21.4771
+Canada,2026,Life Expectancy at Age 65,21.5897
+Canada,2027,Life Expectancy at Age 65,21.697
+Canada,2028,Life Expectancy at Age 65,21.7981
+Canada,2029,Life Expectancy at Age 65,21.9036
+Canada,2030,Life Expectancy at Age 65,21.9982
+Canada,2031,Life Expectancy at Age 65,22.0974
+Canada,2032,Life Expectancy at Age 65,22.1916
+Canada,2033,Life Expectancy at Age 65,22.2799
+Canada,2034,Life Expectancy at Age 65,22.3832
+Canada,2035,Life Expectancy at Age 65,22.4709
+Canada,2036,Life Expectancy at Age 65,22.5641
+Canada,2037,Life Expectancy at Age 65,22.6514
+Canada,2038,Life Expectancy at Age 65,22.743
+Canada,2039,Life Expectancy at Age 65,22.8401
+Canada,2040,Life Expectancy at Age 65,22.9359
+Canada,2041,Life Expectancy at Age 65,23.0165
+Canada,2042,Life Expectancy at Age 65,23.1071
+Canada,2043,Life Expectancy at Age 65,23.1916
+Canada,2044,Life Expectancy at Age 65,23.2768
+Canada,2045,Life Expectancy at Age 65,23.3662
+Canada,2046,Life Expectancy at Age 65,23.4497
+Canada,2047,Life Expectancy at Age 65,23.5382
+Canada,2048,Life Expectancy at Age 65,23.6208
+Canada,2049,Life Expectancy at Age 65,23.7041
+Canada,2050,Life Expectancy at Age 65,23.7859
+Canada,2051,Life Expectancy at Age 65,23.8675
+Canada,2052,Life Expectancy at Age 65,23.953
+Canada,2053,Life Expectancy at Age 65,24.0383
+Canada,2054,Life Expectancy at Age 65,24.1294
+Canada,2055,Life Expectancy at Age 65,24.218
+Canada,2056,Life Expectancy at Age 65,24.3029
+Canada,2057,Life Expectancy at Age 65,24.3873
+Canada,2058,Life Expectancy at Age 65,24.4701
+Canada,2059,Life Expectancy at Age 65,24.5523
+Canada,2060,Life Expectancy at Age 65,24.6341
+Canada,2061,Life Expectancy at Age 65,24.7206
+Canada,2062,Life Expectancy at Age 65,24.8066
+Canada,2063,Life Expectancy at Age 65,24.8869
+Canada,2064,Life Expectancy at Age 65,24.9669
+Canada,2065,Life Expectancy at Age 65,25.0464
+Canada,2066,Life Expectancy at Age 65,25.1255
+Canada,2067,Life Expectancy at Age 65,25.2044
+Canada,2068,Life Expectancy at Age 65,25.2828
+Canada,2069,Life Expectancy at Age 65,25.3608
+Canada,2070,Life Expectancy at Age 65,25.4385
+Canada,2071,Life Expectancy at Age 65,25.523
+Canada,2072,Life Expectancy at Age 65,25.6045
+Canada,2073,Life Expectancy at Age 65,25.6855
+Canada,2074,Life Expectancy at Age 65,25.7684
+Canada,2075,Life Expectancy at Age 65,25.8436
+Canada,2076,Life Expectancy at Age 65,25.9302
+Canada,2077,Life Expectancy at Age 65,26.0043
+Canada,2078,Life Expectancy at Age 65,26.0899
+Canada,2079,Life Expectancy at Age 65,26.1632
+Canada,2080,Life Expectancy at Age 65,26.243
+Canada,2081,Life Expectancy at Age 65,26.3224
+Canada,2082,Life Expectancy at Age 65,26.4062
+Canada,2083,Life Expectancy at Age 65,26.4897
+Canada,2084,Life Expectancy at Age 65,26.5771
+Canada,2085,Life Expectancy at Age 65,26.6546
+Canada,2086,Life Expectancy at Age 65,26.7318
+Canada,2087,Life Expectancy at Age 65,26.8087
+Canada,2088,Life Expectancy at Age 65,26.8943
+Canada,2089,Life Expectancy at Age 65,26.9766
+Canada,2090,Life Expectancy at Age 65,27.072
+Canada,2091,Life Expectancy at Age 65,27.1515
+Canada,2092,Life Expectancy at Age 65,27.2408
+Canada,2093,Life Expectancy at Age 65,27.3294
+Canada,2094,Life Expectancy at Age 65,27.4026
+Canada,2095,Life Expectancy at Age 65,27.4955
+Canada,2096,Life Expectancy at Age 65,27.5757
+Canada,2097,Life Expectancy at Age 65,27.661
+Canada,2098,Life Expectancy at Age 65,27.7412
+Canada,2099,Life Expectancy at Age 65,27.8261
+Canada,2100,Life Expectancy at Age 65,27.9087
+United States of America,1950,Life Expectancy at Age 65,13.9272
+United States of America,1951,Life Expectancy at Age 65,13.9855
+United States of America,1952,Life Expectancy at Age 65,14.148
+United States of America,1953,Life Expectancy at Age 65,14.1563
+United States of America,1954,Life Expectancy at Age 65,14.5087
+United States of America,1955,Life Expectancy at Age 65,14.3919
+United States of America,1956,Life Expectancy at Age 65,14.4134
+United States of America,1957,Life Expectancy at Age 65,14.2862
+United States of America,1958,Life Expectancy at Age 65,14.377
+United States of America,1959,Life Expectancy at Age 65,14.5285
+United States of America,1960,Life Expectancy at Age 65,14.4553
+United States of America,1961,Life Expectancy at Age 65,14.6578
+United States of America,1962,Life Expectancy at Age 65,14.5551
+United States of America,1963,Life Expectancy at Age 65,14.453
+United States of America,1964,Life Expectancy at Age 65,14.734
+United States of America,1965,Life Expectancy at Age 65,14.7132
+United States of America,1966,Life Expectancy at Age 65,14.6773
+United States of America,1967,Life Expectancy at Age 65,14.874
+United States of America,1968,Life Expectancy at Age 65,14.6834
+United States of America,1969,Life Expectancy at Age 65,14.8855
+United States of America,1970,Life Expectancy at Age 65,15.0631
+United States of America,1971,Life Expectancy at Age 65,15.1692
+United States of America,1972,Life Expectancy at Age 65,15.1326
+United States of America,1973,Life Expectancy at Age 65,15.2561
+United States of America,1974,Life Expectancy at Age 65,15.5534
+United States of America,1975,Life Expectancy at Age 65,15.9133
+United States of America,1976,Life Expectancy at Age 65,15.9958
+United States of America,1977,Life Expectancy at Age 65,16.2532
+United States of America,1978,Life Expectancy at Age 65,16.3194
+United States of America,1979,Life Expectancy at Age 65,16.5817
+United States of America,1980,Life Expectancy at Age 65,16.3951
+United States of America,1981,Life Expectancy at Age 65,16.6006
+United States of America,1982,Life Expectancy at Age 65,16.7328
+United States of America,1983,Life Expectancy at Age 65,16.6674
+United States of America,1984,Life Expectancy at Age 65,16.7482
+United States of America,1985,Life Expectancy at Age 65,16.707
+United States of America,1986,Life Expectancy at Age 65,16.8004
+United States of America,1987,Life Expectancy at Age 65,16.8903
+United States of America,1988,Life Expectancy at Age 65,16.8785
+United States of America,1989,Life Expectancy at Age 65,17.1259
+United States of America,1990,Life Expectancy at Age 65,17.2867
+United States of America,1991,Life Expectancy at Age 65,17.3835
+United States of America,1992,Life Expectancy at Age 65,17.5171
+United States of America,1993,Life Expectancy at Age 65,17.3376
+United States of America,1994,Life Expectancy at Age 65,17.4645
+United States of America,1995,Life Expectancy at Age 65,17.4874
+United States of America,1996,Life Expectancy at Age 65,17.5475
+United States of America,1997,Life Expectancy at Age 65,17.6188
+United States of America,1998,Life Expectancy at Age 65,17.6443
+United States of America,1999,Life Expectancy at Age 65,17.5917
+United States of America,2000,Life Expectancy at Age 65,17.6969
+United States of America,2001,Life Expectancy at Age 65,17.8247
+United States of America,2002,Life Expectancy at Age 65,17.8968
+United States of America,2003,Life Expectancy at Age 65,18.0487
+United States of America,2004,Life Expectancy at Age 65,18.3647
+United States of America,2005,Life Expectancy at Age 65,18.3881
+United States of America,2006,Life Expectancy at Age 65,18.6437
+United States of America,2007,Life Expectancy at Age 65,18.8199
+United States of America,2008,Life Expectancy at Age 65,18.8048
+United States of America,2009,Life Expectancy at Age 65,19.1112
+United States of America,2010,Life Expectancy at Age 65,19.1546
+United States of America,2011,Life Expectancy at Age 65,19.2004
+United States of America,2012,Life Expectancy at Age 65,19.3064
+United States of America,2013,Life Expectancy at Age 65,19.3135
+United States of America,2014,Life Expectancy at Age 65,19.4346
+United States of America,2015,Life Expectancy at Age 65,19.3804
+United States of America,2016,Life Expectancy at Age 65,19.5275
+United States of America,2017,Life Expectancy at Age 65,19.5037
+United States of America,2018,Life Expectancy at Age 65,19.5846
+United States of America,2019,Life Expectancy at Age 65,19.6836
+United States of America,2020,Life Expectancy at Age 65,18.4572
+United States of America,2021,Life Expectancy at Age 65,18.4922
+United States of America,2022,Life Expectancy at Age 65,19.3722
+United States of America,2023,Life Expectancy at Age 65,20.0029
+United States of America,2024,Life Expectancy at Age 65,19.9957
+United States of America,2025,Life Expectancy at Age 65,20.0923
+United States of America,2026,Life Expectancy at Age 65,20.1852
+United States of America,2027,Life Expectancy at Age 65,20.2846
+United States of America,2028,Life Expectancy at Age 65,20.377
+United States of America,2029,Life Expectancy at Age 65,20.4759
+United States of America,2030,Life Expectancy at Age 65,20.5745
+United States of America,2031,Life Expectancy at Age 65,20.666
+United States of America,2032,Life Expectancy at Age 65,20.7639
+United States of America,2033,Life Expectancy at Age 65,20.8613
+United States of America,2034,Life Expectancy at Age 65,20.9583
+United States of America,2035,Life Expectancy at Age 65,21.055
+United States of America,2036,Life Expectancy at Age 65,21.1513
+United States of America,2037,Life Expectancy at Age 65,21.2473
+United States of America,2038,Life Expectancy at Age 65,21.3429
+United States of America,2039,Life Expectancy at Age 65,21.4316
+United States of America,2040,Life Expectancy at Age 65,21.5264
+United States of America,2041,Life Expectancy at Age 65,21.6153
+United States of America,2042,Life Expectancy at Age 65,21.7085
+United States of America,2043,Life Expectancy at Age 65,21.8023
+United States of America,2044,Life Expectancy at Age 65,21.8956
+United States of America,2045,Life Expectancy at Age 65,21.9939
+United States of America,2046,Life Expectancy at Age 65,22.0917
+United States of America,2047,Life Expectancy at Age 65,22.1836
+United States of America,2048,Life Expectancy at Age 65,22.2689
+United States of America,2049,Life Expectancy at Age 65,22.3653
+United States of America,2050,Life Expectancy at Age 65,22.4498
+United States of America,2051,Life Expectancy at Age 65,22.54
+United States of America,2052,Life Expectancy at Age 65,22.635
+United States of America,2053,Life Expectancy at Age 65,22.7235
+United States of America,2054,Life Expectancy at Age 65,22.8115
+United States of America,2055,Life Expectancy at Age 65,22.9051
+United States of America,2056,Life Expectancy at Age 65,22.9923
+United States of America,2057,Life Expectancy at Age 65,23.074
+United States of America,2058,Life Expectancy at Age 65,23.1603
+United States of America,2059,Life Expectancy at Age 65,23.2412
+United States of America,2060,Life Expectancy at Age 65,23.3374
+United States of America,2061,Life Expectancy at Age 65,23.4222
+United States of America,2062,Life Expectancy at Age 65,23.5066
+United States of America,2063,Life Expectancy at Age 65,23.5905
+United States of America,2064,Life Expectancy at Age 65,23.674
+United States of America,2065,Life Expectancy at Age 65,23.7571
+United States of America,2066,Life Expectancy at Age 65,23.8396
+United States of America,2067,Life Expectancy at Age 65,23.9207
+United States of America,2068,Life Expectancy at Age 65,23.9922
+United States of America,2069,Life Expectancy at Age 65,24.0781
+United States of America,2070,Life Expectancy at Age 65,24.1589
+United States of America,2071,Life Expectancy at Age 65,24.2337
+United States of America,2072,Life Expectancy at Age 65,24.3081
+United States of America,2073,Life Expectancy at Age 65,24.3877
+United States of America,2074,Life Expectancy at Age 65,24.471
+United States of America,2075,Life Expectancy at Age 65,24.5484
+United States of America,2076,Life Expectancy at Age 65,24.621
+United States of America,2077,Life Expectancy at Age 65,24.6986
+United States of America,2078,Life Expectancy at Age 65,24.7841
+United States of America,2079,Life Expectancy at Age 65,24.8554
+United States of America,2080,Life Expectancy at Age 65,24.9345
+United States of America,2081,Life Expectancy at Age 65,25.0102
+United States of America,2082,Life Expectancy at Age 65,25.0883
+United States of America,2083,Life Expectancy at Age 65,25.1577
+United States of America,2084,Life Expectancy at Age 65,25.2399
+United States of America,2085,Life Expectancy at Age 65,25.3216
+United States of America,2086,Life Expectancy at Age 65,25.3987
+United States of America,2087,Life Expectancy at Age 65,25.4752
+United States of America,2088,Life Expectancy at Age 65,25.555
+United States of America,2089,Life Expectancy at Age 65,25.6292
+United States of America,2090,Life Expectancy at Age 65,25.7077
+United States of America,2091,Life Expectancy at Age 65,25.7808
+United States of America,2092,Life Expectancy at Age 65,25.8583
+United States of America,2093,Life Expectancy at Age 65,25.9351
+United States of America,2094,Life Expectancy at Age 65,26.0113
+United States of America,2095,Life Expectancy at Age 65,26.0869
+United States of America,2096,Life Expectancy at Age 65,26.1571
+United States of America,2097,Life Expectancy at Age 65,26.2315
+United States of America,2098,Life Expectancy at Age 65,26.3052
+United States of America,2099,Life Expectancy at Age 65,26.3737
+United States of America,2100,Life Expectancy at Age 65,26.4531
+Japan,1950,Net Migration Rate,-0.289
+Japan,1951,Net Migration Rate,-0.621
+Japan,1952,Net Migration Rate,-0.647
+Japan,1953,Net Migration Rate,-0.313
+Japan,1954,Net Migration Rate,-0.753
+Japan,1955,Net Migration Rate,-1.038
+Japan,1956,Net Migration Rate,-1.633
+Japan,1957,Net Migration Rate,-1.72
+Japan,1958,Net Migration Rate,-2.42
+Japan,1959,Net Migration Rate,-2.119
+Japan,1960,Net Migration Rate,-1.56
+Japan,1961,Net Migration Rate,-0.606
+Japan,1962,Net Migration Rate,-0.582
+Japan,1963,Net Migration Rate,-1.018
+Japan,1964,Net Migration Rate,-1.008
+Japan,1965,Net Migration Rate,-0.502
+Japan,1966,Net Migration Rate,0.677
+Japan,1967,Net Migration Rate,0.288
+Japan,1968,Net Migration Rate,0.418
+Japan,1969,Net Migration Rate,0.469
+Japan,1970,Net Migration Rate,0.316
+Japan,1971,Net Migration Rate,-0.998
+Japan,1972,Net Migration Rate,-0.677
+Japan,1973,Net Migration Rate,-0.313
+Japan,1974,Net Migration Rate,-0.091
+Japan,1975,Net Migration Rate,0.001
+Japan,1976,Net Migration Rate,-0.305
+Japan,1977,Net Migration Rate,-0.425
+Japan,1978,Net Migration Rate,-0.412
+Japan,1979,Net Migration Rate,-0.491
+Japan,1980,Net Migration Rate,-0.78
+Japan,1981,Net Migration Rate,-2.341
+Japan,1982,Net Migration Rate,-2.415
+Japan,1983,Net Migration Rate,-2.249
+Japan,1984,Net Migration Rate,-2.273
+Japan,1985,Net Migration Rate,-1.17
+Japan,1986,Net Migration Rate,0.231
+Japan,1987,Net Migration Rate,0.23
+Japan,1988,Net Migration Rate,0.418
+Japan,1989,Net Migration Rate,0.254
+Japan,1990,Net Migration Rate,1.01
+Japan,1991,Net Migration Rate,1.302
+Japan,1992,Net Migration Rate,1.374
+Japan,1993,Net Migration Rate,1.352
+Japan,1994,Net Migration Rate,1.231
+Japan,1995,Net Migration Rate,0.698
+Japan,1996,Net Migration Rate,0.199
+Japan,1997,Net Migration Rate,0.343
+Japan,1998,Net Migration Rate,0.363
+Japan,1999,Net Migration Rate,0.449
+Japan,2000,Net Migration Rate,0.185
+Japan,2001,Net Migration Rate,0.468
+Japan,2002,Net Migration Rate,0.477
+Japan,2003,Net Migration Rate,0.586
+Japan,2004,Net Migration Rate,0.54
+Japan,2005,Net Migration Rate,0.884
+Japan,2006,Net Migration Rate,1.016
+Japan,2007,Net Migration Rate,1.078
+Japan,2008,Net Migration Rate,1.113
+Japan,2009,Net Migration Rate,0.979
+Japan,2010,Net Migration Rate,1.029
+Japan,2011,Net Migration Rate,0.763
+Japan,2012,Net Migration Rate,0.531
+Japan,2013,Net Migration Rate,0.52
+Japan,2014,Net Migration Rate,0.456
+Japan,2015,Net Migration Rate,1.327
+Japan,2016,Net Migration Rate,2.475
+Japan,2017,Net Migration Rate,2.539
+Japan,2018,Net Migration Rate,2.526
+Japan,2019,Net Migration Rate,2.511
+Japan,2020,Net Migration Rate,0.333
+Japan,2021,Net Migration Rate,-0.278
+Japan,2022,Net Migration Rate,1.4
+Japan,2023,Net Migration Rate,1.407
+Japan,2024,Net Migration Rate,1.239
+Japan,2025,Net Migration Rate,1.142
+Japan,2026,Net Migration Rate,1.051
+Japan,2027,Net Migration Rate,1.047
+Japan,2028,Net Migration Rate,1.033
+Japan,2029,Net Migration Rate,1.064
+Japan,2030,Net Migration Rate,1.037
+Japan,2031,Net Migration Rate,1.044
+Japan,2032,Net Migration Rate,1.043
+Japan,2033,Net Migration Rate,1.063
+Japan,2034,Net Migration Rate,1.036
+Japan,2035,Net Migration Rate,1.009
+Japan,2036,Net Migration Rate,1.036
+Japan,2037,Net Migration Rate,1.037
+Japan,2038,Net Migration Rate,1.071
+Japan,2039,Net Migration Rate,1.066
+Japan,2040,Net Migration Rate,1.054
+Japan,2041,Net Migration Rate,1.008
+Japan,2042,Net Migration Rate,1.091
+Japan,2043,Net Migration Rate,1.086
+Japan,2044,Net Migration Rate,1.1
+Japan,2045,Net Migration Rate,1.045
+Japan,2046,Net Migration Rate,1.079
+Japan,2047,Net Migration Rate,1.074
+Japan,2048,Net Migration Rate,1.113
+Japan,2049,Net Migration Rate,1.099
+Japan,2050,Net Migration Rate,1.135
+Japan,2051,Net Migration Rate,1.132
+Japan,2052,Net Migration Rate,1.065
+Japan,2053,Net Migration Rate,1.142
+Japan,2054,Net Migration Rate,1.016
+Japan,2055,Net Migration Rate,1.084
+Japan,2056,Net Migration Rate,1.031
+Japan,2057,Net Migration Rate,1.066
+Japan,2058,Net Migration Rate,1.086
+Japan,2059,Net Migration Rate,0.989
+Japan,2060,Net Migration Rate,1.037
+Japan,2061,Net Migration Rate,1.087
+Japan,2062,Net Migration Rate,1.12
+Japan,2063,Net Migration Rate,1.13
+Japan,2064,Net Migration Rate,1.152
+Japan,2065,Net Migration Rate,1.051
+Japan,2066,Net Migration Rate,1.102
+Japan,2067,Net Migration Rate,1.133
+Japan,2068,Net Migration Rate,1.038
+Japan,2069,Net Migration Rate,1.054
+Japan,2070,Net Migration Rate,0.988
+Japan,2071,Net Migration Rate,1.075
+Japan,2072,Net Migration Rate,1.068
+Japan,2073,Net Migration Rate,1.016
+Japan,2074,Net Migration Rate,1.079
+Japan,2075,Net Migration Rate,1.089
+Japan,2076,Net Migration Rate,1.089
+Japan,2077,Net Migration Rate,1.074
+Japan,2078,Net Migration Rate,1.081
+Japan,2079,Net Migration Rate,1.117
+Japan,2080,Net Migration Rate,1.078
+Japan,2081,Net Migration Rate,1.129
+Japan,2082,Net Migration Rate,1.083
+Japan,2083,Net Migration Rate,1.103
+Japan,2084,Net Migration Rate,1.056
+Japan,2085,Net Migration Rate,1.044
+Japan,2086,Net Migration Rate,1.048
+Japan,2087,Net Migration Rate,1.089
+Japan,2088,Net Migration Rate,1.083
+Japan,2089,Net Migration Rate,1.045
+Japan,2090,Net Migration Rate,1.045
+Japan,2091,Net Migration Rate,1.028
+Japan,2092,Net Migration Rate,0.974
+Japan,2093,Net Migration Rate,1.009
+Japan,2094,Net Migration Rate,1.055
+Japan,2095,Net Migration Rate,1.047
+Japan,2096,Net Migration Rate,0.998
+Japan,2097,Net Migration Rate,1.055
+Japan,2098,Net Migration Rate,1.017
+Japan,2099,Net Migration Rate,0.978
+Japan,2100,Net Migration Rate,0.959
+Italy,1950,Net Migration Rate,-0.594
+Italy,1951,Net Migration Rate,-2.113
+Italy,1952,Net Migration Rate,-2.764
+Italy,1953,Net Migration Rate,3.592
+Italy,1954,Net Migration Rate,-2.776
+Italy,1955,Net Migration Rate,-2.849
+Italy,1956,Net Migration Rate,-2.875
+Italy,1957,Net Migration Rate,-2.889
+Italy,1958,Net Migration Rate,-3.004
+Italy,1959,Net Migration Rate,-2.95
+Italy,1960,Net Migration Rate,-2.843
+Italy,1961,Net Migration Rate,-2.605
+Italy,1962,Net Migration Rate,-0.515
+Italy,1963,Net Migration Rate,-0.558
+Italy,1964,Net Migration Rate,-0.536
+Italy,1965,Net Migration Rate,-0.704
+Italy,1966,Net Migration Rate,-0.681
+Italy,1967,Net Migration Rate,-0.726
+Italy,1968,Net Migration Rate,-0.951
+Italy,1969,Net Migration Rate,-0.855
+Italy,1970,Net Migration Rate,-1.165
+Italy,1971,Net Migration Rate,-1.092
+Italy,1972,Net Migration Rate,0.799
+Italy,1973,Net Migration Rate,0.765
+Italy,1974,Net Migration Rate,0.775
+Italy,1975,Net Migration Rate,0.78
+Italy,1976,Net Migration Rate,0.737
+Italy,1977,Net Migration Rate,0.758
+Italy,1978,Net Migration Rate,0.785
+Italy,1979,Net Migration Rate,0.76
+Italy,1980,Net Migration Rate,5.241
+Italy,1981,Net Migration Rate,0.127
+Italy,1982,Net Migration Rate,-0.427
+Italy,1983,Net Migration Rate,-0.066
+Italy,1984,Net Migration Rate,0.004
+Italy,1985,Net Migration Rate,0.122
+Italy,1986,Net Migration Rate,-0.109
+Italy,1987,Net Migration Rate,0.138
+Italy,1988,Net Migration Rate,0.326
+Italy,1989,Net Migration Rate,0.343
+Italy,1990,Net Migration Rate,0.619
+Italy,1991,Net Migration Rate,0.346
+Italy,1992,Net Migration Rate,0.906
+Italy,1993,Net Migration Rate,0.425
+Italy,1994,Net Migration Rate,8.756
+Italy,1995,Net Migration Rate,-8.018
+Italy,1996,Net Migration Rate,0.935
+Italy,1997,Net Migration Rate,0.884
+Italy,1998,Net Migration Rate,1.188
+Italy,1999,Net Migration Rate,0.95
+Italy,2000,Net Migration Rate,0.979
+Italy,2001,Net Migration Rate,0.853
+Italy,2002,Net Migration Rate,3.899
+Italy,2003,Net Migration Rate,8.289
+Italy,2004,Net Migration Rate,7.184
+Italy,2005,Net Migration Rate,4.421
+Italy,2006,Net Migration Rate,3.676
+Italy,2007,Net Migration Rate,8.376
+Italy,2008,Net Migration Rate,7.094
+Italy,2009,Net Migration Rate,4.736
+Italy,2010,Net Migration Rate,4.561
+Italy,2011,Net Migration Rate,3.289
+Italy,2012,Net Migration Rate,4.172
+Italy,2013,Net Migration Rate,2.606
+Italy,2014,Net Migration Rate,0.868
+Italy,2015,Net Migration Rate,0.65
+Italy,2016,Net Migration Rate,1.398
+Italy,2017,Net Migration Rate,1.576
+Italy,2018,Net Migration Rate,1.388
+Italy,2019,Net Migration Rate,0.776
+Italy,2020,Net Migration Rate,1.423
+Italy,2021,Net Migration Rate,2.634
+Italy,2022,Net Migration Rate,3.878
+Italy,2023,Net Migration Rate,2.524
+Italy,2024,Net Migration Rate,1.605
+Italy,2025,Net Migration Rate,1.276
+Italy,2026,Net Migration Rate,0.989
+Italy,2027,Net Migration Rate,0.871
+Italy,2028,Net Migration Rate,0.955
+Italy,2029,Net Migration Rate,0.978
+Italy,2030,Net Migration Rate,0.755
+Italy,2031,Net Migration Rate,0.725
+Italy,2032,Net Migration Rate,0.964
+Italy,2033,Net Migration Rate,0.944
+Italy,2034,Net Migration Rate,0.855
+Italy,2035,Net Migration Rate,0.842
+Italy,2036,Net Migration Rate,0.936
+Italy,2037,Net Migration Rate,0.841
+Italy,2038,Net Migration Rate,0.884
+Italy,2039,Net Migration Rate,0.746
+Italy,2040,Net Migration Rate,0.869
+Italy,2041,Net Migration Rate,0.98
+Italy,2042,Net Migration Rate,0.857
+Italy,2043,Net Migration Rate,0.676
+Italy,2044,Net Migration Rate,0.908
+Italy,2045,Net Migration Rate,0.839
+Italy,2046,Net Migration Rate,0.916
+Italy,2047,Net Migration Rate,0.787
+Italy,2048,Net Migration Rate,0.929
+Italy,2049,Net Migration Rate,0.876
+Italy,2050,Net Migration Rate,0.825
+Italy,2051,Net Migration Rate,0.981
+Italy,2052,Net Migration Rate,1.052
+Italy,2053,Net Migration Rate,0.953
+Italy,2054,Net Migration Rate,1.019
+Italy,2055,Net Migration Rate,0.979
+Italy,2056,Net Migration Rate,0.841
+Italy,2057,Net Migration Rate,0.946
+Italy,2058,Net Migration Rate,0.86
+Italy,2059,Net Migration Rate,0.866
+Italy,2060,Net Migration Rate,0.906
+Italy,2061,Net Migration Rate,0.863
+Italy,2062,Net Migration Rate,0.849
+Italy,2063,Net Migration Rate,1.023
+Italy,2064,Net Migration Rate,0.983
+Italy,2065,Net Migration Rate,0.941
+Italy,2066,Net Migration Rate,1.037
+Italy,2067,Net Migration Rate,1.084
+Italy,2068,Net Migration Rate,0.899
+Italy,2069,Net Migration Rate,0.825
+Italy,2070,Net Migration Rate,0.758
+Italy,2071,Net Migration Rate,0.847
+Italy,2072,Net Migration Rate,0.738
+Italy,2073,Net Migration Rate,0.816
+Italy,2074,Net Migration Rate,0.725
+Italy,2075,Net Migration Rate,0.934
+Italy,2076,Net Migration Rate,1.014
+Italy,2077,Net Migration Rate,1.021
+Italy,2078,Net Migration Rate,0.953
+Italy,2079,Net Migration Rate,0.892
+Italy,2080,Net Migration Rate,0.964
+Italy,2081,Net Migration Rate,0.956
+Italy,2082,Net Migration Rate,0.92
+Italy,2083,Net Migration Rate,1.024
+Italy,2084,Net Migration Rate,0.879
+Italy,2085,Net Migration Rate,0.913
+Italy,2086,Net Migration Rate,1.047
+Italy,2087,Net Migration Rate,0.938
+Italy,2088,Net Migration Rate,0.946
+Italy,2089,Net Migration Rate,0.808
+Italy,2090,Net Migration Rate,0.863
+Italy,2091,Net Migration Rate,0.898
+Italy,2092,Net Migration Rate,0.706
+Italy,2093,Net Migration Rate,0.919
+Italy,2094,Net Migration Rate,0.853
+Italy,2095,Net Migration Rate,0.734
+Italy,2096,Net Migration Rate,0.757
+Italy,2097,Net Migration Rate,0.687
+Italy,2098,Net Migration Rate,0.88
+Italy,2099,Net Migration Rate,0.707
+Italy,2100,Net Migration Rate,0.709
+France,1950,Net Migration Rate,3.117
+France,1951,Net Migration Rate,4.053
+France,1952,Net Migration Rate,3.536
+France,1953,Net Migration Rate,4.248
+France,1954,Net Migration Rate,3.569
+France,1955,Net Migration Rate,3.766
+France,1956,Net Migration Rate,3.775
+France,1957,Net Migration Rate,3.394
+France,1958,Net Migration Rate,3.072
+France,1959,Net Migration Rate,3.22
+France,1960,Net Migration Rate,3.081
+France,1961,Net Migration Rate,2.743
+France,1962,Net Migration Rate,2.991
+France,1963,Net Migration Rate,3.993
+France,1964,Net Migration Rate,3.374
+France,1965,Net Migration Rate,1.699
+France,1966,Net Migration Rate,1.954
+France,1967,Net Migration Rate,1.271
+France,1968,Net Migration Rate,2.265
+France,1969,Net Migration Rate,3.185
+France,1970,Net Migration Rate,3.6
+France,1971,Net Migration Rate,2.814
+France,1972,Net Migration Rate,1.956
+France,1973,Net Migration Rate,1.992
+France,1974,Net Migration Rate,0.499
+France,1975,Net Migration Rate,0.306
+France,1976,Net Migration Rate,1.124
+France,1977,Net Migration Rate,0.844
+France,1978,Net Migration Rate,0.35
+France,1979,Net Migration Rate,0.639
+France,1980,Net Migration Rate,1.014
+France,1981,Net Migration Rate,1.279
+France,1982,Net Migration Rate,1.486
+France,1983,Net Migration Rate,1.606
+France,1984,Net Migration Rate,1.381
+France,1985,Net Migration Rate,1.193
+France,1986,Net Migration Rate,0.926
+France,1987,Net Migration Rate,1.069
+France,1988,Net Migration Rate,1.241
+France,1989,Net Migration Rate,1.448
+France,1990,Net Migration Rate,0.76
+France,1991,Net Migration Rate,0.615
+France,1992,Net Migration Rate,1.077
+France,1993,Net Migration Rate,0.292
+France,1994,Net Migration Rate,-0.073
+France,1995,Net Migration Rate,-0.294
+France,1996,Net Migration Rate,-0.368
+France,1997,Net Migration Rate,-0.26
+France,1998,Net Migration Rate,0.344
+France,1999,Net Migration Rate,2.868
+France,2000,Net Migration Rate,2.885
+France,2001,Net Migration Rate,2.996
+France,2002,Net Migration Rate,3.172
+France,2003,Net Migration Rate,3.22
+France,2004,Net Migration Rate,3.28
+France,2005,Net Migration Rate,3.106
+France,2006,Net Migration Rate,2.136
+France,2007,Net Migration Rate,1.473
+France,2008,Net Migration Rate,1.267
+France,2009,Net Migration Rate,0.92
+France,2010,Net Migration Rate,0.83
+France,2011,Net Migration Rate,1.101
+France,2012,Net Migration Rate,1.612
+France,2013,Net Migration Rate,1.806
+France,2014,Net Migration Rate,0.809
+France,2015,Net Migration Rate,-0.005
+France,2016,Net Migration Rate,0.239
+France,2017,Net Migration Rate,1.577
+France,2018,Net Migration Rate,2.029
+France,2019,Net Migration Rate,1.095
+France,2020,Net Migration Rate,2.209
+France,2021,Net Migration Rate,1.989
+France,2022,Net Migration Rate,2.706
+France,2023,Net Migration Rate,1.383
+France,2024,Net Migration Rate,1.36
+France,2025,Net Migration Rate,1.376
+France,2026,Net Migration Rate,1.326
+France,2027,Net Migration Rate,1.395
+France,2028,Net Migration Rate,1.382
+France,2029,Net Migration Rate,1.441
+France,2030,Net Migration Rate,1.424
+France,2031,Net Migration Rate,1.42
+France,2032,Net Migration Rate,1.446
+France,2033,Net Migration Rate,1.451
+France,2034,Net Migration Rate,1.525
+France,2035,Net Migration Rate,1.524
+France,2036,Net Migration Rate,1.501
+France,2037,Net Migration Rate,1.539
+France,2038,Net Migration Rate,1.461
+France,2039,Net Migration Rate,1.439
+France,2040,Net Migration Rate,1.492
+France,2041,Net Migration Rate,1.587
+France,2042,Net Migration Rate,1.649
+France,2043,Net Migration Rate,1.564
+France,2044,Net Migration Rate,1.6
+France,2045,Net Migration Rate,1.605
+France,2046,Net Migration Rate,1.578
+France,2047,Net Migration Rate,1.604
+France,2048,Net Migration Rate,1.572
+France,2049,Net Migration Rate,1.544
+France,2050,Net Migration Rate,1.581
+France,2051,Net Migration Rate,1.534
+France,2052,Net Migration Rate,1.615
+France,2053,Net Migration Rate,1.556
+France,2054,Net Migration Rate,1.551
+France,2055,Net Migration Rate,1.462
+France,2056,Net Migration Rate,1.592
+France,2057,Net Migration Rate,1.586
+France,2058,Net Migration Rate,1.639
+France,2059,Net Migration Rate,1.59
+France,2060,Net Migration Rate,1.61
+France,2061,Net Migration Rate,1.594
+France,2062,Net Migration Rate,1.551
+France,2063,Net Migration Rate,1.63
+France,2064,Net Migration Rate,1.616
+France,2065,Net Migration Rate,1.577
+France,2066,Net Migration Rate,1.643
+France,2067,Net Migration Rate,1.573
+France,2068,Net Migration Rate,1.541
+France,2069,Net Migration Rate,1.595
+France,2070,Net Migration Rate,1.528
+France,2071,Net Migration Rate,1.64
+France,2072,Net Migration Rate,1.534
+France,2073,Net Migration Rate,1.534
+France,2074,Net Migration Rate,1.523
+France,2075,Net Migration Rate,1.575
+France,2076,Net Migration Rate,1.554
+France,2077,Net Migration Rate,1.504
+France,2078,Net Migration Rate,1.476
+France,2079,Net Migration Rate,1.484
+France,2080,Net Migration Rate,1.494
+France,2081,Net Migration Rate,1.54
+France,2082,Net Migration Rate,1.486
+France,2083,Net Migration Rate,1.651
+France,2084,Net Migration Rate,1.513
+France,2085,Net Migration Rate,1.456
+France,2086,Net Migration Rate,1.539
+France,2087,Net Migration Rate,1.522
+France,2088,Net Migration Rate,1.536
+France,2089,Net Migration Rate,1.483
+France,2090,Net Migration Rate,1.494
+France,2091,Net Migration Rate,1.462
+France,2092,Net Migration Rate,1.448
+France,2093,Net Migration Rate,1.546
+France,2094,Net Migration Rate,1.459
+France,2095,Net Migration Rate,1.408
+France,2096,Net Migration Rate,1.316
+France,2097,Net Migration Rate,1.417
+France,2098,Net Migration Rate,1.413
+France,2099,Net Migration Rate,1.382
+France,2100,Net Migration Rate,1.362
+Germany,1950,Net Migration Rate,-8.997
+Germany,1951,Net Migration Rate,-6.146
+Germany,1952,Net Migration Rate,-4.416
+Germany,1953,Net Migration Rate,-3.221
+Germany,1954,Net Migration Rate,-2.065
+Germany,1955,Net Migration Rate,-1.188
+Germany,1956,Net Migration Rate,-0.602
+Germany,1957,Net Migration Rate,4.102
+Germany,1958,Net Migration Rate,2.828
+Germany,1959,Net Migration Rate,1.469
+Germany,1960,Net Migration Rate,2.921
+Germany,1961,Net Migration Rate,0.375
+Germany,1962,Net Migration Rate,3.737
+Germany,1963,Net Migration Rate,2.757
+Germany,1964,Net Migration Rate,0.927
+Germany,1965,Net Migration Rate,4.453
+Germany,1966,Net Migration Rate,1.75
+Germany,1967,Net Migration Rate,-2.263
+Germany,1968,Net Migration Rate,3.793
+Germany,1969,Net Migration Rate,7.493
+Germany,1970,Net Migration Rate,-3.497
+Germany,1971,Net Migration Rate,5.748
+Germany,1972,Net Migration Rate,4.268
+Germany,1973,Net Migration Rate,4.899
+Germany,1974,Net Migration Rate,-0.191
+Germany,1975,Net Migration Rate,-2.64
+Germany,1976,Net Migration Rate,-1.018
+Germany,1977,Net Migration Rate,0.433
+Germany,1978,Net Migration Rate,1.5
+Germany,1979,Net Migration Rate,3.042
+Germany,1980,Net Migration Rate,4.14
+Germany,1981,Net Migration Rate,1.666
+Germany,1982,Net Migration Rate,-0.741
+Germany,1983,Net Migration Rate,-1.04
+Germany,1984,Net Migration Rate,-1.933
+Germany,1985,Net Migration Rate,1.33
+Germany,1986,Net Migration Rate,2.731
+Germany,1987,Net Migration Rate,2.232
+Germany,1988,Net Migration Rate,6.582
+Germany,1989,Net Migration Rate,9.632
+Germany,1990,Net Migration Rate,8.527
+Germany,1991,Net Migration Rate,7.505
+Germany,1992,Net Migration Rate,10.028
+Germany,1993,Net Migration Rate,5.671
+Germany,1994,Net Migration Rate,3.859
+Germany,1995,Net Migration Rate,4.853
+Germany,1996,Net Migration Rate,3.419
+Germany,1997,Net Migration Rate,1.132
+Germany,1998,Net Migration Rate,-9.2
+Germany,1999,Net Migration Rate,2.685
+Germany,2000,Net Migration Rate,2.134
+Germany,2001,Net Migration Rate,3.33
+Germany,2002,Net Migration Rate,2.666
+Germany,2003,Net Migration Rate,1.729
+Germany,2004,Net Migration Rate,0.996
+Germany,2005,Net Migration Rate,0.992
+Germany,2006,Net Migration Rate,-5.986
+Germany,2007,Net Migration Rate,-0.305
+Germany,2008,Net Migration Rate,-0.288
+Germany,2009,Net Migration Rate,0.575
+Germany,2010,Net Migration Rate,1.61
+Germany,2011,Net Migration Rate,3.652
+Germany,2012,Net Migration Rate,2.461
+Germany,2013,Net Migration Rate,5.706
+Germany,2014,Net Migration Rate,7.279
+Germany,2015,Net Migration Rate,14.319
+Germany,2016,Net Migration Rate,6.253
+Germany,2017,Net Migration Rate,5.451
+Germany,2018,Net Migration Rate,4.845
+Germany,2019,Net Migration Rate,3.819
+Germany,2020,Net Migration Rate,2.433
+Germany,2021,Net Migration Rate,3.707
+Germany,2022,Net Migration Rate,11.673
+Germany,2023,Net Migration Rate,7.21
+Germany,2024,Net Migration Rate,0.437
+Germany,2025,Net Migration Rate,-3.973
+Germany,2026,Net Migration Rate,1.894
+Germany,2027,Net Migration Rate,1.846
+Germany,2028,Net Migration Rate,1.818
+Germany,2029,Net Migration Rate,1.771
+Germany,2030,Net Migration Rate,1.97
+Germany,2031,Net Migration Rate,1.797
+Germany,2032,Net Migration Rate,2.026
+Germany,2033,Net Migration Rate,1.953
+Germany,2034,Net Migration Rate,2.201
+Germany,2035,Net Migration Rate,2.021
+Germany,2036,Net Migration Rate,1.803
+Germany,2037,Net Migration Rate,1.975
+Germany,2038,Net Migration Rate,1.878
+Germany,2039,Net Migration Rate,1.957
+Germany,2040,Net Migration Rate,2.05
+Germany,2041,Net Migration Rate,2.32
+Germany,2042,Net Migration Rate,2.348
+Germany,2043,Net Migration Rate,2.125
+Germany,2044,Net Migration Rate,2.066
+Germany,2045,Net Migration Rate,2.118
+Germany,2046,Net Migration Rate,2.211
+Germany,2047,Net Migration Rate,2.199
+Germany,2048,Net Migration Rate,2.018
+Germany,2049,Net Migration Rate,2.168
+Germany,2050,Net Migration Rate,2.286
+Germany,2051,Net Migration Rate,2.33
+Germany,2052,Net Migration Rate,2.406
+Germany,2053,Net Migration Rate,2.129
+Germany,2054,Net Migration Rate,2.007
+Germany,2055,Net Migration Rate,2.001
+Germany,2056,Net Migration Rate,2.147
+Germany,2057,Net Migration Rate,2.083
+Germany,2058,Net Migration Rate,2.075
+Germany,2059,Net Migration Rate,2.264
+Germany,2060,Net Migration Rate,2.175
+Germany,2061,Net Migration Rate,2.375
+Germany,2062,Net Migration Rate,2.24
+Germany,2063,Net Migration Rate,2.323
+Germany,2064,Net Migration Rate,2.27
+Germany,2065,Net Migration Rate,2.218
+Germany,2066,Net Migration Rate,2.057
+Germany,2067,Net Migration Rate,2.039
+Germany,2068,Net Migration Rate,2.195
+Germany,2069,Net Migration Rate,2.115
+Germany,2070,Net Migration Rate,2.28
+Germany,2071,Net Migration Rate,2.02
+Germany,2072,Net Migration Rate,2.126
+Germany,2073,Net Migration Rate,1.957
+Germany,2074,Net Migration Rate,1.981
+Germany,2075,Net Migration Rate,2.241
+Germany,2076,Net Migration Rate,1.888
+Germany,2077,Net Migration Rate,1.872
+Germany,2078,Net Migration Rate,2.052
+Germany,2079,Net Migration Rate,2.064
+Germany,2080,Net Migration Rate,2.109
+Germany,2081,Net Migration Rate,2.199
+Germany,2082,Net Migration Rate,2.273
+Germany,2083,Net Migration Rate,2.093
+Germany,2084,Net Migration Rate,2.127
+Germany,2085,Net Migration Rate,2.009
+Germany,2086,Net Migration Rate,1.843
+Germany,2087,Net Migration Rate,1.925
+Germany,2088,Net Migration Rate,2.132
+Germany,2089,Net Migration Rate,2.056
+Germany,2090,Net Migration Rate,1.855
+Germany,2091,Net Migration Rate,1.959
+Germany,2092,Net Migration Rate,2.164
+Germany,2093,Net Migration Rate,2.177
+Germany,2094,Net Migration Rate,2.165
+Germany,2095,Net Migration Rate,2.131
+Germany,2096,Net Migration Rate,1.965
+Germany,2097,Net Migration Rate,1.815
+Germany,2098,Net Migration Rate,2.169
+Germany,2099,Net Migration Rate,2.066
+Germany,2100,Net Migration Rate,1.994
+Canada,1950,Net Migration Rate,4.387
+Canada,1951,Net Migration Rate,10.129
+Canada,1952,Net Migration Rate,10.245
+Canada,1953,Net Migration Rate,9.496
+Canada,1954,Net Migration Rate,8.348
+Canada,1955,Net Migration Rate,6.103
+Canada,1956,Net Migration Rate,10.263
+Canada,1957,Net Migration Rate,10.819
+Canada,1958,Net Migration Rate,6.417
+Canada,1959,Net Migration Rate,3.828
+Canada,1960,Net Migration Rate,2.776
+Canada,1961,Net Migration Rate,1.901
+Canada,1962,Net Migration Rate,1.9
+Canada,1963,Net Migration Rate,2.733
+Canada,1964,Net Migration Rate,3.52
+Canada,1965,Net Migration Rate,5.71
+Canada,1966,Net Migration Rate,7.213
+Canada,1967,Net Migration Rate,6.51
+Canada,1968,Net Migration Rate,5.25
+Canada,1969,Net Migration Rate,4.449
+Canada,1970,Net Migration Rate,14.208
+Canada,1971,Net Migration Rate,9.602
+Canada,1972,Net Migration Rate,4.043
+Canada,1973,Net Migration Rate,5.57
+Canada,1974,Net Migration Rate,6.817
+Canada,1975,Net Migration Rate,6.039
+Canada,1976,Net Migration Rate,4.557
+Canada,1977,Net Migration Rate,2.964
+Canada,1978,Net Migration Rate,2.201
+Canada,1979,Net Migration Rate,3.578
+Canada,1980,Net Migration Rate,5.003
+Canada,1981,Net Migration Rate,4.567
+Canada,1982,Net Migration Rate,3.562
+Canada,1983,Net Migration Rate,2.604
+Canada,1984,Net Migration Rate,2.181
+Canada,1985,Net Migration Rate,2.691
+Canada,1986,Net Migration Rate,4.652
+Canada,1987,Net Migration Rate,6.455
+Canada,1988,Net Migration Rate,8.839
+Canada,1989,Net Migration Rate,9.431
+Canada,1990,Net Migration Rate,6.53
+Canada,1991,Net Migration Rate,4.775
+Canada,1992,Net Migration Rate,4.846
+Canada,1993,Net Migration Rate,4.628
+Canada,1994,Net Migration Rate,4.627
+Canada,1995,Net Migration Rate,4.814
+Canada,1996,Net Migration Rate,5.192
+Canada,1997,Net Migration Rate,4.813
+Canada,1998,Net Migration Rate,4.693
+Canada,1999,Net Migration Rate,5.175
+Canada,2000,Net Migration Rate,6.53
+Canada,2001,Net Migration Rate,7.115
+Canada,2002,Net Migration Rate,6.598
+Canada,2003,Net Migration Rate,5.831
+Canada,2004,Net Migration Rate,6.056
+Canada,2005,Net Migration Rate,6.305
+Canada,2006,Net Migration Rate,6.172
+Canada,2007,Net Migration Rate,6.461
+Canada,2008,Net Migration Rate,7.118
+Canada,2009,Net Migration Rate,7.227
+Canada,2010,Net Migration Rate,6.59
+Canada,2011,Net Migration Rate,6.571
+Canada,2012,Net Migration Rate,6.98
+Canada,2013,Net Migration Rate,6.795
+Canada,2014,Net Migration Rate,5.413
+Canada,2015,Net Migration Rate,6.238
+Canada,2016,Net Migration Rate,9.063
+Canada,2017,Net Migration Rate,10.125
+Canada,2018,Net Migration Rate,11.268
+Canada,2019,Net Migration Rate,10.261
+Canada,2020,Net Migration Rate,6.722
+Canada,2021,Net Migration Rate,5.172
+Canada,2022,Net Migration Rate,11.849
+Canada,2023,Net Migration Rate,11.039
+Canada,2024,Net Migration Rate,9.275
+Canada,2025,Net Migration Rate,8.129
+Canada,2026,Net Migration Rate,7.201
+Canada,2027,Net Migration Rate,6.942
+Canada,2028,Net Migration Rate,6.781
+Canada,2029,Net Migration Rate,6.475
+Canada,2030,Net Migration Rate,6.402
+Canada,2031,Net Migration Rate,6.369
+Canada,2032,Net Migration Rate,6.139
+Canada,2033,Net Migration Rate,5.808
+Canada,2034,Net Migration Rate,6.029
+Canada,2035,Net Migration Rate,5.606
+Canada,2036,Net Migration Rate,5.83
+Canada,2037,Net Migration Rate,5.846
+Canada,2038,Net Migration Rate,5.843
+Canada,2039,Net Migration Rate,5.664
+Canada,2040,Net Migration Rate,5.571
+Canada,2041,Net Migration Rate,5.667
+Canada,2042,Net Migration Rate,5.712
+Canada,2043,Net Migration Rate,5.69
+Canada,2044,Net Migration Rate,5.743
+Canada,2045,Net Migration Rate,5.88
+Canada,2046,Net Migration Rate,5.595
+Canada,2047,Net Migration Rate,5.608
+Canada,2048,Net Migration Rate,5.717
+Canada,2049,Net Migration Rate,5.424
+Canada,2050,Net Migration Rate,5.742
+Canada,2051,Net Migration Rate,5.742
+Canada,2052,Net Migration Rate,5.873
+Canada,2053,Net Migration Rate,5.613
+Canada,2054,Net Migration Rate,5.614
+Canada,2055,Net Migration Rate,5.637
+Canada,2056,Net Migration Rate,5.685
+Canada,2057,Net Migration Rate,5.754
+Canada,2058,Net Migration Rate,5.966
+Canada,2059,Net Migration Rate,5.876
+Canada,2060,Net Migration Rate,5.718
+Canada,2061,Net Migration Rate,5.807
+Canada,2062,Net Migration Rate,5.887
+Canada,2063,Net Migration Rate,5.786
+Canada,2064,Net Migration Rate,5.705
+Canada,2065,Net Migration Rate,5.657
+Canada,2066,Net Migration Rate,5.643
+Canada,2067,Net Migration Rate,5.803
+Canada,2068,Net Migration Rate,5.516
+Canada,2069,Net Migration Rate,5.505
+Canada,2070,Net Migration Rate,5.467
+Canada,2071,Net Migration Rate,5.507
+Canada,2072,Net Migration Rate,5.462
+Canada,2073,Net Migration Rate,5.329
+Canada,2074,Net Migration Rate,5.379
+Canada,2075,Net Migration Rate,5.569
+Canada,2076,Net Migration Rate,5.66
+Canada,2077,Net Migration Rate,5.386
+Canada,2078,Net Migration Rate,5.633
+Canada,2079,Net Migration Rate,5.481
+Canada,2080,Net Migration Rate,5.497
+Canada,2081,Net Migration Rate,5.715
+Canada,2082,Net Migration Rate,5.371
+Canada,2083,Net Migration Rate,5.642
+Canada,2084,Net Migration Rate,5.481
+Canada,2085,Net Migration Rate,5.364
+Canada,2086,Net Migration Rate,5.425
+Canada,2087,Net Migration Rate,5.302
+Canada,2088,Net Migration Rate,5.851
+Canada,2089,Net Migration Rate,5.27
+Canada,2090,Net Migration Rate,5.13
+Canada,2091,Net Migration Rate,5.469
+Canada,2092,Net Migration Rate,5.257
+Canada,2093,Net Migration Rate,5.353
+Canada,2094,Net Migration Rate,5.295
+Canada,2095,Net Migration Rate,5.303
+Canada,2096,Net Migration Rate,5.305
+Canada,2097,Net Migration Rate,5.616
+Canada,2098,Net Migration Rate,5.468
+Canada,2099,Net Migration Rate,5.286
+Canada,2100,Net Migration Rate,5.254
+United States of America,1950,Net Migration Rate,0.34
+United States of America,1951,Net Migration Rate,-0.136
+United States of America,1952,Net Migration Rate,-0.321
+United States of America,1953,Net Migration Rate,-0.155
+United States of America,1954,Net Migration Rate,-0.4
+United States of America,1955,Net Migration Rate,0.11
+United States of America,1956,Net Migration Rate,-0.082
+United States of America,1957,Net Migration Rate,0.078
+United States of America,1958,Net Migration Rate,-0.037
+United States of America,1959,Net Migration Rate,2.177
+United States of America,1960,Net Migration Rate,2.345
+United States of America,1961,Net Migration Rate,3.163
+United States of America,1962,Net Migration Rate,3.35
+United States of America,1963,Net Migration Rate,3.369
+United States of America,1964,Net Migration Rate,3.208
+United States of America,1965,Net Migration Rate,3.296
+United States of America,1966,Net Migration Rate,3.216
+United States of America,1967,Net Migration Rate,2.917
+United States of America,1968,Net Migration Rate,2.928
+United States of America,1969,Net Migration Rate,2.551
+United States of America,1970,Net Migration Rate,3.585
+United States of America,1971,Net Migration Rate,3.961
+United States of America,1972,Net Migration Rate,3.916
+United States of America,1973,Net Migration Rate,3.643
+United States of America,1974,Net Migration Rate,3.257
+United States of America,1975,Net Migration Rate,2.989
+United States of America,1976,Net Migration Rate,2.874
+United States of America,1977,Net Migration Rate,2.585
+United States of America,1978,Net Migration Rate,2.469
+United States of America,1979,Net Migration Rate,2.213
+United States of America,1980,Net Migration Rate,2.593
+United States of America,1981,Net Migration Rate,2.511
+United States of America,1982,Net Migration Rate,2.558
+United States of America,1983,Net Migration Rate,2.797
+United States of America,1984,Net Migration Rate,2.602
+United States of America,1985,Net Migration Rate,2.477
+United States of America,1986,Net Migration Rate,2.021
+United States of America,1987,Net Migration Rate,1.953
+United States of America,1988,Net Migration Rate,1.855
+United States of America,1989,Net Migration Rate,1.6
+United States of America,1990,Net Migration Rate,4.281
+United States of America,1991,Net Migration Rate,4.688
+United States of America,1992,Net Migration Rate,5.026
+United States of America,1993,Net Migration Rate,4.678
+United States of America,1994,Net Migration Rate,4.442
+United States of America,1995,Net Migration Rate,4.374
+United States of America,1996,Net Migration Rate,4.215
+United States of America,1997,Net Migration Rate,4.084
+United States of America,1998,Net Migration Rate,4.437
+United States of America,1999,Net Migration Rate,4.148
+United States of America,2000,Net Migration Rate,4.435
+United States of America,2001,Net Migration Rate,4.617
+United States of America,2002,Net Migration Rate,4.655
+United States of America,2003,Net Migration Rate,4.592
+United States of America,2004,Net Migration Rate,4.486
+United States of America,2005,Net Migration Rate,4.63
+United States of America,2006,Net Migration Rate,4.512
+United States of America,2007,Net Migration Rate,4.543
+United States of America,2008,Net Migration Rate,4.646
+United States of America,2009,Net Migration Rate,4.504
+United States of America,2010,Net Migration Rate,5.126
+United States of America,2011,Net Migration Rate,5.17
+United States of America,2012,Net Migration Rate,5.146
+United States of America,2013,Net Migration Rate,5.198
+United States of America,2014,Net Migration Rate,5.176
+United States of America,2015,Net Migration Rate,5.281
+United States of America,2016,Net Migration Rate,5.739
+United States of America,2017,Net Migration Rate,5.613
+United States of America,2018,Net Migration Rate,5.268
+United States of America,2019,Net Migration Rate,5.253
+United States of America,2020,Net Migration Rate,0.972
+United States of America,2021,Net Migration Rate,1.984
+United States of America,2022,Net Migration Rate,3.862
+United States of America,2023,Net Migration Rate,3.851
+United States of America,2024,Net Migration Rate,3.723
+United States of America,2025,Net Migration Rate,3.544
+United States of America,2026,Net Migration Rate,3.375
+United States of America,2027,Net Migration Rate,3.349
+United States of America,2028,Net Migration Rate,3.466
+United States of America,2029,Net Migration Rate,3.349
+United States of America,2030,Net Migration Rate,3.359
+United States of America,2031,Net Migration Rate,3.37
+United States of America,2032,Net Migration Rate,3.386
+United States of America,2033,Net Migration Rate,3.383
+United States of America,2034,Net Migration Rate,3.449
+United States of America,2035,Net Migration Rate,3.397
+United States of America,2036,Net Migration Rate,3.374
+United States of America,2037,Net Migration Rate,3.396
+United States of America,2038,Net Migration Rate,3.417
+United States of America,2039,Net Migration Rate,3.322
+United States of America,2040,Net Migration Rate,3.319
+United States of America,2041,Net Migration Rate,3.311
+United States of America,2042,Net Migration Rate,3.427
+United States of America,2043,Net Migration Rate,3.344
+United States of America,2044,Net Migration Rate,3.312
+United States of America,2045,Net Migration Rate,3.296
+United States of America,2046,Net Migration Rate,3.266
+United States of America,2047,Net Migration Rate,3.348
+United States of America,2048,Net Migration Rate,3.298
+United States of America,2049,Net Migration Rate,3.335
+United States of America,2050,Net Migration Rate,3.354
+United States of America,2051,Net Migration Rate,3.382
+United States of America,2052,Net Migration Rate,3.325
+United States of America,2053,Net Migration Rate,3.35
+United States of America,2054,Net Migration Rate,3.218
+United States of America,2055,Net Migration Rate,3.161
+United States of America,2056,Net Migration Rate,3.192
+United States of America,2057,Net Migration Rate,3.309
+United States of America,2058,Net Migration Rate,3.382
+United States of America,2059,Net Migration Rate,3.292
+United States of America,2060,Net Migration Rate,3.199
+United States of America,2061,Net Migration Rate,3.286
+United States of America,2062,Net Migration Rate,3.286
+United States of America,2063,Net Migration Rate,3.272
+United States of America,2064,Net Migration Rate,3.193
+United States of America,2065,Net Migration Rate,3.238
+United States of America,2066,Net Migration Rate,3.293
+United States of America,2067,Net Migration Rate,3.34
+United States of America,2068,Net Migration Rate,3.31
+United States of America,2069,Net Migration Rate,3.373
+United States of America,2070,Net Migration Rate,3.261
+United States of America,2071,Net Migration Rate,3.386
+United States of America,2072,Net Migration Rate,3.258
+United States of America,2073,Net Migration Rate,3.323
+United States of America,2074,Net Migration Rate,3.267
+United States of America,2075,Net Migration Rate,3.424
+United States of America,2076,Net Migration Rate,3.338
+United States of America,2077,Net Migration Rate,3.281
+United States of America,2078,Net Migration Rate,3.277
+United States of America,2079,Net Migration Rate,3.203
+United States of America,2080,Net Migration Rate,3.175
+United States of America,2081,Net Migration Rate,3.419
+United States of America,2082,Net Migration Rate,3.255
+United States of America,2083,Net Migration Rate,3.255
+United States of America,2084,Net Migration Rate,3.224
+United States of America,2085,Net Migration Rate,3.068
+United States of America,2086,Net Migration Rate,3.186
+United States of America,2087,Net Migration Rate,3.186
+United States of America,2088,Net Migration Rate,3.287
+United States of America,2089,Net Migration Rate,3.196
+United States of America,2090,Net Migration Rate,3.123
+United States of America,2091,Net Migration Rate,3.193
+United States of America,2092,Net Migration Rate,3.187
+United States of America,2093,Net Migration Rate,3.145
+United States of America,2094,Net Migration Rate,3.194
+United States of America,2095,Net Migration Rate,3.148
+United States of America,2096,Net Migration Rate,3.056
+United States of America,2097,Net Migration Rate,3.093
+United States of America,2098,Net Migration Rate,2.997
+United States of America,2099,Net Migration Rate,3.037
+United States of America,2100,Net Migration Rate,2.911
