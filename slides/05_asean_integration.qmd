@@ -28,10 +28,12 @@ draft: true
 #| include: false
 library(data.table)
 library(ggpubr)
+library(scales)
 asean5 = c("IDN","THA","MYS","PHL","SGP")
 asean_new = c("VNM","LAO","KHM","MMR")
 asean_other = c("BRN","TLS")
-asean_all = c(asean5,asean_new,asean_other)
+asean_all = c(asean5,asean_new,"BRN")
+
 ```
 
 ## Introduction
@@ -47,52 +49,59 @@ pwt2 = fread("../data/05 asean/asean_gdp.csv")
 unpop = fread("../data/05 asean/asean_pop.csv")
 unpop[,pop:=pop/10^3] ## milllion
 
+lev <- c(asean_all, "ASEAN", "JPN")                # Japan last, drawn on top
+lab <- c(asean_all, "ASEAN total", "Japan")
+
+pal <- c(setNames(hue_pal()(length(asean_all)), asean_all),
+         ASEAN = "grey30", JPN = "black")
+lt  <- setNames(c(rep("solid", length(asean_all)), "dashed", "solid"), lev)
+lw  <- setNames(c(rep(0.7, length(asean_all)), 1.2, 1.8), lev)
+
+jp_panel <- function(dt, y, ylab, xlab = "", caption = NULL) {
+  dt <- copy(dt)[, Country := factor(Country, levels = lev)]
+  ggplot(dt, aes(date, .data[[y]], color = Country, linetype = Country,
+                 linewidth = Country, group = Country)) +
+    geom_line() +
+    scale_color_manual(values = pal, labels = lab) +
+    scale_linetype_manual(values = lt, labels = lab) +
+    scale_linewidth_manual(values = lw, labels = lab) +
+    labs(x = xlab, y = ylab, caption = caption,
+         color = NULL, linetype = NULL, linewidth = NULL) +
+    theme_pubr()
+}
+
+# GDP
+gdp <- pwt2[ISOcode %in% c(asean_all, "JPN") & grepl("Real GDP", Variablename2),
+            .(Country = ISOcode, date, value = value / 10^6)]
+gdp <- rbind(gdp,
+             gdp[Country %in% asean_all,
+                 .(Country = "ASEAN", value = sum(value, na.rm = TRUE)), by = date])
+
+# Population
+pop <- unpop[date <= 2050 & Region %in% c(asean_all, "JPN"),
+             .(Country = Region, date, pop, MedianAgePop, NatChangeRT)]
+pop <- rbind(pop,
+             pop[Country %in% asean_all,
+                 .(Country = "ASEAN",
+                   pop = sum(pop),
+                   MedianAgePop = weighted.mean(MedianAgePop, pop),
+                   NatChangeRT  = weighted.mean(NatChangeRT, pop)),
+                 by = date])
+
 ggarrange(
- ggbarplot(pwt2[ISOcode%in%asean_all
-                 &grepl("Real GDP",Variablename2),
-               .(Country=ISOcode,
-                 value=value/10^6,
-                 date)],
-          x="date",y="value",
-          xlab="",ylab = "Real GDP (tri. USD)",
-          color = "Country",
-          fill = "Country") +
-  geom_line(data=pwt2[ISOcode%in%"JPN"
-                 &grepl("Real GDP",Variablename2)],
-            aes(x=date,y=value/10^6),
-            color="black"),
-  ggbarplot(unpop[date<=2050&Region%in%asean_all],
-         x="date",y="pop",
-         ylab="Population (mil ppl.)",
-         color="Region",
-         fill="Region") +
-   geom_line(data=unpop[date<=2050&Region%in%"JPN"],
-            aes(x=date,y=pop),
-            color="black"),
-  ggline(unpop[date<=2050&Region%in%asean_all],
-         x="date",y="MedianAgePop",
-         xlab="",
-         color="Region") +
-    geom_line(data=unpop[date<=2050&Region%in%"JPN"],
-            aes(x=date,y=MedianAgePop),
-            color="black"),
-  ggline(unpop[date<=2050&Region%in%asean_all],
-         x="date",y="NatChangeRT",
-         xlab="",
-         color="Region",
-         caption = "Source: PWT 10, UN World Population Prospect") +
-   geom_line(data=unpop[date<=2050&Region%in%"JPN"],
-            aes(x=date,y=NatChangeRT),
-            color="black"),
-  common.legend = T,
- align = "h"
+  jp_panel(gdp, "value",        "Real GDP (tri. USD)"),
+  jp_panel(pop, "pop",          "Population (mil ppl.)"),
+  jp_panel(pop, "MedianAgePop", "Median age"),
+  jp_panel(pop, "NatChangeRT",  "Natural change rate",
+           caption = "Source: PWT 10, UN World Population Prospects"),
+  common.legend = TRUE, legend = "right", align = "h"
 )
 
 ```
 
 ## ASEAN Diversity (1)  {.r-fit-text}
 
-- Established in 1967 in by the original five members: Indonesia, Malaysia, Philippines, Singapore and Thailand (ASEAN5)
+- Established in 1967 by the original five members: Indonesia, Malaysia, Philippines, Singapore and Thailand (ASEAN5)
 
 - Others joined in 1984 and 1990s
   - Timor-Leste as observer since 2022, formal affirmed in October 2025.
@@ -151,10 +160,10 @@ ggscatter(gdppc,
 ## ASEAN Economic Integration  (3) {.r-fit-text}
 
 - Trade in Goods Agreement (ATIGA) in 2008:
-   - Eliminate tariffs for both AEAN6 and CLMV by 2017
+   - Eliminate tariffs for both ASEAN6 and CLMV by 2017
    - Reduce non-tariff measures (NTM), such as technical standards and customs procedures
 
-- AEAN Economic Community established in 2015, then revised with AEC Blueprint 2025
+- ASEAN Economic Community established in 2015, then revised with AEC Blueprint 2025
   - for free movement of goods, services, investment, and skilled labor, and freer movement of capital
   - neither set common tariffs outside the region nor aim for a single currency
 
@@ -167,7 +176,18 @@ ggline(tariff,
        y="WeightedAverage",
        color="DutyType",
        add="mean_se",
-       facet.by = "ProductName")
+       facet.by = "ProductName") +
+  labs(
+    caption = paste0(
+      "AHS (Effectively Applied): the tariff actually charged, taking into account preferential rates (e.g. FTAs).\n",
+      "BND (Bound): the maximum tariff ceiling a country has committed to under the WTO.\n",
+      "MFN (Most Favoured Nation): the standard applied tariff charged to all WTO members without a preferential agreement."
+    )
+  ) +
+  theme(
+    plot.caption = element_text(hjust = 0, size = 9, lineheight = 1.1),
+    plot.caption.position = "plot"
+  )
 ```
 
 
@@ -276,6 +296,15 @@ ggarrange(
 - ASEAN is second largest FDI source of Japan, ¾ is from Singapore in recent years
 :::
 
+## Japanese firms in ASEAN countries 
+
+- Before 1990s: building up factories
+
+- 1990s ~ 2000s: becoming high profile investors
+
+- 2000s ~: diversification
+
+
 ## Japanese firms in ASEAN countries (1a)
 
 <div style="font-size:70%">
@@ -305,8 +334,10 @@ _Source: Kinoshita (2004) based on Yamaguchi (2003),  Honda Motor Co., Ltd (2003
 #| fig-width: 20
 dtgvc = fread("../data/05 asean/gvc_asean_eora.csv")
 cregss = c("JPN","CHN","KOR","ASEAN4","CLMV","Europe","N.America","ROW")
+types = c("gvc backward","gvc mixed","gvc forward","intermediates","final goods")
 dtgvc[,exporter:=factor(exporter,levels = cregss)]
 dtgvc[,importer:=factor(importer,levels = cregss)]
+dtgvc[,variable := factor(variable,levels=types)]
 dtgvc[,value:=value/10^3]
 ggarrange(
   ggbarplot(dtgvc[t%in%c(1990,1997)
@@ -408,6 +439,7 @@ dtgvc = fread("../data/05 asean/gvc_asean_tiva.csv")
 cregss = c("JPN","CHN","KOR","ASEAN4","CLMV","Europe","N.America","ROW")
 dtgvc[,exporter:=factor(exporter,levels = cregss)]
 dtgvc[,importer:=factor(importer,levels = cregss)]
+dtgvc[,variable := factor(variable,levels=types)]
 dtgvc[,value:=value/10^3]
 ggarrange(
   ggbarplot(dtgvc[grepl("Electrical|Machinery",sect_name)
@@ -447,8 +479,9 @@ ggarrange(
 
 ## Key takeaways
 
-- ASEAN harmonization
-- ASEAN and Japan cooperation
+- ASEAN integrates pragmatically through trade and production networks, not through a supranational union.
+- Japanese firms helped build, and continue to reshape, ASEAN’s regional value chains.
+- Tariffs are mostly eliminated for many ASEAN countries, so future gains depend on non-tariff barriers, diversification, and managing member diversity.
 
 ---
 ## References

@@ -179,7 +179,8 @@ The GVC/trade-type columns (`traditional_trade_int`, `traditional_trade_fin`, `g
 
 ```{r reshape-long}
 dtl = melt(
-  dt2[source == "wiodlr" | (source == "tiva" & t > 2000),
+  dt2[source == "wiodlr" | (source == "tiva" & t > 2000)| 
+        (source=="eora" & t %in% c(1990,1997,2007,2015)),
       .(source,imp, exp, imp_reg, exp_reg,
         sect_name, sect_group,
         t, traditional_trade_int, traditional_trade_fin,

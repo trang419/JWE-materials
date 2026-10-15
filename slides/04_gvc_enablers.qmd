@@ -908,11 +908,12 @@ ggplot() +
  - Rule of law
 :::
 
-## Export processing zones
+## Export processing zones: entry point into GVCs
 
-- labor: relatively low wage
-- infrastructure: reliable power and logistics efficiency
-- tax incentives
+- Labor: relatively low wages
+- Infrastructure: reliable power, efficient logistics (often next to a port or airport)
+- Tax and customs incentives: duty-free inputs, one-stop customs, corporate tax holidays
+- Examples: Shenzhen, Bangladesh (Dhaka, Chittagong), Mexico (maquiladoras), Vietnam (Hai Phong, Binh Duong)
 
 
 ## Custom procedures

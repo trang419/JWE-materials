@@ -25,7 +25,7 @@
     "href": "index.html#weekly-structure",
     "title": "Japan in the World Economy",
     "section": "Weekly Structure",
-    "text": "Weekly Structure\nEach week includes:\n\nLecture (concepts, case studies)\n\nIn-class discussion (preparation required)\n\nMid-term and Final will be announced on Moodle\n\n\nLast updated: October 14, 2026"
+    "text": "Weekly Structure\nEach week includes:\n\nLecture (concepts, case studies)\n\nIn-class discussion (preparation required)\n\nMid-term and Final will be announced on Moodle\n\n\nLast updated: October 15, 2026"
   },
   {
     "objectID": "scripts/data-wits.html",
@@ -81,7 +81,7 @@
     "href": "scripts/data-wits.html#reshape-to-long-format",
     "title": "Cleaning Raw Data: A Worked Example",
     "section": "Reshape to long format",
-    "text": "Reshape to long format\nTwo sources are combined:\n\nwiodlr for all years\ntiva restricted to years after 2000 (its methodology changes before that point)\n\nThe GVC/trade-type columns (traditional_trade_int, traditional_trade_fin, gvcbp, gvcfp, gvcmix) are melted into a single variable / value pair, which is the tidy shape most of the downstream analysis expects.\n\ndtl = melt(\n  dt2[source == \"wiodlr\" | (source == \"tiva\" & t &gt; 2000),\n      .(source,imp, exp, imp_reg, exp_reg,\n        sect_name, sect_group,\n        t, traditional_trade_int, traditional_trade_fin,\n        gvcbp, gvcfp, gvcmix)],\n  id.vars = c(\"imp\", \"exp\",\n              \"imp_reg\", \"exp_reg\",\n              \"sect_name\", \"sect_group\", \"t\",\"source\")\n)\n\n\ndtl[, .N, by = variable]\n\n                variable       N\n                  &lt;fctr&gt;   &lt;int&gt;\n1: traditional_trade_int 5715900\n2: traditional_trade_fin 5715900\n3:                 gvcbp 5715900\n4:                 gvcfp 5715900\n5:                gvcmix 5715900\n\nrange(dtl$t)\n\n[1] 1965 2020\n\ndt[,.N,by=source]\n\n   source        N\n   &lt;char&gt;    &lt;int&gt;\n1:   eora 24147396\n2: wiodlr   559728\n3:  wiodo  1000195\n4:  wiodn  1626240\n5:    adb  2361555\n6:   tiva  6936930"
+    "text": "Reshape to long format\nTwo sources are combined:\n\nwiodlr for all years\ntiva restricted to years after 2000 (its methodology changes before that point)\n\nThe GVC/trade-type columns (traditional_trade_int, traditional_trade_fin, gvcbp, gvcfp, gvcmix) are melted into a single variable / value pair, which is the tidy shape most of the downstream analysis expects.\n\ndtl = melt(\n  dt2[source == \"wiodlr\" | (source == \"tiva\" & t &gt; 2000)| \n        (source==\"eora\" & t %in% c(1990,1997,2007,2015)),\n      .(source,imp, exp, imp_reg, exp_reg,\n        sect_name, sect_group,\n        t, traditional_trade_int, traditional_trade_fin,\n        gvcbp, gvcfp, gvcmix)],\n  id.vars = c(\"imp\", \"exp\",\n              \"imp_reg\", \"exp_reg\",\n              \"sect_name\", \"sect_group\", \"t\",\"source\")\n)\n\n\ndtl[, .N, by = variable]\n\n                variable       N\n                  &lt;fctr&gt;   &lt;int&gt;\n1: traditional_trade_int 9430884\n2: traditional_trade_fin 9430884\n3:                 gvcbp 9430884\n4:                 gvcfp 9430884\n5:                gvcmix 9430884\n\nrange(dtl$t)\n\n[1] 1965 2020\n\ndt[,.N,by=source]\n\n   source        N\n   &lt;char&gt;    &lt;int&gt;\n1:   eora 24147396\n2: wiodlr   559728\n3:  wiodo  1000195\n4:  wiodn  1626240\n5:    adb  2361555\n6:   tiva  6936930"
   },
   {
     "objectID": "scripts/data-wits.html#save-the-cleaned-dataset",

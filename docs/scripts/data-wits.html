@@ -570,26 +570,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The GVC/trade-type columns (<code>traditional_trade_int</code>, <code>traditional_trade_fin</code>, <code>gvcbp</code>, <code>gvcfp</code>, <code>gvcmix</code>) are melted into a single <code>variable</code> / <code>value</code> pair, which is the tidy shape most of the downstream analysis expects.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>dtl <span class="ot">=</span> <span class="fu">melt</span>(</span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>  dt2[source <span class="sc">==</span> <span class="st">"wiodlr"</span> <span class="sc">|</span> (source <span class="sc">==</span> <span class="st">"tiva"</span> <span class="sc">&amp;</span> t <span class="sc">&gt;</span> <span class="dv">2000</span>),</span>
-<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>      .(source,imp, exp, imp_reg, exp_reg,</span>
-<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>        sect_name, sect_group,</span>
-<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>        t, traditional_trade_int, traditional_trade_fin,</span>
-<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>        gvcbp, gvcfp, gvcmix)],</span>
-<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">id.vars =</span> <span class="fu">c</span>(<span class="st">"imp"</span>, <span class="st">"exp"</span>,</span>
-<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>              <span class="st">"imp_reg"</span>, <span class="st">"exp_reg"</span>,</span>
-<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>              <span class="st">"sect_name"</span>, <span class="st">"sect_group"</span>, <span class="st">"t"</span>,<span class="st">"source"</span>)</span>
-<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>  dt2[source <span class="sc">==</span> <span class="st">"wiodlr"</span> <span class="sc">|</span> (source <span class="sc">==</span> <span class="st">"tiva"</span> <span class="sc">&amp;</span> t <span class="sc">&gt;</span> <span class="dv">2000</span>)<span class="sc">|</span> </span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>        (source<span class="sc">==</span><span class="st">"eora"</span> <span class="sc">&amp;</span> t <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">1990</span>,<span class="dv">1997</span>,<span class="dv">2007</span>,<span class="dv">2015</span>)),</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>      .(source,imp, exp, imp_reg, exp_reg,</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>        sect_name, sect_group,</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>        t, traditional_trade_int, traditional_trade_fin,</span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>        gvcbp, gvcfp, gvcmix)],</span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">id.vars =</span> <span class="fu">c</span>(<span class="st">"imp"</span>, <span class="st">"exp"</span>,</span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>              <span class="st">"imp_reg"</span>, <span class="st">"exp_reg"</span>,</span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>              <span class="st">"sect_name"</span>, <span class="st">"sect_group"</span>, <span class="st">"t"</span>,<span class="st">"source"</span>)</span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>dtl[, .N, by <span class="ot">=</span> variable]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>                variable       N
                   &lt;fctr&gt;   &lt;int&gt;
-1: traditional_trade_int 5715900
-2: traditional_trade_fin 5715900
-3:                 gvcbp 5715900
-4:                 gvcfp 5715900
-5:                gvcmix 5715900</code></pre>
+1: traditional_trade_int 9430884
+2: traditional_trade_fin 9430884
+3:                 gvcbp 9430884
+4:                 gvcfp 9430884
+5:                gvcmix 9430884</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">range</span>(dtl<span class="sc">$</span>t)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">

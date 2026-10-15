@@ -4,6 +4,8 @@ library(ggpubr)
 dtl = arrow::read_parquet("data/temp/gvc_trade.parquet")
 setDT(dtl)
 
+dtl = dtl[source%in%c("tiva","wiodlr")]
+
 dtl[grepl("trade_int",variable),type:="traditional: intermediate goods"]
 dtl[grepl("trade_fin",variable),type:="traditional: final goods"]
 dtl[grepl("gvcbp",variable),type:="gvc: backward"]
