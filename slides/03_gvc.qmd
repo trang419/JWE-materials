@@ -3,6 +3,10 @@ title: "Measurement of Global Value Chains"
 subtitle: ""
 author: "Trang Tran"
 date: "2025-10-06"
+execute:
+  echo: false
+  message: false
+  warning: false
 format:
   revealjs:
     self-contained: false
@@ -47,8 +51,6 @@ output-dir: ../docs/slides
 ## An example
 
 ```{r}
-#| echo: false
-#| warning: false
 library(data.table)
 library(ggpubr)
 library(ggrepel)
@@ -71,9 +73,6 @@ ggpie(iphone,
 ## The Smile Curve
 
 ```{r}
-#| echo: false
-#| message: false
-#| warning: false
 
 # ============================================================
 # 1. Function to create a smooth curve from control points
@@ -623,7 +622,6 @@ related to, but distinct from, WITS forwardness.
 ## Global GVC-related trade
 
 ```{r}
-#| echo: false
 dtw = fread("../data/03 gvc/gvc_share.csv")
 ggarrange(
   ggpie(dtw[t==2020],
@@ -660,7 +658,6 @@ ggarrange(
 ## Regions with high GVC participation
 
 ```{r}
-#| echo: false
 dt_index = fread("../data/03 gvc/gvc_region.csv")
 cols = get_palette("default",5)[1:3]
 ggarrange(
@@ -691,7 +688,6 @@ ggarrange(
 ## Forwardness Distribution
 
 ```{r}
-#| echo: false
 dt_index_w = fread("../data/03 gvc/gvc_region_forward.csv")
 
 jpn_vals <- dt_index_w[region == "JPN",.(t,forwardness)]
@@ -729,7 +725,6 @@ ggdensity(dt_index_w,
 ## Japan's GVC-related trade share
 
 ```{r}
-#| echo: false
 dt_gvc = fread("../data/03 gvc/gvc_JPN.csv")
 ggbarplot(dt_gvc,
           x="t",xlab = "",y="share",
@@ -746,7 +741,6 @@ ggbarplot(dt_gvc,
 ## Japan's GVC-related trade share by sector
 
 ```{r}
-#| echo: false
 gvc_jpn_sect = fread("../data/03 gvc/gvc_jpn_sect.csv")
 gvc_jpn_sect_s = gvc_jpn_sect[grepl("gvc",type)&!is.na(gvc1970)]
 gvc_jpn_sect_s[,label:=fifelse(gvc2000>0.2,sect_name,"")]
@@ -773,7 +767,6 @@ facet.by = "type",nrow=1) +
 ## Japan's sector position
 
 ```{r}
-#| echo: false
 gvc_jpn_sect_ww = fread("../data/03 gvc/gvc_jpn_sect_forward.csv")
 
 ggscatter(gvc_jpn_sect_ww,
@@ -798,7 +791,6 @@ ggscatter(gvc_jpn_sect_ww,
 ## Four sectors globally
 
 ```{r}
-#| echo: false
 #| fig-height: 6
 #| fig-width: 12
 
@@ -912,7 +904,6 @@ Chemicals: Intermediate-input intensive — mainly domestic sourcing, with growi
 ## Four sectors in Japan
 
 ```{r}
-#| echo: false
 #| fig-height: 6
 #| fig-width: 12
 
@@ -936,7 +927,6 @@ ggbarplot(
 ## Japan comparative advantage: revisited
 
 ```{r}
-#| echo: false
 dtcaw_jpn = fread("../data/02 ca/rca_jpn.csv")
 dtcaw_jpn_s = dtcaw_jpn[t%in%c(1965,2000)]
 ggscatter(dtcaw_jpn_s,
@@ -967,7 +957,6 @@ ggscatter(dtcaw_jpn_s,
 
 ---
 ```{r}
-#| echo: false
 #| fig-height: 9
 #| fig-width: 12
 dtcaw_reg = fread("../data/02 ca/rca_reg.csv")

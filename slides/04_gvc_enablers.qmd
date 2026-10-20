@@ -3,6 +3,10 @@ title: "Enablers of Global Value Chains"
 subtitle: ""
 author: "Trang Tran"
 date: "2026-10-13"
+execute:
+  echo: false
+  message: false
+  warning: false
 format:
   revealjs:
     self-contained: false
@@ -106,8 +110,6 @@ panel <- function(title, xlim, ylim, ...) {
 
 ```{r}
 #| label: fig-gvc-fdi
-#| echo: false
-#| warning: false
 #| fig-cap: Vertical FDI, export-platform FDI and global value chains
 #| fig-height: 6.5
 #| fig-width: 14
@@ -196,8 +198,6 @@ p_gvc <- panel(
 #| fig-cap: "Gravity coefficient estimates"
 #| fig-width: 9
 #| fig-height: 6
-#| echo: false
-#| warning: false
 
 library(data.table)
 library(ggpubr)
@@ -371,8 +371,6 @@ p <- ggplot(dt, aes(period, n, fill = type)) +
 ## WTO challenge
 
 ```{r}
-#| echo: false
-#| warning: false
 
 wto_power = fread("../data/04_gvc_enablers/wto_power.csv")
 wto_power[,year:=as.character(year)]
@@ -390,9 +388,6 @@ ggscatter(wto_power,
 ## Regional and bilateral agreements
 
 ```{r}
-#| echo: false
-#| message: false
-#| warning: false
 
 path <- "../data/04_gvc_enablers/RTAIS_Evolution_Dashboard_2026_10_06_08_49_20.csv"  
 
@@ -470,9 +465,6 @@ ggplot() +
 ## Regional and bilateral agreements by regions
 
 ```{r}
-#| echo: false
-#| message: false
-#| warning: false
 
 path <- "../data/04_gvc_enablers/RTAIS_Regional_2026_10_06_09_04_54.csv"
 
@@ -511,9 +503,6 @@ ggplot(dt, aes(region, n)) +
 ## Average tariff rates
 
 ```{r}
-#| echo: false
-#| message: false
-#| warning: false
 tariff = unique(fread("../data/04_gvc_enablers/wto_tariff.csv"),
                 by = c("indicator", "year"))
 # ---- 1. Load and tidy -------------------------------------------------------
@@ -606,9 +595,6 @@ Source: UNCTAD MAST classification
 ## Non-tariff measures by sector
 
 ```{r}
-#| echo: false
-#| message: false
-#| warning: false
 
 ntm <- data.table(
   Country = c(
@@ -747,9 +733,6 @@ ggplot(
 
 
 ```{r}
-#| echo: false
-#| message: false
-#| warning: false
 
 dt_measure <- ntm_long[Group == "Measure"]
 
@@ -815,9 +798,6 @@ ggplot(
 ## Tariff equivalence of Non-tariff measures 
 
 ```{r}
-#| echo: false
-#| message: false
-#| warning: false
 
 dt_plot <- fread("../data/04_gvc_enablers/ntm_japan_world_by_sector.csv")
 

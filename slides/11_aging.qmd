@@ -3,6 +3,10 @@ title: "Demographic changes"
 subtitle: ""
 author: "Trang Tran"
 date: "2025-12-15"
+execute:
+  echo: false
+  message: false
+  warning: false
 format:
   revealjs:
     self-contained: false
@@ -34,7 +38,6 @@ library(scales)
 ## Japan population
 
 ```{r}
-#| echo: false
 pop = fread("../data/11 aging/wb_pop.csv")
 
 # Prepare data
@@ -78,7 +81,6 @@ ggplot(pop2, aes(x = date, y = value,
 ## Driver of population growth
 
 ```{r}
-#| echo: false
 birth = fread("../data/11 aging/un_pop_birth.csv")
 birth[, value_norm := value / value[date == min(date)], 
    by = .(Country, variable)]
@@ -103,7 +105,6 @@ ggplot() +
 ## Old-age support ratio
 
 ```{r}
-#| echo: false
 age = fread("../data/11 aging/wb_age_depend.csv")
 
 # Prepare data
@@ -152,7 +153,6 @@ ggplot(age, aes(x = date, y = value,
 ## Economic growth
 
 ```{r}
-#| echo: false
 jpl = fread("../data/11 aging/japan_growth.csv")
 jpl[variable=="lf_ratio",variable:="Participation Rate"]
 jpl[variable=="pop",variable:="Population"]
@@ -193,7 +193,6 @@ ggplot() +
 ## Saving rate
 
 ```{r}
-#| echo: false
 saving = fread("../data/11 aging/wb_saving.csv")
 
 # Prepare data
@@ -252,7 +251,6 @@ $$
 ## Social spending
 
 ```{r}
-#| echo: false
 social = fread("../data/11 aging/social_spend.csv")
 setnames(social,"year","date")
 setnames(social,"Country","country")
@@ -295,7 +293,6 @@ ggplot(social, aes(x = date, y = value,
 ## Pension Contribution Rate
 
 ```{r}
-#| echo: false
 contril = fread("../data/11 aging/social_rate.csv")
 contril = contril[grepl("public$|Total",variable)]
 contril[,variable:=trimws(gsub("\\,.*$","",variable))]
@@ -369,7 +366,6 @@ ggplot() +
 ## Female labor participation
 
 ```{r}
-#| echo: false
 fe = fread("../data/11 aging/oecd_lf.csv")
 # Prepare data
 fe[, is_japan := ifelse(country == "Japan", "Japan", "Others")]
@@ -407,7 +403,6 @@ ggplot() +
 ## Female participation
 
 ```{r}
-#| echo: false
 fe2 = fread("../data/11 aging/oecd_lf_fe.csv")
 fe3 = fe2[date%in%c(1975,1985,1995,2005,2015,2024)]
 fe3[,date:=as.character(date)]
@@ -438,7 +433,6 @@ ggplot() +
 ## Female participation vs Fertility Rate
 
 ```{r}
-#| echo: false
 owd = fread("../data/11 aging/owd_fe_fer.csv")
 owd[,date:=as.character(Year)]
 owd[,Population:=round(population_historical/10^6)]

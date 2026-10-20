@@ -2,6 +2,10 @@
 title: "Foreign Direct Investment"
 author: "Trang Tran"
 date: "2025-11-24"
+execute:
+  echo: false
+  message: false
+  warning: false
 format:
   revealjs:
     self-contained: false
@@ -201,8 +205,6 @@ Source: Hoshi (2018), Table 1, based on METI surveys of foreign affiliates.
 ## Japan's inward FDI and business environment
 
 ```{r}
-#| message: false
-#| warning: false
 # Data used in the Balance of Payments lecture; place a copy at this relative path.
 fdi_business = fread("../data/08 fdi/fdi_dtf.csv")
 reference_countries = c("Luxembourg", "Ireland", "Netherlands", "United States", "China", "Argentina", "Brazil", "Korea")

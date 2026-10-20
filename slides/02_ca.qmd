@@ -3,6 +3,10 @@ title: "Comparative Advantage: The case of Japan"
 subtitle: ""
 author: "Trang Tran"
 date: "2026-09-29"
+execute:
+  echo: false
+  message: false
+  warning: false
 format:
   revealjs:
     self-contained: false
@@ -33,7 +37,6 @@ output-dir: ../docs/slides
 ## Japan's trade by partner and sectors
 
 ```{r}
-#| echo: false
 library(data.table)
 library(ggpubr)
 library(ggplot2)
@@ -194,7 +197,6 @@ $$
 ## Japan RCA in 2019
 
 ```{r}
-#| echo: false
 library(data.table)
 library(ggpubr)
 library(ggrepel)
@@ -243,7 +245,6 @@ ggscatter(
 ## RCA of Japan across period
 
 ```{r}
-#| echo: false
 library(data.table)
 library(ggpubr)
 library(ggrepel)
@@ -303,7 +304,6 @@ ggboxplot(
 ## RCA: Japan and Others
 
 ```{r}
-#| echo: false
 dtcaw_reg = fread("../data/02 ca/rca_reg.csv")
 
 jpn_vals <- dtcaw_reg[region == "JPN",

@@ -3,6 +3,10 @@ title: "Balance of Payments: Accounts and Japan’s External Position"
 subtitle: ""
 author: "Trang Tran"
 date: "2025-12-1"
+execute:
+  echo: false
+  message: false
+  warning: false
 format:
   revealjs:
     self-contained: false
@@ -191,7 +195,6 @@ Foreigners visit Japanese and pay for their holiday by using money deposited in 
 ## Japan’s Current Account
 
 ```{r}
-#| message: false
 df = fread("../data/09 bop/imf_ca.csv",header = T)
 df = melt(df,id.vars="region",variable.factor = F)
 df[,value:=as.numeric(value)]

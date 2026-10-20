@@ -3,6 +3,10 @@ title: "Introduction"
 subtitle: "Course overview and expectations"
 author: "Trang Tran"
 date: "2026-09-22"
+execute:
+  echo: false
+  message: false
+  warning: false
 format:
   revealjs:
     self-contained: false
@@ -186,7 +190,6 @@ Use this as a conversation starter: ask for students’ priors on Japan’s role
 
 
 ```{r}
-#| echo: false
 library(data.table)
 library(ggpubr)
 library(scales)
@@ -241,7 +244,6 @@ Economic growth comes from two different sources:
 ## Growth accounting: Japan
 
 ```{r}
-#| echo: false
 pwt = fread(path("growth.csv"))
 ctys_col_jpn = "black"
 var_order = c("Real GDP",
@@ -281,7 +283,6 @@ ggplot(inputs_jp, aes(x = date, y = growth_contr, fill = Variablename2)) +
 ## Growth drivers across countries
   
 ```{r}
-#| echo: false
 ctys = c("JPN","USA","CHN")
 ctys_col = c("black",get_palette(palette = "npg",2))
 pwt[,ISOcode:=factor(ISOcode,levels = ctys)]
@@ -303,7 +304,6 @@ ggline(pwt[!grepl("Share",Variablename2)],
 ## Export-led growth
 
 ```{r}
-#| echo: false
 pwt_trade[,countrycode:=factor(countrycode,levels = ctys)]
 
 ggline(pwt_trade[type=="x"],
@@ -323,7 +323,6 @@ ggline(pwt_trade[type=="x"],
 ## Structural shift
   
 ```{r}
-#| echo: false
 regs = unique(va[,Region])
 regs = c("JPN",regs[regs!="JPN"])
 regs_col = c("black",get_palette(palette = "npg",length(regs)-1))
@@ -351,7 +350,6 @@ ggline(va[grepl("value added",indicator)&date>=1990],
 ## Yen as store of value
 
 ```{r}
-#| echo: false
 curr = unique(imfd[,.(V1=sum(value)),
                    by=Currency][order(-V1),Currency])
 curr = c("Japanese yen",curr[curr!="Japanese yen"])
@@ -398,7 +396,6 @@ ggbarplot(imfd[!is.na(value)],
 ## Aging economy (population)
 
 ```{r}
-#| echo: false
 unpop[,Region:=factor(Region,levels = regs)]
 ggarrange(
   ggline(unpop,
@@ -432,7 +429,6 @@ ggarrange(
 ## Aging economy (immigration)
 
 ```{r}
-#| echo: false
 # CNMR  Net Migration Rate (per 1,000 population)
 # Net Number of Migrants (thousands)
 ggarrange(
