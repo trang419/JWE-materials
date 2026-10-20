@@ -21,7 +21,7 @@ format:
     incremental: true
     controls: true
     hash: true
-draft: true
+draft: false
 output-dir: ../docs/slides
 ---
 ```{r}
