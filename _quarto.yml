@@ -7,23 +7,23 @@ website:
   navbar:
     left:
       - text: "Lessons"
-        file: lessons/index.qmd
+        file: lessons/index.html
       - text: "Slides"
         menu:
           - text: "Lecture 1"
-            file: slides/01_intro.qmd
+            file: slides/01_intro.html
           - text: "Lecture 2"
-            file: slides/02_ca.qmd
+            file: slides/02_ca.html
           - text: "Lecture 3"
-            file: slides/03_gvc.qmd
+            file: slides/03_gvc.html    
           - text: "Lecture 4"
-            file: slides/04_gvc_enablers.qmd
+            file: slides/04_gvc_enablers.html
           - text: "Lecture 5"
-            file: slides/05_asean_integration.qmd
+            file: slides/05_asean_integration.html
           - text: "Lecture 6"
-            file: slides/06_geopolitics.qmd
+            file: slides/06_geopolitics.html
       - text: "Data"
-        file: scripts/index.qmd
+        file: scripts/index.html
 
     right:
       - icon: github

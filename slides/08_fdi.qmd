@@ -4,7 +4,7 @@ author: "Trang Tran"
 date: "2025-11-24"
 format:
   revealjs:
-    self-contained: true
+    self-contained: false
     theme: simple
     slide-number: true
     toc: false

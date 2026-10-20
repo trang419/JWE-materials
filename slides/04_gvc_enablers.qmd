@@ -5,7 +5,7 @@ author: "Trang Tran"
 date: "2026-10-13"
 format:
   revealjs:
-    self-contained: true
+    self-contained: false
     theme: simple
     slide-number: true
     toc: false

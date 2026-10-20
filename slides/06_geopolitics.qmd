@@ -10,7 +10,7 @@ execute:
   message: false   # hide messages
 format:
   revealjs:
-    self-contained: true
+    self-contained: false
     theme: simple
     slide-number: true
     toc: false
