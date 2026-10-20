@@ -23,5 +23,5 @@ format: html
 - Hoshi T. (2018). Has Abenomics succeeded in raising Japan's inward Foreign Direct Investment? Asian Economic Policy Review, 13 (1), 149–168.
 
 ## Materials
-- **Slides:** [View Slides](../slides/06_fdi.html)  
+- **Slides:** [View Slides](../slides/08_fdi-slides.html)  
 

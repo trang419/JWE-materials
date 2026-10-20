@@ -54,3 +54,6 @@ rsconnect/
 ## raw data
 data/raw
 data/temp
+
+# Generated slide assets beside source files
+/slides/*_files/

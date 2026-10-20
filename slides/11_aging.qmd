@@ -8,7 +8,10 @@ execute:
   message: false
   warning: false
 format:
+  html:
+    toc: true
   revealjs:
+    output-file: 11_aging-slides.html
     self-contained: false
     theme: simple
     slide-number: true

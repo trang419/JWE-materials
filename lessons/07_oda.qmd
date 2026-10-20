@@ -31,5 +31,5 @@ format: html
 
 
 ## Materials
-- **Slides:** [View Slides](../slides/07_oda.html)  
+- **Slides:** [View Slides](../slides/07_oda-slides.html)  
 

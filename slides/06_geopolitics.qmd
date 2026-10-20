@@ -9,7 +9,10 @@ execute:
   warning: false   # hide warnings
   message: false   # hide messages
 format:
+  html:
+    toc: true
   revealjs:
+    output-file: 06_geopolitics-slides.html
     self-contained: false
     theme: simple
     slide-number: true
@@ -22,7 +25,6 @@ format:
     controls: true
     hash: true
 draft: false
-output-dir: ../docs/slides
 ---
 ```{r}
 #| include: false
@@ -203,7 +205,7 @@ ggplot() +
 ![](image/geo_us-tariff-revenue-commodity.png)
 :::
 ::: column
-![Source: PIIE](image/geo_us-tariff-revenue.png){height=60%}
+![Source: PIIE](image/geo_us-tariff-revenue.png){height=400px style="max-width: 100%; object-fit: contain;"}
 :::
 :::
 

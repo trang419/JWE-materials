@@ -23,6 +23,6 @@ format: html
 - [Ministry of Finance Japan — Balance of Payments (e-Stat/EBP Net)](https://www.mof.go.jp/english/policy/international_policy/reference/balance_of_payments/ebpnet.htm)
 
 ## Materials
-- **Slides:** [View Slides](../slides/09_bop.qmd)  
+- **Slides:** [View Slides](../slides/09-bop-slides.html)  
 
 

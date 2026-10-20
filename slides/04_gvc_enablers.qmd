@@ -8,7 +8,10 @@ execute:
   message: false
   warning: false
 format:
+  html:
+    toc: true
   revealjs:
+    output-file: 04_gvc_enablers-slides.html
     self-contained: false
     theme: simple
     slide-number: true

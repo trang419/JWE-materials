@@ -8,7 +8,10 @@ execute:
   message: false
   warning: false
 format:
+  html:
+    toc: true
   revealjs:
+    output-file: 10_exchange-slides.html
     self-contained: false
     theme: simple
     slide-number: true
@@ -21,7 +24,6 @@ format:
     controls: true
     hash: true
 draft: false
-output-dir: ../docs/slides
 ---
 ```{r}
 #| include: false

@@ -9,7 +9,10 @@ execute:
   warning: false   # hide warnings
   message: false   # hide messages
 format:
+  html:
+    toc: true
   revealjs:
+    output-file: 05_asean_integration-slides.html
     self-contained: false
     theme: simple
     slide-number: true

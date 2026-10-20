@@ -30,5 +30,5 @@ format: html
 - [World Bank: Ad Valorem Equivalent of Non-Tariff Measures](https://datacatalog.worldbank.org/search/dataset/0040437/ad-valorem-equivalent-of-non-tariff-measures)
 
 ## Materials
-- **Slides:** [View Slides](../slides/04_gvc_enablers.html)  
+- **Slides:** [View Slides](../slides/04_gvc_enablers-slides.html)  
 

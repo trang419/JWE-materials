@@ -22,4 +22,4 @@ format: html
 - Mancini, M., & Taglioni, D. (2025). Economic consequences of trade and global value chain integration: A measurement perspective. The World Bank Economic Review, https://doi.org/10.1093/wber/lhaf017.
 
 ## Materials
-- **Slides:** [View Slides](slides/02_gvc.qmd)  
+- **Slides:** [View Slides](../slides/03_gvc-slides.html)  

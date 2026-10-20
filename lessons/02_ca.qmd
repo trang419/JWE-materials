@@ -24,4 +24,4 @@ format: html
 - [World Bank WITS - RCA indicator](https://wits.worldbank.org)
 
 ## Materials
-- **Slides:** [View Slides](slides/02_ca.qmd)  
+- **Slides:** [View Slides](../slides/02_ca-slides.html)  

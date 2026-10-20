@@ -27,5 +27,5 @@ format: html
 - **Japan Trade Statistics (Customs)** — [Japan Customs](https://www.customs.go.jp/toukei/shinbun/tuuka.html)
 
 ## Materials
-- **Slides:** [View Slides](../slides/10_exchange_rates.html)  
+- **Slides:** [View Slides](../slides/10_exchange-slides.html)  
 

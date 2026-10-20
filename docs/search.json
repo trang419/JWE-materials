@@ -837,7 +837,7 @@
     "href": "slides/11_aging.html#japan-population",
     "title": "Demographic changes",
     "section": "Japan population",
-    "text": "Japan population\n\n\nWarning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.\nℹ Please use `linewidth` instead."
+    "text": "Japan population"
   },
   {
     "objectID": "slides/11_aging.html#driver-of-population-growth",
@@ -872,7 +872,7 @@
     "href": "slides/11_aging.html#saving-rate",
     "title": "Demographic changes",
     "section": "Saving rate",
-    "text": "Saving rate\n\n\nWarning: Removed 41 rows containing missing values or values outside the scale range\n(`geom_line()`).\n\n\n\n\n\n\n\n\n\n\n\nhigh growth rate is more likely to increase aggregate saving, constraint on borrowing for the very young increase saving rate (unexpected future growth)\nUnderdeveloped Social Security System (Japan after 1973, theoretically sound but not confirmed empirically)\nHigh cost of housing, down payment (impact not large)\nIntentional bequests"
+    "text": "Saving rate\n\n\n\n\n\n\n\n\n\n\n\nhigh growth rate is more likely to increase aggregate saving, constraint on borrowing for the very young increase saving rate (unexpected future growth)\nUnderdeveloped Social Security System (Japan after 1973, theoretically sound but not confirmed empirically)\nHigh cost of housing, down payment (impact not large)\nIntentional bequests"
   },
   {
     "objectID": "slides/11_aging.html#saving-and-investment",
@@ -921,7 +921,7 @@
     "href": "slides/11_aging.html#female-labor-participation",
     "title": "Demographic changes",
     "section": "Female labor participation",
-    "text": "Female labor participation\n\n\nWarning in geom_line(data = fe[is_japan != \"Japan\"], aes(x = date, y = value, :\nIgnoring unknown aesthetics: shape\n\n\n\n\n\n\n\n\n\n\n\nJapanese women have fewer children, out of the labor force for a shorter time\ninitiatives to encourage women not to quit their job during the childbearing and child-care years in the 2010s may have been effective"
+    "text": "Female labor participation\n\n\n\n\n\n\n\n\n\n\n\nJapanese women have fewer children, out of the labor force for a shorter time\ninitiatives to encourage women not to quit their job during the childbearing and child-care years in the 2010s may have been effective"
   },
   {
     "objectID": "slides/11_aging.html#female-participation",
@@ -1005,35 +1005,35 @@
     "href": "slides/09 bop.html#japans-current-account",
     "title": "Balance of Payments: Accounts and Japan’s External Position",
     "section": "Japan’s Current Account",
-    "text": "Japan’s Current Account\n\ndf = fread(\"../data/09 bop/imf_ca.csv\",header = T)\ndf = melt(df,id.vars=\"region\",variable.factor = F)\ndf[,value:=as.numeric(value)]\n\nWarning in eval(jsub, SDenv, parent.frame()): NAs introduced by coercion\n\ndf[,variable:=as.integer(variable)]\ndf[,future:=as.character(variable&gt;=2025)]\n\nkeep = c(\"Japan\",\"Euro area\",\"United States\",\n         \"Emerging and Developing Asia\")\nplot_df = df[region%in%keep&!is.na(value)]\n\nggplot(plot_df, \n       aes(variable, value,\n           group = region, \n           colour = region, \n           size = region == \"Japan\")) +\n  geom_hline(yintercept = 0, linetype = \"dashed\") +\n  geom_line() +\n  scale_size_manual(values = c(`TRUE` = 1.2, `FALSE` = 0.6), guide = \"none\") +\n  scale_y_continuous(labels = function(x) paste0(x, \"%\")) +\n  labs(title = \"Current Account Balance (% of GDP): Japan vs others\",\n       x = NULL, y = \"% of GDP\", colour = NULL,\n       caption = \"Source: IMF WEO\") +\n  theme_minimal(base_size = 12) +\n  theme(legend.position = \"bottom\") \n\nWarning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.\nℹ Please use `linewidth` instead.\n\n\n\n\n\n\n\n\n\n\n\nBalanced (0 percent) during the Bretton Woods regime\n\nyen was fixed to the US dollar at 360 yen/dollar (1949-1971)\nnegative during the boom years and positive when domestic growth slowed\n\nSurpluses often in the 1970s and consistently since 1981: income surplus"
+    "text": "Japan’s Current Account\n\n\n\n\n\n\n\n\n\n\n\nBalanced (0 percent) during the Bretton Woods regime\n\nyen was fixed to the US dollar at 360 yen/dollar (1949-1971)\nnegative during the boom years and positive when domestic growth slowed\n\nSurpluses often in the 1970s and consistently since 1981: income surplus"
   },
   {
     "objectID": "slides/09 bop.html#japans-current-account-components",
     "href": "slides/09 bop.html#japans-current-account-components",
     "title": "Balance of Payments: Accounts and Japan’s External Position",
     "section": "Japan’s current account components",
-    "text": "Japan’s current account components\n\ndt = fread(\"../data/09 bop/mof_ca.csv\", skip=2)\nsetnames(dt,colnames(dt)[[1]],\"year\")\ndt = melt(dt,id.vars = \"year\",variable.name = \"item\")\ndt[,item:=trimws(gsub(\"/.*$\",\"\",item))]\ndt[,year:=as.integer(year)]\ndt[,type:=ifelse(grepl(\"Current\",item),\"Total\",\"Component\")]\ndt[,value:=value/10^4]\n\nggplot() +\n  geom_col(data = dt[type==\"Component\"],\n           aes(x = year, y = value, fill = item),\n           position=\"stack\") +\n  geom_line(data = dt[type==\"Total\"] ,\n            aes(x = year, y = value), color=\"black\", size=1) +\n  geom_hline(yintercept=0, color=\"gray40\") +\n  labs(title=\"Japan: Current Account Components and Total\",\n       x=NULL, y=\"Net balance (tril yen)\", \n       fill=\"Component\", caption = \"Source: MOF\") +\n  theme_minimal() +\n  theme(legend.position=\"bottom\")\n\n\n\n\n\n\n\n\n\n\nService trade always deficit: important driver is international tourism balance, run large deficits but turned positive in 2015.\nNet exports of goods replaced by primary income (i.e., interest and dividends from external assets) after 2007\nLarge trade deficit in 2011: natural gas to generate electricity aftermath of earthquake and nuclear plants shutdown\nLarge trade deficit in 2022: high energy import costs due to the war in Ukraine and the depreciation of the yen making imports more expensive"
+    "text": "Japan’s current account components\n\n\n\n\n\n\n\n\n\n\n\nService trade always deficit: important driver is international tourism balance, run large deficits but turned positive in 2015.\nNet exports of goods replaced by primary income (i.e., interest and dividends from external assets) after 2007\nLarge trade deficit in 2011: natural gas to generate electricity aftermath of earthquake and nuclear plants shutdown\nLarge trade deficit in 2022: high energy import costs due to the war in Ukraine and the depreciation of the yen making imports more expensive"
   },
   {
     "objectID": "slides/09 bop.html#international-tourism-and-travel-balance",
     "href": "slides/09 bop.html#international-tourism-and-travel-balance",
     "title": "Balance of Payments: Accounts and Japan’s External Position",
     "section": "International Tourism and Travel Balance",
-    "text": "International Tourism and Travel Balance\n\ndu = fread(\"../data/09 bop/boj_travel.csv\", skip=2)\nsetnames(du,colnames(du)[[1]],\"year\")\ndu = melt(du,id.vars = \"year\",variable.name = \"item\")\ndu = du[grepl(\"Travel\",item)&!grepl(\"Education|Other\",item)]\ndu[,item:=trimws(gsub(\"Services/Travel/?\",\"\",\n                      gsub(\"/?Net balance\",\"\",item)))]\ndu[,year:=as.integer(year)]\ndu[,type:=ifelse(item==\"\",\"Total\",\"Component\")]\ndu[,value:=value/10^4]\n\nggplot() +\n  geom_col(data = du[type==\"Component\"],\n           aes(x = year, y = value, fill = item),\n           position=\"stack\") +\n  geom_line(data = du[type==\"Total\"] ,\n            aes(x = year, y = value), color=\"black\", size=1) +\n  geom_hline(yintercept=0, color=\"gray40\") +\n  labs(title=\"Japan: Travel Balance Components and Total\",\n       x=NULL, y=\"Net balance (tril yen)\", \n       fill=\"Component\", caption = \"Source: BOJ\") +\n  theme_minimal() +\n  theme(legend.position=\"bottom\")"
+    "text": "International Tourism and Travel Balance"
   },
   {
     "objectID": "slides/09 bop.html#japans-financial-account-components",
     "href": "slides/09 bop.html#japans-financial-account-components",
     "title": "Balance of Payments: Accounts and Japan’s External Position",
     "section": "Japan’s financial account components",
-    "text": "Japan’s financial account components\n\ndv = fread(\"../data/09 bop/mof_fa.csv\", header = T)\ndv = melt(dv,id.vars = \"year\",variable.name = \"item\")\ndv = dv[!grepl(\":\",item)]\ndv[,year:=as.integer(year)]\ndv[,type:=ifelse(item==\"Financial account\",\"Total\",\"Component\")]\ndv[,value:=value/10^4]\n\nggplot() +\n  geom_col(data = dv[type==\"Component\"],\n           aes(x = year, y = value, fill = item),\n           position=\"stack\") +\n  geom_line(data = dv[type==\"Total\"] ,\n            aes(x = year, y = value), color=\"black\", size=1) +\n  geom_hline(yintercept=0, color=\"gray40\") +\n  labs(title=\"Japan: Financial Account Components and Total\",\n       x=NULL, y=\"Net balance (tril yen)\", \n       fill=\"Component\", caption = \"Source: MOF\") +\n  theme_minimal() +\n  theme(legend.position=\"bottom\")+\n  guides(fill=guide_legend(nrow = 2))\n\n\n\n\n\n\n\n\n\n\nA current account surplus implies an increase in external assets (i.e., surpluses of the financial accounts)\nComposition Dominated by direct investment and portfolio assets. Shift from lending (1980s) → equity ownership (post-2000).\nNet direct investment has increased steadily\nNet portfolio investment abroad has been very volatile\n\nin 2011: partly due to Japanese insurance companies’ repatriation of assets to pay for insurance reimbursements\n\nOfficial reserve: MOF (BOJ being its agent) occasionally intervened in the foreign exchange market to buy the US dollar (and sell the yen)\n\nnet external assets increase in 2003–2004 and 2011"
+    "text": "Japan’s financial account components\n\n\n\n\n\n\n\n\n\n\n\nA current account surplus implies an increase in external assets (i.e., surpluses of the financial accounts)\nComposition Dominated by direct investment and portfolio assets. Shift from lending (1980s) → equity ownership (post-2000).\nNet direct investment has increased steadily\nNet portfolio investment abroad has been very volatile\n\nin 2011: partly due to Japanese insurance companies’ repatriation of assets to pay for insurance reimbursements\n\nOfficial reserve: MOF (BOJ being its agent) occasionally intervened in the foreign exchange market to buy the US dollar (and sell the yen)\n\nnet external assets increase in 2003–2004 and 2011"
   },
   {
     "objectID": "slides/09 bop.html#japans-niip",
     "href": "slides/09 bop.html#japans-niip",
     "title": "Balance of Payments: Accounts and Japan’s External Position",
     "section": "Japan’s NIIP",
-    "text": "Japan’s NIIP\n\ndc = fread(\"../data/09 bop/oecd_niip.csv\")\nsetnames(dc, tolower(names(dc)))\nsetnames(dc,\"niip\",\"value\")\nlatest = dc[, .SD[which.max(time)], by = country]\noutliers &lt;- c(\n  latest[order(-value)][1:3, country],\n  latest[order(value)][1:3, country],\n  \"Japan\"\n)\nggplot(dc, aes(x = time, y = value/10^6, group = country,\n               color = country == \"Japan\", size = country == \"Japan\")) +\n  geom_line(alpha = 0.6) +\n  geom_text_repel(\n    data = latest[country %in% outliers],\n    aes(label = country),\n    nudge_x = 0.3, size = 3, color = \"black\"\n  ) +\n  scale_color_manual(values = c(\"gray70\", \"red\")) +\n  scale_size_manual(values = c(0.5, 1.3)) +\n  labs(\n    title = \"Net International Investment Position (NIIP)\",\n    subtitle = \"Trillion USD — Japan highlighted in red\",\n    x = NULL, y = \"Trillion USD\"\n  ) +\n  theme_minimal(base_size = 13) +\n  theme(legend.position = \"none\")\n\n\n\n\n\n\n\n\n\n\nLevel Japan has one of the world’s largest positive NIIPs (~US$3–4 trillion, &gt;80% of GDP 2024). Reflects decades of current account surpluses and outward FDI. (US: -90% of its nominal GDP 2024)\nResilience Stable external position despite aging and yen fluctuations. Suggests strong net creditor status and global financial reach."
+    "text": "Japan’s NIIP\n\n\n\n\n\n\n\n\n\n\n\nLevel Japan has one of the world’s largest positive NIIPs (~US$3–4 trillion, &gt;80% of GDP 2024). Reflects decades of current account surpluses and outward FDI. (US: -90% of its nominal GDP 2024)\nResilience Stable external position despite aging and yen fluctuations. Suggests strong net creditor status and global financial reach."
   },
   {
     "objectID": "slides/09 bop.html#references",
@@ -1200,8 +1200,8 @@
     "objectID": "slides/05_asean_integration.html#introduction",
     "href": "slides/05_asean_integration.html#introduction",
     "title": "ASEAN and Regional Integration",
-    "section": "Introduction",
-    "text": "Introduction\n\nAbout ASEAN\nASEAN Economic Integration\nASEAN and Japan"
+    "section": "",
+    "text": "About ASEAN\nASEAN Economic Integration\nASEAN and Japan"
   },
   {
     "objectID": "slides/05_asean_integration.html#asean-at-a-glance",
@@ -1222,7 +1222,7 @@
     "href": "slides/05_asean_integration.html#asean-diversity-2",
     "title": "ASEAN and Regional Integration",
     "section": "ASEAN Diversity (2)",
-    "text": "ASEAN Diversity (2)\n\n\n\nASEAN total real GDP PPP increased almost 4 times since 1993, still gaps in GDP per capita among member countries"
+    "text": "ASEAN Diversity (2)\n\n\n\n\n\n\n\n\n\n\n\nASEAN total real GDP PPP increased almost 4 times since 1993, still gaps in GDP per capita among member countries"
   },
   {
     "objectID": "slides/05_asean_integration.html#asean-economic-integration-1",
@@ -1278,14 +1278,14 @@
     "href": "slides/05_asean_integration.html#trade",
     "title": "ASEAN and Regional Integration",
     "section": "Trade",
-    "text": "Trade\n\n\n\nJapan is an important trading partner of ASEAN\n\nJapan imports from ASEAN: machinery, mineral products,\nJapan exports to ASEAN: machinery, vehicles\nIncrease in intra-industry trade"
+    "text": "Trade\n\n\n\n\n\n\n\n\n\n\n\nJapan is an important trading partner of ASEAN\n\nJapan imports from ASEAN: machinery, mineral products,\nJapan exports to ASEAN: machinery, vehicles\nIncrease in intra-industry trade"
   },
   {
     "objectID": "slides/05_asean_integration.html#investment",
     "href": "slides/05_asean_integration.html#investment",
     "title": "ASEAN and Regional Integration",
     "section": "Investment",
-    "text": "Investment\n\n\n\nJapan is second largest FDI source country of ASEAN\n\nASEAN is the third largest FDI destination of Japan\nSingapore and Vietnam received high inflow recently\n\nASEAN is second largest FDI source of Japan, ¾ is from Singapore in recent years"
+    "text": "Investment\n\n\n\n\n\n\n\n\n\n\n\nJapan is second largest FDI source country of ASEAN\n\nASEAN is the third largest FDI destination of Japan\nSingapore and Vietnam received high inflow recently\n\nASEAN is second largest FDI source of Japan, ¾ is from Singapore in recent years"
   },
   {
     "objectID": "slides/05_asean_integration.html#japanese-firms-in-asean-countries",
@@ -1299,21 +1299,21 @@
     "href": "slides/05_asean_integration.html#japanese-firms-in-asean-countries-1a",
     "title": "ASEAN and Regional Integration",
     "section": "Japanese firms in ASEAN countries (1a)",
-    "text": "Japanese firms in ASEAN countries (1a)\n\n\nJapanese companies heavily used ASEAN economic integration\n\ngoods between Japan and FTA partners\nintermediate goods among ASEAN countries\n\n\n\n\nSource: https://www.jetro.go.jp/ext_images/en/reports/survey/pdf/jafirms2018.pdf"
+    "text": "Japanese firms in ASEAN countries (1a)\n\n\nJapanese companies heavily used ASEAN economic integration\n\ngoods between Japan and FTA partners\nintermediate goods among ASEAN countries\n\n\n\n\n\n\nSource: https://www.jetro.go.jp/ext_images/en/reports/survey/pdf/jafirms2018.pdf"
   },
   {
     "objectID": "slides/05_asean_integration.html#japanese-firms-in-asean-countries-1b",
     "href": "slides/05_asean_integration.html#japanese-firms-in-asean-countries-1b",
     "title": "ASEAN and Regional Integration",
     "section": "Japanese firms in ASEAN countries (1b)",
-    "text": "Japanese firms in ASEAN countries (1b)\n\n\nIn 1990s, reorganize production systems in ASEAN region\n\nJapan adopt a strategy of concentrating production of similar products in a single country to attain economies of scale\n\n\n\n\nJapanese Autos by 1990s Source: Kinoshita (2004) based on Yamaguchi (2003), Honda Motor Co., Ltd (2003)"
+    "text": "Japanese firms in ASEAN countries (1b)\n\n\nIn 1990s, reorganize production systems in ASEAN region\n\nJapan adopt a strategy of concentrating production of similar products in a single country to attain economies of scale\n\n\n\n\n\n\nJapanese Autos by 1990s Source: Kinoshita (2004) based on Yamaguchi (2003), Honda Motor Co., Ltd (2003)"
   },
   {
     "objectID": "slides/05_asean_integration.html#japanese-firms-in-asean-countries-1c",
     "href": "slides/05_asean_integration.html#japanese-firms-in-asean-countries-1c",
     "title": "ASEAN and Regional Integration",
     "section": "Japanese Firms in ASEAN countries (1c)",
-    "text": "Japanese Firms in ASEAN countries (1c)\n\nBy 2000, Japanese firms have become high profile investors in ASEAN5\n\n\n\n\nJapan export intermediates goods\nASEAN4 exports final goods which have a lot of import content"
+    "text": "Japanese Firms in ASEAN countries (1c)\n\nBy 2000, Japanese firms have become high profile investors in ASEAN5\n\n\n\n\n\n\n\n\n\n\n\n\nJapan export intermediates goods\nASEAN4 exports final goods which have a lot of import content"
   },
   {
     "objectID": "slides/05_asean_integration.html#japanese-firms-in-asean-countries-2a",
@@ -1334,7 +1334,7 @@
     "href": "slides/05_asean_integration.html#japanese-firms-in-asean-countries-3",
     "title": "ASEAN and Regional Integration",
     "section": "Japanese Firms in ASEAN countries (3)",
-    "text": "Japanese Firms in ASEAN countries (3)\n\n\n“China plus one” strategy\n\nShift from China to CLMV for labor-intensive production\nChinese economic growth resulting in wage increase\nUS-China Tariff War started in 2017\n\n\n\n\n\n\nMove from China to ASEAN6\nReduction in Thailand, Indonesia\nIncrease in Vietnam and the Philippines\nIncrease in non-manufacturing in Vietnam"
+    "text": "Japanese Firms in ASEAN countries (3)\n\n\n“China plus one” strategy\n\nShift from China to CLMV for labor-intensive production\nChinese economic growth resulting in wage increase\nUS-China Tariff War started in 2017\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMove from China to ASEAN6\nReduction in Thailand, Indonesia\nIncrease in Vietnam and the Philippines\nIncrease in non-manufacturing in Vietnam"
   },
   {
     "objectID": "slides/05_asean_integration.html#key-takeaways",
@@ -1571,8 +1571,8 @@
     "objectID": "slides/01_intro.html#self-introduction",
     "href": "slides/01_intro.html#self-introduction",
     "title": "Introduction",
-    "section": "Self-introduction",
-    "text": "Self-introduction\n\nAssistant Professor, Department of System Innovation, University of Tokyo\n\nInternational economics\nMaritime economics\n\nWhy am I here?\n\nBuyout system of the Grant-in-Aid for Scientific Research (S)\n“Transformation of the Global Value Chain and the Construction of a New International Economic Order”"
+    "section": "",
+    "text": "Assistant Professor, Department of System Innovation, University of Tokyo\n\nInternational economics\nMaritime economics\n\nWhy am I here?\n\nBuyout system of the Grant-in-Aid for Scientific Research (S)\n“Transformation of the Global Value Chain and the Construction of a New International Economic Order”"
   },
   {
     "objectID": "slides/01_intro.html#course-content",
@@ -1621,14 +1621,14 @@
     "href": "slides/01_intro.html#how-we-work",
     "title": "Introduction",
     "section": "How We Work",
-    "text": "How We Work\n\nClass Structure: 20 min short tests + 50 min lecture + 5 min break + 30 min group discussions\nAssessment\n\nParticipant: 10%\nShort tests: 20%\nGroup presentation workshop: 30%\n\nFinal exam: 40%"
+    "text": "How We Work\n\nClass Structure: 20 min short tests + 50 min lecture + 5 min break + 30 min group discussions\nAssessment\n\nParticipant: 10%\nShort tests: 20%\nGroup presentation workshop: 30%\n\nFinal exam: 40%\n\n\n\n\nVoluntary and beneficial remark: one or two pts (maximum 10 pts)\nPoints deduction: 5 pts (absent), 3 pts (late)\n\nExceptions include illness or delays in public transportation but with proof is needed\nIf you cheat, you will be kicked out"
   },
   {
     "objectID": "slides/01_intro.html#group-discussion-first-half-of-the-course",
     "href": "slides/01_intro.html#group-discussion-first-half-of-the-course",
     "title": "Introduction",
     "section": "Group discussion (first half of the course)",
-    "text": "Group discussion (first half of the course)\n\n7 groups of 5~6 students: register your members by the end of today\nChoose one research question related to the topic of global value chain in two weeks\nDiscuss in class\nPresentation (11/10: 10 minutes ~ 5 slides): title, research question + background, evidence, policy implication, conclusion\nSubmit of individual report (11/24: 1 A4 page): similar to presentation + what you learn from other groups"
+    "text": "Group discussion (first half of the course)\n\n7 groups of 5~6 students: register your members by the end of today\nChoose one research question related to the topic of global value chain in two weeks\nDiscuss in class\nPresentation (11/10: 10 minutes ~ 5 slides): title, research question + background, evidence, policy implication, conclusion\nSubmit of individual report (11/24: 1 A4 page): similar to presentation + what you learn from other groups\n\n\n\nGroup discussion (second half of the course)\n\nRandomly chosen group\nAssigned topics\nDiscuss in class"
   },
   {
     "objectID": "slides/01_intro.html#classroom-management",
@@ -1656,7 +1656,7 @@
     "href": "slides/01_intro.html#japan-at-a-glance",
     "title": "Introduction",
     "section": "Japan at a Glance",
-    "text": "Japan at a Glance\n\nHigh-income\nEconomic growth model\nSafe-haven currency\nAging economy\n\n\nUse this as a conversation starter: ask for students’ priors on Japan’s role."
+    "text": "Japan at a Glance\n\nHigh-income\nEconomic growth model\nSafe-haven currency\nAging economy\n\n\nUse this as a conversation starter: ask for students’ priors on Japan’s role.\n\n\n\n\n\n\n\n\n\n\n\n\n\nJapan economic growth: rapid 1950s~1960s, stagnant 1970s~1980s, declining 1990s~\nMany Asian repeat rapid growth in the 1990s"
   },
   {
     "objectID": "slides/01_intro.html#growth-accounting-the-framework",
@@ -1670,7 +1670,7 @@
     "href": "slides/01_intro.html#growth-accounting-japan",
     "title": "Introduction",
     "section": "Growth accounting: Japan",
-    "text": "Growth accounting: Japan\n\n\n\nGrowth drivers: capital, total factor productivity, human capital: investment-led"
+    "text": "Growth accounting: Japan\n\n\n\n\n\n\n\n\n\n\n\nGrowth drivers: capital, total factor productivity, human capital: investment-led"
   },
   {
     "objectID": "slides/01_intro.html#growth-drivers-across-countries",
@@ -1705,7 +1705,7 @@
     "href": "slides/01_intro.html#yen-as-store-of-value",
     "title": "Introduction",
     "section": "Yen as store of value",
-    "text": "Yen as store of value\n\n\n\nFrame the upcoming chart: it shows only one dimension (store of value / reserve holdings), not trade invoicing or pricing, worth noting the yen may play a bigger or smaller role in other functions\nPreview: the yen has held a stable, mid-sized share of global reserves for decades — this reflects Japan’s role as a safe-haven currency despite its shrinking share of world GDP\nOptional if asked: contrast with the US dollar, which dominates in all three functions simultaneously, that’s part of what “reserve currency” usually implies beyond just what this chart shows"
+    "text": "Yen as store of value\n\n\n\n\n\n\n\n\n\n\n\nFrame the upcoming chart: it shows only one dimension (store of value / reserve holdings), not trade invoicing or pricing, worth noting the yen may play a bigger or smaller role in other functions\nPreview: the yen has held a stable, mid-sized share of global reserves for decades — this reflects Japan’s role as a safe-haven currency despite its shrinking share of world GDP\nOptional if asked: contrast with the US dollar, which dominates in all three functions simultaneously, that’s part of what “reserve currency” usually implies beyond just what this chart shows"
   },
   {
     "objectID": "slides/01_intro.html#why-demographics-matter",
@@ -1719,7 +1719,7 @@
     "href": "slides/01_intro.html#aging-economy-population",
     "title": "Introduction",
     "section": "Aging economy (population)",
-    "text": "Aging economy (population)\n\n\n\nRapidly aging, highest median age with very low rate of natural change"
+    "text": "Aging economy (population)\n\n\n\n\n\n\n\n\n\n\n\nRapidly aging, highest median age with very low rate of natural change"
   },
   {
     "objectID": "slides/01_intro.html#aging-economy-immigration",
@@ -1761,7 +1761,7 @@
     "href": "slides/02_ca.html#japans-trade-by-partner-and-sectors",
     "title": "Comparative Advantage: The case of Japan",
     "section": "Japan’s trade by partner and sectors",
-    "text": "Japan’s trade by partner and sectors\n\n\nLoading required package: ggplot2\n\n\n\n\n\n\n\n\n\n\n\nImport energy, food, raw materials mostly traditional trade\nJapan trade with the N.America/EU\n\nimport services\nexport manufacturing goods, surplus with US\n\nJapan trade with China/ASEAN\n\nImports consumer electronics, textiles\nExports high-tech machinery, components\n“Task sharing” production networks\n\nservices (WTO GATS): production happens with consumption\n\ncross-border supply\nconsumption abroad (tourism, education)\ncommercial presence (branch of bank)\nmovement of natural persons (Filipino nurse contract in Japan: not migration)"
+    "text": "Japan’s trade by partner and sectors\n\n\n\n\n\n\n\n\n\n\n\nImport energy, food, raw materials mostly traditional trade\nJapan trade with the N.America/EU\n\nimport services\nexport manufacturing goods, surplus with US\n\nJapan trade with China/ASEAN\n\nImports consumer electronics, textiles\nExports high-tech machinery, components\n“Task sharing” production networks\n\nservices (WTO GATS): production happens with consumption\n\ncross-border supply\nconsumption abroad (tourism, education)\ncommercial presence (branch of bank)\nmovement of natural persons (Filipino nurse contract in Japan: not migration)"
   },
   {
     "objectID": "slides/02_ca.html#why-countries-trade",
@@ -1893,8 +1893,8 @@
     "objectID": "slides/04_gvc_enablers.html#gvc-reminders",
     "href": "slides/04_gvc_enablers.html#gvc-reminders",
     "title": "Enablers of Global Value Chains",
-    "section": "GVC reminders",
-    "text": "GVC reminders\n\n\nFigure 1: Vertical FDI, export-platform FDI and global value chains"
+    "section": "",
+    "text": "Figure 1: Vertical FDI, export-platform FDI and global value chains"
   },
   {
     "objectID": "slides/04_gvc_enablers.html#what-make-gvcs",
@@ -1908,7 +1908,7 @@
     "href": "slides/04_gvc_enablers.html#effects-of-trade-costs-on-bilateral-trade",
     "title": "Enablers of Global Value Chains",
     "section": "Effects of Trade Costs on Bilateral Trade",
-    "text": "Effects of Trade Costs on Bilateral Trade\n\n\nFigure 2: Gravity coefficient estimates"
+    "text": "Effects of Trade Costs on Bilateral Trade\n\n\n\n\n\n\n\n\nFigure 2: Gravity coefficient estimates"
   },
   {
     "objectID": "slides/04_gvc_enablers.html#wto-and-multilateralism",
@@ -1922,7 +1922,7 @@
     "href": "slides/04_gvc_enablers.html#mfn-tariff-rates",
     "title": "Enablers of Global Value Chains",
     "section": "MFN tariff rates",
-    "text": "MFN tariff rates\n\nSource: Baldwin (2011)"
+    "text": "MFN tariff rates\n\n\n\nSource: Baldwin (2011)"
   },
   {
     "objectID": "slides/04_gvc_enablers.html#wto-challenge",
@@ -1957,7 +1957,7 @@
     "href": "slides/04_gvc_enablers.html#japan-tariff",
     "title": "Enablers of Global Value Chains",
     "section": "Japan tariff",
-    "text": "Japan tariff\n\nSource: WTO Tariff Profile (2025)\nTariff line: the most detailed product category in a country’s tariff schedule, identified by a national code (usually 8 to 10 digits, built on the 6-digit HS code). Each tariff line has its own duty rate. “AVG”, “Duty-free in %”, “Max” and “Binding in %” are all calculated over tariff lines, not over trade value.\n\nFinal bound duties: the maximum tariff rates Japan has committed to the WTO for each product line. Japan cannot legally raise tariffs above these ceilings.\nMFN applied duties: the rates Japan actually charges other WTO members under the Most-Favoured-Nation principle, i.e. the non-discriminatory “normal” tariff, excluding preferential rates under FTAs. Applied rates are at or below bound rates.\nAVG: simple average of the ad valorem tariff rates (%) across all lines in the group.\nDuty-free in %: share of tariff lines with a zero rate.\nMax: the highest single tariff rate in the group (italics mark non-ad valorem rates converted to ad valorem equivalents).\nBinding in %: share of tariff lines that are bound at the WTO (100 means every line is bound).\nImports (Share in %): the group’s share of Japan’s total imports.\nImports (Duty-free in %): share of the group’s import value that enters duty-free."
+    "text": "Japan tariff\n\n\n\nSource: WTO Tariff Profile (2025)\n\n\n\nTariff line: the most detailed product category in a country’s tariff schedule, identified by a national code (usually 8 to 10 digits, built on the 6-digit HS code). Each tariff line has its own duty rate. “AVG”, “Duty-free in %”, “Max” and “Binding in %” are all calculated over tariff lines, not over trade value.\n\nFinal bound duties: the maximum tariff rates Japan has committed to the WTO for each product line. Japan cannot legally raise tariffs above these ceilings.\nMFN applied duties: the rates Japan actually charges other WTO members under the Most-Favoured-Nation principle, i.e. the non-discriminatory “normal” tariff, excluding preferential rates under FTAs. Applied rates are at or below bound rates.\nAVG: simple average of the ad valorem tariff rates (%) across all lines in the group.\nDuty-free in %: share of tariff lines with a zero rate.\nMax: the highest single tariff rate in the group (italics mark non-ad valorem rates converted to ad valorem equivalents).\nBinding in %: share of tariff lines that are bound at the WTO (100 means every line is bound).\nImports (Share in %): the group’s share of Japan’s total imports.\nImports (Duty-free in %): share of the group’s import value that enters duty-free."
   },
   {
     "objectID": "slides/04_gvc_enablers.html#non-tariff-measures",
@@ -1992,21 +1992,21 @@
     "href": "slides/04_gvc_enablers.html#international-transportation-costs-ocean",
     "title": "Enablers of Global Value Chains",
     "section": "International transportation costs: Ocean",
-    "text": "International transportation costs: Ocean\n\nSource: Hummels (2007)\n\nTransport Infrastructure: ports, airports, rail/road connectivity.\nDigital Infrastructure: broadband, cloud computing, digital platforms enabling services trade.\nCase example:\n\nContainer development\nSingapore and logistics connectivity\nJapan’s port investments in ASEAN"
+    "text": "International transportation costs: Ocean\n\n\n\nSource: Hummels (2007)\n\n\n\n\nTransport Infrastructure: ports, airports, rail/road connectivity.\nDigital Infrastructure: broadband, cloud computing, digital platforms enabling services trade.\nCase example:\n\nContainer development\nSingapore and logistics connectivity\nJapan’s port investments in ASEAN"
   },
   {
     "objectID": "slides/04_gvc_enablers.html#international-transportation-costs-air",
     "href": "slides/04_gvc_enablers.html#international-transportation-costs-air",
     "title": "Enablers of Global Value Chains",
     "section": "International transportation costs: Air",
-    "text": "International transportation costs: Air\n\nSource: Hummels (2007)"
+    "text": "International transportation costs: Air\n\n\n\nSource: Hummels (2007)"
   },
   {
     "objectID": "slides/04_gvc_enablers.html#investment-treaties",
     "href": "slides/04_gvc_enablers.html#investment-treaties",
     "title": "Enablers of Global Value Chains",
     "section": "Investment treaties",
-    "text": "Investment treaties\n\nSource: Baldwin (2011)\n\nInvestment policy\nFDI openness,\nInvestor protections\nRule of law"
+    "text": "Investment treaties\n\n\n\nSource: Baldwin (2011)\n\n\n\n\nInvestment policy\nFDI openness,\nInvestor protections\nRule of law"
   },
   {
     "objectID": "slides/04_gvc_enablers.html#export-processing-zones-entry-point-into-gvcs",
@@ -2027,7 +2027,7 @@
     "href": "slides/04_gvc_enablers.html#internet-access",
     "title": "Enablers of Global Value Chains",
     "section": "Internet access",
-    "text": "Internet access\n\nSource: Baldwin (2011)"
+    "text": "Internet access\n\n\n\nSource: Baldwin (2011)"
   },
   {
     "objectID": "slides/04_gvc_enablers.html#key-takeaways",
@@ -2223,7 +2223,7 @@
     "href": "slides/08_fdi.html#overview-fdi-and-oda",
     "title": "Foreign Direct Investment",
     "section": "Overview: FDI and ODA",
-    "text": "Overview: FDI and ODA\n\nworld = fread(\"../data/08 fdi/world_fdi_oda.csv\")\nggarrange(\n  ggline(world[!grepl(\"outflows\",indicator)],\n         x=\"date\",xlab=\"\",\n         numeric.x.axis = T,\n         y=\"value\",ylab=\"value (current US$)\",\n         color = \"indicator\",\n         caption = \"Source: World Bank\") +\n    scale_y_continuous(labels = label_number(scale = 1e-12, suffix = \"tr\")),\n  ggline(world[!grepl(\"outflows\",indicator)],\n         x=\"date\",xlab=\"\",\n         numeric.x.axis = T,\n         y=\"gdp_share\",ylab=\"GDP share (%)\",\n         color = \"indicator\",\n         caption = \"Source: World Bank\") +\n  scale_y_continuous(labels = label_number(scale = 100, suffix = \"%\")),\n  common.legend =T\n) %&gt;% annotate_figure(top = \"Global Flow\")\n\n\n\n\n\n\n\n\n\n\nRecap of lecture 1: ODA is public, concessional, development-oriented.\nToday: FDI is private and profit-seeking; compare scale and GDP share."
+    "text": "Overview: FDI and ODA\n\n\n\n\n\n\n\n\n\n\n\nRecap of lecture 1: ODA is public, concessional, development-oriented.\nToday: FDI is private and profit-seeking; compare scale and GDP share."
   },
   {
     "objectID": "slides/08_fdi.html#key-concepts-fdi-ma-mnes",
@@ -2251,7 +2251,7 @@
     "href": "slides/08_fdi.html#japans-outward-direct-investment-components",
     "title": "Foreign Direct Investment",
     "section": "Japan’s outward direct investment: Components",
-    "text": "Japan’s outward direct investment: Components\n\nfdi_comp = melt(fdi_jp[, !\"Total\"], id.vars = \"year\",\n                variable.name = \"Component\")\nggbarplot(fdi_comp,\n          x = \"year\", xlab = \"\",\n          y = \"value\", ylab = \"Trillion yen\",\n          color = \"Component\",\n          fill = \"Component\",\n          x.text.angle = 90,\n          legend = \"right\",\n          title = \"Japan: Direct investment by component\",\n          caption = \"Source: Ministry of Finance, Financial account\")"
+    "text": "Japan’s outward direct investment: Components"
   },
   {
     "objectID": "slides/08_fdi.html#japans-capital-liberalization-and-fdi",
@@ -2272,7 +2272,7 @@
     "href": "slides/08_fdi.html#japans-inward-fdi-and-business-environment",
     "title": "Foreign Direct Investment",
     "section": "Japan’s inward FDI and business environment",
-    "text": "Japan’s inward FDI and business environment\n\n# Data used in the Balance of Payments lecture; place a copy at this relative path.\nfdi_business = fread(\"../data/08 fdi/fdi_dtf.csv\")\nreference_countries = c(\"Luxembourg\", \"Ireland\", \"Netherlands\", \"United States\", \"China\", \"Argentina\", \"Brazil\", \"Korea\")\nggplot(fdi_business, aes(Inward_FDI, Business_Index)) +\n  geom_point(color = \"gray70\") +\n  geom_point(data = fdi_business[Country == \"Japan\"], color = \"red\", size = 3) +\n  geom_text(data = fdi_business[Country == \"Japan\"], aes(label = Country), vjust = -1, color = \"red\") +\n  geom_text(data = fdi_business[Country %in% reference_countries], aes(label = Country), vjust = -1, color = \"gray40\", size = 3) +\n  scale_x_log10() + scale_y_log10() +\n  labs(title = \"Inward FDI vs. Doing Business Score\", x = \"Inward FDI (% of GDP, log; 2015–2024 average)\", y = \"Doing Business Score (log; 2019–2020 average)\", caption = \"Source: OECD, World Bank; adapted from Balance of Payments lecture\") +\n  theme_minimal()\n\n\n\n\n\n\n\n\n\n\nThe original lecture emphasizes Japan’s relatively low inward FDI compared with other advanced economies.\nThis is a descriptive cross-country comparison, not evidence that the business score causes FDI."
+    "text": "Japan’s inward FDI and business environment\n\n\n\n\n\n\n\n\n\n\n\nThe original lecture emphasizes Japan’s relatively low inward FDI compared with other advanced economies.\nThis is a descriptive cross-country comparison, not evidence that the business score causes FDI."
   },
   {
     "objectID": "slides/08_fdi.html#investment-logic-fdi-vs.-oda",
@@ -2349,7 +2349,7 @@
     "href": "slides/10_exchange.html#exchange-rate-movement",
     "title": "Exchange Rate and Competitiveness",
     "section": "Exchange rate movement",
-    "text": "Exchange rate movement\n\nex=fread(\"../data/10 exchange/AEXJPUS.csv\",col.names = c(\"date\",\"ex\"));\nexEU=fread(\"../data/10 exchange/CCEUSP01JPA651N.csv\",col.names = c(\"date\",\"ex\"));\nex[,currency:=\"USD\"]\nexEU[,currency:=\"Euro\"][,ex:=100/ex]\nex2 = rbind(\n  data.table(\n    date = as.IDate(paste0(1949:1971, \"-01-01\")),\n    ex   = 360,\n    currency = \"USD\"), \n  ex,\n  exEU)[order(date)]\n\nggplot(ex2, aes(date, ex,color=currency)) +\n  geom_line() +\n  labs(x=\"Year\", y=\"JPY\", colour=\"\",\n       title=\"Nominal Exchange Rate\",\n       caption = \"Source: FRED\") +\n  theme_minimal()\n\n\n\n\n\n\n\n\n\n\nDuring 2000, the USD/JPY moved little, the yen appreciated against the euro: depreciation of the euro against both the dollar and yen."
+    "text": "Exchange rate movement\n\n\n\n\n\n\n\n\n\n\n\nDuring 2000, the USD/JPY moved little, the yen appreciated against the euro: depreciation of the euro against both the dollar and yen."
   },
   {
     "objectID": "slides/10_exchange.html#purchasing-power-parity-ppp",
@@ -2363,7 +2363,7 @@
     "href": "slides/10_exchange.html#nominal-vs-real-exchange-rate",
     "title": "Exchange Rate and Competitiveness",
     "section": "Nominal vs real exchange rate",
-    "text": "Nominal vs real exchange rate\n\nex=fread(\"../data/10 exchange/AEXJPUS.csv\",col.names = c(\"date\",\"ex\"));\nus=fread(\"../data/10 exchange/CPALTT01USA657N.csv\",col.names = c(\"date\",\"yus\") );\njp=fread(\"../data/10 exchange/CPALTT01JPA657N.csv\",col.names = c(\"date\",\"yjp\"))\n\ndt=Reduce(function(x,y)merge(x,y,\"date\"),list(ex,us,jp))\ndt[,cpi_jp:=1+yjp/100][,cpi_us:=1+yus/100]\ndt[,ner:=1/ex][,rer:=ner*(cpi_us/cpi_jp)]\ncols = c(\"ner\",\"cpi_jp\",\"cpi_us\",\"rer\")\n\nfor(v in c(\"ner\",\"yus\",\"yjp\",\"rer\"))\n  dt[, (paste0(v,\"_i\")) := get(v)/get(v)[1]]\nm = melt(dt, id=\"date\", measure=patterns(\"_i$\"),\n         variable.name=\"s\", value.name=\"idx\")\nlabs = c(ner_i=\"Nominal ex (JPY/USD)\",\n         yus_i=\"US CPI\",\n         yjp_i=\"Japan CPI\",\n         rer_i=\"Real exchange rate\")\nm[, s := factor(s, labels=labs)]\nggplot(m, aes(date, idx, colour=s)) +\n  geom_line() +\n  labs(x=\"Year\", y=\"Index (1st=1)\", colour=\"\",\n       title=\"Nominal vs Real Exchange Rate\",\n       caption = \"Source: FRED\") +\n  theme_minimal()\n\n\n\n\n\n\n\n\n\n\nthe main driver of the real exchange rate appreciation was nominal exchange rate appreciation\nhigher gap in CPI diverge nominal and real exchange rates"
+    "text": "Nominal vs real exchange rate\n\n\n\n\n\n\n\n\n\n\n\nthe main driver of the real exchange rate appreciation was nominal exchange rate appreciation\nhigher gap in CPI diverge nominal and real exchange rates"
   },
   {
     "objectID": "slides/10_exchange.html#effective-exchange-rates",
@@ -2377,7 +2377,7 @@
     "href": "slides/10_exchange.html#neer-vs-reer",
     "title": "Exchange Rate and Competitiveness",
     "section": "NEER vs REER",
-    "text": "NEER vs REER\n\neer=fread(\"../data/10 exchange/boj_eer.csv\",skip=1);\nsetnames(eer,colnames(eer)[1],\"date\")\neerl = melt(eer,id.vars=\"date\")\n\npwt = fread(\"../data/01 intro/growth.csv\")\nctys = c(\"JPN\",\"USA\")\n\nggarrange(\n  ggplot(pwt[grepl(\"TFP\",Variablename2)&ISOcode%in%ctys],\n       aes(date,gyoy,color=ISOcode)) +\n  geom_line() +\n  labs(x=\"Year\", y=\"Growth\", colour=\"\",\n       title=\"TFP change\",\n       caption = \"Source: PWT\") +\n  theme_minimal() +\n  theme(legend.position = \"bottom\"),\n  ggplot(eerl[!is.na(value)],\n       aes(date,value,color=variable)) +\n  geom_line() +\n  labs(x=\"Year\", y=\"EER\", colour=\"\",\n       title=\"Effective Exchange Rates\",\n       caption = \"Source: BOJ\") +\n  theme_minimal() +\n  theme(legend.position = \"bottom\"),\n  ncol = 2\n)\n\n\n\n\n\n\n\n\n\n\n73-95: despite the yen’s REER appreciation, trade surpluses were maintained as productivity growth\n95~: despite lagged productivity growth, trade surpluses were maintained due to Japanese deflation, yen depreciation"
+    "text": "NEER vs REER\n\n\n\n\n\n\n\n\n\n\n\n73-95: despite the yen’s REER appreciation, trade surpluses were maintained as productivity growth\n95~: despite lagged productivity growth, trade surpluses were maintained due to Japanese deflation, yen depreciation"
   },
   {
     "objectID": "slides/10_exchange.html#exchange-rate-and-tradeinvestment",
@@ -2398,7 +2398,7 @@
     "href": "slides/10_exchange.html#us-trade-deficit",
     "title": "Exchange Rate and Competitiveness",
     "section": "US Trade Deficit",
-    "text": "US Trade Deficit\n\ndf = fread(\"../data/09 bop/imf_ca.csv\",header = T)\ndf = melt(df,id.vars=\"region\",variable.factor = F)\ndf[,value:=as.numeric(value)]\n\nWarning in eval(jsub, SDenv, parent.frame()): NAs introduced by coercion\n\ndf[,variable:=as.integer(variable)]\n\nkeep = c(\"Japan\",\"Euro area\",\"United States\")\nplot_df = df[region%in%keep&!is.na(value)]\n\nggplot(plot_df[variable&lt;=2024], \n       aes(variable, value,\n           group = region, \n           colour = region, \n           size = region == \"Japan\")) +\n  geom_hline(yintercept = 0, linetype = \"dashed\") +\n  geom_line() +\n  scale_size_manual(values = c(`TRUE` = 1.2, `FALSE` = 0.6), guide = \"none\") +\n  scale_y_continuous(labels = function(x) paste0(x, \"%\")) +\n  labs(title = \"Current Account Balance (% of GDP)\",\n       x = NULL, y = \"% of GDP\", colour = NULL,\n       caption = \"Source: IMF WEO\") +\n  theme_minimal(base_size = 12) +\n  theme(legend.position = \"bottom\") \n\nWarning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.\nℹ Please use `linewidth` instead."
+    "text": "US Trade Deficit"
   },
   {
     "objectID": "slides/10_exchange.html#intervention",
@@ -2433,18 +2433,1572 @@
     "href": "slides/10_exchange.html#settlement-currency",
     "title": "Exchange Rate and Competitiveness",
     "section": "Settlement Currency",
-    "text": "Settlement Currency\n\nbis = fread(\"../data/10 exchange/publication_table_bis.csv\")\nsetnames(bis,\"V1\",\"Currency\")\nbis = melt(bis,\n           id.vars = \"Currency\",\n           measure.vars = patterns(\"\\\\%\"),\n           value.name = \"Turnover\",\n           variable.name = \"Year\")\ncur_codes &lt;- c(\"USD\", \"EUR\", \"JPY\", \"GBP\",\"CNY\")\nbis[, Year := as.integer(gsub(\"_%$\",\"\",Year))]\nbis = bis[!is.na(Turnover) & !is.na(Currency)]\n\nggplot(bis[Currency%in%cur_codes], \n       aes(x = Year, y = Turnover, colour = Currency)) +\n  geom_line(size = 1) +\n  geom_point(size = 1.8) +\n  labs(\n    title = \"FX Turnover – Top 5 Currencies (BIS Triennial Survey)\",\n    x = \"Year (survey)\",\n    y = \"Daily average turnover share (%)\",\n    colour = \"Currency\"\n  ) +\n  theme_minimal()"
+    "text": "Settlement Currency"
   },
   {
     "objectID": "slides/10_exchange.html#foreign-reserve-currency",
     "href": "slides/10_exchange.html#foreign-reserve-currency",
     "title": "Exchange Rate and Competitiveness",
     "section": "Foreign Reserve Currency",
-    "text": "Foreign Reserve Currency\n\nimfd = fread(\"../data/01 intro/imf.csv\")\ncurr = unique(imfd[,.(V1=sum(value)),\n                   by=Currency][order(-V1),Currency])\ncurr = c(\"Japanese yen\",curr[curr!=\"Japanese yen\"])\ncurr_col = c(\"black\",get_palette(palette = \"default\",length(curr)-1))\nimfd[,Currency:=factor(Currency,levels = curr)]\nggbarplot(imfd[!is.na(value)],\n          x=\"year\",xlab = \"\",\n          y=\"value\",ylab = \"\",\n          fill = \"Currency\",\n          palette = curr_col) +\n  scale_y_continuous(labels = label_number(suffix = \"%\")) +\n  guides(fill = guide_legend(nrow = 3))+\n  theme_pubclean()+\n  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))"
+    "text": "Foreign Reserve Currency"
   },
   {
     "objectID": "slides/10_exchange.html#references",
     "href": "slides/10_exchange.html#references",
+    "title": "Exchange Rate and Competitiveness",
+    "section": "References",
+    "text": "References\n\n\nIto and Hoshi (2020) Chapter 12\nIto, K., & Shimizu, J. (2015). Industry-Level Competitiveness, Productivity and Effective Exchange Rates in East Asia. Asian Economic Journal, 29(2), 181–214.\nLinda S. Goldberg & Michael W. Klein, 1996. “Foreign direct investment, trade, and real exchange rate linkages in developing countries,” Proceedings, Federal Reserve Bank of San Francisco, pages 73-100.\nSong, C.-Y. (1997). The Real Exchange Rate and the Current Account Balance in Japan. Journal of the Japanese and International Economies, 11(2), 143–184.\nToru Iwami (2025) “The Internationalization of Yen and Key Currency Questions”, IMF Working Papers 1994, 041 (1994)\nData Link\n\nhttps://fred.stlouisfed.org/series/CPALTT01JPA657N\nhttps://fred.stlouisfed.org/series/CPALTT01USA657N\nhttps://fred.stlouisfed.org/series/AEXJPUS\nhttps://fred.stlouisfed.org/series/CCEUSP01JPA651N\nhttps://www.stat-search.boj.or.jp/ssi/cgi-bin/famecgi2?cgi=$nme_a000_en&lstSelection=FM09\nhttps://www.customs.go.jp/toukei/shinbun/tuuka.html"
+  },
+  {
+    "objectID": "slides/02_ca-slides.html#introduction",
+    "href": "slides/02_ca-slides.html#introduction",
+    "title": "Comparative Advantage: The case of Japan",
+    "section": "Introduction",
+    "text": "Introduction\n\nJapan has capital, labor, and skilled labor\nIn principle, it could grow more of its food\nInstead it imports food and exports machinery\nWhy?"
+  },
+  {
+    "objectID": "slides/02_ca-slides.html#japans-trade-by-partner-and-sectors",
+    "href": "slides/02_ca-slides.html#japans-trade-by-partner-and-sectors",
+    "title": "Comparative Advantage: The case of Japan",
+    "section": "Japan’s trade by partner and sectors",
+    "text": "Japan’s trade by partner and sectors\n\n\n\nImport energy, food, raw materials mostly traditional trade\nJapan trade with the N.America/EU\n\nimport services\nexport manufacturing goods, surplus with US\n\nJapan trade with China/ASEAN\n\nImports consumer electronics, textiles\nExports high-tech machinery, components\n“Task sharing” production networks\n\nservices (WTO GATS): production happens with consumption\n\ncross-border supply\nconsumption abroad (tourism, education)\ncommercial presence (branch of bank)\nmovement of natural persons (Filipino nurse contract in Japan: not migration)"
+  },
+  {
+    "objectID": "slides/02_ca-slides.html#why-countries-trade",
+    "href": "slides/02_ca-slides.html#why-countries-trade",
+    "title": "Comparative Advantage: The case of Japan",
+    "section": "Why countries trade?",
+    "text": "Why countries trade?\n\nComparative advantage: difference in resources or productivity\nEconomic of scales: similar countries trade if production get cheaper at larger scale"
+  },
+  {
+    "objectID": "slides/02_ca-slides.html#absolute-vs.-comparative-advantage",
+    "href": "slides/02_ca-slides.html#absolute-vs.-comparative-advantage",
+    "title": "Comparative Advantage: The case of Japan",
+    "section": "Absolute vs. Comparative advantage",
+    "text": "Absolute vs. Comparative advantage\n\nBeing better at producing everything is absolute advantage: does not determine what gets traded.\nComparative advantage is about relative opportunity cost: what you give up to produce more unit of something.\nEven a country with no absolute advantage in anything still has a comparative advantage in something."
+  },
+  {
+    "objectID": "slides/02_ca-slides.html#explaining-japans-trade-patterns",
+    "href": "slides/02_ca-slides.html#explaining-japans-trade-patterns",
+    "title": "Comparative Advantage: The case of Japan",
+    "section": "Explaining Japan’s trade patterns",
+    "text": "Explaining Japan’s trade patterns\n\nProductivity/technology differences\nShort-run immobility\nCapital vs. labor abundance"
+  },
+  {
+    "objectID": "slides/02_ca-slides.html#productivity-differences",
+    "href": "slides/02_ca-slides.html#productivity-differences",
+    "title": "Comparative Advantage: The case of Japan",
+    "section": "Productivity differences",
+    "text": "Productivity differences\n\nCore idea: countries export the good where their opportunity cost is lowest.\nJapan’s technology edge in precision manufacturing lowers the opportunity cost of producing autos and electronics relative to its trading partners.\nIn agriculture, Japan has higher opportunity costs, which driving the import patterns"
+  },
+  {
+    "objectID": "slides/02_ca-slides.html#short-run-immobility",
+    "href": "slides/02_ca-slides.html#short-run-immobility",
+    "title": "Comparative Advantage: The case of Japan",
+    "section": "Short-run immobility",
+    "text": "Short-run immobility\n\nCore idea: some factors (land, sector-specific capital) can’t quickly move between industries.\nJapan’s farmland and farmers can’t retrain into auto manufacturing overnight.\nDespite comparative disadvantage in agriculture, Japan has long-standing protection policy."
+  },
+  {
+    "objectID": "slides/02_ca-slides.html#factor-abundance",
+    "href": "slides/02_ca-slides.html#factor-abundance",
+    "title": "Comparative Advantage: The case of Japan",
+    "section": "Factor abundance",
+    "text": "Factor abundance\n\nCore idea: countries export goods that intensively use their abundance factor.\nJapan is capital- and technology-abundant relative to land and labor.\nJapan export capital-intensive goods (car, electronics) and imports land/labor-intensive goods (food, raw materials)"
+  },
+  {
+    "objectID": "slides/02_ca-slides.html#which-lens-fits-japan-best",
+    "href": "slides/02_ca-slides.html#which-lens-fits-japan-best",
+    "title": "Comparative Advantage: The case of Japan",
+    "section": "Which lens fits Japan best?",
+    "text": "Which lens fits Japan best?\n\nExports where relative productivity is highest\nProtection of agriculture despite comparative disadvantage\nExports capital-intensive goods, imports land/labor-intensive goods"
+  },
+  {
+    "objectID": "slides/02_ca-slides.html#what-drives-comparative-advantage",
+    "href": "slides/02_ca-slides.html#what-drives-comparative-advantage",
+    "title": "Comparative Advantage: The case of Japan",
+    "section": "What drives comparative advantage?",
+    "text": "What drives comparative advantage?\n\nKowalski (2011, OECD): 55 OECD and emerging economies.\n\n\nConvergence across countries\n\nPhysical capital\nEducation (tertiary, avg. schooling)\nPrimary energy supply\nFinancial development (credit)\n\n\nDivergence across countries\n\nSecondary education\nRegulatory quality, rule of law, corruption\nImport tariffs"
+  },
+  {
+    "objectID": "slides/02_ca-slides.html#convergence-differs-by-trade-relationship",
+    "href": "slides/02_ca-slides.html#convergence-differs-by-trade-relationship",
+    "title": "Comparative Advantage: The case of Japan",
+    "section": "Convergence differs by trade relationship",
+    "text": "Convergence differs by trade relationship\n\nNorth-North (within OECD): became more homogeneous on most sources\nSouth-South (within non-OECD): gap remains for capital-to-labor ratio and regulatory indicators but narrowed for education, energy supply, financial development.\nNorth-South (OECD vs. non-OECD): Gap widened for physical capital, credit availability, regulatory quality but narrowed for human capital"
+  },
+  {
+    "objectID": "slides/02_ca-slides.html#revealed-comparative-advantages",
+    "href": "slides/02_ca-slides.html#revealed-comparative-advantages",
+    "title": "Comparative Advantage: The case of Japan",
+    "section": "Revealed comparative advantages",
+    "text": "Revealed comparative advantages\nThe Balassa index (Balassa, 1965): how much more (or less) a country exports of a good, relative to its share of world trade.\n\\[\nRCA = \\frac{\\text{country's export share of good X}}\n{\\text{world's export share of good X}}\n\\]\n\nRCA &gt; 1: the country exports proportionally more of that good than the world average\n\n\n\neffective only within same country among products or same product among countries: higher value indicates a stronger export performance, higher degree of export specialization, and a higher degree of revealed comparative advantage"
+  },
+  {
+    "objectID": "slides/02_ca-slides.html#questions",
+    "href": "slides/02_ca-slides.html#questions",
+    "title": "Comparative Advantage: The case of Japan",
+    "section": "Questions",
+    "text": "Questions\n\nIn what sectors does Japan have high RCA?\nIn what sectors does Japan have low RCA?"
+  },
+  {
+    "objectID": "slides/02_ca-slides.html#japan-rca-in-2019",
+    "href": "slides/02_ca-slides.html#japan-rca-in-2019",
+    "title": "Comparative Advantage: The case of Japan",
+    "section": "Japan RCA in 2019",
+    "text": "Japan RCA in 2019"
+  },
+  {
+    "objectID": "slides/02_ca-slides.html#rca-of-japan-across-period",
+    "href": "slides/02_ca-slides.html#rca-of-japan-across-period",
+    "title": "Comparative Advantage: The case of Japan",
+    "section": "RCA of Japan across period",
+    "text": "RCA of Japan across period\n\n\n\n1965–1974: RCA concentrated in labor-intensive, lower-technology sectors – Highest: Textiles, Textile, Leather and Footwear – Also elevated: Basic Metals and Fabricated Metal; Machinery, nec.\n1975–1984: Transition period – Textiles RCA begins declining – Transport Equipment, Machinery, and Electrical/Optical Equipment start rising\n1985–2000: RCA concentrated in capital- and technology-intensive sectors – Highest: Transport Equipment; Electrical and Optical Equipment; Machinery, nec. – Textiles falls to the bottom of the distribution"
+  },
+  {
+    "objectID": "slides/02_ca-slides.html#rca-japan-and-others",
+    "href": "slides/02_ca-slides.html#rca-japan-and-others",
+    "title": "Comparative Advantage: The case of Japan",
+    "section": "RCA: Japan and Others",
+    "text": "RCA: Japan and Others"
+  },
+  {
+    "objectID": "slides/02_ca-slides.html#limits-of-rca-as-a-measure",
+    "href": "slides/02_ca-slides.html#limits-of-rca-as-a-measure",
+    "title": "Comparative Advantage: The case of Japan",
+    "section": "Limits of RCA as a measure",
+    "text": "Limits of RCA as a measure\n\nRCA reflects actual trade flows, which are already shaped by tariffs, subsidies, and protection, not a “pure” underlying advantage.\nGlobal value chains: a “Japanese” car may contain parts made in many countries, blurring what RCA is really measuring.\nCategorization-sensitive: results can shift depending on how narrowly or broadly a “sector” is defined."
+  },
+  {
+    "objectID": "slides/02_ca-slides.html#key-takeaways",
+    "href": "slides/02_ca-slides.html#key-takeaways",
+    "title": "Comparative Advantage: The case of Japan",
+    "section": "Key takeaways",
+    "text": "Key takeaways\n\nJapan’s trade pattern can be explained by theories on comparative advantages.\nRCA gives us an empirical way to confirm the pattern the theories predict.\nRCA has its limits"
+  },
+  {
+    "objectID": "slides/02_ca-slides.html#suggested-readings",
+    "href": "slides/02_ca-slides.html#suggested-readings",
+    "title": "Comparative Advantage: The case of Japan",
+    "section": "Suggested Readings",
+    "text": "Suggested Readings\n\n\nBalassa, B. (1965). Trade Liberalisation and “Revealed” Comparative Advantage. The Manchester School, 33(2), 99–123. https://doi.org/10.1111/j.1467-9957.1965.tb00050.x\nOECD (2011), Globalisation, Comparative Advantage and the Changing Dynamics of Trade, OECD Publishing, Paris, https://doi.org/10.1787/9789264113084-en."
+  },
+  {
+    "objectID": "slides/11_aging-slides.html#introduction",
+    "href": "slides/11_aging-slides.html#introduction",
+    "title": "Demographic changes",
+    "section": "Introduction",
+    "text": "Introduction\n\nDemographics changes\nEconomic impacts\nGovernment responses"
+  },
+  {
+    "objectID": "slides/11_aging-slides.html#japan-population",
+    "href": "slides/11_aging-slides.html#japan-population",
+    "title": "Demographic changes",
+    "section": "Japan population",
+    "text": "Japan population"
+  },
+  {
+    "objectID": "slides/11_aging-slides.html#driver-of-population-growth",
+    "href": "slides/11_aging-slides.html#driver-of-population-growth",
+    "title": "Demographic changes",
+    "section": "Driver of population growth",
+    "text": "Driver of population growth"
+  },
+  {
+    "objectID": "slides/11_aging-slides.html#old-age-support-ratio",
+    "href": "slides/11_aging-slides.html#old-age-support-ratio",
+    "title": "Demographic changes",
+    "section": "Old-age support ratio",
+    "text": "Old-age support ratio"
+  },
+  {
+    "objectID": "slides/11_aging-slides.html#economic-impacts",
+    "href": "slides/11_aging-slides.html#economic-impacts",
+    "title": "Demographic changes",
+    "section": "Economic impacts",
+    "text": "Economic impacts\n\nEconomic growth: population, participation rate, labor productivity\nSaving rate: larger number of elderly dissavers\nPension system: PAYGO with a reserved fund"
+  },
+  {
+    "objectID": "slides/11_aging-slides.html#economic-growth",
+    "href": "slides/11_aging-slides.html#economic-growth",
+    "title": "Demographic changes",
+    "section": "Economic growth",
+    "text": "Economic growth"
+  },
+  {
+    "objectID": "slides/11_aging-slides.html#saving-rate",
+    "href": "slides/11_aging-slides.html#saving-rate",
+    "title": "Demographic changes",
+    "section": "Saving rate",
+    "text": "Saving rate\n\n\n\nhigh growth rate is more likely to increase aggregate saving, constraint on borrowing for the very young increase saving rate (unexpected future growth)\nUnderdeveloped Social Security System (Japan after 1973, theoretically sound but not confirmed empirically)\nHigh cost of housing, down payment (impact not large)\nIntentional bequests"
+  },
+  {
+    "objectID": "slides/11_aging-slides.html#saving-and-investment",
+    "href": "slides/11_aging-slides.html#saving-and-investment",
+    "title": "Demographic changes",
+    "section": "Saving and Investment",
+    "text": "Saving and Investment\n\\[\nSaving − Investment = {Gov.deficit} + {Trade.surplus}\n\\] - high saving rates\n\nhigh level of investment, faster economic growth\nfinance government deficits\ncapital outflow, a world lender in long run"
+  },
+  {
+    "objectID": "slides/11_aging-slides.html#social-spending",
+    "href": "slides/11_aging-slides.html#social-spending",
+    "title": "Demographic changes",
+    "section": "Social spending",
+    "text": "Social spending"
+  },
+  {
+    "objectID": "slides/11_aging-slides.html#pension-contribution-rate",
+    "href": "slides/11_aging-slides.html#pension-contribution-rate",
+    "title": "Demographic changes",
+    "section": "Pension Contribution Rate",
+    "text": "Pension Contribution Rate"
+  },
+  {
+    "objectID": "slides/11_aging-slides.html#government-responses",
+    "href": "slides/11_aging-slides.html#government-responses",
+    "title": "Demographic changes",
+    "section": "Government Responses",
+    "text": "Government Responses\n\nElderly employment incentives (retirement age extension)\nPromote female labor participation:\n\nnumber of workers\ngender diversity on productivity growth\n\nForeign workers\nDigitization\n\n\n\nreduce the benefits\nraise the contribution rates (already 18.3% maximum)\nincrease the injection from the general tax revenues\nincrease returns on the GPIF portfolio to cash out"
+  },
+  {
+    "objectID": "slides/11_aging-slides.html#retirement-age-extension",
+    "href": "slides/11_aging-slides.html#retirement-age-extension",
+    "title": "Demographic changes",
+    "section": "Retirement age extension",
+    "text": "Retirement age extension\n\nSource: OECD pensions at a glance"
+  },
+  {
+    "objectID": "slides/11_aging-slides.html#employment-rates-of-older-workers",
+    "href": "slides/11_aging-slides.html#employment-rates-of-older-workers",
+    "title": "Demographic changes",
+    "section": "Employment rates of older workers",
+    "text": "Employment rates of older workers\n\nSource: OECD pensions at a glance"
+  },
+  {
+    "objectID": "slides/11_aging-slides.html#female-labor-participation",
+    "href": "slides/11_aging-slides.html#female-labor-participation",
+    "title": "Demographic changes",
+    "section": "Female labor participation",
+    "text": "Female labor participation\n\n\n\nJapanese women have fewer children, out of the labor force for a shorter time\ninitiatives to encourage women not to quit their job during the childbearing and child-care years in the 2010s may have been effective"
+  },
+  {
+    "objectID": "slides/11_aging-slides.html#female-participation",
+    "href": "slides/11_aging-slides.html#female-participation",
+    "title": "Demographic changes",
+    "section": "Female participation",
+    "text": "Female participation\n\n\n\nimprove the public support system for child-rearing,\ngender diversity as a selection criterion for government procurement,\npromotion of women’s empowerment in the private sector,\nadvocacy for work-life balance"
+  },
+  {
+    "objectID": "slides/11_aging-slides.html#female-participation-vs-fertility-rate",
+    "href": "slides/11_aging-slides.html#female-participation-vs-fertility-rate",
+    "title": "Demographic changes",
+    "section": "Female participation vs Fertility Rate",
+    "text": "Female participation vs Fertility Rate\n\n\n\nincreasing labor participation of women inevitably further reduces the fertility rate\na negative correlation between female labor participation and fertility in the 1970s and 1980s\nafter 1990s the pattern has changed (at least for developed countries)\nconstraints on women deciding how to allocate effort and time between home and career"
+  },
+  {
+    "objectID": "slides/11_aging-slides.html#references",
+    "href": "slides/11_aging-slides.html#references",
+    "title": "Demographic changes",
+    "section": "References",
+    "text": "References\n\n\nIto and Hoshi (2020) Chapter 8, 10\nOkamoto, A. (2025). Pension reform for an aging Japan: Welfare and demographic dynamics. Journal of the Japanese and International Economies, 78, 101390.\nOECD (2025), Pensions at a Glance 2025: OECD and G20 Indicators, OECD Publishing, Paris, https://doi.org/10.1787/e40274c1-en.\nEllison and Mullin (2014)\nFeyrer, Sacerdote, and Stern (2008)\nRosenbluth (2007, 21)\nData link:\n\nhttps://databank.worldbank.org/metadataglossary/health-nutrition-and-population-statistics/series/SP.POP.DPND.OL\nLabour Force Survey (https://www.e-stat.go.jp/)\nhttps://www.esri.cao.go.jp/en/sna/data/kakuhou/files/2023/pdf/point_flow_en20241223.pdf\nhttps://ourworldindata.org/grapher/fertility-and-female-labor-force-participation?time=1980"
+  },
+  {
+    "objectID": "slides/09-bop-slides.html#introduction",
+    "href": "slides/09-bop-slides.html#introduction",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Introduction",
+    "text": "Introduction\n\nUnderstand the structure of Balance of Payments (BoP)\nExamine Japan’s external accounts and capital flows\nExplain the relationship between the current, capital, and financial accounts\nInterpret Japan’s current account, financial account, and international investment position"
+  },
+  {
+    "objectID": "slides/09-bop-slides.html#what-is-bop",
+    "href": "slides/09-bop-slides.html#what-is-bop",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "What is BOP ?",
+    "text": "What is BOP ?\n\nrecord all cross-border transactions of a country\nthree components (IMF BPM, 6th ed)\n\ncurrent account: trade flow, income flow, transfers\ncapital account: non-market transactions flow of assets\nfinancial account: capital flow"
+  },
+  {
+    "objectID": "slides/09-bop-slides.html#example",
+    "href": "slides/09-bop-slides.html#example",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Example",
+    "text": "Example\n\n\n\n\n\n\n\n\n\n\nBalance of payments\nCredits\nDebits\nBalance\n\n\n\n\nCurrent account\n\n\n\n\n\n Goods and services\n540\n499\n41\n\n\n  Goods\n462\n392\n70\n\n\n  Services\n78\n107\n-29\n\n\n Primary income\n50\n40\n10\n\n\n  Compensation of employees\n6\n2\n\n\n\n  Interest\n13\n21\n\n\n\n  Distributed income of corporations\n17\n17\n\n\n\n  Reinvested earnings\n14\n0\n\n\n\n  Rent\n0\n0\n\n\n\n Secondary income\n17\n55\n-38\n\n\n  Current taxes on income, wealth, etc.\n1\n0\n\n\n\n  Net nonlife insurance premiums\n2\n11\n\n\n\n  Nonlife insurance claims\n12\n3\n\n\n\n  Current international cooperation\n1\n31\n\n\n\n  Miscellaneous current transfers\n1\n10\n\n\n\n  Adjustment for change in pension entitlements\n\n\n\n\n\nCurrent account balance\n\n\n13\n\n\nCapital account\n\n\n\n\n\n Acquisitions/disposals of nonproduced nonfinancial assets\n0\n0\n\n\n\n Capital transfers\n1\n4\n\n\n\nCapital account balance\n\n\n-3\n\n\nNet lending (+)/net borrowing (–) (from current and capital accounts)\n\n\n10\n\n\nFinancial account (by functional category)\n\n\n\n\n\n Direct investment\n8\n11\n\n\n\n Portfolio investment\n18\n14\n\n\n\n Financial derivatives (other than reserves) and ESOs\n3\n0\n\n\n\n Other investment\n20\n22\n\n\n\n Reserve assets\n8\n\n\n\n\nTotal changes in assets/liabilities\n57\n47\n\n\n\nNet lending (+)/net borrowing (–) (from financial account)\n\n\n10\n\n\nNet errors and omissions\n\n\n0\n\n\n\nSource: Table 2.1 IMF BPM 6th ed.\n\n\n\nin the definition that existed prior to 2014, what is known today as the financial account was called the capital account\nCurrent account:\n\nexport and import of goods and services,\ninvestment income and unilateral transfers such as foreign aid\n\nCapital account:\n\ntransactions in nonproduced, nonfinancial assets, such as land\nunilateral capital transfers, such as government debt forgiveness\n\nFinancial account: cross-border transactions of assets (other than nonproduced, nonfinancial assets): capital inflow and outflows\n\nacquisition of a business (direct investment)\nacquisition of financial products for asset management (portfolio investment)"
+  },
+  {
+    "objectID": "slides/09-bop-slides.html#remittances",
+    "href": "slides/09-bop-slides.html#remittances",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Remittances",
+    "text": "Remittances\n\nComponents Required for Compiling Remittance Items and Their Source\n\n\n\n\n\n\n\nItem\nSource and description\n\n\n\n\n1. Compensation of employees\nPrimary income account, standard component\n\n\n2. Personal transfers\nSecondary income account, standard component\n\n\n3. Travel and transport related to employment of border, seasonal, and other short-term workers\nGoods and services account, supplementary item\n\n\n4. Taxes and social contributions related to employment of border, seasonal, and other short-term workers\nSecondary income account, supplementary item\n\n\n5. Compensation of employees less expenses related to employment of border, seasonal, and other short-term workers\nPrimary income account (for compensation of employees), standard component; Goods and services account (for travel and transport expenses) and secondary income account (for taxes and social contributions), supplementary items\n\n\n6. Capital transfers between households\nCapital account, supplementary item\n\n\n7. Social benefits\nSecondary income account, supplementary item\n\n\n8. Current transfers to NPISHs\nSecondary income account, supplementary item\n\n\n9. Capital transfers to NPISHs\nCapital account, supplementary item\n\n\n\nSource: Table A5.1 IMF BPM 6th ed.\n\n\n\n“Net” compensation of employees (#5): #1 minus the sum of #3 and #4\nPersonal remittances: #2 plus #5 plus #6\n\nTotal remittances: #2 plus #5 plus #6 plus #7\n\nTotal remittances plus transfers to NPISHs: #2 plus #5 plus #6 plus #7 plus #8 plus #9"
+  },
+  {
+    "objectID": "slides/09-bop-slides.html#double-entry-record",
+    "href": "slides/09-bop-slides.html#double-entry-record",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Double entry record",
+    "text": "Double entry record\n\nA Japanese firm exports machinery worth 1 million to the United States. Payment is received by bank transfer.\n\n\n\nBoP Account\nCredit (+ inflow)\nDebit (− outflow)\n\n\n\n\nCurrent Account (Exports of Goods)\n+1,000,000\n\n\n\nFinancial Account (Bank deposits oversea account)\n\n−1,000,000\n\n\n\nA Japanese resident buys clothes worth 100,000  from Korea using trade credits\n\n\n\nBoP Account\nCredit (+ inflow)\nDebit (− outflow)\n\n\n\n\nCurrent Account (Imports of Goods)\n\n-100,000\n\n\nFinancial Account (Trade credit liabilities)\n100,000\n\n\n\n\nForeigners visit Japanese and pay for their holiday by using money deposited in their country’s bank accounts.\n\n\n\nBoP Account\nCredit (+ inflow)\nDebit (− outflow)\n\n\n\n\nCurrent Account (Export of Services)\n100,000\n\n\n\nFinancial Account (Bank deposits oversea account)\n\n-100,000\n\n\n\n\n\n\nwhen the purchases of foreign assets exceed the sales of domestic assets to foreigners (with net receipt of foreign assets), the financial account shows a positive number"
+  },
+  {
+    "objectID": "slides/09-bop-slides.html#relationships-between-the-accounts",
+    "href": "slides/09-bop-slides.html#relationships-between-the-accounts",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Relationships between the accounts",
+    "text": "Relationships between the accounts\n\nCurrent Account + Capital Account: net receive from the rest of the world in return for the exports of goods and other resources\nFinancial Account: net increase foreign assets\nCurrent Account + Capital Account = Financial Account - Errors and Omissions\nBOP is a description of the international budget constraint for the country\n\n\n\na country has to have a surplus in current and capital accounts to invest abroad\nit has to borrow from abroad when it runs deficits in the sum of current and capital accounts"
+  },
+  {
+    "objectID": "slides/09-bop-slides.html#net-international-investment-position",
+    "href": "slides/09-bop-slides.html#net-international-investment-position",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Net International Investment Position",
+    "text": "Net International Investment Position\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpening position\nTransactions (fin. acc.)\nOther changes in volume\nRevaluation\nClosing position\n\n\n\n\nAssets (by functional category)\n\n\n\n\n\n\n\nDirect investment\n78\n8\n0\n1\n87\n\n\nPortfolio investment\n190\n18\n0\n2\n210\n\n\nFinancial derivatives (other than reserves) and ESOs\n7\n3\n0\n0\n10\n\n\nOther investment\n166\n20\n0\n0\n186\n\n\nReserve assets\n833\n8\n0\n12\n853\n\n\nTotal assets\n1,274\n57\n0\n15\n1,346\n\n\nLiabilities (by functional category)\n\n\n\n\n\n\n\nDirect investment\n210\n11\n0\n2\n223\n\n\nPortfolio investment\n300\n14\n0\n5\n319\n\n\nFinancial derivatives (other than reserves) and ESOs\n0\n0\n0\n0\n0\n\n\nOther investment\n295\n22\n0\n0\n317\n\n\nTotal liabilities\n805\n47\n0\n7\n859\n\n\nNet IIP\n469\n10\n0\n8\n487\n\n\n\n\n\n\nThe financial account records a country’s flow of international transactions in assets and liabilities over a period, while the net international investment position (NIIP) is a stock measure of its total external assets and liabilities at a specific point in time\nThe financial account’s transactions, such as buying or selling stocks and bonds, directly contribute to changes in the NIIP from one period to the next, along with changes in asset values due to exchange rates and market price movements"
+  },
+  {
+    "objectID": "slides/09-bop-slides.html#japans-current-account",
+    "href": "slides/09-bop-slides.html#japans-current-account",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Japan’s Current Account",
+    "text": "Japan’s Current Account\n\n\n\nBalanced (0 percent) during the Bretton Woods regime\n\nyen was fixed to the US dollar at 360 yen/dollar (1949-1971)\nnegative during the boom years and positive when domestic growth slowed\n\nSurpluses often in the 1970s and consistently since 1981: income surplus"
+  },
+  {
+    "objectID": "slides/09-bop-slides.html#japans-current-account-components",
+    "href": "slides/09-bop-slides.html#japans-current-account-components",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Japan’s current account components",
+    "text": "Japan’s current account components\n\n\n\nService trade always deficit: important driver is international tourism balance, run large deficits but turned positive in 2015.\nNet exports of goods replaced by primary income (i.e., interest and dividends from external assets) after 2007\nLarge trade deficit in 2011: natural gas to generate electricity aftermath of earthquake and nuclear plants shutdown\nLarge trade deficit in 2022: high energy import costs due to the war in Ukraine and the depreciation of the yen making imports more expensive"
+  },
+  {
+    "objectID": "slides/09-bop-slides.html#international-tourism-and-travel-balance",
+    "href": "slides/09-bop-slides.html#international-tourism-and-travel-balance",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "International Tourism and Travel Balance",
+    "text": "International Tourism and Travel Balance"
+  },
+  {
+    "objectID": "slides/09-bop-slides.html#japans-financial-account-components",
+    "href": "slides/09-bop-slides.html#japans-financial-account-components",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Japan’s financial account components",
+    "text": "Japan’s financial account components\n\n\n\nA current account surplus implies an increase in external assets (i.e., surpluses of the financial accounts)\nComposition Dominated by direct investment and portfolio assets. Shift from lending (1980s) → equity ownership (post-2000).\nNet direct investment has increased steadily\nNet portfolio investment abroad has been very volatile\n\nin 2011: partly due to Japanese insurance companies’ repatriation of assets to pay for insurance reimbursements\n\nOfficial reserve: MOF (BOJ being its agent) occasionally intervened in the foreign exchange market to buy the US dollar (and sell the yen)\n\nnet external assets increase in 2003–2004 and 2011"
+  },
+  {
+    "objectID": "slides/09-bop-slides.html#japans-niip",
+    "href": "slides/09-bop-slides.html#japans-niip",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Japan’s NIIP",
+    "text": "Japan’s NIIP\n\n\n\nLevel Japan has one of the world’s largest positive NIIPs (~US$3–4 trillion, &gt;80% of GDP 2024). Reflects decades of current account surpluses and outward FDI. (US: -90% of its nominal GDP 2024)\nResilience Stable external position despite aging and yen fluctuations. Suggests strong net creditor status and global financial reach."
+  },
+  {
+    "objectID": "slides/09-bop-slides.html#references",
+    "href": "slides/09-bop-slides.html#references",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "References",
+    "text": "References\n\n\nIto and Hoshi (2020), Chapter 11-12\nData link:\n\nhttps://www.boj.or.jp/en/statistics/br/bop_06/fdinote.htm\nhttps://www.imf.org/external/pubs/ft/bop/2007/bopman6.htm\nhttps://www.imf.org/external/datamapper/BCA_NGDPD@WEO/OEMDC/ADVEC/WEOWORLD\nhttps://www.stat-search.boj.or.jp/index_en.html#\nhttps://www.mof.go.jp/english/policy/international_policy/reference/balance_of_payments/ebpnet.htm"
+  },
+  {
+    "objectID": "slides/07_oda-slides.html#objectives",
+    "href": "slides/07_oda-slides.html#objectives",
+    "title": "Official Development Assistance",
+    "section": "Objectives",
+    "text": "Objectives\n\nTrace the history and evolution of Japan’s Official Development Assistance (ODA) strategy\nExamine how Japan uses ODA as both a diplomatic and economic tool\nAssess debates over ODA’s effectiveness"
+  },
+  {
+    "objectID": "slides/07_oda-slides.html#key-concepts",
+    "href": "slides/07_oda-slides.html#key-concepts",
+    "title": "Official Development Assistance",
+    "section": "Key Concepts",
+    "text": "Key Concepts\n\nOfficial Development Assistance (ODA)\nInfrastructure financing\nEconomic growth and development"
+  },
+  {
+    "objectID": "slides/07_oda-slides.html#roadmap",
+    "href": "slides/07_oda-slides.html#roadmap",
+    "title": "Official Development Assistance",
+    "section": "Roadmap",
+    "text": "Roadmap\n\nHistory: from Marshall Plan and OECD-DAC to Japan as recipient and donor\nStrategy: Japan’s approach vs. the DAC model, commitments, recent trend\nTool: ODA as infrastructure financing, diplomacy and economic policy\nDebate: does aid work?"
+  },
+  {
+    "objectID": "slides/07_oda-slides.html#overview",
+    "href": "slides/07_oda-slides.html#overview",
+    "title": "Official Development Assistance",
+    "section": "Overview",
+    "text": "Overview"
+  },
+  {
+    "objectID": "slides/07_oda-slides.html#us-marshall-plan",
+    "href": "slides/07_oda-slides.html#us-marshall-plan",
+    "title": "Official Development Assistance",
+    "section": "US Marshall Plan",
+    "text": "US Marshall Plan\n\n\nEuropean Recovery Program: ERP\n16 European countries: 13.6 billion USD (88 billion in 1997 USD)\nBy 1950, the participating countries had returned to, or exceeded, their prewar production levels\nUS exerts their influence in Europe, including market access\nOrganisation for European Economic Co-operation in 1948\n\n\n\n\n\n(https://www.imf.org/external/np/exr/center/mm/eng/mm_dr_03.htm)\nDevelop multilateral payment and trade within Europe\nMove toward currency convertibility\nMove toward eliminating discrimination against U.S. imports\nEncourage reductions in public spending\nRelax government controls such as rationing\nIncrease exports to the United States"
+  },
+  {
+    "objectID": "slides/07_oda-slides.html#oecd-dac",
+    "href": "slides/07_oda-slides.html#oecd-dac",
+    "title": "Official Development Assistance",
+    "section": "OECD-DAC",
+    "text": "OECD-DAC\n\n\nOEEC and DAG: decolonization during 50s\nOrganisation for Economic Co-operation in 1960 for wider scope\nOECD-DAC (1961) sets standards and collects statistics on ODA, including ODA definition:\n\nprovided by official agencies or their executive agencies\nto promote the economic development and welfare of developing countries\nconcessional in character (more favorable terms than the market rate, minimum “grant element”)\n\n33 members as of 2025"
+  },
+  {
+    "objectID": "slides/07_oda-slides.html#japan-as-aid-recipients",
+    "href": "slides/07_oda-slides.html#japan-as-aid-recipients",
+    "title": "Official Development Assistance",
+    "section": "Japan as aid recipients",
+    "text": "Japan as aid recipients\n\n\n1946 ~ 1951, Japan received a total of USD5 billion in US aid (financed 40% Japanese imports)\n\nPart of the repayment for the US was used to finance US-Japan cultural exchange (including the Fullbright program)\n\n1953 ~ 1966, the World Bank provided USD860 million for 34 development projects in the country: Tanagawa Dam, Tokaido Bullet Train (from Tokyo to Osaka), the Tōmei Highway (from Tokyo to Nagoya), and the Kurobe hydroelectric dam\nDuring 1960s, Japan was the second largest recipient of aid from the World Bank, payment fulfilled in 1990"
+  },
+  {
+    "objectID": "slides/07_oda-slides.html#japan-as-aid-donors",
+    "href": "slides/07_oda-slides.html#japan-as-aid-donors",
+    "title": "Official Development Assistance",
+    "section": "Japan as aid donors",
+    "text": "Japan as aid donors\n\n\nJapan joined DAG in 1960, became founding member of OECD-DAC in 1961\nJapan joined Colombo Plan in 1954,\n\nStarted paying reparations to other Asian countries until 1976 (central aspects of Japan’s economic foreign policy toward Asian countries until mid 1960s)\nBegan providing technical experts, training, and equipment to Asian countries\n\nSince 1970s:\n\nGradually aligned with DAC norms (grant element, untying, evaluation)\nAdopted global themes (environment, gender, participation)\n\nJapan ODA charter (1992) list philosophies of Japan’s ODA\n\nhumanitarian considerations\nrecognition of interdependence among nations of the international community\nenvironmental consideration\nsupport for self-help efforts of recipient countries\n\n\n\n\n\nThe plan was established in 1950 by Commonwealth nations to promote technical cooperation among the member countries of the British Commonwealth of Nations, with the focus on economic development in South and Southeast Asia."
+  },
+  {
+    "objectID": "slides/07_oda-slides.html#japans-approach-vs.-dac-model",
+    "href": "slides/07_oda-slides.html#japans-approach-vs.-dac-model",
+    "title": "Official Development Assistance",
+    "section": "Japan’s Approach vs. DAC Model",
+    "text": "Japan’s Approach vs. DAC Model\n\n\n\n\n\n\n\n\n\nAspect\nJapan’s ODA Approach\nTypical DAC / Western Approach\n\n\n\n\nDevelopment Philosophy\n“Ingredients approach” – emphasizes tangible inputs (infrastructure, technology, industry)\n“Framework approach” – focuses on institutions, policy reform, governance\n\n\nEconomic Role of the State\nActive state-led industrialization and strategic planning\nMarket-driven liberalization, minimal state intervention\n\n\nAid Objectives\nPromote productive capacity, trade, and growth in Asia\nPrioritize poverty reduction, welfare, and governance reforms\n\n\nAid Modality\nLoans and technical cooperation, often tied to Japanese firms\nPredominantly grants, focused on social sectors\n\n\nUnderlying Logic\nDevelopment as self-help and partnership — supporting recipient ownership through economic buildup\nDevelopment as policy reform and conditionality — supporting institutional change"
+  },
+  {
+    "objectID": "slides/07_oda-slides.html#japans-oda-commitments-total",
+    "href": "slides/07_oda-slides.html#japans-oda-commitments-total",
+    "title": "Official Development Assistance",
+    "section": "Japan’s ODA commitments: Total",
+    "text": "Japan’s ODA commitments: Total"
+  },
+  {
+    "objectID": "slides/07_oda-slides.html#japans-oda-commitments-by-type",
+    "href": "slides/07_oda-slides.html#japans-oda-commitments-by-type",
+    "title": "Official Development Assistance",
+    "section": "Japan’s ODA commitments: by Type",
+    "text": "Japan’s ODA commitments: by Type"
+  },
+  {
+    "objectID": "slides/07_oda-slides.html#japans-oda-commitments-by-sector",
+    "href": "slides/07_oda-slides.html#japans-oda-commitments-by-sector",
+    "title": "Official Development Assistance",
+    "section": "Japan’s ODA commitments: by Sector",
+    "text": "Japan’s ODA commitments: by Sector"
+  },
+  {
+    "objectID": "slides/07_oda-slides.html#japans-recent-oda-trend-2023-charter",
+    "href": "slides/07_oda-slides.html#japans-recent-oda-trend-2023-charter",
+    "title": "Official Development Assistance",
+    "section": "Japan’s recent ODA trend: 2023 Charter",
+    "text": "Japan’s recent ODA trend: 2023 Charter\nNew Development Cooperation Charter\n\n\nPromotes equal partnerships with developing countries to tackle shared global challenges.\nAims to build a peaceful, stable, and prosperous international community under a free and open order based on the rule of law.\nSeeks to foster trust and a favorable international environment for Japan and the world.\nSupports Japan’s national interests—peace, security, and prosperity through economic growth."
+  },
+  {
+    "objectID": "slides/07_oda-slides.html#japans-recent-oda-trend-asean",
+    "href": "slides/07_oda-slides.html#japans-recent-oda-trend-asean",
+    "title": "Official Development Assistance",
+    "section": "Japan’s recent ODA trend: ASEAN",
+    "text": "Japan’s recent ODA trend: ASEAN\n\n\na move from aid objective to cooperation development\n\nStrengthen hard and soft infrastructure support (particularly in the Mekong region) to ‘enhance connectivity’,\nDevelop human resource to promote productivity growth and technological innovation to avoid the ‘middle-income country trap’,\nEnhance disaster management and disaster response capacity building,\nPromote of the rule of law.\n\nDeclining trend: interest rate from 1% to 1.7% with exception for environment (1.5%) and consulting services for design and construction supervision (0.01%)"
+  },
+  {
+    "objectID": "slides/07_oda-slides.html#oda-as-infrastructure-financing",
+    "href": "slides/07_oda-slides.html#oda-as-infrastructure-financing",
+    "title": "Official Development Assistance",
+    "section": "ODA as infrastructure financing",
+    "text": "ODA as infrastructure financing\n\n\nJapan’s ODA historically supported infrastructure and industrial development in Asia\nLoans and technical cooperation, often tied to Japanese firms (“ingredients approach”)\nJapan itself was financed this way: World Bank loans built the Tokaido Bullet Train, the Tōmei Highway and the Kurobe dam\nInfrastructure aid is the type most consistently linked to growth (Easterly, 2003)"
+  },
+  {
+    "objectID": "slides/07_oda-slides.html#oda-as-a-diplomatic-and-economic-tool",
+    "href": "slides/07_oda-slides.html#oda-as-a-diplomatic-and-economic-tool",
+    "title": "Official Development Assistance",
+    "section": "ODA as a diplomatic and economic tool",
+    "text": "ODA as a diplomatic and economic tool\n\nEconomic benefits:\n\nIncreases in the case of Japan: Nishitateno (2024)\nIncreases in the case of infrastructure: Ono (2025)\n\nDiplomatic benefits (soft power):\n\n“the ability to get what you want through attraction rather than coercion or payments”\nharmonization of regulatory, standards, etc\nReparations and Colombo Plan ties in Asia; 2023 Charter links ODA to national interests"
+  },
+  {
+    "objectID": "slides/07_oda-slides.html#debates-on-oda-effectiveness",
+    "href": "slides/07_oda-slides.html#debates-on-oda-effectiveness",
+    "title": "Official Development Assistance",
+    "section": "Debates on ODA effectiveness",
+    "text": "Debates on ODA effectiveness\n\n\nIn theory, ODA effect can be\n\nPositive: use ODA to invest and grow\nNon-positive: use ODA to consume luxury goods\n\nEmpirical studies:\n\nAid has no effect on growth (early 1970 studies)\nAid has a positive relationship with growth on average with diminishing returns (1990s studies)\nAid has a conditional relationship with growth:\n\nGood policies (Burnside and Dollar, 2000)\nClimate, institutional quality, political conflict, and geography (Hansen and Tarp, 2001)\n\n\nEach type of aid has different impact on growth:\n\nHumanitarian aid: no direct impact\nInfrastructure aid: positive impact (Easterly, 2003)"
+  },
+  {
+    "objectID": "slides/07_oda-slides.html#japans-oda-and-growth",
+    "href": "slides/07_oda-slides.html#japans-oda-and-growth",
+    "title": "Official Development Assistance",
+    "section": "Japan’s ODA and growth",
+    "text": "Japan’s ODA and growth\n\n\nJapan’s ODA historically supported infrastructure and industrial development in Asia.\nInstitution quality is important for ripping the benefits of ODA (Burnside and Dollar, 2000)\nJapanese ODA has positive effects on ASEAN economic growth (Nguyen et. al, 2022)"
+  },
+  {
+    "objectID": "slides/07_oda-slides.html#looking-ahead-oda-and-private-capital",
+    "href": "slides/07_oda-slides.html#looking-ahead-oda-and-private-capital",
+    "title": "Official Development Assistance",
+    "section": "Looking ahead: ODA and private capital",
+    "text": "Looking ahead: ODA and private capital\n\nAid is one channel of development finance; FDI is another\nNext lecture: can ODA catalyze FDI?"
+  },
+  {
+    "objectID": "slides/07_oda-slides.html#references",
+    "href": "slides/07_oda-slides.html#references",
+    "title": "Official Development Assistance",
+    "section": "References",
+    "text": "References\n\n\nBurnside, C. & Dollar, D. 2000, ‘Aid, policies, and growth’, American economic review, 90 (4).\nEasterly, W., 2003, “Can Foreign Aid Buy Growth?”, Journal of Economic Perspective, 17 (3).\nFuruoka, F., Oishi, M., & Kato, I. (2010, July 12). From Aid Recipient to Aid Donor: Tracing the Historical Transformation of Japan’s Foreign Aid Policy [Text]. Electronic journal of contemporary Japanese studies.\nHansen, H. & Tarp, F., 2000, “Aid and Growth Regressions”, Centre for Research in Economic Development and International Trade, University of Nottingham Research Paper No.00/07.\nIwata, T. 2013. Japan’s Soft Power in Africa. Ritsumeikan Annual Review of International Studies. ISSN 1347-8214. Vol.12, pp. 103-114\nNishitateno, S., 2024. “Does official development assistance benefit the donor economy? New evidence from Japanese overseas infrastructure projects,” International Tax and Public Finance, Springer;International Institute of Public Finance, vol. 31(4), pages 1037-1065.\nNguyen, H. P., Huynh, A. N. Q., Reisach, U., & Kim, X. L. T. 2022. How does Japanese ODA really contribute to economic growth for ASEAN countries? Journal of International Economics and Management, 22(2).\nMOFA, 2023, White Paper on Development Cooperation 2023\nOECD, 2008, The Marshall Plan: Lessons Learned for the 21st Century, OECD Publishing, Paris.\nTakagi, S., 1995). From recipient to donor: Japan’s official aid flows, 1945 to 1990 and beyond. Internat. Finance Sect., Dep. of Economics, Princeton Univ.\nYanagihara, Toru, 2017, International Trends in Development Aid and Japan’s ODA: 日本国際問題研究所, 1–11.\nData link\n\nhttps://data.worldbank.org/indicator/NY.GDP.MKTP.CD\nhttps://data.worldbank.org/indicator/DT.ODA.ALLD.CD"
+  },
+  {
+    "objectID": "slides/05_asean_integration-slides.html#introduction",
+    "href": "slides/05_asean_integration-slides.html#introduction",
+    "title": "ASEAN and Regional Integration",
+    "section": "Introduction",
+    "text": "Introduction\n\nAbout ASEAN\nASEAN Economic Integration\nASEAN and Japan"
+  },
+  {
+    "objectID": "slides/05_asean_integration-slides.html#asean-at-a-glance",
+    "href": "slides/05_asean_integration-slides.html#asean-at-a-glance",
+    "title": "ASEAN and Regional Integration",
+    "section": "ASEAN at a glance",
+    "text": "ASEAN at a glance"
+  },
+  {
+    "objectID": "slides/05_asean_integration-slides.html#asean-diversity-1",
+    "href": "slides/05_asean_integration-slides.html#asean-diversity-1",
+    "title": "ASEAN and Regional Integration",
+    "section": "ASEAN Diversity (1)",
+    "text": "ASEAN Diversity (1)\n\nEstablished in 1967 by the original five members: Indonesia, Malaysia, Philippines, Singapore and Thailand (ASEAN5)\nOthers joined in 1984 and 1990s\n\nTimor-Leste as observer since 2022, formal affirmed in October 2025.\n\nASEAN Charter effective since 2008, aiming for ASEAN Community\nWith the principle of “non-intervention”, ASEAN has never aspired to be a European Union"
+  },
+  {
+    "objectID": "slides/05_asean_integration-slides.html#asean-diversity-2",
+    "href": "slides/05_asean_integration-slides.html#asean-diversity-2",
+    "title": "ASEAN and Regional Integration",
+    "section": "ASEAN Diversity (2)",
+    "text": "ASEAN Diversity (2)\n\n\n\nASEAN total real GDP PPP increased almost 4 times since 1993, still gaps in GDP per capita among member countries"
+  },
+  {
+    "objectID": "slides/05_asean_integration-slides.html#asean-economic-integration-1",
+    "href": "slides/05_asean_integration-slides.html#asean-economic-integration-1",
+    "title": "ASEAN and Regional Integration",
+    "section": "ASEAN Economic Integration (1)",
+    "text": "ASEAN Economic Integration (1)\n\nIn the 1970s: ASEAN5 pursued an import substitution industrialization strategy with prohibitively high tariffs\nIn the 1980s: ASEAN5 moved toward an export-oriented industrialization strategy\nBrand to Brand Complementation (BBC) in 1988:\n\nreduced tariffs on auto parts by 50% in intra-firm trade in the ASEAN region\nproposed by Mitsubishi Motors but also used by other Japanese automobile manufacturers"
+  },
+  {
+    "objectID": "slides/05_asean_integration-slides.html#asean-economic-integration-2a",
+    "href": "slides/05_asean_integration-slides.html#asean-economic-integration-2a",
+    "title": "ASEAN and Regional Integration",
+    "section": "ASEAN Economic Integration (2a)",
+    "text": "ASEAN Economic Integration (2a)\n\nIn 1990s: full-scale trade liberalization\n\nASEAN Industrial Cooperation (AICO) in 1996\n\ncover items other than automobile parts\ntariff of 0–5% to intra-company trade\nused mostly by Japanese companies in the automobile and electric industry"
+  },
+  {
+    "objectID": "slides/05_asean_integration-slides.html#asean-economic-integration-2b",
+    "href": "slides/05_asean_integration-slides.html#asean-economic-integration-2b",
+    "title": "ASEAN and Regional Integration",
+    "section": "ASEAN Economic Integration (2b)",
+    "text": "ASEAN Economic Integration (2b)\n\nASEAN Free Trade Area (AFTA) effective in 1992:\n\nall member states will join the ASEAN Free Trade Area (AFTA) within 15 years\nCommon Effective Preferential Tariff (CEPT) regulates tariff reduction methods, rules of origin\nCEPT by 2007, 99% tariff lines\n\nZero for ASEAN6\nLess than 5% for CLMV"
+  },
+  {
+    "objectID": "slides/05_asean_integration-slides.html#asean-economic-integration-3",
+    "href": "slides/05_asean_integration-slides.html#asean-economic-integration-3",
+    "title": "ASEAN and Regional Integration",
+    "section": "ASEAN Economic Integration (3)",
+    "text": "ASEAN Economic Integration (3)\n\nTrade in Goods Agreement (ATIGA) in 2008:\n\nEliminate tariffs for both ASEAN6 and CLMV by 2017\nReduce non-tariff measures (NTM), such as technical standards and customs procedures\n\nASEAN Economic Community established in 2015, then revised with AEC Blueprint 2025\n\nfor free movement of goods, services, investment, and skilled labor, and freer movement of capital\nneither set common tariffs outside the region nor aim for a single currency"
+  },
+  {
+    "objectID": "slides/05_asean_integration-slides.html#asean-intra-region-tariff",
+    "href": "slides/05_asean_integration-slides.html#asean-intra-region-tariff",
+    "title": "ASEAN and Regional Integration",
+    "section": "ASEAN intra-region tariff",
+    "text": "ASEAN intra-region tariff"
+  },
+  {
+    "objectID": "slides/05_asean_integration-slides.html#asean-related-ftas",
+    "href": "slides/05_asean_integration-slides.html#asean-related-ftas",
+    "title": "ASEAN and Regional Integration",
+    "section": "ASEAN-Related FTAs",
+    "text": "ASEAN-Related FTAs\n\n\n\n\n\n\nregional agreements:\n\nASEAN (1967), APEC (1989),\nJapan–ASEAN EPA (2008), Korea–ASEAN EPA (2009),\nASEAN Economic Community (AEC, 2015),\nCPTPP (2019), RCEP (2020),\n\nbilateral agreements:\n\nEU–Singapore FTA (2019), EU–Vietnam FTA (2020),\nUK–Singapore FTA (2020), UK–Vietnam FTA (2021)\nJapan-Singapore (2002), Japan-Malaysia (2005), Japan-Philippines (2006), Japan-Thailand, Indonesia, Brunei (2007), Japan-Vietnam (2008)"
+  },
+  {
+    "objectID": "slides/05_asean_integration-slides.html#asean-and-japan",
+    "href": "slides/05_asean_integration-slides.html#asean-and-japan",
+    "title": "ASEAN and Regional Integration",
+    "section": "ASEAN and Japan",
+    "text": "ASEAN and Japan\n\nEstablished informal dialogue relations in 1973 formalized in 1977 with ASEAN-Japan Forum\nASEAN-Japan Comprehensive Economic Partnership (AJCEP) Agreement in 2008\n\nimproving trade and investment terms of business with the government’s support package\nASEAN remains a dominant recipient of Japanese ODA\nJoint Statement on the Establishment of the ASEAN-Japan Comprehensive Strategic Partnership (CSP) in 2023"
+  },
+  {
+    "objectID": "slides/05_asean_integration-slides.html#trade",
+    "href": "slides/05_asean_integration-slides.html#trade",
+    "title": "ASEAN and Regional Integration",
+    "section": "Trade",
+    "text": "Trade\n\n\n\nJapan is an important trading partner of ASEAN\n\nJapan imports from ASEAN: machinery, mineral products,\nJapan exports to ASEAN: machinery, vehicles\nIncrease in intra-industry trade"
+  },
+  {
+    "objectID": "slides/05_asean_integration-slides.html#investment",
+    "href": "slides/05_asean_integration-slides.html#investment",
+    "title": "ASEAN and Regional Integration",
+    "section": "Investment",
+    "text": "Investment\n\n\n\nJapan is second largest FDI source country of ASEAN\n\nASEAN is the third largest FDI destination of Japan\nSingapore and Vietnam received high inflow recently\n\nASEAN is second largest FDI source of Japan, ¾ is from Singapore in recent years"
+  },
+  {
+    "objectID": "slides/05_asean_integration-slides.html#japanese-firms-in-asean-countries",
+    "href": "slides/05_asean_integration-slides.html#japanese-firms-in-asean-countries",
+    "title": "ASEAN and Regional Integration",
+    "section": "Japanese firms in ASEAN countries",
+    "text": "Japanese firms in ASEAN countries\n\nBefore 1990s: building up factories\n1990s ~ 2000s: becoming high profile investors\n2000s ~: diversification"
+  },
+  {
+    "objectID": "slides/05_asean_integration-slides.html#japanese-firms-in-asean-countries-1a",
+    "href": "slides/05_asean_integration-slides.html#japanese-firms-in-asean-countries-1a",
+    "title": "ASEAN and Regional Integration",
+    "section": "Japanese firms in ASEAN countries (1a)",
+    "text": "Japanese firms in ASEAN countries (1a)\n\n\nJapanese companies heavily used ASEAN economic integration\n\ngoods between Japan and FTA partners\nintermediate goods among ASEAN countries\n\n\n\n\nSource: https://www.jetro.go.jp/ext_images/en/reports/survey/pdf/jafirms2018.pdf"
+  },
+  {
+    "objectID": "slides/05_asean_integration-slides.html#japanese-firms-in-asean-countries-1b",
+    "href": "slides/05_asean_integration-slides.html#japanese-firms-in-asean-countries-1b",
+    "title": "ASEAN and Regional Integration",
+    "section": "Japanese firms in ASEAN countries (1b)",
+    "text": "Japanese firms in ASEAN countries (1b)\n\n\nIn 1990s, reorganize production systems in ASEAN region\n\nJapan adopt a strategy of concentrating production of similar products in a single country to attain economies of scale\n\n\n\n\nJapanese Autos by 1990s Source: Kinoshita (2004) based on Yamaguchi (2003), Honda Motor Co., Ltd (2003)"
+  },
+  {
+    "objectID": "slides/05_asean_integration-slides.html#japanese-firms-in-asean-countries-1c",
+    "href": "slides/05_asean_integration-slides.html#japanese-firms-in-asean-countries-1c",
+    "title": "ASEAN and Regional Integration",
+    "section": "Japanese Firms in ASEAN countries (1c)",
+    "text": "Japanese Firms in ASEAN countries (1c)\n\nBy 2000, Japanese firms have become high profile investors in ASEAN5\n\n\n\n\nJapan export intermediates goods\nASEAN4 exports final goods which have a lot of import content"
+  },
+  {
+    "objectID": "slides/05_asean_integration-slides.html#japanese-firms-in-asean-countries-2a",
+    "href": "slides/05_asean_integration-slides.html#japanese-firms-in-asean-countries-2a",
+    "title": "ASEAN and Regional Integration",
+    "section": "Japanese Firms in ASEAN countries (2a)",
+    "text": "Japanese Firms in ASEAN countries (2a)\n\nEvents in late 1990s and early 2000s encourage Japanese firms to expand to both ASEAN and China\n\nAsian financial crisis in 1997\nCLMV’s joining ASEAN in late 1990s\nChina’s accession to the WTO in 2005"
+  },
+  {
+    "objectID": "slides/05_asean_integration-slides.html#japanese-firms-in-asean-countries-2b",
+    "href": "slides/05_asean_integration-slides.html#japanese-firms-in-asean-countries-2b",
+    "title": "ASEAN and Regional Integration",
+    "section": "Japanese Firms in ASEAN countries (2b)",
+    "text": "Japanese Firms in ASEAN countries (2b)\n\n\nShift of assembly type operations from ASEAN to China to utilize low-cost labor:\n\nJapan imports more finished goods shift from China\nASEAN5 and Japan’s export of components to China increase\nContinuous shift of production lines from Japan to ASEAN, such as color TVs, VTR, DVD players"
+  },
+  {
+    "objectID": "slides/05_asean_integration-slides.html#japanese-firms-in-asean-countries-3",
+    "href": "slides/05_asean_integration-slides.html#japanese-firms-in-asean-countries-3",
+    "title": "ASEAN and Regional Integration",
+    "section": "Japanese Firms in ASEAN countries (3)",
+    "text": "Japanese Firms in ASEAN countries (3)\n\n\n“China plus one” strategy\n\nShift from China to CLMV for labor-intensive production\nChinese economic growth resulting in wage increase\nUS-China Tariff War started in 2017\n\n\n\n\n\n\nMove from China to ASEAN6\nReduction in Thailand, Indonesia\nIncrease in Vietnam and the Philippines\nIncrease in non-manufacturing in Vietnam"
+  },
+  {
+    "objectID": "slides/05_asean_integration-slides.html#key-takeaways",
+    "href": "slides/05_asean_integration-slides.html#key-takeaways",
+    "title": "ASEAN and Regional Integration",
+    "section": "Key takeaways",
+    "text": "Key takeaways\n\nASEAN integrates pragmatically through trade and production networks, not through a supranational union.\nJapanese firms helped build, and continue to reshape, ASEAN’s regional value chains.\nTariffs are mostly eliminated for many ASEAN countries, so future gains depend on non-tariff barriers, diversification, and managing member diversity."
+  },
+  {
+    "objectID": "slides/05_asean_integration-slides.html#references",
+    "href": "slides/05_asean_integration-slides.html#references",
+    "title": "ASEAN and Regional Integration",
+    "section": "References",
+    "text": "References\n\n\nAbiad, A., Baris, K., Barnabe, J. A., Bertulfo, and others (2018). The Impact of Trade Conflict on Developing Asia. Asian Development Bank.\nIshikawa, K. (2021). The ASEAN Economic Community and ASEAN economic integration. Journal of Contemporary East Asia Studies, 10(1), 24–41.\nKinoshita, T., Kishida, H., & Amemiya, A. (2004). Strategy of Japanese manufacturers in ASEAN and China in light of emerging FTA initiatives.\nNarine, S. (2008). Forty years of ASEAN: A historical review. The Pacific Review, 21(4), 411–429.\nOkabe, M., & Urata, S. (2014). The impact of AFTA on intra-AFTA trade. Journal of Asian Economics, 35, 12–31.\nSuvannaphakdy, S., & Pham, T. P. T. (2023). GVC Reconfiguration. ISEAS–Yusof Ishak Institute Singapore.\nTodo, Y., & Inoue, H. (2021). Geographic Diversification of the Supply Chains of Japanese Firms. Asian Economic Policy Review, 16(2), 304–322."
+  },
+  {
+    "objectID": "slides/03_gvc-slides.html#introduction",
+    "href": "slides/03_gvc-slides.html#introduction",
+    "title": "Measurement of Global Value Chains",
+    "section": "Introduction",
+    "text": "Introduction\n\nTrade in tasks\nTrade in value added\nJapanese comparative advantage: revisited\nCase study: Motor Vehicles, Electronics, Chemicals"
+  },
+  {
+    "objectID": "slides/03_gvc-slides.html#trade-in-tasks",
+    "href": "slides/03_gvc-slides.html#trade-in-tasks",
+    "title": "Measurement of Global Value Chains",
+    "section": "Trade in Tasks",
+    "text": "Trade in Tasks\n\nTraditional trade theory: countries exchange complete, finished goods\nGrossman & Rossi-Hansberg (2008): production is unbundled into discrete tasks — design, component sourcing, fabrication, assembly, testing, marketing\nComparative advantage now applies task-by-task, not product-by-product\nA task is offshored when it can be performed abroad more cheaply, net of coordination and trade costs\n\n\n\nWTO and JETRO-IDE (2011) reframe East Asian trade as evolving “from trade in goods to trade in tasks”\nExplains the rise of intra-industry, intra-firm trade in intermediate goods\nA country’s export mix reflects which tasks it specializes in, not which whole product it exports"
+  },
+  {
+    "objectID": "slides/03_gvc-slides.html#an-example",
+    "href": "slides/03_gvc-slides.html#an-example",
+    "title": "Measurement of Global Value Chains",
+    "section": "An example",
+    "text": "An example"
+  },
+  {
+    "objectID": "slides/03_gvc-slides.html#the-smile-curve",
+    "href": "slides/03_gvc-slides.html#the-smile-curve",
+    "title": "Measurement of Global Value Chains",
+    "section": "The Smile Curve",
+    "text": "The Smile Curve\n\n\n\nIntroduced by Acer founder and CEO Stan Shih in the early 1990s: - the early and late stages of the supply chains generate higher value added\nThe share of value added in manufactured products is shifting from the fabrication stages to pre- and post-fabrication services.\n\nreclassification: from in-house to outsourced -&gt; factory-less manufacturer\ntask-composition shifts: more logistics, transportation, communication to move intermediates or more software/design etc final goods\ntask–relative price shifts: off-shoring to reduce the relative price of the off-shored tasks."
+  },
+  {
+    "objectID": "slides/03_gvc-slides.html#trade-in-value-added",
+    "href": "slides/03_gvc-slides.html#trade-in-value-added",
+    "title": "Measurement of Global Value Chains",
+    "section": "Trade in Value Added",
+    "text": "Trade in Value Added\n\nGross trade statistics double-count intermediate inputs that cross borders multiple times before reaching the final consumer\nThe Trade in Value Added (TiVA) approach reallocates exports to the country that actually created the value:\n\nDomestic Value Added (DVA): value added by the exporting country itself\nForeign Value Added (FVA): value added by other countries, embodied in imported inputs\n\n\n\n\nGross exports overstate bilateral imbalances (e.g., the US–China trade deficit narrows substantially once measured in value-added terms)\nValue-added trade better reflects which country actually benefits from a given trade flow"
+  },
+  {
+    "objectID": "slides/03_gvc-slides.html#simple-example",
+    "href": "slides/03_gvc-slides.html#simple-example",
+    "title": "Measurement of Global Value Chains",
+    "section": "Simple example",
+    "text": "Simple example\n\n\n\n\n\nflowchart LR\n    A[\"Country A&lt;br/&gt;Component&lt;br/&gt;&lt;b&gt;$20 VA&lt;/b&gt;\"] --&gt;\n    B[\"Country B&lt;br/&gt;Adds $30 VA&lt;br/&gt;&lt;b&gt;Export = $50&lt;/b&gt;\"] --&gt;\n    C[\"Country C&lt;br/&gt;Adds $50 VA&lt;br/&gt;&lt;b&gt;Final product = $100&lt;/b&gt;\"] --&gt;\n    D[\"Final consumer\"]\n\n\n\n\n\n\nGross exports recorded\n\\[\n\\text{Gross exports} = 20 + 50 + 100 = \\$170\n\\]\nTotal value added is\n\\[\n20 + 30 + 50 = \\$100\n\\]\nBut how do we know that all $20 imported by B is actually used to produce B’s exports?"
+  },
+  {
+    "objectID": "slides/03_gvc-slides.html#inputoutput-tables",
+    "href": "slides/03_gvc-slides.html#inputoutput-tables",
+    "title": "Measurement of Global Value Chains",
+    "section": "Input–Output Tables",
+    "text": "Input–Output Tables\n\\[\n\\boxed{\\text{Who supplies inputs to whom?}}\n\\]\n\n\n\n\n\nflowchart LR\n    A[\"Domestic&lt;br/&gt;Industry A\"] &lt;--&gt; M[\"Domestic&lt;br/&gt;Manufacturing\"]\n\n    I[\"Imported&lt;br/&gt;inputs\"] --&gt; A\n    I --&gt; M\n\n    A --&gt; E[\"Exports\"]\n    M --&gt; E\n\n    A --&gt; D[\"Domestic&lt;br/&gt;final demand\"]\n    M --&gt; D"
+  },
+  {
+    "objectID": "slides/03_gvc-slides.html#mrio-data-used-in-wits-gvc-indicators",
+    "href": "slides/03_gvc-slides.html#mrio-data-used-in-wits-gvc-indicators",
+    "title": "Measurement of Global Value Chains",
+    "section": "MRIO Data Used in WITS GVC Indicators",
+    "text": "MRIO Data Used in WITS GVC Indicators\nWITS GVC combines GVC indicators calculated from several global input–output databases:\n\n\n\nDatabase\nCountries\nSector\nPeriod\n\n\n\n\nEora26\n189\n26\n1990-2015\n\n\nWIOD 2016\n43 + RoW\n56\n2000-2014\n\n\nLong-run WIOD\n25\n23\n1965-2000\n\n\nOECD TiVA/ICIO\n76\n45\n1995-2020\n\n\nADB MRIO\n62\n35\n2007-2022"
+  },
+  {
+    "objectID": "slides/03_gvc-slides.html#global-value-chains",
+    "href": "slides/03_gvc-slides.html#global-value-chains",
+    "title": "Measurement of Global Value Chains",
+    "section": "Global Value Chains",
+    "text": "Global Value Chains\nGVCs refer to the fragmentation of production across countries, where different stages of producing a good or service are carried out in different countries.\n\n\nSnake: Sequential production\n\n\n\n\n\nflowchart LR\n    A[\"Raw&lt;br/&gt;materials\"] --&gt;\n    B[\"Parts\"] --&gt;\n    C[\"Processing\"] --&gt;\n    D[\"Assembly\"] --&gt;\n    E[\"Final&lt;br/&gt;product\"]\n\n\n\n\n\n\n\nSpider: Assembly of components\n\n\n\n\n\nflowchart TB\n    A[\"Part A\"] --&gt; E[\"Assembly\"]\n    B[\"Part B\"] --&gt; E\n    C[\"Part C\"] --&gt; E\n    D[\"Part D\"] --&gt; E\n    E --&gt; F[\"Final&lt;br/&gt;product\"]\n\n\n\n\n\n\n\n\nSource: Adapted from Baldwin and Venables (2013)"
+  },
+  {
+    "objectID": "slides/03_gvc-slides.html#key-features-of-global-value-chains",
+    "href": "slides/03_gvc-slides.html#key-features-of-global-value-chains",
+    "title": "Measurement of Global Value Chains",
+    "section": "Key Features of Global Value Chains",
+    "text": "Key Features of Global Value Chains\n\nFragmentation of Production: across multiple countries for cost structures, labor markets, and expertise\nSpecialization: specific segments of the chain (R&D, design, manufacturing, logistics )\nInterconnection: trade, investment, and technology\nValue creation: value added chain from materials to final goods\nGlobal distribution: multiple markets"
+  },
+  {
+    "objectID": "slides/03_gvc-slides.html#backward-and-forward-gvc-linkages",
+    "href": "slides/03_gvc-slides.html#backward-and-forward-gvc-linkages",
+    "title": "Measurement of Global Value Chains",
+    "section": "Backward and Forward GVC Linkages",
+    "text": "Backward and Forward GVC Linkages\n\n\nBackward linkage\n\n\n\n\n\nflowchart LR\n    F[\"Foreign&lt;br/&gt;value added\"] --&gt; H[\"FOCAL&lt;br/&gt;COUNTRY\"] --&gt; D[\"Exports\"]\n\n\n\n\n\n\nThe country uses foreign inputs in its exports.\n\nForward linkage\n\n\n\n\n\nflowchart LR\n    H[\"FOCAL&lt;br/&gt;COUNTRY\"] --&gt; F[\"Foreign&lt;br/&gt;production\"] --&gt; D[\"Exports\"]\n\n\n\n\n\n\nThe country’s value added is used in other countries’ exports."
+  },
+  {
+    "objectID": "slides/03_gvc-slides.html#measuring-gvc-participation",
+    "href": "slides/03_gvc-slides.html#measuring-gvc-participation",
+    "title": "Measurement of Global Value Chains",
+    "section": "Measuring GVC Participation",
+    "text": "Measuring GVC Participation\nBackward linkage (backward participation)\n\\[ \\text{Backward} = \\frac{FVA}{\\text{Gross Exports}} \\times 100 \\] Forward linkage (forward participation)\n\\[ \\text{Forward} = \\frac{DVX}{\\text{Gross Exports}} \\times 100 \\] Total GVC participation = Backward + Forward\n\n\nBased on the gross export decomposition in Koopman, Wang & Wei (2014), built from international input–output tables\nSmall, open economies (e.g., ASEAN members) tend to show higher backward participation. They import more of what they need to export\nCountries positioned at the start of chains (raw materials, core components, R&D) tend to show higher forward participation\nRule of thumb: Backward ↑ when a country imports a lot of intermediates; Forward ↑ when a country’s intermediates are re-exported by others"
+  },
+  {
+    "objectID": "slides/03_gvc-slides.html#but-where-does-this-country-stand",
+    "href": "slides/03_gvc-slides.html#but-where-does-this-country-stand",
+    "title": "Measurement of Global Value Chains",
+    "section": "But, Where Does This Country Stand?",
+    "text": "But, Where Does This Country Stand?\n\n\n\n\n\nflowchart LR\n    A[\"Country A\"] --&gt; B[\"COUNTRY B\"] --&gt; C[\"Country C\"] --&gt; D[\"Final market\"]\n\n\n\n\n\n\nCountry B:\n\nimports intermediate inputs from Country A\nadds domestic value\nexports intermediates to Country C\nCountry C uses them to produce exports\n\nQuestion: Is Country B participating through a backward or a forward linkage?"
+  },
+  {
+    "objectID": "slides/03_gvc-slides.html#pure-and-mixed-gvc-participation",
+    "href": "slides/03_gvc-slides.html#pure-and-mixed-gvc-participation",
+    "title": "Measurement of Global Value Chains",
+    "section": "Pure and Mixed GVC Participation",
+    "text": "Pure and Mixed GVC Participation\nPure backward: Imports FVA → produces exports\n\n\n\n\n\nflowchart LR\n    A[\"Foreign inputs\"] --&gt; B[\"FOCAL COUNTRY\"] --&gt; C[\"Final exports\"]\n\n\n\n\n\n\nPure forward: Exports DVA → used in foreign exports\n\n\n\n\n\nflowchart LR\n    A[\"FOCAL COUNTRY\"] --&gt; B[\"Foreign production\"] --&gt; C[\"Final exports\"]\n\n\n\n\n\n\nMixed: Imports FVA and contributes value added to downstream foreign exports\n\n\n\n\n\nflowchart LR\n    A[\"Foreign inputs\"] --&gt; B[\"FOCAL COUNTRY\"] --&gt; C[\"Foreign production\"] --&gt; D[\"Final exports\"]"
+  },
+  {
+    "objectID": "slides/03_gvc-slides.html#decompose-gross-trade",
+    "href": "slides/03_gvc-slides.html#decompose-gross-trade",
+    "title": "Measurement of Global Value Chains",
+    "section": "Decompose Gross Trade",
+    "text": "Decompose Gross Trade\n\nTraditional trade: cross border once\nGVC-related trade: cross border at least twice\n\nPure backward participation: the use of foreign inputs in exports to the final destination (chain end)\nPure forward participation: the use of domestically produced intermediates in third-country exports (chain start)\nMixed participation: the use of foreign intermediates in third-country exports"
+  },
+  {
+    "objectID": "slides/03_gvc-slides.html#gvc-intensity-and-gvc-position",
+    "href": "slides/03_gvc-slides.html#gvc-intensity-and-gvc-position",
+    "title": "Measurement of Global Value Chains",
+    "section": "GVC intensity and GVC position",
+    "text": "GVC intensity and GVC position\n\nHow strongly is a country or industry involved in GVC production?\n\n\\[\n\\text{GVC Participation}\n=\n\\text{Pure Backward}\n+\n\\text{Pure Forward}\n+\n\\text{Mixed}\n\\]\n\nWhere does the country or industry tend to operate in the value chain?\n\n\\[\nForwardness = \\frac{\\text{Pure Forward} - \\text{Pure Backward}}{\\text{Total GVC Participation}}\n\\]\n\nSummed over all countries, sectors and partners, pure forward activity equals pure backward activity.\nAt the country-sector level, 0 means pure forward and pure backward are balanced, so the sector is neither mainly at the start nor mainly at the end of chains, relative to the world average. Positive values mean more upstream (supplying inputs), negative values mean more downstream (assembling from imported inputs).\nAlternative measures of GVC position include upstreamness (distance of output from final demand) and downstreamness (distance from primary inputs/value added). These measures are conceptually related to, but distinct from, WITS forwardness.\n\nUpstream (high value): design, R&D, core components, precise machinery\nMidstream: capital goods exports, management of production networks\nDownstream: limited (assembly shifted to China/ASEAN), but could be different for chemicals (pharmaceutical synthesis)"
+  },
+  {
+    "objectID": "slides/03_gvc-slides.html#global-gvc-related-trade",
+    "href": "slides/03_gvc-slides.html#global-gvc-related-trade",
+    "title": "Measurement of Global Value Chains",
+    "section": "Global GVC-related trade",
+    "text": "Global GVC-related trade\n\n\n\nOnly one fourth trade are GVC-related in 1970\nOver 50% of world trade occurs within GVCs in 2020\nEnables technology transfer and knowledge spillovers.\n\nEntry point for developing countries into global trade.\n\nAlso increases vulnerability to shocks (pandemic, natural disasters)."
+  },
+  {
+    "objectID": "slides/03_gvc-slides.html#regions-with-high-gvc-participation",
+    "href": "slides/03_gvc-slides.html#regions-with-high-gvc-participation",
+    "title": "Measurement of Global Value Chains",
+    "section": "Regions with high GVC participation",
+    "text": "Regions with high GVC participation\n\n\n\nSmall open economies source more inputs from abroad in GVCs than large countries: more backward participation"
+  },
+  {
+    "objectID": "slides/03_gvc-slides.html#forwardness-distribution",
+    "href": "slides/03_gvc-slides.html#forwardness-distribution",
+    "title": "Measurement of Global Value Chains",
+    "section": "Forwardness Distribution",
+    "text": "Forwardness Distribution"
+  },
+  {
+    "objectID": "slides/03_gvc-slides.html#japans-gvc-related-trade-share",
+    "href": "slides/03_gvc-slides.html#japans-gvc-related-trade-share",
+    "title": "Measurement of Global Value Chains",
+    "section": "Japan’s GVC-related trade share",
+    "text": "Japan’s GVC-related trade share\n\n\n\nGVC-related trade increase from about 20% in 1970 to 40% in 2020\nFurther separation of production chain with assembly move to China in 1990s, and then new ASEAN3"
+  },
+  {
+    "objectID": "slides/03_gvc-slides.html#japans-gvc-related-trade-share-by-sector",
+    "href": "slides/03_gvc-slides.html#japans-gvc-related-trade-share-by-sector",
+    "title": "Measurement of Global Value Chains",
+    "section": "Japan’s GVC-related trade share by sector",
+    "text": "Japan’s GVC-related trade share by sector"
+  },
+  {
+    "objectID": "slides/03_gvc-slides.html#japans-sector-position",
+    "href": "slides/03_gvc-slides.html#japans-sector-position",
+    "title": "Measurement of Global Value Chains",
+    "section": "Japan’s sector position",
+    "text": "Japan’s sector position"
+  },
+  {
+    "objectID": "slides/03_gvc-slides.html#four-sectors-globally",
+    "href": "slides/03_gvc-slides.html#four-sectors-globally",
+    "title": "Measurement of Global Value Chains",
+    "section": "Four sectors globally",
+    "text": "Four sectors globally\n\n\nVehicles: Regional GVCs — transport costs, scale economies, regional specialization Electronics: Global GVCs — highly fragmented production across countries Agriculture: Less fragmented — stronger local/regional sourcing Chemicals: Intermediate-input intensive — mainly domestic sourcing, with growing imported contented mostly domestically, but some increasing trend in import content as well"
+  },
+  {
+    "objectID": "slides/03_gvc-slides.html#four-quadrants",
+    "href": "slides/03_gvc-slides.html#four-quadrants",
+    "title": "Measurement of Global Value Chains",
+    "section": "Four quadrants",
+    "text": "Four quadrants\n\n\n\n\n\n\n\n\n\nIntensity \\ Forwardness\nLow forwardness\nHigh forwardness\n\n\n\n\nHigh intensity\nIntegrated assemblers. Heavy use of imported inputs and output tied to chains: Motor vehicles and Electrical\nIntegrated suppliers. Domestic value added is a major input into other countries’ exports: Chemicals\n\n\nLow intensity\nMarginal downstream. Little GVC activity, mostly imported inputs in final goods\nMarginal upstream. Little GVC activity, mostly supplying primary inputs that others process: Agriculture\n\n\n\n\n\nCaveats\n\nForwardness excludes two-sided participation, so a value near 0 can mean balanced roles or mostly two-sided activity.\nThe world average is zero across all sectors combined, so individual sectors need not average zero.\nMany points lie near the cut-offs, especially intensity around 0.5. Treat the quadrants as a description of each sector’s cloud, not strict classes."
+  },
+  {
+    "objectID": "slides/03_gvc-slides.html#four-sectors-in-japan",
+    "href": "slides/03_gvc-slides.html#four-sectors-in-japan",
+    "title": "Measurement of Global Value Chains",
+    "section": "Four sectors in Japan",
+    "text": "Four sectors in Japan"
+  },
+  {
+    "objectID": "slides/03_gvc-slides.html#japan-comparative-advantage-revisited",
+    "href": "slides/03_gvc-slides.html#japan-comparative-advantage-revisited",
+    "title": "Measurement of Global Value Chains",
+    "section": "Japan comparative advantage: revisited",
+    "text": "Japan comparative advantage: revisited\n\n\n\nRCA_Ai = share of export of industry i in country A export/ share of global export of industry in global export (Balassa, 1965)\neffective only within same country among products or same product among countries: higher value indicates a stronger export performance, higher degree of export specialization, and a higher degree of revealed comparative advantage\nCA emphasize relative differences in productivity between countries as the reason for international trade"
+  },
+  {
+    "objectID": "slides/03_gvc-slides.html#key-takeaways",
+    "href": "slides/03_gvc-slides.html#key-takeaways",
+    "title": "Measurement of Global Value Chains",
+    "section": "Key takeaways",
+    "text": "Key takeaways\n\nGVCs fragment production across countries\nGVC participation can take different forms: pure backward, pure forward, and two-sided (mixed) participation.\nInput–output tables make GVC measurement possible by tracing value added through industries and countries across multiple production stages."
+  },
+  {
+    "objectID": "slides/03_gvc-slides.html#suggested-readings",
+    "href": "slides/03_gvc-slides.html#suggested-readings",
+    "title": "Measurement of Global Value Chains",
+    "section": "Suggested Readings",
+    "text": "Suggested Readings\n\n\nBaldwin, R., & Ito, T. (2021). The smile curve: Evolving sources of value added in manufacturing. Canadian Journal of Economics/Revue Canadienne d’économique, 54(4), 1842–1880.\nBaldwin, R., & Venables, A. J. (2013). Spiders and snakes: Offshoring and agglomeration in the global economy. Journal of International Economics, 90(2), 245–254. https://doi.org/10.1016/j.jinteco.2013.02.005\nElms, D. K., & Low, P. (2013). Global value chains in a changing world. World trade organization.\nGrossman, G. M., & Rossi-Hansberg, E. (2008). Trading Tasks: A Simple Theory of Offshoring. American Economic Review, 98(5), 1978–1997. https://doi.org/10.1257/aer.98.5.1978\nKoopman, R., Wang, Z., & Wei, S.-J. (2014). Tracing Value-Added and Double Counting in Gross Exports. American Economic Review, 104(2), 459–494. https://doi.org/10.1257/aer.104.2.459\nKinoshita, T., Kishida, H., & Amemiya, A. (2004). Strategy of Japanese manufacturers in ASEAN and China in light of emerging FTA initiatives.\nOECD. (2011). Globalisation, comparative advantage and the changing dynamics of trade (Online-Ausg). OECD.\nSuvannaphakdy, S., & Pham, T. P. T. (2023). GVC Reconfiguration. ISEAS–Yusof Ishak Institute Singapore.\nTodo, Y., & Inoue, H. (2021). Geographic Diversification of the Supply Chains of Japanese Firms. Asian Economic Policy Review, 16(2), 304–322\nWTO and JETRO-IDE (2011), Trade patterns and global value chains in East Asia: from trade in goods to trade in tasks.\nXing, Y., and N. Detert (2010). How the iPhone Widens the United States Trade Deficit with the People’s Republic of China. ADBI Working Paper 257. Tokyo: Asian Development Bank.\n\n\nData\nMancini, M., & Taglioni, D. (2025). Economic consequences of trade and global value chain integration: A measurement perspective. The World Bank Economic Review, https://doi.org/10.1093/wber/lhaf017."
+  },
+  {
+    "objectID": "slides/03_gvc-slides.html#data",
+    "href": "slides/03_gvc-slides.html#data",
+    "title": "Measurement of Global Value Chains",
+    "section": "Data",
+    "text": "Data\nMancini, M., & Taglioni, D. (2025). Economic consequences of trade and global value chain integration: A measurement perspective. The World Bank Economic Review, https://doi.org/10.1093/wber/lhaf017."
+  },
+  {
+    "objectID": "slides/01_intro-slides.html#self-introduction",
+    "href": "slides/01_intro-slides.html#self-introduction",
+    "title": "Introduction",
+    "section": "Self-introduction",
+    "text": "Self-introduction\n\nAssistant Professor, Department of System Innovation, University of Tokyo\n\nInternational economics\nMaritime economics\n\nWhy am I here?\n\nBuyout system of the Grant-in-Aid for Scientific Research (S)\n“Transformation of the Global Value Chain and the Construction of a New International Economic Order”"
+  },
+  {
+    "objectID": "slides/01_intro-slides.html#course-content",
+    "href": "slides/01_intro-slides.html#course-content",
+    "title": "Introduction",
+    "section": "Course Content",
+    "text": "Course Content\n\nWhat this course covers (trade, ODA, FDI, exchange rates)\nWhy Japan? A major economy in the world\nHow we’ll learn: lectures, discussion, suggested readings"
+  },
+  {
+    "objectID": "slides/01_intro-slides.html#expected-outcomes",
+    "href": "slides/01_intro-slides.html#expected-outcomes",
+    "title": "Introduction",
+    "section": "Expected Outcomes",
+    "text": "Expected Outcomes\n\nExplain Japan’s role in the global economy.\nAssess Japan’s position in global value chains and its competitiveness.\nFormulate evidence-based perspectives on Japan and current global economic issues."
+  },
+  {
+    "objectID": "slides/01_intro-slides.html#course-map",
+    "href": "slides/01_intro-slides.html#course-map",
+    "title": "Introduction",
+    "section": "Course Map",
+    "text": "Course Map\n\nWeek 1: Introduction (9/22)\nWeeks 2–6: Global value chain\nWeek 7: Group presentation workshop (11/10)\nWeeks 8-12: ODA, FDI, Exchange Rates\nWeek 13: Final exam (12/22)\nMake-up exam (1/19)"
+  },
+  {
+    "objectID": "slides/01_intro-slides.html#international-trade",
+    "href": "slides/01_intro-slides.html#international-trade",
+    "title": "Introduction",
+    "section": "International Trade",
+    "text": "International Trade\n\nJapan’s Comparative Advantages\nMeasurement of Global Value Chains\nEnablers of Global Value Chains\nJapan and ASEAN\nGeopolitics and Climate Change"
+  },
+  {
+    "objectID": "slides/01_intro-slides.html#selected-topics-on-japanese-economy",
+    "href": "slides/01_intro-slides.html#selected-topics-on-japanese-economy",
+    "title": "Introduction",
+    "section": "Selected topics on Japanese economy",
+    "text": "Selected topics on Japanese economy\n\nOfficial Development Assistance\nCross-border investment\nBalance of Payments\nExchange Rates\nDemographic Challenges and Digitization"
+  },
+  {
+    "objectID": "slides/01_intro-slides.html#references",
+    "href": "slides/01_intro-slides.html#references",
+    "title": "Introduction",
+    "section": "References",
+    "text": "References\n\nTakatoshi Ito & Takeo Hoshi, 2020, The Japanese Economy (2nd ed.), The MIT Press\nKrugman, P. R., Obstfeld, M., & Melitz, M. J. (2023). International economics: Theory and policy (12th ed.). Pearson.\n石川城太・椋寛・菊地徹『国際経済学をつかむ』第2版有斐閣"
+  },
+  {
+    "objectID": "slides/01_intro-slides.html#how-we-work",
+    "href": "slides/01_intro-slides.html#how-we-work",
+    "title": "Introduction",
+    "section": "How We Work",
+    "text": "How We Work\n\nClass Structure: 20 min short tests + 50 min lecture + 5 min break + 30 min group discussions\nAssessment\n\nParticipant: 10%\nShort tests: 20%\nGroup presentation workshop: 30%\n\nFinal exam: 40%"
+  },
+  {
+    "objectID": "slides/01_intro-slides.html#group-discussion-first-half-of-the-course",
+    "href": "slides/01_intro-slides.html#group-discussion-first-half-of-the-course",
+    "title": "Introduction",
+    "section": "Group discussion (first half of the course)",
+    "text": "Group discussion (first half of the course)\n\n7 groups of 5~6 students: register your members by the end of today\nChoose one research question related to the topic of global value chain in two weeks\nDiscuss in class\nPresentation (11/10: 10 minutes ~ 5 slides): title, research question + background, evidence, policy implication, conclusion\nSubmit of individual report (11/24: 1 A4 page): similar to presentation + what you learn from other groups"
+  },
+  {
+    "objectID": "slides/01_intro-slides.html#classroom-management",
+    "href": "slides/01_intro-slides.html#classroom-management",
+    "title": "Introduction",
+    "section": "Classroom management:",
+    "text": "Classroom management:\n\n“respon” application: https://univ-gakushuin.respon.jp\nHomework:\n\nPrepare for short tests and discussions.\n\nOffice hour: by appointment"
+  },
+  {
+    "objectID": "slides/01_intro-slides.html#stats-of-year-2025",
+    "href": "slides/01_intro-slides.html#stats-of-year-2025",
+    "title": "Introduction",
+    "section": "Stats of year 2025",
+    "text": "Stats of year 2025\n\nNo of registration: 104\nNo of final exam takers: 93\nNo of credit eaners: 89\n\nS: 4\nA: 30\nB: 36\nC: 19"
+  },
+  {
+    "objectID": "slides/01_intro-slides.html#your-takeaways",
+    "href": "slides/01_intro-slides.html#your-takeaways",
+    "title": "Introduction",
+    "section": "Your takeaways",
+    "text": "Your takeaways\n\nWhat interests you in this class ?\nWhat is your expectation in this class ?\n\n\nQuestionnaire"
+  },
+  {
+    "objectID": "slides/01_intro-slides.html#japan-at-a-glance",
+    "href": "slides/01_intro-slides.html#japan-at-a-glance",
+    "title": "Introduction",
+    "section": "Japan at a Glance",
+    "text": "Japan at a Glance\n\nHigh-income\nEconomic growth model\nSafe-haven currency\nAging economy\n\n\nUse this as a conversation starter: ask for students’ priors on Japan’s role."
+  },
+  {
+    "objectID": "slides/01_intro-slides.html#growth-accounting-the-framework",
+    "href": "slides/01_intro-slides.html#growth-accounting-the-framework",
+    "title": "Introduction",
+    "section": "Growth accounting: the framework",
+    "text": "Growth accounting: the framework\nEconomic growth comes from two different sources:\n\nMore inputs: working more hours, employing more people, building more capital, or having a more educated workforce\nUsing inputs better: technology, efficiency, and innovation that let the same inputs produce more output (this is called Total Factor Productivity, or TFP)\n\n\n\nFrame the upcoming charts: each panel shows the annual growth rate (%) of one input, or of TFP\nPreview: Japan’s inputs kept growing, but TFP growth stalled — that’s the story the next few slides build toward\nOptional if asked: TFP is measured as a residual — growth left over after accounting for capital, labor, and human capital growth"
+  },
+  {
+    "objectID": "slides/01_intro-slides.html#growth-accounting-japan",
+    "href": "slides/01_intro-slides.html#growth-accounting-japan",
+    "title": "Introduction",
+    "section": "Growth accounting: Japan",
+    "text": "Growth accounting: Japan\n\n\n\nGrowth drivers: capital, total factor productivity, human capital: investment-led"
+  },
+  {
+    "objectID": "slides/01_intro-slides.html#growth-drivers-across-countries",
+    "href": "slides/01_intro-slides.html#growth-drivers-across-countries",
+    "title": "Introduction",
+    "section": "Growth drivers across countries",
+    "text": "Growth drivers across countries"
+  },
+  {
+    "objectID": "slides/01_intro-slides.html#export-led-growth",
+    "href": "slides/01_intro-slides.html#export-led-growth",
+    "title": "Introduction",
+    "section": "Export-led growth",
+    "text": "Export-led growth"
+  },
+  {
+    "objectID": "slides/01_intro-slides.html#structural-shift",
+    "href": "slides/01_intro-slides.html#structural-shift",
+    "title": "Introduction",
+    "section": "Structural shift",
+    "text": "Structural shift"
+  },
+  {
+    "objectID": "slides/01_intro-slides.html#role-of-currency",
+    "href": "slides/01_intro-slides.html#role-of-currency",
+    "title": "Introduction",
+    "section": "Role of currency",
+    "text": "Role of currency\n\nStore of value: held as reserves by central banks and investors\nMedium of exchange: used to invoice and settle cross-border trade, even between two other countries\nUnit of account: used to price global assets like oil, or benchmark other currencies against"
+  },
+  {
+    "objectID": "slides/01_intro-slides.html#yen-as-store-of-value",
+    "href": "slides/01_intro-slides.html#yen-as-store-of-value",
+    "title": "Introduction",
+    "section": "Yen as store of value",
+    "text": "Yen as store of value\n\n\n\nFrame the upcoming chart: it shows only one dimension (store of value / reserve holdings), not trade invoicing or pricing, worth noting the yen may play a bigger or smaller role in other functions\nPreview: the yen has held a stable, mid-sized share of global reserves for decades — this reflects Japan’s role as a safe-haven currency despite its shrinking share of world GDP\nOptional if asked: contrast with the US dollar, which dominates in all three functions simultaneously, that’s part of what “reserve currency” usually implies beyond just what this chart shows"
+  },
+  {
+    "objectID": "slides/01_intro-slides.html#why-demographics-matter",
+    "href": "slides/01_intro-slides.html#why-demographics-matter",
+    "title": "Introduction",
+    "section": "Why demographics matter",
+    "text": "Why demographics matter\n\nGrowth drivers: labor supply directly feeds into the growth accounting framework\nMarket size: a country’s population sets the scale of domestic demand\nConsumption: a population’s age structure drives spending patterns\nSaving: national saving rates (working-age people save for retirement; retirees draw savings down)\n\n\n\nCallback: ties directly to the growth-accounting slide — labor was one of the four inputs; this section asks “what happens when that input starts shrinking?”\nPreview: Japan’s median age is now the highest among peers, with population decline already underway — the next two slides show this directly, plus whether migration is offsetting it\nOptional if asked: aging affects saving in offsetting ways — life-cycle theory predicts lower aggregate saving as retirees dissave, but this is debated empirically for Japan specifically (household saving rates have been unusually resilient)"
+  },
+  {
+    "objectID": "slides/01_intro-slides.html#aging-economy-population",
+    "href": "slides/01_intro-slides.html#aging-economy-population",
+    "title": "Introduction",
+    "section": "Aging economy (population)",
+    "text": "Aging economy (population)\n\n\n\nRapidly aging, highest median age with very low rate of natural change"
+  },
+  {
+    "objectID": "slides/01_intro-slides.html#aging-economy-immigration",
+    "href": "slides/01_intro-slides.html#aging-economy-immigration",
+    "title": "Introduction",
+    "section": "Aging economy (immigration)",
+    "text": "Aging economy (immigration)"
+  },
+  {
+    "objectID": "slides/01_intro-slides.html#japan-at-a-glance-takeaways",
+    "href": "slides/01_intro-slides.html#japan-at-a-glance-takeaways",
+    "title": "Introduction",
+    "section": "Japan at a glance: takeaways",
+    "text": "Japan at a glance: takeaways\n\nHigh-income: Japan converged with advanced economies decades ago, but stalled since the 1990s\nGrowth model: Initially investment- and export-led, with rising TFP but since the 1990s, all drivers slowed\nSafe-haven currency: the yen has held a stable share of global reserves for decades\nAging economy: a shrinking, aging population is now squeezing the labor input directly\n\n\n\nJapan’s trajectory as a cautionary tale or a preview of what other aging economies (Korea, China, parts of Europe) will face"
+  },
+  {
+    "objectID": "slides/01_intro-slides.html#suggested-readings",
+    "href": "slides/01_intro-slides.html#suggested-readings",
+    "title": "Introduction",
+    "section": "Suggested Readings",
+    "text": "Suggested Readings\n\nIto and Hoshi (2020), chapter 1-3, 12"
+  },
+  {
+    "objectID": "slides/04_gvc_enablers-slides.html#gvc-reminders",
+    "href": "slides/04_gvc_enablers-slides.html#gvc-reminders",
+    "title": "Enablers of Global Value Chains",
+    "section": "GVC reminders",
+    "text": "GVC reminders\n\n\nFigure 1: Vertical FDI, export-platform FDI and global value chains"
+  },
+  {
+    "objectID": "slides/04_gvc_enablers-slides.html#what-make-gvcs",
+    "href": "slides/04_gvc_enablers-slides.html#what-make-gvcs",
+    "title": "Enablers of Global Value Chains",
+    "section": "What make GVCs",
+    "text": "What make GVCs\n\nWhat are the conditions that allow firms to separate production and consumption and different tasks in supply chain ?\nDeclining trade costs: trade policy, tariff and non-tariff barrier, transport and logistics\nDeclining coordination costs: investment policy, ICT, movement of people, institution"
+  },
+  {
+    "objectID": "slides/04_gvc_enablers-slides.html#effects-of-trade-costs-on-bilateral-trade",
+    "href": "slides/04_gvc_enablers-slides.html#effects-of-trade-costs-on-bilateral-trade",
+    "title": "Enablers of Global Value Chains",
+    "section": "Effects of Trade Costs on Bilateral Trade",
+    "text": "Effects of Trade Costs on Bilateral Trade\n\n\nFigure 2: Gravity coefficient estimates"
+  },
+  {
+    "objectID": "slides/04_gvc_enablers-slides.html#wto-and-multilateralism",
+    "href": "slides/04_gvc_enablers-slides.html#wto-and-multilateralism",
+    "title": "Enablers of Global Value Chains",
+    "section": "WTO and multilateralism",
+    "text": "WTO and multilateralism\n\n\n\n1948–49: GATT launched with 23 members; +11 accessions\n\n1950s: +15 accessions, 2 successions, 4 withdrawals\n\n1960s: +12 accessions, 21 successions\n\n1970s: +9 accessions, 4 successions\n\n1980s: +6 accessions, 5 successions\n\n1990–94: +9 accessions, 20 successions\n\n1995: WTO established\n\n1996–2000: 11 accessions (Bulgaria, Ecuador, Mongolia, Kyrgyz Rep., etc.)\n\n2001–05: 7 major accessions (China, Lithuania, Moldova, Chinese Taipei, Saudi)\n\n2006–12: 10 accessions (Viet Nam, Ukraine, Russia, Samoa, Vanuatu)"
+  },
+  {
+    "objectID": "slides/04_gvc_enablers-slides.html#mfn-tariff-rates",
+    "href": "slides/04_gvc_enablers-slides.html#mfn-tariff-rates",
+    "title": "Enablers of Global Value Chains",
+    "section": "MFN tariff rates",
+    "text": "MFN tariff rates\n\nSource: Baldwin (2011)"
+  },
+  {
+    "objectID": "slides/04_gvc_enablers-slides.html#wto-challenge",
+    "href": "slides/04_gvc_enablers-slides.html#wto-challenge",
+    "title": "Enablers of Global Value Chains",
+    "section": "WTO challenge",
+    "text": "WTO challenge"
+  },
+  {
+    "objectID": "slides/04_gvc_enablers-slides.html#regional-and-bilateral-agreements",
+    "href": "slides/04_gvc_enablers-slides.html#regional-and-bilateral-agreements",
+    "title": "Enablers of Global Value Chains",
+    "section": "Regional and bilateral agreements",
+    "text": "Regional and bilateral agreements"
+  },
+  {
+    "objectID": "slides/04_gvc_enablers-slides.html#regional-and-bilateral-agreements-by-regions",
+    "href": "slides/04_gvc_enablers-slides.html#regional-and-bilateral-agreements-by-regions",
+    "title": "Enablers of Global Value Chains",
+    "section": "Regional and bilateral agreements by regions",
+    "text": "Regional and bilateral agreements by regions"
+  },
+  {
+    "objectID": "slides/04_gvc_enablers-slides.html#average-tariff-rates",
+    "href": "slides/04_gvc_enablers-slides.html#average-tariff-rates",
+    "title": "Enablers of Global Value Chains",
+    "section": "Average tariff rates",
+    "text": "Average tariff rates"
+  },
+  {
+    "objectID": "slides/04_gvc_enablers-slides.html#japan-tariff",
+    "href": "slides/04_gvc_enablers-slides.html#japan-tariff",
+    "title": "Enablers of Global Value Chains",
+    "section": "Japan tariff",
+    "text": "Japan tariff\n\nSource: WTO Tariff Profile (2025)\nTariff line: the most detailed product category in a country’s tariff schedule, identified by a national code (usually 8 to 10 digits, built on the 6-digit HS code). Each tariff line has its own duty rate. “AVG”, “Duty-free in %”, “Max” and “Binding in %” are all calculated over tariff lines, not over trade value.\n\nFinal bound duties: the maximum tariff rates Japan has committed to the WTO for each product line. Japan cannot legally raise tariffs above these ceilings.\nMFN applied duties: the rates Japan actually charges other WTO members under the Most-Favoured-Nation principle, i.e. the non-discriminatory “normal” tariff, excluding preferential rates under FTAs. Applied rates are at or below bound rates.\nAVG: simple average of the ad valorem tariff rates (%) across all lines in the group.\nDuty-free in %: share of tariff lines with a zero rate.\nMax: the highest single tariff rate in the group (italics mark non-ad valorem rates converted to ad valorem equivalents).\nBinding in %: share of tariff lines that are bound at the WTO (100 means every line is bound).\nImports (Share in %): the group’s share of Japan’s total imports.\nImports (Duty-free in %): share of the group’s import value that enters duty-free."
+  },
+  {
+    "objectID": "slides/04_gvc_enablers-slides.html#non-tariff-measures",
+    "href": "slides/04_gvc_enablers-slides.html#non-tariff-measures",
+    "title": "Enablers of Global Value Chains",
+    "section": "Non-tariff measures",
+    "text": "Non-tariff measures\n\n\n\n\n\n\n\n\n\nTechnical measures\nNon-technical measures\nExport measures\n\n\n\n\nA. SPS (pesticide limits)\nD. Trade-protective (anti-dumping)\nP. Export measures (export taxes)\n\n\nB. TBT (labeling)\nE. Licensing, quotas (import bans)\n\n\n\nC. Pre-shipment inspection (customs checks)\nF. Price controls (surcharges)\n\n\n\n\nG. Finance (FX controls)\n\n\n\n\nH. Competition (state monopolies)\n\n\n\n\nI. Investment, TRIMs (local content)\n\n\n\n\nJ. Distribution (licensed retailers)\n\n\n\n\nK. Post-sales service (local service)\n\n\n\n\nL. Subsidies (farm subsidies)\n\n\n\n\nM. Procurement (buy national)\n\n\n\n\nN. Intellectual property (patents)\n\n\n\n\nO. Rules of origin (origin certificates)\n\n\n\n\nSource: UNCTAD MAST classification"
+  },
+  {
+    "objectID": "slides/04_gvc_enablers-slides.html#non-tariff-measures-by-sector",
+    "href": "slides/04_gvc_enablers-slides.html#non-tariff-measures-by-sector",
+    "title": "Enablers of Global Value Chains",
+    "section": "Non-tariff measures by sector",
+    "text": "Non-tariff measures by sector"
+  },
+  {
+    "objectID": "slides/04_gvc_enablers-slides.html#non-tariff-measures-by-type",
+    "href": "slides/04_gvc_enablers-slides.html#non-tariff-measures-by-type",
+    "title": "Enablers of Global Value Chains",
+    "section": "Non-tariff measures by type",
+    "text": "Non-tariff measures by type"
+  },
+  {
+    "objectID": "slides/04_gvc_enablers-slides.html#tariff-equivalence-of-non-tariff-measures",
+    "href": "slides/04_gvc_enablers-slides.html#tariff-equivalence-of-non-tariff-measures",
+    "title": "Enablers of Global Value Chains",
+    "section": "Tariff equivalence of Non-tariff measures",
+    "text": "Tariff equivalence of Non-tariff measures"
+  },
+  {
+    "objectID": "slides/04_gvc_enablers-slides.html#international-transportation-costs-ocean",
+    "href": "slides/04_gvc_enablers-slides.html#international-transportation-costs-ocean",
+    "title": "Enablers of Global Value Chains",
+    "section": "International transportation costs: Ocean",
+    "text": "International transportation costs: Ocean\n\nSource: Hummels (2007)\n\nTransport Infrastructure: ports, airports, rail/road connectivity.\nDigital Infrastructure: broadband, cloud computing, digital platforms enabling services trade.\nCase example:\n\nContainer development\nSingapore and logistics connectivity\nJapan’s port investments in ASEAN"
+  },
+  {
+    "objectID": "slides/04_gvc_enablers-slides.html#international-transportation-costs-air",
+    "href": "slides/04_gvc_enablers-slides.html#international-transportation-costs-air",
+    "title": "Enablers of Global Value Chains",
+    "section": "International transportation costs: Air",
+    "text": "International transportation costs: Air\n\nSource: Hummels (2007)"
+  },
+  {
+    "objectID": "slides/04_gvc_enablers-slides.html#investment-treaties",
+    "href": "slides/04_gvc_enablers-slides.html#investment-treaties",
+    "title": "Enablers of Global Value Chains",
+    "section": "Investment treaties",
+    "text": "Investment treaties\n\nSource: Baldwin (2011)\n\nInvestment policy\nFDI openness,\nInvestor protections\nRule of law"
+  },
+  {
+    "objectID": "slides/04_gvc_enablers-slides.html#export-processing-zones-entry-point-into-gvcs",
+    "href": "slides/04_gvc_enablers-slides.html#export-processing-zones-entry-point-into-gvcs",
+    "title": "Enablers of Global Value Chains",
+    "section": "Export processing zones: entry point into GVCs",
+    "text": "Export processing zones: entry point into GVCs\n\nLabor: relatively low wages\nInfrastructure: reliable power, efficient logistics (often next to a port or airport)\nTax and customs incentives: duty-free inputs, one-stop customs, corporate tax holidays\nExamples: Shenzhen, Bangladesh (Dhaka, Chittagong), Mexico (maquiladoras), Vietnam (Hai Phong, Binh Duong)"
+  },
+  {
+    "objectID": "slides/04_gvc_enablers-slides.html#custom-procedures",
+    "href": "slides/04_gvc_enablers-slides.html#custom-procedures",
+    "title": "Enablers of Global Value Chains",
+    "section": "Custom procedures",
+    "text": "Custom procedures\n\n\n\n\n\nSource: WTO-IDE (2011)\n\n\n\n\n\n\nSource: WTO-IDE (2011)"
+  },
+  {
+    "objectID": "slides/04_gvc_enablers-slides.html#internet-access",
+    "href": "slides/04_gvc_enablers-slides.html#internet-access",
+    "title": "Enablers of Global Value Chains",
+    "section": "Internet access",
+    "text": "Internet access\n\nSource: Baldwin (2011)"
+  },
+  {
+    "objectID": "slides/04_gvc_enablers-slides.html#key-takeaways",
+    "href": "slides/04_gvc_enablers-slides.html#key-takeaways",
+    "title": "Enablers of Global Value Chains",
+    "section": "Key takeaways",
+    "text": "Key takeaways\n\nDeclining trade costs: trade policy, tariff and non-tariff barrier, transport and logistics\nDeclining coordination costs: investment policy, ICT, movement of people, institution"
+  },
+  {
+    "objectID": "slides/04_gvc_enablers-slides.html#references",
+    "href": "slides/04_gvc_enablers-slides.html#references",
+    "title": "Enablers of Global Value Chains",
+    "section": "References",
+    "text": "References\n\n\nBaldwin, R. (2011). 21st Century Regionalism: Filling the gap between 21st century trade and 20th century trade rules.\nHead, K., & Mayer, T. (2014). Gravity Equations: Workhorse,Toolkit, and Cookbook. In Handbook of International Economics (Vol. 4, pp. 131–195).\nHummels, D. (2007). Transportation Costs and International Trade in the Second Era of Globalization. Journal of Economic Perspectives, 21(3), 131–154.\nKimura and Chen (2016), Implications of Mega Free Trade Agreements for Asian Regional Integration and RCEP Negotiation.\n\nWTO and JETRO-IDE (2011), Trade patterns and global value chains in East Asia: from trade in goods to trade in tasks.\nData links\n\nhttps://ttd.wto.org/en\nhttps://www.macmap.org/\nhttps://www.wto.org/english/res_e/statis_e/tariff_profiles_list_e.htm\nhttps://rtais.wto.org/\nhttps://unctad.org/topic/trade-analysis/non-tariff-measures/NTMs-data\nhttps://wits.worldbank.org/tariff/non-tariff-measures\nhttps://datacatalog.worldbank.org/search/dataset/0040437/ad-valorem-equivalent-of-non-tariff-measures"
+  },
+  {
+    "objectID": "slides/06_geopolitics-slides.html#overview",
+    "href": "slides/06_geopolitics-slides.html#overview",
+    "title": "Trade Conflicts",
+    "section": "Overview",
+    "text": "Overview\n\nGain from trade\nHistorical case: US–Japan (1970s–1990s)\n\nCurrent case: US–China (2018–present)\n\nLessons for global supply chains"
+  },
+  {
+    "objectID": "slides/06_geopolitics-slides.html#gain-from-trade",
+    "href": "slides/06_geopolitics-slides.html#gain-from-trade",
+    "title": "Trade Conflicts",
+    "section": "Gain from trade",
+    "text": "Gain from trade\n\nNational welfare generally increases: higher production frontier, more variety of goods\nUneven distribution effects\n\nimport competing sectors vs export sectors\nsmall firms vs large firms\nskilled workers vs unskilled workers\n\npolitical interests"
+  },
+  {
+    "objectID": "slides/06_geopolitics-slides.html#globalization",
+    "href": "slides/06_geopolitics-slides.html#globalization",
+    "title": "Trade Conflicts",
+    "section": "Globalization",
+    "text": "Globalization\n\nSource: IMF"
+  },
+  {
+    "objectID": "slides/06_geopolitics-slides.html#fragmentation",
+    "href": "slides/06_geopolitics-slides.html#fragmentation",
+    "title": "Trade Conflicts",
+    "section": "Fragmentation",
+    "text": "Fragmentation\n\nSource: IMF"
+  },
+  {
+    "objectID": "slides/06_geopolitics-slides.html#us-trade-deficit",
+    "href": "slides/06_geopolitics-slides.html#us-trade-deficit",
+    "title": "Trade Conflicts",
+    "section": "US trade deficit",
+    "text": "US trade deficit"
+  },
+  {
+    "objectID": "slides/06_geopolitics-slides.html#us-income-inequality",
+    "href": "slides/06_geopolitics-slides.html#us-income-inequality",
+    "title": "Trade Conflicts",
+    "section": "US income inequality",
+    "text": "US income inequality"
+  },
+  {
+    "objectID": "slides/06_geopolitics-slides.html#us-japan-trade-conflicts-1",
+    "href": "slides/06_geopolitics-slides.html#us-japan-trade-conflicts-1",
+    "title": "Trade Conflicts",
+    "section": "US-Japan trade conflicts (1)",
+    "text": "US-Japan trade conflicts (1)\n\n1950s–1980s: US industry complaints\n\nCotton products in 1950s, quantity control\nOther textiles in 1960s, VER\nSteel, price control (1970s), quantity (1980s)\nTV sets, anti-dumping surcharge (1970s), VER (1979)\nMachine tools, price controls (1980s), VER (1986)"
+  },
+  {
+    "objectID": "slides/06_geopolitics-slides.html#us-japan-trade-conflicts-2",
+    "href": "slides/06_geopolitics-slides.html#us-japan-trade-conflicts-2",
+    "title": "Trade Conflicts",
+    "section": "US-Japan trade conflicts (2)",
+    "text": "US-Japan trade conflicts (2)\n\n\n1980s~: structural barriers (capital control, keiretsu)\n\nAutomobile, VER (1981~1994, 3 renewals): price up, FDI\nAccess to Japanese markets: beef, oranges quotas increased\nSemiconductor Agreement 1986 (anti-dumping, market access 20%)\nSuper-301: unfair trading partner\n\nStructural Impediments Initiative (SII) (1989-90)\n\nFocus on keiretsu, distribution, standards\n\nPlaza Accord (1985): coordinated dollar depreciation\n\n\n\n\nSemiconductor: retaliatory tariff (1987, 300%), renewed in 1991, adding Korea in 1996\nYen appreciation: Japanese FDI boom, Asian value chains Ref: Feenstra (1984) Vogel (1996) Ahearne et al. (2003)"
+  },
+  {
+    "objectID": "slides/06_geopolitics-slides.html#us-japan-conflicts-3",
+    "href": "slides/06_geopolitics-slides.html#us-japan-conflicts-3",
+    "title": "Trade Conflicts",
+    "section": "US-Japan Conflicts (3)",
+    "text": "US-Japan Conflicts (3)\n\nEnd of conflicts\n\nStagnation of Japanese business in 1990s and 2000s\nOther economies in East Asia growing\nChannels of negotiations\nWTO’s Dispute Settlement Mechanism (anti-dumping, safeguards)\n\nEmergence of regional FTA"
+  },
+  {
+    "objectID": "slides/06_geopolitics-slides.html#chinas-rise-and-integration",
+    "href": "slides/06_geopolitics-slides.html#chinas-rise-and-integration",
+    "title": "Trade Conflicts",
+    "section": "China’s Rise and Integration",
+    "text": "China’s Rise and Integration\n\nWTO accession 2001\n\nDeep GVC integration with the U.S.\n\nThe “China Shock” on U.S. workers (Autor, Dorn & Hanson, 2016):\n\nReductions in both employment and wage levels, a steep drop in households’ average earnings\nImport competition explains 25% aggregate decline in US manufacturing employment"
+  },
+  {
+    "objectID": "slides/06_geopolitics-slides.html#us-china-trade-conflicts-1",
+    "href": "slides/06_geopolitics-slides.html#us-china-trade-conflicts-1",
+    "title": "Trade Conflicts",
+    "section": "US-China Trade Conflicts (1)",
+    "text": "US-China Trade Conflicts (1)\n2018–2019: sectoral tariffs and Chinese retaliation\n\nSafeguards on washing machines and solar panels (Jan 2018)\nSteel and aluminum, Section 232: 25% / 10% (Mar 2018)\nSection 301 (IP, forced technology transfer):\n\nList 1–2: $50B (Jul–Aug 2018)\nList 3: $200B, 10% → 25% (Sep 2018 / May 2019)\nList 4A: ~$120B at 15% (Sep 2019)\n\nChina’s retaliation: ~$110B of US goods, targeting soybeans, pork, autos"
+  },
+  {
+    "objectID": "slides/06_geopolitics-slides.html#us-china-trade-conflicts-2",
+    "href": "slides/06_geopolitics-slides.html#us-china-trade-conflicts-2",
+    "title": "Trade Conflicts",
+    "section": "US-China trade conflicts (2)",
+    "text": "US-China trade conflicts (2)\nStructural and tech issues\n\nStructural demands: state subsidies, SOEs, forced tech transfer\nPhase One deal (Jan 2020): purchase commitments\nTech controls (cf. Semiconductor Agreement):\n\nZTE (2018), Huawei Entity List (2019)\nAdvanced-chip export controls (Oct 2022), CHIPS Act (2022)\n\nChina’s counter-tools: gallium/germanium (2023), rare earths"
+  },
+  {
+    "objectID": "slides/06_geopolitics-slides.html#us-china-tariff-1",
+    "href": "slides/06_geopolitics-slides.html#us-china-tariff-1",
+    "title": "Trade Conflicts",
+    "section": "US-China Tariff (1)",
+    "text": "US-China Tariff (1)\n\n\n\n\n\n\n\nSource: PIIE\n\n\n\n\n\nSection 301 tariffs on ~$370B imports\n\nChina’s retaliation\n\nExpansion into tech & national security"
+  },
+  {
+    "objectID": "slides/06_geopolitics-slides.html#us-china-tariff-2",
+    "href": "slides/06_geopolitics-slides.html#us-china-tariff-2",
+    "title": "Trade Conflicts",
+    "section": "US-China Tariff (2)",
+    "text": "US-China Tariff (2)\n\n\n\n\n\n\n\nSource: PIIE"
+  },
+  {
+    "objectID": "slides/06_geopolitics-slides.html#effects-on-us-price-and-consumption",
+    "href": "slides/06_geopolitics-slides.html#effects-on-us-price-and-consumption",
+    "title": "Trade Conflicts",
+    "section": "Effects on US’ Price and Consumption",
+    "text": "Effects on US’ Price and Consumption\n\nImport and retaliatory tariffs\n\ndeclines in imports and exports and import variety\ncomplete pass-through of tariffs to consumer\nincrease tariff revenue\ngains to domestic producers\n\nNet aggregate real income loss 0.04% of GDP (Fajgelbaum et al., 2020)"
+  },
+  {
+    "objectID": "slides/06_geopolitics-slides.html#trade-diversion-supply-chain-shifts",
+    "href": "slides/06_geopolitics-slides.html#trade-diversion-supply-chain-shifts",
+    "title": "Trade Conflicts",
+    "section": "Trade Diversion & Supply Chain Shifts",
+    "text": "Trade Diversion & Supply Chain Shifts\n\n\n\nCountries that operate along downward-sloping supplies whose exports substitute (complement) the United States and China are among the larger (smaller) beneficiaries of the trade war"
+  },
+  {
+    "objectID": "slides/06_geopolitics-slides.html#channels-of-resolution",
+    "href": "slides/06_geopolitics-slides.html#channels-of-resolution",
+    "title": "Trade Conflicts",
+    "section": "Channels of resolution",
+    "text": "Channels of resolution\n\n\n\n\n\n\n\n\n\nUS–Japan\nUS–China\n\n\n\n\nMultilateral\nWTO dispute settlement, regional FTAs\nWTO sidelined\n\n\nBilateral\nSII talks, Semiconductor Agreement\nPhase One, truces, Board of Trade\n\n\nOutcome\nConflict faded as Japan stagnated\nNo off-ramp yet; truce renewed repeatedly"
+  },
+  {
+    "objectID": "slides/06_geopolitics-slides.html#comparing-the-two-episodes",
+    "href": "slides/06_geopolitics-slides.html#comparing-the-two-episodes",
+    "title": "Trade Conflicts",
+    "section": "Comparing the two episodes",
+    "text": "Comparing the two episodes\n\n\n\n\n\n\n\n\n\nIssue\nUS–Japan (1970s–90s)\nUS–China (2018– )\n\n\n\n\nRivalry\nMarket share\nTech + geopolitics\n\n\nTriggering sectors\nTextiles, steel, TVs, autos, chips\nSteel, solar, Section 301 lists, chips\n\n\nTools\nVERs, quotas, yen revaluation\nTariffs, export controls, Entity List\n\n\nStructural demands\nKeiretsu, distribution (SII)\nSubsidies, SOEs, tech transfer\n\n\nFirm responses\nJapan FDI → US/Asia\nChina FDI → SE Asia\n\n\nEffects\nAsian supply chains\nDiversification"
+  },
+  {
+    "objectID": "slides/06_geopolitics-slides.html#takeaways",
+    "href": "slides/06_geopolitics-slides.html#takeaways",
+    "title": "Trade Conflicts",
+    "section": "Takeaways",
+    "text": "Takeaways\n\nTrade restrictions: production relocation\n\nTrade policy alone would be distortionary: it shifts trade flows rather than fixing the underlying imbalance\n\nGVCs become sticky once established"
+  },
+  {
+    "objectID": "slides/06_geopolitics-slides.html#references",
+    "href": "slides/06_geopolitics-slides.html#references",
+    "title": "Trade Conflicts",
+    "section": "References",
+    "text": "References\n\n\nIto and Hoshi (2020) Chapter 13\nAutor, D. H., Dorn, D., & Hanson, G. H. (2013). The China Syndrome: Local Labor Market Effects of Import Competition in the United States. American Economic Review, 103(6), 2121–2168.\nFajgelbaum, P. D., Goldberg, P. K., Kennedy, P. J., & Khandelwal, A. K. (2019). The Return to Protectionism (Working Paper No. 25638). National Bureau of Economic Research.\nFajgelbaum, P., Goldberg, P., Kennedy, P., Khandelwal, A., & Taglioni, D. (2024). The US-China Trade War and Global Reallocations. American Economic Review: Insights, 6(2), 295–312.\nAmiti, M., Redding, S. J., & Weinstein, D. E. (2019). The Impact of the 2018 Tariffs on Prices and Welfare. Journal of Economic Perspectives, 33(4), 187–210. - Aiyar, S., Ilyina, A., Chen, J., Kangur, A., Trevino, J., Ebeke, C., Gudmundsson, T., Soderberg, G., Schulze, T., Kunaratskul, T., Ruta, M., Garcia-Saltos, R., & Rodriguez, S. (2023). Geo-Economic Fragmentation and the Future of Multilateralism. Staff Discussion Notes, 2023(001), 1.\nData Link\n\nhttps://www.piie.com/research/piie-charts/2019/us-china-trade-war-tariffs-date-chart\nhttps://www.piie.com/research/piie-charts/2025/trumps-tariff-revenue-tracker-how-much-us-collecting-which-imports-are"
+  },
+  {
+    "objectID": "slides/08_fdi-slides.html#objectives",
+    "href": "slides/08_fdi-slides.html#objectives",
+    "title": "Foreign Direct Investment",
+    "section": "Objectives",
+    "text": "Objectives\n\nOutward vs inward FDI\nIdentify barriers to inward FDI\nCompare commercial and strategic investment logic against official development assistance (ODA)"
+  },
+  {
+    "objectID": "slides/08_fdi-slides.html#key-concepts",
+    "href": "slides/08_fdi-slides.html#key-concepts",
+    "title": "Foreign Direct Investment",
+    "section": "Key Concepts",
+    "text": "Key Concepts\n\nForeign Direct Investment (FDI)\nMergers & Acquisitions (M&A)\nMultinational Enterprises (MNEs)"
+  },
+  {
+    "objectID": "slides/08_fdi-slides.html#roadmap",
+    "href": "slides/08_fdi-slides.html#roadmap",
+    "title": "Foreign Direct Investment",
+    "section": "Roadmap",
+    "text": "Roadmap\n\nConcepts: FDI, M&A, MNEs\nTrends: outward FDI from ASEAN, manufacturing and services\nBarriers: what holds back inward FDI\nLogic: commercial and strategic investment vs. ODA"
+  },
+  {
+    "objectID": "slides/08_fdi-slides.html#overview-fdi-and-oda",
+    "href": "slides/08_fdi-slides.html#overview-fdi-and-oda",
+    "title": "Foreign Direct Investment",
+    "section": "Overview: FDI and ODA",
+    "text": "Overview: FDI and ODA\n\n\n\nRecap of lecture 1: ODA is public, concessional, development-oriented.\nToday: FDI is private and profit-seeking; compare scale and GDP share."
+  },
+  {
+    "objectID": "slides/08_fdi-slides.html#key-concepts-fdi-ma-mnes",
+    "href": "slides/08_fdi-slides.html#key-concepts-fdi-ma-mnes",
+    "title": "Foreign Direct Investment",
+    "section": "Key concepts: FDI, M&A, MNEs",
+    "text": "Key concepts: FDI, M&A, MNEs\n\nFDI: cross-border investment with a lasting interest and control (commonly a 10% voting-share threshold)\n\nForms: greenfield, M&A, reinvested earnings\n\nM&A: acquiring or merging with an existing foreign firm, rather than building new capacity\nMNEs: firms that own and control operations in more than one country; the main actors behind FDI\nMotives: market-seeking, resource-seeking, efficiency-seeking"
+  },
+  {
+    "objectID": "slides/08_fdi-slides.html#fdi-vs.-portfolio-investment",
+    "href": "slides/08_fdi-slides.html#fdi-vs.-portfolio-investment",
+    "title": "Foreign Direct Investment",
+    "section": "FDI vs. portfolio investment",
+    "text": "FDI vs. portfolio investment\n\nDirect investment: lasting interest and influence over management of a foreign enterprise (typically 10% or more of voting power).\nPortfolio investment: cross-border holdings of securities without a direct-investment relationship.\nDirect investment is closely linked to multinational production and global value chains; portfolio flows are generally more liquid and volatile.\n\n\n\nIn the balance of payments, both direct and portfolio investment are recorded in the financial account.\nThe Balance of Payments lecture shows that Japan’s portfolio flows have been more volatile than direct investment flows."
+  },
+  {
+    "objectID": "slides/08_fdi-slides.html#japans-direct-investment-outward-vs.-inward",
+    "href": "slides/08_fdi-slides.html#japans-direct-investment-outward-vs.-inward",
+    "title": "Foreign Direct Investment",
+    "section": "Japan’s direct investment: Outward vs. inward",
+    "text": "Japan’s direct investment: Outward vs. inward\n\n\nCumulative 1996–2025: outward roughly 370 trillion yen vs. inward roughly 58 trillion yen (about 6x), assuming units of 100 million yen.\nJapan is a large net outward investor; inward FDI stays small relative to GDP. Use this to lead into “barriers to inward FDI”."
+  },
+  {
+    "objectID": "slides/08_fdi-slides.html#japans-outward-direct-investment-components",
+    "href": "slides/08_fdi-slides.html#japans-outward-direct-investment-components",
+    "title": "Foreign Direct Investment",
+    "section": "Japan’s outward direct investment: Components",
+    "text": "Japan’s outward direct investment: Components"
+  },
+  {
+    "objectID": "slides/08_fdi-slides.html#japans-capital-liberalization-and-fdi",
+    "href": "slides/08_fdi-slides.html#japans-capital-liberalization-and-fdi",
+    "title": "Foreign Direct Investment",
+    "section": "Japan’s capital liberalization and FDI",
+    "text": "Japan’s capital liberalization and FDI\n\nBefore the 1970s: strict controls on capital transactions.\n1970s: gradual liberalization of inward direct and portfolio investment.\n1980: foreign exchange regime shifted from generally prohibited unless permitted to generally free unless restricted.\n1980s–1990s: further liberalization of outward investment and foreign borrowing.\nDiscussion: Why might inward FDI remain limited even after legal restrictions are relaxed?\n\n\n\nAdapted from the capital controls and liberalization timeline in the Balance of Payments lecture.\nLegal openness does not automatically eliminate business costs, hiring difficulties, or other barriers."
+  },
+  {
+    "objectID": "slides/08_fdi-slides.html#barriers-to-inward-fdi",
+    "href": "slides/08_fdi-slides.html#barriers-to-inward-fdi",
+    "title": "Foreign Direct Investment",
+    "section": "Barriers to inward FDI",
+    "text": "Barriers to inward FDI\n\n\n\n\nReported barrier\n2012 (%)\n2016 (%)\n\n\n\n\nHigh cost of doing business\n78.6\n74.6\n\n\nDistinctiveness of the Japanese market\n43.1\n46.6\n\n\nDifficulty securing personnel\n34.1\n45.7\n\n\nStrict regulations and permits\n36.7\n32.1\n\n\nComplicated administrative procedures\n33.7\n28.6\n\n\n\nSource: Hoshi (2018), Table 1, based on METI surveys of foreign affiliates.\n\n\n\nThese are selected responses from the 2012 and 2016 surveys, not a comprehensive ranking of all barriers.\nThe reported difficulty securing personnel increased between surveys.\nConnect this Japan case to the broader regulatory, infrastructure and institutional barriers in the next slide."
+  },
+  {
+    "objectID": "slides/08_fdi-slides.html#japans-inward-fdi-and-business-environment",
+    "href": "slides/08_fdi-slides.html#japans-inward-fdi-and-business-environment",
+    "title": "Foreign Direct Investment",
+    "section": "Japan’s inward FDI and business environment",
+    "text": "Japan’s inward FDI and business environment\n\n\n\nThe original lecture emphasizes Japan’s relatively low inward FDI compared with other advanced economies.\nThis is a descriptive cross-country comparison, not evidence that the business score causes FDI."
+  },
+  {
+    "objectID": "slides/08_fdi-slides.html#investment-logic-fdi-vs.-oda",
+    "href": "slides/08_fdi-slides.html#investment-logic-fdi-vs.-oda",
+    "title": "Foreign Direct Investment",
+    "section": "Investment logic: FDI vs. ODA",
+    "text": "Investment logic: FDI vs. ODA\n\n\n\n\n\n\n\n\n\n\nAspect\nCommercial FDI\nStrategic investment\nODA\n\n\n\n\nMain actor\nPrivate firms (MNEs)\nState-linked firms, state-backed investors\nOfficial agencies\n\n\nObjective\nProfit, market access, efficiency\nSupply security, influence, geopolitical position\nDevelopment and welfare of recipients\n\n\nTerms\nMarket-based returns\nReturns may be secondary to strategic gain\nConcessional (grant element)\n\n\nRisk appetite\nAvoids high-risk, low-return locations\nMay accept lower returns for strategic reasons\nGoes where private capital avoids\n\n\nLink to recipient\nFollows investment climate\nShapes it to its own ends\nBuilds preconditions for investment\n\n\n\n\n\n\nTable is a framing device; adapt the “strategic” column to the cases you plan to discuss."
+  },
+  {
+    "objectID": "slides/08_fdi-slides.html#oda-and-fdi-relationship",
+    "href": "slides/08_fdi-slides.html#oda-and-fdi-relationship",
+    "title": "Foreign Direct Investment",
+    "section": "ODA and FDI relationship",
+    "text": "ODA and FDI relationship\n\n\nInfrastructure & human capital improvement → lower investment costs\nInstitutional reforms & risk reduction → improved investment climate\nPolicy dialogue & technical cooperation → regulatory harmonization\n\n\n\nThe case of Vietnam"
+  },
+  {
+    "objectID": "slides/08_fdi-slides.html#complementarity-vs.-substitution",
+    "href": "slides/08_fdi-slides.html#complementarity-vs.-substitution",
+    "title": "Foreign Direct Investment",
+    "section": "Complementarity vs. Substitution",
+    "text": "Complementarity vs. Substitution\n\nComplementary view:\n\nODA builds preconditions for private investment (infrastructure, governance).\nEspecially in low-income countries where private capital avoids risk.\n\nSubstitution view:\n\nExcessive aid can crowd out FDI if it distorts markets or maintains uncompetitive sectors.\nConditionality or tied aid may limit spillovers."
+  },
+  {
+    "objectID": "slides/08_fdi-slides.html#japans-experience",
+    "href": "slides/08_fdi-slides.html#japans-experience",
+    "title": "Foreign Direct Investment",
+    "section": "Japan’s Experience",
+    "text": "Japan’s Experience\n\n\nTied aid and “ingredients approach” → enabled Japanese firms to invest later.\nEvidence: Ono and Sekiyama (2023) on the effect of ODA on FDI by aid type\nCase study: Vietnam (Tsuno, 2023)\nTransition from aid-recipient to investment-partner relationship.\n\n\n\n\nCheck that the Ono and Sekiyama (2023) finding matches the bullet above before presenting; the original deck cited it only in references."
+  },
+  {
+    "objectID": "slides/08_fdi-slides.html#future-directions",
+    "href": "slides/08_fdi-slides.html#future-directions",
+    "title": "Foreign Direct Investment",
+    "section": "Future Directions",
+    "text": "Future Directions\n\nAlign ODA with investment climate improvement (connectivity, legal reform)\nPromote Aid for Trade and Public-Private Partnerships (PPPs)\nEnsure transparency to avoid tied-aid distortions"
+  },
+  {
+    "objectID": "slides/08_fdi-slides.html#references",
+    "href": "slides/08_fdi-slides.html#references",
+    "title": "Foreign Direct Investment",
+    "section": "References",
+    "text": "References\n\n\nBurnside, C. & Dollar, D. 2000, ‘Aid, policies, and growth’, American economic review, 90 (4).\nNguyen, H. P., Huynh, A. N. Q., Reisach, U., & Kim, X. L. T. 2022. How does Japanese ODA really contribute to economic growth for ASEAN countries? Journal of International Economics and Management, 22(2).\nMOFA, 2023, White Paper on Development Cooperation 2023\nOno, S., & Sekiyama, T. (2023). Differences in impact of official development assistance on foreign direct investment by aid types. Frontiers in Political Science, 5.\nHoshi, T. (2018). Has Abenomics succeeded in raising Japan’s inward foreign direct investment? Asian Economic Policy Review, 13(1), 149–168.\nTsuno, M., 2023, The Role of Japanese Official Development Assistance in Viet Nam’s Socio-economic Development. In Viet Nam 2045: Development Issues and Challenges, (Kimura, F. et al, pp. 53–97). ERIA.\nData link\n\nhttps://data.worldbank.org/indicator/NY.GDP.MKTP.CD\nhttps://data.worldbank.org/indicator/BX.KLT.DINV.CD.WD\nhttps://data.worldbank.org/indicator/DT.ODA.ALLD.CD\nhttps://data.worldbank.org/indicator/BX.TRF.PWKR.CD.DT"
+  },
+  {
+    "objectID": "slides/10_exchange-slides.html#introduction",
+    "href": "slides/10_exchange-slides.html#introduction",
+    "title": "Exchange Rate and Competitiveness",
+    "section": "Introduction",
+    "text": "Introduction\n\nExchange Rate is relative price of two currencies\nCompetitiveness:\n\ndevaluation (fixed regime)\ndepreciation (floating regime)"
+  },
+  {
+    "objectID": "slides/10_exchange-slides.html#bretton-woods-system",
+    "href": "slides/10_exchange-slides.html#bretton-woods-system",
+    "title": "Exchange Rate and Competitiveness",
+    "section": "Bretton Woods system",
+    "text": "Bretton Woods system\n\nCompetitive devaluation in the 1930s\nAfter WWII\n\ntied to USD, then to gold\n360 yen/dollar: 1949-1971\n\nTrade balance mirrored balance in foreign reserves: costly to maintain fix exchange rates\n\n\n\ntrade deficits means lack of foreign reserves, leading to reduce imports and could hurt the economy\nUSD devaluation then to main fix exchange rates, Yen needs devaluation, buying USD and selling Yen"
+  },
+  {
+    "objectID": "slides/10_exchange-slides.html#floating-regimes",
+    "href": "slides/10_exchange-slides.html#floating-regimes",
+    "title": "Exchange Rate and Competitiveness",
+    "section": "Floating Regimes",
+    "text": "Floating Regimes\n\nIssues with the fixed systems:\n\nSlow adjustment of the rate to changes in fundamentals\nUS trade deficit: USD abroad outweight US’s gold reserve\n\nUS suspended the convertibility of the dollar in 1971 and devaluated the dollar in 1973\nMisalignment: level where trade account balances\n\n\n\nUSD overvalued but JPY and German mark undervalued: Japan’s and Germany’s productivity growth was higher than that of the US\nAs capital controls were lifted in the second half of the 1970s and 1980s in Japan, capital flows became more important factors that influence the exchange rate"
+  },
+  {
+    "objectID": "slides/10_exchange-slides.html#exchange-rate-movement",
+    "href": "slides/10_exchange-slides.html#exchange-rate-movement",
+    "title": "Exchange Rate and Competitiveness",
+    "section": "Exchange rate movement",
+    "text": "Exchange rate movement\n\n\n\nDuring 2000, the USD/JPY moved little, the yen appreciated against the euro: depreciation of the euro against both the dollar and yen."
+  },
+  {
+    "objectID": "slides/10_exchange-slides.html#purchasing-power-parity-ppp",
+    "href": "slides/10_exchange-slides.html#purchasing-power-parity-ppp",
+    "title": "Exchange Rate and Competitiveness",
+    "section": "Purchasing power parity (PPP)",
+    "text": "Purchasing power parity (PPP)\n\\[\nS^{real}_t (USD/JPY) = S^{Nom}_t \\times \\frac{P_{JP,t}}{P_{US,t}}\n\\] - If the purchasing power of a currency is the same between two countries, the real exchange rate becomes 1: the purchasing power parity (PPP) holds in absolute terms.\n\nThe real exchange rate is the relative price of foreign goods: a measure of competitiveness of exports and imports.\n\n\n\n1 USD = 100 JPY, 1 USD = 1 apple, 100 yen = 1 apple\n\nUS inflation 100%: 2USD = 1 apple, real ex 100/(2/1)=50 JPY\nJapan inflation 100%: 200 yen = 1 apple, real ex 100*(2/1)/1=200 JPY\nBoth inflation: 100*(2/1)/(2/1) = 100 JPY"
+  },
+  {
+    "objectID": "slides/10_exchange-slides.html#nominal-vs-real-exchange-rate",
+    "href": "slides/10_exchange-slides.html#nominal-vs-real-exchange-rate",
+    "title": "Exchange Rate and Competitiveness",
+    "section": "Nominal vs real exchange rate",
+    "text": "Nominal vs real exchange rate\n\n\n\nthe main driver of the real exchange rate appreciation was nominal exchange rate appreciation\nhigher gap in CPI diverge nominal and real exchange rates"
+  },
+  {
+    "objectID": "slides/10_exchange-slides.html#effective-exchange-rates",
+    "href": "slides/10_exchange-slides.html#effective-exchange-rates",
+    "title": "Exchange Rate and Competitiveness",
+    "section": "Effective Exchange Rates",
+    "text": "Effective Exchange Rates\n\\[\nNEER = \\sum_{i}^{N} \\omega_i S^{Nom}_{i.t}\n\\] \\[\nREER = \\sum_{i}^{N} \\omega_i S^{Real}_{i.t}\n\\]"
+  },
+  {
+    "objectID": "slides/10_exchange-slides.html#neer-vs-reer",
+    "href": "slides/10_exchange-slides.html#neer-vs-reer",
+    "title": "Exchange Rate and Competitiveness",
+    "section": "NEER vs REER",
+    "text": "NEER vs REER\n\n\n\n73-95: despite the yen’s REER appreciation, trade surpluses were maintained as productivity growth\n95~: despite lagged productivity growth, trade surpluses were maintained due to Japanese deflation, yen depreciation"
+  },
+  {
+    "objectID": "slides/10_exchange-slides.html#exchange-rate-and-tradeinvestment",
+    "href": "slides/10_exchange-slides.html#exchange-rate-and-tradeinvestment",
+    "title": "Exchange Rate and Competitiveness",
+    "section": "Exchange rate and Trade/Investment",
+    "text": "Exchange rate and Trade/Investment\n\neffects on trade through the relative price of goods\n\n2000s~: yen exchange rate as important factor for Japan’s competitiveness (Ito and Shimizu, 2015)\n\neffects on foreign direct investment\n\nreallocate production from Japan to Asia due to yen appreciation (Golderg and Klein, 1996)"
+  },
+  {
+    "objectID": "slides/10_exchange-slides.html#exchange-rate-dynamics",
+    "href": "slides/10_exchange-slides.html#exchange-rate-dynamics",
+    "title": "Exchange Rate and Competitiveness",
+    "section": "Exchange Rate Dynamics",
+    "text": "Exchange Rate Dynamics\n\nlong run: fundamentals (interest rates, money supplies, productivity growth)\n\ncarry trade practice\n\nshort-run: arrival of new information regarding these fundamentals (not the actual changes)\n\n\n\ninterest rate declines: discourage capital inflows and encourage capital outflows: home currency depreciates\nlow interest rate in yen by borrowing in yen and investing in a high-interest-rate currency: carry trade\nprevalent in Japan and the yen in the 1990s and 2000s, until interest rates in all advanced countries collapsed to near zero after the global financial"
+  },
+  {
+    "objectID": "slides/10_exchange-slides.html#us-trade-deficit",
+    "href": "slides/10_exchange-slides.html#us-trade-deficit",
+    "title": "Exchange Rate and Competitiveness",
+    "section": "US Trade Deficit",
+    "text": "US Trade Deficit"
+  },
+  {
+    "objectID": "slides/10_exchange-slides.html#intervention",
+    "href": "slides/10_exchange-slides.html#intervention",
+    "title": "Exchange Rate and Competitiveness",
+    "section": "Intervention",
+    "text": "Intervention\n\npurchases or sales of foreign currencies in exchange for domestic currency by the monetary authorities to influence the level of the exchange rate\n\ndomestic interest rate channel: sterilized intervention\nportfolio-balance channel: foreign vs domestic bonds\nsignalling channel: collective action\n\nfixed exchange rate system: constant intervention\nflexible exchange rate system: less intervention\n\n\n\ntrade deficits and capital outflows: raised domestic interests or devaluation currency\nunsterilized intervention: sell the foreign currency: expansion of money: interest rate declines: discourage capital inflows and encourage capital outflows: home currency depreciates\nless intervention: not effective with limited resources, US view on intervention as unfair trade policy"
+  },
+  {
+    "objectID": "slides/10_exchange-slides.html#intervention-decisions",
+    "href": "slides/10_exchange-slides.html#intervention-decisions",
+    "title": "Exchange Rate and Competitiveness",
+    "section": "Intervention decisions",
+    "text": "Intervention decisions\n\nSource: Ito (2007)"
+  },
+  {
+    "objectID": "slides/10_exchange-slides.html#japanese-intervention",
+    "href": "slides/10_exchange-slides.html#japanese-intervention",
+    "title": "Exchange Rate and Competitiveness",
+    "section": "Japanese Intervention",
+    "text": "Japanese Intervention\n\nIntervention frequency declined over time\nIntervention sizes spiked in 1978, 1987, 1989, and 2003–04\nyen-selling interventions were more common than yen-buying\nauthorities sold yen when it was strong/appreciating and bought yen when it was weak/depreciating\n\n\n\nPlaza Accord (1985): selling dollars/buying yen\nLourve Accrod (1987): buying dollars/selling yen\nAbenomics and quantitative easing (2003-04): selling yen"
+  },
+  {
+    "objectID": "slides/10_exchange-slides.html#invoicing-currency",
+    "href": "slides/10_exchange-slides.html#invoicing-currency",
+    "title": "Exchange Rate and Competitiveness",
+    "section": "Invoicing currency",
+    "text": "Invoicing currency\n\nShare of yen-invoicing in Japan’s exports:\n\nUS: 10–20%\nEU: 30%\nAsia: 40-50% (re-exported to US and EU)\n\nShare of yen-invoicing in Japan’s imports:\n\nUS and Asia: 30%\nEU: 60%"
+  },
+  {
+    "objectID": "slides/10_exchange-slides.html#settlement-currency",
+    "href": "slides/10_exchange-slides.html#settlement-currency",
+    "title": "Exchange Rate and Competitiveness",
+    "section": "Settlement Currency",
+    "text": "Settlement Currency"
+  },
+  {
+    "objectID": "slides/10_exchange-slides.html#foreign-reserve-currency",
+    "href": "slides/10_exchange-slides.html#foreign-reserve-currency",
+    "title": "Exchange Rate and Competitiveness",
+    "section": "Foreign Reserve Currency",
+    "text": "Foreign Reserve Currency"
+  },
+  {
+    "objectID": "slides/10_exchange-slides.html#references",
+    "href": "slides/10_exchange-slides.html#references",
     "title": "Exchange Rate and Competitiveness",
     "section": "References",
     "text": "References\n\n\nIto and Hoshi (2020) Chapter 12\nIto, K., & Shimizu, J. (2015). Industry-Level Competitiveness, Productivity and Effective Exchange Rates in East Asia. Asian Economic Journal, 29(2), 181–214.\nLinda S. Goldberg & Michael W. Klein, 1996. “Foreign direct investment, trade, and real exchange rate linkages in developing countries,” Proceedings, Federal Reserve Bank of San Francisco, pages 73-100.\nSong, C.-Y. (1997). The Real Exchange Rate and the Current Account Balance in Japan. Journal of the Japanese and International Economies, 11(2), 143–184.\nToru Iwami (2025) “The Internationalization of Yen and Key Currency Questions”, IMF Working Papers 1994, 041 (1994)\nData Link\n\nhttps://fred.stlouisfed.org/series/CPALTT01JPA657N\nhttps://fred.stlouisfed.org/series/CPALTT01USA657N\nhttps://fred.stlouisfed.org/series/AEXJPUS\nhttps://fred.stlouisfed.org/series/CCEUSP01JPA651N\nhttps://www.stat-search.boj.or.jp/ssi/cgi-bin/famecgi2?cgi=$nme_a000_en&lstSelection=FM09\nhttps://www.customs.go.jp/toukei/shinbun/tuuka.html"
