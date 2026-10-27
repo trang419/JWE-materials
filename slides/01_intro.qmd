@@ -236,9 +236,9 @@ Economic growth comes from two different sources:
 
 
 ::: notes
-- Frame the upcoming charts: each panel shows the annual growth rate (%) of one input, or of TFP
-- Preview: Japan's inputs kept growing, but TFP growth stalled — that's the story the next few slides build toward
-- Optional if asked: TFP is measured as a residual — growth left over after accounting for capital, labor, and human capital growth
+- Each panel shows the annual growth rate (%) of one input, or of TFP
+- Japan's inputs kept growing, but TFP growth stalled
+- TFP is measured as a residual — growth left over after accounting for capital, labor, and human capital growth
 :::
 
 ---
@@ -373,9 +373,8 @@ ggbarplot(imfd[!is.na(value)],
 ```
 
 ::: notes
-- Frame the upcoming chart: it shows only one dimension (store of value / reserve holdings), not trade invoicing or pricing, worth noting the yen may play a bigger or smaller role in other functions
-- Preview: the yen has held a stable, mid-sized share of global reserves for decades — this reflects Japan's role as a safe-haven currency despite its shrinking share of world GDP
-- Optional if asked: contrast with the US dollar, which dominates in all three functions simultaneously, that's part of what "reserve currency" usually implies beyond just what this chart shows
+- This shows only one dimension (store of value / reserve holdings), not trade invoicing or pricing, worth noting the yen may play a bigger or smaller role in other functions
+- The yen has held a stable, mid-sized share of global reserves for decades, which reflects Japan's role as a safe-haven currency despite its shrinking share of world GDP
 :::
 
 ## Why demographics matter
@@ -388,9 +387,9 @@ ggbarplot(imfd[!is.na(value)],
 - **Saving**: national saving rates (working-age people save for retirement; retirees draw savings down)
 
 ::: notes
-- Callback: ties directly to the growth-accounting slide — labor was one of the four inputs; this section asks "what happens when that input starts shrinking?"
-- Preview: Japan's median age is now the highest among peers, with population decline already underway — the next two slides show this directly, plus whether migration is offsetting it
-- Optional if asked: aging affects saving in offsetting ways — life-cycle theory predicts lower aggregate saving as retirees dissave, but this is debated empirically for Japan specifically (household saving rates have been unusually resilient)
+- Labor was one of the four inputs; this section asks "what happens when that input starts shrinking?"
+- Japan's median age is now the highest among peers, with population decline already underway. The next two slides show this directly, plus whether migration is offsetting it.
+- Aging affects saving in offsetting ways: life-cycle theory predicts lower aggregate saving as retirees dissave, but this is debated empirically for Japan specifically because household saving rates have been unusually resilient.
 :::
 
 ---
@@ -467,7 +466,7 @@ ggarrange(
 
 
 ::: notes
-- Japan's trajectory as a cautionary tale or a preview of what other aging economies (Korea, China, parts of Europe) will face
+- Japan's trajectory as a cautionary tale or a preview of what other aging economies (Korea, China, parts of Europe) will face.
 :::
 
 ---
