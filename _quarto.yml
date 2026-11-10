@@ -22,6 +22,10 @@ website:
             file: slides/05_asean_integration.html
           - text: "Lecture 6"
             file: slides/06_geopolitics.html
+          - text: "Lecture 7"
+            file: slides/07_oda.html
+          - text: "Lecture 8"
+            file: slides/08_fdi.html
       - text: "Data"
         file: scripts/index.html
 

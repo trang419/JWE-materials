@@ -174,7 +174,7 @@ Trang Tran
 <section id="overview-fdi-and-oda" class="slide level2">
 <h2>Overview: FDI and ODA</h2>
 
-<img data-src="08_fdi_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"><aside class="notes">
+<img data-src="08_fdi_files/figure-html/unnamed-chunk-2-1.png" width="672" class="r-stretch"><aside class="notes">
 <ul>
 <li>Recap of lecture 1: ODA is public, concessional, development-oriented.</li>
 <li>Today: FDI is private and profit-seeking; compare scale and GDP share.</li>
@@ -249,7 +249,7 @@ Trang Tran
 <section id="japans-outward-direct-investment-components" class="slide level2">
 <h2>Japan’s outward direct investment: Components</h2>
 
-<img data-src="08_fdi_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch"></section>
+<img data-src="08_fdi_files/figure-html/unnamed-chunk-6-1.png" width="672" class="r-stretch"></section>
 <section id="japans-capital-liberalization-and-fdi" class="slide level2">
 <h2>Japan’s capital liberalization and FDI</h2>
 <ul>
@@ -338,7 +338,7 @@ Trang Tran
 <section id="japans-inward-fdi-and-business-environment" class="slide level2">
 <h2>Japan’s inward FDI and business environment</h2>
 
-<img data-src="08_fdi_files/figure-revealjs/unnamed-chunk-7-1.png" width="960" class="r-stretch"><aside class="notes">
+<img data-src="08_fdi_files/figure-html/unnamed-chunk-7-1.png" width="672" class="r-stretch"><aside class="notes">
 <ul>
 <li>The original lecture emphasizes Japan’s relatively low inward FDI compared with other advanced economies.</li>
 <li>This is a descriptive cross-country comparison, not evidence that the business score causes FDI.</li>
@@ -720,82 +720,6 @@ Trang Tran
         ]
       });
     </script>
-    
-
-    <script>
-
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-
-      // slide changes (different for each slide format).
-
-      (function () {
-
-        // dispatch for htmlwidgets
-
-        function fireSlideEnter() {
-
-          const event = window.document.createEvent("Event");
-
-          event.initEvent("slideenter", true, true);
-
-          window.document.dispatchEvent(event);
-
-        }
-
-    
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-
-          fireSlideEnter();
-
-    
-
-          // dispatch for shiny
-
-          if (window.jQuery) {
-
-            if (previousSlide) {
-
-              window.jQuery(previousSlide).trigger("hidden");
-
-            }
-
-            if (currentSlide) {
-
-              window.jQuery(currentSlide).trigger("shown");
-
-            }
-
-          }
-
-        }
-
-    
-
-        // hookup for slidy
-
-        if (window.w3c_slidy) {
-
-          window.w3c_slidy.add_observer(function (slide_num) {
-
-            // slide_num starts at position 1
-
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-
-          });
-
-        }
-
-    
-
-      })();
-
-    </script>
-
-    
-
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
