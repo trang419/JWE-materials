@@ -221,12 +221,13 @@ fdi_destination_plot(
 )
 ```
 
-## Japan's outward direct investment: Components
+
 
 ```{r}
 #| eval: false
 #| include: false
 # MOF series (outward only); used for the breakdown because the BOJ file has no components.
+## Japan's outward direct investment: Components
 fdi_jp = fread("../data/08 fdi/mof_fa.csv")
 setnames(fdi_jp, trimws(names(fdi_jp)))
 fdi_jp = fdi_jp[, .(year,
@@ -297,11 +298,6 @@ ggplot(inward_sources, aes(value_bn, destination)) +
         plot.caption = element_text(size = 10, hjust = 0))
 ```
 
-::: notes
-- These are net flows during 2024, not accumulated investment stocks or a ranking of ultimate owners.
-- Singapore and ASEAN excluding Singapore are mutually exclusive; their sum equals the source's ASEAN aggregate.
-- Source workbook: https://www.mof.go.jp/policy/international_policy/reference/balance_of_payments/revised/fdi2024.xlsx
-:::
 
 ## Which industries attract FDI into Japan?
 
