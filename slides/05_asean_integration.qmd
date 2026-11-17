@@ -299,6 +299,90 @@ ggarrange(
 - ASEAN is second largest FDI source of Japan, ¾ is from Singapore in recent years
 :::
 
+## Japanese FDI in ASEAN
+
+```{r}
+#| include: false
+japan_destinations = fread("../data/08 fdi/japan_outward_fdi_asean_2024.csv")
+asean_total = japan_destinations[destination == "ASEAN" & industry == "Total", value_100million_yen]
+world_total = japan_destinations[destination == "World" & industry == "Total", value_100million_yen]
+asean_world_share = 100 * asean_total / world_total
+
+# Reuse the same country/industry definition and source totals in both charts.
+fdi_destination_plot = function(countries, divisor, unit_label, subtitle, accuracy) {
+  totals = japan_destinations[destination %in% countries & industry == "Total"]
+  setorder(totals, value_100million_yen)
+  dat = japan_destinations[destination %in% countries &
+                            industry %in% c("Manufacturing", "Non-manufacturing")]
+  dat[, destination := factor(destination, levels = totals$destination)]
+  totals[, destination := factor(destination, levels = levels(dat$destination))]
+  dat[, industry := factor(industry, levels = c("Manufacturing", "Non-manufacturing"))]
+  ggplot(dat, aes(destination, value_100million_yen / divisor, fill = industry)) +
+    geom_col(width = 0.65, position = position_stack(reverse = TRUE)) +
+    geom_text(data = totals,
+              aes(destination, value_100million_yen / divisor,
+                  label = label_number(accuracy = accuracy, big.mark = ",")(value_100million_yen / divisor)),
+              inherit.aes = FALSE, hjust = -0.12, size = 5) +
+    coord_flip() +
+    scale_fill_manual(values = c("Manufacturing" = "#4477AA", "Non-manufacturing" = "#DDCC77")) +
+    scale_y_continuous(labels = label_comma(), expand = expansion(mult = c(0, 0.16))) +
+    labs(x = NULL, y = paste0("Annual net outward FDI (", unit_label, ")"), fill = NULL,
+         subtitle = subtitle,
+         caption = paste("Source: Ministry of Finance, 2024 annual outward FDI; directional principle.",
+                         "Selected destinations. Non-manufacturing includes services and other industries. Totals reflect source rounding.",
+                         sep = "\n")) +
+    theme_minimal(base_size = 18, base_family = "Arial") +
+    theme(legend.position = "bottom", legend.text = element_text(size = 15),
+          axis.text = element_text(colour = "black", size = 16),
+          panel.grid.major.y = element_blank(), panel.grid.minor = element_blank(),
+          plot.subtitle = element_text(size = 17),
+          plot.caption = element_text(size = 10, hjust = 0),
+          plot.margin = margin(8, 16, 8, 8))
+}
+```
+ 
+```{r}
+#| label: japanese-fdi-asean
+#| fig-width: 11
+#| fig-height: 6
+#| fig-alt: "Japanese outward FDI flows to six ASEAN economies in 2024, split into manufacturing and non-manufacturing. Singapore is the largest destination among those shown."
+fdi_destination_plot(
+  c("Singapore", "Thailand", "Indonesia", "Malaysia", "Vietnam", "Philippines"),
+  divisor = 10, unit_label = "billion yen",
+  subtitle = sprintf("2024: ASEAN share of worldwide outward FDI = %.1f%%", asean_world_share),
+  accuracy = 0.1
+)
+```
+
+
+## Japanese FDI in ASEAN: services
+
+```{r}
+#| label: japanese-fdi-asean-services
+#| fig-width: 11
+#| fig-height: 6
+#| fig-alt: "Selected Japanese outward FDI service industries in ASEAN in 2024: finance and insurance, wholesale and retail, real estate and communications."
+service_names = c("Finance and insurance", "Wholesale and retail", "Real estate", "Communications")
+service_flows = japan_destinations[destination == "ASEAN" & industry %in% service_names]
+service_flows[, industry := factor(industry, levels = rev(service_names))]
+ggplot(service_flows, aes(industry, value_100million_yen / 10)) +
+  geom_col(width = 0.6, fill = "#4477AA") +
+  geom_text(aes(label = label_number(accuracy = 0.1, big.mark = ",")(value_100million_yen / 10)),
+            hjust = -0.12, size = 5.5) +
+  coord_flip() +
+  scale_y_continuous(labels = label_comma(), expand = expansion(mult = c(0, 0.17))) +
+  labs(x = NULL, y = "Annual net outward FDI (billion yen)",
+       subtitle = "Selected service industries, 2024",
+       caption = "Source: Ministry of Finance, 2024 annual flows, p. 1; directional principle.\nThese industries are part of non-manufacturing, which also includes agriculture, mining, construction and other industries.") +
+  theme_minimal(base_size = 18, base_family = "Arial") +
+  theme(axis.text = element_text(colour = "black", size = 16),
+        panel.grid.major.y = element_blank(), panel.grid.minor = element_blank(),
+        plot.subtitle = element_text(size = 17),
+        plot.caption = element_text(size = 10, hjust = 0),
+        plot.margin = margin(8, 16, 8, 8))
+```
+
+
 ## Japanese firms in ASEAN countries 
 
 - Before 1990s: building up factories

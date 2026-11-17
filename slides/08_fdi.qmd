@@ -7,8 +7,6 @@ execute:
   message: false
   warning: false
 format:
-  html:
-    toc: true
   revealjs:
     output-file: 08_fdi-slides.html
     self-contained: false
@@ -22,6 +20,8 @@ format:
     incremental: true
     controls: true
     hash: true
+  html:
+    toc: true
 draft: false
 ---
 ```{r}
@@ -30,12 +30,27 @@ library(readxl)
 library(ggpubr)
 library(scales)
 library(data.table)
+
+# Keep the same wide chart canvas in HTML and RevealJS renders.
+if (.Platform$OS.type == "windows") {
+  Sys.setlocale("LC_CTYPE", "English_United States.utf8")
+}
+knitr::opts_chunk$set(
+  dev = "ragg_png", fig.width = 12, fig.height = 6, dpi = 144,
+  # Both formats share the same images so rendering one keeps the other usable.
+  fig.path = "08_fdi_files/figure-shared/"
+)
+theme_set(theme_pubr(base_size = 16, base_family = "Arial"))
+theme_update(legend.position = "bottom", legend.title = element_blank(),
+             legend.text = element_text(size = 12),
+             plot.caption = element_text(size = 10, hjust = 0),
+             plot.margin = margin(8, 12, 8, 8))
 ```
 
 
 ## Objectives
 
-- Outward vs inward FDI 
+- Outward vs inward FDI
 - Identify barriers to inward FDI
 - Compare commercial and strategic investment logic against official development assistance (ODA)
 
@@ -48,13 +63,18 @@ library(data.table)
 ## Roadmap
 
 - Concepts: FDI, M&A, MNEs
-- Trends: outward FDI from ASEAN, manufacturing and services
+- Trends: Japanese outward FDI to ASEAN, manufacturing and services
 - Barriers: what holds back inward FDI
 - Logic: commercial and strategic investment vs. ODA
 
 ## Overview: FDI and ODA
 ```{r}
 world = fread("../data/08 fdi/world_fdi_oda.csv")
+world[, indicator := fcase(
+  indicator == "Foreign direct investment, net inflows", "FDI inflows",
+  indicator == "Net official development assistance and official aid received", "ODA and official aid",
+  indicator == "Personal remittances, received", "Remittances",
+  default = indicator)]
 ggarrange(
   ggline(world[!grepl("outflows",indicator)],
          x="date",xlab="",
@@ -70,8 +90,8 @@ ggarrange(
          color = "indicator",
          caption = "Source: World Bank") +
   scale_y_continuous(labels = label_number(scale = 100, suffix = "%")),
-  common.legend =T
-) %>% annotate_figure(top = "Global Flow")
+  common.legend = TRUE, legend = "bottom"
+)
 ```
 
 ::: notes
@@ -98,10 +118,29 @@ ggarrange(
 - The Balance of Payments lecture shows that Japan's portfolio flows have been more volatile than direct investment flows.
 :::
 
+## Why do countries want inward FDI?
+
+<div style="font-size:80%">
+
+- **Capital:** finance factories, equipment, and business expansion.
+- **Jobs and income:** create employment and demand for domestic suppliers.
+- **Technology and skills:** introduce production methods, management practices, and worker training.
+- **Export opportunities:** connect domestic production to multinational firms' international networks.
+- **Productivity and growth:** domestic firms may benefit through learning and supplier relationships.
+
+Benefits are not automatic: local skills and firms' ability to absorb technology matter.
+
+</div>
+
+::: notes
+- Borensztein, De Gregorio, and Lee (1998) emphasize the role of human capital in realizing growth benefits from FDI: https://www.nber.org/papers/w5057
+- Javorcik (2004) finds evidence consistent with productivity spillovers to domestic suppliers in Lithuania: https://www.aeaweb.org/articles?id=10.1257/0002828041464605
+:::
+
 ## Japan's direct investment: Outward vs. inward
 
 ```{r}
-#| include: false
+#| echo: false
 # Units: assumed 100 million yen (BOJ/MOF convention); dividing by 1e4 gives trillion yen. Confirm against the source.
 boj = fread("../data/08 fdi/boj_investment.csv")
 setnames(boj, c("year", "Direct_out", "Portfolio_out", "Direct_in", "Portfolio_in"))
@@ -117,8 +156,9 @@ ggline(boj_di,
        numeric.x.axis = T,
        y = "value", ylab = "Trillion yen",
        color = "Direction",
-       title = "Japan: Direct investment, outward (assets) vs. inward (liabilities)",
-       caption = "Source: Bank of Japan, Balance of payments")
+       legend = "bottom",
+       caption = "Source: Bank of Japan, Balance of payments") +
+  theme(legend.title = element_blank())
 ```
 
 ::: notes
@@ -126,9 +166,65 @@ ggline(boj_di,
 - Japan is a large net outward investor; inward FDI stays small relative to GDP. Use this to lead into "barriers to inward FDI".
 :::
 
+## Where does Japanese FDI go?
+
+```{r}
+#| include: false
+fdi_2024 = fread("../data/08 fdi/japan_fdi_by_country_industry_2024.csv")
+japan_destinations = fdi_2024[direction == "Outward"]
+asean_total = japan_destinations[destination == "ASEAN" & industry == "Total", value_100million_yen]
+world_total = japan_destinations[destination == "World" & industry == "Total", value_100million_yen]
+asean_world_share = 100 * asean_total / world_total
+
+# Reuse the same country/industry definition and source totals in both charts.
+fdi_destination_plot = function(countries, divisor, unit_label, subtitle, accuracy) {
+  totals = japan_destinations[destination %in% countries & industry == "Total"]
+  setorder(totals, value_100million_yen)
+  dat = japan_destinations[destination %in% countries &
+                            industry %in% c("Manufacturing", "Non-manufacturing")]
+  dat[, destination := factor(destination, levels = totals$destination)]
+  totals[, destination := factor(destination, levels = levels(dat$destination))]
+  dat[, industry := factor(industry, levels = c("Manufacturing", "Non-manufacturing"))]
+  ggplot(dat, aes(destination, value_100million_yen / divisor, fill = industry)) +
+    geom_col(width = 0.65, position = position_stack(reverse = TRUE)) +
+    geom_text(data = totals,
+              aes(destination, value_100million_yen / divisor,
+                  label = label_number(accuracy = accuracy, big.mark = ",")(value_100million_yen / divisor)),
+              inherit.aes = FALSE, hjust = -0.12, size = 5) +
+    coord_flip() +
+    scale_fill_manual(values = c("Manufacturing" = "#4477AA", "Non-manufacturing" = "#DDCC77")) +
+    scale_y_continuous(labels = label_comma(), expand = expansion(mult = c(0, 0.16))) +
+    labs(x = NULL, y = paste0("Annual net outward FDI (", unit_label, ")"), fill = NULL,
+         subtitle = subtitle,
+         caption = paste("Source: Ministry of Finance, revised 2024 workbook; directional principle.",
+                         "ASEAN excl. Singapore = ASEAN total minus Singapore. Non-manufacturing includes services and other industries.",
+                         sep = "\n")) +
+    theme_minimal(base_size = 18, base_family = "Arial") +
+    theme(legend.position = "bottom", legend.text = element_text(size = 15),
+          axis.text = element_text(colour = "black", size = 16),
+          panel.grid.major.y = element_blank(), panel.grid.minor = element_blank(),
+          plot.subtitle = element_text(size = 17),
+          plot.caption = element_text(size = 10, hjust = 0),
+          plot.margin = margin(8, 16, 8, 8))
+}
+```
+
+```{r}
+#| label: japanese-fdi-major-destinations
+#| fig-width: 11
+#| fig-height: 6
+#| fig-alt: "Japanese outward FDI in 2024 to selected major destinations, including Singapore separately from ASEAN excluding Singapore, split into manufacturing and non-manufacturing."
+fdi_destination_plot(
+  c("United States", "United Kingdom", "Singapore", "ASEAN excl. Singapore", "Netherlands", "Australia", "India", "Germany", "China"),
+  divisor = 10000, unit_label = "trillion yen",
+  subtitle = "Selected major destinations, 2024", accuracy = 0.01
+)
+```
+
 ## Japan's outward direct investment: Components
 
 ```{r}
+#| eval: false
 #| include: false
 # MOF series (outward only); used for the breakdown because the BOJ file has no components.
 fdi_jp = fread("../data/08 fdi/mof_fa.csv")
@@ -155,6 +251,8 @@ ggline(fdi_jp,
 
 
 ```{r}
+#| eval: false
+#| include: false
 fdi_comp = melt(fdi_jp[, !"Total"], id.vars = "year",
                 variable.name = "Component")
 ggbarplot(fdi_comp,
@@ -163,11 +261,86 @@ ggbarplot(fdi_comp,
           color = "Component",
           fill = "Component",
           x.text.angle = 90,
-          legend = "right",
-          title = "Japan: Direct investment by component",
-          caption = "Source: Ministry of Finance, Financial account")
+          legend = "bottom",
+          caption = "Source: Ministry of Finance, Financial account") +
+  theme(legend.title = element_blank(), legend.text = element_text(size = 12))
 ```
 
+
+## Who invests in Japan?
+
+```{r}
+#| label: inward-fdi-sources
+#| fig-width: 11
+#| fig-height: 6
+#| fig-alt: "Selected sources of net inward FDI into Japan in 2024. Singapore is separate from ASEAN excluding Singapore. Germany has a negative net flow."
+inward_sources = fdi_2024[direction == "Inward" & industry == "Total" &
+  destination %in% c("Hong Kong", "Switzerland", "Singapore", "United Kingdom", "Taiwan",
+                     "Netherlands", "France", "Canada", "China", "United States",
+                     "Germany", "ASEAN excl. Singapore")]
+inward_sources[, value_bn := value_100million_yen / 10]
+setorder(inward_sources, value_bn)
+inward_sources[, destination := factor(destination, levels = destination)]
+ggplot(inward_sources, aes(value_bn, destination)) +
+  geom_vline(xintercept = 0, colour = "grey45") +
+  geom_col(fill = "#4477AA", width = 0.65) +
+  geom_text(aes(label = label_number(accuracy = 0.1, big.mark = ",")(value_bn),
+                hjust = ifelse(value_bn < 0, 1.12, -0.12)), size = 4.8) +
+  scale_x_continuous(labels = label_comma(), expand = expansion(mult = c(0.16, 0.16))) +
+  labs(x = "Annual net inward FDI (billion yen)", y = NULL,
+       subtitle = "Selected source economies, 2024",
+       caption = paste("Source: Ministry of Finance, revised 2024 workbook; directional principle.",
+                       "Immediate counterpart economy. ASEAN excl. Singapore = ASEAN minus Singapore. Negative values = net withdrawals.", sep = "\n")) +
+  theme_minimal(base_size = 18, base_family = "Arial") +
+  theme(axis.text = element_text(size = 15, colour = "black"),
+        panel.grid.major.y = element_blank(), panel.grid.minor = element_blank(),
+        plot.caption = element_text(size = 10, hjust = 0))
+```
+
+::: notes
+- These are net flows during 2024, not accumulated investment stocks or a ranking of ultimate owners.
+- Singapore and ASEAN excluding Singapore are mutually exclusive; their sum equals the source's ASEAN aggregate.
+- Source workbook: https://www.mof.go.jp/policy/international_policy/reference/balance_of_payments/revised/fdi2024.xlsx
+:::
+
+## Which industries attract FDI into Japan?
+
+```{r}
+#| label: inward-fdi-industries
+#| fig-width: 11
+#| fig-height: 6
+#| fig-alt: "Selected industries receiving inward FDI in Japan in 2024. Finance and insurance, communications and electric machinery have large positive net flows; wholesale and retail has a negative net flow."
+inward_industries = fdi_2024[direction == "Inward" & destination == "World" &
+  industry %in% c("Finance and insurance", "Communications", "Electric machinery", "Services",
+                  "Chemicals and pharmaceuticals", "Real estate", "Transportation",
+                  "Transportation equipment", "Wholesale and retail")]
+inward_industries[, sector := ifelse(industry %in%
+  c("Electric machinery", "Chemicals and pharmaceuticals", "Transportation equipment"),
+  "Manufacturing", "Non-manufacturing")]
+inward_industries[, value_bn := value_100million_yen / 10]
+setorder(inward_industries, value_bn)
+inward_industries[, industry := factor(industry, levels = industry)]
+inward_manufacturing = fdi_2024[direction == "Inward" & destination == "World" & industry == "Manufacturing", value_100million_yen] / 10
+inward_nonmanufacturing = fdi_2024[direction == "Inward" & destination == "World" & industry == "Non-manufacturing", value_100million_yen] / 10
+ggplot(inward_industries, aes(value_bn, industry, fill = sector)) +
+  geom_vline(xintercept = 0, colour = "grey45") +
+  geom_col(width = 0.65) +
+  geom_text(aes(label = label_number(accuracy = 0.1, big.mark = ",")(value_bn),
+                hjust = ifelse(value_bn < 0, 1.12, -0.12)), size = 4.8) +
+  scale_fill_manual(values = c("Manufacturing" = "#4477AA", "Non-manufacturing" = "#DDCC77")) +
+  scale_x_continuous(labels = label_comma(), expand = expansion(mult = c(0.17, 0.17))) +
+  labs(x = "Annual net inward FDI (billion yen)", y = NULL, fill = NULL,
+       subtitle = sprintf("2024 totals: manufacturing %.1f; non-manufacturing %.1f billion yen",
+                          inward_manufacturing, inward_nonmanufacturing),
+       caption = paste("Source: Ministry of Finance, revised 2024 workbook; directional principle. Selected industries.",
+                       "Services is a narrow source category, not all services. Negative values = net withdrawals.", sep = "\n")) +
+  theme_minimal(base_size = 18, base_family = "Arial") +
+  theme(axis.text = element_text(size = 15, colour = "black"),
+        legend.position = "bottom", legend.text = element_text(size = 14),
+        plot.subtitle = element_text(size = 15),
+        panel.grid.major.y = element_blank(), panel.grid.minor = element_blank(),
+        plot.caption = element_text(size = 10, hjust = 0))
+```
 
 ## Japan's capital liberalization and FDI
 
@@ -175,7 +348,6 @@ ggbarplot(fdi_comp,
 - **1970s:** gradual liberalization of inward direct and portfolio investment.
 - **1980:** foreign exchange regime shifted from generally prohibited unless permitted to generally free unless restricted.
 - **1980s–1990s:** further liberalization of outward investment and foreign borrowing.
-- **Discussion:** Why might inward FDI remain limited even after legal restrictions are relaxed?
 
 ::: notes
 - Adapted from the capital controls and liberalization timeline in the Balance of Payments lecture.
@@ -216,8 +388,9 @@ ggplot(fdi_business, aes(Inward_FDI, Business_Index)) +
   geom_text(data = fdi_business[Country == "Japan"], aes(label = Country), vjust = -1, color = "red") +
   geom_text(data = fdi_business[Country %in% reference_countries], aes(label = Country), vjust = -1, color = "gray40", size = 3) +
   scale_x_log10() + scale_y_log10() +
-  labs(title = "Inward FDI vs. Doing Business Score", x = "Inward FDI (% of GDP, log; 2015–2024 average)", y = "Doing Business Score (log; 2019–2020 average)", caption = "Source: OECD, World Bank; adapted from Balance of Payments lecture") +
-  theme_minimal()
+  labs(x = "Inward FDI (% of GDP, log; 2015–2024 average)", y = "Doing Business Score (log; 2019–2020 average)", caption = "Source: OECD, World Bank; adapted from Balance of Payments lecture") +
+  theme_minimal(base_size = 16, base_family = "Arial") +
+  theme(plot.caption = element_text(size = 10, hjust = 0))
 ```
 
 ::: notes
@@ -244,15 +417,86 @@ ggplot(fdi_business, aes(Inward_FDI, Business_Index)) +
 
 ## ODA and FDI relationship
 
-<div style="font-size:50%">
-- Infrastructure & human capital improvement → lower investment costs
-- Institutional reforms & risk reduction → improved investment climate
-- Policy dialogue & technical cooperation → regulatory harmonization
-</div> 
+::: {style="font-size:100%; line-height:1.45; width:100%;"}
 
-![The case of Vietnam](image/vietnam_fdi_oda.png)
+- **Infrastructure and human capital improvement**<br>
+  → lower investment costs
 
-## Complementarity vs. Substitution
+- **Institutional reforms and risk reduction**<br>
+  → improved investment climate
+
+- **Policy dialogue and technical cooperation**<br>
+  → regulatory harmonization
+
+:::
+
+## Vietnam: FDI and ODA
+
+```{r}
+#| label: vietnam-fdi-oda
+#| dev: ragg_png
+#| fig-width: 10
+#| fig-height: 5.5
+#| fig-alt: "Vietnam's implemented FDI and net ODA received, 1991-2019, with their shares of gross fixed capital formation from 1994."
+vietnam = fread("../data/08 fdi/vietnam_fdi_oda_1991_2019.csv")
+
+vietnam_flows = melt(
+  vietnam,
+  id.vars = "year",
+  measure.vars = c("fdi_implemented_usd_million", "net_oda_received_usd_million"),
+  variable.name = "flow", value.name = "amount"
+)
+vietnam_flows[, flow := factor(flow,
+  levels = c("fdi_implemented_usd_million", "net_oda_received_usd_million"),
+  labels = c("FDI", "ODA"))]
+
+# Recalculate shares from the amounts; keep unavailable GFCF years missing.
+vietnam_shares = melt(
+  vietnam[!is.na(gfcf_usd_million) & gfcf_usd_million > 0,
+    .(year,
+      `FDI / GFCF` = 100 * fdi_implemented_usd_million / gfcf_usd_million,
+      `ODA / GFCF` = 100 * net_oda_received_usd_million / gfcf_usd_million)],
+  id.vars = "year", variable.name = "series", value.name = "share"
+)
+
+# Map 0-60% on the right axis onto 0-25,000 million USD on the left.
+share_axis_scale = 25000 / 60
+ggplot() +
+  geom_col(data = vietnam_flows,
+           aes(year, amount, fill = flow),
+           position = position_dodge(width = 0.8), width = 0.7) +
+  geom_line(data = vietnam_shares,
+            aes(year, share * share_axis_scale, colour = series), linewidth = 1) +
+  scale_fill_manual(values = c("FDI" = "#3D3052", "ODA" = "#E96A00")) +
+  scale_colour_manual(values = c("FDI / GFCF" = "#FF8B3D", "ODA / GFCF" = "#8060A6")) +
+  scale_x_continuous(breaks = 1991:2019, expand = expansion(add = 0.6)) +
+  scale_y_continuous(
+    name = "Million current US$", limits = c(0, 25000),
+    breaks = seq(0, 25000, 5000), labels = label_comma(),
+    expand = expansion(mult = c(0, 0.02)),
+    sec.axis = sec_axis(~ . / share_axis_scale,
+                        name = "Share of GFCF", breaks = seq(0, 60, 10),
+                        labels = label_number(suffix = "%"))
+  ) +
+  guides(fill = guide_legend(order = 1), colour = guide_legend(order = 2)) +
+  labs(x = NULL, fill = NULL, colour = NULL,
+       caption = paste(
+         "Sources: Vietnam NSO series via JP-VN; archived World Bank/OECD series via IndexMundi.",
+         "FDI = implemented capital; ODA = net aid from all donors. GFCF shares available from 1994.",
+         sep = "\n")) +
+  theme_minimal(base_size = 18, base_family = "Arial") +
+  theme(legend.position = "top", legend.box = "horizontal",
+        legend.text = element_text(size = 16),
+        axis.text.x = element_text(angle = 60, hjust = 1, size = 13),
+        axis.text.y = element_text(size = 14),
+        panel.grid.major.x = element_blank(), panel.grid.minor = element_blank(),
+        plot.title = element_text(face = "bold"),
+        plot.caption = element_text(size = 10, hjust = 0),
+        plot.margin = margin(8, 12, 8, 8))
+```
+
+
+## Complementary vs. Substitution
 
 - Complementary view:
   - ODA builds preconditions for private investment (infrastructure, governance).
@@ -260,7 +504,7 @@ ggplot(fdi_business, aes(Inward_FDI, Business_Index)) +
 
 - Substitution view:
   - Excessive aid can crowd out FDI if it distorts markets or maintains uncompetitive sectors.
-  - Conditionality or tied aid may limit spillovers.
+  - Conditional or tied aid may limit spillovers.
 
 ## Japan’s Experience
 
@@ -269,24 +513,27 @@ ggplot(fdi_business, aes(Inward_FDI, Business_Index)) +
 - Evidence: Ono and Sekiyama (2023) on the effect of ODA on FDI by aid type
 - Case study: Vietnam (Tsuno, 2023)
 - Transition from aid-recipient to investment-partner relationship.
-</div> 
+</div>
 
-::: notes
-- Check that the Ono and Sekiyama (2023) finding matches the bullet above before presenting; the original deck cited it only in references.
-:::
 
-## Future Directions
+## Discussions
 
-- Align ODA with investment climate improvement (connectivity, legal reform)
-- Promote Aid for Trade and Public-Private Partnerships (PPPs)
-- Ensure transparency to avoid tied-aid distortions
+<div style="font-size:80%">
+1. Is it a problem that Japan’s outward FDI is about six times its inward FDI? Yes, no, or it depends?
+
+2. Japan removed most legal restrictions on inward FDI decades ago, but inward FDI is still low. Looking at the METI survey table, which barrier could the government actually fix, and which could it not?
+
+3. Private investors avoid risky, low-return countries, but ODA goes there. How could ODA make a country like Vietnam more attractive to private investors?
+
+4. Japan’s tied aid helped Japanese firms invest later. Is that good development cooperation or aid serving the donor’s interests?
+</div>
 
 ## References
-<div style="font-size:30%">
+<div style="font-size:50%">
 - Burnside, C. & Dollar, D. 2000, 'Aid, policies, and growth', American economic review, 90 (4).
 - Nguyen, H. P., Huynh, A. N. Q., Reisach, U., & Kim, X. L. T. 2022. How does Japanese ODA really contribute to economic growth for ASEAN countries? Journal of International Economics and Management, 22(2).
 - MOFA, 2023, White Paper on Development Cooperation 2023
-- Ono, S., & Sekiyama, T. (2023). Differences in impact of official development assistance on foreign direct investment by aid types. Frontiers in Political Science, 5. 
+- Ono, S., & Sekiyama, T. (2023). Differences in impact of official development assistance on foreign direct investment by aid types. Frontiers in Political Science, 5.
 - Hoshi, T. (2018). Has Abenomics succeeded in raising Japan’s inward foreign direct investment? Asian Economic Policy Review, 13(1), 149–168.
 - Tsuno, M., 2023, The Role of Japanese Official Development Assistance in Viet Nam’s Socio-economic Development. In Viet Nam 2045: Development Issues and Challenges, (Kimura, F. et al, pp. 53–97). ERIA.
 - Data link
@@ -294,4 +541,9 @@ ggplot(fdi_business, aes(Inward_FDI, Business_Index)) +
   - https://data.worldbank.org/indicator/BX.KLT.DINV.CD.WD
   - https://data.worldbank.org/indicator/DT.ODA.ALLD.CD
   - https://data.worldbank.org/indicator/BX.TRF.PWKR.CD.DT
+  - FDI: https://www.jpvn.org/statst-j/VN-fdi-statistics-1988-2024.html
+  - ODA: https://www.indexmundi.com/facts/vietnam/indicator/DT.ODA.ODAT.CD
+  - GFCF: https://www.indexmundi.com/facts/vietnam/indicator/NE.GDI.FTOT.CD
+  - https://www.mof.go.jp/policy/international_policy/reference/balance_of_payments/revised/bprfdi20240112.pdf
+  - https://www.mof.go.jp/policy/international_policy/reference/balance_of_payments/revised/bprfdi20240112.pdf
 </div>

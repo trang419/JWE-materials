@@ -1,0 +1,50 @@
+year,destination,industry,value_100million_yen,source_page
+2024,World,Manufacturing,79302,1
+2024,World,Non-manufacturing,230060,1
+2024,World,Total,309362,1
+2024,ASEAN,Manufacturing,9669,1
+2024,ASEAN,Non-manufacturing,32818,1
+2024,ASEAN,Total,42487,1
+2024,Singapore,Manufacturing,1359,3
+2024,Singapore,Non-manufacturing,23335,3
+2024,Singapore,Total,24694,3
+2024,Thailand,Manufacturing,3195,3
+2024,Thailand,Non-manufacturing,3124,3
+2024,Thailand,Total,6320,3
+2024,Indonesia,Manufacturing,1671,3
+2024,Indonesia,Non-manufacturing,1945,3
+2024,Indonesia,Total,3616,3
+2024,Malaysia,Manufacturing,1537,3
+2024,Malaysia,Non-manufacturing,1552,3
+2024,Malaysia,Total,3088,3
+2024,Vietnam,Manufacturing,664,3
+2024,Vietnam,Non-manufacturing,2110,3
+2024,Vietnam,Total,2773,3
+2024,Philippines,Manufacturing,1136,3
+2024,Philippines,Non-manufacturing,561,3
+2024,Philippines,Total,1697,3
+2024,ASEAN,Finance and insurance,14602,1
+2024,ASEAN,Wholesale and retail,5256,1
+2024,ASEAN,Real estate,3579,1
+2024,ASEAN,Communications,2646,1
+2024,United States,Manufacturing,29505,5
+2024,United States,Non-manufacturing,104906,5
+2024,United States,Total,134411,5
+2024,United Kingdom,Manufacturing,5778,8
+2024,United Kingdom,Non-manufacturing,21567,8
+2024,United Kingdom,Total,27345,8
+2024,Netherlands,Manufacturing,6389,8
+2024,Netherlands,Non-manufacturing,16196,8
+2024,Netherlands,Total,22585,8
+2024,Australia,Manufacturing,1893,7
+2024,Australia,Non-manufacturing,20219,7
+2024,Australia,Total,22112,7
+2024,India,Manufacturing,4229,4
+2024,India,Non-manufacturing,3879,4
+2024,India,Total,8108,4
+2024,Germany,Manufacturing,3878,8
+2024,Germany,Non-manufacturing,3319,8
+2024,Germany,Total,7197,8
+2024,China,Manufacturing,3312,3
+2024,China,Non-manufacturing,507,3
+2024,China,Total,3819,3

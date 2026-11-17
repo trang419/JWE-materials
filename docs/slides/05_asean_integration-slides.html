@@ -157,7 +157,7 @@ Trang Tran
 <section id="asean-at-a-glance" class="slide level2">
 <h2>ASEAN at a glance</h2>
 
-<img data-src="05_asean_integration_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"></section>
+<img data-src="05_asean_integration_files/figure-html/unnamed-chunk-2-1.png" width="672" class="r-stretch"></section>
 <section id="asean-diversity-1" class="slide level2">
 <h2>ASEAN Diversity (1)</h2>
 <ul>
@@ -173,7 +173,7 @@ Trang Tran
 <section id="asean-diversity-2" class="slide level2">
 <h2>ASEAN Diversity (2)</h2>
 
-<img data-src="05_asean_integration_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"><aside class="notes">
+<img data-src="05_asean_integration_files/figure-html/unnamed-chunk-3-1.png" width="672" class="r-stretch"><aside class="notes">
 <ul>
 <li>ASEAN total real GDP PPP increased almost 4 times since 1993, still gaps in GDP per capita among member countries</li>
 </ul>
@@ -248,7 +248,7 @@ Trang Tran
 <section id="asean-intra-region-tariff" class="slide level2">
 <h2>ASEAN intra-region tariff</h2>
 
-<img data-src="05_asean_integration_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch"></section>
+<img data-src="05_asean_integration_files/figure-html/unnamed-chunk-4-1.png" width="672" class="r-stretch"></section>
 <section id="asean-related-ftas" class="slide level2">
 <h2>ASEAN-Related FTAs</h2>
 <div class="columns">
@@ -289,7 +289,7 @@ Trang Tran
 <section id="trade" class="slide level2">
 <h2>Trade</h2>
 
-<img data-src="05_asean_integration_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"><aside class="notes">
+<img data-src="05_asean_integration_files/figure-html/unnamed-chunk-5-1.png" width="672" class="r-stretch"><aside class="notes">
 <ul>
 <li>Japan is an important trading partner of ASEAN
 <ul>
@@ -313,7 +313,7 @@ Trang Tran
 <section id="investment" class="slide level2">
 <h2>Investment</h2>
 
-<img data-src="05_asean_integration_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch"><aside class="notes">
+<img data-src="05_asean_integration_files/figure-html/unnamed-chunk-6-1.png" width="672" class="r-stretch"><aside class="notes">
 <ul>
 <li>Japan is second largest FDI source country of ASEAN
 <ul>
@@ -334,6 +334,14 @@ Trang Tran
           display:block!important;
       }</style></aside>
 </section>
+<section id="japanese-fdi-in-asean" class="slide level2">
+<h2>Japanese FDI in ASEAN</h2>
+
+<img data-src="05_asean_integration_files/figure-html/japanese-fdi-asean-1.png" alt="Japanese outward FDI flows to six ASEAN economies in 2024, split into manufacturing and non-manufacturing. Singapore is the largest destination among those shown." width="1056" class="r-stretch"></section>
+<section id="japanese-fdi-in-asean-services" class="slide level2">
+<h2>Japanese FDI in ASEAN: services</h2>
+
+<img data-src="05_asean_integration_files/figure-html/japanese-fdi-asean-services-1.png" alt="Selected Japanese outward FDI service industries in ASEAN in 2024: finance and insurance, wholesale and retail, real estate and communications." width="1056" class="r-stretch"></section>
 <section id="japanese-firms-in-asean-countries" class="slide level2">
 <h2>Japanese firms in ASEAN countries</h2>
 <ul>
@@ -373,7 +381,7 @@ Trang Tran
 <li class="fragment">By 2000, Japanese firms have become high profile investors in ASEAN5</li>
 </ul>
 
-<img data-src="05_asean_integration_files/figure-revealjs/unnamed-chunk-7-1.png" width="1920" class="r-stretch"><aside class="notes">
+<img data-src="05_asean_integration_files/figure-html/unnamed-chunk-8-1.png" width="1920" class="r-stretch"><aside class="notes">
 <ul>
 <li>Japan export intermediates goods</li>
 <li>ASEAN4 exports final goods which have a lot of import content</li>
@@ -414,7 +422,7 @@ Trang Tran
 </ul>
 </div>
 
-<img data-src="05_asean_integration_files/figure-revealjs/unnamed-chunk-8-1.png" width="1920" class="r-stretch"></section>
+<img data-src="05_asean_integration_files/figure-html/unnamed-chunk-9-1.png" width="1920" class="r-stretch"></section>
 <section id="japanese-firms-in-asean-countries-3" class="slide level2">
 <h2>Japanese Firms in ASEAN countries (3)</h2>
 <div style="font-size:50%">
@@ -428,7 +436,7 @@ Trang Tran
 </ul>
 </div>
 
-<img data-src="05_asean_integration_files/figure-revealjs/unnamed-chunk-9-1.png" width="1920" class="r-stretch"><aside class="notes">
+<img data-src="05_asean_integration_files/figure-html/unnamed-chunk-10-1.png" width="1920" class="r-stretch"><aside class="notes">
 <ul>
 <li>Move from China to ASEAN6</li>
 <li>Reduction in Thailand, Indonesia</li>
@@ -686,82 +694,6 @@ Trang Tran
         ]
       });
     </script>
-    
-
-    <script>
-
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-
-      // slide changes (different for each slide format).
-
-      (function () {
-
-        // dispatch for htmlwidgets
-
-        function fireSlideEnter() {
-
-          const event = window.document.createEvent("Event");
-
-          event.initEvent("slideenter", true, true);
-
-          window.document.dispatchEvent(event);
-
-        }
-
-    
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-
-          fireSlideEnter();
-
-    
-
-          // dispatch for shiny
-
-          if (window.jQuery) {
-
-            if (previousSlide) {
-
-              window.jQuery(previousSlide).trigger("hidden");
-
-            }
-
-            if (currentSlide) {
-
-              window.jQuery(currentSlide).trigger("shown");
-
-            }
-
-          }
-
-        }
-
-    
-
-        // hookup for slidy
-
-        if (window.w3c_slidy) {
-
-          window.w3c_slidy.add_observer(function (slide_num) {
-
-            // slide_num starts at position 1
-
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-
-          });
-
-        }
-
-    
-
-      })();
-
-    </script>
-
-    
-
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
