@@ -174,8 +174,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#fdi-vs.-portfolio-investment" id="toc-fdi-vs.-portfolio-investment" class="nav-link" data-scroll-target="#fdi-vs.-portfolio-investment">FDI vs.&nbsp;portfolio investment</a></li>
   <li><a href="#why-do-countries-want-inward-fdi" id="toc-why-do-countries-want-inward-fdi" class="nav-link" data-scroll-target="#why-do-countries-want-inward-fdi">Why do countries want inward FDI?</a></li>
   <li><a href="#japans-direct-investment-outward-vs.-inward" id="toc-japans-direct-investment-outward-vs.-inward" class="nav-link" data-scroll-target="#japans-direct-investment-outward-vs.-inward">Japan’s direct investment: Outward vs.&nbsp;inward</a></li>
-  <li><a href="#japans-outward-direct-investment-components" id="toc-japans-outward-direct-investment-components" class="nav-link" data-scroll-target="#japans-outward-direct-investment-components">Japan’s outward direct investment: Components</a></li>
   <li><a href="#where-does-japanese-fdi-go" id="toc-where-does-japanese-fdi-go" class="nav-link" data-scroll-target="#where-does-japanese-fdi-go">Where does Japanese FDI go?</a></li>
+  <li><a href="#who-invests-in-japan" id="toc-who-invests-in-japan" class="nav-link" data-scroll-target="#who-invests-in-japan">Who invests in Japan?</a></li>
+  <li><a href="#which-industries-attract-fdi-into-japan" id="toc-which-industries-attract-fdi-into-japan" class="nav-link" data-scroll-target="#which-industries-attract-fdi-into-japan">Which industries attract FDI into Japan?</a></li>
   <li><a href="#japans-capital-liberalization-and-fdi" id="toc-japans-capital-liberalization-and-fdi" class="nav-link" data-scroll-target="#japans-capital-liberalization-and-fdi">Japan’s capital liberalization and FDI</a></li>
   <li><a href="#barriers-to-inward-fdi" id="toc-barriers-to-inward-fdi" class="nav-link" data-scroll-target="#barriers-to-inward-fdi">Barriers to inward FDI</a></li>
   <li><a href="#japans-inward-fdi-and-business-environment" id="toc-japans-inward-fdi-and-business-environment" class="nav-link" data-scroll-target="#japans-inward-fdi-and-business-environment">Japan’s inward FDI and business environment</a></li>
@@ -329,25 +330,37 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </div>
 </section>
-<section id="japans-outward-direct-investment-components" class="level2">
-<h2 class="anchored" data-anchor-id="japans-outward-direct-investment-components">Japan’s outward direct investment: Components</h2>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="08_fdi_files/figure-shared/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="1728"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
 <section id="where-does-japanese-fdi-go" class="level2">
 <h2 class="anchored" data-anchor-id="where-does-japanese-fdi-go">Where does Japanese FDI go?</h2>
 <div class="cell">
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="08_fdi_files/figure-shared/japanese-fdi-major-destinations-1.png" class="img-fluid figure-img" alt="Japanese outward FDI in 2024 to eight selected major destinations, split into manufacturing and non-manufacturing. The United States is the largest among those shown." width="1584"></p>
+<p><img src="08_fdi_files/figure-shared/japanese-fdi-major-destinations-1.png" class="img-fluid figure-img" alt="Japanese outward FDI in 2024 to selected major destinations, including Singapore separately from ASEAN excluding Singapore, split into manufacturing and non-manufacturing." width="1584"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="who-invests-in-japan" class="level2">
+<h2 class="anchored" data-anchor-id="who-invests-in-japan">Who invests in Japan?</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="08_fdi_files/figure-shared/inward-fdi-sources-1.png" class="img-fluid figure-img" alt="Selected sources of net inward FDI into Japan in 2024. Singapore is separate from ASEAN excluding Singapore. Germany has a negative net flow." width="1584"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="which-industries-attract-fdi-into-japan" class="level2">
+<h2 class="anchored" data-anchor-id="which-industries-attract-fdi-into-japan">Which industries attract FDI into Japan?</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="08_fdi_files/figure-shared/inward-fdi-industries-1.png" class="img-fluid figure-img" alt="Selected industries receiving inward FDI in Japan in 2024. Finance and insurance, communications and electric machinery have large positive net flows; wholesale and retail has a negative net flow." width="1584"></p>
 </figure>
 </div>
 </div>
@@ -581,6 +594,82 @@ ul.task-list li input[type="checkbox"] {
 </section>
 
 </main> <!-- /main -->
+
+
+<script>
+
+  // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+
+  // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+
+  // slide changes (different for each slide format).
+
+  (function () {
+
+    // dispatch for htmlwidgets
+
+    function fireSlideEnter() {
+
+      const event = window.document.createEvent("Event");
+
+      event.initEvent("slideenter", true, true);
+
+      window.document.dispatchEvent(event);
+
+    }
+
+
+
+    function fireSlideChanged(previousSlide, currentSlide) {
+
+      fireSlideEnter();
+
+
+
+      // dispatch for shiny
+
+      if (window.jQuery) {
+
+        if (previousSlide) {
+
+          window.jQuery(previousSlide).trigger("hidden");
+
+        }
+
+        if (currentSlide) {
+
+          window.jQuery(currentSlide).trigger("shown");
+
+        }
+
+      }
+
+    }
+
+
+
+    // hookup for slidy
+
+    if (window.w3c_slidy) {
+
+      window.w3c_slidy.add_observer(function (slide_num) {
+
+        // slide_num starts at position 1
+
+        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+
+      });
+
+    }
+
+
+
+  })();
+
+</script>
+
+
+
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
