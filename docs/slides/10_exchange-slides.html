@@ -147,21 +147,250 @@ Trang Tran
 
   <p class="date">2025-12-08</p>
 </section>
-<section id="introduction" class="slide level2">
-<h2>Introduction</h2>
+<section>
+<section id="measuring-the-yen" class="title-slide slide level1 center">
+<h1>Measuring the yen</h1>
+
+</section>
+<section id="a-japanese-exporters-invoice" class="slide level2">
+<h2>A Japanese exporter’s invoice</h2>
+<p>The exchange rate is the price of one currency in another. A fall from <strong>?150 to ?140 per US dollar</strong> means the yen strengthens.</p>
+<p>A Japanese exporter invoices a US customer for <strong>US$1,000</strong>. How many yen does the exporter receive at each rate?</p>
 <ul>
-<li class="fragment"><p>Exchange Rate is relative price of two currencies</p></li>
-<li class="fragment"><p>Competitiveness:</p>
+<li class="fragment">At ?150 per dollar, the invoice converts to <strong>?150,000</strong>. At ?140, it converts to <strong>?140,000</strong>.</li>
+<li class="fragment">Did the Japanese product also become more expensive relative to a US product?</li>
+</ul>
+<aside class="notes">
 <ul>
-<li class="fragment">devaluation (fixed regime)</li>
-<li class="fragment">depreciation (floating regime)</li>
+<li>Assume the invoice stays fixed in dollars and the exporter converts the payment into yen.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-yen-against-the-dollar-and-euro" class="slide level2">
+<h2>The yen against the dollar and euro</h2>
+
+<img data-src="10_exchange_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"><aside class="notes">
+<ul>
+<li>During 2000, the USD/JPY moved little, the yen appreciated against the euro: depreciation of the euro against both the dollar and yen.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="purchasing-power-parity-ppp" class="slide level2">
+<h2>Purchasing power parity (PPP)</h2>
+<div class="slide-font-size" style="--slide-font-size: 75%">
+<p><span class="math display">\[ q_t = S_t \times \frac{P_{US,t}}{P_{JP,t}} \]</span></p>
+<ul>
+<li><span class="math inline">\(S_t\)</span>: nominal exchange rate, <strong>yen per dollar</strong> (USD/JPY)</li>
+<li><span class="math inline">\(q_t\)</span>: price of US goods relative to Japanese goods, both in yen</li>
+<li><strong>Absolute PPP:</strong> <span class="math inline">\(q = 1\)</span>. The same basket costs the same in both countries.</li>
+<li><strong>Relative PPP:</strong> <span class="math inline">\(q\)</span> stays constant as changes in <span class="math inline">\(S\)</span> offset the inflation gap.</li>
+<li>A higher <span class="math inline">\(q\)</span> means a <strong>weaker yen in real terms</strong> and cheaper Japanese goods relative to US goods.</li>
+</ul>
+</div>
+<aside class="notes">
+<ul>
+<li>To express the real exchange rate as an index, divide <span class="math inline">\(q_t\)</span> by its base-year value and multiply by 100. In the apple example, <span class="math inline">\(q = 1\)</span> in the base year, so the index starts at 100.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="ppp-an-apple-example" class="slide level2">
+<h2>PPP: an apple example</h2>
+<div class="slide-font-size" style="--slide-font-size: 72%">
+<p>At <strong>¥100 per US dollar</strong>, both apples cost ¥100. At parity, <span class="math inline">\(q = 1\)</span> and the real exchange rate index is <strong>100</strong>.</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Scenario</th>
+<th style="text-align: right;">US apple</th>
+<th style="text-align: right;">Japan apple</th>
+<th style="text-align: right;">Yen per dollar</th>
+<th style="text-align: right;">Real rate index</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base year</td>
+<td style="text-align: right;">$1</td>
+<td style="text-align: right;">¥100</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">100</td>
+</tr>
+<tr class="even">
+<td>US price doubles</td>
+<td style="text-align: right;">$2</td>
+<td style="text-align: right;">¥100</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;"><strong>200</strong></td>
+</tr>
+<tr class="odd">
+<td>Japan price doubles</td>
+<td style="text-align: right;">$1</td>
+<td style="text-align: right;">¥200</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;"><strong>50</strong></td>
+</tr>
+<tr class="even">
+<td>Both prices double</td>
+<td style="text-align: right;">$2</td>
+<td style="text-align: right;">¥200</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;"><strong>100</strong></td>
+</tr>
+<tr class="odd">
+<td>US price doubles, yen strengthens</td>
+<td style="text-align: right;">$2</td>
+<td style="text-align: right;">¥100</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;"><strong>100</strong></td>
+</tr>
+</tbody>
+</table>
+<p>If the yen strengthens and US prices rise faster than Japanese prices, what happens to Japan’s price competitiveness?</p>
+</div>
+<aside class="notes">
+<ul>
+<li>The last row is the key point: if relative PPP holds, nominal appreciation just compensates for higher foreign inflation, and competitiveness does not change.</li>
+<li>Ask which effect is larger. Yen appreciation lowers <span class="math inline">\(q\)</span>, while faster US inflation raises it. Japan’s price competitiveness improves if <span class="math inline">\(q\)</span> rises.</li>
+<li>Link to the next slides: a gap between inflation rates makes nominal and real exchange rates diverge. Japan’s deflation since the 1990s pushed the real rate to depreciate even when the nominal rate did not move.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="nominal-vs-real-exchange-rate" class="slide level2">
+<h2>Nominal vs real exchange rate</h2>
+
+<img data-src="10_exchange_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"><aside class="notes">
+<ul>
+<li>When US prices rise faster than Japanese prices, the real rate rises relative to the nominal rate, as in the apple example.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="neer-and-reer" class="slide level2">
+<h2>NEER and REER</h2>
+<ul>
+<li class="fragment"><strong>NEER</strong> combines the yen’s bilateral exchange rates using trade weights.</li>
+<li class="fragment"><strong>REER</strong> adjusts for prices in Japan and its trading partners before combining the rates.</li>
+<li class="fragment">Both are trade-weighted geometric averages expressed as indices.</li>
+</ul>
+<aside class="notes">
+<ul>
+<li>See the <a href="https://www.boj.or.jp/en/statistics/outline/exp/exrate02.htm">Bank of Japan’s methodology</a>.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="japans-price-competitiveness" class="title-slide slide level1 center">
+<h1>Japan’s price competitiveness</h1>
+
+</section>
+<section id="the-yen-and-japans-productivity" class="slide level2">
+<h2>The yen and Japan’s productivity</h2>
+<p>How could Japan remain price-competitive while the yen appreciated in real terms?</p>
+
+<img data-src="10_exchange_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch"><aside class="notes">
+<ul>
+<li>In 1973-95, compare yen appreciation with Japan’s productivity growth. Productivity gains can help firms contain costs even when the yen strengthens.</li>
+<li>In the later period, ask how lower inflation in Japan than abroad can contribute to real depreciation.</li>
+<li>The charts motivate these explanations. They do not isolate the effect of either factor on trade.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="trade-and-overseas-production" class="slide level2">
+<h2>Trade and overseas production</h2>
+<ul>
+<li class="fragment">effects on trade through the relative price of goods
+<ul>
+<li class="fragment">2000s~: yen exchange rate as important factor for Japan’s competitiveness (Ito and Shimizu, 2015)</li>
+</ul></li>
+<li class="fragment">effects on foreign direct investment
+<ul>
+<li class="fragment">reallocate production from Japan to Asia due to yen appreciation (Golderg and Klein, 1996)</li>
 </ul></li>
 </ul>
+</section>
+<section id="current-account-balances" class="slide level2">
+<h2>Current account balances</h2>
+<p>Japan, the US, and the euro area have different balances. What else would you need to explain them?</p>
+
+<img data-src="10_exchange_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"></section></section>
+<section>
+<section id="what-moves-the-yen" class="title-slide slide level1 center">
+<h1>What moves the yen?</h1>
+
 </section>
 <section id="bretton-woods-system" class="slide level2">
 <h2>Bretton Woods system</h2>
 <ul>
-<li class="fragment"><p>Competitive devaluation in the 1930s</p></li>
+<li class="fragment"><p>Competitive devaluation in the 1930s meant officially lowering a currency’s value under a fixed regime.</p></li>
 <li class="fragment"><p>After WWII</p>
 <ul>
 <li class="fragment">tied to USD, then to gold</li>
@@ -186,8 +415,8 @@ Trang Tran
           display:block!important;
       }</style></aside>
 </section>
-<section id="floating-regimes" class="slide level2">
-<h2>Floating Regimes</h2>
+<section id="the-shift-to-floating-rates" class="slide level2">
+<h2>The shift to floating rates</h2>
 <ul>
 <li class="fragment"><p>Issues with the fixed systems:</p>
 <ul>
@@ -195,7 +424,7 @@ Trang Tran
 <li class="fragment">US trade deficit: USD abroad outweight US’s gold reserve</li>
 </ul></li>
 <li class="fragment"><p>US suspended the convertibility of the dollar in 1971 and devaluated the dollar in 1973</p></li>
-<li class="fragment"><p>Misalignment: level where trade account balances</p></li>
+<li class="fragment"><p>Under floating rates, a fall in a currency’s value is called <strong>depreciation</strong>.</p></li>
 </ul>
 <aside class="notes">
 <ul>
@@ -213,115 +442,6 @@ Trang Tran
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-</section>
-<section id="exchange-rate-movement" class="slide level2">
-<h2>Exchange rate movement</h2>
-
-<img data-src="10_exchange_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"><aside class="notes">
-<ul>
-<li>During 2000, the USD/JPY moved little, the yen appreciated against the euro: depreciation of the euro against both the dollar and yen.</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="purchasing-power-parity-ppp" class="slide level2">
-<h2>Purchasing power parity (PPP)</h2>
-<p><span class="math display">\[
-S^{real}_t (USD/JPY) = S^{Nom}_t \times \frac{P_{JP,t}}{P_{US,t}}
-\]</span> - If the purchasing power of a currency is the same between two countries, the real exchange rate becomes 1: the purchasing power parity (PPP) holds in absolute terms.</p>
-<ul>
-<li class="fragment">The real exchange rate is the relative price of foreign goods: a measure of competitiveness of exports and imports.</li>
-</ul>
-<aside class="notes">
-<ul>
-<li>1 USD = 100 JPY, 1 USD = 1 apple, 100 yen = 1 apple
-<ul>
-<li>US inflation 100%: 2USD = 1 apple, real ex 100/(2/1)=50 JPY</li>
-<li>Japan inflation 100%: 200 yen = 1 apple, real ex 100*(2/1)/1=200 JPY</li>
-<li>Both inflation: 100*(2/1)/(2/1) = 100 JPY</li>
-</ul></li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="nominal-vs-real-exchange-rate" class="slide level2">
-<h2>Nominal vs real exchange rate</h2>
-
-<img data-src="10_exchange_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"><aside class="notes">
-<ul>
-<li>the main driver of the real exchange rate appreciation was nominal exchange rate appreciation</li>
-<li>higher gap in CPI diverge nominal and real exchange rates</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="effective-exchange-rates" class="slide level2">
-<h2>Effective Exchange Rates</h2>
-<p><span class="math display">\[
-NEER = \sum_{i}^{N} \omega_i S^{Nom}_{i.t}
-\]</span> <span class="math display">\[
-REER = \sum_{i}^{N} \omega_i S^{Real}_{i.t}
-\]</span></p>
-</section>
-<section id="neer-vs-reer" class="slide level2">
-<h2>NEER vs REER</h2>
-
-<img data-src="10_exchange_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch"><aside class="notes">
-<ul>
-<li>73-95: despite the yen’s REER appreciation, trade surpluses were maintained as productivity growth</li>
-<li>95~: despite lagged productivity growth, trade surpluses were maintained due to Japanese deflation, yen depreciation</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="exchange-rate-and-tradeinvestment" class="slide level2">
-<h2>Exchange rate and Trade/Investment</h2>
-<ul>
-<li class="fragment">effects on trade through the relative price of goods
-<ul>
-<li class="fragment">2000s~: yen exchange rate as important factor for Japan’s competitiveness (Ito and Shimizu, 2015)</li>
-</ul></li>
-<li class="fragment">effects on foreign direct investment
-<ul>
-<li class="fragment">reallocate production from Japan to Asia due to yen appreciation (Golderg and Klein, 1996)</li>
-</ul></li>
-</ul>
 </section>
 <section id="exchange-rate-dynamics" class="slide level2">
 <h2>Exchange Rate Dynamics</h2>
@@ -350,27 +470,44 @@ REER = \sum_{i}^{N} \omega_i S^{Real}_{i.t}
           display:block!important;
       }</style></aside>
 </section>
-<section id="us-trade-deficit" class="slide level2">
-<h2>US Trade Deficit</h2>
-
-<img data-src="10_exchange_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"></section>
 <section id="intervention" class="slide level2">
 <h2>Intervention</h2>
 <ul>
-<li class="fragment"><p>purchases or sales of foreign currencies in exchange for domestic currency by the monetary authorities to influence the level of the exchange rate</p>
-<ul>
-<li class="fragment">domestic interest rate channel: sterilized intervention</li>
-<li class="fragment">portfolio-balance channel: foreign vs domestic bonds</li>
-<li class="fragment">signalling channel: collective action</li>
-</ul></li>
-<li class="fragment"><p>fixed exchange rate system: constant intervention</p></li>
-<li class="fragment"><p>flexible exchange rate system: less intervention</p></li>
+<li class="fragment">Authorities buy or sell yen against foreign currency to influence the exchange rate.</li>
+<li class="fragment">Fixed regimes intervene to defend the peg. Floating regimes may intervene occasionally.</li>
 </ul>
+<div class="slide-font-size" style="--slide-font-size: 75%">
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Unsterilized operation</th>
+<th>Impact on yen monetary base</th>
+<th>Intended effect</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sell yen, buy foreign currency</td>
+<td>Expands</td>
+<td>Weaken the yen</td>
+</tr>
+<tr class="even">
+<td>Buy yen, sell foreign currency</td>
+<td>Contracts</td>
+<td>Strengthen the yen</td>
+</tr>
+</tbody>
+</table>
+</div>
 <aside class="notes">
 <ul>
-<li>trade deficits and capital outflows: raised domestic interests or devaluation currency</li>
-<li>unsterilized intervention: sell the foreign currency: expansion of money: interest rate declines: discourage capital inflows and encourage capital outflows: home currency depreciates</li>
-<li>less intervention: not effective with limited resources, US view on intervention as unfair trade policy</li>
+<li>In an unsterilized operation, changes in the monetary base can affect domestic interest rates.</li>
+<li>Sterilization offsets the change in the monetary base. Intervention can still affect the mix of assets held by investors or signal future policy.</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -384,8 +521,8 @@ REER = \sum_{i}^{N} \omega_i S^{Real}_{i.t}
           display:block!important;
       }</style></aside>
 </section>
-<section id="intervention-decisions" class="slide level2">
-<h2>Intervention decisions</h2>
+<section id="who-decides-when-to-intervene" class="slide level2">
+<h2>Who decides when to intervene?</h2>
 
 <img data-src="image/yen_intervention_authority.png" style="width:100.0%" class="r-stretch quarto-figure-center"><p class="caption">Source: Ito (2007)</p></section>
 <section id="japanese-intervention" class="slide level2">
@@ -399,8 +536,8 @@ REER = \sum_{i}^{N} \omega_i S^{Real}_{i.t}
 <aside class="notes">
 <ul>
 <li>Plaza Accord (1985): selling dollars/buying yen</li>
-<li>Lourve Accrod (1987): buying dollars/selling yen</li>
-<li>Abenomics and quantitative easing (2003-04): selling yen</li>
+<li>Louvre Accord (1987): buying dollars/selling yen</li>
+<li>2003-04 interventions: selling yen</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -413,6 +550,18 @@ REER = \sum_{i}^{N} \omega_i S^{Real}_{i.t}
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+</section>
+<section id="discussions" class="slide level2">
+<h2>Discussions</h2>
+<ul>
+<li class="fragment">Can a stronger yen improve price competitiveness?</li>
+<li class="fragment">Can the exporter receive fewer yen while Japanese goods become relatively cheaper?</li>
+</ul>
+</section></section>
+<section>
+<section id="appendix-the-yens-international-role" class="title-slide slide level1 center">
+<h1>Appendix: The yen’s international role</h1>
+
 </section>
 <section id="invoicing-currency" class="slide level2">
 <h2>Invoicing currency</h2>
@@ -430,8 +579,8 @@ REER = \sum_{i}^{N} \omega_i S^{Real}_{i.t}
 </ul></li>
 </ul>
 </section>
-<section id="settlement-currency" class="slide level2">
-<h2>Settlement Currency</h2>
+<section id="currencies-traded-in-fx-markets" class="slide level2">
+<h2>Currencies traded in FX markets</h2>
 
 <img data-src="10_exchange_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch"></section>
 <section id="foreign-reserve-currency" class="slide level2">
@@ -460,7 +609,7 @@ REER = \sum_{i}^{N} \omega_i S^{Real}_{i.t}
 </div>
 
 
-</section>
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
