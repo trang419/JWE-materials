@@ -30,6 +30,8 @@ website:
             file: slides/09_bop.html
           - text: "Lecture 10"
             file: slides/10_exchange.html
+          - text: "Lecture 11"
+            file: slides/11_aging.html
       - text: "Data"
         file: scripts/index.html
 
