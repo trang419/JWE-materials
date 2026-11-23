@@ -26,6 +26,8 @@ website:
             file: slides/07_oda.html
           - text: "Lecture 8"
             file: slides/08_fdi.html
+          - text: "Lecture 9"
+            file: slides/09_bop.html
       - text: "Data"
         file: scripts/index.html
 
