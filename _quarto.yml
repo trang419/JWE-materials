@@ -28,6 +28,8 @@ website:
             file: slides/08_fdi.html
           - text: "Lecture 9"
             file: slides/09_bop.html
+          - text: "Lecture 10"
+            file: slides/10_exchange.html
       - text: "Data"
         file: scripts/index.html
 
