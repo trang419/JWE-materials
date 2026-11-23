@@ -6,8 +6,8 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.10.18">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.10.19">
 
   <meta name="author" content="Trang Tran">
   <meta name="dcterms.date" content="2025-12-01">
@@ -149,26 +149,393 @@ Trang Tran
 <section id="introduction" class="slide level2">
 <h2>Introduction</h2>
 <ul>
-<li class="fragment">Understand the structure of Balance of Payments (BoP)</li>
-<li class="fragment">Examine Japan’s external accounts and capital flows</li>
-<li class="fragment">Explain the relationship between the current, capital, and financial accounts</li>
-<li class="fragment">Interpret Japan’s current account, financial account, and international investment position</li>
+<li>classify a cross-border transaction into the current, capital or financial account</li>
+<li>explain why current + capital account = net lending = financial account (up to errors and omissions)</li>
+<li>distinguish a flow (financial account) from a stock (NIIP) and read Japan’s figures for both</li>
+<li>explain why a weaker yen can raise Japan’s NIIP without any transaction taking place</li>
 </ul>
 </section>
-<section id="what-is-bop" class="slide level2">
-<h2>What is BOP ?</h2>
+<section id="the-balance-of-payments" class="slide level2">
+<h2>The balance of payments</h2>
+<p>The balance of payments records transactions between residents and nonresidents over a period.</p>
 <ul>
-<li class="fragment">record all cross-border transactions of a country</li>
-<li class="fragment">three components (IMF BPM, 6th ed)
+<li class="fragment"><strong>Current account</strong> records trade, income, and current transfers.</li>
+<li class="fragment"><strong>Capital account</strong> records capital transfers and transactions in certain nonfinancial assets.</li>
+<li class="fragment"><strong>Financial account</strong> records transactions in external financial assets and liabilities.</li>
+</ul>
+</section>
+<section id="current-account" class="slide level2">
+<h2>Current account</h2>
 <ul>
-<li class="fragment">current account: trade flow, income flow, transfers</li>
-<li class="fragment">capital account: non-market transactions flow of assets</li>
-<li class="fragment">financial account: capital flow</li>
+<li class="fragment"><strong>Goods</strong> — a Japanese firm exports machinery or imports fuel.</li>
+<li class="fragment"><strong>Services</strong> — a visitor from abroad pays for a hotel in Japan. Japan records a service export.</li>
+<li class="fragment"><strong>Primary income</strong> — a Japanese investor receives dividends on shares in a foreign company.</li>
+<li class="fragment"><strong>Secondary income</strong> — a resident of Japan sends money as a gift to family living abroad.</li>
+</ul>
+</section>
+<section id="capital-account" class="slide level2">
+<h2>Capital account</h2>
+<ul>
+<li class="fragment"><strong>Capital transfers</strong> include debt forgiveness. If Japan’s government forgives a loan owed by a foreign government, Japan records a capital transfer paid and a reduction in its external loan assets.</li>
+<li class="fragment"><strong>Nonproduced nonfinancial assets</strong> include certain rights. A Japanese company buying ownership of an existing trademark from a nonresident records the acquisition here.</li>
+</ul>
+</section>
+<section id="financial-account" class="slide level2">
+<h2>Financial account</h2>
+<ul>
+<li class="fragment"><strong>External assets</strong> are financial claims that residents hold on nonresidents. A Japanese resident buying a foreign bond increases Japan’s external assets.</li>
+<li class="fragment"><strong>External liabilities</strong> are financial claims that nonresidents hold on residents. A foreign investor buying a newly issued Japanese government bond increases Japan’s external liabilities.</li>
+<li class="fragment"><strong>Reserve assets</strong> are external assets held by the monetary authorities. They are part of the financial account.</li>
+</ul>
+</section>
+<section id="sign-convention-net-lending-imf-bpm6" class="slide level2">
+<h2>Sign convention: net lending (IMF BPM6)</h2>
+<ul>
+<li><strong>Current and capital account:</strong> the balance is credits minus debits. Exports are credits and imports are debits</li>
+<li><strong>Financial account:</strong> an <em>increase in assets</em> is <strong>+</strong>, an <em>increase in liabilities</em> is <strong>+</strong> in the liabilities column, and <strong>net lending = change in assets - change in liabilities</strong></li>
+<li>So a surplus in CA + KA is matched by a <strong>positive</strong> financial account balance: the country is a net lender</li>
+<li>Older textbooks (BPM5 style) record asset increases as debits, so the financial account has the <em>opposite</em> sign and the three accounts sum to zero</li>
+</ul>
+</section>
+<section id="three-transactions-one-identity" class="slide level2">
+<h2>Three transactions, one identity</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 16%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Transaction</th>
+<th style="text-align: right;">Current account</th>
+<th>Financial account entry</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Machinery export paid into a foreign bank account</td>
+<td style="text-align: right;">+¥1m</td>
+<td>Foreign deposit +¥1m</td>
+</tr>
+<tr class="even">
+<td>Clothing import bought on credit</td>
+<td style="text-align: right;">−¥100k</td>
+<td>Trade credit liability +¥100k</td>
+</tr>
+<tr class="odd">
+<td>Hotel stay paid into a foreign bank account</td>
+<td style="text-align: right;">+¥100k</td>
+<td>Foreign deposit +¥100k</td>
+</tr>
+</tbody>
+</table>
+<p>Net lending equals the current account entry. The trade credit liability contributes <strong>−¥100k</strong> to net lending.</p>
+<aside class="notes">
+<ul>
+<li>In every row the current account entry is matched by a financial account entry of the same size, so net lending from CA equals net lending from FA.</li>
+<li>Row 2: the liability is a <em>negative</em> for net lending because net lending = change in assets - change in liabilities.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="relationships-between-the-accounts" class="slide level2">
+<h2>Relationships between the accounts</h2>
+<ul>
+<li><strong>Net lending to the rest of the world:</strong> CA + KA</li>
+<li><strong>Financial account:</strong> net acquisition of external financial assets minus net incurrence of external liabilities</li>
+<li><strong>Identity:</strong> CA + KA = FA - E&amp;O</li>
+<li>BoP is the country’s <strong>external budget constraint</strong>: a surplus in CA + KA means net lending to the rest of the world and a deficit means net borrowing</li>
+</ul>
+</section>
+<section id="why-does-japan-run-surpluses-saving-and-investment" class="slide level2">
+<h2>Why does Japan run surpluses? Saving and investment</h2>
+<p><span class="math display">\[ CA = S - I \]</span></p>
+<ul>
+<li><span class="math inline">\(S\)</span>: national saving, <span class="math inline">\(I\)</span>: domestic investment</li>
+<li>A CA surplus means the country saves more than it invests at home, and the excess contributes to net lending abroad</li>
+<li>So the CA is a macro outcome, not only a trade outcome: high household and corporate saving relative to domestic investment opportunities</li>
+</ul>
+<aside class="notes">
+<ul>
+<li>This is the link to the last lesson: aging changes S, so it changes the CA.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="japans-current-account" class="slide level2">
+<h2>Japan’s Current Account</h2>
+
+<img data-src="09-bop_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"><aside class="notes">
+<ul>
+<li>Balanced (0 percent) during the Bretton Woods regime
+<ul>
+<li>yen was fixed to the US dollar at 360 yen/dollar (1949-1971)</li>
+<li>negative during the boom years and positive when domestic growth slowed</li>
+</ul></li>
+<li>Surpluses often in the 1970s and consistently since 1981: income surplus</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="japans-current-account-components" class="slide level2">
+<h2>Japan’s current account components</h2>
+
+<img data-src="09-bop_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"><aside class="notes">
+<ul>
+<li>Service trade always deficit: important driver is international tourism balance, run large deficits but turned positive in 2015.</li>
+<li>Net exports of goods replaced by primary income (i.e., interest and dividends from external assets) after 2007</li>
+<li>Large trade deficit in 2011: natural gas to generate electricity aftermath of earthquake and nuclear plants shutdown</li>
+<li>Large trade deficit in 2022: high energy import costs due to the war in Ukraine and the depreciation of the yen making imports more expensive</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="international-tourism-and-travel-balance" class="slide level2">
+<h2>International Tourism and Travel Balance</h2>
+
+<img data-src="09-bop_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch"></section>
+<section id="japans-financial-account-components" class="slide level2">
+<h2>Japan’s financial account components</h2>
+
+<img data-src="09-bop_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"><aside class="notes">
+<ul>
+<li>A current account surplus typically corresponds to positive net lending in the financial account</li>
+<li>Composition Dominated by direct investment and portfolio assets. Shift from lending (1980s) → equity ownership (post-2000).</li>
+<li>Net direct investment has increased steadily</li>
+<li>Net portfolio investment abroad has been very volatile
+<ul>
+<li>in 2011: partly due to Japanese insurance companies’ repatriation of assets to pay for insurance reimbursements</li>
+</ul></li>
+<li>Official reserve: MOF (BOJ being its agent) occasionally intervened in the foreign exchange market to buy the US dollar (and sell the yen)
+<ul>
+<li>net external assets increase in 2003–2004 and 2011</li>
 </ul></li>
 </ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="example" class="slide level2">
-<h2>Example</h2>
+<section id="reserve-assets-the-official-part-of-the-financial-account" class="slide level2">
+<h2>Reserve assets: the official part of the financial account</h2>
+<ul>
+<li>Reserve assets are foreign assets held by the authorities (MOF decides, the BOJ acts as agent)</li>
+<li>When the authorities buy dollars and sell yen to influence the exchange rate, reserve assets rise: this is a financial account entry</li>
+<li>Unlike private flows, reserve changes are a <em>policy decision</em></li>
+</ul>
+<aside class="notes">
+<ul>
+<li>Details of intervention (why, when, sterilization, accords) are in the exchange rate lesson.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="from-flow-to-stock" class="slide level2">
+<h2>From flow to stock</h2>
+<p><strong>Net international investment position (NIIP)</strong> is external assets minus external liabilities at a point in time.</p>
+<p><span class="math display">\[
+\begin{aligned}
+\text{Closing NIIP} &amp;= \text{Opening NIIP} + \text{Net lending} \\
+&amp;\quad + \text{Revaluation} + \text{Other changes}
+\end{aligned}
+\]</span></p>
+<p>In the IMF example, <strong>469 + 10 + 8 + 0 = 487</strong>. The financial account adds 10. Changes in prices or exchange rates add 8.</p>
+</section>
+<section id="japans-niip" class="slide level2">
+<h2>Japan’s NIIP</h2>
+
+<img data-src="09-bop_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch"><aside class="notes">
+<ul>
+<li>Level Japan has one of the world’s largest positive NIIPs (~US$3–4 trillion, &gt;80% of GDP 2024).<br>
+Reflects decades of current account surpluses and outward FDI. (US: -90% of its nominal GDP 2024)</li>
+<li>Resilience Stable external position despite aging and yen fluctuations.<br>
+Suggests strong net creditor status and global financial reach.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="japan-as-a-mature-creditor" class="slide level2">
+<h2>Japan as a mature creditor</h2>
+<p>A stylized path:</p>
+<ol type="1">
+<li><strong>Growth era:</strong> current account roughly balanced, limited by foreign reserves</li>
+<li><strong>Trade-surplus era:</strong> goods surplus drives the CA; outward FDI and portfolio investment build external assets</li>
+<li><strong>Mature creditor:</strong> returns on those assets (primary income) rival or exceed the goods balance; the CA stays in surplus even when goods trade is in deficit (e.g., 2011, 2022)</li>
+</ol>
+<aside class="notes">
+<ul>
+<li>The current account components chart shows how primary income offsets the goods deficit.</li>
+<li>Japan’s external position is now sustained by the return on past saving, not only by exports.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="valuation-and-the-yen" class="slide level2">
+<h2>Valuation and the yen</h2>
+<p>Toy example:</p>
+<ul>
+<li>Japan holds <strong>US$1 trillion</strong> of foreign assets and has no foreign-currency liabilities</li>
+<li>At <strong>¥100/$</strong>: assets = ¥100 trillion</li>
+<li>At <strong>¥150/$</strong>: assets = ¥150 trillion</li>
+<li><strong>+¥50 trillion</strong> in the yen value of NIIP, with <em>no</em> transaction at all</li>
+</ul>
+<ul>
+<li class="fragment">Much of Japan’s external assets are in foreign currency, while a larger share of its liabilities is in yen, so a weaker yen tends to raise NIIP measured in yen</li>
+</ul>
+<aside class="notes">
+<ul>
+<li>In dollar terms nothing changed: say that explicitly, because NIIP is reported in different currencies in different sources (USD in the OECD chart, yen in MOF data).</li>
+<li>Link to 2022: the yen’s depreciation raised the yen value of foreign assets while making imports more expensive. The same exchange rate move hits the two sides of the balance sheet and the trade balance in opposite directions.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="who-supplies-and-demands-yen" class="slide level2">
+<h2>Who supplies and demands yen?</h2>
+<div style="font-size: 85%">
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Demand for yen (foreigners need yen)</th>
+<th>Supply of yen (Japanese need foreign currency)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Exports of goods and services</td>
+<td>Imports of goods and services</td>
+</tr>
+<tr class="even">
+<td>Inbound tourism</td>
+<td>Outbound tourism</td>
+</tr>
+<tr class="odd">
+<td>Income earned abroad and brought home</td>
+<td>Income paid to foreign investors</td>
+</tr>
+<tr class="even">
+<td>Foreign purchases of Japanese assets (e.g., JGBs, equities)</td>
+<td>Japanese purchases of foreign assets (FDI, portfolio, carry trade)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<aside class="notes">
+<ul>
+<li>When exports are invoiced in dollars, the conversion happens at the firm or bank level, but the logic is the same: every BoP line is ultimately a demand or supply of yen.</li>
+<li>The exchange rate is the price that clears these flows (together with expectations, interest rates, and official intervention).</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="discussion-questions" class="slide level2">
+<h2>Discussion questions</h2>
+<ol type="1">
+<li>Japan ran a current account surplus in 2022, yet the yen weakened sharply.</li>
+<li>If aging households start drawing down savings, what happens to <span class="math inline">\(S - I\)</span>, to the current account, and to NIIP over time?</li>
+<li>In years when Japan’s goods trade is in deficit, which line of the current account keeps it in surplus?</li>
+</ol>
+</section>
+<section>
+<section id="appendix" class="title-slide slide level1 center">
+<h1>Appendix</h1>
+
+</section>
+<section id="worked-balance-of-payments-example" class="slide level2">
+<h2>Worked balance-of-payments example</h2>
 <div style="font-size:25%">
 <table class="caption-top">
 <colgroup>
@@ -326,8 +693,8 @@ Trang Tran
 </tr>
 <tr class="even">
 <td><strong>Financial account (by functional category)</strong></td>
-<td></td>
-<td></td>
+<td><strong>Net acquisition of assets</strong></td>
+<td><strong>Net incurrence of liabilities</strong></td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -472,10 +839,8 @@ Trang Tran
 <aside class="notes">
 <ul>
 <li>“Net” compensation of employees (#5): <strong>#1 minus the sum of #3 and #4</strong></li>
-<li><strong>Personal remittances:</strong> #2 plus #5 plus #6<br>
-</li>
-<li><strong>Total remittances:</strong> #2 plus #5 plus #6 plus #7<br>
-</li>
+<li><strong>Personal remittances:</strong> #2 plus #5 plus #6</li>
+<li><strong>Total remittances:</strong> #2 plus #5 plus #6 plus #7</li>
 <li><strong>Total remittances plus transfers to NPISHs:</strong> #2 plus #5 plus #6 plus #7 plus #8 plus #9</li>
 </ul>
 <style type="text/css">
@@ -490,119 +855,8 @@ Trang Tran
           display:block!important;
       }</style></aside>
 </section>
-<section id="double-entry-record" class="slide level2">
-<h2>Double entry record</h2>
-<div style="font-size:50%">
-<p>A Japanese firm exports machinery worth <strong>1 million</strong> to the United States. Payment is received by bank transfer.</p>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>BoP Account</th>
-<th>Credit (+ inflow)</th>
-<th>Debit (− outflow)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Current Account</strong> (Exports of Goods)</td>
-<td>+1,000,000</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>Financial Account</strong> (Bank deposits oversea account)</td>
-<td></td>
-<td>−1,000,000</td>
-</tr>
-</tbody>
-</table>
-<p>A Japanese resident buys clothes worth <strong>100,000 </strong> from Korea using trade credits</p>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>BoP Account</th>
-<th>Credit (+ inflow)</th>
-<th>Debit (− outflow)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Current Account</strong> (Imports of Goods)</td>
-<td></td>
-<td>-100,000</td>
-</tr>
-<tr class="even">
-<td><strong>Financial Account</strong> (Trade credit liabilities)</td>
-<td>100,000</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>Foreigners visit Japanese and pay for their holiday by using money deposited in their country’s bank accounts.</p>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>BoP Account</th>
-<th>Credit (+ inflow)</th>
-<th>Debit (− outflow)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Current Account</strong> (Export of Services)</td>
-<td>100,000</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>Financial Account</strong> (Bank deposits oversea account)</td>
-<td></td>
-<td>-100,000</td>
-</tr>
-</tbody>
-</table>
-</div>
-<aside class="notes">
-<ul>
-<li>when the purchases of foreign assets exceed the sales of domestic assets to foreigners (with net receipt of foreign assets), the financial account shows a positive number</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="relationships-between-the-accounts" class="slide level2">
-<h2>Relationships between the accounts</h2>
-<ul>
-<li class="fragment"><p>Current Account + Capital Account: net receive from the rest of the world in return for the exports of goods and other resources</p></li>
-<li class="fragment"><p>Financial Account: net increase foreign assets</p></li>
-<li class="fragment"><p>Current Account + Capital Account = Financial Account - Errors and Omissions</p></li>
-<li class="fragment"><p>BOP is a description of the international budget constraint for the country</p></li>
-</ul>
-<aside class="notes">
-<ul>
-<li>a country has to have a surplus in current and capital accounts to invest abroad</li>
-<li>it has to borrow from abroad when it runs deficits in the sum of current and capital accounts</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="net-international-investment-position" class="slide level2">
-<h2>Net International Investment Position</h2>
+<section id="detailed-international-investment-position-example" class="slide level2">
+<h2>Detailed international investment position example</h2>
 <div style="font-size:40%">
 <table class="caption-top" style="width:100%;">
 <colgroup>
@@ -756,105 +1010,6 @@ Trang Tran
           display:block!important;
       }</style></aside>
 </section>
-<section id="japans-current-account" class="slide level2">
-<h2>Japan’s Current Account</h2>
-
-<img data-src="09-bop_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"><aside class="notes">
-<ul>
-<li>Balanced (0 percent) during the Bretton Woods regime
-<ul>
-<li>yen was fixed to the US dollar at 360 yen/dollar (1949-1971)</li>
-<li>negative during the boom years and positive when domestic growth slowed</li>
-</ul></li>
-<li>Surpluses often in the 1970s and consistently since 1981: income surplus</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="japans-current-account-components" class="slide level2">
-<h2>Japan’s current account components</h2>
-
-<img data-src="09-bop_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"><aside class="notes">
-<ul>
-<li>Service trade always deficit: important driver is international tourism balance, run large deficits but turned positive in 2015.</li>
-<li>Net exports of goods replaced by primary income (i.e., interest and dividends from external assets) after 2007</li>
-<li>Large trade deficit in 2011: natural gas to generate electricity aftermath of earthquake and nuclear plants shutdown</li>
-<li>Large trade deficit in 2022: high energy import costs due to the war in Ukraine and the depreciation of the yen making imports more expensive</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="international-tourism-and-travel-balance" class="slide level2">
-<h2>International Tourism and Travel Balance</h2>
-
-<img data-src="09-bop_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch"></section>
-<section id="japans-financial-account-components" class="slide level2">
-<h2>Japan’s financial account components</h2>
-
-<img data-src="09-bop_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"><aside class="notes">
-<ul>
-<li>A current account surplus implies an increase in external assets (i.e., surpluses of the financial accounts)</li>
-<li>Composition Dominated by direct investment and portfolio assets. Shift from lending (1980s) → equity ownership (post-2000).</li>
-<li>Net direct investment has increased steadily</li>
-<li>Net portfolio investment abroad has been very volatile
-<ul>
-<li>in 2011: partly due to Japanese insurance companies’ repatriation of assets to pay for insurance reimbursements</li>
-</ul></li>
-<li>Official reserve: MOF (BOJ being its agent) occasionally intervened in the foreign exchange market to buy the US dollar (and sell the yen)
-<ul>
-<li>net external assets increase in 2003–2004 and 2011</li>
-</ul></li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="japans-niip" class="slide level2">
-<h2>Japan’s NIIP</h2>
-
-<img data-src="09-bop_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch"><aside class="notes">
-<ul>
-<li>Level Japan has one of the world’s largest positive NIIPs (~US$3–4 trillion, &gt;80% of GDP 2024). Reflects decades of current account surpluses and outward FDI. (US: -90% of its nominal GDP 2024)</li>
-<li>Resilience Stable external position despite aging and yen fluctuations. Suggests strong net creditor status and global financial reach.</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
 <section id="references" class="slide level2">
 <h2>References</h2>
 <div style="font-size:50%">
@@ -872,7 +1027,7 @@ Trang Tran
 </div>
 
 
-</section>
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">

@@ -949,14 +949,14 @@
     "href": "slides/09 bop.html",
     "title": "Balance of Payments: Accounts and Japan’s External Position",
     "section": "",
-    "text": "Understand the structure of Balance of Payments (BoP)\nExamine Japan’s external accounts and capital flows\nExplain the relationship between the current, capital, and financial accounts\nInterpret Japan’s current account, financial account, and international investment position"
+    "text": "classify a cross-border transaction into the current, capital or financial account\nexplain why current + capital account = net lending = financial account (up to errors and omissions)\ndistinguish a flow (financial account) from a stock (NIIP) and read Japan’s figures for both\nexplain why a weaker yen can raise Japan’s NIIP without any transaction taking place"
   },
   {
     "objectID": "slides/09 bop.html#introduction",
     "href": "slides/09 bop.html#introduction",
     "title": "Balance of Payments: Accounts and Japan’s External Position",
     "section": "",
-    "text": "Understand the structure of Balance of Payments (BoP)\nExamine Japan’s external accounts and capital flows\nExplain the relationship between the current, capital, and financial accounts\nInterpret Japan’s current account, financial account, and international investment position"
+    "text": "classify a cross-border transaction into the current, capital or financial account\nexplain why current + capital account = net lending = financial account (up to errors and omissions)\ndistinguish a flow (financial account) from a stock (NIIP) and read Japan’s figures for both\nexplain why a weaker yen can raise Japan’s NIIP without any transaction taking place"
   },
   {
     "objectID": "slides/09 bop.html#what-is-bop",
@@ -977,7 +977,7 @@
     "href": "slides/09 bop.html#remittances",
     "title": "Balance of Payments: Accounts and Japan’s External Position",
     "section": "Remittances",
-    "text": "Remittances\n\nComponents Required for Compiling Remittance Items and Their Source\n\n\n\n\n\n\n\nItem\nSource and description\n\n\n\n\n1. Compensation of employees\nPrimary income account, standard component\n\n\n2. Personal transfers\nSecondary income account, standard component\n\n\n3. Travel and transport related to employment of border, seasonal, and other short-term workers\nGoods and services account, supplementary item\n\n\n4. Taxes and social contributions related to employment of border, seasonal, and other short-term workers\nSecondary income account, supplementary item\n\n\n5. Compensation of employees less expenses related to employment of border, seasonal, and other short-term workers\nPrimary income account (for compensation of employees), standard component; Goods and services account (for travel and transport expenses) and secondary income account (for taxes and social contributions), supplementary items\n\n\n6. Capital transfers between households\nCapital account, supplementary item\n\n\n7. Social benefits\nSecondary income account, supplementary item\n\n\n8. Current transfers to NPISHs\nSecondary income account, supplementary item\n\n\n9. Capital transfers to NPISHs\nCapital account, supplementary item\n\n\n\nSource: Table A5.1 IMF BPM 6th ed.\n\n\n\n“Net” compensation of employees (#5): #1 minus the sum of #3 and #4\nPersonal remittances: #2 plus #5 plus #6\n\nTotal remittances: #2 plus #5 plus #6 plus #7\n\nTotal remittances plus transfers to NPISHs: #2 plus #5 plus #6 plus #7 plus #8 plus #9"
+    "text": "Remittances\n\nComponents Required for Compiling Remittance Items and Their Source\n\n\n\n\n\n\n\nItem\nSource and description\n\n\n\n\n1. Compensation of employees\nPrimary income account, standard component\n\n\n2. Personal transfers\nSecondary income account, standard component\n\n\n3. Travel and transport related to employment of border, seasonal, and other short-term workers\nGoods and services account, supplementary item\n\n\n4. Taxes and social contributions related to employment of border, seasonal, and other short-term workers\nSecondary income account, supplementary item\n\n\n5. Compensation of employees less expenses related to employment of border, seasonal, and other short-term workers\nPrimary income account (for compensation of employees), standard component; Goods and services account (for travel and transport expenses) and secondary income account (for taxes and social contributions), supplementary items\n\n\n6. Capital transfers between households\nCapital account, supplementary item\n\n\n7. Social benefits\nSecondary income account, supplementary item\n\n\n8. Current transfers to NPISHs\nSecondary income account, supplementary item\n\n\n9. Capital transfers to NPISHs\nCapital account, supplementary item\n\n\n\nSource: Table A5.1 IMF BPM 6th ed.\n\n\n\n“Net” compensation of employees (#5): #1 minus the sum of #3 and #4\nPersonal remittances: #2 plus #5 plus #6\nTotal remittances: #2 plus #5 plus #6 plus #7\nTotal remittances plus transfers to NPISHs: #2 plus #5 plus #6 plus #7 plus #8 plus #9"
   },
   {
     "objectID": "slides/09 bop.html#double-entry-record",
@@ -991,7 +991,7 @@
     "href": "slides/09 bop.html#relationships-between-the-accounts",
     "title": "Balance of Payments: Accounts and Japan’s External Position",
     "section": "Relationships between the accounts",
-    "text": "Relationships between the accounts\n\nCurrent Account + Capital Account: net receive from the rest of the world in return for the exports of goods and other resources\nFinancial Account: net increase foreign assets\nCurrent Account + Capital Account = Financial Account - Errors and Omissions\nBOP is a description of the international budget constraint for the country\n\n\n\na country has to have a surplus in current and capital accounts to invest abroad\nit has to borrow from abroad when it runs deficits in the sum of current and capital accounts"
+    "text": "Relationships between the accounts\n\n\nNet lending to the rest of the world: CA + KA\nFinancial account: net acquisition of external financial assets minus net incurrence of external liabilities\nIdentity: CA + KA = FA - E&O\nBoP is the country’s external budget constraint: a surplus in CA + KA means net lending to the rest of the world and a deficit means net borrowing"
   },
   {
     "objectID": "slides/09 bop.html#net-international-investment-position",
@@ -1026,14 +1026,14 @@
     "href": "slides/09 bop.html#japans-financial-account-components",
     "title": "Balance of Payments: Accounts and Japan’s External Position",
     "section": "Japan’s financial account components",
-    "text": "Japan’s financial account components\n\n\n\n\n\n\n\n\n\n\n\nA current account surplus implies an increase in external assets (i.e., surpluses of the financial accounts)\nComposition Dominated by direct investment and portfolio assets. Shift from lending (1980s) → equity ownership (post-2000).\nNet direct investment has increased steadily\nNet portfolio investment abroad has been very volatile\n\nin 2011: partly due to Japanese insurance companies’ repatriation of assets to pay for insurance reimbursements\n\nOfficial reserve: MOF (BOJ being its agent) occasionally intervened in the foreign exchange market to buy the US dollar (and sell the yen)\n\nnet external assets increase in 2003–2004 and 2011"
+    "text": "Japan’s financial account components\n\n\n\n\n\n\n\n\n\n\n\nA current account surplus typically corresponds to positive net lending in the financial account\nComposition Dominated by direct investment and portfolio assets. Shift from lending (1980s) → equity ownership (post-2000).\nNet direct investment has increased steadily\nNet portfolio investment abroad has been very volatile\n\nin 2011: partly due to Japanese insurance companies’ repatriation of assets to pay for insurance reimbursements\n\nOfficial reserve: MOF (BOJ being its agent) occasionally intervened in the foreign exchange market to buy the US dollar (and sell the yen)\n\nnet external assets increase in 2003–2004 and 2011"
   },
   {
     "objectID": "slides/09 bop.html#japans-niip",
     "href": "slides/09 bop.html#japans-niip",
     "title": "Balance of Payments: Accounts and Japan’s External Position",
     "section": "Japan’s NIIP",
-    "text": "Japan’s NIIP\n\n\n\n\n\n\n\n\n\n\n\nLevel Japan has one of the world’s largest positive NIIPs (~US$3–4 trillion, &gt;80% of GDP 2024). Reflects decades of current account surpluses and outward FDI. (US: -90% of its nominal GDP 2024)\nResilience Stable external position despite aging and yen fluctuations. Suggests strong net creditor status and global financial reach."
+    "text": "Japan’s NIIP\n\n\n\n\n\n\n\n\n\n\n\nLevel Japan has one of the world’s largest positive NIIPs (~US$3–4 trillion, &gt;80% of GDP 2024).\nReflects decades of current account surpluses and outward FDI. (US: -90% of its nominal GDP 2024)\nResilience Stable external position despite aging and yen fluctuations.\nSuggests strong net creditor status and global financial reach."
   },
   {
     "objectID": "slides/09 bop.html#references",
@@ -2706,7 +2706,7 @@
     "href": "slides/09-bop-slides.html#introduction",
     "title": "Balance of Payments: Accounts and Japan’s External Position",
     "section": "Introduction",
-    "text": "Introduction\n\nUnderstand the structure of Balance of Payments (BoP)\nExamine Japan’s external accounts and capital flows\nExplain the relationship between the current, capital, and financial accounts\nInterpret Japan’s current account, financial account, and international investment position"
+    "text": "Introduction\n\nclassify a cross-border transaction into the current, capital or financial account\nexplain why current + capital account = net lending = financial account (up to errors and omissions)\ndistinguish a flow (financial account) from a stock (NIIP) and read Japan’s figures for both\nexplain why a weaker yen can raise Japan’s NIIP without any transaction taking place"
   },
   {
     "objectID": "slides/09-bop-slides.html#what-is-bop",
@@ -2727,7 +2727,7 @@
     "href": "slides/09-bop-slides.html#remittances",
     "title": "Balance of Payments: Accounts and Japan’s External Position",
     "section": "Remittances",
-    "text": "Remittances\n\nComponents Required for Compiling Remittance Items and Their Source\n\n\n\n\n\n\n\nItem\nSource and description\n\n\n\n\n1. Compensation of employees\nPrimary income account, standard component\n\n\n2. Personal transfers\nSecondary income account, standard component\n\n\n3. Travel and transport related to employment of border, seasonal, and other short-term workers\nGoods and services account, supplementary item\n\n\n4. Taxes and social contributions related to employment of border, seasonal, and other short-term workers\nSecondary income account, supplementary item\n\n\n5. Compensation of employees less expenses related to employment of border, seasonal, and other short-term workers\nPrimary income account (for compensation of employees), standard component; Goods and services account (for travel and transport expenses) and secondary income account (for taxes and social contributions), supplementary items\n\n\n6. Capital transfers between households\nCapital account, supplementary item\n\n\n7. Social benefits\nSecondary income account, supplementary item\n\n\n8. Current transfers to NPISHs\nSecondary income account, supplementary item\n\n\n9. Capital transfers to NPISHs\nCapital account, supplementary item\n\n\n\nSource: Table A5.1 IMF BPM 6th ed.\n\n\n\n“Net” compensation of employees (#5): #1 minus the sum of #3 and #4\nPersonal remittances: #2 plus #5 plus #6\n\nTotal remittances: #2 plus #5 plus #6 plus #7\n\nTotal remittances plus transfers to NPISHs: #2 plus #5 plus #6 plus #7 plus #8 plus #9"
+    "text": "Remittances\n\nComponents Required for Compiling Remittance Items and Their Source\n\n\n\n\n\n\n\nItem\nSource and description\n\n\n\n\n1. Compensation of employees\nPrimary income account, standard component\n\n\n2. Personal transfers\nSecondary income account, standard component\n\n\n3. Travel and transport related to employment of border, seasonal, and other short-term workers\nGoods and services account, supplementary item\n\n\n4. Taxes and social contributions related to employment of border, seasonal, and other short-term workers\nSecondary income account, supplementary item\n\n\n5. Compensation of employees less expenses related to employment of border, seasonal, and other short-term workers\nPrimary income account (for compensation of employees), standard component; Goods and services account (for travel and transport expenses) and secondary income account (for taxes and social contributions), supplementary items\n\n\n6. Capital transfers between households\nCapital account, supplementary item\n\n\n7. Social benefits\nSecondary income account, supplementary item\n\n\n8. Current transfers to NPISHs\nSecondary income account, supplementary item\n\n\n9. Capital transfers to NPISHs\nCapital account, supplementary item\n\n\n\nSource: Table A5.1 IMF BPM 6th ed.\n\n\n\n“Net” compensation of employees (#5): #1 minus the sum of #3 and #4\nPersonal remittances: #2 plus #5 plus #6\nTotal remittances: #2 plus #5 plus #6 plus #7\nTotal remittances plus transfers to NPISHs: #2 plus #5 plus #6 plus #7 plus #8 plus #9"
   },
   {
     "objectID": "slides/09-bop-slides.html#double-entry-record",
@@ -2741,7 +2741,7 @@
     "href": "slides/09-bop-slides.html#relationships-between-the-accounts",
     "title": "Balance of Payments: Accounts and Japan’s External Position",
     "section": "Relationships between the accounts",
-    "text": "Relationships between the accounts\n\nCurrent Account + Capital Account: net receive from the rest of the world in return for the exports of goods and other resources\nFinancial Account: net increase foreign assets\nCurrent Account + Capital Account = Financial Account - Errors and Omissions\nBOP is a description of the international budget constraint for the country\n\n\n\na country has to have a surplus in current and capital accounts to invest abroad\nit has to borrow from abroad when it runs deficits in the sum of current and capital accounts"
+    "text": "Relationships between the accounts\n\nNet lending to the rest of the world: CA + KA\nFinancial account: net acquisition of external financial assets minus net incurrence of external liabilities\nIdentity: CA + KA = FA - E&O\nBoP is the country’s external budget constraint: a surplus in CA + KA means net lending to the rest of the world and a deficit means net borrowing"
   },
   {
     "objectID": "slides/09-bop-slides.html#net-international-investment-position",
@@ -2776,14 +2776,14 @@
     "href": "slides/09-bop-slides.html#japans-financial-account-components",
     "title": "Balance of Payments: Accounts and Japan’s External Position",
     "section": "Japan’s financial account components",
-    "text": "Japan’s financial account components\n\n\n\nA current account surplus implies an increase in external assets (i.e., surpluses of the financial accounts)\nComposition Dominated by direct investment and portfolio assets. Shift from lending (1980s) → equity ownership (post-2000).\nNet direct investment has increased steadily\nNet portfolio investment abroad has been very volatile\n\nin 2011: partly due to Japanese insurance companies’ repatriation of assets to pay for insurance reimbursements\n\nOfficial reserve: MOF (BOJ being its agent) occasionally intervened in the foreign exchange market to buy the US dollar (and sell the yen)\n\nnet external assets increase in 2003–2004 and 2011"
+    "text": "Japan’s financial account components\n\n\n\nA current account surplus typically corresponds to positive net lending in the financial account\nComposition Dominated by direct investment and portfolio assets. Shift from lending (1980s) → equity ownership (post-2000).\nNet direct investment has increased steadily\nNet portfolio investment abroad has been very volatile\n\nin 2011: partly due to Japanese insurance companies’ repatriation of assets to pay for insurance reimbursements\n\nOfficial reserve: MOF (BOJ being its agent) occasionally intervened in the foreign exchange market to buy the US dollar (and sell the yen)\n\nnet external assets increase in 2003–2004 and 2011"
   },
   {
     "objectID": "slides/09-bop-slides.html#japans-niip",
     "href": "slides/09-bop-slides.html#japans-niip",
     "title": "Balance of Payments: Accounts and Japan’s External Position",
     "section": "Japan’s NIIP",
-    "text": "Japan’s NIIP\n\n\n\nLevel Japan has one of the world’s largest positive NIIPs (~US$3–4 trillion, &gt;80% of GDP 2024). Reflects decades of current account surpluses and outward FDI. (US: -90% of its nominal GDP 2024)\nResilience Stable external position despite aging and yen fluctuations. Suggests strong net creditor status and global financial reach."
+    "text": "Japan’s NIIP\n\n\n\nLevel Japan has one of the world’s largest positive NIIPs (~US$3–4 trillion, &gt;80% of GDP 2024).\nReflects decades of current account surpluses and outward FDI. (US: -90% of its nominal GDP 2024)\nResilience Stable external position despite aging and yen fluctuations.\nSuggests strong net creditor status and global financial reach."
   },
   {
     "objectID": "slides/09-bop-slides.html#references",
@@ -4205,5 +4205,299 @@
     "title": "Japanese inward and outward FDI, 2024",
     "section": "",
     "text": "Japanese inward and outward FDI, 2024\nSource: Japan Ministry of Finance, annual direct investment flows by region and industry, directional principle. Workbook downloaded 18 November 2026: https://www.mof.go.jp/policy/international_policy/reference/balance_of_payments/revised/fdi2024.xlsx\nIndex: https://www.mof.go.jp/english/policy/international_policy/reference/balance_of_payments/ebpfdii.htm\nRun Rscript \"scripts/08 japan_fdi_2024.R\" from the repository root to extract japan_fdi_by_country_industry_2024.csv from the saved workbook mof_fdi2024.xlsx. This revised workbook supersedes the older PDF transcription for the charts in slides/08_fdi.qmd. Do not combine values from the two vintages.\nValues are annual net flows in 100 million yen; divide by 10 for billion yen or 10,000 for trillion yen. Source sheet, cell, original value and reporting status are retained. Confidential cells and no-report cells remain missing, not zero.\nASEAN excluding Singapore is calculated as the reported ASEAN aggregate minus Singapore, separately for inward/outward flows and manufacturing, non-manufacturing and total. Its source-cell field records both inputs. It is mutually exclusive with the separate Singapore bar. The source’s 2024 ASEAN membership coverage is retained.\nCounterpart countries represent immediate investment relationships, not ultimate beneficial ownership. Negative flows represent net withdrawals. Non-manufacturing includes services and other industries. The narrow source category Services is not the aggregate of all service industries. Charts show selected countries and industries rather than exhaustive rankings."
+  },
+  {
+    "objectID": "slides/09 bop.html#learning-outcomes",
+    "href": "slides/09 bop.html#learning-outcomes",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "",
+    "text": "By the end of this lesson you can:\n\nclassify a cross-border transaction into the current, capital or financial account\nexplain why current + capital account = net lending = financial account (up to errors and omissions)\ndistinguish a flow (financial account) from a stock (NIIP) and read Japan’s figures for both\nexplain why a weaker yen can raise Japan’s NIIP without any transaction taking place"
+  },
+  {
+    "objectID": "slides/09 bop.html#the-bop-map",
+    "href": "slides/09 bop.html#the-bop-map",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "The BoP map",
+    "text": "The BoP map\nThe balance of payments records transactions between residents of an economy and the rest of the world.\n\n\n\n\n\nflowchart LR\n  CA[\"Current account&lt;br&gt;goods, services,&lt;br&gt;primary and secondary income\"] --&gt; NL[\"Net lending (+) / borrowing (-)&lt;br&gt;to the rest of the world\"]\n  KA[\"Capital account&lt;br&gt;capital transfers, non-produced&lt;br&gt;non-financial assets\"] --&gt; NL\n  NL == \"equals\" ==&gt; FA[\"Financial account&lt;br&gt;net acquisition of assets&lt;br&gt;minus net incurrence of liabilities\"]\n  FA --&gt; RES[\"of which: reserve assets&lt;br&gt;(official sector)\"]\n  EO[\"Errors and omissions\"] -.-&gt; FA\n\n\n\n\n\n\n\n\nThis is the anchor slide: return to it whenever a new account appears.\nLeft side: real transactions (goods, income, transfers). Right side: how they are financed (assets acquired, liabilities incurred).\nErrors and omissions: the statistical gap, defined as FA net lending minus CA+KA net lending."
+  },
+  {
+    "objectID": "slides/09 bop.html#sign-convention-net-lending-imf-bpm6",
+    "href": "slides/09 bop.html#sign-convention-net-lending-imf-bpm6",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Sign convention: net lending (IMF BPM6)",
+    "text": "Sign convention: net lending (IMF BPM6)\n\n\nCurrent and capital account: the balance is credits minus debits. Exports are credits and imports are debits\nFinancial account: an increase in assets is +, an increase in liabilities is + in the liabilities column, and net lending = change in assets - change in liabilities\nSo a surplus in CA + KA is matched by a positive financial account balance: the country is a net lender\nOlder textbooks (BPM5 style) record asset increases as debits, so the financial account has the opposite sign and the three accounts sum to zero"
+  },
+  {
+    "objectID": "slides/09 bop.html#three-transactions-one-identity",
+    "href": "slides/09 bop.html#three-transactions-one-identity",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Three transactions, one identity",
+    "text": "Three transactions, one identity\n\n\n\n\n\n\n\n\nTransaction\nCurrent account\nFinancial account entry\n\n\n\n\nMachinery export paid into a foreign bank account\n+¥1m\nForeign deposit +¥1m\n\n\nClothing import bought on credit\n−¥100k\nTrade credit liability +¥100k\n\n\nHotel stay paid into a foreign bank account\n+¥100k\nForeign deposit +¥100k\n\n\n\nNet lending equals the current account entry. The trade credit liability contributes −¥100k to net lending.\n\n\nIn every row the current account entry is matched by a financial account entry of the same size, so net lending from CA equals net lending from FA.\nRow 2: the liability is a negative for net lending because net lending = change in assets - change in liabilities."
+  },
+  {
+    "objectID": "slides/09 bop.html#why-does-japan-run-surpluses-saving-and-investment",
+    "href": "slides/09 bop.html#why-does-japan-run-surpluses-saving-and-investment",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Why does Japan run surpluses? Saving and investment",
+    "text": "Why does Japan run surpluses? Saving and investment\n\\[ CA = S - I \\]\n\n\n\\(S\\): national saving, \\(I\\): domestic investment\nA CA surplus means the country saves more than it invests at home, and the excess contributes to net lending abroad\nSo the CA is a macro outcome, not only a trade outcome: high household and corporate saving relative to domestic investment opportunities\n\n\n\n\nThis is the link to the last lesson: aging changes S, so it changes the CA."
+  },
+  {
+    "objectID": "slides/09 bop.html#from-flow-to-stock-the-niip-bridge",
+    "href": "slides/09 bop.html#from-flow-to-stock-the-niip-bridge",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "From flow to stock: the NIIP bridge",
+    "text": "From flow to stock: the NIIP bridge\n\\[ \\text{NIIP}_{close} = \\text{NIIP}_{open} + \\text{Transactions (FA net)} + \\text{Revaluation} + \\text{Other changes} \\]\n\n\n\n\n\nOpen\nTransactions\nRevaluation\nOther changes\nClose\n\n\n\n\nNet IIP (IMF example)\n469\n+10\n+8\n0\n487\n\n\n\n\n\n\nTransactions reflect net lending or borrowing recorded in the financial account\nRevaluation is price and exchange rate changes on assets and liabilities already held\n\n\n\n\nCheck: 469 + 10 + 0 + 8 = 487.\nReplace with Japan’s actual figures from the MOF/BOJ IIP data if you have them handy; the structure of the slide stays the same.\nThe “Other changes in volume” column is all zeros in the example, so it is dropped from the table here."
+  },
+  {
+    "objectID": "slides/09 bop.html#valuation-and-the-yen",
+    "href": "slides/09 bop.html#valuation-and-the-yen",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Valuation and the yen",
+    "text": "Valuation and the yen\n\nToy example:\n\nJapan holds US$1 trillion of foreign assets and has no foreign-currency liabilities\nAt ¥100/$: assets = ¥100 trillion\nAt ¥150/$: assets = ¥150 trillion\n+¥50 trillion in the yen value of NIIP, with no transaction at all\n\n\n\nMuch of Japan’s external assets are in foreign currency, while a larger share of its liabilities is in yen, so a weaker yen tends to raise NIIP measured in yen\n\n\n\nIn dollar terms nothing changed: say that explicitly, because NIIP is reported in different currencies in different sources (USD in the OECD chart, yen in MOF data).\nLink to 2022: the yen’s depreciation raised the yen value of foreign assets while making imports more expensive. The same exchange rate move hits the two sides of the balance sheet and the trade balance in opposite directions."
+  },
+  {
+    "objectID": "slides/09 bop.html#reserve-assets-the-official-part-of-the-financial-account",
+    "href": "slides/09 bop.html#reserve-assets-the-official-part-of-the-financial-account",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Reserve assets: the official part of the financial account",
+    "text": "Reserve assets: the official part of the financial account\n\n\nReserve assets are foreign assets held by the authorities (MOF decides, the BOJ acts as agent)\nWhen the authorities buy dollars and sell yen to influence the exchange rate, reserve assets rise: this is a financial account entry\nUnlike private flows, reserve changes are a policy decision\n\n\n\n\nDetails of intervention (why, when, sterilization, accords) are in the exchange rate lesson."
+  },
+  {
+    "objectID": "slides/09 bop.html#who-supplies-and-demands-yen",
+    "href": "slides/09 bop.html#who-supplies-and-demands-yen",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Who supplies and demands yen?",
+    "text": "Who supplies and demands yen?\n\n\n\n\n\n\n\n\nDemand for yen (foreigners need yen)\nSupply of yen (Japanese need foreign currency)\n\n\n\n\nExports of goods and services\nImports of goods and services\n\n\nInbound tourism\nOutbound tourism\n\n\nIncome earned abroad and brought home\nIncome paid to foreign investors\n\n\nForeign purchases of Japanese assets (e.g., JGBs, equities)\nJapanese purchases of foreign assets (FDI, portfolio, carry trade)\n\n\n\n\n\n\nWhen exports are invoiced in dollars, the conversion happens at the firm or bank level, but the logic is the same: every BoP line is ultimately a demand or supply of yen.\nThe exchange rate is the price that clears these flows (together with expectations, interest rates, and official intervention)."
+  },
+  {
+    "objectID": "slides/09 bop.html#japan-as-a-mature-creditor",
+    "href": "slides/09 bop.html#japan-as-a-mature-creditor",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Japan as a mature creditor",
+    "text": "Japan as a mature creditor\n\nA stylized path:\n\nGrowth era: current account roughly balanced, limited by foreign reserves\nTrade-surplus era: goods surplus drives the CA; outward FDI and portfolio investment build external assets\nMature creditor: returns on those assets (primary income) rival or exceed the goods balance; the CA stays in surplus even when goods trade is in deficit (e.g., 2011, 2022)\n\n\n\n\nThe current account components chart shows how primary income offsets the goods deficit.\nJapan’s external position is now sustained by the return on past saving, not only by exports."
+  },
+  {
+    "objectID": "slides/09 bop.html#discussion-questions",
+    "href": "slides/09 bop.html#discussion-questions",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Discussion questions",
+    "text": "Discussion questions\n\n\nJapan ran a current account surplus in 2022, yet the yen weakened sharply.\nIf aging households start drawing down savings, what happens to \\(S - I\\), to the current account, and to NIIP over time?\nIn years when Japan’s goods trade is in deficit, which line of the current account keeps it in surplus?"
+  },
+  {
+    "objectID": "slides/09 bop.html#next-lessons",
+    "href": "slides/09 bop.html#next-lessons",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Next lessons",
+    "text": "Next lessons\n\n\nExchange rates and competitiveness: the price that clears yen supply and demand; PPP, real exchange rates, intervention, invoicing\nAging economy: how demographics change saving and investment, and with them the current account and NIIP"
+  },
+  {
+    "objectID": "slides/09 bop.html#relationships-between-the-accounts-1",
+    "href": "slides/09 bop.html#relationships-between-the-accounts-1",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Relationships between the accounts",
+    "text": "Relationships between the accounts\n\nCurrent Account + Capital Account: net receive from the rest of the world in return for the exports of goods and other resources\nFinancial Account: net increase foreign assets\nCurrent Account + Capital Account = Financial Account - Errors and Omissions\nBOP is a description of the international budget constraint for the country\n\n\n\na country has to have a surplus in current and capital accounts to invest abroad\nit has to borrow from abroad when it runs deficits in the sum of current and capital accounts"
+  },
+  {
+    "objectID": "slides/09-bop-slides.html#learning-outcomes",
+    "href": "slides/09-bop-slides.html#learning-outcomes",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Learning outcomes",
+    "text": "Learning outcomes\nBy the end of this lesson you can:\n\nclassify a cross-border transaction into the current, capital or financial account\nexplain why current + capital account = net lending = financial account (up to errors and omissions)\ndistinguish a flow (financial account) from a stock (NIIP) and read Japan’s figures for both\nexplain why a weaker yen can raise Japan’s NIIP without any transaction taking place"
+  },
+  {
+    "objectID": "slides/09-bop-slides.html#the-bop-map",
+    "href": "slides/09-bop-slides.html#the-bop-map",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "The BoP map",
+    "text": "The BoP map\nThe balance of payments records transactions between residents of an economy and the rest of the world.\n\n\n\n\n\nflowchart LR\n  CA[\"Current account&lt;br&gt;goods, services,&lt;br&gt;primary and secondary income\"] --&gt; NL[\"Net lending (+) / borrowing (-)&lt;br&gt;to the rest of the world\"]\n  KA[\"Capital account&lt;br&gt;capital transfers, non-produced&lt;br&gt;non-financial assets\"] --&gt; NL\n  NL == \"equals\" ==&gt; FA[\"Financial account&lt;br&gt;net acquisition of assets&lt;br&gt;minus net incurrence of liabilities\"]\n  FA --&gt; RES[\"of which: reserve assets&lt;br&gt;(official sector)\"]\n  EO[\"Errors and omissions\"] -.-&gt; FA\n\n\n\n\n\n\n\n\nThis is the anchor slide: return to it whenever a new account appears.\nLeft side: real transactions (goods, income, transfers). Right side: how they are financed (assets acquired, liabilities incurred).\nErrors and omissions: the statistical gap, defined as FA net lending minus CA+KA net lending."
+  },
+  {
+    "objectID": "slides/09-bop-slides.html#sign-convention-net-lending-imf-bpm6",
+    "href": "slides/09-bop-slides.html#sign-convention-net-lending-imf-bpm6",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Sign convention: net lending (IMF BPM6)",
+    "text": "Sign convention: net lending (IMF BPM6)\n\nCurrent and capital account: the balance is credits minus debits. Exports are credits and imports are debits\nFinancial account: an increase in assets is +, an increase in liabilities is + in the liabilities column, and net lending = change in assets - change in liabilities\nSo a surplus in CA + KA is matched by a positive financial account balance: the country is a net lender\nOlder textbooks (BPM5 style) record asset increases as debits, so the financial account has the opposite sign and the three accounts sum to zero"
+  },
+  {
+    "objectID": "slides/09-bop-slides.html#three-transactions-one-identity",
+    "href": "slides/09-bop-slides.html#three-transactions-one-identity",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Three transactions, one identity",
+    "text": "Three transactions, one identity\n\n\n\n\n\n\n\n\nTransaction\nCurrent account\nFinancial account entry\n\n\n\n\nMachinery export paid into a foreign bank account\n+¥1m\nForeign deposit +¥1m\n\n\nClothing import bought on credit\n−¥100k\nTrade credit liability +¥100k\n\n\nHotel stay paid into a foreign bank account\n+¥100k\nForeign deposit +¥100k\n\n\n\nNet lending equals the current account entry. The trade credit liability contributes −¥100k to net lending.\n\n\nIn every row the current account entry is matched by a financial account entry of the same size, so net lending from CA equals net lending from FA.\nRow 2: the liability is a negative for net lending because net lending = change in assets - change in liabilities."
+  },
+  {
+    "objectID": "slides/09-bop-slides.html#why-does-japan-run-surpluses-saving-and-investment",
+    "href": "slides/09-bop-slides.html#why-does-japan-run-surpluses-saving-and-investment",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Why does Japan run surpluses? Saving and investment",
+    "text": "Why does Japan run surpluses? Saving and investment\n\\[ CA = S - I \\]\n\n\\(S\\): national saving, \\(I\\): domestic investment\nA CA surplus means the country saves more than it invests at home, and the excess contributes to net lending abroad\nSo the CA is a macro outcome, not only a trade outcome: high household and corporate saving relative to domestic investment opportunities\n\n\n\nThis is the link to the last lesson: aging changes S, so it changes the CA."
+  },
+  {
+    "objectID": "slides/09-bop-slides.html#from-flow-to-stock-the-niip-bridge",
+    "href": "slides/09-bop-slides.html#from-flow-to-stock-the-niip-bridge",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "From flow to stock: the NIIP bridge",
+    "text": "From flow to stock: the NIIP bridge\n\\[ \\text{NIIP}_{close} = \\text{NIIP}_{open} + \\text{Transactions (FA net)} + \\text{Revaluation} + \\text{Other changes} \\]\n\n\n\n\n\nOpen\nTransactions\nRevaluation\nOther changes\nClose\n\n\n\n\nNet IIP (IMF example)\n469\n+10\n+8\n0\n487\n\n\n\n\n\nTransactions reflect net lending or borrowing recorded in the financial account\nRevaluation is price and exchange rate changes on assets and liabilities already held\n\n\n\nCheck: 469 + 10 + 0 + 8 = 487.\nReplace with Japan’s actual figures from the MOF/BOJ IIP data if you have them handy; the structure of the slide stays the same.\nThe “Other changes in volume” column is all zeros in the example, so it is dropped from the table here."
+  },
+  {
+    "objectID": "slides/09-bop-slides.html#valuation-and-the-yen",
+    "href": "slides/09-bop-slides.html#valuation-and-the-yen",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Valuation and the yen",
+    "text": "Valuation and the yen\nToy example:\n\nJapan holds US$1 trillion of foreign assets and has no foreign-currency liabilities\nAt ¥100/$: assets = ¥100 trillion\nAt ¥150/$: assets = ¥150 trillion\n+¥50 trillion in the yen value of NIIP, with no transaction at all\n\n\nMuch of Japan’s external assets are in foreign currency, while a larger share of its liabilities is in yen, so a weaker yen tends to raise NIIP measured in yen\n\n\n\nIn dollar terms nothing changed: say that explicitly, because NIIP is reported in different currencies in different sources (USD in the OECD chart, yen in MOF data).\nLink to 2022: the yen’s depreciation raised the yen value of foreign assets while making imports more expensive. The same exchange rate move hits the two sides of the balance sheet and the trade balance in opposite directions."
+  },
+  {
+    "objectID": "slides/09-bop-slides.html#reserve-assets-the-official-part-of-the-financial-account",
+    "href": "slides/09-bop-slides.html#reserve-assets-the-official-part-of-the-financial-account",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Reserve assets: the official part of the financial account",
+    "text": "Reserve assets: the official part of the financial account\n\nReserve assets are foreign assets held by the authorities (MOF decides, the BOJ acts as agent)\nWhen the authorities buy dollars and sell yen to influence the exchange rate, reserve assets rise: this is a financial account entry\nUnlike private flows, reserve changes are a policy decision\n\n\n\nDetails of intervention (why, when, sterilization, accords) are in the exchange rate lesson."
+  },
+  {
+    "objectID": "slides/09-bop-slides.html#who-supplies-and-demands-yen",
+    "href": "slides/09-bop-slides.html#who-supplies-and-demands-yen",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Who supplies and demands yen?",
+    "text": "Who supplies and demands yen?\n\n\n\n\n\n\n\n\nDemand for yen (foreigners need yen)\nSupply of yen (Japanese need foreign currency)\n\n\n\n\nExports of goods and services\nImports of goods and services\n\n\nInbound tourism\nOutbound tourism\n\n\nIncome earned abroad and brought home\nIncome paid to foreign investors\n\n\nForeign purchases of Japanese assets (e.g., JGBs, equities)\nJapanese purchases of foreign assets (FDI, portfolio, carry trade)\n\n\n\n\n\n\nWhen exports are invoiced in dollars, the conversion happens at the firm or bank level, but the logic is the same: every BoP line is ultimately a demand or supply of yen.\nThe exchange rate is the price that clears these flows (together with expectations, interest rates, and official intervention)."
+  },
+  {
+    "objectID": "slides/09-bop-slides.html#japan-as-a-mature-creditor",
+    "href": "slides/09-bop-slides.html#japan-as-a-mature-creditor",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Japan as a mature creditor",
+    "text": "Japan as a mature creditor\nA stylized path:\n\nGrowth era: current account roughly balanced, limited by foreign reserves\nTrade-surplus era: goods surplus drives the CA; outward FDI and portfolio investment build external assets\nMature creditor: returns on those assets (primary income) rival or exceed the goods balance; the CA stays in surplus even when goods trade is in deficit (e.g., 2011, 2022)\n\n\n\nThe current account components chart shows how primary income offsets the goods deficit.\nJapan’s external position is now sustained by the return on past saving, not only by exports."
+  },
+  {
+    "objectID": "slides/09-bop-slides.html#discussion-questions",
+    "href": "slides/09-bop-slides.html#discussion-questions",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Discussion questions",
+    "text": "Discussion questions\n\nJapan ran a current account surplus in 2022, yet the yen weakened sharply.\nIf aging households start drawing down savings, what happens to \\(S - I\\), to the current account, and to NIIP over time?\nIn years when Japan’s goods trade is in deficit, which line of the current account keeps it in surplus?"
+  },
+  {
+    "objectID": "slides/09-bop-slides.html#next-lessons",
+    "href": "slides/09-bop-slides.html#next-lessons",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Next lessons",
+    "text": "Next lessons\n\nExchange rates and competitiveness: the price that clears yen supply and demand; PPP, real exchange rates, intervention, invoicing\nAging economy: how demographics change saving and investment, and with them the current account and NIIP"
+  },
+  {
+    "objectID": "slides/09-bop-slides.html#relationships-between-the-accounts-1",
+    "href": "slides/09-bop-slides.html#relationships-between-the-accounts-1",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Relationships between the accounts",
+    "text": "Relationships between the accounts\n\nCurrent Account + Capital Account: net receive from the rest of the world in return for the exports of goods and other resources\nFinancial Account: net increase foreign assets\nCurrent Account + Capital Account = Financial Account - Errors and Omissions\nBOP is a description of the international budget constraint for the country\n\n\n\na country has to have a surplus in current and capital accounts to invest abroad\nit has to borrow from abroad when it runs deficits in the sum of current and capital accounts"
+  },
+  {
+    "objectID": "slides/09 bop.html#worked-balance-of-payments-example",
+    "href": "slides/09 bop.html#worked-balance-of-payments-example",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Worked balance-of-payments example",
+    "text": "Worked balance-of-payments example\n\n\n\n\n\n\n\n\n\n\nBalance of payments\nCredits\nDebits\nBalance\n\n\n\n\nCurrent account\n\n\n\n\n\n Goods and services\n540\n499\n41\n\n\n  Goods\n462\n392\n70\n\n\n  Services\n78\n107\n-29\n\n\n Primary income\n50\n40\n10\n\n\n  Compensation of employees\n6\n2\n\n\n\n  Interest\n13\n21\n\n\n\n  Distributed income of corporations\n17\n17\n\n\n\n  Reinvested earnings\n14\n0\n\n\n\n  Rent\n0\n0\n\n\n\n Secondary income\n17\n55\n-38\n\n\n  Current taxes on income, wealth, etc.\n1\n0\n\n\n\n  Net nonlife insurance premiums\n2\n11\n\n\n\n  Nonlife insurance claims\n12\n3\n\n\n\n  Current international cooperation\n1\n31\n\n\n\n  Miscellaneous current transfers\n1\n10\n\n\n\n  Adjustment for change in pension entitlements\n\n\n\n\n\nCurrent account balance\n\n\n13\n\n\nCapital account\n\n\n\n\n\n Acquisitions/disposals of nonproduced nonfinancial assets\n0\n0\n\n\n\n Capital transfers\n1\n4\n\n\n\nCapital account balance\n\n\n-3\n\n\nNet lending (+)/net borrowing (–) (from current and capital accounts)\n\n\n10\n\n\nFinancial account (by functional category)\nNet acquisition of assets\nNet incurrence of liabilities\n\n\n\n Direct investment\n8\n11\n\n\n\n Portfolio investment\n18\n14\n\n\n\n Financial derivatives (other than reserves) and ESOs\n3\n0\n\n\n\n Other investment\n20\n22\n\n\n\n Reserve assets\n8\n\n\n\n\nTotal changes in assets/liabilities\n57\n47\n\n\n\nNet lending (+)/net borrowing (–) (from financial account)\n\n\n10\n\n\nNet errors and omissions\n\n\n0\n\n\n\nSource: Table 2.1 IMF BPM 6th ed.\n\n\n\nin the definition that existed prior to 2014, what is known today as the financial account was called the capital account\nCurrent account:\n\nexport and import of goods and services,\ninvestment income and unilateral transfers such as foreign aid\n\nCapital account:\n\ntransactions in nonproduced, nonfinancial assets, such as land\nunilateral capital transfers, such as government debt forgiveness\n\nFinancial account: cross-border transactions of assets (other than nonproduced, nonfinancial assets): capital inflow and outflows\n\nacquisition of a business (direct investment)\nacquisition of financial products for asset management (portfolio investment)"
+  },
+  {
+    "objectID": "slides/09 bop.html#detailed-international-investment-position-example",
+    "href": "slides/09 bop.html#detailed-international-investment-position-example",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Detailed international investment position example",
+    "text": "Detailed international investment position example\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpening position\nTransactions (fin. acc.)\nOther changes in volume\nRevaluation\nClosing position\n\n\n\n\nAssets (by functional category)\n\n\n\n\n\n\n\nDirect investment\n78\n8\n0\n1\n87\n\n\nPortfolio investment\n190\n18\n0\n2\n210\n\n\nFinancial derivatives (other than reserves) and ESOs\n7\n3\n0\n0\n10\n\n\nOther investment\n166\n20\n0\n0\n186\n\n\nReserve assets\n833\n8\n0\n12\n853\n\n\nTotal assets\n1,274\n57\n0\n15\n1,346\n\n\nLiabilities (by functional category)\n\n\n\n\n\n\n\nDirect investment\n210\n11\n0\n2\n223\n\n\nPortfolio investment\n300\n14\n0\n5\n319\n\n\nFinancial derivatives (other than reserves) and ESOs\n0\n0\n0\n0\n0\n\n\nOther investment\n295\n22\n0\n0\n317\n\n\nTotal liabilities\n805\n47\n0\n7\n859\n\n\nNet IIP\n469\n10\n0\n8\n487\n\n\n\n\n\n\nThe financial account records a country’s flow of international transactions in assets and liabilities over a period, while the net international investment position (NIIP) is a stock measure of its total external assets and liabilities at a specific point in time\nThe financial account’s transactions, such as buying or selling stocks and bonds, directly contribute to changes in the NIIP from one period to the next, along with changes in asset values due to exchange rates and market price movements"
+  },
+  {
+    "objectID": "slides/09-bop-slides.html#worked-balance-of-payments-example",
+    "href": "slides/09-bop-slides.html#worked-balance-of-payments-example",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Worked balance-of-payments example",
+    "text": "Worked balance-of-payments example\n\n\n\n\n\n\n\n\n\n\nBalance of payments\nCredits\nDebits\nBalance\n\n\n\n\nCurrent account\n\n\n\n\n\n Goods and services\n540\n499\n41\n\n\n  Goods\n462\n392\n70\n\n\n  Services\n78\n107\n-29\n\n\n Primary income\n50\n40\n10\n\n\n  Compensation of employees\n6\n2\n\n\n\n  Interest\n13\n21\n\n\n\n  Distributed income of corporations\n17\n17\n\n\n\n  Reinvested earnings\n14\n0\n\n\n\n  Rent\n0\n0\n\n\n\n Secondary income\n17\n55\n-38\n\n\n  Current taxes on income, wealth, etc.\n1\n0\n\n\n\n  Net nonlife insurance premiums\n2\n11\n\n\n\n  Nonlife insurance claims\n12\n3\n\n\n\n  Current international cooperation\n1\n31\n\n\n\n  Miscellaneous current transfers\n1\n10\n\n\n\n  Adjustment for change in pension entitlements\n\n\n\n\n\nCurrent account balance\n\n\n13\n\n\nCapital account\n\n\n\n\n\n Acquisitions/disposals of nonproduced nonfinancial assets\n0\n0\n\n\n\n Capital transfers\n1\n4\n\n\n\nCapital account balance\n\n\n-3\n\n\nNet lending (+)/net borrowing (–) (from current and capital accounts)\n\n\n10\n\n\nFinancial account (by functional category)\nNet acquisition of assets\nNet incurrence of liabilities\n\n\n\n Direct investment\n8\n11\n\n\n\n Portfolio investment\n18\n14\n\n\n\n Financial derivatives (other than reserves) and ESOs\n3\n0\n\n\n\n Other investment\n20\n22\n\n\n\n Reserve assets\n8\n\n\n\n\nTotal changes in assets/liabilities\n57\n47\n\n\n\nNet lending (+)/net borrowing (–) (from financial account)\n\n\n10\n\n\nNet errors and omissions\n\n\n0\n\n\n\nSource: Table 2.1 IMF BPM 6th ed.\n\n\n\nin the definition that existed prior to 2014, what is known today as the financial account was called the capital account\nCurrent account:\n\nexport and import of goods and services,\ninvestment income and unilateral transfers such as foreign aid\n\nCapital account:\n\ntransactions in nonproduced, nonfinancial assets, such as land\nunilateral capital transfers, such as government debt forgiveness\n\nFinancial account: cross-border transactions of assets (other than nonproduced, nonfinancial assets): capital inflow and outflows\n\nacquisition of a business (direct investment)\nacquisition of financial products for asset management (portfolio investment)"
+  },
+  {
+    "objectID": "slides/09-bop-slides.html#detailed-international-investment-position-example",
+    "href": "slides/09-bop-slides.html#detailed-international-investment-position-example",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Detailed international investment position example",
+    "text": "Detailed international investment position example\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpening position\nTransactions (fin. acc.)\nOther changes in volume\nRevaluation\nClosing position\n\n\n\n\nAssets (by functional category)\n\n\n\n\n\n\n\nDirect investment\n78\n8\n0\n1\n87\n\n\nPortfolio investment\n190\n18\n0\n2\n210\n\n\nFinancial derivatives (other than reserves) and ESOs\n7\n3\n0\n0\n10\n\n\nOther investment\n166\n20\n0\n0\n186\n\n\nReserve assets\n833\n8\n0\n12\n853\n\n\nTotal assets\n1,274\n57\n0\n15\n1,346\n\n\nLiabilities (by functional category)\n\n\n\n\n\n\n\nDirect investment\n210\n11\n0\n2\n223\n\n\nPortfolio investment\n300\n14\n0\n5\n319\n\n\nFinancial derivatives (other than reserves) and ESOs\n0\n0\n0\n0\n0\n\n\nOther investment\n295\n22\n0\n0\n317\n\n\nTotal liabilities\n805\n47\n0\n7\n859\n\n\nNet IIP\n469\n10\n0\n8\n487\n\n\n\n\n\n\nThe financial account records a country’s flow of international transactions in assets and liabilities over a period, while the net international investment position (NIIP) is a stock measure of its total external assets and liabilities at a specific point in time\nThe financial account’s transactions, such as buying or selling stocks and bonds, directly contribute to changes in the NIIP from one period to the next, along with changes in asset values due to exchange rates and market price movements"
+  },
+  {
+    "objectID": "slides/09 bop.html#what-does-the-balance-of-payments-record",
+    "href": "slides/09 bop.html#what-does-the-balance-of-payments-record",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "What does the balance of payments record?",
+    "text": "What does the balance of payments record?\nThe balance of payments records transactions between residents of an economy and the rest of the world over a period.\n\n\n\n\n\n\n\n\nAccount\nWhat it records\nExample for Japan\n\n\n\n\nCurrent account\nTrade, income, and current transfers\nA visitor from abroad pays for a hotel in Japan\n\n\nCapital account\nCapital transfers and transactions in certain nonfinancial assets\nJapan’s government forgives a loan owed by a foreign government\n\n\nFinancial account\nTransactions in external financial assets and liabilities\nA Japanese resident buys a bond issued abroad"
+  },
+  {
+    "objectID": "slides/09 bop.html#current-account",
+    "href": "slides/09 bop.html#current-account",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Current account",
+    "text": "Current account\n\nGoods — a Japanese firm exports machinery or imports fuel.\nServices — a visitor from abroad pays for a hotel in Japan. Japan records a service export.\nPrimary income — a Japanese investor receives dividends on shares in a foreign company.\nSecondary income — a resident of Japan sends money as a gift to family living abroad."
+  },
+  {
+    "objectID": "slides/09 bop.html#capital-account",
+    "href": "slides/09 bop.html#capital-account",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Capital account",
+    "text": "Capital account\n\nCapital transfers include debt forgiveness. If Japan’s government forgives a loan owed by a foreign government, Japan records a capital transfer paid and a reduction in its external loan assets.\nNonproduced nonfinancial assets include certain rights. A Japanese company buying ownership of an existing trademark from a nonresident records the acquisition here."
+  },
+  {
+    "objectID": "slides/09 bop.html#financial-account",
+    "href": "slides/09 bop.html#financial-account",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Financial account",
+    "text": "Financial account\n\nExternal assets are financial claims that residents hold on nonresidents. A Japanese resident buying a foreign bond increases Japan’s external assets.\nExternal liabilities are financial claims that nonresidents hold on residents. A foreign investor buying a newly issued Japanese government bond increases Japan’s external liabilities.\nReserve assets are external assets held by the monetary authorities. They are part of the financial account."
+  },
+  {
+    "objectID": "slides/09-bop-slides.html#what-does-the-balance-of-payments-record",
+    "href": "slides/09-bop-slides.html#what-does-the-balance-of-payments-record",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "What does the balance of payments record?",
+    "text": "What does the balance of payments record?\nThe balance of payments records transactions between residents of an economy and the rest of the world over a period.\n\n\n\n\n\n\n\n\nAccount\nWhat it records\nExample for Japan\n\n\n\n\nCurrent account\nTrade, income, and current transfers\nA visitor from abroad pays for a hotel in Japan\n\n\nCapital account\nCapital transfers and transactions in certain nonfinancial assets\nJapan’s government forgives a loan owed by a foreign government\n\n\nFinancial account\nTransactions in external financial assets and liabilities\nA Japanese resident buys a bond issued abroad"
+  },
+  {
+    "objectID": "slides/09-bop-slides.html#current-account",
+    "href": "slides/09-bop-slides.html#current-account",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Current account",
+    "text": "Current account\n\nGoods — a Japanese firm exports machinery or imports fuel.\nServices — a visitor from abroad pays for a hotel in Japan. Japan records a service export.\nPrimary income — a Japanese investor receives dividends on shares in a foreign company.\nSecondary income — a resident of Japan sends money as a gift to family living abroad."
+  },
+  {
+    "objectID": "slides/09-bop-slides.html#capital-account",
+    "href": "slides/09-bop-slides.html#capital-account",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Capital account",
+    "text": "Capital account\n\nCapital transfers include debt forgiveness. If Japan’s government forgives a loan owed by a foreign government, Japan records a capital transfer paid and a reduction in its external loan assets.\nNonproduced nonfinancial assets include certain rights. A Japanese company buying ownership of an existing trademark from a nonresident records the acquisition here."
+  },
+  {
+    "objectID": "slides/09-bop-slides.html#financial-account",
+    "href": "slides/09-bop-slides.html#financial-account",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "Financial account",
+    "text": "Financial account\n\nExternal assets are financial claims that residents hold on nonresidents. A Japanese resident buying a foreign bond increases Japan’s external assets.\nExternal liabilities are financial claims that nonresidents hold on residents. A foreign investor buying a newly issued Japanese government bond increases Japan’s external liabilities.\nReserve assets are external assets held by the monetary authorities. They are part of the financial account."
+  },
+  {
+    "objectID": "slides/09 bop.html#the-balance-of-payments",
+    "href": "slides/09 bop.html#the-balance-of-payments",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "The balance of payments",
+    "text": "The balance of payments\nThe balance of payments records transactions between residents and nonresidents over a period.\n\nCurrent account records trade, income, and current transfers.\nCapital account records capital transfers and transactions in certain nonfinancial assets.\nFinancial account records transactions in external financial assets and liabilities."
+  },
+  {
+    "objectID": "slides/09 bop.html#from-flow-to-stock",
+    "href": "slides/09 bop.html#from-flow-to-stock",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "From flow to stock",
+    "text": "From flow to stock\nNet international investment position (NIIP) is external assets minus external liabilities at a point in time.\n\\[\n\\begin{aligned}\n\\text{Closing NIIP} &= \\text{Opening NIIP} + \\text{Net lending} \\\\\n&\\quad + \\text{Revaluation} + \\text{Other changes}\n\\end{aligned}\n\\]\nIn the IMF example, 469 + 10 + 8 + 0 = 487. The financial account adds 10. Changes in prices or exchange rates add 8."
+  },
+  {
+    "objectID": "slides/09-bop-slides.html#the-balance-of-payments",
+    "href": "slides/09-bop-slides.html#the-balance-of-payments",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "The balance of payments",
+    "text": "The balance of payments\nThe balance of payments records transactions between residents and nonresidents over a period.\n\nCurrent account records trade, income, and current transfers.\nCapital account records capital transfers and transactions in certain nonfinancial assets.\nFinancial account records transactions in external financial assets and liabilities."
+  },
+  {
+    "objectID": "slides/09-bop-slides.html#from-flow-to-stock",
+    "href": "slides/09-bop-slides.html#from-flow-to-stock",
+    "title": "Balance of Payments: Accounts and Japan’s External Position",
+    "section": "From flow to stock",
+    "text": "From flow to stock\nNet international investment position (NIIP) is external assets minus external liabilities at a point in time.\n\\[\n\\begin{aligned}\n\\text{Closing NIIP} &= \\text{Opening NIIP} + \\text{Net lending} \\\\\n&\\quad + \\text{Revaluation} + \\text{Other changes}\n\\end{aligned}\n\\]\nIn the IMF example, 469 + 10 + 8 + 0 = 487. The financial account adds 10. Changes in prices or exchange rates add 8."
   }
 ]
