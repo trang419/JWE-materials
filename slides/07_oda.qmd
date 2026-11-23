@@ -90,7 +90,7 @@ ggarrange(
 ```
 
 ## US Marshall Plan
-<div style="font-size:50%">
+<div class="slide-font-size" style="--slide-font-size: 50%">
 - European Recovery Program: ERP
 - 16 European countries: 13.6 billion USD (88 billion in 1997 USD)
 - By 1950, the participating countries had returned to, or exceeded, their prewar production levels
@@ -125,7 +125,7 @@ ggplot(marshall_plot, aes(Period, Amount_USD_billion, fill = Category)) +
 
 ## OECD-DAC
 
-<div style="font-size:80%">
+<div class="slide-font-size" style="--slide-font-size: 80%">
 - OEEC and DAG: decolonization during 50s
 - Organisation for Economic Co-operation in 1960 for wider scope
 - OECD-DAC (1961) sets standards and collects statistics on ODA, including ODA definition:
@@ -137,7 +137,7 @@ ggplot(marshall_plot, aes(Period, Amount_USD_billion, fill = Category)) +
 
 ## Japan as aid recipients
 
-<div style="font-size:80%">
+<div class="slide-font-size" style="--slide-font-size: 80%">
 - 1946 ~ 1951, Japan received a total of USD5 billion in US aid (financed 40% Japanese imports)
   - Part of the repayment for the US was used to finance US-Japan cultural exchange (including the Fullbright program)
 - 1953 ~ 1966, the World Bank provided USD860 million for 34 development projects in the country: Tanagawa Dam, Tokaido Bullet Train (from Tokyo to Osaka), the Tōmei Highway (from Tokyo to Nagoya), and the Kurobe hydroelectric dam 
@@ -146,7 +146,7 @@ ggplot(marshall_plot, aes(Period, Amount_USD_billion, fill = Category)) +
 
 ## Japan as aid donors
 
-<div style="font-size:70%">
+<div class="slide-font-size" style="--slide-font-size: 70%">
 - Japan joined DAG in 1960, became founding member of OECD-DAC in 1961
 
 - Japan joined Colombo Plan in 1954,
@@ -170,7 +170,7 @@ ggplot(marshall_plot, aes(Period, Amount_USD_billion, fill = Category)) +
 
 ## Japan’s Approach vs. DAC Model
 
-<div style="font-size:60%">
+<div class="slide-font-size" style="--slide-font-size: 60%">
 | **Aspect** | **Japan’s ODA Approach** | **Typical DAC / Western Approach** |
 |-------------|---------------------------|------------------------------------|
 | **Development Philosophy** | “Ingredients approach” – emphasizes tangible inputs (infrastructure, technology, industry) | “Framework approach” – focuses on institutions, policy reform, governance |
@@ -252,7 +252,7 @@ oda_share_plot(oda_sector, "ODA commitments by sector",
 ## Japan's recent ODA trend: 2023 Charter
 **New Development Cooperation Charter**
 
-<div style="font-size:80%">
+<div class="slide-font-size" style="--slide-font-size: 80%">
 - Promotes equal partnerships with developing countries to tackle shared global challenges.
 - Aims to build a peaceful, stable, and prosperous international community under a free and open order based on the rule of law.
 - Seeks to foster trust and a favorable international environment for Japan and the world.
@@ -261,7 +261,7 @@ oda_share_plot(oda_sector, "ODA commitments by sector",
 
 ## Japan's recent ODA trend: ASEAN
 
-<div style="font-size:80%">
+<div class="slide-font-size" style="--slide-font-size: 80%">
 - a move from aid objective to cooperation development
     - Strengthen hard and soft infrastructure support (particularly in the Mekong region) to ‘enhance connectivity’, 
     - Develop human resource to promote productivity growth and technological innovation to avoid the ‘middle-income country trap’, 
@@ -272,7 +272,7 @@ oda_share_plot(oda_sector, "ODA commitments by sector",
 
 ## ODA as infrastructure financing
 
-<div style="font-size:80%">
+<div class="slide-font-size" style="--slide-font-size: 80%">
 - Japan's ODA historically supported infrastructure and industrial development in Asia
 - Loans and technical cooperation, often tied to Japanese firms ("ingredients approach")
 - Japan itself was financed this way: World Bank loans built the Tokaido Bullet Train, the Tōmei Highway and the Kurobe dam
@@ -292,7 +292,7 @@ oda_share_plot(oda_sector, "ODA commitments by sector",
 
 ## Debates on ODA effectiveness
 
-<div style="font-size:60%">
+<div class="slide-font-size" style="--slide-font-size: 60%">
 - In theory, ODA effect can be
   - Positive: use ODA to invest and grow
   - Non-positive: use ODA to consume luxury goods 
@@ -312,7 +312,7 @@ oda_share_plot(oda_sector, "ODA commitments by sector",
 
 ## Japan's ODA and growth
 
-<div style="font-size:80%">
+<div class="slide-font-size" style="--slide-font-size: 80%">
 - Japan’s ODA historically supported infrastructure and industrial development in Asia.
 - Institution quality is important for ripping the benefits of ODA (Burnside and Dollar, 2000)
 - Japanese ODA has positive effects on ASEAN economic growth (Nguyen et. al, 2022)
@@ -324,7 +324,7 @@ oda_share_plot(oda_sector, "ODA commitments by sector",
 - Next lecture: can ODA catalyze FDI?
 
 ## References
-<div style="font-size:30%">
+<div class="slide-font-size" style="--slide-font-size: 30%">
 - Burnside, C. & Dollar, D. 2000, 'Aid, policies, and growth', American economic review, 90 (4).
 - Easterly, W., 2003, “Can Foreign Aid Buy Growth?”, Journal of Economic Perspective, 17 (3).
 - Furuoka, F., Oishi, M., & Kato, I. (2010, July 12). From Aid Recipient to Aid Donor: Tracing the Historical Transformation of Japan’s Foreign Aid Policy [Text]. Electronic journal of contemporary Japanese studies.

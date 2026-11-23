@@ -339,7 +339,7 @@ ggbarplot(imfd[!is.na(value)],
 
 ---
 ## References
-<div style="font-size:50%">
+<div class="slide-font-size" style="--slide-font-size: 50%">
 - Ito and Hoshi (2020) Chapter 12 
 - Ito, K., & Shimizu, J. (2015). Industry-Level Competitiveness, Productivity and Effective Exchange Rates in East Asia. Asian Economic Journal, 29(2), 181–214.
 - Linda S. Goldberg & Michael W. Klein, 1996. "Foreign direct investment, trade, and real exchange rate linkages in developing countries," Proceedings, Federal Reserve Bank of San Francisco, pages 73-100.

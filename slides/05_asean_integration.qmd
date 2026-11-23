@@ -202,7 +202,7 @@ ggline(tariff,
 :::
 ::: column
 
-<div style="font-size:50%">
+<div class="slide-font-size" style="--slide-font-size: 50%">
 - regional agreements: 
   - ASEAN (1967), APEC (1989), 
   - Japan–ASEAN EPA (2008), Korea–ASEAN EPA (2009), 
@@ -394,7 +394,7 @@ ggplot(service_flows, aes(industry, value_100million_yen / 10)) +
 
 ## Japanese firms in ASEAN countries (1a)
 
-<div style="font-size:70%">
+<div class="slide-font-size" style="--slide-font-size: 70%">
 - Japanese companies heavily used ASEAN economic integration
   - goods between Japan and FTA partners
   - intermediate goods among ASEAN countries
@@ -404,7 +404,7 @@ ggplot(service_flows, aes(industry, value_100million_yen / 10)) +
 
 ## Japanese firms in ASEAN countries (1b)
 
-<div style="font-size:70%">
+<div class="slide-font-size" style="--slide-font-size: 70%">
 - In 1990s, reorganize production systems in ASEAN region
   - Japan adopt a strategy of concentrating production of similar products in a single country to attain economies of scale
 </div>  
@@ -470,7 +470,7 @@ ggarrange(
   - China’s accession to the WTO in 2005
 
 ##  Japanese Firms in ASEAN countries (2b)
-<div style="font-size:50%">
+<div class="slide-font-size" style="--slide-font-size: 50%">
 - Shift of assembly type operations from ASEAN to China to utilize low-cost labor: 
   - Japan imports more finished goods shift from China
   - ASEAN5 and Japan’s export of components to China increase
@@ -511,7 +511,7 @@ ggarrange(
 
 ## Japanese Firms in ASEAN countries (3)
 
-<div style="font-size:50%">
+<div class="slide-font-size" style="--slide-font-size: 50%">
 - "China plus one" strategy
   - Shift from China to CLMV for labor-intensive production
   - Chinese economic growth resulting in wage increase
@@ -572,7 +572,7 @@ ggarrange(
 
 ---
 ## References
-<div style="font-size:50%">
+<div class="slide-font-size" style="--slide-font-size: 50%">
 - Abiad, A., Baris, K., Barnabe, J. A., Bertulfo, and others (2018). The Impact of Trade Conflict on Developing Asia. Asian Development Bank.
 - Ishikawa, K. (2021). The ASEAN Economic Community and ASEAN economic integration. Journal of Contemporary East Asia Studies, 10(1), 24–41. 
 - Kinoshita, T., Kishida, H., & Amemiya, A. (2004). Strategy of Japanese manufacturers in ASEAN and China in light of emerging FTA initiatives.

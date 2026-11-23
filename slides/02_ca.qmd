@@ -392,7 +392,7 @@ ggdensity(
 
 ---
 ## Suggested Readings
-<div style="font-size:50%">
+<div class="slide-font-size" style="--slide-font-size: 50%">
 - Balassa, B. (1965). Trade Liberalisation and “Revealed” Comparative Advantage. The Manchester School, 33(2), 99–123. https://doi.org/10.1111/j.1467-9957.1965.tb00050.x
 - OECD (2011), Globalisation, Comparative Advantage and the Changing Dynamics of Trade, OECD Publishing, Paris, https://doi.org/10.1787/9789264113084-en.
 

@@ -118,7 +118,7 @@ ggplot() +
 
 ## US-Japan trade conflicts (2)
 
-<div style="font-size:90%">
+<div class="slide-font-size" style="--slide-font-size: 90%">
 - 1980s~: structural barriers (capital control, keiretsu)
   - Automobile, VER (1981~1994, 3 renewals): price up, FDI 
   - Access to Japanese markets: beef, oranges quotas increased
@@ -238,7 +238,7 @@ ggplot() +
 | Outcome | Conflict faded as Japan stagnated | No off-ramp yet; truce renewed repeatedly |
 
 ## Comparing the two episodes
-<div style="font-size:70%">
+<div class="slide-font-size" style="--slide-font-size: 70%">
 
 | Issue | US–Japan (1970s–90s) | US–China (2018– ) |
 |---|---|---|
@@ -257,7 +257,7 @@ ggplot() +
 
 ---
 ## References
-<div style="font-size:50%">
+<div class="slide-font-size" style="--slide-font-size: 50%">
 - Ito and Hoshi (2020) Chapter 13
 - Autor, D. H., Dorn, D., & Hanson, G. H. (2013). The China Syndrome: Local Labor Market Effects of Import Competition in the United States. American Economic Review, 103(6), 2121–2168. 
 - Fajgelbaum, P. D., Goldberg, P. K., Kennedy, P. J., & Khandelwal, A. K. (2019). The Return to Protectionism (Working Paper No. 25638). National Bureau of Economic Research.

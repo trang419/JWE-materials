@@ -120,7 +120,7 @@ ggarrange(
 
 ## Why do countries want inward FDI?
 
-<div style="font-size:80%">
+<div class="slide-font-size" style="--slide-font-size: 80%">
 
 - **Capital:** finance factories, equipment, and business expansion.
 - **Jobs and income:** create employment and demand for domestic suppliers.
@@ -352,7 +352,7 @@ ggplot(inward_industries, aes(value_bn, industry, fill = sector)) +
 
 ## Barriers to inward FDI
 
-<div style="font-size:65%">
+<div class="slide-font-size" style="--slide-font-size: 65%">
 
 | Reported barrier | 2012 (%) | 2016 (%) |
 |---|---:|---:|
@@ -397,7 +397,7 @@ ggplot(fdi_business, aes(Inward_FDI, Business_Index)) +
 
 ## Investment logic: FDI vs. ODA
 
-<div style="font-size:60%">
+<div class="slide-font-size" style="--slide-font-size: 60%">
 | **Aspect** | **Commercial FDI** | **Strategic investment** | **ODA** |
 |---|---|---|---|
 | **Main actor** | Private firms (MNEs) | State-linked firms, state-backed investors | Official agencies |
@@ -413,7 +413,7 @@ ggplot(fdi_business, aes(Inward_FDI, Business_Index)) +
 
 ## ODA and FDI relationship
 
-::: {style="font-size:100%; line-height:1.45; width:100%;"}
+::: {.slide-font-size style="--slide-font-size: 100%; line-height:1.45; width:100%;"}
 
 - **Infrastructure and human capital improvement**<br>
   → lower investment costs
@@ -504,7 +504,7 @@ ggplot() +
 
 ## Japan’s Experience
 
-<div style="font-size:80%">
+<div class="slide-font-size" style="--slide-font-size: 80%">
 - Tied aid and “ingredients approach” → enabled Japanese firms to invest later.
 - Evidence: Ono and Sekiyama (2023) on the effect of ODA on FDI by aid type
 - Case study: Vietnam (Tsuno, 2023)
@@ -514,7 +514,7 @@ ggplot() +
 
 ## Discussions
 
-<div style="font-size:80%">
+<div class="slide-font-size" style="--slide-font-size: 80%">
 1. Is it a problem that Japan’s outward FDI is about six times its inward FDI? Yes, no, or it depends?
 
 2. Japan removed most legal restrictions on inward FDI decades ago, but inward FDI is still low. Looking at the METI survey table, which barrier could the government actually fix, and which could it not?
@@ -525,7 +525,7 @@ ggplot() +
 </div>
 
 ## References
-<div style="font-size:50%">
+<div class="slide-font-size" style="--slide-font-size: 50%">
 - Burnside, C. & Dollar, D. 2000, 'Aid, policies, and growth', American economic review, 90 (4).
 - Nguyen, H. P., Huynh, A. N. Q., Reisach, U., & Kim, X. L. T. 2022. How does Japanese ODA really contribute to economic growth for ASEAN countries? Journal of International Economics and Management, 22(2).
 - MOFA, 2023, White Paper on Development Cooperation 2023

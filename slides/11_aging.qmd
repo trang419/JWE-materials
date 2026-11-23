@@ -471,7 +471,7 @@ ggplot() +
 
 ---
 ## References
-<div style="font-size:50%">
+<div class="slide-font-size" style="--slide-font-size: 50%">
 - Ito and Hoshi (2020) Chapter 8, 10
 - Okamoto, A. (2025). Pension reform for an aging Japan: Welfare and demographic dynamics. Journal of the Japanese and International Economies, 78, 101390. 
 - OECD (2025), Pensions at a Glance 2025: OECD and G20 Indicators, OECD Publishing, Paris, https://doi.org/10.1787/e40274c1-en.

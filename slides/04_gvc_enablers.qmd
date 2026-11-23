@@ -354,7 +354,7 @@ p <- ggplot(dt, aes(period, n, fill = type)) +
 ```
 
 :::notes
-<div style="font-size:70%">
+<div class="slide-font-size" style="--slide-font-size: 70%">
 - **1948–49**: GATT launched with 23 members; +11 accessions  
 - **1950s**: +15 accessions, 2 successions, 4 withdrawals  
 - **1960s**: +12 accessions, 21 successions  
@@ -576,7 +576,7 @@ Tariff line: the most detailed product category in a country’s tariff schedule
 
 ## Non-tariff measures
 
-<div style="font-size:50%">
+<div class="slide-font-size" style="--slide-font-size: 50%">
 | Technical measures | Non-technical measures | Export measures |
 |---|---|---|
 | **A. SPS** (pesticide limits) | **D. Trade-protective** (anti-dumping) | **P. Export measures** (export taxes) |
@@ -923,7 +923,7 @@ ggplot() +
 
 ---
 ## References
-<div style="font-size:50%">
+<div class="slide-font-size" style="--slide-font-size: 50%">
 - Baldwin, R. (2011). 21st Century Regionalism: Filling the gap between 21st century trade and 20th century trade rules.
 - Head, K., & Mayer, T. (2014). Gravity Equations: Workhorse,Toolkit, and Cookbook. In Handbook of International Economics (Vol. 4, pp. 131–195).
 - Hummels, D. (2007). Transportation Costs and International Trade in the Second Era of Globalization. Journal of Economic Perspectives, 21(3), 131–154. 

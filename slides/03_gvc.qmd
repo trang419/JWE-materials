@@ -886,7 +886,7 @@ Chemicals: Intermediate-input intensive — mainly domestic sourcing, with growi
 
 ## Four quadrants
 
-::: {style="font-size: 0.8em;"}
+::: {.slide-font-size style="--slide-font-size: 0.8em;"}
 
 | Intensity \\ Forwardness | **Low forwardness** | **High forwardness** |
 |:--|:----------------|:----------------|
@@ -998,7 +998,7 @@ facet.by = "t",nrow=1) +
 
 ---
 ## Suggested Readings
-<div style="font-size:50%">
+<div class="slide-font-size" style="--slide-font-size: 50%">
 - Baldwin, R., & Ito, T. (2021). The smile curve: Evolving sources of value added in manufacturing. Canadian Journal of Economics/Revue Canadienne d’économique, 54(4), 1842–1880. 
 - Baldwin, R., & Venables, A. J. (2013). Spiders and snakes: Offshoring and agglomeration in the global economy. Journal of International Economics, 90(2), 245–254. https://doi.org/10.1016/j.jinteco.2013.02.005
 - Elms, D. K., & Low, P. (2013). Global value chains in a changing world. World trade organization.

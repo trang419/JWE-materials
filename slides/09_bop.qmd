@@ -339,7 +339,7 @@ Toy example:
 
 ## Who supplies and demands yen?
 
-::: {style="font-size: 85%"}
+::: {.slide-font-size style="--slide-font-size: 85%;"}
 | Demand for yen (foreigners need yen) | Supply of yen (Japanese need foreign currency) |
 |---|---|
 | Exports of goods and services | Imports of goods and services |
@@ -367,7 +367,7 @@ which line of the current account keeps it in surplus?
 # Appendix
 
 ## Worked balance-of-payments example
-<div style="font-size:25%">
+<div class="slide-font-size" style="--slide-font-size: 25%">
 | **Balance of payments** | **Credits** | **Debits** | **Balance** |
 |--------------------------|-------------|-------------|--------------|
 | **Current account** |  |  |  |
@@ -418,7 +418,7 @@ Source: Table 2.1 IMF BPM 6th ed.
 :::
 
 ## Remittances
-<div style="font-size:50%">
+<div class="slide-font-size" style="--slide-font-size: 50%">
 Components Required for Compiling Remittance Items and Their Source
 
 | Item | Source and description |
@@ -445,7 +445,7 @@ Source: Table A5.1 IMF BPM 6th ed.
 
 ## Detailed international investment position example
 
-<div style="font-size:40%">
+<div class="slide-font-size" style="--slide-font-size: 40%">
 |                                      | Opening position | Transactions (fin. acc.) | Other changes in volume | Revaluation | Closing position |
 |--------------------------------------|------------------|--------------------------|--------------------------|--------------|------------------|
 | **Assets (by functional category)**  |                  |                          |                          |              |                  |
@@ -470,7 +470,7 @@ Source: Table A5.1 IMF BPM 6th ed.
 :::
 
 ## References
-<div style="font-size:50%">
+<div class="slide-font-size" style="--slide-font-size: 50%">
 - Ito and Hoshi (2020), Chapter 11-12
 - Data link:
   - https://www.boj.or.jp/en/statistics/br/bop_06/fdinote.htm
