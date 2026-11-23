@@ -3,6 +3,8 @@ title: "Data"
 format: html
 ---
 
-- [Data-Madison](data-madison.html)
-- [Data-PWT](data-pwt.html)
-- [Data-WITS](data-wits.html)
+Each walkthrough shows the R code and examples from the cleaned data. To regenerate a dataset, follow the source and command instructions on its page.
+
+- [Maddison Project Database](data-madison.qmd)
+- [Penn World Table growth accounting](data-pwt.qmd)
+- [WITS global value chain trade](data-wits.qmd)

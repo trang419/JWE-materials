@@ -2,7 +2,17 @@
 title: "Cleaning Raw Data: A Worked Example"
 subtitle: "Maddison Project Database (GDP per capita, 1900-2022)"
 format: html
+execute:
+  eval: false
 ---
+
+This page shows the R code and sample results. To regenerate the full dataset, run the following from the repository root with mpd2023_web.xlsx available.
+
+```sh
+Rscript scripts/run-data.R madison data/raw data/temp
+```
+
+The last two arguments are the input and output directories. The runner writes the cleaned files to the output directory.
 
 ## The goal of this lesson
 
@@ -27,48 +37,24 @@ label-heavy format**, and **inconsistent structure between sheets**.
 
 ## 0. Download the raw data
 
-Before any cleaning can happen, the raw file has to exist locally. The
-Maddison Project Database is published on **DataverseNL** with a DOI:
-`10.34894/INZBF2`. Downloading it through R (rather than clicking a
-button in a browser) means the script documents exactly where the data
-came from, and can be re-run from scratch by anyone.
+Get `mpd2023_web.xlsx` from the [Maddison Project Database on DataverseNL](https://doi.org/10.34894/INZBF2) and place it in the input directory. To fetch the workbook from R, use the release DOI and filename shown here.
 
-```{r}
-#| label: download-raw
-#| eval: false
-# The dataverse package defaults to Harvard's Dataverse, so it has to be
-# pointed at the right server first.
-#Sys.setenv("DATAVERSE_SERVER" = "dataverse.nl")
-
-# Look up the dataset by its DOI
-#library(dataverse)
-#ds <- get_dataset("10.34894/INZBF2")
-#ds$files[, c("filename", "contentType")]
-
-# Download the specific file by name (confirmed from the listing above)
-#raw <- get_file("mpd2023_web.xlsx", dataset = "10.34894/INZBF2")
-
-dir.create("../data/raw", showWarnings = FALSE)
-dir.create("../data/temp", showWarnings = FALSE)
-writeBin(raw, "../data/raw/mpd2023_web.xlsx")
+```r
+raw_file <- dataverse::get_file(
+  "mpd2023_web.xlsx", dataset = "10.34894/INZBF2", server = "dataverse.nl"
+)
+dir.create("data/raw", recursive = TRUE, showWarnings = FALSE)
+writeBin(raw_file, file.path("data/raw", "mpd2023_web.xlsx"))
 ```
-
-::: {.callout-tip}
-`ds$files` is worth printing and looking at before downloading anything —
-never guess a filename. This is the same "inspect before you act"
-habit that shows up again in the cleaning steps below.
-:::
-
-This chunk is set to `eval: false` since the file only needs to be
-downloaded once. Run it manually the first time, then leave it off for
-every subsequent render.
 
 ```{r}
 #| label: setup
 library(readxl)
 library(data.table)
 
-mdp <- "../data/raw/mpd2023_web.xlsx"
+raw_dir <- Sys.getenv("JWE_RAW_DIR", "../data/raw")
+output_dir <- Sys.getenv("JWE_OUTPUT_DIR", "../data/temp")
+mdp <- file.path(raw_dir, "mpd2023_web.xlsx")
 ```
 
 ::: {.callout-note}
@@ -111,9 +97,10 @@ This one `str()` call tells us the two problems we need to fix:
 - Column names are junk like `...1`, `...10`, `...11` — these come from
   Excel columns that had no header text, or a header that got
   interpreted as blank
-- There are **duplicate column names** ("Sub Saharan Africa" appears
-  twice — once for GDP per capita, once for population), which R
-  silently renamed by appending numbers
+- Headings such as **East Asia** appear twice, once for GDP per capita
+  and once for population. `readxl` distinguishes them with suffixes
+  such as `...2` and `...12`. The Sub-Saharan Africa columns use
+  different spellings and need an explicit rename.
 
 Neither of these is visible from the code alone — they only show up once
 you actually look at the structure of what got loaded.
@@ -143,6 +130,13 @@ deleting it, rather than dropping anything that looks odd.
 ---
 
 ## 4. Clean: reshape from wide to long
+
+The workbook puts regions in separate columns. Here are two rows from the GDP-per-capita block, rounded to whole dollars.
+
+| Year | East Asia | Western Europe |
+|---:|---:|---:|
+| 1820 | 911 | 2,171 |
+| 1830 | 846 | 2,315 |
 
 The raw sheet has one column per region — wide format, convenient for a
 human reading a spreadsheet, but awkward for analysis. `melt()` converts
@@ -266,14 +260,34 @@ be obvious from the column names alone months later.
 
 ---
 
+The combined table puts regional and country observations in the same columns. Values below are rounded to two decimals.
+
+| Year | Region | Variable | Value |
+|---:|---|---|---:|
+| 1990 | East Asia | GDPpc | 6,089.84 |
+| 2000 | East Asia | GDPpc | 8,152.88 |
+| 1990 | Japan | GDPpc | 29,949.00 |
+| 2000 | Japan | GDPpc | 33,210.81 |
+
 ## 9. Sanity-check with a plot before saving
 
 ```{r}
 #| label: sanity-check-plot
-ggpubr::ggline(dt3[variable == "GDPpc" & date > 1900],
-               x = "date", y = "value", color = "region",
-               numeric.x.axis = TRUE)
+#| purl: false
+library(ggplot2)
+
+ggplot(dt3[variable == "GDPpc" & date > 1900 &
+             region %in% c("Japan", "East Asia", "Western Europe")],
+       aes(date, value, colour = region)) +
+  geom_line(linewidth = 0.9, na.rm = TRUE) +
+  scale_y_continuous(labels = scales::label_comma()) +
+  labs(x = "Year", y = "GDP per capita (2011 international dollars)",
+       colour = NULL) +
+  theme_minimal(base_size = 12) +
+  theme(legend.position = "bottom")
 ```
+
+![GDP per capita from the cleaned Maddison data for Japan, East Asia, and Western Europe.](figures/maddison-gdp-per-capita.png){width=100%}
 
 This plot isn't the final deliverable — it's a **cleaning validation
 step**. If a region's line looks discontinuous, jumps to an implausible
@@ -299,7 +313,7 @@ later:
 
 ```{r}
 #| label: save-main
-fwrite(dt3[!is.na(value)], "../data/temp/madison.csv")
+fwrite(dt3[!is.na(value)], file.path(output_dir, "madison.csv"))
 ```
 
 Two decisions worth calling out:
@@ -327,7 +341,7 @@ setDT(mdp)
 regions <- unique(mdp[, .(countrycode, country, region)])
 regions[, .N, by = region]
 regions[grepl("Western Offshoots", region), .N, by = country]
-fwrite(regions, "../data/temp/madison_regions.csv")
+fwrite(regions, file.path(output_dir, "madison_regions.csv"))
 ```
 
 The two `.N` checks here are, again, checkpoints — confirming the region

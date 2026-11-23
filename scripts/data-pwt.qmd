@@ -2,48 +2,30 @@
 title:  "Cleaning Raw Data: A Worked Example"
 subtitle: "Penn World table: Growth Accounting"
 format: html
+execute:
+  eval: false
 ---
+
+This page shows the R code and sample results. To regenerate the full dataset, run the following from the repository root with PWT_GA.csv available.
+
+```sh
+Rscript scripts/run-data.R pwt data/raw data/temp
+```
+
+The last two arguments are the input and output directories. The runner writes the cleaned files to the output directory.
 
 ## Download the data
 
-The `PWT_GA.csv` file used below is the **Growth Accounting (GA)** query from
-Penn World Table 11.0. GGDC does not publish a single static CSV link for each
-query, so the file has to be exported once from their online tool and then
-read locally (or you can download the full dataset programmatically instead).
-
-**Option A — GA query via the online tool (recommended for this script)**
-
-1. Go to the [PWT online data access tool](https://pwt-data-tool.streamlit.app/?page=GA).
-2. Select the countries/years you want (or leave the defaults for all countries).
-3. Export/download the result as CSV.
-4. Save it as `data.raw/PWT_GA.csv` (the path the script below expects).
-
-**Option B — download the full PWT release programmatically**
-
-If you'd rather work from the full dataset and derive the GA variables
-yourself, you can pull the Excel file directly from Dataverse:
-
-```{r}
-#| eval: false
-dir.create("../data/raw", showWarnings = FALSE)
-
-download.file(
-  url = "https://dataverse.nl/api/access/datafile/554105",
-  destfile = "data/raw/pwt110.xlsx",
-  mode = "wb"
-)
-```
-
-Check the [PWT 11.0 page](https://www.rug.nl/ggdc/productivity/pwt/) for the
-current release and file IDs, since these links are updated with each new
-version.
+Export the Growth Accounting (GA) table from the [Penn World Table data tool](https://pwt-data-tool.streamlit.app/?page=GA). Select the countries and years you need, then save the CSV as `PWT_GA.csv` in the input directory. The local export used for the example covers 1950–2019 and reports real GDP at constant 2017 national prices.
 
 ## Load data
 
 ```{r}
 library(data.table)
 
-pwt = "../data/raw/PWT_GA.csv"
+raw_dir <- Sys.getenv("JWE_RAW_DIR", "../data/raw")
+output_dir <- Sys.getenv("JWE_OUTPUT_DIR", "../data/temp")
+pwt <- file.path(raw_dir, "PWT_GA.csv")
 
 pwtd = fread(pwt, header = T)
 setnames(pwtd, gsub(" ", "", colnames(pwtd)))
@@ -75,9 +57,17 @@ pwtdl[, Variablename2 := trimws(gsub("(\\(|\\,|by\\b|at\\b).*$", "",
                                       Variablename))]
 ```
 
+Here is an excerpt from Japan's real GDP series. Growth compares each row with the previous year within the same country and series.
+
+| Country | Series | Year | Real GDP (million 2017 US dollars) | Year-over-year growth |
+|---|---|---:|---:|---:|
+| Japan | `rgdpna` | 2018 | 5,065,209 | 0.32% |
+| Japan | `rgdpna` | 2019 | 5,099,254 | 0.67% |
+
 ## Plot growth rates (Japan vs US)
 
 ```{r}
+#| purl: false
 ggpubr::ggline(pwtdl[ISOcode %in% c("JPN", "USA")
                       & !grepl("Share", Variablename)
                      &!is.na(gyoy)],
@@ -89,6 +79,7 @@ ggpubr::ggline(pwtdl[ISOcode %in% c("JPN", "USA")
 ## Plot index variables
 
 ```{r}
+#| purl: false
 ggpubr::ggline(pwtdl[ISOcode %in% c("JPN", "USA")
                       & grepl("index", Variablename)],
                x = "date", y = "value", color = "ISOcode",
@@ -99,6 +90,7 @@ ggpubr::ggline(pwtdl[ISOcode %in% c("JPN", "USA")
 ## Plot share variables
 
 ```{r}
+#| purl: false
 ggpubr::ggline(pwtdl[ISOcode %in% c("JPN", "USA")
                       & grepl("Share", Variablename)],
                x = "date", y = "value", color = "ISOcode",
@@ -113,5 +105,5 @@ fwrite(pwtdl[, .(Variablecode,
                   Variablename2,
                   ISOcode, date,
                   value, gyoy)],
-       "../data/temp/pwt.csv")
+       file.path(output_dir, "pwt.csv"))
 ```

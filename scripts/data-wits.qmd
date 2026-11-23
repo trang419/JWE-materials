@@ -2,7 +2,17 @@
 title: "Cleaning Raw Data: A Worked Example"
 subtitle: "WITS - GVC data"
 format: html
+execute:
+  eval: false
 ---
+
+This page shows the R code and sample results. To regenerate the full dataset, run the following from the repository root with the extracted trade CSV and the two lookup CSVs available.
+
+```sh
+Rscript scripts/run-data.R wits data/raw data/temp
+```
+
+The last two arguments are the input and output directories. The runner writes the cleaned files to the output directory.
 
 ## Overview
 
@@ -35,50 +45,7 @@ All source files live on the World Bank's WITS GVC data page: <https://wits.worl
 
 (There is also a *GVC Output* zip on the same page — it is not needed for this trade-cleaning pipeline.)
 
-### Option A — download by hand
-
-1.  Open the page above in a browser.
-2.  Click **Download GVC Trade** and save `gvc_trade.zip` into `data.raw/gvc_trade/`.
-3.  Unzip it. WITS distributes the trade data as one CSV per source (e.g. `wiodlr`, `tiva`); after unzipping you should see one or more `.csv` files inside `data.raw/gvc_trade/`. Confirm the file name matches what `fread()` expects below (`gvc_trade_WITS_2023.csv`) — rename it if WITS has updated the filename since this pipeline was written.
-4.  Click **Download GVC Sector** and **GVC Countries** and save them as `data.raw/gvc-sectors.csv` and `data.raw/gvc-countries.csv` respectively.
-
-### Option B — download from R
-
-The trade zip is large (\~2.5 GB), so this step can take a while and is best run once, outside of routine document rendering.
-
-```{r download-data}
-#| eval: false
-#| 
-#dir.create("../data/raw", showWarnings = FALSE)
-gvc_trade = "../data/raw/gvc_trade_WITS_2023.csv"
-gvc_sec = "../data/raw/gvc-sectors.csv"
-gvc_cty = "../data/raw/gvc-countries.csv"
-
-# GVC trade data (large — ~2.5 GB zipped)
-# download.file(
-#   "https://wits.worldbank.org/data/public/gvc_trade.zip",
-#   destfile = gvc_trade ,
-#   mode = "wb"
-# )
-
-# Sector and country reference tables
-# download.file(
-#   "https://wits.worldbank.org/data/public/gvc-sectors.csv",
-#   destfile = gvc_sec , mode = "wb"
-# )
-# download.file(
-#   "https://wits.worldbank.org/data/public/gvc-countries.csv",
-#   destfile = gvc_cty, mode = "wb"
-# )
-```
-
-After unzipping, list the contents to confirm the trade CSV's exact name before moving on — WITS may package it differently than expected:
-
-```{r list-unzipped}
-#| eval: false
-
-list.files("../data/raw")
-```
+Extract `gvc_trade_WITS_2023.csv` from the GVC Trade download and put it in the input directory alongside `gvc-sectors.csv` and `gvc-countries.csv`. The extracted trade CSV is about 6.6 GB for the release used here.
 
 ## Load raw data
 
@@ -89,9 +56,11 @@ Three source files are needed:
 - `cty` — country code reference table
 
 ```{r load-data}
-dt      = fread("../data/raw/gvc_trade_WITS_2023.csv")
-sectors = fread("../data/raw/gvc-sectors.csv")
-cty     = fread("../data/raw/gvc-countries.csv")
+raw_dir <- Sys.getenv("JWE_RAW_DIR", "../data/raw")
+output_dir <- Sys.getenv("JWE_OUTPUT_DIR", "../data/temp")
+dt      = fread(file.path(raw_dir, "gvc_trade_WITS_2023.csv"))
+sectors = fread(file.path(raw_dir, "gvc-sectors.csv"))
+cty     = fread(file.path(raw_dir, "gvc-countries.csv"))
 ```
 
 ```{r inspect-raw}
@@ -170,10 +139,11 @@ Both `NA` counts should be zero after this step — any non-zero count means som
 
 ## Reshape to long format
 
-Two sources are combined:
+Three sources are combined:
 
 - `wiodlr` for all years
-- `tiva` restricted to years after 2000 (its methodology changes before that point)
+- `tiva` restricted to years after 2000
+- `eora` for 1990, 1997, 2007, and 2015
 
 The GVC/trade-type columns (`traditional_trade_int`, `traditional_trade_fin`, `gvcbp`, `gvcfp`, `gvcmix`) are melted into a single `variable` / `value` pair, which is the tidy shape most of the downstream analysis expects.
 
@@ -197,14 +167,19 @@ range(dtl$t)
 dt[,.N,by=source]
 ```
 
+These rows show two trade measures for Japanese agricultural exports to the United States in 2015. Each measure gets its own row. Values are rounded to two decimals.
+
+| Source | Exporter | Importer region | Sector | Variable | Value (million USD) |
+|---|---|---|---|---|---:|
+| eora | JPN | N.America | Agriculture | `traditional_trade_int` | 44.11 |
+| eora | JPN | N.America | Agriculture | `traditional_trade_fin` | 50.07 |
+
 ## Save the cleaned dataset
 
 Persist the cleaned, merged, long-format table so downstream scripts don't need to repeat the loading/merging steps above. Use parquet file to reduce on file size.
 
 ```{r save-clean}
-#| eval: false
-
-arrow::write_parquet(dtl, "../data/temp/gvc_trade.parquet")
+arrow::write_parquet(dtl, file.path(output_dir, "gvc_trade.parquet"))
 ```
 
 ## Summary
@@ -215,6 +190,6 @@ arrow::write_parquet(dtl, "../data/temp/gvc_trade.parquet")
 | Classify | `cty$Region2` | Country → region mapping (Europe, ASEAN, N.America, JPN/CHN/KOR, ROW) |
 | Merge sectors | `dt2` | Trade + sector group, joined on `sect` + `source` |
 | Merge regions | `dt2` | Adds `exp_reg` and `imp_reg` |
-| Reshape | `dtl` | Long-format trade table (`wiodlr` all years + `tiva` post-2000) |
+| Reshape | `dtl` | Long-format trade table (`wiodlr`, `tiva` post-2000, and selected `eora` years) |
 
 `dtl` is the base table that all subsequent analysis (regional shares, GVC participation indices, revealed comparative advantage, network graphs, etc.) should build on.
