@@ -346,7 +346,6 @@ ggplot(inward_industries, aes(value_bn, industry, fill = sector)) +
 - **1980s–1990s:** further liberalization of outward investment and foreign borrowing.
 
 ::: notes
-- Adapted from the capital controls and liberalization timeline in the Balance of Payments lecture.
 - Legal openness does not automatically eliminate business costs, hiring difficulties, or other barriers.
 :::
 
@@ -369,7 +368,6 @@ Source: Hoshi (2018), Table 1, based on METI surveys of foreign affiliates.
 ::: notes
 - These are selected responses from the 2012 and 2016 surveys, not a comprehensive ranking of all barriers.
 - The reported difficulty securing personnel increased between surveys.
-- Connect this Japan case to the broader regulatory, infrastructure and institutional barriers in the next slide.
 :::
 
 ## Japan's inward FDI and business environment
@@ -390,7 +388,7 @@ ggplot(fdi_business, aes(Inward_FDI, Business_Index)) +
 ```
 
 ::: notes
-- The original lecture emphasizes Japan's relatively low inward FDI compared with other advanced economies.
+-Japan's relatively low inward FDI compared with other advanced economies.
 - This is a descriptive cross-country comparison, not evidence that the business score causes FDI.
 :::
 
@@ -407,9 +405,6 @@ ggplot(fdi_business, aes(Inward_FDI, Business_Index)) +
 | **Link to recipient** | Follows investment climate | Shapes it to its own ends | Builds preconditions for investment |
 </div>
 
-::: notes
-- Table is a framing device; adapt the "strategic" column to the cases you plan to discuss.
-:::
 
 ## ODA and FDI relationship
 
